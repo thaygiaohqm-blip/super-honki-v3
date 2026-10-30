@@ -1,0 +1,561 @@
+@p 111 | ～(か)と思うと／～(か)と思ったら
+@group 1
+@mean Vừa mới … thì (đã) …, ngỡ là … thì lại …
+@core Hai sự việc nối tiếp nhau rất nhanh, vế sau là sự thay đổi bất ngờ mà người nói quan sát thấy.
+@key と思うと ;; と思ったら
+@form Vた形 ＋ (か)と思うと／(か)と思ったら
+@exp Người nói quan sát thấy A xảy ra, rồi ngay sau đó B xảy ra, với cảm giác ngạc nhiên về sự thay đổi nhanh. Vế sau là sự việc thực tế, thường mô tả chủ ngữ thứ ba, không dùng cho ý chí hay mệnh lệnh của người nói.
+@ex 空が暗くなったかと思うと、大粒の雨が降り出した。 | Trời vừa tối sầm lại thì mưa hạt to bắt đầu rơi.
+@ex 弟は帰ってきたかと思ったら、もう遊びに出かけていった。 | Em trai tôi vừa về đến nhà thì lại đã ra ngoài chơi.
+@ex 彼女は笑ったかと思うと、急に泣き出した。 | Cô ấy vừa mới cười đó thì đã đột nhiên bật khóc.
+@ex 赤ちゃんは寝たかと思ったら、またすぐ起きてしまった。 | Em bé tưởng đã ngủ rồi thì lại thức dậy ngay.
+@cmp ～たとたん(に) | N2 | Cũng là bất ngờ, nhưng chỉ nói về hai động tác liền nhau. 「かと思うと」 hay đi với sự thay đổi trạng thái đối lập.
+@cmp ～か～ないかのうちに | N2 | Nhấn mạnh hai việc gần như chồng lên nhau, chưa kịp xong A.
+@note Không dùng khi chủ ngữ là người nói (Nói về bản thân).
+@note Vế sau thường là biến đổi trái ngược với vế trước.
+@theme thoi-gian, trang-thai
+@ctx hoi-thoai, van-hoc
+@book shin-n2 | 1
+
+@p 112 | ～からして
+@group 3
+@mean Ngay từ ... đã ..., chỉ riêng ... thôi cũng đã ...
+@core Lấy một ví dụ tiêu biểu để đánh giá cả toàn thể.
+@key からして
+@form N ＋ からして
+@exp Nêu một chi tiết nhỏ nhưng tiêu biểu (thường là ví dụ gây ấn tượng) để suy ra đánh giá chung, thường mang sắc thái tiêu cực, nhưng cũng dùng cho đánh giá tích cực. Mẫu thường đi với 「～からして…のだから、ましてや…」.
+@ex この店は、入り口からして古くて怪しい雰囲気だ。 | Quán này ngay từ cửa vào đã mang vẻ cũ kỹ và đáng ngờ.
+@ex 彼は挨拶からして失礼で、話にならない。 | Anh ta ngay cả lời chào cũng thất lễ, chẳng nói chuyện nổi.
+@ex あの人は、歩き方からして自信にあふれている。 | Người đó ngay cách đi đã toát lên sự tự tin.
+@ex このレストランは、メニューからしてセンスがいい。 | Nhà hàng này chỉ nhìn thực đơn thôi đã thấy có gu.
+@cmp ～から見ると／～からいうと | N2 | Nhìn từ một góc độ, lập trường. 「からして」 lấy một ví dụ tiêu biểu để đánh giá chung.
+@cmp ～さえ | N2 | Nêu ví dụ cực đoan 'ngay cả'. 「からして」 chỉ chi tiết mang tính điển hình.
+@note Thường dùng để phê bình hơn là khen.
+@theme can-cu, danh-gia
+@ctx hoi-thoai, van-ban
+@book shin-n2 | 4
+
+@p 113 | ～にかけては
+@group 4
+@mean Về mặt ..., nói về ... thì (không ai bằng)
+@core Nêu một lĩnh vực sở trường rồi khẳng định mức độ xuất sắc.
+@key にかけては
+@form N ＋ にかけては
+@exp Dùng khi nói về một phương diện cụ thể mà người đó hoặc vật đó rất giỏi, thường là tài năng, kỹ năng. Vế sau là đánh giá cao như ｢誰にも負けない｣, ｢一番だ｣. Không dùng để nói về điều tiêu cực.
+@ex 料理の腕にかけては、彼女はプロにも負けない。 | Về tay nghề nấu ăn thì cô ấy không thua cả đầu bếp chuyên nghiệp.
+@ex 計算の速さにかけては、クラスで彼にかなう人はいない。 | Về tốc độ tính toán thì trong lớp không ai sánh được với cậu ấy.
+@ex 足の速さにかけては、うちの犬が一番だ。 | Về chạy nhanh thì chú chó nhà tôi nhất.
+@ex 日本語の発音にかけては、彼女の右に出る者はいない。 | Về phát âm tiếng Nhật thì không ai hơn được cô ấy.
+@cmp ～に関して | N3 | Chỉ nói 'về' một chủ đề, trung lập. 「にかけては」 luôn đi kèm đánh giá cao.
+@cmp ～については | N3 | Trung lập, không có sắc thái khen.
+@note Vế sau phải là lời khen hoặc đánh giá cao, không dùng với ý xấu.
+@theme danh-gia, pham-vi
+@ctx hoi-thoai, bao-chi
+@book shin-n2 | 7
+
+@p 114 | ～のもとで／～のもとに
+@group 3
+@mean Dưới sự ..., trong điều kiện ..., dưới ...
+@core Nêu điều kiện, sự chi phối hoặc hoàn cảnh bao trùm mà sự việc diễn ra.
+@key のもとで ;; のもとに
+@form N ＋ のもとで
+@form N ＋ のもとに
+@exp 「のもとで」 chỉ sự việc diễn ra dưới sự chỉ đạo, ảnh hưởng, hoặc trong điều kiện nào đó, như 先生のもとで (dưới sự hướng dẫn của thầy), 法律のもとで. 「のもとに」 thiên về căn cứ, điều kiện thực hiện hành động, như 約束のもとに.
+@ex 私は田中先生のもとで、三年間研究を続けた。 | Tôi đã tiếp tục nghiên cứu ba năm dưới sự hướng dẫn của thầy Tanaka.
+@ex 法律のもとでは、すべての人が平等である。 | Dưới pháp luật, mọi người đều bình đẳng.
+@ex 彼らは厳しい条件のもとで、工事を進めている。 | Họ đang thi công trong điều kiện khắc nghiệt.
+@ex 彼は自由の名のもとに、勝手なことをしている。 | Anh ta nhân danh tự do mà làm những điều tùy tiện.
+@cmp ～によって | N3 | Chỉ nguyên nhân, phương tiện. 「のもとで」 chỉ bối cảnh, sự chi phối.
+@note Hay gặp các cụm cố định: 先生のもとで, 法のもとで, 〜の名のもとに.
+@theme can-cu, dieu-kien
+@ctx van-ban, bao-chi
+@book shin-n2 | 8
+
+@p 115 | ～を問わず
+@group 4
+@mean Bất kể ..., không phân biệt ...
+@core Không xét đến điều kiện nào, tất cả đều như nhau.
+@key を問わず
+@form N ＋ を問わず
+@exp Đi với danh từ biểu thị sự đối lập hoặc phạm vi, như 男女, 年齢, 昼夜, 経験, 国籍, 天候. Nghĩa là điều đó không phải là điều kiện, không ảnh hưởng đến kết quả.
+@ex この仕事は、経験の有無を問わず、誰でも応募できる。 | Công việc này không cần biết có kinh nghiệm hay không, ai cũng có thể ứng tuyển.
+@ex このスポーツクラブは、年齢や性別を問わず入会できる。 | Câu lạc bộ thể thao này không phân biệt tuổi tác, giới tính đều có thể gia nhập.
+@ex この店は昼夜を問わず、多くの客でにぎわっている。 | Quán này bất kể ngày đêm đều đông khách.
+@ex 国籍を問わず、優秀な人材を採用したい。 | Chúng tôi muốn tuyển nhân tài ưu tú bất kể quốc tịch.
+@cmp ～にかかわらず | N2 | Gần như đồng nghĩa; 「にかかわらず」 hay đi với cặp đối lập, 「を問わず」 đi với danh từ chỉ phạm vi.
+@cmp ～に関係なく | N2 | Cách nói tự nhiên, thông thường hơn.
+@note Không đi với cụm động từ, chỉ đi với danh từ.
+@theme bat-chap, pham-vi
+@ctx cong-ty, bao-chi
+@book shin-n2 | 11
+
+@p 116 | ～にかかわらず／～にかかわりなく
+@group 4
+@mean Bất kể ..., dù ... hay không
+@core Điều kiện đưa ra không ảnh hưởng đến kết quả phía sau.
+@key にかかわらず ;; にかかわりなく ;; にかかわりのない
+@form N ＋ にかかわらず／にかかわりなく
+@form V辞書形・Vない形 ＋ にかかわらず
+@form イ形容詞・ナ形容詞 ＋ にかかわらず
+@exp Đi với từ chỉ sự đối lập (晴雨, 有無, 大小, 好き嫌い, 行く行かない) hoặc từ chỉ mức độ. Ý nghĩa: bất kể điều đó thế nào, kết quả vẫn không đổi.
+@ex 試合は、天候にかかわらず予定どおり行います。 | Trận đấu sẽ diễn ra theo dự kiến bất kể thời tiết.
+@ex 参加するしないにかかわらず、返事をください。 | Dù tham gia hay không cũng xin hãy hồi âm.
+@ex 好き嫌いにかかわらず、野菜は食べなければいけない。 | Dù thích hay không thích, vẫn phải ăn rau.
+@ex 会員は、年齢にかかわりなく、誰でも利用できる。 | Hội viên, bất kể tuổi tác, ai cũng sử dụng được.
+@cmp ～を問わず | N2 | Cùng nghĩa 'bất kể'.
+@cmp ～にもかかわらず | N2 | Rất dễ nhầm: 「にもかかわらず」 là 'mặc dù ... nhưng', nghịch tiếp.
+@note Đừng nhầm với 「にもかかわらず」 (có も) mang nghĩa 'mặc dù'.
+@theme bat-chap
+@ctx cong-ty, email
+@book shin-n2 | 11
+
+@p 117 | ～もかまわず
+@group 4
+@mean Không bận tâm đến ..., bất chấp ...
+@core Làm việc gì mà không để ý đến người khác hoặc hoàn cảnh xung quanh.
+@key もかまわず
+@form N ＋ もかまわず
+@form V辞書形 ＋ のもかまわず
+@exp Chỉ người nào đó làm việc gì mà không quan tâm đến ánh mắt người khác, tình hình xung quanh, thời gian hay hậu quả. Thường mang sắc thái phê phán, nhưng đôi khi dùng cho hành động hết mình.
+@ex 彼は人目もかまわず、大声で泣いた。 | Anh ấy khóc to bất chấp ánh mắt mọi người.
+@ex 雨にぬれるのもかまわず、彼女は走り続けた。 | Cô ấy cứ chạy mãi, mặc kệ bị ướt mưa.
+@ex 夜中もかまわず、隣の人は大音量で音楽を聞いている。 | Hàng xóm cứ bất chấp nửa đêm mà bật nhạc rất to.
+@ex 服が汚れるのもかまわず、子どもたちは泥遊びをしている。 | Bọn trẻ chơi nghịch bùn, mặc kệ quần áo bị bẩn.
+@cmp ～をものともせず | N1 | Bất chấp khó khăn một cách dũng cảm. 「もかまわず」 chỉ không để ý.
+@note Chủ ngữ thường là ngôi thứ ba.
+@theme bat-chap, trang-thai
+@ctx hoi-thoai, van-hoc
+@book shin-n2 | 11
+
+@p 118 | ～はともかく(として)
+@group 4
+@mean Gác lại chuyện ... , chưa bàn đến ... đã
+@core Gác một việc sang một bên, vì việc phía sau quan trọng hơn.
+@key はともかく ;; はともかくとして
+@form N ＋ はともかく(として)
+@exp Đặt A sang một bên, chưa bàn đến, để nói về B mà người nói cho là cần ưu tiên hơn. Thường dùng khi A là điều rõ ràng hoặc ít quan trọng hơn.
+@ex 値段はともかく、味は最高だ。 | Giá cả thì tạm gác, vị thì hết sảy.
+@ex 他の人はともかくとして、あなたには本当のことを話します。 | Người khác thì thôi, còn với anh tôi sẽ nói thật.
+@ex 見た目はともかく、使いやすさが大切だ。 | Vẻ ngoài thì gác lại, độ dễ dùng mới quan trọng.
+@ex 成績はともかく、彼は真面目な学生だ。 | Điểm số thì gác lại, cậu ấy là học sinh nghiêm túc.
+@cmp ～はさておき | N2 | Tương tự; 「さておき」 hơi văn viết, chuyển chủ đề.
+@cmp ～はもちろん | N2 | 'Đương nhiên A, cả B cũng', ngược với gác A lại.
+@note Vế sau là điều người nói cho là quan trọng hơn.
+@theme chu-de, danh-gia
+@ctx hoi-thoai, van-ban
+@book shin-n2 | 11
+
+@p 119 | ～はさておき
+@group 4
+@mean Gác chuyện ... sang một bên, trước hết hãy ...
+@core Tạm gác việc A, chuyển sang việc B cấp thiết hơn.
+@key はさておき ;; はさておいて
+@form N ＋ はさておき
+@exp Gần với 「はともかく」, nhưng mang sắc thái chuyển chủ đề hoặc ưu tiên, kiểu 'chuyện đó để sau, bây giờ…'. Thường thấy trong văn nói hơi khoa trương hoặc văn viết.
+@ex 冗談はさておき、本題に入りましょう。 | Đùa thì gác lại, chúng ta vào vấn đề chính đi.
+@ex 結果はさておき、よく頑張ったと思う。 | Kết quả thì tạm gác, tôi nghĩ bạn đã cố gắng rất nhiều.
+@ex 挨拶はさておき、さっそく会議を始めます。 | Chào hỏi để sau, chúng ta bắt đầu họp ngay.
+@ex 味はさておき、この店は雰囲気が素晴らしい。 | Vị thì chưa bàn, quán này không khí tuyệt vời.
+@cmp ～はともかく | N2 | Gần như đồng nghĩa; 「はともかく」 phổ biến hơn.
+@note Thường dùng khi chuyển chủ đề trong lời nói.
+@theme chu-de
+@ctx hoi-thoai, van-ban
+@book shin-n2 | 11
+
+@p 120 | ～どころではない／～どころか
+@group 11
+@mean Làm gì có chuyện ... , đâu còn tâm trí ... / Không những không ... mà ngược lại ...
+@core Phủ định mạnh một điều được kỳ vọng, nêu tình hình thực tế khác xa.
+@key どころではな ;; どころじゃな ;; どころか
+@form V辞書形／N ＋ どころではない
+@form 普通形(ナ形容詞な／名詞である) ＋ どころか
+@exp 「どころではない」: người nói đang bận hoặc ở tình huống khó, nên không thể làm việc đó. 「どころか」: phủ định mạnh điều vừa nói rồi nêu tình trạng thực tế khác hẳn, thường đi với 「むしろ」 hoặc 「かえって」.
+@sense 1 | Làm gì có chuyện ..., không còn tâm trí để ... (どころではない)
+@ex 仕事が忙しくて、旅行どころではない。 | Công việc bận quá, đâu còn tâm trí mà đi du lịch.
+@ex 風邪で熱が高く、勉強どころではなかった。 | Cảm sốt cao nên đâu còn học hành gì nổi.
+@sense 2 | Không những không ... mà trái lại ... (どころか)
+@ex 彼は漢字どころか、ひらがなも書けない。 | Anh ta đừng nói chữ Hán, đến hiragana cũng không viết được.
+@ex 薬を飲んだのに、よくなるどころか、かえって悪くなった。 | Uống thuốc mà không những không khỏi, trái lại còn tệ hơn.
+@cmp ～ばかりか | N2 | Nhấn mạnh thêm cùng hướng. 「どころか」 phủ định vế trước và nêu thực tế trái ngược.
+@note 「どころではない」 hay đi với danh từ hoặc động từ chỉ việc lẽ ra nên làm trong lúc bình thường.
+@theme nhan-manh, nghich-tiep
+@ctx hoi-thoai
+@book shin-n2 | 12
+
+@p 121 | ～きり／～っきり
+@group 1
+@mean Từ khi ... thì (không còn) ..., chỉ ... một lần rồi thôi
+@core Sau việc A thì không xảy ra điều lẽ ra phải tiếp theo.
+@key きり ;; っきり
+@form Vた形 ＋ きり
+@form V辞書形 ＋ きりだ
+@exp Sau hành động A, điều đáng ra sẽ xảy ra tiếp theo lại không xảy ra. Vế sau là phủ định (không gặp lại, không về...). Cũng dùng ở dạng 「～きりだ」 chỉ trạng thái cứ giữ nguyên.
+@ex 彼とは去年会ったきり、一度も連絡がない。 | Từ lần gặp năm ngoái, tôi chưa liên lạc với anh ấy lần nào.
+@ex 兄は家を出たきり、帰ってこない。 | Anh trai tôi ra khỏi nhà là không trở về nữa.
+@ex 彼女は昨日寝たきり、まだ起きてこない。 | Từ hôm qua đi ngủ là cô ấy vẫn chưa dậy.
+@ex 貸した本は、借りたきり返してくれない。 | Cuốn sách cho mượn, mượn xong là không chịu trả.
+@cmp ～て以来 | N2 | 'Từ khi', vế sau là trạng thái kéo dài. 「きり」 nhấn mạnh sự kiện lẽ ra phải xảy ra mà không có.
+@note Vế sau luôn là phủ định.
+@theme thoi-gian, ket-qua
+@ctx hoi-thoai
+@book shin-n2 | 20
+
+@p 122 | ～あげく(に)
+@group 1
+@mean Sau khi ... mãi thì cuối cùng ...
+@core Sau một quá trình vất vả hoặc kéo dài thì kết quả xấu xảy ra.
+@key あげく ;; 挙句 ;; 揚げ句
+@form Vた形 ＋ あげく(に)
+@form N の ＋ あげく(に)
+@exp Diễn tả sau khi đã làm hoặc trải qua nhiều việc lâu dài, vất vả, kết quả cuối cùng thường tiêu cực hoặc không như mong muốn. Không dùng cho kết quả tốt đẹp.
+@ex 長い議論のあげく、結局何も決まらなかった。 | Sau cuộc tranh luận dài, rốt cuộc chẳng quyết định được gì.
+@ex 彼は悩んだあげくに、会社を辞めてしまった。 | Anh ấy trăn trở mãi rồi cuối cùng đã nghỉ việc.
+@ex 散々迷ったあげく、一番高いものを買ってしまった。 | Lưỡng lự mãi rồi cuối cùng tôi lại mua cái đắt nhất.
+@ex 兄弟げんかのあげく、二人とも泣き出した。 | Sau trận cãi nhau của hai anh em, cả hai đều bật khóc.
+@cmp ～末に | N2 | Cũng là 'sau khi ... mãi', nhưng kết quả có thể tốt. 「あげく」 gần như chỉ dùng cho kết quả xấu.
+@note Vế trước phải là hành động kéo dài hoặc lặp lại.
+@theme thoi-gian, ket-qua
+@ctx hoi-thoai, bao-chi
+@book shin-n2 | 20
+
+@p 123 | ～末(に)
+@group 1
+@mean Sau khi ... mãi (thì cuối cùng) ...
+@core Sau một quá trình dài, kết quả cuối cùng đạt được.
+@key 末に ;; 末
+@form Vた形 ＋ 末(に)
+@form N の ＋ 末(に)
+@exp Diễn tả sau một quá trình dài, vất vả (suy nghĩ, thử thách, tranh luận…) thì đưa ra kết luận hoặc đạt được kết quả. Khác với 「あげく」, kết quả có thể tích cực.
+@ex 悩んだ末に、留学することに決めた。 | Sau khi băn khoăn mãi, tôi đã quyết định đi du học.
+@ex 長い努力の末、彼はついに夢を実現した。 | Sau những nỗ lực lâu dài, cuối cùng anh ấy đã thực hiện được ước mơ.
+@ex 議論を重ねた末に、計画の変更が決まった。 | Sau nhiều cuộc thảo luận, đã quyết định thay đổi kế hoạch.
+@ex 三日間考えた末、私は断ることにした。 | Sau ba ngày suy nghĩ, tôi quyết định từ chối.
+@cmp ～あげく(に) | N2 | Kết quả xấu. 「末に」 trung lập hơn, kết quả có thể tốt.
+@note Vế sau thường là quyết định, kết luận hoặc kết quả quan trọng.
+@theme thoi-gian, ket-qua
+@ctx van-ban, bao-chi
+@book shin-n2 | 20
+
+@p 124 | ～ずじまい
+@group 11
+@mean Rốt cuộc không (làm được) ..., cuối cùng vẫn không ...
+@core Đã định làm nhưng kết cục là không làm được, để lại cảm giác tiếc nuối.
+@key ずじまい
+@form Vない形(ずに) ＋ じまい
+@form 〜ずじまいだ／〜ずじまいになる
+@exp Diễn tả điều lẽ ra nên xảy ra hoặc muốn làm đã không thực hiện được cho đến cuối cùng, kèm cảm giác tiếc. する → せずじまい.
+@ex 忙しくて、先生に挨拶できずじまいだった。 | Bận quá nên rốt cuộc tôi không chào được thầy.
+@ex 結局、その本は買わずじまいだった。 | Cuối cùng tôi vẫn chưa mua cuốn sách đó.
+@ex 彼とは、ゆっくり話せずじまいで別れてしまった。 | Rốt cuộc tôi chia tay anh ấy mà chưa nói chuyện được thong thả.
+@ex 一年も習ったのに、泳げずじまいだった。 | Học cả năm trời mà cuối cùng vẫn không biết bơi.
+@cmp ～ないまま | N3 | Giữ nguyên trạng thái chưa làm. 「ずじまい」 nhấn mạnh kết cục tiếc nuối.
+@note Thường dùng cho quá khứ.
+@theme ket-qua, cam-xuc
+@ctx hoi-thoai
+@book shin-n2 | 20
+
+@p 125 | ～ところだった
+@group 11
+@mean Suýt nữa thì ..., chút nữa là đã ...
+@core Điều xấu suýt xảy ra nhưng cuối cùng không xảy ra.
+@key ところだった
+@form V辞書形 ＋ ところだった
+@form もう少しで／あやうく ＋ V辞書形 ＋ ところだった
+@exp Diễn tả điều gì đó suýt xảy ra (thường là việc xấu) nhưng đã tránh được. Hay đi với 「もう少しで」, 「危うく」. Người nói thở phào nhẹ nhõm.
+@ex 階段で転んで、もう少しで大けがをするところだった。 | Ngã trên cầu thang, suýt nữa thì bị thương nặng.
+@ex 目覚ましが鳴らなくて、危うく遅刻するところだった。 | Chuông báo thức không kêu, suýt nữa thì đi muộn.
+@ex もう少しで車にひかれるところだった。 | Chút nữa là bị xe cán rồi.
+@ex 大事な書類を忘れるところだった。 | Suýt nữa thì quên giấy tờ quan trọng.
+@cmp ～そうになる | N4 | Cũng nghĩa 'suýt'. 「ところだった」 thường nhấn mạnh sự may mắn tránh được.
+@cmp ～たところだ | N3 | Vừa mới làm xong. Khác hoàn toàn về nghĩa.
+@note Vế trước luôn ở dạng từ điển, nhưng cả câu là quá khứ.
+@theme ket-qua, cam-xuc
+@ctx hoi-thoai
+@book shin-n2 | 20
+
+@p 126 | ～がたい
+@group 9
+@mean Khó mà ..., khó có thể ...
+@core Về mặt tình cảm hoặc lý trí, khó mà làm được việc đó.
+@key がたい
+@form V ます形 ＋ がたい
+@exp Đi với số ít động từ thể hiện hoạt động trí óc hoặc cảm xúc, như 信じる, 理解する, 想像する, 認める, 許す, 忘れる, 得る. Diễn tả khó làm không phải vì năng lực mà vì tâm lý hoặc bản chất sự việc. Văn viết, trang trọng.
+@ex 彼があんなことをしたとは、信じがたい。 | Thật khó tin là anh ấy đã làm chuyện như thế.
+@ex 彼の行動は、理解しがたい。 | Hành động của anh ta thật khó hiểu.
+@ex あの事件は忘れがたい思い出だ。 | Vụ việc đó là một kỷ niệm khó quên.
+@ex 彼の言い分は、受け入れがたい。 | Lời biện bạch của anh ta khó mà chấp nhận.
+@cmp ～にくい | N3 | Khó làm vì tính chất cụ thể. 「がたい」 là khó về mặt tâm lý, trừu tượng.
+@cmp ～かねる | N2 | Khó làm vì không tiện (lịch sự). 「がたい」 thiên về cảm xúc.
+@note Chỉ đi với một số động từ nhất định.
+@theme kha-nang, cam-xuc
+@ctx van-ban, bao-chi
+@book shin-n2 | 18
+
+@p 127 | ～ことだし
+@group 5
+@mean Vì ... rồi nên, đằng nào cũng ... nên
+@core Nêu lý do nhẹ nhàng để đưa ra đề nghị hoặc quyết định.
+@key ことだし
+@form 普通形(ナ形容詞な／名詞の) ＋ ことだし
+@exp Dùng khi nêu lý do để đề nghị, rủ rê hay quyết định gì đó, với sắc thái lý do chỉ là một trong nhiều yếu tố, nghe nhẹ nhàng. Thường dùng trong hội thoại.
+@ex 天気もいいことだし、散歩に行きませんか。 | Trời cũng đẹp, mình đi dạo nhé?
+@ex みんなそろったことだし、そろそろ始めましょう。 | Mọi người đã đủ rồi, bắt đầu thôi nào.
+@ex 明日は休みのことだし、今夜はゆっくり飲もう。 | Mai được nghỉ, tối nay uống thong thả đi.
+@ex 時間もないことだし、この辺で終わりにしましょう。 | Cũng hết giờ rồi, kết thúc ở đây nhé.
+@cmp ～から | N5 | Lý do thông thường. 「ことだし」 mềm hơn, hàm ý còn lý do khác.
+@cmp ～ので | N4 | Trung tính, lịch sự. 「ことだし」 hay đi với đề nghị.
+@note Vế sau thường là đề nghị, quyết định.
+@theme nguyen-nhan, y-chi
+@ctx hoi-thoai
+@book shin-n2 | 17
+
+@p 128 | ～のことだから
+@group 5
+@mean Vì là ... nên chắc chắn ..., như ... thì chắc ...
+@core Dựa vào tính cách quen thuộc của người đó để suy đoán.
+@key のことだから
+@form N(người) ＋ のことだから
+@exp Đi với danh từ chỉ người mà người nói và người nghe đều biết rõ tính cách. Vế sau là suy đoán hoặc phán đoán dựa trên tính cách đó, kiểu 'là cô ấy thì chắc…'.
+@ex 時間に正確な彼のことだから、きっと遅れないだろう。 | Anh ấy vốn chính xác về giờ giấc nên chắc sẽ không trễ.
+@ex 彼女のことだから、きっとうまくやっているよ。 | Là cô ấy thì chắc chắn đang làm tốt thôi.
+@ex 心配性の母のことだから、また電話をかけてくるだろう。 | Mẹ tôi hay lo nên chắc lại gọi điện.
+@ex あの人のことだから、約束を忘れているかもしれない。 | Là người đó nên có thể đã quên cuộc hẹn.
+@cmp ～だから | N5 | Lý do thông thường. 「のことだから」 gắn với tính cách người.
+@note Chỉ đi với người hoặc tập thể quen thuộc, vế sau là suy đoán.
+@theme nguyen-nhan, suy-doan
+@ctx hoi-thoai
+@book shin-n2 | 17
+
+@p 129 | ～に越したことはない
+@group 11
+@mean Không gì bằng ..., tốt nhất là ...
+@core Lẽ thường thì làm như vậy là tốt nhất.
+@key に越したことはない ;; に越したことはありません
+@form V辞書形／Vない形 ＋ に越したことはない
+@form イ形容詞／ナ形容詞(である) ＋ に越したことはない
+@form N(である) ＋ に越したことはない
+@exp Nêu lời khuyên mang tính lẽ thường: làm như thế thì tốt hơn cả, dù không bắt buộc. Thường đi với 「できれば」, 「何事も」.
+@ex 準備は早めにしておくに越したことはない。 | Chuẩn bị sớm thì không gì bằng.
+@ex 健康は、いいに越したことはない。 | Sức khỏe tốt thì không gì bằng.
+@ex 海外で働くには、英語ができるに越したことはない。 | Muốn làm việc ở nước ngoài thì biết tiếng Anh là tốt nhất.
+@ex 傘は持って行くに越したことはない。 | Mang theo ô vẫn là tốt nhất.
+@cmp ～ほうがいい | N4 | Khuyên nên làm. 「に越したことはない」 mang tính lẽ thường, không ép buộc.
+@note Dùng cho điều ai cũng đồng ý là tốt, không đưa ra mệnh lệnh.
+@theme danh-gia, y-chi
+@ctx hoi-thoai, van-ban
+@book shin-n2 | 23
+
+@p 130 | ～てしかたがない／～てしょうがない
+@group 11
+@mean ... không chịu nổi, ... quá đi mất
+@core Cảm xúc hoặc cảm giác mạnh đến mức không kiềm chế được.
+@key しかたがない ;; しょうがない ;; しかたない
+@form Vて形 ＋ しかたがない／しょうがない
+@form イ形容詞くて／ナ形容詞で ＋ しかたがない
+@exp Diễn tả cảm xúc, cảm giác (đau, buồn ngủ, tò mò, lo lắng…) mạnh đến mức không chịu nổi. Chỉ dùng cho cảm giác của người nói (hoặc ngôi thứ ba ở dạng tường thuật).
+@ex 明日の試験が心配でしかたがない。 | Tôi lo cho kỳ thi ngày mai đến mức không chịu nổi.
+@ex 眠くてしょうがない。 | Buồn ngủ không chịu nổi.
+@ex 結果が気になってしかたがない。 | Tôi không chịu nổi vì cứ lo kết quả.
+@ex 彼女に会いたくてしかたがない。 | Tôi nhớ muốn gặp cô ấy không chịu nổi.
+@cmp ～てたまらない | N2 | Gần như đồng nghĩa, thường dùng cảm giác thể chất.
+@cmp ～てならない | N2 | Văn viết hơn, thường cho cảm xúc tự nhiên nảy sinh.
+@note Không dùng để diễn tả mong muốn của người khác trực tiếp.
+@theme cam-xuc, nhan-manh
+@ctx hoi-thoai
+@book shin-n2 | 25
+
+@p 131 | ～ないものか／～ものだろうか
+@group 11
+@mean Không thể nào ... được sao?, giá mà có thể ...
+@core Mong muốn tha thiết điều gì đó khó thực hiện.
+@key ないものか ;; ないものだろうか ;; ものだろうか
+@form Vない形 ＋ ものか／ものだろうか
+@form Vる／可能形 ＋ ものだろうか
+@exp Diễn tả mong muốn mạnh mẽ về điều gì đó khó thực hiện, hoặc trăn trở tìm cách. Thường dùng độc thoại, trong văn viết nói về suy nghĩ cá nhân.
+@ex この問題は、何とか解決できないものか。 | Vấn đề này không thể nào giải quyết được sao.
+@ex もう少し安くならないものだろうか。 | Không thể rẻ hơn chút nữa sao?
+@ex 毎日の通勤時間を短縮できないものか。 | Không có cách nào rút ngắn thời gian đi làm hằng ngày sao?
+@ex 彼にもう一度チャンスを与えられないものか。 | Không thể cho anh ấy thêm một cơ hội nữa sao?
+@cmp ～ものか | N2 | Phủ định mạnh 'đời nào'. 「ないものか」 là mong muốn.
+@note Hay dùng như lời tự hỏi, tự nói.
+@theme y-chi, cam-xuc
+@ctx van-ban
+@book shin-n2 | 24
+
+@p 132 | ～ものがある
+@group 11
+@mean Có cái gì đó rất ..., thực sự có sức ...
+@core Người nói cảm nhận rõ một đặc điểm nổi bật của sự vật.
+@key ものがある
+@form V辞書形／イ形容詞／ナ形容詞な ＋ ものがある
+@exp Đánh giá chủ quan: dựa trên cảm nhận của bản thân, nói rằng sự vật có điều gì đó rất đáng chú ý (tích cực hoặc tiêu cực). Thường đi với các từ như 感じさせる, 迫る, 訴える.
+@ex 彼の演奏には、人を感動させるものがある。 | Màn trình diễn của anh ấy có một thứ khiến người ta xúc động.
+@ex この絵には、見る人の心に訴えるものがある。 | Bức tranh này có điều gì đó lay động lòng người xem.
+@ex 彼女の努力には、頭が下がるものがある。 | Nỗ lực của cô ấy thật đáng nể.
+@ex 若い頃の苦労は、今になって実感するものがある。 | Những vất vả thời trẻ đến bây giờ mới thấy có ý nghĩa.
+@cmp ～ものだ | N3 | Cảm thán chung. 「ものがある」 nhấn mạnh có yếu tố nổi bật.
+@note Dùng để khẳng định ấn tượng của người nói.
+@theme danh-gia, cam-xuc
+@ctx van-ban, bao-chi
+@book shin-n2 | 26
+
+@p 133 | ～たいものだ／～てほしいものだ
+@group 11
+@mean Rất muốn ..., mong sao ...
+@core Cách nói cảm thán diễn tả mong muốn tha thiết.
+@key たいものだ ;; てほしいものだ
+@form V ます形 ＋ たいものだ
+@form Vて形 ＋ ほしいものだ
+@exp Mong muốn sâu sắc của người nói, thường là điều chưa xảy ra hoặc khó thực hiện, mang chút cảm thán. Văn viết, hoặc nói khi bày tỏ ước nguyện.
+@ex いつか世界中を旅してみたいものだ。 | Tôi rất muốn một ngày nào đó đi du lịch khắp thế giới.
+@ex 一度でいいから、あの人に会ってみたいものだ。 | Chỉ một lần thôi, tôi rất muốn gặp người ấy.
+@ex もう少し、マナーを守ってほしいものだ。 | Mong mọi người giữ phép tắc hơn một chút.
+@ex 子どもたちには、元気に育ってほしいものだ。 | Mong sao bọn trẻ lớn lên khỏe mạnh.
+@cmp ～たい | N5 | Muốn, trung tính. 「たいものだ」 thêm cảm thán, tha thiết.
+@note Hay gặp trong văn viết, ước nguyện.
+@theme y-chi, cam-xuc
+@ctx van-ban
+@book shin-n2 | 26
+
+@p 134 | ～(よ)うではないか
+@group 11
+@mean Nào chúng ta hãy cùng ... nhé
+@core Kêu gọi mọi người cùng hành động, giọng quyết tâm, trang trọng.
+@key ようではないか ;; うではないか ;; じゃないか
+@form V意向形 ＋ ではないか
+@exp Lời kêu gọi mạnh mẽ trong diễn thuyết, họp mít tinh, thường do nam giới nói. Mang tính trang trọng, cứng. Dạng nói thân mật hơn là 「～(よ)うじゃないか」.
+@ex 力を合わせて、この問題を解決しようではないか。 | Nào chúng ta hãy cùng chung sức giải quyết vấn đề này.
+@ex 最後まで頑張ろうではないか。 | Hãy cùng cố gắng đến cùng.
+@ex 今日は思い切り楽しもうじゃないか。 | Hôm nay hãy vui hết mình nào.
+@ex みんなで新しい時代を築こうではないか。 | Mọi người cùng xây dựng một thời đại mới nhé.
+@cmp ～ましょう | N5 | Rủ rê lịch sự thông thường. 「ようではないか」 trang trọng, hùng hồn.
+@note Không dùng khi nói với người trên.
+@theme y-chi
+@ctx van-ban, cong-ty
+@book shin-n2 | 24
+
+@p 135 | ～てでも／～までして
+@group 11
+@mean Dù có phải ... cũng, thậm chí ... cũng
+@core Sẵn sàng làm cả việc cực đoan để đạt mục đích.
+@key てでも ;; までして ;; てまで
+@form Vて形 ＋ でも
+@form N ＋ までして
+@form Vて形 ＋ まで
+@exp Nêu hành động cực đoan hoặc tốn kém mà người nói sẵn sàng làm để đạt mục đích. 「てでも」 nhấn mạnh quyết tâm. 「てまで／までして」 thường dùng để nghi ngờ, phê phán 'có đáng để làm đến thế không'.
+@ex どんなに苦しくても、借金をしてでも留学したい。 | Dù khó khăn thế nào, dù phải vay nợ tôi cũng muốn đi du học.
+@ex 彼は睡眠時間を削ってでも、勉強を続けた。 | Anh ấy dù phải bớt giờ ngủ vẫn tiếp tục học.
+@ex 友達を裏切ってまで、成功したいとは思わない。 | Tôi không muốn thành công đến mức phản bội bạn bè.
+@ex そんなに無理をしてまで、働く必要はない。 | Không cần phải cố làm việc đến mức quá sức như vậy.
+@cmp ～さえ | N2 | 'Ngay cả'. 「てでも」 nói về hành động cực đoan.
+@note 「てまで」 thường mang ý phê phán, nghi vấn.
+@theme y-chi, nhan-manh
+@ctx hoi-thoai
+@book shin-n2 | 21
+
+@p 136 | ～にこたえて
+@group 4
+@mean Đáp lại ..., đáp ứng ...
+@core Hành động nhằm đáp ứng kỳ vọng, yêu cầu của người khác.
+@key にこたえて ;; に応えて ;; にこたえ
+@form N(期待・要望・声援・リクエスト) ＋ にこたえて
+@exp Đi với danh từ chỉ mong muốn, kỳ vọng, yêu cầu như 期待, 要望, 声援, リクエスト, 質問. Diễn tả hành động đáp ứng lại những điều đó.
+@ex 会社は、お客様の要望にこたえて、新商品を開発した。 | Công ty đã phát triển sản phẩm mới để đáp ứng yêu cầu của khách hàng.
+@ex 観客の声援にこたえて、選手は手を振った。 | Đáp lại tiếng cổ vũ của khán giả, cầu thủ vẫy tay.
+@ex 彼は両親の期待にこたえて、見事合格した。 | Anh ấy không phụ lòng mong đợi của cha mẹ, đã đỗ xuất sắc.
+@ex ファンのリクエストにこたえて、アンコールを歌った。 | Đáp ứng yêu cầu của người hâm mộ, ca sĩ hát thêm bài.
+@cmp ～に対して | N3 | Đối với. 「にこたえて」 nhấn mạnh đáp lại kỳ vọng.
+@note Vế trước phải là điều người khác mong đợi hoặc yêu cầu.
+@theme chu-de, y-chi
+@ctx cong-ty, bao-chi
+@book shin-n2 | 7
+
+@p 137 | ～を抜きにしては／～抜きで
+@group 7
+@mean Nếu bỏ ... thì không thể ... / Không có ... (mà làm)
+@core Nếu thiếu điều quan trọng thì không thể thực hiện được.
+@key を抜きにしては ;; 抜きで ;; 抜きに ;; を抜きにして
+@form N ＋ を抜きにしては／抜きにして
+@form N ＋ 抜きで
+@exp Nêu một yếu tố không thể thiếu, mà nếu bỏ nó đi thì sự việc không thành. 「抜きで」 có thể là 'bỏ ... đi' trong ngữ cảnh thông thường (朝食抜きで).
+@ex この問題は、環境への影響を抜きにしては語れない。 | Vấn đề này không thể bàn nếu bỏ qua ảnh hưởng đến môi trường.
+@ex 日本の文化は、仏教を抜きにしては考えられない。 | Không thể nghĩ về văn hóa Nhật nếu bỏ Phật giáo.
+@ex 今日は堅苦しい挨拶は抜きにして、乾杯しましょう。 | Hôm nay bỏ qua những lời chào khách sáo, mình cạn ly nào.
+@ex 朝食抜きで学校に行く子どもが増えている。 | Số trẻ đi học mà bỏ bữa sáng đang tăng lên.
+@cmp ～なしでは | N2 | Không có thì không thể. 「を抜きにしては」 mang tính văn viết hơn.
+@note Vế sau thường là phủ định hoặc 'không thể ...'.
+@theme dieu-kien
+@ctx van-ban
+@book shin-n2 | 15
+
+@p 138 | ～につき
+@group 5
+@mean Vì ..., do ... (thông báo)
+@core Cách nói lý do cứng nhắc dùng trong thông báo, thông cáo.
+@key につき
+@form N ＋ につき
+@exp Đi với danh từ chỉ sự việc, dùng trong thông báo, bảng hiệu, văn bản hành chính để nêu lý do. Ngoài ra còn có nghĩa 'mỗi ...' (一人につき 1 cái), nhưng ở đây chỉ nghĩa 'vì'.
+@ex 本日は、工事中につき、立ち入り禁止です。 | Hôm nay đang thi công nên cấm vào.
+@ex 都合につき、本日は休業いたします。 | Do có việc riêng, hôm nay chúng tôi nghỉ bán.
+@ex 雨天につき、運動会は延期いたします。 | Vì trời mưa nên hội thao hoãn lại.
+@ex 満席につき、新規のご予約はお受けできません。 | Vì đã hết chỗ nên không thể nhận đặt chỗ mới.
+@cmp ～ため(に) | N3 | Nguyên nhân thông thường. 「につき」 cứng hơn, dùng trong thông báo.
+@note Chỉ dùng trong văn bản, thông cáo, không dùng trong hội thoại.
+@theme nguyen-nhan
+@ctx email, cong-ty
+@book shin-n2 | 16
+
+@p 139 | ～とみえる
+@group 10
+@mean Có vẻ như ..., xem ra ...
+@core Nhìn dấu hiệu rồi phỏng đoán.
+@key とみえる ;; と見える ;; とみえて
+@form 普通形 ＋ とみえる／とみえて
+@exp Đưa ra suy đoán dựa trên căn cứ nhìn thấy được. Thường dùng 「～とみえて、…」 để nói căn cứ rồi mới nêu kết quả. Mang sắc thái văn viết.
+@ex 彼は疲れているとみえて、すぐに眠ってしまった。 | Xem ra anh ấy mệt nên ngủ ngay.
+@ex 道が濡れている。夜中に雨が降ったとみえる。 | Đường ướt, xem ra đêm qua đã mưa.
+@ex 彼女は嬉しいとみえて、朝から笑顔だ。 | Cô ấy có vẻ vui nên từ sáng đã tươi cười.
+@ex この辺りはよく人が来るとみえて、足跡がたくさん残っている。 | Chỗ này xem ra hay có người tới nên có nhiều dấu chân.
+@cmp ～らしい | N3 | Suy đoán chung. 「とみえる」 dựa vào dấu hiệu quan sát được.
+@note Chủ yếu dùng cho ngôi thứ ba.
+@theme suy-doan
+@ctx van-ban, van-hoc
+@book shin-n2 | 22
+
+@p 140 | ～まい／～ではあるまいか
+@group 10
+@mean Chắc là không ..., nhất định không ... / Chẳng phải là ... sao?
+@core Dạng phủ định văn viết của ý chí và suy đoán.
+@key まい ;; ではあるまいか ;; ではあるまい
+@form V辞書形(Vます形、1・2グループ) ＋ まい
+@form Vない形 ＋ まい／する → すまい・しまい
+@form N／ナ形容詞 ＋ ではあるまいか
+@exp (1) 「まい」 diễn tả ý chí phủ định (quyết không) hoặc suy đoán phủ định (chắc không). Văn viết, trang trọng. (2) 「ではあるまいか」 là cách nói nhẹ nhàng của 'có lẽ là … đấy'.
+@sense 1 | Chắc là không ..., nhất định không ... (まい)
+@ex 二度とこんな失敗はするまいと心に決めた。 | Tôi tự hứa với lòng sẽ không bao giờ để xảy ra thất bại như vậy lần nữa.
+@ex 彼は約束を忘れはしまい。 | Anh ấy chắc sẽ không quên lời hứa.
+@ex この問題は、すぐには解決すまい。 | Vấn đề này chắc sẽ không giải quyết ngay được.
+@sense 2 | Chẳng phải là ... hay sao? (ではあるまいか)
+@ex これは何かの間違いではあるまいか。 | Đây chẳng phải là một sự nhầm lẫn nào đó sao?
+@cmp ～ないだろう | N4 | Suy đoán phủ định thông thường. 「まい」 văn viết.
+@note Rất ít dùng trong hội thoại.
+@theme suy-doan, y-chi
+@ctx van-ban, van-hoc
+@book shin-n2 | 22
+
+@p 141 | ～(よ)うとしている
+@group 6
+@mean Sắp sửa ..., đang chuẩn bị ...
+@core Sự việc sắp xảy ra ngay trong giây lát.
+@key ようとしている ;; うとしている ;; ようとして ;; うとして
+@form V意向形 ＋ としている
+@exp Diễn tả hành động hoặc sự việc sắp xảy ra, đã ở ngay trước mắt. Thường đi với 「いま」, 「まさに」. Cũng dùng khi chủ ngữ là hiện tượng (mặt trời lặn, năm kết thúc).
+@ex 日が沈もうとしている。 | Mặt trời sắp lặn.
+@ex 電車が出発しようとしているところだ。 | Tàu đang sắp xuất phát.
+@ex 今年も終わろうとしている。 | Năm nay cũng sắp kết thúc.
+@ex 彼は部屋を出ようとして、ふと立ち止まった。 | Anh ấy định bước ra khỏi phòng thì chợt dừng lại.
+@cmp ～ところだ | N4 | Sắp làm. 「(よ)うとしている」 văn viết, thường cho sự việc khách quan.
+@note Có thể là hành động có ý chí hoặc hiện tượng.
+@theme thoi-gian, trang-thai
+@ctx van-ban, bao-chi
+@book shin-n2 | 2

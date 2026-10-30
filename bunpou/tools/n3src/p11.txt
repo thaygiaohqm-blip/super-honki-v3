@@ -1,0 +1,113 @@
+@p 069 | ～は…ことだ（nội dung của ～ được nêu bằng ことだ）
+@group 12
+@mean ... là việc ... (chỉ dùng 「こと」, không dùng 「の」)
+@core Trong câu 「～は…ことだ」, phần giải thích nội dung của ～ phải dùng 「こと」.
+@form 名詞 は ＋ 動詞 普通形 ＋ ことだ・ことです
+@exp Trong câu 「～は…ことだ」 để nêu nội dung của ～ thì chỉ dùng 「こと」, không dùng 「の」.
+@ex わたしの将来の夢は、漫画家になることです。 | Ước mơ tương lai của tôi là trở thành họa sĩ truyện tranh.
+@ex サッカーというスポーツの特徴は、基本的に手を使ってはいけないことだ。 | Đặc điểm của môn bóng đá là về cơ bản không được dùng tay.
+@ex AランチとBランチの違いは、Aが魚料理でBが肉料理であることだ。 | Điểm khác nhau của suất A và suất B là A là món cá còn B là món thịt.
+@cmp ～のは…だ | N3 | Ở mẫu 「のは…だ」 thì dùng 「の」.
+@note 「～ことだ」 còn có nghĩa khuyên nhủ (N2).
+@theme chu-de
+@ctx van-ban
+@book shin-n3 | C | 1
+
+@p 070 | ～ことがある
+@group 12
+@mean Có lúc ... / Thỉnh thoảng ...
+@core Có trường hợp thỉnh thoảng xảy ra.
+@form 動詞 辞書形・ない形 ＋ ことがある
+@exp 「たまに～の場合がある」. Dùng khi nói đôi khi có những trường hợp như thế. Có thể dùng cả quá khứ 「ことがあった」 (có lúc đã như vậy).
+@ex 妻はぼくが話しかけても返事をしないことがある。 | Vợ tôi đôi khi không trả lời dù tôi bắt chuyện.
+@ex 以前は仕事が多くて、12時ごろ家に帰ることもあった。 | Trước kia công việc nhiều nên cũng có lúc 12 giờ mới về nhà.
+@cmp ～たことがある | N4 | Kinh nghiệm đã trải qua; khác với "thỉnh thoảng".
+@note Dạng 「ことも ある」 (cũng có lúc) rất hay gặp.
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | C | 2
+
+@p 071 | ～ことはない
+@group 12
+@mean Không cần phải ... / Không việc gì phải ...
+@core Không cần thiết phải làm việc đó.
+@form 動詞 辞書形 ＋ ことはない
+@exp 「～する必要はない・～しなくてもいい」. Dùng để trấn an hoặc khuyên người nghe rằng không cần làm như thế.
+@ex 面接の質問は簡単ですよ。そんなに心配することはありませんよ。 | Câu hỏi phỏng vấn dễ lắm. Không cần lo lắng đến thế đâu.
+@ex 少し熱があるが、ただのかぜだろう。すぐに病院に行くことはない。 | Hơi sốt nhưng chắc chỉ là cảm. Không cần đi bệnh viện ngay.
+@cmp ～ないことはない | N3 | Hai mẫu hoàn toàn khác nghĩa.
+@note Động từ ở dạng từ điển.
+@theme y-chi
+@ctx hoi-thoai
+@book shin-n3 | C | 3
+
+@p 072 | 感覚を表す動詞＋の（見える・聞こえる・感じる）
+@group 12
+@mean Dùng 「の」 với động từ cảm giác
+@core Khi diễn tả điều cảm nhận bằng giác quan thì chỉ dùng 「の」, không dùng 「こと」.
+@form 動詞 普通形 ＋ の ＋ が・を ＋ 見える・見る・眺める・聞こえる・感じる
+@exp Khi nói về âm thanh, cảnh vật mà người nói cảm nhận bằng giác quan (見る, 見える, 眺める, 聞こえる, 感じる…) thì chỉ dùng 「の」.
+@ex この窓から庭で子どもたちが遊んでいるのが見える。 | Từ cửa sổ này nhìn thấy bọn trẻ đang chơi ngoài vườn.
+@ex あの日、家が大きく揺れるのを感じた。 | Hôm đó tôi cảm thấy ngôi nhà rung lắc mạnh.
+@cmp ～こと | N3 | Với giác quan thì không dùng 「こと」.
+@note Các động từ thường dùng: 見る, 見える, 眺める, 聞こえる, 感じる.
+@theme chu-de
+@ctx hoi-thoai, van-hoc
+@book shin-n3 | C | 4
+
+@p 073 | ～のに(は)…（đánh giá mục đích）
+@group 12
+@mean Để làm ... thì ... (đánh giá về mục đích)
+@core Đánh giá tiện lợi, hữu ích hay cần thiết cho một mục đích.
+@form 動詞 辞書形 ＋ のに(は)
+@exp Khi nêu đánh giá (便利だ, 役に立つ, 必要だ…) về một đối tượng cho mục đích 「～する」 thì chỉ dùng 「の」.
+@ex 車はこの村で生活するのにどうしても必要なのだ。 | Xe hơi nhất định cần thiết để sinh sống ở làng này.
+@ex 短時間で食事をするのにはファストフードがやはり便利だ。 | Muốn ăn nhanh thì đồ ăn nhanh vẫn tiện nhất.
+@cmp ～ために | N4 | 「ために」 nêu mục đích chung; 「のに(は)」 gắn với đánh giá về phương tiện.
+@note Vế sau là 「便利だ」「役に立つ」「必要だ」「いい」.
+@theme muc-dich, danh-gia
+@ctx hoi-thoai
+@book shin-n3 | C | 5
+
+@p 074 | ～のは…だ（nhấn mạnh）
+@group 12
+@mean Chính là ... (nhấn mạnh thông tin)
+@core Muốn nhấn mạnh thông tin, đặt nó ở vị trí 「…」 của câu 「～のは…だ」.
+@form 動詞 普通形 ＋ のは ＋ 名詞・時・理由 ＋ だ
+@exp Cấu trúc chẻ (cleft): nhấn mạnh thông tin người nói muốn làm nổi bật ở vị trí 「…」. Khi đó chỉ dùng 「の」.
+@ex 彼女に初めて会ったのは5年前である。 | Lần đầu tôi gặp cô ấy là 5 năm trước.
+@ex 遅く帰ったのは残業があったからだ。 | Lý do về muộn là vì phải làm thêm giờ.
+@cmp ～ことだ | N3 | Mẫu 「は…ことだ」 là "nội dung là việc ..."; 「のは…だ」 là nhấn mạnh thông tin.
+@note Phần 「…」 có thể là danh từ chỉ thời gian, nơi chốn, lý do, người.
+@theme nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | C | 6
+
+@p 075 | ～というのは…だ
+@group 12
+@mean ... nghĩa là ... / "..." là ...
+@core Giải thích ý nghĩa, định nghĩa của một từ.
+@form 名詞 ＋ というのは…だ
+@exp 「～の意味は…だ」. Dùng để giải thích nghĩa hoặc định nghĩa của từ.
+@ex 正三角形というのは三辺の長さが同じ三角形のことである。 | Tam giác đều là tam giác có ba cạnh bằng nhau.
+@ex 「アクセスする」というのはどんな意味ですか。 | "Access" có nghĩa là gì ạ?
+@cmp ～とは | N2 | Dùng trong văn viết; nghĩa tương tự.
+@note 
+@theme chu-de
+@ctx van-ban
+@book shin-n3 | C | 7
+
+@p 076 | ～のではないか／～のではないだろうか
+@group 12
+@mean Chẳng phải là ... sao? / Tôi nghĩ là ...
+@core Cách nói giảm khi nêu ý kiến (「～と思う」).
+@form 普通形 (ナ形容詞 だ→な・名詞 だ→な) ＋ のではないか・のではないだろうか
+@exp Dùng để nêu suy nghĩ, phán đoán một cách nhẹ nhàng, tương đương 「～と思う」.
+@ex こんなに塩辛い食品は体によくないのではないか。 | Thực phẩm mặn thế này chẳng phải không tốt cho cơ thể sao?
+@ex もしかしたらヤンさんは本当のことを知っているのではないでしょうか。 | Biết đâu anh Yang biết sự thật rồi cũng nên.
+@cmp ～かもしれない | N4 | Cùng nêu khả năng; 「のではないか」 mang tính nêu quan điểm.
+@note Trước 「のではないか」 là dạng thường, ナ形/名詞 dùng 「な」.
+@theme suy-doan
+@ctx hoi-thoai, van-ban
+@book shin-n3 | C | 8
+

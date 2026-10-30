@@ -1,0 +1,141 @@
+@p 077 | ～(かの)ようだ／～のようだ／～(かの)ように／～のように（ví von）
+@group 13
+@mean Như là ... / Cứ như thể ...
+@core Ví von bằng một thứ rất giống.
+@form 名詞 ＋ の ＋ ようだ・ように・ような
+@form 名詞 だ→である ＋ かのような・かのように
+@form 動詞 普通形 ＋ (かの)ようだ・(かの)ように
+@exp So sánh, ví von sự việc với một thứ giống nó. 「かのようだ」 nói như thể điều đó đã xảy ra (thực tế thì không phải).
+@ex 今日は暖かくて、まるで春が来たかのようだ。 | Hôm nay ấm áp, cứ như thể mùa xuân đã đến.
+@ex 朝から晩までロボットのように働いた。 | Tôi làm việc từ sáng đến tối như người máy.
+@ex バケツをひっくり返したような雨だった。 | Trời mưa như trút nước (như lật úp cái xô).
+@cmp ～らしい | N3 | 「らしい」 là đặc trưng xứng danh; 「のようだ」 là ví von.
+@note 「まるで」 hay đi cùng.
+@theme so-sanh
+@ctx hoi-thoai, van-hoc
+@book shin-n3 | D | 1
+
+@p 078 | ～ように（giống như, đại khái như nhau）
+@group 13
+@mean Giống như ... / Như ...
+@core Diễn tả hai việc đại khái giống nhau.
+@form 名詞 の ・ 普通形 (ナ形容詞 だ→な／である・名詞 だ→である) ＋ ように
+@exp Diễn tả A giống B (「大体同じであること」).
+@ex 人間のように、植物にも栄養が必要だ。 | Giống như con người, thực vật cũng cần dinh dưỡng.
+@ex 母親が明るい人だったように、その娘たちも性格が明るい。 | Như mẹ là người vui vẻ, mấy cô con gái cũng tính tình vui vẻ.
+@ex わたしたちはあなたが想像しているような関係ではありませんよ。 | Chúng tôi không phải mối quan hệ như bạn tưởng tượng đâu.
+@cmp ～のように（ví dụ） | N3 | Mẫu này nhấn mạnh giống nhau.
+@note Dạng danh từ bổ nghĩa: ～ような＋N.
+@theme so-sanh
+@ctx hoi-thoai
+@book shin-n3 | D | 2
+
+@p 079 | ～のように／～のような（nêu ví dụ）
+@group 13
+@mean Như là ... / Chẳng hạn như ...
+@core Nêu ví dụ.
+@form 名詞 の ＋ ように・ような ＋ 名詞
+@exp Dùng để nêu ví dụ cụ thể.
+@ex 日本語のように、使う文字が3種類もある言語は珍しい。 | Ngôn ngữ như tiếng Nhật, dùng tới ba loại chữ, là hiếm.
+@ex わたしはにんじんやピーマンのような濃い色の野菜が好きだ。 | Tôi thích rau màu đậm như cà rốt hay ớt chuông.
+@ex 林さんは優しい。林さんのような人とつき合いたい。 | Anh Hayashi hiền. Tôi muốn kết bạn với người như anh Hayashi.
+@cmp ～など | N3 | 「など」 liệt kê; 「のような」 nêu ví dụ điển hình.
+@note 
+@theme liet-ke
+@ctx hoi-thoai
+@book shin-n3 | D | 3
+
+@p 080 | ～ように（前置き）
+@group 13
+@mean Như đã ... / Như bạn đã biết ...
+@core Mở đầu câu bằng điều đã được biết, rồi nêu nội dung chính.
+@form 動詞 辞書形・た形・ている ＋ ように
+@exp Đặt ở đầu câu, nêu rằng nội dung 「…」 đã được biết rồi. Ở ③ là cách nói quen dùng nên cách nối là ngoại lệ.
+@ex 前にも話したように、来週はわたしは日本にいません。 | Như tôi đã nói trước đây, tuần sau tôi không ở Nhật.
+@ex 今朝の新聞に書いてあったように、今年は米のできがいいらしい。 | Như báo sáng nay viết, năm nay lúa gạo hình như được mùa.
+@ex ご存じのように、日本は台風が多い国です。 | Như quý vị biết, Nhật Bản là nước có nhiều bão.
+@cmp ～とおり | N3 | 「とおり」 nhấn mạnh sự làm đúng theo; 「ように」 dùng để dẫn thông tin đã biết.
+@note 
+@theme can-cu
+@ctx hoi-thoai, van-ban
+@book shin-n3 | D | 4
+
+@p 081 | ～ように（期待・目的）
+@group 13
+@mean Để (cho) ... / Mong sao ...
+@core Diễn tả mong muốn sự việc sẽ xảy ra.
+@form 動詞 辞書形・ない形 ＋ ように
+@exp Biểu thị mong muốn điều gì đó xảy ra. Vế trước dùng động từ không biểu thị ý chí của người nói (động từ vô ý chí, khả năng, chủ ngữ ngôi thứ ba).
+@ex よく眠れるようにワインを少し飲んだ。 | Tôi uống chút rượu vang để ngủ ngon.
+@ex 池田さんは難しい社会問題をだれにでもわかるように説明する。 | Anh Ikeda giải thích vấn đề xã hội khó sao cho ai cũng hiểu.
+@ex 赤ん坊が目を覚まさないようにテレビの音を小さくした。 | Tôi vặn nhỏ tiếng tivi để em bé không thức dậy.
+@cmp ～ために | N4 | 「ために」 đi với động từ ý chí của người nói; 「ように」 đi với động từ không ý chí.
+@note Xem phần ワンポイント: ように/ために.
+@theme muc-dich
+@ctx hoi-thoai
+@book shin-n3 | D | 5
+
+@p 082 | ～ように／～ようにと／～よう（yêu cầu, cầu mong）
+@group 13
+@mean Hãy ... (yêu cầu, dặn dò, cầu chúc)
+@core Diễn tả sự yêu cầu, nhờ vả hoặc cầu mong.
+@form 動詞 辞書形・ない形 ＋ ように・ようにと・よう
+@exp Diễn tả nội dung yêu cầu, nhờ vả, chỉ thị. Cũng dùng khi cầu nguyện (④). Khi nhờ lịch sự có thể dùng thể ます (③④).
+@ex 雑誌を買ってくるように頼まれた。 | Tôi được nhờ mua tạp chí về.
+@ex 電車の中では携帯電話で話さないようにと注意された。 | Tôi bị nhắc không được nói điện thoại trên tàu.
+@ex 今週中にご返信くださいますよう、お願い申し上げます。 | Kính mong quý vị hồi âm trong tuần này.
+@ex 試験に合格できますように。 | Cầu mong thi đỗ.
+@cmp ～てください | N5 | 「ように」 là gián tiếp (dặn lại, báo cáo yêu cầu).
+@note Xem thêm 「ようだ」「ようになる」「ようにする」.
+@theme y-chi, cho-nhan
+@ctx hoi-thoai, email
+@book shin-n3 | D | 6
+
+@p 083 | ～わけだ／～というわけだ
+@group 14
+@mean Hóa ra là ... / Thảo nào ... / Tức là ...
+@core Từ tình hình suy ra kết luận đương nhiên; hoặc hiểu ra lý do.
+@form 普通形 (ナ形容詞 だ→な／である・名詞 だ→の／な／である) ＋ わけだ
+@form 普通形 (ナ形容詞 だ・名詞 だ) ＋ というわけだ
+@exp Nghĩa 1 (①②③): từ hoàn cảnh suy ra kết luận đương nhiên. Nghĩa 2 (④⑤): xét tình hình thì hiểu và chấp nhận một sự thật ("thảo nào").
+@ex ここから東京駅まで1時間半か。じゃ、今から出れば9時には着くわけだ。 | Từ đây đến ga Tokyo mất 1 tiếng rưỡi à. Vậy bây giờ đi thì 9 giờ sẽ đến nơi.
+@ex ほかに空いている日がなかったから、その日に会うことにしたわけです。 | Vì không còn ngày trống nào khác nên tôi mới quyết định gặp vào hôm đó.
+@ex 金曜日は授業が休み、月曜日は祝日だ。つまり、4連休というわけだ。 | Thứ Sáu nghỉ học, thứ Hai là ngày lễ. Tức là nghỉ liền 4 ngày.
+@ex 夜中に雪が降ったんですね。それで、きのうの夜あんなに寒かったわけですね。 | Đêm tuyết rơi nhỉ. Thảo nào tối qua lạnh đến thế.
+@ex 彼女のお父さんは画家ですか。それで、彼女も絵が上手だというわけなんですね。 | Bố cô ấy là họa sĩ à. Thảo nào cô ấy cũng vẽ giỏi.
+@cmp ～はずだ | N4 | 「はずだ」 là phán đoán; 「わけだ」 là suy ra hoặc hiểu ra từ tình hình.
+@note 「つまり／それで」 hay đi trước.
+@theme ket-qua, suy-doan
+@ctx hoi-thoai
+@book shin-n3 | E | 1
+
+@p 084 | ～わけにはいかない
+@group 14
+@mean Không thể (nào) ... được
+@core Vì hoàn cảnh tâm lý, xã hội nên không thể làm.
+@form 動詞 辞書形 ＋ わけにはいかない
+@exp 「心理的事情があるので、～することはできない」. Không phải do thiếu năng lực mà do muốn làm nhưng có hoàn cảnh (đạo lý xã hội, tâm lý) nên không làm được. Chủ ngữ thường là ngôi thứ nhất.
+@ex 親友がお金を貸してほしいと言っている。親友の頼みを断るわけにはいかない。 | Bạn thân nhờ cho vay tiền. Tôi không thể từ chối lời nhờ của bạn thân.
+@ex 今日は車で来たんです。お酒を飲むわけにはいきません。 | Hôm nay tôi lái xe đến. Tôi không thể uống rượu.
+@ex かぜをひいてしまったが、大事な会議があるから、会社を休むわけにはいかない。 | Tôi bị cảm nhưng có cuộc họp quan trọng nên không thể nghỉ làm.
+@cmp ～ことはできない | N4 | 「ことはできない」 chỉ khả năng; 「わけにはいかない」 chỉ hoàn cảnh không cho phép.
+@note 
+@theme y-chi, kha-nang
+@ctx hoi-thoai
+@book shin-n3 | E | 2
+
+@p 085 | ～ないわけにはいかない
+@group 14
+@mean Không thể không ... / Buộc phải ...
+@core Vì hoàn cảnh tâm lý, đạo lý nên buộc phải làm.
+@form 動詞 ない形 ＋ わけにはいかない
+@exp 「心理的事情があるので、～しなければならない」. Không phải do quy tắc buộc mà do đạo lý xã hội, nghĩa vụ tâm lý nên phải làm dù không muốn lắm. Chủ ngữ thường là ngôi thứ nhất.
+@ex この町では自転車がないとやはり困る。買わないわけにはいかない。 | Ở thị trấn này không có xe đạp thì vẫn khó. Không thể không mua.
+@ex 本当に暑いですけど、何も着ないわけにはいきませんよね。 | Nóng thật nhưng không thể không mặc gì nhỉ.
+@ex このCD、ずっと持っていたいけど、図書館のだから返さないわけにはいかない。 | Đĩa CD này tôi muốn giữ mãi nhưng của thư viện nên không thể không trả.
+@cmp ～なければならない | N4 | 「なければならない」 là bắt buộc theo quy tắc; 「ないわけにはいかない」 là nghĩa vụ tâm lý.
+@note 
+@theme y-chi
+@ctx hoi-thoai
+@book shin-n3 | E | 3
+

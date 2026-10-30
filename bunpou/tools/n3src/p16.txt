@@ -1,0 +1,185 @@
+@p 121 | ～かける／～かけだ
+@group 19
+@mean Đang ... dở / Mới ... được một nửa
+@core Hành động bắt đầu nhưng chưa xong, chưa hoàn tất.
+@form 動詞 ます形 ＋ かける・かけだ・かけの ＋ 名詞
+@exp 「全部～し終わっていない」. Diễn tả hành động đã bắt đầu làm nhưng chưa kết thúc.
+@ex 彼女は何か言いかけて、黙ってしまった。 | Cô ấy định nói điều gì đó rồi lại im lặng.
+@ex 母は読みかけの本をおいて、買い物に出かけた。 | Mẹ đặt quyển sách đang đọc dở xuống rồi đi mua sắm.
+@cmp ～きる | N3 | Ngược nghĩa: làm xong hoàn toàn.
+@note 
+@theme thoi-gian, trang-thai
+@ctx hoi-thoai
+@book shin-n3 | J | 1
+
+@p 122 | ～きる
+@group 19
+@mean ... hết / ... trọn vẹn / ... đến cùng
+@core Hoàn thành hành động đến cuối; làm hết sức.
+@form 動詞 ます形 ＋ きる
+@exp 「全部／完全に～する」. Diễn tả hành động hoàn tất, hay làm cạn kiệt. Phủ định 「～きれない」 nghĩa là không thể làm hết.
+@ex 40キロの長い距離を走りきった。 | Tôi đã chạy hết quãng đường dài 40 km.
+@ex こんなにたくさん、一人では食べきれない。 | Nhiều thế này một mình không ăn hết được.
+@cmp ～かける | N3 | Ngược nghĩa.
+@note 
+@theme thoi-gian, ket-qua
+@ctx hoi-thoai
+@book shin-n3 | J | 2
+
+@p 123 | ～通す
+@group 19
+@mean Làm suốt đến cùng / Giữ mãi
+@core Tiếp tục làm một việc đến cuối cùng, không bỏ dở.
+@form 動詞 ます形 ＋ 通す
+@exp 「最後まで～し続ける」. Diễn tả kiên trì làm cho đến cùng.
+@ex 自分で決めたことは最後までやり通そう。 | Việc mình đã quyết thì làm đến cùng.
+@ex 彼は何を聞かれても黙り通した。 | Dù bị hỏi gì anh ấy cũng im lặng đến cùng.
+@cmp ～きる | N3 | 「きる」 nhấn mạnh hoàn tất; 「通す」 nhấn mạnh duy trì liên tục.
+@note 
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | J | 3
+
+@p 124 | ～出す
+@group 19
+@mean Bắt đầu ... (đột ngột)
+@core Đột ngột bắt đầu hành động.
+@form 動詞 ます形 ＋ 出す
+@exp 「(突然・急に)～し始める」.
+@ex 彼はわたしの顔を見ると、突然笑い出した。 | Anh ấy vừa nhìn mặt tôi là bỗng phì cười.
+@ex 電池を入れ替えたら、おもちゃの車が急に動き出した。 | Thay pin xong thì chiếc xe đồ chơi bỗng chuyển động.
+@cmp ～始める | N4 | 「始める」 trung tính; 「出す」 đột ngột.
+@note 
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | J | 4
+
+@p 125 | ～やすい
+@group 19
+@mean Dễ ... / Dễ bị ...
+@core Dễ dàng làm hoặc dễ xảy ra.
+@form 動詞 ます形 ＋ やすい
+@exp 「簡単に～できる／簡単に～してしまう」.
+@ex 田中先生の話はわかりやすい。 | Bài nói của thầy Tanaka dễ hiểu.
+@ex 薄くて破れやすい紙だから気をつけて。 | Giấy mỏng dễ rách nên hãy cẩn thận.
+@cmp ～にくい | N3 | Ngược nghĩa.
+@note 
+@theme trang-thai
+@ctx hoi-thoai
+@book shin-n3 | J | 5
+
+@p 126 | ～にくい
+@group 19
+@mean Khó ... / Khó mà ...
+@core Khó làm; không dễ thực hiện.
+@form 動詞 ます形 ＋ にくい
+@exp 「簡単に～できない／簡単には～しない」.
+@ex この肉は硬くて食べにくい。 | Miếng thịt này cứng nên khó ăn.
+@ex 丈夫で割れにくいカップはありませんか。 | Có cái cốc nào bền và khó vỡ không?
+@cmp ～づらい | N3 | 「づらい」 nhấn mạnh sự khó chịu về tâm lý.
+@note 
+@theme trang-thai
+@ctx hoi-thoai
+@book shin-n3 | J | 6
+
+@p 127 | ～づらい
+@group 19
+@mean Khó ... (vì ngại, khó chịu)
+@core Làm việc đó khiến người nói khó xử, mệt mỏi.
+@form 動詞 ます形 ＋ づらい
+@exp 「～するのが難しくて困る」. Thường có yếu tố tâm lý, cảm giác khó chịu.
+@ex 個人的なことなので職場の人には頼みづらい。 | Là chuyện cá nhân nên khó nhờ người ở chỗ làm.
+@ex ここは黒板の字が見づらい位置です。 | Chỗ này là vị trí khó nhìn chữ trên bảng.
+@cmp ～にくい | N3 | 「にくい」 khó khách quan hơn.
+@note 
+@theme trang-thai
+@ctx hoi-thoai
+@book shin-n3 | J | 7
+
+@p 128 | ～すぎる／～すぎだ
+@group 19
+@mean Quá ... / ... quá mức
+@core Vượt mức độ thích hợp.
+@form 動詞 ます形・イ形容詞 い→φ・ナ形容詞 ＋ すぎる・すぎだ
+@exp 「適切な程度を超えて～だ・～する」.
+@ex この靴はわたしには小さすぎる。 | Đôi giày này nhỏ quá với tôi.
+@ex おいしかったので、食べすぎてしまった。 | Vì ngon nên tôi ăn quá nhiều.
+@ex 君、それは言いすぎだよ。 | Bạn, nói thế là quá lời rồi.
+@cmp ～すぎ | N4 | Cùng nghĩa.
+@note 
+@theme danh-gia
+@ctx hoi-thoai
+@book shin-n3 | J | 8
+
+@p 129 | ～がちだ
+@group 19
+@mean Hay ... / Có xu hướng ...
+@core Có khuynh hướng dễ rơi vào trạng thái (thường xấu).
+@form 名詞・動詞 ます形 ＋ がちだ
+@exp 「～の状態になる傾向がある」.
+@ex 雨のため工事は遅れがちだ。 | Vì mưa nên công trình hay bị chậm.
+@ex 遠慮がちに由香さんに年齢を聞いてみた。 | Tôi ngại ngần hỏi tuổi chị Yuka.
+@cmp ～やすい | N3 | 「がち」 thường là chiều hướng xấu.
+@note 
+@theme trang-thai
+@ctx hoi-thoai
+@book shin-n3 | J | 9
+
+@p 130 | ～らしい（đúng là）
+@group 19
+@mean Đúng kiểu ... / Xứng với ...
+@core Mang đúng đặc trưng điển hình của thứ đó.
+@form 名詞 ＋ らしい
+@exp 「～のイメージと同じだ」: đúng như hình dung về ~.
+@ex 今日は暖かくて春らしい一日だった。 | Hôm nay ấm áp, đúng là một ngày kiểu mùa xuân.
+@ex いつもの元気なリーさんらしくないですね。 | Không giống anh Lee hay vui vẻ thường ngày nhỉ.
+@cmp ～のようだ | N3 | 「のようだ」 chỉ giống nhưng không thật sự là.
+@note 
+@theme so-sanh
+@ctx hoi-thoai
+@book shin-n3 | J | 10
+
+@p 131 | ～っぽい
+@group 19
+@mean Có vẻ ... / Hơi ... / Mang tính ...
+@core Có yếu tố, tính chất của cái gì đó (thường không tốt).
+@form 名詞・動詞 ます形 ＋ っぽい
+@exp 「～のような要素・性質がある」.
+@ex 彼女はわがままばかり言って、子どもっぽい人だ。 | Cô ấy chỉ nói toàn điều ích kỷ, đúng là người trẻ con.
+@ex 弟は飽きっぽくて、何でも途中でやめてしまう。 | Em trai tôi hay chán, việc gì cũng bỏ dở giữa chừng.
+@cmp ～らしい | N3 | 「っぽい」 thường là sắc thái tiêu cực.
+@note 
+@theme trang-thai
+@ctx hoi-thoai
+@book shin-n3 | J | 11
+
+@p 132 | ～のようだ／～みたいだ（giống như）
+@group 19
+@mean Giống như ... / Cứ như là ...
+@core Giống rất nhiều nhưng không thật sự là.
+@form 名詞 ＋ の ＋ ようだ・みたいだ
+@form 名詞 ＋ の ＋ ような・みたいな ＋ 名詞
+@exp 「～によく似ている」. 「みたいだ」 là văn nói.
+@ex ここから見える景色は絵のようだ。 | Phong cảnh nhìn từ đây như một bức tranh.
+@ex このパンはケーキみたいに甘くて軟らかい。 | Bánh mì này ngọt và mềm như bánh kem.
+@ex ガラスみたいな氷を靴で踏んで遊んだ。 | Tôi giẫm lên lớp băng như thủy tinh bằng giày để chơi.
+@cmp ～らしい | N3 | 「らしい」 là đúng kiểu; 「のようだ」 chỉ giống.
+@note 
+@theme so-sanh
+@ctx hoi-thoai
+@book shin-n3 | J | 12
+
+@p 133 | ～だらけ
+@group 19
+@mean Toàn là ... / Đầy ...
+@core Nhiều thứ không mong muốn xuất hiện khắp nơi.
+@form 名詞 ＋ だらけだ
+@exp 「(いやなもの)がたくさんある」. Dùng với ý tiêu cực.
+@ex 返ってきたテストは間違いだらけだった。 | Bài kiểm tra trả lại đầy lỗi sai.
+@ex 毎日サッカーをしていたら、傷だらけになった。 | Ngày nào cũng đá bóng nên người đầy vết thương.
+@cmp ～まみれ | N1 | 「だらけ」 là nhiều thứ; 「まみれ」 là bị dính đầy.
+@note 
+@theme trang-thai
+@ctx hoi-thoai
+@book shin-n3 | J | 13
+

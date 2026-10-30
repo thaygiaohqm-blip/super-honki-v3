@@ -1,0 +1,157 @@
+@p 024 | ～(の)なら
+@group 3
+@mean Nếu là ... thì ... / Đã vậy thì ...
+@core Dựa trên thông tin vừa nghe hoặc thấy từ người khác để đưa ra phán đoán, ý chí, đề nghị.
+@form 普通形 (ナ形容詞 だ→φ／である・名詞 だ→φ／である) ＋ (の)なら
+@exp A là thông tin người nói tiếp nhận từ lời nói hay dáng vẻ của người khác (hoặc tình huống hiện tại). Vế sau B là phán đoán, ý chí của người nói hoặc câu tác động đến người nghe. Với ナ形容詞 và danh từ ở dạng 「だ」 thì không dùng 「のなら」, chỉ dùng 「なら」.
+@ex その箱、もう使わないんですか。使わないならわたしにください。 | Cái hộp đó anh không dùng nữa à? Nếu không dùng thì cho tôi đi.
+@ex ああ、あしたは雨か。雨ならサイクリングには行けそうもないね。 | À, mai mưa à. Nếu mưa thì chắc không đi đạp xe được rồi nhỉ.
+@ex その本、読んでしまったのならわたしに貸してくれませんか。 | Cuốn sách đó nếu anh đọc xong rồi thì cho tôi mượn được không?
+@cmp ～たら | N4 | 「たら」 không cần dựa vào thông tin từ người khác; 「なら」 lấy thông tin đã biết làm tiền đề.
+@note Khác với 「ば／たら」, vế trước của 「なら」 thường là điều đã biết, đã nghe thấy.
+@theme dieu-kien
+@ctx hoi-thoai
+@book shin-n3 | 6 | 1
+
+@p 025 | ～ては…／～(の)では…
+@group 3
+@mean Nếu ... thì (sẽ có kết quả xấu)
+@core Nếu A (sự thật hoặc giả định) thì dẫn đến kết quả không tốt B.
+@form 動詞 て形・イ形容詞 くて・ナ形容詞 で・名詞 で ＋ は
+@form 普通形 (ナ形容詞 だ→な・名詞 だ→な) ＋ のでは
+@exp Dạng 「～という事実(または仮定の状況)だと、…という良くない結果になる」. Vế sau B mang nghĩa tiêu cực, không đi với câu thể hiện nguyện vọng, ý chí hay câu tác động đến người nghe.
+@ex 山中さんは手術したばかりだから、お見舞いに行ってはかえって迷惑だろう。 | Anh Yamanaka vừa phẫu thuật xong, nên nếu đi thăm bệnh thì ngược lại sẽ làm phiền anh ấy.
+@ex そんな無責任な態度ではみんなにきらわれますよ。 | Với thái độ vô trách nhiệm như thế thì mọi người sẽ ghét đấy.
+@ex 今から家を建て始めるのでは年内にはでき上がらない。 | Nếu bây giờ mới bắt đầu xây nhà thì trong năm sẽ không xong.
+@cmp ～ば／～たら | N4 | Cùng là điều kiện, nhưng 「ては／のでは」 luôn dẫn đến kết quả xấu.
+@note Vế sau thường là 「だめだ」, 「困る」, 「迷惑だ」, 「～ない」.
+@theme dieu-kien
+@ctx hoi-thoai
+@book shin-n3 | 6 | 2
+
+@p 026 | ～さえ～ば…／～さえ～なら…
+@group 3
+@mean Chỉ cần ... là ...
+@core A là điều kiện tối thiểu để B thành lập.
+@form 名詞 ＋ さえ ＋ 動詞 ば形・イ形容詞 ければ・ナ形容詞 なら・名詞 なら
+@form 動詞 ます形 ＋ さえ ＋ すれば
+@exp Biểu thị điều kiện cần tối thiểu: chỉ cần A xảy ra hoặc được thực hiện là đủ để B thành lập. Với động từ dùng dạng 「ます形＋さえすれば」.
+@ex 太郎は漫画さえ読んでいれば退屈しないようだ。 | Taro hình như chỉ cần có truyện tranh để đọc là không thấy chán.
+@ex 体さえ丈夫ならどんなことにも挑戦できる。 | Chỉ cần cơ thể khỏe mạnh thì thử thách điều gì cũng được.
+@ex 一言「ごめんなさい。」と言いさえすれば、相手は許してくれるだろう。 | Chỉ cần nói một câu "xin lỗi" thì đối phương sẽ tha thứ thôi.
+@cmp ～だけでいい | N4 | Gần nghĩa, nhưng 「さえ～ば」 nhấn mạnh điều kiện tối thiểu cần thiết.
+@note Vế trước và vế sau luôn là quan hệ điều kiện - kết quả.
+@theme dieu-kien, nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | 6 | 3
+
+@p 027 | たとえ～ても…／たとえ～でも…
+@group 3
+@mean Dù cho ... đi nữa thì vẫn ...
+@core Dù giả định hoặc sự thật A, B vẫn xảy ra hoặc phải làm.
+@form たとえ ＋ 動詞 て形・イ形容詞 くて・ナ形容詞 で・名詞 で ＋ も
+@exp Nêu rằng dù A là sự thật hoặc được giả định thì B vẫn xảy ra / được làm, không liên quan đến A. Thường kèm câu thể hiện ý chí, lời khuyên, phán đoán ở vế sau.
+@ex たとえ周りの人たちにどんなに反対されても、ぼくはプロの歌手になりたい。 | Dù mọi người xung quanh phản đối thế nào đi nữa, tôi vẫn muốn trở thành ca sĩ chuyên nghiệp.
+@ex たとえ高くても、仕事に必要なものは買わなければならない。 | Dù đắt đi nữa thì thứ cần cho công việc vẫn phải mua.
+@ex たとえ面倒でも、健康診断は毎年受けたほうがいいですよ。 | Dù có phiền phức thì mỗi năm vẫn nên đi khám sức khỏe.
+@cmp ～ても | N4 | 「たとえ」 làm mạnh thêm giả định "cho dù".
+@note 「たとえ」 hay đi cùng 「どんなに」, 「いくら」.
+@theme nghich-tiep, dieu-kien
+@ctx hoi-thoai
+@book shin-n3 | 6 | 4
+
+@p 028 | ～ば…／～たら…／～なら…（giả định trái thực tế）
+@group 3
+@mean Nếu ... thì (đã) ... (trái với sự thật)
+@core Đặt giả định về điều không có thật rồi nêu kết quả đáng lẽ xảy ra.
+@form 動詞 ば形・イ形容詞 ければ・ナ形容詞 なら・名詞 なら
+@form 動詞 ない形 なければ・イ形容詞 くなければ・ナ形容詞 でなければ・名詞 でなければ
+@form 普通形 (過去形だけ) ＋ ら
+@exp Dùng trong câu giả định 「もし～の場合、…という結果になるはずだが、実際にはそうではない」. Vế A và vế B đều nói điều khác sự thật. Vế sau thường là 「～た」, 「～のだが」, 「～のに」. Với động từ hay dùng dạng 「～ていたら」.
+@ex お金とひまがあればわたしも海外旅行するんだけど……。 | Nếu có tiền và thời gian thì tôi cũng đi du lịch nước ngoài rồi...
+@ex もし寝坊していたらこの飛行機には乗れなかった。間に合ってよかった。 | Nếu ngủ quên thì đã không lên được chuyến bay này. May mà kịp.
+@ex ああ、残念だ。学生なら学生割引でチケットが買えたのに……。 | Ôi, tiếc quá. Nếu là sinh viên thì đã mua được vé giảm giá sinh viên rồi...
+@cmp ～ば（bài 6 mục 3） | N3 | Ở đây là giả định trái thực tế, khác với điều kiện thông thường.
+@note Thường đi cùng 「もし」.
+@theme dieu-kien, suy-doan
+@ctx hoi-thoai
+@book shin-n3 | 6 | 5
+
+@p 029 | ～ということだ／～とのことだ
+@group 4
+@mean Nghe nói ... / Theo ... thì ...
+@core Truyền đạt lại thông tin đã nghe được (cách nói trang trọng hơn 「そうだ」).
+@form 普通形 ＋ ということだ・とのことだ
+@exp Truyền lại thông tin đã nghe được, hơi cứng hơn 「～そうだ」. Để chỉ nguồn thông tin dùng 「～では／～によると／～によれば」. Dạng 「～とのことだ」 hay dùng khi truyền đạt lời nói của một cá nhân. Cũng dùng trong thư từ như ở ví dụ cuối.
+@ex 市のお知らせによれば、この道路は来週から工事が始まるということです。 | Theo thông báo của thành phố, đường này sẽ bắt đầu thi công từ tuần sau.
+@ex 店の人の話では、この地方の米はとてもおいしいということだ。 | Theo lời người của tiệm, gạo vùng này rất ngon.
+@ex さっき川村さんから電話がありました。今日は社に戻れないとのことです。 | Vừa rồi có điện thoại của anh Kawamura. Anh ấy nói hôm nay không về công ty được.
+@ex メールによると、林さんは来週はとても忙しいとのことです。 | Theo email thì tuần sau anh Hayashi rất bận.
+@ex 新しい仕事が決まったとのこと、おめでとうございます。 | Nghe nói anh đã có công việc mới, xin chúc mừng.
+@cmp ～そうだ（伝聞） | N4 | 「ということだ」 trang trọng hơn.
+@note Nguồn tin thường đứng trước với 「によると」「では」.
+@theme can-cu
+@ctx email, bao-chi
+@book shin-n3 | 7 | 1
+
+@p 030 | ～と言われている
+@group 4
+@mean Người ta nói rằng ... / Nghe nói ...
+@core Truyền đạt điều mà người đời nói chung vẫn nói.
+@form 普通形 ＋ と言われている
+@exp Cách nói truyền đạt ý kiến, quan niệm chung của xã hội (「～と、世間の人たちが言っている」).
+@ex 今年は黒い服が流行すると言われている。 | Người ta nói năm nay quần áo màu đen sẽ thịnh hành.
+@ex 納豆は体にいいと言われている。 | Người ta nói natto tốt cho cơ thể.
+@ex 今度の大会では中川選手が優勝するだろうと言われています。 | Người ta nói ở giải lần này vận động viên Nakagawa sẽ vô địch.
+@cmp ～ということだ | N3 | 「ということだ」 truyền lời người cụ thể; 「と言われている」 là quan niệm chung.
+@note Không có nguồn cụ thể, là nhận định chung của số đông.
+@theme can-cu
+@ctx van-ban, bao-chi
+@book shin-n3 | 7 | 2
+
+@p 031 | ～とか
+@group 4
+@mean Nghe nói là ... (không chắc chắn)
+@core Truyền đạt thông tin nghe được nhưng không rõ ràng.
+@form 普通形 ＋ とか
+@exp Dùng khi thông tin nghe qua tin đồn, không chắc chắn lắm. Thường đứng cuối câu như 「～と聞いた」.
+@ex 来月また出張だとか。今度はどちらに行かれるんですか。 | Nghe nói tháng sau lại đi công tác. Lần này anh đi đâu vậy?
+@ex お宅ではいろいろな動物を飼っているとか。にぎやかでしょうね。 | Nghe nói nhà bạn nuôi nhiều loại động vật. Chắc náo nhiệt lắm nhỉ.
+@ex あの店のパンはとてもおいしいとか。今日、帰りに買って帰ります。 | Nghe nói bánh mì của tiệm đó rất ngon. Hôm nay trên đường về tôi sẽ mua.
+@cmp ～って | N3 | 「って」 là văn nói thân mật hơn; 「とか」 mang sắc thái thông tin không chắc chắn.
+@note Không dùng khi thông tin đã được xác nhận rõ ràng.
+@theme can-cu
+@ctx hoi-thoai
+@book shin-n3 | 7 | 3
+
+@p 032 | ～って
+@group 4
+@mean Nghe nói là ... / Bảo là ...
+@core Dạng văn nói của 「～と」 để truyền đạt lời người khác.
+@form 普通形 ＋ って
+@exp Dạng lược của 「～と言っている／～と聞いた」 trong văn nói. Phần động từ phía sau (言っている, 聞いた, v.v.) hay bị lược. Cũng có thể gắn 「って」 trực tiếp sau câu được dẫn.
+@ex 小川さん、今日は休むって言ってたよ。 | Anh Ogawa bảo hôm nay nghỉ đấy.
+@ex 佐藤さんの奥さんは料理の先生だって。 | Nghe nói vợ anh Sato là giáo viên dạy nấu ăn.
+@ex 駅前にタイ料理のレストランができたんだって。行ってみようよ。 | Nghe nói trước ga mở nhà hàng món Thái. Mình thử đi xem đi.
+@ex 山川君、先生が教員室まで来てくださいって。 | Yamakawa này, thầy bảo em đến phòng giáo viên đấy.
+@cmp ～と | N4 | 「って」 là cách nói thân mật của 「と」.
+@note Chỉ dùng trong hội thoại thân mật.
+@theme can-cu
+@ctx hoi-thoai
+@book shin-n3 | 7 | 4
+
+@p 033 | ～という
+@group 4
+@mean Nghe nói ... / Được cho là ...
+@core Truyền đạt thông tin, trang trọng hơn 「そうだ」, dùng nhiều trong văn viết.
+@form 普通形 ＋ という
+@exp Là cách viết hơi cứng của 「～そうだ」, dùng nhiều trong văn viết.
+@ex この辺りは昔、広い野原だったという。 | Nghe nói vùng này xưa là một cánh đồng rộng.
+@ex この祭りは村で古くから行われてきたという。 | Nghe nói lễ hội này được tổ chức ở làng từ xa xưa.
+@ex 豆腐は1300年ぐらい前に中国から日本に伝わったという。 | Nghe nói đậu hũ được truyền từ Trung Quốc sang Nhật khoảng 1300 năm trước.
+@cmp ～そうだ（伝聞） | N4 | 「という」 cứng và dùng nhiều trong văn viết.
+@note Thường đứng cuối câu, ở dạng 「～という。」.
+@theme can-cu
+@ctx van-ban, bao-chi
+@book shin-n3 | 7 | 5
+

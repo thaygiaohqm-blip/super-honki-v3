@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Super Honki">
+  <rect width="64" height="64" rx="14" fill="#0b3b3b"/>
+  <circle cx="45" cy="19" r="15" fill="#ed3838"/>
+  <g transform="translate(32 33) skewX(-8) translate(-32 -33)">
+    <path d="M47 11 H21 Q12 11 12 20 V25 Q12 33 21 33 H40 Q42 33 42 35 V39 Q42 41 40 41 H12 V53 H42 Q52 53 52 43 V36 Q52 27 43 27 H24 Q22 27 22 25 V22 Q22 21 24 21 H47 Z" fill="#f7f4ed" stroke="#0b3b3b" stroke-width="2.4" stroke-linejoin="round"/>
+  </g>
+  <path d="M8 58 H56" stroke="#f7f4ed" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+</svg>

@@ -1,0 +1,433 @@
+@p 041 | ～かどうか
+@group 5
+@key かどうか
+@mean Có ~ hay không
+@core Biến câu hỏi Có/Không thành mệnh đề trong câu.
+@form 普通形 ＋ かどうか、＋ 動詞
+@exp Dùng khi hỏi, biết, kiểm tra xem điều gì đó đúng hay không. Với danh từ và tính từ な bỏ 「だ」.
+@ex 田中さんが来るかどうか、知りません。 | Tôi không biết anh Tanaka có đến hay không.
+@ex この料理が辛いかどうか、食べてみてください。 | Hãy ăn thử xem món này có cay không.
+@ex 試験に合格したかどうか、まだわかりません。 | Tôi vẫn chưa biết có đậu kỳ thi hay không.
+@ctx hoi-thoai
+@book minna | 40 | 1
+
+@p 042 | ～か（疑問詞）
+@group 5
+@key か
+@mean ~ là ~ (câu hỏi lồng)
+@core Từ để hỏi trong mệnh đề lồng: 何, いつ, どこ, だれ, どう… + か.
+@form 疑問詞 ＋ 普通形 ＋ か、＋ 動詞
+@exp Biến câu hỏi từ để hỏi thành thành phần của câu. Không có 「どうか」 ở cuối.
+@ex 駅がどこにあるか、教えてください。 | Xin hãy cho tôi biết nhà ga ở đâu.
+@ex 彼が何を言ったか、わかりません。 | Tôi không hiểu anh ấy đã nói gì.
+@ex 会議が何時に始まるか、聞いてみます。 | Tôi sẽ hỏi xem cuộc họp bắt đầu mấy giờ.
+@ctx hoi-thoai
+@book minna | 40 | 2
+
+@p 043 | ～てみます
+@group 5
+@key てみ ;; でみ
+@mean Thử làm ~
+@core Làm thử để biết kết quả.
+@form 動詞 て形 ＋ みます
+@exp Làm thử một việc để xem như thế nào. Nhờ vả: 「～てみてください」. Thể hiện thử nghiệm, không phải làm hẳn.
+@ex この服を着てみてもいいですか。 | Tôi mặc thử bộ này được không?
+@ex 一度、納豆を食べてみたいです。 | Tôi muốn ăn thử natto một lần.
+@ex 先生に聞いてみます。 | Tôi sẽ hỏi thử thầy giáo.
+@ctx hoi-thoai
+@book minna | 40 | 3
+
+@p 044 | いただきます／くださいます／やります
+@group 5
+@key いただき ;; くださ ;; やり
+@mean Nhận (khiêm nhường) / Cho (tôn kính) / Cho (người dưới)
+@core Dạng kính ngữ của もらう・くれる・あげる.
+@form 私は ＋ 人 ＋ に ＋ 物 ＋ を ＋ いただきます
+@form 人 ＋ が ＋ 私に ＋ 物 ＋ を ＋ くださいます
+@form 私は ＋ 動植物・目下 ＋ に ＋ 物 ＋ を ＋ やります
+@exp 「いただきます」: khiêm nhường của もらいます (nhận từ người trên). 「くださいます」: tôn kính của くれます (người trên cho tôi). 「やります」: cho người dưới, động vật, cây cối.
+@ex 先生に本をいただきました。 | Tôi được thầy tặng sách.
+@ex 社長がお土産をくださいました。 | Giám đốc đã cho tôi quà.
+@ex 毎日花に水をやります。 | Mỗi ngày tôi tưới nước cho hoa.
+@theme cho-nhan
+@ctx hoi-thoai
+@book minna | 41 | 1
+
+@p 045 | ～ていただきます／～てくださいます
+@group 5
+@key ていただ ;; てくださ
+@mean Được (người trên) làm ~ cho
+@core Kính ngữ của てもらう／てくれる.
+@form 人 ＋ に ＋ 動詞 て形 ＋ いただきます
+@form 人 ＋ が ＋ 動詞 て形 ＋ くださいます
+@exp Thể hiện lòng biết ơn lịch sự với người trên. Nhờ vả lịch sự: 「～ていただけませんか」.
+@ex 先生に作文を直していただきました。 | Tôi được thầy sửa bài văn cho.
+@ex 部長が駅まで送ってくださいました。 | Trưởng phòng đã tiễn tôi đến ga.
+@ex 手伝っていただけませんか。 | Anh/chị giúp tôi được không ạ?
+@theme cho-nhan
+@ctx hoi-thoai
+@book minna | 41 | 2
+
+@p 046 | ～てやります
+@group 5
+@key てや
+@mean Làm ~ cho (người dưới, động vật)
+@core Mình làm cho người ít tuổi hoặc con vật.
+@form 動詞 て形 ＋ やります
+@exp Khi nhận là người thân bậc dưới, trẻ em, vật nuôi, cây cối thì có thể dùng 「やる」 thay 「あげる」.
+@ex 犬を散歩に連れて行ってやります。 | Tôi dắt chó đi dạo.
+@ex 子供に絵本を読んでやります。 | Tôi đọc truyện tranh cho con.
+@ex 弟に宿題を教えてやりました。 | Tôi đã dạy em trai bài tập.
+@theme cho-nhan
+@ctx hoi-thoai
+@book minna | 41 | 3
+
+@p 047 | ～ために
+@group 5
+@key ために
+@mean Để ~ / Vì ~
+@core Mục đích có chủ ý hoặc nguyên nhân (với vế sau là kết quả).
+@form 動詞 辞書形 ＋ ために
+@form 名詞 の ＋ ために
+@exp Hai nghĩa: (1) mục đích có chủ ý (cùng chủ thể); (2) nguyên nhân gây ra kết quả (thường tiêu cực). Khác với 「ように」 mục đích không có ý chí.
+@ex 日本語を勉強するために、日本へ来ました。 | Tôi đến Nhật để học tiếng Nhật.
+@ex 家族のために、働いています。 | Tôi làm việc vì gia đình.
+@ex 事故のために、電車が止まりました。 | Vì tai nạn nên tàu đã dừng.
+@theme muc-dich
+@ctx hoi-thoai
+@book minna | 42 | 1
+
+@p 048 | ～のに使います／～に便利です
+@group 5
+@key のに
+@mean Dùng để ~ / Tiện cho việc ~
+@core Công dụng của vật: V辞書形 + のに + 使います／いいです／便利です.
+@form 動詞 辞書形 ＋ のに ＋ 使います／便利です／役に立ちます
+@exp Nói công dụng của dụng cụ, nơi chốn. Vế sau là các từ đánh giá hoặc 使います.
+@ex ハサミは紙を切るのに使います。 | Kéo dùng để cắt giấy.
+@ex この辞書は漢字を調べるのに便利です。 | Cuốn từ điển này tiện để tra chữ Hán.
+@ex このナイフは野菜を切るのに便利です。 | Con dao này tiện để cắt rau.
+@ctx hoi-thoai
+@book minna | 42 | 2
+
+@p 049 | ～そうです（様態）
+@group 5
+@key そうです ;; そうな
+@mean Trông có vẻ ~ / Sắp ~
+@core Dự đoán dựa vào quan sát trực tiếp.
+@form 動詞 ます形 (bỏ ます) ＋ そうです
+@form イ形容詞 (bỏ い)／ナ形容詞 ＋ そうです
+@exp Gắn vào gốc ます của động từ, bỏ い của tính từ い, hoặc tính từ な + そう. Ngoại lệ: いい → よさそう, ない → なさそう. Dạng phủ định: ～なさそう／～そうにない.
+@ex 雨が降りそうです。 | Có vẻ trời sắp mưa.
+@ex このケーキはおいしそうですね。 | Cái bánh này trông ngon quá nhỉ.
+@ex 彼は元気そうです。 | Trông anh ấy khỏe.
+@ex 今日は暇そうですね。 | Hôm nay trông bạn rảnh nhỉ.
+@cmp ～そうです（伝聞） | N4 | Cái này là suy đoán qua quan sát; 「伝聞」 là truyền đạt lại thông tin nghe được.
+@theme suy-doan
+@ctx hoi-thoai
+@book minna | 43 | 1
+
+@p 050 | ～てきます
+@group 5
+@key てき ;; でき
+@mean Đi làm rồi quay lại / Dần dần trở nên ~
+@core Hành động rồi quay về; hoặc thay đổi tiến đến hiện tại.
+@form 動詞 て形 ＋ きます
+@exp Hai nghĩa: (1) làm gì đó rồi quay lại ("tôi đi mua rồi về"); (2) sự thay đổi tiến tới thời điểm nói ("trời đã bắt đầu lạnh").
+@ex ちょっとたばこを買ってきます。 | Tôi đi mua thuốc lá một chút rồi quay lại.
+@ex だんだん寒くなってきました。 | Trời đang dần lạnh đi.
+@ex 傘を持ってきました。 | Tôi đã mang ô theo.
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 43 | 2
+
+@p 051 | ～ていきます
+@group 5
+@key ていき ;; でいき
+@mean Đi làm rồi / Dần dần ~ (tiếp tục)
+@core Hành động rồi đi; thay đổi tiếp diễn từ hiện tại.
+@form 動詞 て形 ＋ いきます
+@exp Khác với 「てきます」, 「ていきます」 hướng đi xa hoặc tiếp diễn đến tương lai. Dùng khi mang theo vật đi hoặc nói xu hướng tương lai.
+@ex 傘を持っていきます。 | Tôi mang ô đi.
+@ex これから寒くなっていきます。 | Từ nay trời sẽ ngày càng lạnh.
+@ex 食べていきませんか。 | Bạn ăn xong rồi hãy đi nhé?
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 43 | 3
+
+@p 052 | ～すぎます
+@group 5
+@key すぎ
+@mean Quá ~
+@core Mức độ vượt quá giới hạn thích hợp, thường tiêu cực.
+@form 動詞 ます形 (bỏ ます) ＋ すぎます
+@form イ形容詞 (bỏ い)／ナ形容詞 ＋ すぎます
+@exp Diễn tả làm quá nhiều, tính chất quá mức. Ngoại lệ: いい → よすぎます.
+@ex 昨日は食べすぎました。 | Hôm qua tôi ăn quá nhiều.
+@ex この部屋は広すぎます。 | Căn phòng này rộng quá.
+@ex 働きすぎないでください。 | Xin đừng làm việc quá sức.
+@ctx hoi-thoai
+@book minna | 44 | 1
+
+@p 053 | ～やすい／～にくい
+@group 5
+@key やすい ;; にくい
+@mean Dễ ~ / Khó ~
+@core Gắn vào gốc ます để nói dễ làm hoặc khó làm.
+@form 動詞 ます形 (bỏ ます) ＋ やすい／にくい
+@exp 「～やすい」: dễ làm / dễ xảy ra; 「～にくい」: khó làm. Chia như tính từ い.
+@ex このペンは書きやすいです。 | Cây bút này dễ viết.
+@ex この靴は歩きにくいです。 | Đôi giày này khó đi.
+@ex 彼の字は読みにくいです。 | Chữ anh ấy khó đọc.
+@ctx hoi-thoai
+@book minna | 44 | 2
+
+@p 054 | ～くします／～にします
+@group 5
+@key re:(く|に)(?=し(ます|て))
+@mean Làm cho ~ / Chọn ~
+@core Biến đổi có chủ ý một vật sang trạng thái khác.
+@form イ形容詞 い→く ＋ します
+@form ナ形容詞・名詞 ＋ に ＋ します
+@exp Người làm tác động để vật thay đổi trạng thái. Khác với 「なります」 là thay đổi tự nhiên. Cũng dùng khi gọi món: 「コーヒーにします」.
+@ex 音を小さくしてください。 | Hãy vặn nhỏ âm lượng xuống.
+@ex 部屋をきれいにしました。 | Tôi đã dọn phòng sạch sẽ.
+@ex 私はコーヒーにします。 | Tôi chọn cà phê.
+@cmp ～くなります／～になります | N5 | 「なります」 thay đổi tự nhiên; 「します」 có chủ ý.
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 44 | 3
+
+@p 055 | ～てほしい
+@group 5
+@key てほし ;; でほし
+@mean Muốn (ai đó) làm ~
+@core Mong muốn người khác làm gì.
+@form 人 ＋ に ＋ 動詞 て形 ＋ ほしいです
+@exp Thể hiện mong muốn của người nói với người khác. Phủ định: ～ないでほしい.
+@ex 母に早く帰ってきてほしいです。 | Tôi muốn mẹ về sớm.
+@ex 友達に手伝ってほしいです。 | Tôi muốn bạn giúp.
+@ex 子供にはたばこを吸わないでほしいです。 | Tôi muốn con đừng hút thuốc.
+@ctx hoi-thoai
+@book minna | 44 | 4
+
+@p 056 | ～場合は
+@group 6
+@key 場合
+@mean Trong trường hợp ~
+@core Giả định một tình huống cụ thể.
+@form 普通形 ＋ 場合は
+@form 名詞 の ＋ 場合は
+@exp Dùng cho tình huống có thể xảy ra, thường đi với chỉ dẫn, quy định. Vế sau là cách ứng xử.
+@ex 火事の場合は、エレベーターを使わないでください。 | Trong trường hợp hỏa hoạn, đừng dùng thang máy.
+@ex 遅れる場合は、連絡してください。 | Nếu bạn đến muộn, hãy liên lạc.
+@ex 雨の場合は、試合は中止です。 | Nếu trời mưa thì trận đấu bị hủy.
+@theme dieu-kien
+@ctx hoi-thoai
+@book minna | 45 | 1
+
+@p 057 | ～のに（逆接）
+@group 6
+@key のに
+@mean Vậy mà ~ / Mặc dù ~
+@core Kết quả trái với mong đợi, mang ý bất mãn.
+@form 普通形 ＋ のに、＋ 文
+@form 名詞・ナ形容詞 ＋ な ＋ のに
+@exp Nói điều trái với kỳ vọng; vế sau thường thể hiện bất ngờ, bất mãn, tiếc nuối. Vế sau không có mệnh lệnh, rủ rê.
+@ex 約束したのに、彼は来ませんでした。 | Đã hẹn rồi mà anh ấy không đến.
+@ex 昨日は日曜日なのに、会社へ行きました。 | Hôm qua là chủ nhật mà tôi vẫn phải đi làm.
+@ex 薬を飲んだのに、まだ熱があります。 | Đã uống thuốc rồi mà vẫn còn sốt.
+@theme nghich-tiep
+@ctx hoi-thoai
+@book minna | 45 | 2
+
+@p 058 | ～ところです
+@group 6
+@key ところ
+@mean Sắp / đang / vừa mới ~
+@core Chỉ giai đoạn của hành động: trước, đang, vừa xong.
+@form 動詞 辞書形 ＋ ところです (sắp)
+@form 動詞 て形 ＋ いるところです (đang)
+@form 動詞 た形 ＋ ところです (vừa)
+@exp Ba giai đoạn: sắp làm (từ điển), đang làm (ているところ), vừa mới xong (たところ). Dùng để nói chính xác thời điểm.
+@ex これから出かけるところです。 | Bây giờ tôi chuẩn bị đi ra ngoài.
+@ex 今、ご飯を食べているところです。 | Bây giờ tôi đang ăn cơm.
+@ex 今、帰ってきたところです。 | Tôi vừa mới về đến.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 46 | 1
+
+@p 059 | ～たばかりです
+@group 6
+@key ばかり
+@mean Vừa mới ~
+@core Mới xảy ra cách đây không lâu theo cảm nhận của người nói.
+@form 動詞 た形 ＋ ばかりです
+@exp Khác với 「たところ」, 「たばかり」 chỉ khoảng thời gian không lâu theo cảm nhận (có thể vài ngày hoặc vài tháng).
+@ex 先月日本へ来たばかりです。 | Tôi vừa mới đến Nhật tháng trước.
+@ex この車は買ったばかりです。 | Chiếc xe này mới mua.
+@ex 起きたばかりなので、まだ眠いです。 | Vì vừa mới thức dậy nên vẫn còn buồn ngủ.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 46 | 2
+
+@p 060 | ～はずです
+@group 6
+@key はず
+@mean Chắc chắn là ~ / Lẽ ra ~
+@core Suy đoán chắc chắn dựa trên căn cứ.
+@form 普通形 ＋ はずです
+@form 名詞 の／ナ形容詞 な ＋ はずです
+@exp Dựa trên lý lẽ hoặc thông tin cụ thể để đoán gần như chắc chắn. Phủ định: ～ないはずです (chắc chắn không); ～はずがない (không thể nào).
+@ex ミラーさんは今日来るはずです。 | Anh Miller chắc chắn hôm nay sẽ đến.
+@ex 彼は日本語が上手なはずです。 | Chắc chắn anh ấy giỏi tiếng Nhật.
+@ex 約束したのに、彼が来ないはずがない。 | Đã hẹn rồi, không thể nào anh ấy không đến.
+@theme suy-doan
+@ctx hoi-thoai
+@book minna | 46 | 3
+
+@p 061 | ～そうです（伝聞）
+@group 6
+@key そうです
+@mean Nghe nói ~
+@core Truyền đạt lại thông tin từ người khác, báo chí.
+@form 普通形 ＋ そうです
+@exp Dùng thể thường + そうです để truyền đạt thông tin đã nghe hoặc đọc được. Không phải suy đoán của bản thân. Có thể mở đầu bằng 「～によると」.
+@ex 天気予報によると、明日は雨だそうです。 | Theo dự báo thời tiết, ngày mai trời mưa.
+@ex 田中さんは来月結婚するそうです。 | Nghe nói anh Tanaka tháng sau sẽ kết hôn.
+@ex あのレストランはおいしいそうです。 | Nghe nói nhà hàng đó ngon.
+@cmp ～そうです（様態） | N4 | Cái này nghe lại; 「様態」 là suy đoán từ quan sát.
+@theme suy-doan
+@ctx hoi-thoai
+@book minna | 47 | 1
+
+@p 062 | ～ようです
+@group 6
+@key ようです
+@mean Hình như ~ / Có vẻ ~
+@core Suy đoán dựa trên giác quan hoặc ấn tượng của người nói.
+@form 普通形 ＋ ようです
+@form 名詞 の／ナ形容詞 な ＋ ようです
+@exp Phán đoán dựa trên những gì mình thấy, nghe, cảm nhận. Cũng dùng để so sánh ("giống như").
+@ex 隣の部屋に誰かいるようです。 | Hình như có ai ở phòng bên.
+@ex 風邪をひいたようです。 | Hình như tôi bị cảm.
+@ex 彼は忙しいようです。 | Hình như anh ấy bận.
+@theme suy-doan
+@ctx hoi-thoai
+@book minna | 47 | 2
+
+@p 063 | ～らしい
+@group 6
+@key らしい
+@mean Nghe nói là ~ / Hình như ~ / Đúng kiểu ~
+@core Suy đoán dựa trên thông tin nghe được, hoặc nói đặc trưng "đúng kiểu".
+@form 普通形 ＋ らしい
+@form 名詞 ＋ らしい
+@exp Hai cách dùng: (1) suy đoán dựa trên thông tin gián tiếp ("nghe nói là"); (2) danh từ + らしい: đúng kiểu, đúng chất.
+@ex 彼は結婚するらしいです。 | Nghe nói anh ấy sắp kết hôn.
+@ex 今年の夏は暑くなるらしい。 | Nghe nói mùa hè năm nay sẽ nóng.
+@ex 春らしい天気ですね。 | Thời tiết thật đúng kiểu mùa xuân nhỉ.
+@theme suy-doan
+@ctx hoi-thoai
+@book minna | 47 | 3
+
+@p 064 | 使役形
+@group 7
+@key re:(せ|させ)(?=ま(す|した|せん)|て|る|た)
+@mean Bắt / cho phép ~ làm (sai khiến)
+@core Dạng sai khiến: I: u → aせる; II: る → させる; III: させる／来させる.
+@form I：書く → 書かせる／II：食べる → 食べさせる／III：する → させる、来る → 来させる
+@exp Thể sai khiến diễn tả (1) bắt ép người khác làm; (2) cho phép người khác làm. Đối tượng đi với 「を」 (với tự động từ) hoặc 「に」 (với ngoại động từ có tân ngữ 「を」).
+@ex 先生は学生に漢字を書かせました。 | Thầy giáo bắt học sinh viết chữ Hán.
+@ex 母は子供を公園で遊ばせました。 | Mẹ cho con chơi ở công viên.
+@ex 部長は私を出張に行かせました。 | Trưởng phòng bắt tôi đi công tác.
+@theme the-thai
+@ctx hoi-thoai
+@book minna | 48 | 1
+
+@p 065 | 使役の「を」と「に」
+@group 7
+@key re:(を|に)(?=.*(せ|させ))
+@mean Phân biệt を và に trong câu sai khiến
+@core Tự động từ: người bị sai đi với を; ngoại động từ: người bị sai đi với に.
+@form N1 は N2 を 自動詞 使役形
+@form N1 は N2 に N3 を 他動詞 使役形
+@exp Tự động từ không có tân ngữ nên người bị sai khiến dùng 「を」. Ngoại động từ đã có tân ngữ 「を」 nên người bị sai khiến dùng 「に」.
+@ex 母は弟を泣かせました。 | Mẹ làm em trai khóc.
+@ex 母は弟に野菜を食べさせました。 | Mẹ bắt em trai ăn rau.
+@ex 先生は学生をすわらせました。 | Thầy giáo cho học sinh ngồi xuống.
+@ctx hoi-thoai
+@book minna | 48 | 2
+
+@p 066 | ～させてください
+@group 7
+@key re:(せ|させ)て(ください|いただ)
+@mean Xin hãy cho phép tôi ~
+@core Xin phép làm gì một cách lịch sự.
+@form 動詞 使役形 て形 ＋ ください
+@form 動詞 使役形 て形 ＋ いただけませんか
+@exp Nhờ người khác cho phép mình làm việc gì. Dạng lịch sự: 「～させていただけませんか」.
+@ex ちょっと休ませてください。 | Xin cho tôi nghỉ một chút.
+@ex 先に帰らせていただけませんか。 | Cho phép tôi về trước được không ạ?
+@ex この仕事は私にやらせてください。 | Xin hãy để tôi làm việc này.
+@ctx hoi-thoai
+@book minna | 48 | 3
+
+@p 067 | お／ご～になります（尊敬語）
+@group 7
+@key re:(お|ご)(?=.*(になり|になる))
+@mean Ngài ~ (tôn kính)
+@core Nâng cao hành động của người trên.
+@form お ＋ 動詞 ます形 ＋ になります
+@form ご ＋ 漢語名詞 ＋ になります
+@exp Công thức tôn kính: お + gốc ます + になります. Danh từ Hán: ご + N + になります (ご利用になります). Dạng bị động cũng dùng để tôn kính nhẹ: 先生が来られます.
+@ex 社長はもうお帰りになりました。 | Giám đốc đã về rồi ạ.
+@ex 先生は新聞をお読みになります。 | Thầy giáo đọc báo ạ.
+@ex 部長はご出張になりました。 | Trưởng phòng đã đi công tác ạ.
+@ctx hoi-thoai
+@book minna | 49 | 1
+
+@p 068 | 特別な尊敬語
+@group 7
+@key re:(いらっしゃ|おっしゃ|なさい|召し上が|ご覧に|くださ)
+@mean Động từ tôn kính đặc biệt
+@core Một số động từ có dạng tôn kính riêng.
+@form 行く／来る／いる → いらっしゃる
+@form 言う → おっしゃる／する → なさる／食べる・飲む → 召し上がる
+@form 見る → ご覧になる／くれる → くださる
+@exp Cần học thuộc: いらっしゃる (đi/đến/ở), おっしゃる (nói), なさる (làm), 召し上がる (ăn/uống), ご覧になる (xem), くださる (cho), ご存じだ (biết).
+@ex 先生はいつ日本へいらっしゃいますか。 | Thầy bao giờ đến Nhật ạ?
+@ex 社長がそうおっしゃいました。 | Giám đốc đã nói như vậy ạ.
+@ex どうぞ召し上がってください。 | Xin mời ăn ạ.
+@ctx hoi-thoai
+@book minna | 49 | 2
+
+@p 069 | お／ご～します（謙譲語）
+@group 7
+@key re:(お|ご)(?=.*(します|する|いたし))
+@mean Tôi xin ~ (khiêm nhường)
+@core Hạ mình khi làm cho người trên.
+@form お ＋ 動詞 ます形 ＋ します
+@form ご ＋ 漢語名詞 ＋ します
+@exp Khi hành động hướng tới người trên, dùng công thức: お + gốc ます + します. Danh từ Hán: ご + N + します. Lịch sự hơn: ～いたします.
+@ex 荷物をお持ちします。 | Để tôi xách hành lý ạ.
+@ex 後でご連絡します。 | Tôi sẽ liên lạc lại sau ạ.
+@ex 明日、資料をお届けいたします。 | Ngày mai tôi sẽ gửi tài liệu ạ.
+@ctx hoi-thoai
+@book minna | 50 | 1
+
+@p 070 | 特別な謙譲語
+@group 7
+@key re:(参り|伺い|申し|いたし|拝見|いただ|存じ)
+@mean Động từ khiêm nhường đặc biệt
+@core Một số động từ có dạng khiêm nhường riêng.
+@form 行く／来る → 参る／言う → 申す、申し上げる
+@form する → いたす／見る → 拝見する
+@form 聞く・訪ねる → 伺う／もらう → いただく／知っている → 存じている
+@exp Dùng khi nói về hành động của mình hoặc người trong nhóm mình với khách, người trên. Rất hay gặp trong giao tiếp công sở.
+@ex 私は田中と申します。 | Tôi tên là Tanaka ạ.
+@ex 明日、伺います。 | Ngày mai tôi sẽ đến thăm ạ.
+@ex 資料を拝見しました。 | Tôi đã xem tài liệu ạ.
+@ex 駅までご案内いたします。 | Tôi xin dẫn đường đến ga ạ.
+@ctx hoi-thoai
+@book minna | 50 | 2

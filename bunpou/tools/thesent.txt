@@ -1,0 +1,260 @@
+# thể | trước chỗ trống | từ gốc | nhóm | sau chỗ trống | nghĩa tiếng Việt
+masu | 毎朝、コーヒーを | 飲む | 1 | 。 | Mỗi sáng tôi uống cà phê.
+masu | 明日は友達と映画を | 見る | 2 | 。 | Ngày mai tôi sẽ xem phim với bạn.
+masu | 私は毎日、日本語を | 勉強する | 3 | 。 | Mỗi ngày tôi học tiếng Nhật.
+nai | 今日は学校へ | 行く | 1 | でください。 | Hôm nay xin đừng đến trường.
+nai | 夜はコーヒーを | 飲む | 1 | ほうがいいです。 | Buổi tối không nên uống cà phê.
+nai | 朝ご飯を | 食べる | 2 | で、会社へ行きました。 | Tôi đi làm mà không ăn sáng.
+nakatta | きのうは宿題を | する | 3 | 。 | Hôm qua tôi đã không làm bài tập.
+nakatta | 駅で友達に | 会う | 1 | 。 | Ở ga tôi đã không gặp bạn.
+ta | 昨日は早く | 寝る | 2 | 。 | Hôm qua tôi đã đi ngủ sớm.
+ta | 先週、京都へ | 行く | 1 | 。 | Tuần trước tôi đã đi Kyoto.
+ta | 富士山に | 登る | 1 | ことがあります。 | Tôi từng leo núi Phú Sĩ.
+te | 窓を | 開ける | 2 | ください。 | Hãy mở cửa sổ ra.
+te | ちょっと | 待つ | 1 | ください。 | Xin hãy đợi một chút.
+te | 手を | 洗う | 1 | から、ご飯を食べます。 | Rửa tay rồi mới ăn cơm.
+masen | 私はお酒を | 飲む | 1 | 。 | Tôi không uống rượu.
+masen | 彼は今日、会社へ | 来る | 3 | 。 | Hôm nay anh ấy không đến công ty.
+mashita | 昨日、駅まで | 歩く | 1 | 。 | Hôm qua tôi đã đi bộ đến ga.
+mashita | けさは六時に | 起きる | 2 | 。 | Sáng nay tôi đã dậy lúc sáu giờ.
+masendeshita | 昨日は雨で、どこへも | 行く | 1 | 。 | Hôm qua mưa nên tôi không đi đâu cả.
+masendeshita | 風邪で、朝ご飯を | 食べる | 2 | 。 | Vì bị cảm nên tôi đã không ăn sáng.
+tai | 夏休みに日本へ | 行く | 1 | です。 | Kỳ nghỉ hè tôi muốn đi Nhật.
+tai | 今は何も | 食べる | 2 | 気分じゃありません。 | Bây giờ tôi chẳng muốn ăn gì.
+tai | 早く家へ | 帰る | 1 | です。 | Tôi muốn về nhà sớm.
+kano | 私は漢字が | 読む | 1 | 。 | Tôi đọc được chữ Hán.
+kano | 毎朝六時に | 起きる | 2 | かどうか心配です。 | Tôi lo không biết có dậy được lúc sáu giờ mỗi sáng không.
+kano | この店ではカードが | 使う | 1 | 。 | Ở tiệm này dùng được thẻ.
+ukemi | 私はよく先生に | 褒める | 2 | 。 | Tôi hay được thầy giáo khen.
+ukemi | 満員電車で足を | 踏む | 1 | ことがあります。 | Trên tàu đông tôi có khi bị giẫm vào chân.
+ukemi | 友達に旅行に | 誘う | 1 | のはうれしいです。 | Được bạn rủ đi du lịch thì vui.
+shieki | 先生は学生に漢字を | 書く | 1 | 。 | Thầy giáo bắt học sinh viết chữ Hán.
+shieki | 母は子どもに野菜を | 食べる | 2 | 。 | Mẹ bắt con ăn rau.
+shieki | 部長は私を出張に | 行く | 1 | ことがあります。 | Trưởng phòng đôi khi bắt tôi đi công tác.
+ikou | 一緒に | 帰る | 1 | 。 | Cùng về nào.
+ikou | そろそろ | 始める | 2 | 。 | Bắt đầu thôi nào.
+ikou | 来年、日本へ留学 | する | 3 | と思っています。 | Năm sau tôi định đi Nhật du học.
+meirei | 早く | 行く | 1 | ！ | Đi mau lên!
+meirei | ここに | 座る | 1 | 。 | Ngồi đây đi.
+kinshi | ここに | 入る | 1 | 。 | Cấm vào đây.
+kinshi | 廊下を | 走る | 1 | 。 | Đừng chạy ở hành lang.
+ba | 春に | なる | 1 | 、花が咲きます。 | Hễ xuân đến là hoa nở.
+ba | 時間が | ある | 1 | 、行きます。 | Nếu có thời gian thì tôi đi.
+ba | ボタンを | 押す | 1 | 、切符が出ます。 | Ấn nút là vé ra.
+tara | 雨が | 降る | 1 | 、行きません。 | Nếu trời mưa thì tôi không đi.
+tara | 家に | 帰る | 1 | 、電話します。 | Về đến nhà tôi sẽ gọi điện.
+tara | 駅に | 着く | 1 | 、連絡してください。 | Đến ga thì hãy liên lạc.
+tari | 休みの日は本を | 読む | 1 | 、散歩したりします。 | Ngày nghỉ tôi lúc đọc sách, lúc đi dạo.
+tari | 日曜日は洗濯を | する | 3 | 、掃除したりします。 | Chủ nhật tôi lúc giặt đồ, lúc dọn dẹp.
+nasai | 早く | 寝る | 2 | 。 | Mau đi ngủ đi.
+nasai | 先生の話をよく | 聞く | 1 | 。 | Hãy nghe kỹ lời thầy giáo.
+daro | 明日はたぶん雨が | 降る | 1 | 。 | Ngày mai có lẽ trời sẽ mưa.
+daro | 彼は今日、 | 来る | 3 | 。 | Chắc hôm nay anh ấy sẽ đến.
+sou | 今にも雨が | 降る | 1 | です。 | Trông như sắp mưa.
+sou | 彼女は今にも | 泣く | 1 | です。 | Cô ấy trông như sắp khóc.
+sugiru | お酒を | 飲む | 1 | と体に悪いです。 | Uống rượu quá nhiều thì hại sức khỏe.
+sugiru | お菓子を | 食べる | 2 | と太ります。 | Ăn bánh kẹo quá nhiều thì béo lên.
+renyo | 音楽を | 聞く | 1 | ながら勉強します。 | Tôi vừa nghe nhạc vừa học.
+renyo | 駅へ友達を | 迎える | 2 | に行きます。 | Tôi đi đón bạn ở ga.
+renyo | この靴は | 歩く | 1 | やすいです。 | Đôi giày này dễ đi.
+zu | 朝ご飯を | 食べる | 2 | に出かけました。 | Tôi ra ngoài mà không ăn sáng.
+zu | 傘を | 持つ | 1 | に出かけました。 | Tôi ra ngoài mà không mang ô.
+shiekiuke | うちの会社では毎日残業を | する | 3 | 。 | Ở công ty tôi, mỗi ngày đều bị bắt làm thêm giờ.
+shiekiuke | 子どものころ、嫌いな野菜を | 食べる | 2 | ことがありました。 | Hồi nhỏ có lúc tôi bị bắt ăn rau mình ghét.
+chau | うっかり財布を | 忘れる | 2 | ことがあります。 | Có khi tôi lỡ quên ví.
+chau | 宿題を全部 | する | 3 | つもりです。 | Tôi định làm xong hết bài tập.
+toku | 先に資料を | 読む | 1 | つもりです。 | Tôi định đọc sẵn tài liệu trước.
+toku | 会議の前に部屋を | 予約する | 3 | つもりです。 | Trước cuộc họp tôi định đặt sẵn phòng.
+teru | 今、本を | 読む | 1 | 。 | Bây giờ tôi đang đọc sách.
+teru | 彼は東京に | 住む | 1 | 。 | Anh ấy đang sống ở Tokyo.
+mai | 二度と | 行く | 1 | と決めた。 | Tôi quyết sẽ không bao giờ đi nữa.
+beki | 約束は | 守る | 1 | だ。 | Lời hứa thì phải giữ.
+beki | 約束を | 破る | 1 | ではない。 | Không nên thất hứa.
+sonkei | 先生は毎朝新聞を | 読む | 1 | 。 | Mỗi sáng thầy đọc báo (tôn kính).
+sonkei | 社長はもう | 帰る | 1 | 。 | Giám đốc đã về rồi (tôn kính).
+masu | 私は毎朝七時に | 起きる | 2 | 。 | Mỗi sáng tôi dậy lúc bảy giờ.
+masu | 週末は図書館で本を | 読む | 1 | 。 | Cuối tuần tôi đọc sách ở thư viện.
+masu | 来週、国から両親が | 来る | 3 | 。 | Tuần sau bố mẹ từ quê sang.
+masu | 毎日、電車で会社へ | 行く | 1 | 。 | Mỗi ngày tôi đi làm bằng tàu điện.
+jisho | 朝ご飯を | 食べる | 2 | 前に、手を洗います。 | Trước khi ăn sáng tôi rửa tay.
+jisho | 日本語を | 勉強する | 3 | ことが大切です。 | Việc học tiếng Nhật rất quan trọng.
+jisho | 私の趣味は音楽を | 聞く | 1 | ことです。 | Sở thích của tôi là nghe nhạc.
+jisho | 日本へ | 行く | 1 | 前に、ビザを取りました。 | Trước khi sang Nhật tôi đã xin visa.
+jisho | ピアノを | 弾く | 1 | ことができます。 | Tôi chơi được piano.
+jisho | 毎朝、ジョギングを | する | 3 | ようにしています。 | Tôi cố gắng chạy bộ mỗi sáng.
+jisho | 学校へ | 来る | 3 | とき、バスに乗ります。 | Khi đến trường tôi đi xe buýt.
+nai | 宿題を | 忘れる | 2 | ようにしてください。 | Hãy cố đừng quên bài tập.
+nai | 熱があるので、今日は | 泳ぐ | 1 | ほうがいいです。 | Vì bị sốt nên hôm nay không nên bơi.
+nai | 薬を | 飲む | 1 | と、治りませんよ。 | Không uống thuốc thì sẽ không khỏi đâu.
+nai | 仕事が終わるまで、家へ | 帰る | 1 | でください。 | Hãy đừng về nhà cho đến khi xong việc.
+nakatta | 昨日は雨だったので、どこへも | 行く | 1 | 。 | Hôm qua trời mưa nên tôi không đi đâu cả.
+nakatta | 朝は忙しくて、何も | 食べる | 2 | 。 | Buổi sáng bận nên tôi không ăn gì.
+nakatta | 先週は一度も | 泳ぐ | 1 | 。 | Tuần trước tôi chưa bơi lần nào.
+nakatta | 彼は約束を | 守る | 1 | 。 | Anh ấy đã không giữ lời hứa.
+nakatta | 昨日の夜は全然 | 寝る | 2 | 。 | Tối qua tôi hoàn toàn không ngủ.
+ta | 昨日、友達と | 遊ぶ | 1 | 。 | Hôm qua tôi đã chơi với bạn.
+ta | 先月、新しい車を | 買う | 1 | 。 | Tháng trước tôi đã mua xe mới.
+ta | 昨日の夜はよく | 眠る | 1 | ので、元気です。 | Tối qua ngủ ngon nên tôi khỏe.
+ta | 日本語の試験に | 合格する | 3 | あとで、お祝いをしました。 | Sau khi đỗ kỳ thi tiếng Nhật, tôi đã ăn mừng.
+te | ちょっと | 手伝う | 1 | ください。 | Xin hãy giúp tôi một chút.
+te | ここに名前を | 書く | 1 | ください。 | Xin hãy viết tên vào đây.
+te | 電車に | 乗る | 1 | 、会社へ行きます。 | Tôi lên tàu điện rồi đi làm.
+te | ドアを | 閉める | 2 | もいいですか。 | Tôi đóng cửa được không?
+masen | 日曜日は会社へ | 行く | 1 | 。 | Chủ nhật tôi không đến công ty.
+masen | 夜は何も | 食べる | 2 | 。 | Buổi tối tôi không ăn gì.
+masen | 部屋でタバコを | 吸う | 1 | 。 | Tôi không hút thuốc trong phòng.
+masen | 今日は仕事を | する | 3 | 。 | Hôm nay tôi không làm việc.
+masen | 彼は毎日学校を | 休む | 1 | 。 | Anh ấy không nghỉ học ngày nào.
+mashita | 昨日、デパートで買い物を | する | 3 | 。 | Hôm qua tôi đã đi mua sắm ở trung tâm thương mại.
+mashita | 先週、京都で友達に | 会う | 1 | 。 | Tuần trước tôi đã gặp bạn ở Kyoto.
+mashita | 昨日の夜、映画を | 見る | 2 | 。 | Tối qua tôi đã xem phim.
+mashita | 去年、日本へ | 来る | 3 | 。 | Năm ngoái tôi đã đến Nhật.
+mashita | 朝、駅で新聞を | 買う | 1 | 。 | Sáng nay tôi đã mua báo ở ga.
+masendeshita | 昨日は宿題を | する | 3 | 。 | Hôm qua tôi đã không làm bài tập.
+masendeshita | 先週は誰にも | 会う | 1 | 。 | Tuần trước tôi không gặp ai cả.
+masendeshita | 今朝は時間がなくて、コーヒーを | 飲む | 1 | 。 | Sáng nay không có thời gian nên tôi không uống cà phê.
+masendeshita | 先月は一度も | 休む | 1 | 。 | Tháng trước tôi chưa nghỉ lần nào.
+masendeshita | 彼は約束の時間に | 来る | 3 | 。 | Anh ấy đã không đến đúng giờ hẹn.
+tai | 今、冷たい水が | 飲む | 1 | です。 | Bây giờ tôi muốn uống nước lạnh.
+tai | 週末はゆっくり | 休む | 1 | と思っています。 | Cuối tuần tôi muốn nghỉ ngơi thong thả.
+tai | 将来、先生に | なる | 1 | です。 | Sau này tôi muốn trở thành giáo viên.
+tai | 新しいカメラを | 買う | 1 | です。 | Tôi muốn mua máy ảnh mới.
+kano | 私は五十メートル | 泳ぐ | 1 | 。 | Tôi bơi được năm mươi mét.
+kano | 彼は日本語で手紙が | 書く | 1 | 。 | Anh ấy viết được thư bằng tiếng Nhật.
+kano | この部屋は十人まで | 入る | 1 | 。 | Phòng này vào được tối đa mười người.
+kano | 明日は早く | 起きる | 2 | かもしれません。 | Có lẽ ngày mai tôi dậy sớm được.
+ukemi | 子どものころ、犬に足を | 噛む | 1 | 。 | Hồi nhỏ tôi bị chó cắn vào chân.
+ukemi | 部長に会議で意見を | 聞く | 1 | 。 | Tôi bị trưởng phòng hỏi ý kiến trong cuộc họp.
+ukemi | 彼女は誰からも | 愛する | 3 | 。 | Cô ấy được mọi người yêu quý.
+ukemi | この本は世界中で | 読む | 1 | そうです。 | Nghe nói cuốn sách này được đọc trên khắp thế giới.
+shieki | 先生は学生に作文を | 書く | 1 | ことがあります。 | Thầy giáo đôi khi bắt học sinh viết bài văn.
+shieki | 母は弟に部屋を | 掃除する | 3 | ことにしました。 | Mẹ quyết định bắt em trai dọn phòng.
+shieki | 私は子どもに毎日牛乳を | 飲む | 1 | つもりです。 | Tôi định cho con uống sữa mỗi ngày.
+shieki | 先生は学生を教室で | 待つ | 1 | ことがあります。 | Thầy đôi khi bắt học sinh đợi trong lớp.
+ikou | 明日は早く | 起きる | 2 | と思います。 | Tôi nghĩ mai sẽ dậy sớm.
+ikou | 今晩は何を | 食べる | 2 | か。 | Tối nay mình ăn gì nhỉ?
+ikou | 駅まで | 歩く | 1 | 。 | Mình đi bộ đến ga nhé.
+ikou | 来週から毎日運動 | する | 3 | と決めました。 | Tôi quyết định từ tuần sau tập thể dục mỗi ngày.
+meirei | 早く | 起きる | 2 | ！ | Dậy mau lên!
+meirei | 静かに | する | 3 | 。 | Giữ yên lặng đi.
+meirei | ここへ | 来る | 3 | ！ | Lại đây!
+meirei | 黙って | 待つ | 1 | 。 | Cứ im lặng chờ đi.
+meirei | もっと | 食べる | 2 | 。 | Ăn thêm đi.
+kinshi | ここで | 泳ぐ | 1 | 。 | Cấm bơi ở đây.
+kinshi | 授業中は | 話す | 1 | 。 | Đừng nói chuyện trong giờ học.
+kinshi | 嘘を | つく | 1 | 。 | Đừng nói dối.
+kinshi | 夜は大声で | 歌う | 1 | 。 | Ban đêm đừng hát to.
+kinshi | ここに車を | 止める | 2 | 。 | Cấm đỗ xe ở đây.
+ba | 急いで | 行く | 1 | 、間に合います。 | Nếu đi nhanh thì kịp.
+ba | 毎日練習を | する | 3 | 、上手になります。 | Luyện tập mỗi ngày thì sẽ giỏi.
+ba | 薬を | 飲む | 1 | 、治ります。 | Uống thuốc thì sẽ khỏi.
+ba | 駅の近くに | 住む | 1 | 、便利です。 | Sống gần ga thì tiện.
+tara | 試験が | 終わる | 1 | 、旅行に行きたいです。 | Thi xong tôi muốn đi du lịch.
+tara | 時間が | ある | 1 | 、来てください。 | Nếu có thời gian thì hãy đến.
+tara | 大学を | 卒業する | 3 | 、日本で働きます。 | Tốt nghiệp đại học tôi sẽ làm việc ở Nhật.
+tara | お金を | 貯める | 2 | 、車を買います。 | Tiết kiệm được tiền tôi sẽ mua xe.
+tari | 週末は映画を | 見る | 2 | 、買い物に行ったりします。 | Cuối tuần tôi lúc xem phim, lúc đi mua sắm.
+tari | 休みの日は友達と | 遊ぶ | 1 | 、料理を作ったりします。 | Ngày nghỉ tôi lúc đi chơi với bạn, lúc nấu ăn.
+tari | 夜は音楽を | 聞く | 1 | 、本を読んだりします。 | Buổi tối tôi lúc nghe nhạc, lúc đọc sách.
+tari | 日本では電車に | 乗る | 1 | 、バスに乗ったりします。 | Ở Nhật tôi lúc đi tàu điện, lúc đi xe buýt.
+tari | 昨日は掃除を | する | 3 | 、洗濯したりしました。 | Hôm qua tôi lúc dọn dẹp, lúc giặt đồ.
+nasai | 手を | 洗う | 1 | 。 | Hãy rửa tay đi.
+nasai | ここに名前を | 書く | 1 | 。 | Hãy viết tên vào đây.
+nasai | 静かに | する | 3 | 。 | Hãy giữ yên lặng.
+nasai | 早く | 食べる | 2 | 。 | Mau ăn đi.
+nasai | ちゃんと | 座る | 1 | 。 | Ngồi cho đàng hoàng.
+daro | 試験は | 終わる | 1 | 。 | Chắc kỳ thi sẽ kết thúc.
+daro | 彼なら | 分かる | 1 | 。 | Nếu là anh ấy thì chắc sẽ hiểu.
+daro | 午後から | 晴れる | 2 | 。 | Có lẽ chiều sẽ nắng.
+daro | 今夜は星が | 見える | 2 | 。 | Có lẽ tối nay sẽ thấy sao.
+daro | 来週は仕事が | 増える | 2 | 。 | Chắc tuần sau công việc sẽ nhiều lên.
+sou | 木から | 落ちる | 2 | です。 | Trông như sắp rơi khỏi cây.
+sou | 彼は今にも | 倒れる | 2 | です。 | Anh ấy trông như sắp ngã.
+sou | もうすぐ桜が | 咲く | 1 | です。 | Hoa anh đào trông sắp nở.
+sou | ボタンが | 取れる | 2 | です。 | Cái cúc trông sắp tuột.
+sou | 彼は今にも | 怒る | 1 | です。 | Anh ấy trông như sắp nổi giận.
+sugiru | 毎日テレビを | 見る | 2 | と、目が悪くなります。 | Xem tivi quá nhiều mỗi ngày thì mắt sẽ kém đi.
+sugiru | 彼は一人で全部 | する | 3 | ので、疲れています。 | Anh ấy làm hết một mình quá nên mệt.
+sugiru | コーヒーを | 飲む | 1 | ので、眠れません。 | Uống cà phê quá nhiều nên tôi không ngủ được.
+sugiru | 今日は | 歩く | 1 | ので、足が痛いです。 | Hôm nay đi bộ quá nhiều nên chân đau.
+sugiru | ゲームを | する | 3 | のはよくありません。 | Chơi game quá nhiều thì không tốt.
+sonkei | 先生は黒板に名前を | 書く | 1 | 。 | Thầy viết tên lên bảng (tôn kính).
+sonkei | 部長は会議室で | 待つ | 1 | 。 | Trưởng phòng đợi ở phòng họp (tôn kính).
+sonkei | 社長は新しい本を | 買う | 1 | 。 | Giám đốc mua cuốn sách mới (tôn kính).
+sonkei | 先生はもう | 来る | 3 | 。 | Thầy đã đến rồi (tôn kính).
+sonkei | 部長は毎晩ゴルフを | する | 3 | 。 | Trưởng phòng chơi golf mỗi tối (tôn kính).
+kenjo | 私がお客様の荷物を | 持つ | 1 | 。 | Tôi xin mang hành lý giúp quý khách (khiêm nhường).
+kenjo | ロビーでお客様を | 待つ | 1 | 。 | Tôi xin đợi quý khách ở sảnh (khiêm nhường).
+kenjo | 先生の本を | 借りる | 2 | つもりです。 | Tôi định xin mượn sách của thầy (khiêm nhường).
+kenjo | 写真を | 見せる | 2 | 。 | Tôi xin cho ngài xem ảnh (khiêm nhường).
+kenjo | 私が夕食を | 作る | 1 | 。 | Tôi xin nấu bữa tối (khiêm nhường).
+kenjo | 道を | 教える | 2 | 。 | Tôi xin chỉ đường cho ngài (khiêm nhường).
+kenjo | この傘を | 貸す | 1 | 。 | Tôi xin cho ngài mượn chiếc ô này (khiêm nhường).
+renyo | 歌を | 歌う | 1 | ながら歩きます。 | Tôi vừa hát vừa đi bộ.
+renyo | この問題は | 分かる | 1 | にくいです。 | Bài này khó hiểu.
+renyo | 本を | 読む | 1 | 始めました。 | Tôi bắt đầu đọc sách.
+renyo | 空港へ友達を | 送る | 1 | に行きます。 | Tôi đi tiễn bạn ở sân bay.
+zu | 何も | 言う | 1 | に帰りました。 | Tôi về mà không nói gì.
+zu | 辞書を | 見る | 2 | に読みました。 | Tôi đọc mà không tra từ điển.
+zu | 宿題を | する | 3 | に学校へ行きました。 | Tôi đến trường mà không làm bài tập.
+zu | 昼ご飯を | 食べる | 2 | に働きました。 | Tôi làm việc mà không ăn trưa.
+zu | 誰にも | 相談する | 3 | に決めました。 | Tôi quyết định mà không bàn với ai.
+shiekiuke | 毎朝早く | 起きる | 2 | ことがありました。 | Có lúc mỗi sáng tôi bị bắt dậy sớm.
+shiekiuke | 上司に残業を | する | 3 | ことがありました。 | Tôi từng bị sếp bắt làm thêm giờ.
+shiekiuke | 母に毎日ピアノを | 練習する | 3 | ことがありました。 | Tôi từng bị mẹ bắt luyện piano mỗi ngày.
+shiekiuke | 先生に漢字を百回 | 書く | 1 | ことがありました。 | Tôi từng bị thầy bắt viết chữ Hán một trăm lần.
+shiekiuke | 友達に長い時間 | 待つ | 1 | ことがありました。 | Tôi từng bị bạn bắt đợi rất lâu.
+chau | 私はよく傘を | 忘れる | 2 | んです。 | Tôi hay lỡ quên ô.
+chau | 面白くて、一晩で全部 | 読む | 1 | ことがあります。 | Hay quá nên có khi tôi đọc hết trong một đêm.
+chau | 気をつけないと、財布を | 落とす | 1 | よ。 | Không cẩn thận là rơi mất ví đấy.
+chau | 暑いと、すぐ水を | 飲む | 1 | んです。 | Trời nóng là tôi uống hết nước ngay.
+chau | 眠くて、授業中に | 寝る | 2 | ことがあります。 | Buồn ngủ nên có khi tôi lỡ ngủ trong giờ học.
+toku | 友達が来る前に、掃除を | する | 3 | つもりです。 | Trước khi bạn đến tôi định dọn dẹp sẵn.
+toku | 出かける前に窓を | 閉める | 2 | ほうがいいですよ。 | Trước khi ra ngoài nên đóng sẵn cửa sổ.
+toku | パーティーの前に飲み物を | 買う | 1 | つもりです。 | Trước bữa tiệc tôi định mua sẵn đồ uống.
+toku | 試験の前に単語を | 覚える | 2 | ことにしました。 | Tôi quyết định học thuộc từ vựng trước kỳ thi.
+toku | 明日の会議のために資料を | 作る | 1 | ことにしました。 | Tôi quyết định làm sẵn tài liệu cho cuộc họp ngày mai.
+teru | 今、何を | する | 3 | の？ | Bây giờ bạn đang làm gì thế?
+teru | 外は雨が | 降る | 1 | よ。 | Ngoài trời đang mưa đấy.
+teru | 彼は今、ご飯を | 食べる | 2 | 。 | Bây giờ anh ấy đang ăn cơm.
+teru | 弟は部屋で | 寝る | 2 | 。 | Em trai đang ngủ trong phòng.
+teru | 友達が駅で | 待つ | 1 | 。 | Bạn đang đợi ở ga.
+mai | もう二度とお酒は | 飲む | 1 | と誓った。 | Tôi thề sẽ không bao giờ uống rượu nữa.
+mai | あんな店には二度と | 来る | 3 | と思った。 | Tôi nghĩ sẽ không bao giờ quay lại tiệm đó nữa.
+mai | 彼は決して約束を | 破る | 1 | 。 | Anh ấy sẽ không bao giờ thất hứa.
+mai | 誰にも | 言う | 1 | と心に決めた。 | Tôi quyết trong lòng sẽ không nói với ai.
+mai | 今日は雨は | 降る | 1 | 。 | Hôm nay chắc sẽ không mưa.
+maika | 行こうか、 | 行く | 1 | と迷っている。 | Tôi đang phân vân nên đi hay không đi.
+maika | 買おうか、 | 買う | 1 | と悩んでいる。 | Tôi đang băn khoăn nên mua hay không mua.
+maika | 言おうか、 | 言う | 1 | と迷った。 | Tôi đã phân vân nên nói hay không nói.
+maika | 続けようか、 | 続ける | 2 | と考えている。 | Tôi đang nghĩ nên tiếp tục hay thôi.
+maika | 食べようか、 | 食べる | 2 | と迷っている。 | Tôi đang phân vân nên ăn hay không ăn.
+maika | 話そうか、 | 話す | 1 | と悩んだ。 | Tôi đã băn khoăn nên nói hay không nói.
+maika | 戻ろうか、 | 戻る | 1 | と迷っている。 | Tôi đang phân vân nên quay lại hay không.
+zaru | 上司の命令なので、 | 行く | 1 | を得ない。 | Vì là lệnh của sếp nên đành phải đi.
+zaru | 雨だから、試合は | 延期する | 3 | を得ない。 | Vì mưa nên đành phải hoãn trận đấu.
+zaru | 約束したので、 | 手伝う | 1 | を得ない。 | Vì đã hứa nên đành phải giúp.
+zaru | 理由を聞かれたら、 | 話す | 1 | を得ない。 | Nếu bị hỏi lý do thì đành phải nói.
+zaru | 時間がないので、 | 諦める | 2 | を得ない。 | Vì không còn thời gian nên đành bỏ cuộc.
+zaru | 社長に頼まれたら、 | 引き受ける | 2 | を得ない。 | Nếu giám đốc nhờ thì đành phải nhận.
+zaru | 費用が足りないので、旅行を | やめる | 2 | を得ない。 | Vì không đủ chi phí nên đành bỏ chuyến đi.
+beki | 学生は毎日 | 勉強する | 3 | だ。 | Học sinh phải học mỗi ngày.
+beki | 困っている人は | 助ける | 2 | だ。 | Người đang gặp khó thì nên giúp.
+beki | 自分の意見を | 言う | 1 | だ。 | Nên nói ra ý kiến của mình.
+beki | 嘘は | つく | 1 | ではない。 | Không nên nói dối.
+beki | 部屋は毎日 | 掃除する | 3 | だ。 | Phòng thì nên dọn mỗi ngày.
+nu | 彼は私の | 知る | 1 | 間に帰っていた。 | Anh ấy đã về lúc tôi không hay biết.
+nu | それは | 言う | 1 | が花だ。 | Cái đó không nói ra thì hơn.
+nu | 彼は誰にも | 会う | 1 | まま去った。 | Anh ấy ra đi mà không gặp ai.
+nu | 私が | 気づく | 1 | うちに、雨が降り出した。 | Lúc tôi chưa kịp để ý thì trời đã mưa.
+nu | 何も | 食べる | 2 | まま、一日が過ぎた。 | Một ngày trôi qua mà không ăn gì.
+nu | 何も | 願う | 1 | 者に、幸せは来ない。 | Hạnh phúc không đến với người không mong gì.
+nu | 彼は何も | する | 3 | 顔をしている。 | Anh ấy làm ra vẻ chẳng làm gì.
+nn | そんなことは | 知る | 1 | 。 | Chuyện đó tôi không biết.
+nn | 何を言っているのか、さっぱり | 分かる | 1 | 。 | Anh nói gì tôi chẳng hiểu gì cả.
+nn | こんなに忙しくて、何も | できる | 2 | 。 | Bận thế này thì chẳng làm được gì.
+nn | 彼とは二度と | 会う | 1 | ぞ。 | Tôi sẽ không gặp anh ta nữa đâu.
+nn | 早く | 行く | 1 | と、遅れるよ。 | Không đi sớm là muộn đấy.
+nn | もう | 食べる | 2 | よ、お腹いっぱいだ。 | Tôi không ăn nữa, no rồi.
+nn | そんな話は | 聞く | 1 | 。 | Chuyện như thế tôi không nghe.
+mai | 彼は二度と日本へ | 来る | 3 | と言った。 | Anh ấy nói sẽ không bao giờ đến Nhật nữa.
