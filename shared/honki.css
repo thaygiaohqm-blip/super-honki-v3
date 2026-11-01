@@ -1,6 +1,6 @@
 /* Super Honki — thành phần dùng chung: thanh chuyển app và hộp sách của Minh Dokkai */
-.hk-strip{background:var(--green-deep,#0b3b3b);color:#f7f4ed;font:600 14px/1 "Be Vietnam Pro",system-ui,sans-serif;position:sticky;top:0;z-index:80;border-bottom:3px solid var(--coral,#ed3838)}
-.hk-strip__in{max-width:1180px;margin:0 auto;padding:0 16px;height:66px;display:flex;align-items:center;gap:10px}
+.hk-strip{background:var(--green-deep,#0b3b3b);color:#f7f4ed;font:600 14px/1 "Be Vietnam Pro",system-ui,sans-serif;position:sticky;top:0;z-index:80;box-shadow:inset 0 -3px 0 var(--coral,#ed3838);view-transition-name:hk-strip}
+.hk-strip__in{max-width:1180px;margin:0 auto;padding:0 16px 3px;height:69px;display:flex;align-items:center;gap:10px}
 .hk-strip a{color:inherit;text-decoration:none}
 .hk-strip__brand{display:flex;align-items:center;gap:11px;font-weight:600;font-size:24px;letter-spacing:-.02em;margin-right:14px;white-space:nowrap}
 .hk-strip__brand b{font-weight:900}
@@ -11,11 +11,11 @@
 .hk-strip__nav a:hover{opacity:1;background:rgba(255,255,255,.12)}
 .hk-strip__nav a[aria-current="true"]{opacity:1;background:var(--coral,#ed3838);color:#fff}
 .hk-strip__soon{padding:9px 12px;opacity:.5;white-space:nowrap}
-.hk-strip__tools{display:flex;align-items:center;gap:8px}
+.hk-strip__tools{display:flex;align-items:center;gap:8px;min-width:92px;min-height:40px;justify-content:flex-end}
 .hk-strip__tools .acct-btn{background:#fff;color:#0b3b3b;border-color:#fff}
+.hk-strip__tools .acct-av--out{background:#0b3b3b;color:#fff}
+.hk-strip__tools .acct-av--out svg{display:block}
 .hk-strip__tools .acct-btn:hover{background:#f1f1f1}
-@media (max-width:860px){.hk-strip__soon{display:none}.hk-strip__brand{font-size:20px;margin-right:4px}.hk-strip__brand img{width:40px;height:40px}.hk-strip__nav a{padding:8px 10px;font-size:13px}}
-@media (max-width:560px){.hk-strip__in{height:auto;min-height:60px;flex-wrap:wrap;padding:8px 12px;gap:6px 8px}.hk-strip__grow{display:none}.hk-strip__brand span{display:inline}.hk-strip__tools{margin-left:auto}.hk-strip__nav{order:3;width:100%}.hk-strip__nav a{flex:1;text-align:center;background:rgba(255,255,255,.08)}}
 
 /* công cụ dùng chung trên trang chủ */
 .hk-tools{display:flex;align-items:center;gap:8px;position:relative}
@@ -54,9 +54,86 @@
 .hk-prod span{display:block;padding:9px 12px 11px;font-weight:700;font-size:13px;line-height:1.35}
 .hk-prod small{display:block;font-weight:500;color:#b42323;margin-top:2px}
 .hk-prod:hover{border-color:#ed3838}
-body:has(.toast) .hk-fab{bottom:16px}
 
 /* Super Goi: thanh app dính ngay dưới thanh thương hiệu */
 body[data-honki="goi"] .top{top:var(--hk-h,0px)}
 body[data-honki="goi"] .aside{top:calc(var(--hk-h,0px) + 88px)}
 body[data-honki="bunpou"] .gside{top:calc(var(--hk-h,0px) + 130px)}
+body[data-honki="bunpou"] .top{top:var(--hk-h,0px)}
+.hk-switch{display:none}
+
+/* ---------- hộp sách: danh sách cuộn, nút tròn trên điện thoại ---------- */
+.hk-fab{view-transition-name:hk-fab}
+.hk-fab__list{display:grid;gap:10px}
+.hk-fab__list .hk-prod{margin:0}
+.hk-fab__list .hk-prod img{aspect-ratio:16/9;object-fit:cover;object-position:center 30%}
+.hk-fab__panel{max-height:calc(100vh - 110px)}
+
+/* ---------- điện thoại và máy tính bảng ---------- */
+@media (max-width:1060px){body[data-honki="goi"] .hk-fab{bottom:calc(74px + env(safe-area-inset-bottom))}}
+@media (max-width:860px){
+  .hk-strip__in{height:56px;padding:0 12px 3px;gap:8px}
+  .hk-strip__nav,.hk-strip__soon{display:none}
+  .hk-strip__brand{font-size:21px;margin-right:0;gap:9px}
+  .hk-strip__brand img{width:40px;height:40px}
+  .hk-strip__tools{margin-left:auto}
+  .hk-strip{box-shadow:0 3px 10px rgba(0,0,0,.28)}
+  .hk-switch{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 12px;background:var(--green-deep,#0b3b3b);border-bottom:3px solid var(--coral,#ed3838);font:700 14px/1 "Be Vietnam Pro",system-ui,sans-serif}
+  .hk-switch a{color:#f7f4ed;text-decoration:none;text-align:center;padding:11px 8px;border-radius:999px;background:rgba(255,255,255,.1)}
+  .hk-switch a[aria-current="true"]{background:var(--coral,#ed3838);color:#fff}
+  /* thanh công tắc Kanji / furigana / romaji luôn dính ngay dưới thanh Super Honki */
+  body[data-honki] .top .brand{display:none}
+  body[data-honki="goi"] .top__in{height:48px;justify-content:center}
+  body[data-honki="bunpou"] .top{position:static;display:contents}
+  body[data-honki="bunpou"] .top__in{position:sticky;top:var(--hk-h,0px);z-index:40;height:48px;justify-content:center;background:var(--surface,#fff);border-bottom:1px solid var(--line)}
+  body[data-honki="bunpou"] .tabs{background:var(--surface,#fff);border-bottom:1px solid var(--line);border-top:0}
+  body[data-honki] .toggles{margin:0 auto}
+  /* nút sách thu thành nút tròn, không che thanh điều hướng */
+  .hk-fab{right:12px;bottom:calc(14px + env(safe-area-inset-bottom))}
+  .hk-fab__btn{width:50px;height:50px;padding:0;justify-content:center;border-radius:50%}
+  .hk-fab__btn span{display:none}
+  .hk-fab__btn svg{width:23px;height:23px}
+  .hk-fab__panel{max-height:calc(100vh - 190px)}
+}
+@media (max-width:520px){.hk-menu{top:60px}}
+
+/* tránh tràn chữ khỏi màn hình (romaji viết liền, câu dài) */
+body[data-honki]{overflow-x:clip}
+.romaji,.gex__ja,.gex__vi,.gex__say,.say,.exfb__tr,.xs{overflow-wrap:anywhere}
+
+/* ---------- chuyển trang mượt giữa các trang Super ---------- */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:hkFadeOut .16s ease-in both}
+::view-transition-new(root){animation:hkFadeIn .28s ease-out both}
+@keyframes hkFadeOut{to{opacity:0}}
+@keyframes hkFadeIn{from{opacity:0}}
+body[data-honki] main{animation:hkMain .32s ease-out backwards}
+@keyframes hkMain{from{opacity:0;transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}body[data-honki] main{animation:none}}
+
+/* ---------- hộp đăng nhập ở trang chủ ---------- */
+.hk-dlg{border:0;padding:0;background:transparent;max-width:none;max-height:none;color:#12201f;font:400 15px/1.5 "Be Vietnam Pro",system-ui,sans-serif}
+.hk-dlg::backdrop{background:rgba(8,28,28,.62);backdrop-filter:blur(3px)}
+.hk-dlg[open]{display:grid;place-items:center;width:100%;height:100%;animation:hkIn .2s ease-out}
+.hk-dlg__in{position:relative;width:min(440px,calc(100vw - 24px));max-height:calc(100vh - 24px);overflow:auto;background:#fffdf8;border-radius:22px;padding:26px 24px 22px;box-shadow:0 24px 70px rgba(0,0,0,.4)}
+.hk-dlg h2{font-size:26px;margin:0 0 6px;letter-spacing:-.02em;color:var(--teal,#0b3b3b);max-width:none}
+.hk-dlg__x{position:absolute;right:14px;top:12px;border:0;background:none;font-size:26px;line-height:1;cursor:pointer;color:#5d6b6a}
+.hk-dlg__lead{margin:0 0 14px;color:#5d6b6a;font-size:14px}
+.hk-dlg__note{margin:0 0 14px;background:#fdecec;color:#8a1f1f;border-radius:12px;padding:10px 12px;font-size:13px}
+.hk-dlg__tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:#efe9da;border-radius:12px;padding:4px;margin-bottom:14px}
+.hk-dlg__tabs button{border:0;background:none;border-radius:9px;padding:9px;font:700 14px "Be Vietnam Pro",system-ui,sans-serif;color:#5d6b6a;cursor:pointer}
+.hk-dlg__tabs button[aria-selected="true"]{background:#fff;color:var(--teal,#0b3b3b);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.hk-dlg__form label{display:block;font-weight:700;font-size:13px;margin-bottom:12px}
+.hk-dlg__form small{font-weight:500;color:#5d6b6a}
+.hk-dlg__form input{display:block;width:100%;margin-top:5px;padding:11px 12px;border:1.5px solid #ddd5c3;border-radius:12px;font:500 16px "Be Vietnam Pro",system-ui,sans-serif;background:#fff;color:#12201f}
+.hk-dlg__form input:focus{outline:3px solid color-mix(in srgb,var(--mint,#27c4b5) 45%,transparent);border-color:var(--teal,#0b3b3b)}
+.hk-pw{position:relative;display:block}.hk-pw input{padding-right:62px}
+.hk-pw button{position:absolute;right:6px;top:50%;margin-top:-3px;transform:translateY(-50%);border:0;background:none;font:700 13px "Be Vietnam Pro",system-ui,sans-serif;color:var(--teal,#0b3b3b);cursor:pointer;padding:8px}
+.hk-dlg__err{min-height:20px;margin:0 0 6px;color:#b42323;font-size:13px;font-weight:600}
+.hk-go{width:100%;border:0;border-radius:14px;padding:14px;background:var(--teal,#0b3b3b);color:#fff;font:800 16px "Be Vietnam Pro",system-ui,sans-serif;cursor:pointer;transition:background .15s,transform .15s}
+.hk-go:hover:not(:disabled){background:var(--red,#ed3838);transform:translateY(-1px)}
+.hk-go:disabled{opacity:.55;cursor:not-allowed}
+.hk-dlg__fine{margin:12px 0 0;font-size:12px;color:#5d6b6a}
+
+/* chỗ trống trong câu điền: gạch đỏ nằm sát chữ, không trôi xuống khe giữa hai dòng */
+.blank{line-height:1.2;vertical-align:-.1em;min-width:2.4em;border-radius:6px 6px 0 0;background:color-mix(in srgb,var(--coral,#ed3838) 9%,transparent)}

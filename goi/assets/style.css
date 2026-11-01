@@ -755,3 +755,27 @@ dialog.auth::backdrop { background: rgba(8, 24, 24, .55); backdrop-filter: blur(
 .auth__x { color: var(--muted); font-size: 24px; }
 .pw button { color: var(--brand-ink); font-size: 12.5px; }
 .acct-menu button { font-weight: 600; font-size: 14px; color: var(--ink); }
+
+/* ---------- nhãn chỉ vào các gói theo cấp độ (N5 → N1) ---------- */
+.stairs-wrap { position: relative; padding-top: 86px; min-width: 0; }
+.stairs-tag { position: absolute; left: 0; top: 0; margin: 0 !important; max-width: 17em !important; display: grid; gap: 2px; padding: 11px 16px 12px; background: var(--coral); color: #fff !important; border-radius: 16px 16px 16px 4px; transform: rotate(-2deg); transform-origin: left bottom; box-shadow: 0 5px 0 color-mix(in srgb, var(--coral) 65%, #000); animation: tagBob 2.8s ease-in-out infinite; z-index: 2; }
+.stairs-tag b { font-size: 16px; line-height: 1.2; letter-spacing: -.01em; }
+.stairs-tag span { font-size: 13px; font-weight: 600; opacity: .95; line-height: 1.3; }
+.stairs-tag svg { position: absolute; left: 62%; top: 100%; width: 74px; height: 58px; color: var(--coral); overflow: visible; }
+@keyframes tagBob { 50% { transform: rotate(-2deg) translateY(-5px); } }
+.stairs-wrap .step { box-shadow: 0 0 0 0 color-mix(in srgb, var(--coral) 50%, transparent); animation: stepWave 4.5s ease-in-out infinite; }
+.stairs-wrap .step[data-lv="n4"] { animation-delay: .25s; }
+.stairs-wrap .step[data-lv="n3"] { animation-delay: .5s; }
+.stairs-wrap .step[data-lv="n2"] { animation-delay: .75s; }
+.stairs-wrap .step[data-lv="n1"] { animation-delay: 1s; }
+@keyframes stepWave { 0%, 24%, 100% { transform: none; } 12% { transform: translateY(-9px); } }
+.stairs-wrap .step:hover { animation: none; }
+.stairs-wrap.is-hint .step { animation: stepFlash .9s ease-out 2; }
+@keyframes stepFlash { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--coral) 70%, transparent); } 100% { box-shadow: 0 0 0 16px transparent; } }
+.btn--levels span { display: inline-block; animation: arrowDown 1.4s ease-in-out infinite; }
+@keyframes arrowDown { 50% { transform: translateY(4px); } }
+@media (max-width: 860px) {
+  .stairs-wrap { padding-top: 92px; margin-top: 12px; }
+  .stairs-tag { max-width: 15em !important; }
+}
+@media (prefers-reduced-motion: reduce) { .stairs-tag, .stairs-wrap .step, .btn--levels span { animation: none !important; } }

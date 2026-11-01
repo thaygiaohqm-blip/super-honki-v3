@@ -12,6 +12,9 @@ if (!process.env.KV_REST_API_URL) {
     else if (cmd === "SET") { if (a[2] === "NX" && store.has(a[0])) r = null; else { store.set(a[0], String(a[1])); r = "OK"; } }
     else if (cmd === "INCR") { const v = Number(store.get(a[0]) || 0) + 1; store.set(a[0], String(v)); r = v; }
     else if (cmd === "EXPIRE") r = 1;
+    else if (cmd === "LPUSH") { const l = JSON.parse(store.get(a[0]) || "[]"); l.unshift(a[1]); store.set(a[0], JSON.stringify(l)); r = l.length; }
+    else if (cmd === "LTRIM") { const l = JSON.parse(store.get(a[0]) || "[]"); store.set(a[0], JSON.stringify(l.slice(+a[1], +a[2] + 1))); r = "OK"; }
+    else if (cmd === "LRANGE") { r = JSON.parse(store.get(a[0]) || "[]").slice(+a[1], +a[2] + 1); }
     else if (cmd === "EVAL") { const [, , k1, k2, rv, text] = a, rev = Number(store.get(k2) || 0); if (rev !== Number(rv)) r = [0, rev]; else { store.set(k1, text); store.set(k2, String(rev + 1)); r = [1, rev + 1]; } }
     return { ok: true, status: 200, json: async () => ({ result: r }) };
   };

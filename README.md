@@ -41,3 +41,10 @@ Super Bunpou: sửa `bunpou/source/gram/<cấp>.txt` rồi chạy `python3 bunpo
 ## Màu giao diện và tài khoản dùng chung
 
 Màu chủ đề lưu ở khoá `honki:theme`, phiên đăng nhập ở `honki:auth` (cùng một nguồn gốc nên trang chủ, /goi/ và /bunpou/ dùng chung). Nút Màu và Tài khoản luôn nằm góc trên bên phải của thanh Super Honki. Tiến độ học vẫn lưu riêng từng app (`app=goi` hoặc `app=bunpou`).
+
+## Ủng hộ và thống kê truy cập
+
+Mục "Ủng hộ" ở trang chủ lấy thông tin tài khoản trong `index.html` (mã `ung-ho`) và mã QR ở `shared/img/qr-donate.svg`. Khi người học bấm "Mình đã chuyển khoản", trang gọi `POST /api/donate`; máy chủ ghi số lượt và lời nhắn vào Upstash. Tác giả xem bằng lệnh:
+`curl -H "Authorization: Bearer <AUTH_SECRET>" https://<tên-miền>/api/donate`
+
+Thống kê lượt truy cập dùng Vercel Web Analytics: bật ở tab Analytics của project, mã đo đã nằm sẵn trong ba trang (`/_vercel/insights/script.js`).

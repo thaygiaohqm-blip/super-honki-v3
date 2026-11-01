@@ -275,7 +275,7 @@
       <div class="hero__copy">
         <h1><span class="jp" lang="ja">${jp("語彙[ごい]は、組[く]み合[あ]わせで覚[おぼ]える。", { hl: false })}</span>Nhớ từ tiếng Nhật bằng cụm từ người Nhật thật sự nói.</h1>
         <p>${fmt(C.total)} mục từ chia theo năm cấp JLPT, mỗi cấp tách thành từng chủ đề. Mỗi từ đi kèm cụm kết hợp thông dụng nhất, âm Hán Việt, romaji và một câu ví dụ.</p>
-        <div class="hero__actions"><a class="btn btn--primary" href="#/test">Test trình độ đầu vào</a><a class="btn btn--ghost" href="#/n5">Bắt đầu với N5</a></div>
+        <div class="hero__actions"><a class="btn btn--primary" href="#/test">Test trình độ đầu vào</a><a class="btn btn--ghost" href="#/n5">Bắt đầu với N5</a><button class="btn btn--coral btn--levels" type="button" data-to-levels>Chọn gói theo cấp độ <span aria-hidden="true">↓</span></button></div>
         ${placeChip()}
         <div class="quick" role="group" aria-label="Chọn cách học">
           <a class="qk" href="#/giao-trinh"><span class="qk__ja" lang="ja" aria-hidden="true">課</span><span class="qk__t"><b>Học theo giáo trình</b><small>Minna no Nihongo · Mimikara Oboeru</small></span></a>
@@ -284,7 +284,11 @@
           <a class="qk" href="#/on-tap"><span class="qk__ja" lang="ja" aria-hidden="true">復</span><span class="qk__t"><b>Ôn từ chưa thuộc</b><small>${Object.keys(P.rv).length ? `${fmt(Object.keys(P.rv).length)} từ đang chờ ôn` : "Từ sai tự vào danh sách này"}</small></span></a>
         </div>
       </div>
-      <nav class="stairs" aria-label="Chọn cấp độ JLPT">${steps}</nav>
+      <div class="stairs-wrap" id="goi-levels">
+        <p class="stairs-tag"><b>Học theo cấp độ JLPT</b><span>Bấm vào bậc thang cấp bạn muốn học</span>
+          <svg viewBox="0 0 90 70" aria-hidden="true"><path d="M6 8c34-8 70 6 66 50" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 8"/><path d="M58 50l14 14 12-16" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></p>
+        <nav class="stairs" aria-label="Chọn cấp độ JLPT">${steps}</nav>
+      </div>
     </div></section>
     ${demoItem ? `<section class="sec"><div class="wrap demo">
       <div id="demo-card"></div>
@@ -304,6 +308,13 @@
         <a class="way" href="#/nganh"><span class="way__ja" lang="ja">職種別</span><b>Theo chuyên ngành</b><span>Mười gói từ vựng cho các ngành thực tập sinh làm nhiều nhất tại Nhật.</span><em>Xem các ngành</em></a>
       </div>
     </div></section>`;
+    const toLv = main.querySelector("[data-to-levels]");
+    if (toLv) toLv.onclick = () => {
+      const w = main.querySelector("#goi-levels"); if (!w) return;
+      const top = w.getBoundingClientRect().top + scrollY - (parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--hk-h")) || 0) - 70;
+      scrollTo({ top, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      w.classList.remove("is-hint"); void w.offsetWidth; w.classList.add("is-hint");
+    };
     if (demoItem) {
       const host = $("#demo-card");
       const paint = () => { host.innerHTML = cardFrontHTML(demoItem, 0, 1, true); bindSpeak(host); };

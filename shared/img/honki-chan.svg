@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 240" role="img" aria-label="Honki-chan, linh vật của Super Honki">
+<defs>
+<linearGradient id="hc-h" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14605f"/><stop offset="1" stop-color="#062e2e"/></linearGradient>
+<radialGradient id="hc-i" cx=".5" cy=".35" r=".7"><stop offset="0" stop-color="#7ff0e0"/><stop offset=".6" stop-color="#17a79a"/><stop offset="1" stop-color="#0b4d4a"/></radialGradient>
+<linearGradient id="hc-r" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff7a7a"/><stop offset="1" stop-color="#e02b2b"/></linearGradient>
+</defs>
+<ellipse cx="110" cy="228" rx="62" ry="8" fill="#0b3b3b" opacity=".14"/>
+<!-- tóc sau -->
+<path d="M36 112C24 48 70 14 110 14s86 34 74 98c-4 24-8 38-12 50H48c-4-12-8-26-12-50z" fill="url(#hc-h)"/>
+<!-- thân áo -->
+<path d="M52 232c0-34 24-56 58-56s58 22 58 56z" fill="#0b3b3b"/>
+<path d="M92 176l18 22 18-22" fill="#f7f4ed" stroke="#0b3b3b" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="110" cy="214" r="5" fill="#ed3838"/>
+<!-- cổ và mặt -->
+<rect x="98" y="150" width="24" height="30" rx="10" fill="#f7c9a8"/>
+<ellipse cx="110" cy="110" rx="60" ry="56" fill="#ffe3cf" stroke="#0b3b3b" stroke-width="3.5"/>
+<!-- tai -->
+<circle cx="50" cy="116" r="9" fill="#ffd2b6" stroke="#0b3b3b" stroke-width="3"/><circle cx="170" cy="116" r="9" fill="#ffd2b6" stroke="#0b3b3b" stroke-width="3"/>
+<!-- mái -->
+<path d="M50 104C44 52 80 26 110 26s68 26 60 78c-8-20-18-32-34-36-6 14-18 24-34 26 4-10 0-20-6-26-4 18-16 30-36 34-8 4-12 10-16 18z" fill="url(#hc-h)" stroke="#062e2e" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M104 28c-4-14 6-24 18-22-6 4-6 10-2 16z" fill="url(#hc-h)"/>
+<!-- băng đô hachimaki -->
+<g transform="rotate(-5 110 76)">
+<path d="M46 62h128v24H46z" fill="#fff" stroke="#0b3b3b" stroke-width="3.5"/>
+<circle cx="110" cy="74" r="10" fill="url(#hc-r)"/>
+<path d="M174 66c18-6 26 4 32 14-12-4-22-2-32 2zM174 78c16 2 24 12 26 24-10-8-18-10-26-8z" fill="#fff" stroke="#0b3b3b" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<!-- mắt anime -->
+<g>
+<ellipse cx="84" cy="116" rx="12" ry="16" fill="#fff" stroke="#0b3b3b" stroke-width="3"/><ellipse cx="85" cy="119" rx="8.5" ry="12" fill="url(#hc-i)"/><ellipse cx="85" cy="120" rx="4.5" ry="7" fill="#06201f"/><circle cx="81.500" cy="113" r="3.800" fill="#fff"/><circle cx="88" cy="124" r="1.800" fill="#fff"/>
+<ellipse cx="136" cy="116" rx="12" ry="16" fill="#fff" stroke="#0b3b3b" stroke-width="3"/><ellipse cx="135" cy="119" rx="8.500" ry="12" fill="url(#hc-i)"/><ellipse cx="135" cy="120" rx="4.500" ry="7" fill="#06201f"/><circle cx="131.500" cy="113" r="3.800" fill="#fff"/><circle cx="138" cy="124" r="1.800" fill="#fff"/>
+<path d="M70 102c6-6 16-8 24-4M126 98c8-4 18-2 24 4" fill="none" stroke="#062e2e" stroke-width="3.500" stroke-linecap="round"/>
+</g>
+<ellipse cx="68" cy="138" rx="10" ry="6" fill="#ff9aa6" opacity=".8"/><ellipse cx="152" cy="138" rx="10" ry="6" fill="#ff9aa6" opacity=".8"/>
+<path d="M98 140q12 14 24 0" fill="#c62828" stroke="#0b3b3b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M105 148q5 4 10 0" fill="#ff8a8a"/>
+<!-- tay giơ nắm đấm quyết tâm -->
+<g transform="translate(150 164) rotate(-12)"><rect x="0" y="0" width="30" height="40" rx="14" fill="#0b3b3b"/><circle cx="15" cy="-4" r="17" fill="#ffe3cf" stroke="#0b3b3b" stroke-width="3.500"/><path d="M6 -6h18M6 0h18" stroke="#0b3b3b" stroke-width="2.500" stroke-linecap="round"/></g>
+<!-- tia sáng -->
+<path d="M186 38l3 9 9 3-9 3-3 9-3-9-9-3 9-3zM26 56l2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="#ffd54a" stroke="#0b3b3b" stroke-width="1.500" stroke-linejoin="round"/>
+</svg>

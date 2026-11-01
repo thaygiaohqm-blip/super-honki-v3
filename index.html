@@ -6,6 +6,7 @@
 <title>Super Honki — Học tiếng Nhật nghiêm túc</title>
 <meta name="description" content="Super Honki: bộ công cụ học tiếng Nhật của Minh Dokkai. Super Goi (12.000 từ vựng theo cụm) và Super Bunpou (630 mẫu ngữ pháp N5–N1), sắp có Super Kanji.">
 <meta property="og:title" content="Super Honki — Học tiếng Nhật nghiêm túc">
+<meta property="og:image" content="shared/img/honki-chan.svg">
 <meta property="og:locale" content="vi_VN">
 <meta name="theme-color" content="#0b3b3b">
 <link rel="icon" href="shared/logo-mark.svg" type="image/svg+xml">
@@ -16,13 +17,16 @@
 <script>try{var t=localStorage.getItem("honki:theme");if(t&&t!=="reu")document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
+<link rel="stylesheet" href="shared/honki.css">
+<script type="speculationrules">{"prefetch":[{"urls":["/","/goi/","/bunpou/"],"eagerness":"moderate"}]}</script>
 </head>
 <body data-honki="home">
+<script src="shared/honki.js"></script>
 <header class="nav">
   <div class="nav__in">
     <a class="logo" href="#top" aria-label="Super Honki"><img src="shared/logo-mark.svg" alt="" width="44" height="44"><span><b>Super</b> Honki</span></a>
     <nav class="nav__links" aria-label="Menu chính">
-      <a href="#cong-cu">Công cụ</a><a href="#lo-trinh">Lộ trình</a><a href="#tac-gia">Tác giả</a><a href="#lien-ket">Liên hệ</a>
+      <a href="#cong-cu">Công cụ</a><a href="#lo-trinh">Lộ trình</a><a href="#tac-gia">Tác giả</a><a href="#lien-ket">Liên hệ</a><a href="#ung-ho">Ủng hộ</a>
     </nav>
     <div class="hk-tools" data-hk-tools></div>
   </div>
@@ -32,9 +36,9 @@
   <section class="hero">
     <div class="hero__kanji" aria-hidden="true">本気</div>
     <div class="hero__in">
-      <p class="eyebrow"><span class="dot"></span>本気 · honki · nghiêm túc đến cùng</p>
+      <p class="eyebrow"><span class="dot"></span>本気 · honki · nghiêm túc học thật để tới đích cuối cùng</p>
       <h1>Học tiếng Nhật <em>bằng cả quyết tâm.</em></h1>
-      <p class="lead">Từ vựng, ngữ pháp và Kanji gói trong một nơi, mọi thứ giải thích bằng tiếng Việt, mọi câu ví dụ đều có audio. Mỗi ngày một chút, nhưng không bỏ ngày nào.</p>
+      <p class="lead">Học kiến thức nền trong tiếng Nhật với các công cụ học tập toàn diện, chỉ cần bạn nghiêm túc và kỉ luật.</p>
       <div class="hero__cta">
         <a class="btn btn--red btn--lg" href="goi/">Học từ vựng với Super Goi</a>
         <a class="btn btn--ghost btn--lg" href="bunpou/">Học ngữ pháp với Super Bunpou</a>
@@ -50,7 +54,7 @@
   <section class="sec" id="cong-cu">
     <div class="wrap">
       <p class="kicker">Công cụ</p>
-      <h2>Mỗi công cụ lo một mảng, cùng một tài khoản.</h2>
+      <h2>Lựa chọn mảng kiến thức bạn muốn học hôm nay để cháy hết mình nào</h2>
       <div class="cards">
         <a class="card card--goi" href="goi/">
           <span class="card__tag">Từ vựng</span>
@@ -96,27 +100,58 @@
       <div>
         <p class="kicker">Tác giả</p>
         <h2>Minh Dokkai</h2>
-        <p class="author__p">Tác giả bộ sách <b>Huyền Lục Thư — Học Kanji bằng Lục Thư cải tiến</b> (3 cuốn) và cuốn <b>14 NGÀY học hết từ vựng N5, N4</b>. Super Honki là nơi những phương pháp đó được biến thành công cụ học mỗi ngày.</p>
+        <p class="author__p">Tác giả bộ sách <b>Huyền Lục Thư — Học Kanji bằng Lục Thư cải tiến</b> (3 cuốn) cuốn <b>14 NGÀY học hết từ vựng N5, N4</b> và cuốn <b>Hành trình Phiên dịch sống động</b>. Super Honki là nơi những phương pháp đó được biến thành công cụ học mỗi ngày.</p>
         <div class="books">
           <a class="book" href="https://www.minhdokkai.com/s%C3%A1ch/huy%E1%BB%81n-l%E1%BB%A5c-th%C6%B0-3-cu%E1%BB%91n" target="_blank" rel="noopener"><img src="shared/img/huyen-luc-thu.jpg" alt="Bộ sách Huyền Lục Thư" loading="lazy"><span>Bộ sách Huyền Lục Thư</span></a>
           <a class="book" href="https://www.minhdokkai.com/s%C3%A1ch/14-ng%C3%A0y-h%E1%BB%8Dc-h%E1%BA%BFt-t%E1%BB%AB-v%E1%BB%B1ng-n5-n4" target="_blank" rel="noopener"><img src="shared/img/14-ngay.jpg" alt="14 NGÀY học hết từ vựng tiếng Nhật N5, N4" loading="lazy"><span>14 NGÀY học hết từ vựng N5, N4</span></a>
+          <a class="book" href="https://www.minhdokkai.com/s%C3%A1ch/h%C3%A0nh-tr%C3%ACnh-phi%C3%AAn-d%E1%BB%8Bch-s%E1%BB%91ng-%C4%91%E1%BB%99ng" target="_blank" rel="noopener"><img src="shared/img/hanh-trinh-phien-dich.jpg" alt="Hành trình Phiên dịch sống động" loading="lazy"><span>Hành trình Phiên dịch sống động</span></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="sec sec--tint" id="lien-ket">
+  <section class="sec sec--tint sec--connect" id="lien-ket">
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="kf" viewBox="-14 -8 28 16"><circle cx="-6" cy="-1" r="1.9" fill="#0b3b3b"/><circle cx="6" cy="-1" r="1.9" fill="#0b3b3b"/><circle cx="-5.4" cy="-1.7" r=".6" fill="#fff"/><circle cx="6.6" cy="-1.7" r=".6" fill="#fff"/><ellipse cx="-10" cy="3" rx="3" ry="1.8" fill="#ff8fa3" opacity=".85"/><ellipse cx="10" cy="3" rx="3" ry="1.8" fill="#ff8fa3" opacity=".85"/><path d="M-2.6 2q2.6 3.2 5.2 0" fill="none" stroke="#0b3b3b" stroke-width="1.5" stroke-linecap="round"/></symbol></defs></svg>
+    <span class="petal petal--1" aria-hidden="true"></span><span class="petal petal--2" aria-hidden="true"></span><span class="petal petal--3" aria-hidden="true"></span><span class="petal petal--4" aria-hidden="true"></span><span class="spark spark--1" aria-hidden="true">✦</span><span class="spark spark--2" aria-hidden="true">✦</span>
     <div class="wrap">
-      <p class="kicker">Kết nối</p>
-      <h2>Theo dõi và liên hệ Minh Dokkai</h2>
+      <div class="connect__head">
+        <img class="connect__mascot" src="shared/img/honki-chan.svg" alt="" width="150" height="164" loading="lazy">
+        <div>
+          <p class="kicker">Kết nối</p>
+          <h2>Theo dõi và liên hệ Minh Dokkai</h2>
+          <p class="bubble">Kết bạn với mình nhé!</p>
+        </div>
+      </div>
       <ul class="links">
-        <li><a href="https://www.youtube.com/@MinhDokkai" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ff0000" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.900.5A3 3 0 0 0 1 7.200C.5 9.100.5 12 .5 12s0 2.900.5 4.800a3 3 0 0 0 2.100 2.100c1.900.5 8.900.5 8.900.5s7 0 8.900-.5a3 3 0 0 0 2.100-2.100c.5-1.900.5-4.800.5-4.800s0-2.900-.5-4.800z"/><path fill="#fff" d="M9.700 15.500v-7l6 3.500z"/></svg><b>YouTube</b><small>@MinhDokkai</small></a></li>
-        <li><a href="https://www.facebook.com/tiengnhathqm" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#1877f2"/><path fill="#fff" d="M13.400 20v-6.800h2.300l.4-2.700h-2.700V8.800c0-.8.300-1.300 1.400-1.300h1.400V5.100c-.3 0-1.100-.1-2.100-.1-2.100 0-3.500 1.300-3.500 3.600v2h-2.300v2.700h2.300V20z"/></svg><b>Fanpage</b><small>Tiếng Nhật HQM</small></a></li>
-        <li><a href="https://www.minhdokkai.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#0b3b3b" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20"/></svg><b>Website</b><small>minhdokkai.com</small></a></li>
-        <li><a href="https://www.facebook.com/minhdokkai/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#0b3b3b"/><circle cx="12" cy="9" r="3.600" fill="#f7f4ed"/><path fill="#f7f4ed" d="M5.500 19c.7-3.200 3.300-4.800 6.500-4.800s5.800 1.600 6.500 4.800a10 10 0 0 1-13 0z"/></svg><b>Trang cá nhân</b><small>facebook.com/minhdokkai</small></a></li>
-        <li><a href="https://conghien.netlify.app/#home" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ed3838" d="M12 21s-8-5.100-8-11a4.600 4.600 0 0 1 8-3 4.600 4.600 0 0 1 8 3c0 5.900-8 11-8 11z"/></svg><b>Website cống hiến</b><small>conghien.netlify.app</small></a></li>
-        <li><a href="https://zalo.me/0336382095" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" fill="#0068ff"/><text x="12" y="16" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="10" fill="#fff">Zalo</text></svg><b>Zalo</b><small>0336 382 095</small></a></li>
+        <li style="--c:#ff4d4d"><a href="https://www.youtube.com/@MinhDokkai" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="3" y="9" width="42" height="30" rx="11" fill="#ff4d4d" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><use href="#kf" x="12" y="19" width="24" height="13.7"/><circle cx="38" cy="36" r="8" fill="#fff" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><path d="M35.500 32.500v7l6-3.500z" fill="#ff4d4d"/></svg></span><b>YouTube</b><small>@MinhDokkai</small></a></li>
+        <li style="--c:#4a95ff"><a href="https://www.facebook.com/tiengnhathqm" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="23" cy="24" r="19" fill="#4a95ff" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><use href="#kf" x="11" y="19" width="24" height="13.7"/><circle cx="38" cy="37" r="8" fill="#fff" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><text x="38" y="41.500" text-anchor="middle" font-family="Arial,sans-serif" font-weight="900" font-size="13" fill="#1877f2">f</text></svg></span><b>Fanpage</b><small>Tiếng Nhật HQM</small></a></li>
+        <li style="--c:#27c4b5"><a href="https://www.minhdokkai.com/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="#27c4b5" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><path d="M4 24h40M24 4c8 8 8 32 0 40M24 4c-8 8-8 32 0 40" stroke="#fff" stroke-width="2" fill="none" opacity=".75"/><ellipse cx="24" cy="26" rx="13" ry="8.500" fill="#e8fffb"/><use href="#kf" x="12" y="19" width="24" height="13.7"/></svg></span><b>Website</b><small>minhdokkai.com</small></a></li>
+        <li style="--c:#ffb454"><a href="https://www.facebook.com/minhdokkai/" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="26" r="17" fill="#ffe3cf" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><path d="M6 25C5 10 15 4 24 4s19 6 18 21c-4-9-9-12-18-12S10 16 6 25z" fill="#0b3b3b"/><use href="#kf" x="12" y="25" width="24" height="13.7"/></svg></span><b>Trang cá nhân</b><small>facebook.com/minhdokkai</small></a></li>
+        <li style="--c:#ff6b7d"><a href="https://conghien.netlify.app/#home" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 43S4 31 4 17a10.500 10.500 0 0 1 20-4.500A10.500 10.500 0 0 1 44 17c0 14-20 26-20 26z" fill="#ff6b7d" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><use href="#kf" x="12" y="19" width="24" height="13.7"/></svg></span><b>Website cống hiến</b><small>conghien.netlify.app</small></a></li>
+        <li style="--c:#3b82ff"><a href="https://zalo.me/0336382095" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 5h30a7 7 0 0 1 7 7v19a7 7 0 0 1-7 7H27l-9 8v-8H9a7 7 0 0 1-7-7V12a7 7 0 0 1 7-7z" fill="#3b82ff" stroke="#0b3b3b" stroke-width="2.5" stroke-linejoin="round"/><use href="#kf" x="12" y="14" width="24" height="13.7"/></svg></span><b>Zalo</b><small>0336 382 095</small></a></li>
       </ul>
+    </div>
+  </section>
+
+  <section class="sec sec--donate" id="ung-ho">
+    <div class="wrap donate">
+      <div class="donate__intro">
+        <img class="donate__mascot" src="shared/img/honki-chan.svg" alt="" width="180" height="196" loading="lazy">
+        <p class="kicker">Ủng hộ</p>
+        <h2>Góp một món quà nhỏ cho Super Honki</h2>
+        <p>Super Honki miễn phí cho mọi người học. Nếu web giúp ích cho bạn, bạn có thể ủng hộ để web được duy trì và để ủng hộ tác giả.</p>
+      </div>
+      <div class="donate__card">
+        <div class="donate__qr"><img src="shared/img/qr-donate.svg" alt="Mã QR chuyển khoản tới tài khoản Tienphong Bank của Hoang Quang Minh" width="260" height="260" loading="lazy"><span class="donate__tag">Quét mã để ủng hộ</span></div>
+        <dl class="bank">
+          <div><dt>Ngân hàng</dt><dd>Tienphong Bank (TPBank)</dd></div>
+          <div><dt>Số tài khoản</dt><dd><b class="acc" id="donate-acc">111 112 113 11</b><button class="copy" type="button" data-copy="11111211311">Sao chép</button></dd></div>
+          <div><dt>Chủ tài khoản</dt><dd>HOANG QUANG MINH</dd></div>
+        </dl>
+        <label class="donate__msg">Lời nhắn cho tác giả <small>(không bắt buộc)</small><input type="text" id="donate-msg" maxlength="120" placeholder="Tên của bạn hoặc một lời chúc" autocomplete="off"></label>
+        <button class="donate__done" type="button" id="donate-done"><span class="heart" aria-hidden="true">♥</span> Mình đã chuyển khoản</button>
+        <p class="donate__thanks" id="donate-thanks" role="status" hidden>Món quà đóng góp của bạn sẽ giúp website được duy trì và phát triển, giúp hàng trăm ngàn người học tiếng Nhật tốt hơn mỗi năm.</p>
+      </div>
     </div>
   </section>
 
@@ -136,6 +171,6 @@
     <p>© 2026 Minh Dokkai. Super Honki.</p>
   </div>
 </footer>
-<script src="shared/honki.js"></script>
+<script src="shared/donate.js" defer></script>
 </body>
 </html>
