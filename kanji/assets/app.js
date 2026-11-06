@@ -623,7 +623,7 @@
       qs.forEach((q, n) => { const ok = ans[n] != null && ans[n] >= 0 && q.opts[ans[n]].ok; if (q.m) { mt[q.m]++; if (ok) m[q.m]++; } if (ok) sc++; else bad.push(n); if (test) { if (ok) markRight(q.r); else markWrong(q.r); } });
       if (test) { const t = P.tests[S.key] || { n: 0 }; t.n++; t.last = sc; t.best = Math.max(t.best || 0, sc); P.tests[S.key] = t; saveP(); }
       inQuiz = false;
-      KEYS = e => { if (e.key === "Enter") location.hash = href(S); };
+      KEYS = null; /* màn kết quả: chỉ chuyển khi người học bấm nút */
       const pct = Math.round(100 * sc / qs.length);
       main.innerHTML = '<div class="stage"><div class="res">' + scoreRing(sc, qs.length) + '<div class="res__score">' + sc + "<small>/" + qs.length + "</small></div><p>" + (pct >= 90 ? "Xuất sắc! Bạn nắm chắc phần này." : pct >= 70 ? "Khá tốt. Ôn thêm vài chữ nữa là vững." : pct >= 50 ? "Tạm ổn, hãy xem lại các chữ sai bên dưới." : "Cần ôn lại. Hãy dùng flashcard rồi làm lại bài.") + "</p>" +
         (test ? '<div class="res__m"><div>問題1 · Cách đọc<b>' + m[1] + "/" + mt[1] + '</b></div><div>問題2 · ' + (S.tab === "gia-dinh" ? "Phân biệt chữ" : "Chọn Kanji") + "<b>" + m[2] + "/" + mt[2] + "</b></div></div>" : "") +
@@ -732,7 +732,7 @@
     const toolbar = () => '<div class="chips" style="margin:0 0 6px"><span class="seg"><button type="button" data-opt="shuffle" aria-pressed="' + opt.shuffle + '">Xáo trộn</button><button type="button" data-opt="order" aria-pressed="' + !opt.shuffle + '">Theo thứ tự</button></span><span class="seg"><button type="button" data-opt="all" aria-pressed="' + !opt.onlyNew + '">Tất cả</button><button type="button" data-opt="new" aria-pressed="' + opt.onlyNew + '">Chưa thuộc</button></span></div>';
     function render(dir) {
       if (i >= queue.length) {
-        KEYS = e => { if (e.key === "Enter") init(); };
+        KEYS = null;
         main.innerHTML = '<div class="stage stage--wide"><div class="res">' + scoreRing(ok, seen || 1) + '<div class="res__score">' + ok + "<small>/" + seen + "</small></div><p>" + (queue.length ? "Bạn đã xem hết bộ thẻ. Những chữ chưa thuộc nằm trong phần “Chưa thuộc”." : "Không có thẻ nào để học ở chế độ này.") + '</p><div class="act" style="justify-content:center"><button class="btn btn--primary" type="button" data-again>Học lại</button><a class="btn btn--ghost" href="' + exit + '">Về ' + (S.exit ? "danh sách gói" : "trang " + esc(S.title)) + "</a></div></div></div>";
         $("[data-again]").onclick = init; afterDone(main, ok, seen || 1); return;
       }
@@ -807,7 +807,7 @@
       const used = new Set(); pairs = chunk.map(r => ({ r, lab: label(r, used), done: false })); sel = null; draw();
     };
     const end = () => {
-      KEYS = e => { if (e.key === "Enter") init(); };
+      KEYS = null;
       const sec = Math.round((Date.now() - t0) / 1000);
       main.innerHTML = '<div class="stage"><div class="res"><div class="res__score">' + total + "<small> cặp</small></div><p>Hoàn thành sau " + sec + " giây với " + errs + " lần ghép sai.</p><div class=\"act\" style=\"justify-content:center\"><button class=\"btn btn--primary\" type=\"button\" data-again>Chơi lại</button><a class=\"btn btn--ghost\" href=\"" + href(S) + "\">Về trang " + esc(S.title) + "</a></div></div></div>";
       $("[data-again]").onclick = init;
@@ -886,6 +886,7 @@
     setNav(tab); window.scrollTo(0, 0);
     const id = seg[1], mode = seg[2];
     document.title = "Super Kanji — " + TABS[tab].name;
+    const cb = document.getElementById("ctxbar"); if (cb) cb.hidden = true;
     if (tab === "dau-vao") return id ? vPlaceLv(id) : vPlace();
     if (tab === "tim-kiem") return vSearch(params.get("q") || "");
     if (tab === "ly-thuyet") return vTheory(id);
@@ -894,6 +895,11 @@
     if (!S || !S.list.length) { main.innerHTML = '<div class="wrap"><p class="empty">Không tìm thấy phạm vi này. <a href="' + TABS[tab].hash + '">Quay lại</a></p></div>'; return; }
     if (!mode) return vScope(S);
     document.title = "Super Kanji — " + S.title;
+    if (cb) { /* thanh tiêu đề: luôn cho biết đang luyện gì, ở phạm vi nào */
+      const mn = mode === "test" ? "Bài test 20 câu" : mode === "wrong" ? "Ôn chữ hay sai" : (modesFor(S).find(m => m.id === mode) || {}).t || "Luyện tập";
+      const pk = mode === "flash" && seg[3] && /^(10|20)-(\d+)$/.exec(seg[3]);
+      cb.innerHTML = '<b>' + esc(S.title) + '</b><span>' + esc(mn) + (pk ? " · Gói " + pk[2] : "") + '</span>'; cb.hidden = false;
+    }
     if (mode === "goi") return vPacks(S);
     if (mode === "flash" && seg[3]) {
       const m = /^(10|20)-(\d+)$/.exec(seg[3]), n = m && +m[1], q = m && +m[2] - 1, ls = m ? S.list.slice(q * n, q * n + n) : [];
@@ -913,7 +919,7 @@
   document.addEventListener("keydown", e => {
     if (dlg.open) { if (e.key === "ArrowLeft") stepK(-1); else if (e.key === "ArrowRight") stepK(1); return; }
     if (e.target.closest && e.target.closest("input,textarea,select")) return;
-    if (KEYS) KEYS(e);
+    if (KEYS && !e.repeat) KEYS(e);
   });
 
   route();

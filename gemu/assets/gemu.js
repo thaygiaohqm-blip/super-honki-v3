@@ -43,7 +43,7 @@
   const later = (fn, ms) => { const t = setTimeout(fn, ms); timers.push(t); return t; };
   const every = (fn, ms) => { const t = setInterval(fn, ms); timers.push(t); return t; };
   const stopAll = () => { while (timers.length) { const t = timers.pop(); clearTimeout(t); clearInterval(t); } KEYS = null; };
-  document.addEventListener("keydown", e => { if (KEYS && !(e.target.closest && e.target.closest("input,textarea"))) KEYS(e); });
+  document.addEventListener("keydown", e => { if (KEYS && !e.repeat && !(e.target.closest && e.target.closest("input,textarea"))) KEYS(e); });
   const strip = s => String(s || "").replace(/\[[^\]]*\]/g, "").replace(/[{}]/g, "");
   const norm = s => String(s || "").normalize("NFKC").replace(/[\s。、！？!?.,，．「」『』（）()・〜~…]/g, "");
   const toHira = s => String(s || "").replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
@@ -382,7 +382,7 @@
   function viewNoiSetup() {
     stopAll();
     main.innerHTML = '<div class="gm"><a class="x" href="#/" style="text-decoration:none">← Tất cả trò chơi</a><h1 style="margin-top:12px">🔗 ' + GAMES.noi.name + '</h1><div class="gpanel"><p class="rules">' + GAMES.noi.rules + '</p><div class="gl">Chọn cấp độ từ vựng</div><div class="gchips" id="lv">' + LEVELS.map(l => '<button class="chip" type="button" data-l="' + l + '" aria-current="' + (state.level === l) + '">' + LVN[l] + "</button>").join("") + '</div><div class="gl">Tên hiển thị</div><div class="gans"><input id="nm" maxlength="24" placeholder="Tên của bạn" value="' + esc(myName()) + '" aria-label="Tên hiển thị"></div><div class="gl">Vào chơi</div><div class="act"><button class="btn btn--primary btn--lg" id="quick" type="button">⚡ Ghép nhanh</button><button class="btn btn--ghost btn--lg" id="mk" type="button">Tạo phòng mới</button></div><form class="gans" id="jf" style="margin-top:12px"><input id="jc" maxlength="5" placeholder="Nhập mã phòng" style="text-transform:uppercase;max-width:200px" aria-label="Mã phòng"><button class="btn btn--ghost" type="submit">Vào phòng</button></form><p class="gnote" id="mnote">Ghép nhanh sẽ đưa bạn vào phòng đang chờ cùng cấp độ, hoặc mở phòng mới để người khác vào. Trò này cần ít nhất 2 người.</p></div></div>';
-    $$("[data-l]").forEach(b => b.onclick = () => { state.level = +b.dataset.l; $$("[data-l]").forEach(x => x.setAttribute("aria-current", x === b)); });
+    $$("[data-l]").forEach(b => b.onclick = () => { state.level = +b.dataset.l; setBar("noi"); $$("[data-l]").forEach(x => x.setAttribute("aria-current", x === b)); });
     const name = () => ($("#nm").value.trim() || "Khách " + Math.floor(1000 + Math.random() * 9000)).slice(0, 24);
     const enter = async (act, extra) => {
       const nm = name(); $("#mnote").textContent = "Đang vào phòng…";
@@ -424,7 +424,7 @@
     main.innerHTML = '<div class="gm"><a class="x" href="#/" style="text-decoration:none">← Tất cả trò chơi</a><h1 style="margin-top:12px">' + G.icon + " " + G.name + '</h1><div class="gpanel"><p class="rules">' + G.rules + '</p><div class="gl">Chọn cấp độ</div><div class="gchips" id="lv">' + LEVELS.map(l => '<button class="chip" type="button" data-l="' + l + '" aria-current="' + (state.level === l) + '">' + LVN[l] + "</button>").join("") + '</div><div class="gl">Chế độ chơi</div><div class="gchips" id="md"><button class="chip" type="button" data-m="solo" aria-current="' + (state.mode === "solo") + '">Chơi một mình</button><button class="chip" type="button" data-m="online" aria-current="' + (state.mode === "online") + '">Ghép trận online</button></div><p class="gnote" id="mnote"></p><div class="act" style="margin-top:18px"><button class="btn btn--primary btn--lg" type="button" id="go">Bắt đầu</button></div></div></div>';
     const note = () => { $("#mnote").textContent = state.mode === "solo" ? (sess() ? "Điểm cao nhất của bạn sẽ được lưu lên bảng xếp hạng." : "Đăng nhập (nút ở góc trên bên phải) để điểm kỉ lục của bạn được lưu lên bảng xếp hạng chung.") : "Hệ thống sẽ ghép bạn với một người đang online cùng chọn trò này và cùng cấp độ. Hai người nhận cùng bộ câu hỏi, ai điểm cao hơn thắng."; };
     note();
-    $$("[data-l]").forEach(b => b.onclick = () => { state.level = +b.dataset.l; $$("[data-l]").forEach(x => x.setAttribute("aria-current", x === b)); });
+    $$("[data-l]").forEach(b => b.onclick = () => { state.level = +b.dataset.l; setBar(g); $$("[data-l]").forEach(x => x.setAttribute("aria-current", x === b)); });
     $$("[data-m]").forEach(b => b.onclick = () => { state.mode = b.dataset.m; $$("[data-m]").forEach(x => x.setAttribute("aria-current", x === b)); note(); });
     $("#go").onclick = () => state.mode === "solo" ? startSolo(g) : startOnline(g);
   }
@@ -498,12 +498,17 @@
     showCount();
   }
 
+  /* thanh trên cùng trong game: nút quay lại + đang chơi game nào, cấp nào */
+  function setBar(g) {
+    const t = document.getElementById("gbt"); if (!t) return;
+    t.innerHTML = GAMES[g] ? "<b>" + GAMES[g].icon + " " + esc(GAMES[g].name) + "</b>" + (g === "noi" ? "" : "<span>" + LVN[state.level] + "</span>") : "";
+  }
   /* ---------- định tuyến ---------- */
   function route() {
     stopAll(); window.scrollTo(0, 0);
     const g = location.hash.replace(/^#\/?/, "").split("/")[0];
     document.title = "Super Gemu" + (GAMES[g] ? " — " + GAMES[g].name : "");
-    const gb = document.getElementById("gback"); if (gb) gb.hidden = !GAMES[g]; /* nút quay lại danh mục: hiện ở mọi màn hình trong game */
+    const gb = document.getElementById("gback"); if (gb) gb.hidden = !GAMES[g]; setBar(g); /* nút quay lại danh mục: hiện ở mọi màn hình trong game */
     if (GAMES[g]) viewSetup(g); else viewHome();
   }
   window.addEventListener("hashchange", route);

@@ -648,3 +648,9 @@ button.oi__g { cursor: pointer; }
 .th__top { position: fixed; right: 16px; bottom: 76px; z-index: 30; padding: 10px 14px; border: 0; border-radius: 999px; font: inherit; font-weight: 700; color: #fff; background: var(--brand-ink); box-shadow: 0 8px 20px -8px rgba(0,0,0,.4); cursor: pointer; }
 .th__top[hidden] { display: none; }
 @media (prefers-reduced-motion: reduce) { .th__body .th__h.flash { animation: none; } }
+
+/* thanh tiêu đề khi đang luyện tập / làm test */
+.ctxbar { max-width: 900px; margin: 14px auto 0; padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; background: var(--mint-soft, #e8f4f1); border-radius: 12px; font-family: var(--ui); color: var(--brand-ink, #0b4a46); }
+.ctxbar b { font-size: 17px; font-weight: 800; } .ctxbar span { font-size: 15px; font-weight: 700; opacity: .85; }
+.ctxbar span::before { content: "·"; margin-right: 12px; }
+.ctxbar[hidden] { display: none; }

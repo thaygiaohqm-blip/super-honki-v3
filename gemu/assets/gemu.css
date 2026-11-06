@@ -224,3 +224,7 @@ html, body { overflow-x: clip; max-width: 100%; }
 .gback { position: sticky; top: 0; z-index: 30; padding: 8px 14px; max-width: 1100px; margin: 0 auto; pointer-events: none; }
 .gback .btn { pointer-events: auto; background: var(--card, #fff); box-shadow: 0 2px 8px rgba(0,0,0,.08); }
 .gback[hidden] { display: none; }
+
+.gback { display: flex; align-items: center; gap: 12px; }
+.gbt { pointer-events: auto; background: var(--card, #fff); border-radius: 999px; padding: 6px 14px; box-shadow: 0 2px 8px rgba(0,0,0,.08); font-family: var(--ui); font-size: 14px; display: flex; gap: 8px; align-items: baseline; min-width: 0; }
+.gbt:empty { display: none; } .gbt b { font-weight: 800; } .gbt span { font-weight: 700; opacity: .75; } .gbt span::before { content: "·"; margin-right: 8px; }
