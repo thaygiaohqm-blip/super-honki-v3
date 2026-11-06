@@ -1,0 +1,87 @@
+@p 134 | ～かどうか／疑問詞＋か（間接疑問）
+@group 20
+@mean Có ... hay không / ... như thế nào (câu hỏi gián tiếp trong câu)
+@core Đưa một câu hỏi vào bên trong câu lớn, đi với 聞く・わからない・調べる・確認する.
+@form 普通形 ＋ かどうか
+@form 疑問詞 ＋ 普通形 ＋ か
+@exp Khi đưa câu hỏi có/không vào trong câu, dùng 「かどうか」. Khi câu hỏi có từ nghi vấn (いつ, どこ, だれ, どうして…) thì chỉ cần thêm 「か」. Danh từ và tính từ な bỏ 「だ」 trước 「かどうか／か」. Thường đi với các động từ như 聞く, わからない, 調べる, 確認する, 教える.
+@ex わたしはカンさんにあした会えるかどうか聞いた。 | Tôi đã hỏi Kan xem ngày mai có gặp được không.
+@ex この料理にどんな材料が使われているか調べてみた。 | Tôi đã thử tra xem món này dùng những nguyên liệu gì.
+@ex どうすれば入りたい会社に入れるか先輩に聞いてみたい。 | Tôi muốn hỏi đàn anh làm thế nào để vào được công ty mình muốn.
+@cmp ～と | N3 | 「と」 dẫn lại lời nói hay suy nghĩ nguyên văn; 「かどうか」 dẫn câu hỏi có/không.
+@note Dùng 「どうして／なぜ～かというと、…からだ」 để nêu lý do cho một câu hỏi.
+@theme chu-de
+@ctx van-ban
+@book shin-n3 | 2-1 | 1
+
+@p 135 | ～ように(と)／～てほしいと（dẫn lời nhờ vả, lời dặn）
+@group 20
+@mean Dặn/nhờ/yêu cầu ai làm (không làm) gì
+@core Dẫn lại nội dung yêu cầu, lời dặn, lời khuyên bằng 「ように」 hoặc 「てほしい」.
+@form Vる／Vない ＋ ように(と) ＋ 言う／頼む／注意する／勧める
+@form Vて／Vないで ＋ ほしい ＋ と ＋ 言う
+@form 命令形／禁止形 ＋ と ＋ 言う
+@exp Khi truyền đạt lại lời yêu cầu, lời dặn, lời khuyên thì dùng 「ように(と)」 sau động từ, đi với 言う, 頼む, 注意する, 勧める. Cũng có thể dùng 「てほしい」 hoặc nguyên dạng mệnh lệnh／cấm đoán + と. Nội dung dẫn có thể là lời nói của người khác hoặc của chính mình.
+@ex 医者はカンさんにときどき運動をするように勧めた。 | Bác sĩ khuyên Kan thỉnh thoảng nên vận động.
+@ex 危ないから、横に並んで歩かないように子どもたちに注意した。 | Vì nguy hiểm nên tôi nhắc bọn trẻ đừng đi hàng ngang.
+@ex リンさんは自分が働いている店に食べに来てほしいと言った。 | Rin nói muốn mình đến ăn ở quán cô ấy đang làm.
+@cmp ～と言う | N3 | Dẫn nguyên văn hoặc thể thường; 「ように」 chỉ dùng cho yêu cầu, dặn dò.
+@theme y-chi
+@ctx hoi-thoai
+@book shin-n3 | 2-1 | 2
+
+@p 136 | ～を…として／～を…に（coi ～ là …）
+@group 20
+@mean Coi ～ là ...; lấy ～ làm ...
+@core Chỉ vai trò hay vị trí mà ～ được xem là: chuẩn, tâm điểm, điều kiện, chủ đề…
+@form 名詞 ＋ を ＋ 名詞 ＋ として
+@form 名詞 ＋ を ＋ 名詞 ＋ に
+@exp Mẫu này dùng để nói coi một sự vật là cái gì đó (lấy làm cơ hội, trung tâm, điều kiện, chủ đề…). Dạng 「～を…に」 ngắn gọn hơn và thường đi với 中心, テーマ, 目標. Cũng có thể chia thành 「～を…とした」 để bổ nghĩa danh từ.
+@ex 入院をきっかけとしてわたしは健康に注意するようになった。 | Từ lần nhập viện, tôi bắt đầu chú ý đến sức khỏe.
+@ex 日本の世界地図は日本を中心にかかれている。 | Bản đồ thế giới của Nhật được vẽ lấy Nhật Bản làm trung tâm.
+@ex この小説家は家族をテーマとした小説をたくさん書いている。 | Nhà văn này viết nhiều tiểu thuyết lấy gia đình làm chủ đề.
+@cmp ～として | N3 | 「Nとして」 chỉ tư cách; 「を…として」 chỉ việc coi cái gì là cái gì.
+@theme chu-de
+@ctx van-ban
+@book shin-n3 | 2-4 | 1
+
+@p 137 | ～から…にかけて
+@group 20
+@mean Trong khoảng từ ～ đến ...
+@core Chỉ khoảng thời gian hay phạm vi mà ranh giới không rõ ràng.
+@form 名詞 ＋ から ＋ 名詞 ＋ にかけて
+@exp Dùng để nêu một khoảng thời gian hoặc khu vực trải dài từ điểm này đến điểm kia mà ranh giới không thật chính xác. Có thể thay bằng 「～から…の間」.
+@ex 年末から年始にかけてわたしはとても忙しい。 | Từ cuối năm sang đầu năm tôi rất bận.
+@ex 明日は関東地方から東北地方にかけて雨が降るでしょう。 | Ngày mai trời sẽ mưa từ vùng Kanto đến vùng Tohoku.
+@cmp ～まで | N5 | 「まで」 chỉ điểm kết thúc rõ ràng; 「にかけて」 chỉ phạm vi mơ hồ.
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | 2-4 | 2
+
+@p 138 | ～はもちろん…も
+@group 20
+@mean Không chỉ ～ mà ... cũng
+@core ～ là đương nhiên, và … cũng vậy.
+@form 名詞 ＋ は ＋ もちろん ＋ 名詞 ＋ も
+@exp Nêu một điều hiển nhiên rồi bổ sung điều khác cũng giống như vậy. Phần sau có thể là 「…にも」, 「…も」 hoặc 「…まで」.
+@ex このゲームは子どもはもちろん大人も楽しめる。 | Trò chơi này trẻ em đương nhiên, người lớn cũng chơi được.
+@ex 夫は国内の山々はもちろん外国の山にもあちこち登っている。 | Chồng tôi không chỉ leo núi trong nước mà còn leo cả núi nước ngoài.
+@cmp ～だけでなく…も | N3 | Cùng nghĩa bổ sung, 「はもちろん」 nhấn mạnh phần trước là đương nhiên.
+@theme bo-sung
+@ctx hoi-thoai
+@book shin-n3 | 2-4 | 3
+
+@p 139 | ～という／～といった（bổ nghĩa danh từ）
+@group 20
+@mean Gọi là ～; mang nội dung ～; những ～ như vậy
+@core 「という」 giới thiệu tên hay nội dung của danh từ phía sau; 「といった」 nêu ví dụ.
+@form 名詞／普通形 ＋ という ＋ 名詞
+@form 名詞 ＋ 、 名詞 ＋ といった ＋ 名詞
+@exp 「～という…」 dùng để giới thiệu tên (わたしは松下という者です), nội dung (鈴木さんが会社を辞めるといううわさ), tri thức, sự thật (～ということ), và từ chưa quen (～というのは). 「～といった…」 dùng khi nêu vài ví dụ (数学、物理、化学といった科目). Thêm 「ような」 để nói tránh.
+@ex わたしは松下という者です。 | Tôi là người tên Matsushita.
+@ex 洗濯、掃除、料理といった家庭内の仕事は家族みんなでするべきだ。 | Những việc nhà như giặt giũ, dọn dẹp, nấu ăn thì cả gia đình nên cùng làm.
+@ex 「雨模様」というのは雨が降りそうな様子のことだ。 | "Ame moyou" nghĩa là dáng vẻ sắp mưa.
+@cmp ～など | N3 | 「など」 cũng nêu ví dụ nhưng không gắn với danh từ phía sau; 「といった」 bổ nghĩa trực tiếp.
+@theme liet-ke
+@ctx van-ban
+@book shin-n3 | 2-3 | 1

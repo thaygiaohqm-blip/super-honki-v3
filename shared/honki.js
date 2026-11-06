@@ -1,5 +1,5 @@
 /* Super Honki — thanh thương hiệu chung, màu giao diện, tài khoản và hộp sách của Minh Dokkai.
-   Dùng cho trang chủ, Super Goi và Super Bunpou. Tải ngay đầu <body> để thanh hiện cùng lúc với trang, không bị giật. */
+   Dùng cho trang chủ, Super Goi, Super Bunpou và Super Kanji. Tải ngay đầu <body> để thanh hiện cùng lúc với trang, không bị giật. */
 (function () {
   const me = document.currentScript && document.currentScript.src || "";
   const base = me.replace(/honki\.js.*$/, "");
@@ -29,13 +29,13 @@
     { id: "yoru", ja: "夜", name: "Ban đêm", note: "Nền tối, học buổi tối", c: ["#0b1416", "#134e4c", "#3fd1c0", "#ff6b6b"] }];
 
   /* ---------- Super Goi / Super Bunpou: thanh thương hiệu dựng ngay khi trang bắt đầu tải ---------- */
-  if (page === "goi" || page === "bunpou") {
+  if (page === "goi" || page === "bunpou" || page === "kanji" || page === "gemu") {
     const link = (id, label) => '<a href="' + root + id + '/"' + (page === id ? ' aria-current="true"' : "") + ">" + label + "</a>";
     const s = document.createElement("div"); s.className = "hk-strip";
     s.innerHTML = '<div class="hk-strip__in"><a class="hk-strip__brand" href="' + root + '" title="Về trang chủ Super Honki"><img src="' + base + 'logo-mark.svg" alt="" width="48" height="48"><span><b>Super</b> Honki</span></a>' +
-      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + '<span class="hk-strip__soon" title="Sắp ra mắt">Super Kanji · sắp có</span></nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
+      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("gemu", "Super Gemu") + '</nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
     const sw = document.createElement("nav"); sw.className = "hk-switch"; sw.setAttribute("aria-label", "Chuyển công cụ");
-    sw.innerHTML = link("goi", "Super Goi") + link("bunpou", "Super Bunpou");
+    sw.innerHTML = link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("gemu", "Super Gemu");
     document.body.insertBefore(sw, document.body.firstChild);
     document.body.insertBefore(s, document.body.firstChild);
     const setH = () => document.documentElement.style.setProperty("--hk-h", s.offsetHeight + "px");
@@ -50,7 +50,7 @@
   }
 
   /* ---------- Trang chủ: màu giao diện, tài khoản, hộp thoại đăng nhập ngay tại chỗ ---------- */
-  if (page === "home") ready(() => {
+  if (page === "home" || page === "kanji" || page === "gemu") ready(() => {
     const tools = document.querySelector("[data-hk-tools]");
     const applyTheme = id => { if (!id || id === "reu") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = id; };
     applyTheme(get("honki:theme"));
@@ -78,7 +78,7 @@
       acct.innerHTML = '<button class="hk-btn hk-btn--solid" type="button" title="' + esc(ses.email || "") + '"><b class="hk-av">' + esc(nm.trim().charAt(0).toUpperCase()) + '</b><span>' + esc(nm) + '</span></button><div class="hk-menu hk-menu--sm" hidden><p>' + esc(ses.email || "") + '</p><button class="hk-opt hk-out" type="button">Đăng xuất</button></div>';
       const bt = acct.querySelector("button"), mn = acct.querySelector(".hk-menu");
       bt.onclick = e => { e.stopPropagation(); mn.hidden = !mn.hidden; };
-      acct.querySelector(".hk-out").onclick = () => { del("honki:auth"); paintAcct(); };
+      acct.querySelector(".hk-out").onclick = () => { del("honki:auth"); paintAcct(); window.dispatchEvent(new Event("honki:auth")); };
     };
     paintAcct();
 
@@ -97,7 +97,7 @@
         const reg = mode === "register";
         dlg.innerHTML = '<div class="hk-dlg__in"><button class="hk-dlg__x" type="button" data-x aria-label="Đóng">×</button>' +
           '<h2 id="hk-dlg-t">' + (reg ? "Tạo tài khoản" : "Đăng nhập") + '</h2>' +
-          '<p class="hk-dlg__lead">Một tài khoản dùng chung cho Super Goi và Super Bunpou. Lưu tiến độ học, danh sách từ cần ôn, dùng được trên mọi thiết bị.</p>' +
+          '<p class="hk-dlg__lead">Một tài khoản dùng chung cho Super Goi, Super Bunpou và Super Kanji. Lưu tiến độ học, danh sách từ cần ôn, dùng được trên mọi thiết bị.</p>' +
           (ok ? "" : '<p class="hk-dlg__note"><b>Máy chủ tài khoản chưa bật.</b> Bạn vẫn học bình thường, tiến độ lưu trên thiết bị này. Khi chủ web hoàn tất cấu hình, nút này sẽ hoạt động.</p>') +
           '<div class="hk-dlg__tabs" role="tablist"><button type="button" role="tab" aria-selected="' + !reg + '" data-tab="login">Đăng nhập</button><button type="button" role="tab" aria-selected="' + reg + '" data-tab="register">Tạo tài khoản</button></div>' +
           '<form class="hk-dlg__form" novalidate>' +
@@ -126,7 +126,7 @@
           const j = await res.json().catch(() => ({}));
           if (!res.ok) { errEl.textContent = j.error || "Máy chủ báo lỗi, hãy thử lại sau."; busy = false; go.disabled = false; go.textContent = mode === "register" ? "Tạo tài khoản" : "Đăng nhập"; return; }
           put("honki:auth", JSON.stringify({ mode: "remote", token: j.token, email: j.user.email, name: j.user.name || "" }));
-          dlg.close(); paintAcct();
+          dlg.close(); paintAcct(); window.dispatchEvent(new Event("honki:auth"));
         } catch (e) {
           errEl.textContent = "Không kết nối được máy chủ. Hãy kiểm tra mạng.";
           busy = false; go.disabled = false; go.textContent = mode === "register" ? "Tạo tài khoản" : "Đăng nhập";

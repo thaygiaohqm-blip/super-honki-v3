@@ -1,0 +1,62 @@
+@p 039 | ～てもらいたい／～ていただきたい／～てほしい
+@group 6
+@mean Muốn (ai đó) làm ... cho mình / Muốn ai đừng ...
+@core Bày tỏ mong muốn người khác làm (hoặc không làm) điều gì.
+@form 動詞 て形・ない形 ＋ で ＋ もらいたい・いただきたい・ほしい
+@exp Diễn tả mong muốn người khác làm hoặc không làm việc gì. Đôi khi không nói rõ đối tượng (câu ①③⑤). Khi nói trực tiếp với người nghe thì ý nghĩa gần như 「～てください／～ないでください」.
+@ex だれかに自分の悩みを聞いてもらいたいと思うことがあります。 | Có lúc tôi muốn ai đó nghe mình tâm sự nỗi buồn phiền.
+@ex この書類、ちょっと見ていただきたいんですが。 | Tài liệu này, tôi muốn nhờ anh xem giúp một chút.
+@ex この仕事はだれにも手伝ってもらいたくない。自分一人でやりたい。 | Công việc này tôi không muốn ai giúp. Tôi muốn tự làm một mình.
+@ex ずっとぼくのそばにいてほしい。遠くへ行かないでほしい。 | Anh muốn em ở bên anh mãi. Đừng đi xa nhé.
+@ex これ以上この村の自然環境をこわさないでほしい。 | Tôi mong đừng phá hoại môi trường thiên nhiên của làng này nữa.
+@ex 年を取った親にはもう無理をしてほしくない。 | Tôi không muốn bố mẹ già phải cố sức nữa.
+@cmp ～てください | N5 | 「てください」 là nhờ trực tiếp; 「てほしい」 nói về mong muốn.
+@note Chủ ngữ của hành động là người khác, không phải người nói.
+@theme y-chi, cho-nhan
+@ctx hoi-thoai
+@book shin-n3 | 9 | 1
+
+@p 040 | ～(さ)せてもらいたい／～(さ)せていただきたい／～(さ)せてほしい
+@group 6
+@mean Muốn được (cho phép) làm ... / Mong cho tôi làm ...
+@core Bày tỏ mong muốn được người khác cho phép hoặc tạo điều kiện để mình làm việc gì.
+@form 動詞Ⅰ ない形(ない) ＋ せて ・ せないで
+@form 動詞Ⅱ ない形(ない) ＋ させて ・ させないで
+@form 動詞Ⅲ 来させて・来させないで／させて・させないで
+@form ＋ もらいたい・いただきたい・ほしい
+@exp Diễn tả mong muốn mình được phép làm hoặc không phải làm việc gì (người khác sắp xếp hoặc cho phép). Hay dùng khi nói trực tiếp mong muốn với đối phương (②③).
+@ex 店員A「昼休みが短いよね。昼ご飯をもっとゆっくり食べさせてもらいたいね。」 | Nhân viên A: "Giờ nghỉ trưa ngắn nhỉ. Tôi muốn được ăn trưa thong thả hơn."
+@ex 今日は入管へ行かなければならないので、早く帰らせていただきたいのですが……。 | Hôm nay tôi phải đến cục xuất nhập cảnh nên muốn xin phép về sớm...
+@ex それはさっきも説明したことだよ。何度も同じことを言わせないでもらいたいよ。 | Chuyện đó vừa nãy cũng đã giải thích rồi mà. Tôi muốn các anh đừng bắt tôi nói lại cùng một điều nhiều lần.
+@ex 文化祭のポスターはわたしに作らせてほしいなあ。 | Tôi muốn được làm tấm áp phích cho lễ hội văn hóa.
+@ex こんな暑い日に運動場で4時間も練習をさせないでほしいです。 | Tôi mong đừng bắt luyện tập 4 tiếng ngoài sân vào ngày nóng thế này.
+@cmp ～(さ)せてください | N4 | 「させてください」 là xin phép trực tiếp; 「させてもらいたい」 diễn đạt mong muốn.
+@note Dạng 「いただきたい」 là khiêm nhường nhất.
+@theme y-chi, cho-nhan, the-thai
+@ctx hoi-thoai, cong-ty
+@book shin-n3 | 9 | 2
+
+@p 041 | ～といい／～ばいい／～たらいい
+@group 6
+@mean Giá mà ... / Chỉ cần ... thì tốt / Nên ...
+@core A: bày tỏ mong muốn điều không phụ thuộc vào ý chí người nói; B: khuyên người nghe nên làm gì.
+@form 普通形 (現在形だけ) ＋ と ＋ いい
+@form 動詞 ば形・イ形容詞 ければ ＋ いい
+@form 動詞 ない形・イ形容詞 くなければ・ナ形容詞 でなければ・名詞 でなければ ＋ いい
+@form 普通形 (過去形だけ) ＋ ら ＋ いい
+@form 動詞 辞書形 ＋ と ・ 動詞 ば形(ない→なければ) ・ 動詞 たら ＋ いい
+@exp A. Bày tỏ mong muốn một điều sẽ xảy ra (「～ことを望んでいる」). Vế 「～」 không dùng hành động theo ý chí của chính người nói. B. Khuyên người nghe nên làm hoặc không nên làm việc gì (「相手に～の行為をする／しないことを勧める」).
+@sense A | Bày tỏ mong muốn của mình
+@ex このクラスも今日でお別れです。いつかまたみんなで会えるといいですね。 | Lớp này hôm nay cũng chia tay rồi. Mong một ngày nào đó chúng ta lại gặp nhau nhỉ.
+@ex 最近ずっと体の調子が悪い。悪い病気でなければいいが……。 | Dạo này sức khỏe cứ không tốt. Mong không phải bệnh nặng...
+@ex あしたは入学試験だ。がんばろう。合格できたらいいなあ。 | Mai thi tuyển sinh. Cố lên nào. Giá mà đỗ được thì tốt.
+@sense B | Khuyên người nghe nên làm
+@ex 疲れているようですね。あしたはゆっくり休むといいですよ。 | Trông anh có vẻ mệt. Ngày mai nên nghỉ ngơi thong thả đấy.
+@ex その仕事、気が進まないのなら引き受けなければいいんじゃないですか。 | Công việc đó, nếu không muốn thì đừng nhận chẳng phải được sao?
+@ex 申込書の書き方がわからなければ、事務の人に聞いてみたらいいですよ。 | Nếu không biết cách viết đơn thì anh cứ hỏi nhân viên văn phòng.
+@cmp ～たほうがいい | N4 | 「たほうがいい」 mạnh hơn; 「といい」 mềm, gợi ý nhẹ nhàng.
+@note Với nghĩa A, không dùng hành động theo ý chí của chính người nói ở vế trước.
+@theme y-chi, cho-nhan
+@ctx hoi-thoai
+@book shin-n3 | 9 | 3
+

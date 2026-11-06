@@ -1,0 +1,167 @@
+@p 001 | ～うちに
+@group 1
+@mean Trong lúc còn ... (hãy làm gì đó trước khi thay đổi) / Trong lúc đang ... thì (có sự thay đổi)
+@core A là trạng thái đang tiếp diễn; B là việc làm trước khi A đổi khác, hoặc là sự thay đổi xảy ra trong lúc A kéo dài.
+@form 名詞 ＋ の ＋ うちに
+@form 動詞 辞書形／ている／ない形 ＋ うちに
+@form イ形容詞 い ＋ うちに
+@form ナ形容詞 な ＋ うちに
+@exp Mẫu này có hai cách dùng. Cách thứ nhất, A là trạng thái hiện tại sắp thay đổi, người nói muốn làm việc B có chủ ý trước khi trạng thái đó mất đi (有意志). Cách thứ hai, trong lúc A đang tiếp diễn thì có một thay đổi B xảy ra mà người nói không chủ ý; thường đi với động từ 〜ている.
+@sense 1 | Làm B khi A còn chưa thay đổi (B là hành động có chủ ý)
+@ex 日本にいるうちに一度富士山に登ってみたい。 | Trong lúc còn ở Nhật, tôi muốn leo núi Phú Sĩ một lần.
+@ex はい、アイスクリーム。溶けないうちに早く食べてくださいね。 | Kem đây. Hãy ăn nhanh khi nó chưa tan nhé.
+@ex 明るいうちに庭の掃除をしてしまおう。 | Tranh thủ lúc trời còn sáng, dọn xong cái vườn thôi.
+@sense 2 | Trong lúc A đang diễn ra thì B (sự thay đổi) xảy ra
+@ex 音楽を聞いているうちに眠ってしまった。 | Trong lúc nghe nhạc, tôi đã ngủ thiếp đi.
+@ex 少し難しい曲でも、練習を重ねるうちに弾けるようになりますよ。 | Dù bản nhạc hơi khó, luyện tập mãi rồi cũng sẽ chơi được thôi.
+@ex 気がつかないうちに外は暗くなっていた。 | Lúc không để ý thì bên ngoài đã tối rồi.
+@cmp ～間に | N3 | 「間に」 cũng nói việc xảy ra trong khoảng thời gian, nhưng 「うちに」 nhấn mạnh sự thay đổi sắp đến nên cần làm sớm hoặc thay đổi xảy ra dần dần.
+@cmp ～ないうちに | N3 | Làm việc đó trước khi chuyện không mong muốn xảy ra (忘れないうちに: trước khi quên).
+@note Ở nghĩa 1, vế B là hành động có chủ ý (thường là ý chí, đề nghị, lời khuyên). Ở nghĩa 2, vế B là sự thay đổi, không có ý chí của người nói.
+@note Danh từ nối bằng の, tính từ な nối bằng な.
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | 1 | 1
+
+@p 002 | ～間／～間に
+@group 1
+@mean Trong suốt thời gian ... / Trong khoảng ... (một lần)
+@core 「間」: A kéo dài và B cũng kéo dài suốt thời gian đó. 「間に」: trong khoảng A, một việc B xảy ra (một lần).
+@form 名詞 ＋ の ＋ 間・間に
+@form 動詞 辞書形／ている／ない形 ＋ 間・間に
+@form イ形容詞・ナ形容詞 ＋ 間・間に
+@exp 「～間…」: A là trạng thái kéo dài, B cũng là trạng thái hoặc hành động kéo dài suốt thời gian đó. 「～間に…」: trong khoảng thời gian A, một hành động hoặc sự việc B mang tính tức thời xảy ra.
+@sense 1 | Trong suốt thời gian A, B cũng kéo dài (間)
+@ex お母さんが昼寝をしている間、子どもたちはテレビを見ていた。 | Suốt lúc mẹ ngủ trưa, bọn trẻ xem ti vi.
+@ex わたしが旅行で留守の間、うちの犬の世話をお願いできないでしょうか。 | Trong thời gian tôi đi du lịch vắng nhà, nhờ anh chăm sóc con chó nhà tôi được không?
+@sense 2 | Trong khoảng A, B xảy ra một lần (間に)
+@ex お母さんが昼寝をしている間に、子どもたちは遊びに出かけた。 | Trong lúc mẹ ngủ trưa, bọn trẻ đã ra ngoài chơi.
+@ex わたしが旅行で留守の間に、庭に草がたくさん生えてしまった。 | Trong lúc tôi đi du lịch vắng nhà, cỏ mọc đầy cả vườn.
+@cmp ～うちに | N3 | 「うちに」 nhấn mạnh sự thay đổi sắp đến; 「間に」 chỉ đơn thuần là khoảng thời gian.
+@cmp ～最中に | N2 | 「最中に」 là đúng lúc đang tiến hành; 「間に」 là một khoảng thời gian dài hơn.
+@note Phân biệt: 「間」 đi với việc kéo dài (ずっと), 「間に」 đi với việc xảy ra một lần (một sự thay đổi).
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | 1 | 2
+
+@p 003 | ～てからでないと／～てからでなければ
+@group 1
+@mean Nếu chưa ... xong thì không thể ...
+@core Phải hoàn tất A rồi mới làm được B; nếu chưa A thì B không thành.
+@form 動詞 て形 ＋ からでないと・からでなければ
+@exp A phải hoàn thành trước. Nếu A chưa xong thì B không thể xảy ra hoặc không được phép. Vế sau luôn là câu phủ định hoặc mang nghĩa tiêu cực (買うかどうか決められません, 運転してはいけません, 無理だ…).
+@ex 高い物なので、家族と相談してからでないと買うかどうか決められませんね。 | Vì đây là món đắt tiền nên nếu không bàn bạc với gia đình trước thì tôi chưa thể quyết định có mua hay không.
+@ex 運転免許を取ってからでなければ車を運転してはいけない。 | Chưa lấy bằng lái thì không được lái xe.
+@ex 病気が治ってからでなければ激しい運動は無理だ。 | Bệnh chưa khỏi thì không thể vận động mạnh.
+@cmp ～てからでないと | N3 | So với 「てから」 đơn thuần, mẫu này cho biết A là điều kiện bắt buộc nên vế sau là phủ định.
+@note Vế sau phải là phủ định hoặc mang nghĩa tiêu cực (できない, いけない, 無理だ).
+@theme thoi-gian, dieu-kien
+@ctx hoi-thoai
+@book shin-n3 | 1 | 3
+
+@p 004 | ～ところだ／～ところ(＋助詞)
+@group 1
+@mean Sắp ... / Đang ... / Vừa mới ...
+@core Chỉ giai đoạn của sự việc: sắp xảy ra (る), đang xảy ra (ている), vừa xảy ra xong (た).
+@form 動詞 辞書形／ている／た形 ＋ ところだ・ところ(＋助詞)
+@exp 「Vるところ」: ngay trước khi xảy ra. 「Vているところ」: đang trong lúc diễn ra. 「Vたところ」: vừa mới xảy ra xong. Trong câu, tuỳ theo động từ phía sau mà dùng 「ところを」「ところで」「ところへ」「ところに」.
+@sense 1 | Sắp sửa ... (Vるところ)
+@ex ロケットは間もなく飛び立つところです。緊張の瞬間です。 | Tên lửa sắp sửa cất cánh. Đó là khoảnh khắc căng thẳng.
+@sense 2 | Đang ... (Vているところ)
+@ex 試験中、となりの人の答えを見ているところを先生に注意された。 | Trong lúc thi, tôi bị thầy nhắc nhở ngay khi đang nhìn bài của người bên cạnh.
+@sense 3 | Vừa mới ... (Vたところ)
+@ex 楽しみにしていたテレビドラマが始まったところで電話が鳴った。 | Vừa lúc bộ phim truyền hình tôi mong chờ bắt đầu thì chuông điện thoại reo.
+@ex ケーキができ上がったところへ子どもたちが帰ってきた。 | Đúng lúc bánh vừa làm xong thì bọn trẻ về đến.
+@cmp ～ばかりだ | N4 | 「たばかり」 là khoảng thời gian từ lúc A đến hiện tại được cảm thấy là ngắn, mang cảm nhận chủ quan; 「たところ」 chỉ mốc ngay sau khi vừa xong.
+@note Cách chọn trợ từ phụ thuộc động từ phía sau: 見る/見られる → ところを; 起こる/鳴る → ところで/ところに; 来る/帰る → ところへ/ところに.
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | 1 | 4
+
+@p 005 | ～とおりだ／～とおり(に)／～どおりだ／～どおり(に)
+@group 1
+@mean Đúng như ... / Giống như ... / Theo như ...
+@core Làm hoặc xảy ra đúng như A (cùng kiểu, cùng cách).
+@form 名詞 ＋ の ＋ とおりだ・とおり(に)
+@form 名詞 ＋ どおりだ・どおり(に)
+@form 動詞 辞書形／た形／てある／ている ＋ とおりだ・とおり(に)
+@exp Diễn tả điều gì đó giống hệt A hoặc làm theo đúng cách của A. Khi đi với danh từ, dùng 「Nのとおり」 hoặc 「Nどおり」 (đọc là どおり, có nối trực tiếp, không có の).
+@ex 交番で教えてもらったとおりに歩いていったので、迷わず会場に着いた。 | Vì đi đúng như được chỉ ở đồn cảnh sát nên tôi đến hội trường mà không bị lạc.
+@ex 初めて作る料理だから、この本に書いてあるとおりのやり方で作ってみよう。 | Vì là món lần đầu làm, tôi sẽ làm thử đúng theo cách viết trong cuốn sách này.
+@ex サッカーの試合の結果はわたしたちの期待どおりだった。 | Kết quả trận bóng đá đúng như chúng tôi mong đợi.
+@cmp ～のようだ | N4 | 「のようだ」 là giống như (so sánh, ví dụ); 「とおり」 là giống hệt, làm theo.
+@note Danh từ: 「Nのとおり」 hoặc 「Nどおり」 (予定どおり, 期待どおり). Không nói × 予定のどおり.
+@theme can-cu
+@ctx hoi-thoai
+@book shin-n3 | 2 | 1
+
+@p 006 | ～によって／～によっては
+@group 1
+@mean Tuỳ theo ... (mà khác nhau) / Có khi tuỳ theo ...
+@core Tuỳ A (người, nơi, trường hợp) mà B khác nhau; 「によっては」 nêu ra một trường hợp cụ thể trong số đó.
+@form 名詞 ＋ によって・によっては
+@exp 「Nによって」: nếu N khác nhau thì kết quả cũng khác nhau; vế sau thường là những từ như さまざまだ, 違う, 変わる, 異なる. 「Nによっては」: trong nhiều trường hợp của N, có một trường hợp xảy ra điều gì đó (vế sau là suy đoán hoặc khả năng).
+@sense 1 | Tuỳ N mà khác nhau (によって)
+@ex 国によって習慣が違う。 | Phong tục khác nhau tuỳ theo từng nước.
+@ex 感じ方は人によってさまざまだ。 | Cách cảm nhận tuỳ từng người mà khác nhau.
+@sense 2 | Tuỳ trường hợp, có khi ... (によっては)
+@ex わたしの帰宅時間は毎日違う。日によっては夜中になることもある。 | Giờ tôi về nhà mỗi ngày khác nhau. Có hôm về đến nửa đêm.
+@ex 場合によっては今年の文化祭は中止になるかもしれない。 | Tuỳ tình hình, năm nay lễ hội văn hoá có thể bị huỷ.
+@cmp ～によると | N3 | 「によると」 chỉ nguồn thông tin (theo như ...); 「によって」 chỉ sự khác biệt tuỳ N.
+@note Vế sau của 「によって」 thường là những từ chỉ sự khác nhau như 違う, さまざまだ, 異なる, 変わる.
+@theme can-cu, so-sanh
+@ctx hoi-thoai, van-ban
+@book shin-n3 | 2 | 2
+
+@p 007 | ～たびに
+@group 1
+@mean Mỗi lần ... là lại ...
+@core Cứ mỗi lần A xảy ra thì B luôn xảy ra theo, lần nào cũng như nhau.
+@form 名詞 ＋ の ＋ たびに
+@form 動詞 辞書形 ＋ たびに
+@exp Nhấn mạnh việc "lần nào cũng thế" (毎回同じようにする), nên dùng khi muốn đặc biệt nhấn mạnh sự lặp lại. Không dùng cho những việc hiển nhiên hằng ngày. Cả vế trước và vế sau đều không diễn tả trạng thái.
+@ex この地方は台風が来るたびに大水の害が起こる。 | Vùng này cứ mỗi lần bão đến là lại bị thiệt hại do lũ lụt.
+@ex 母はわたしが電話をかけるたびに、ちゃんとご飯を食べているかと聞く。 | Mỗi lần tôi gọi điện, mẹ lại hỏi tôi có ăn cơm đàng hoàng không.
+@ex このチームは試合のたびに強くなっていく。 | Đội này cứ sau mỗi trận đấu lại mạnh lên.
+@cmp ～ごとに | N3 | 「ごとに」 chỉ lặp lại theo từng khoảng đều đặn (1年ごとに: cứ mỗi năm); 「たびに」 là mỗi lần xảy ra.
+@note Không dùng cho việc đương nhiên hằng ngày như × 朝起きるたびに顔を洗う.
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | 2 | 3
+
+@p 008 | (～ば)～ほど…／(～なら)～ほど…／～ほど…
+@group 1
+@mean Càng ... càng ...
+@core Mức độ của A tăng lên thì mức độ của B cũng tăng theo.
+@form 動詞 ば形 ＋ 動詞 辞書形 ＋ ほど
+@form イ形容詞 ければ ＋ イ形容詞 い ＋ ほど
+@form ナ形容詞 なら ＋ ナ形容詞 な ＋ ほど
+@form 名詞 ＋ ほど (例: 忙しい人ほど)
+@exp Diễn tả khi mức độ của A tiến triển thì mức độ của B cũng tiến triển tương ứng. Có thể lược 「ば／なら」 phía trước và chỉ nói 「～ほど」. Với danh từ, 「Nほど」 nghĩa là những ai/những thứ mang tính chất đó thì càng ... .
+@ex 物が増えれば増えるほど整理が大変になる。 | Đồ đạc càng tăng thì việc sắp xếp càng vất vả.
+@ex 本当にいい家具は時間がたつほど価値が上がる。 | Đồ nội thất thật sự tốt thì càng để lâu giá trị càng tăng.
+@ex 休みの日は多ければ多いほどうれしい。 | Ngày nghỉ càng nhiều càng vui.
+@ex 町がにぎやかなほど商店では物がよく売れるのだ。 | Khu phố càng náo nhiệt thì hàng ở các cửa hiệu càng bán chạy.
+@ex 忙しい人ほど時間の使い方が上手だ。 | Người càng bận thì càng giỏi sử dụng thời gian.
+@cmp ～につれて | N3 | 「につれて」 diễn tả hai việc cùng biến đổi dần dần; 「ば～ほど」 nhấn mạnh quan hệ tỉ lệ về mức độ.
+@note Phải lặp lại cùng một từ ở cả hai vế (増えれば増えるほど); danh từ không lặp.
+@theme so-sanh, trang-thai
+@ctx hoi-thoai
+@book shin-n3 | 2 | 4
+
+@p 009 | ～ついでに
+@group 1
+@mean Nhân tiện ... / Tiện thể ...
+@core Khi làm việc A, nhân cơ hội đó làm luôn việc B.
+@form 名詞 ＋ の ＋ ついでに
+@form 動詞 辞書形／た形 ＋ ついでに
+@exp Diễn tả khi làm việc chính A, người nói lợi dụng cơ hội đó để làm thêm việc B. B là việc có chủ ý, thêm vào chứ không phải mục đích chính. Vế B không phải là việc ngẫu nhiên.
+@ex 散歩のついでにこのはがきをポストに出してきて。 | Nhân tiện đi dạo, ra bỏ tấm bưu thiếp này vào hòm thư giùm nhé.
+@ex 玄関の掃除をするついでに靴の整理をしよう。 | Nhân tiện quét dọn lối vào thì sắp xếp luôn giày dép.
+@ex インターネットで本を注文したついでに新しく出たDVDも調べた。 | Nhân tiện đặt sách trên mạng, tôi cũng tra luôn mấy đĩa DVD mới ra.
+@cmp ～がてら | N1 | 「がてら」 là văn viết và đi với danh từ hoặc gốc ます, ý "vừa làm A vừa làm B".
+@note B phải là hành động có chủ ý. Không dùng cho việc ngẫu nhiên (× 銀行に行ったついでに、偶然友達に会った).
+@theme bo-sung, thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | 2 | 5
+

@@ -1,0 +1,68 @@
+@p 042 | 命令形（～しろ）／禁止形（～な）
+@group 7
+@mean Hãy ...! / Đừng ...! (mệnh lệnh, cấm đoán mạnh)
+@core Dạng mệnh lệnh và cấm đoán mạnh, chủ yếu nam giới dùng hoặc trong biển báo, cổ vũ.
+@form 動詞Ⅰ ＋ え段 (ば → ベ)・動詞Ⅱ ます形 ー ます → ろ・する → しろ・来る → 来い (ngoại lệ: くれる → くれ)
+@form 動詞 辞書形 ＋ な
+@exp Mệnh lệnh 「～しなさい」 và cấm 「～してはいけない」 ở dạng mạnh. Đặc biệt nam giới dùng khi ra lệnh mạnh, cổ vũ thể thao, áp phích, biển báo. Cũng dùng dạng dẫn gián tiếp (không cần ngoặc 「」) như ③④⑥.
+@ex 試合で監督「走れ、走れ！」 | Trong trận đấu, huấn luyện viên hô: "Chạy đi, chạy đi!"
+@ex 犬に「降りろ。」と命令した。犬は命令に従った。 | Tôi ra lệnh cho con chó "xuống!". Con chó nghe theo lệnh.
+@ex 赤信号は止まれという意味です。 | Đèn đỏ có nghĩa là hãy dừng lại.
+@ex 引っ越しを手伝ってくれと友だちに頼んでみよう。 | Thử nhờ bạn giúp tôi chuyển nhà xem.
+@ex 立て札に「スピードを出すな！」と書いてある。 | Trên biển báo viết "Đừng chạy nhanh!".
+@ex 父は医者にお酒を飲むなと言われている。 | Bố tôi bị bác sĩ dặn đừng uống rượu.
+@cmp ～なさい | N4 | 「なさい」 lịch sự hơn; mệnh lệnh dạng thường rất mạnh.
+@note Chủ yếu dùng cho nam, bạn bè thân hoặc biển báo.
+@theme y-chi, cho-nhan
+@ctx hoi-thoai
+@book shin-n3 | 10 | 1
+
+@p 043 | ～こと
+@group 7
+@mean Phải ... / Không được ... (chỉ thị ngắn gọn)
+@core Nêu chỉ thị, lưu ý ở dạng văn viết (thông báo, biển báo).
+@form 動詞 辞書形・ない形 ＋ こと
+@exp Dùng nhiều trên áp phích, biển báo, nội quy để nêu cảnh báo hoặc chỉ thị (「～しなさい／～してはいけない」).
+@ex 学校で先生「レポートは来週月曜日に必ず出すこと。遅れないこと。」 | Ở trường, thầy: "Báo cáo nhất định phải nộp vào thứ Hai tuần sau. Không được trễ."
+@ex 申込書を書く前に注意書きをよく読むこと。 | Trước khi viết đơn đăng ký phải đọc kỹ phần lưu ý.
+@ex 危ないからこの川で泳がないこと。 | Nguy hiểm nên không được bơi ở con sông này.
+@cmp ～べきではない | N3 | 「こと」 là chỉ thị theo quy định; 「べきではない」 là ý kiến của người nói.
+@note Thường xuất hiện trên bảng thông báo, vở ghi chú của thầy cô.
+@theme y-chi
+@ctx van-ban
+@book shin-n3 | 10 | 2
+
+@p 044 | ～べきだ／～べき／～べきではない
+@group 7
+@mean Nên ... / Phải ... / Không nên ...
+@core Ý kiến của người nói rằng làm việc gì là đương nhiên, hoặc không được làm.
+@form 動詞 辞書形 ＋ べきだ・べきではない (ngoại lệ: する → するべきだ／すべきだ)
+@form 動詞 辞書形 ＋ べき・べきではない ＋ 名詞
+@exp Diễn tả việc làm A là đương nhiên (「～するのが当然だ／～したほうがいい」) hoặc không nên làm. Không phải quy tắc có sẵn mà là chủ trương của người nói. Ở dạng quá khứ 「べきだった」 thể hiện sự hối hận hoặc tự suy xét lại.
+@ex これは大事なことですから、もう少し話し合ってから決めるべきだと思いますよ。 | Đây là việc quan trọng nên tôi nghĩ cần bàn bạc thêm một chút rồi mới quyết định.
+@ex 仕事はたくさんあるが、まず、今日中にやるべきことから始めよう。 | Việc thì nhiều, nhưng trước hết hãy bắt đầu từ việc cần làm trong hôm nay.
+@ex せっかく入った会社なのだから、簡単に辞めるべきではない。 | Công ty khó khăn lắm mới vào được nên không nên dễ dàng nghỉ việc.
+@ex 子どもは夜遅くまで外にいるべきではない。 | Trẻ con không nên ở ngoài đến khuya.
+@ex あしたまでのレポートがまだ書き終わらない。もっと早くから始めるべきだった。 | Báo cáo hạn ngày mai vẫn chưa viết xong. Đáng lẽ phải bắt đầu sớm hơn.
+@cmp ～たほうがいい | N4 | 「べきだ」 mạnh hơn, có tính đạo lý.
+@note Danh từ phía sau: 「すべき仕事」.
+@theme y-chi, danh-gia
+@ctx hoi-thoai, van-ban
+@book shin-n3 | 10 | 3
+
+@p 045 | ～たらどうか
+@group 7
+@mean Thử ... xem sao? / Sao không ...?
+@core Gợi ý nhẹ nhàng việc làm gì đó; cũng dùng để chê ai đó không làm.
+@form 動詞 たら ＋ どうか
+@exp Dùng để khuyên, gợi ý đối phương làm gì đó một cách nhẹ nhàng (「～するのがいいですよ」), trong lời khuyên hoặc cảnh báo. Ví dụ ④ còn là cách trách cứ người khác không làm việc đáng ra phải làm.
+@ex 体のことが心配なら、一度健康診断を受けたらどうでしょうか。 | Nếu lo cho sức khỏe thì thử đi khám sức khỏe một lần xem sao.
+@ex 疲れているみたいですね。少し休んだらどうですか。 | Trông anh có vẻ mệt. Nghỉ một chút thì sao?
+@ex 迷惑メールが多いの？じゃ、アドレスを変えたらどう？ | Nhiều thư rác à? Vậy thử đổi địa chỉ xem sao?
+@ex 悪いのはそっちですよ。一言謝ったらどうですか。 | Lỗi là ở phía anh đấy. Sao không xin lỗi một câu đi.
+@cmp ～といい | N3 | Cũng là lời khuyên; 「たらどうか」 nghe trực tiếp hơn.
+@note Có thể dùng như lời trách nhẹ khi người kia không làm điều đáng làm.
+@theme y-chi, cho-nhan
+@ctx hoi-thoai
+@book shin-n3 | 10 | 4
+

@@ -1,0 +1,209 @@
+家|GIA|Nhà; gia đình
+族|TỘC|Dòng họ; gia tộc
+兄|HUYNH|Anh trai
+弟|ĐỆ|Em trai
+姉|TỈ|Chị gái
+妹|MUỘI|Em gái
+私|TƯ|Tôi; riêng tư
+育|DỤC|Nuôi dưỡng; giáo dục
+部|BỘ|Bộ phận; phòng ban
+屋|ỐC|Nhà; mái nhà; cửa hiệu
+広|QUẢNG|Rộng
+低|ĐÊ|Thấp
+緑|LỤC|Màu xanh lá
+静|TĨNH|Yên tĩnh
+近|CẬN|Gần
+遠|VIỄN|Xa
+会|HỘI|Họp; gặp gỡ
+社|XÃ|Công ty; đền thờ; xã hội
+働|ĐỘNG|Làm việc
+作|TÁC|Làm; chế tạo
+工|CÔNG|Thợ; công nghiệp
+場|TRƯỜNG|Nơi; địa điểm
+始|THỦY|Bắt đầu
+終|CHUNG|Kết thúc
+店|ĐIẾM|Cửa hàng
+客|KHÁCH|Khách
+親|THÂN|Cha mẹ; thân thiết
+切|THIẾT|Cắt; quan trọng
+売|MẠI|Bán
+当|ĐƯƠNG|Trúng; đúng; đương
+品|PHẨM|Hàng hóa; phẩm chất
+便|TIỆN|Tiện lợi; thư từ
+利|LỢI|Lợi ích; sắc bén
+使|SỬ|Sử dụng; sai khiến
+銀|NGÂN|Bạc; ngân hàng
+白|BẠCH|Màu trắng
+黒|HẮC|Màu đen
+紙|CHỈ|Giấy
+朝|TRIỀU|Buổi sáng
+晩|VÃN|Buổi tối
+昼|TRÚ|Buổi trưa; ban ngày
+夜|DẠ|Đêm
+前|TIỀN|Phía trước; trước
+後|HẬU|Phía sau; sau
+午|NGỌ|Trưa; giờ Ngọ
+早|TẢO|Sớm
+荷|HÀ|Hành lý; gánh
+送|TỐNG|Gửi; tiễn
+宅|TRẠCH|Nhà ở
+急|CẤP|Gấp; vội
+速|TỐC|Nhanh
+遅|TRÌ|Chậm; muộn
+重|TRỌNG|Nặng; quan trọng
+軽|KHINH|Nhẹ
+住|TRÚ|Sống; cư trú
+所|SỞ|Nơi chốn
+様|DẠNG|Ngài; hình dạng
+主|CHỦ|Chủ; chính
+番|PHIÊN|Số thứ tự; lượt canh
+地|ĐỊA|Đất; địa điểm
+号|HIỆU|Số hiệu; ký hiệu
+京|KINH|Kinh đô
+都|ĐÔ|Thủ đô; thành phố
+道|ĐẠO|Đường; đạo
+府|PHỦ|Phủ (đơn vị hành chính)
+県|HUYỆN|Tỉnh (Nhật)
+市|THỊ|Thành phố; chợ
+区|KHU|Quận; khu vực
+村|THÔN|Làng
+毎|MỖI|Mỗi
+週|CHU|Tuần
+映|ẢNH|Chiếu; phản chiếu
+画|HỌA|Tranh; kế hoạch
+図|ĐỒ|Bản vẽ; biểu đồ
+館|QUÁN|Tòa nhà; quán
+公|CÔNG|Công cộng
+園|VIÊN|Vườn; công viên
+夫|PHU|Chồng
+妻|THÊ|Vợ
+特|ĐẶC|Đặc biệt
+思|TƯ|Nghĩ
+料|LIỆU|Nguyên liệu; phí
+理|LÝ|Lý lẽ; lý do
+有|HỮU|Có
+洋|DƯƠNG|Đại dương; phương Tây
+服|PHỤC|Quần áo; phục tùng
+衣|Y|Áo; y phục
+短|ĐOẢN|Ngắn
+毛|MAO|Lông; tóc
+糸|MỊCH|Sợi chỉ; sợi tơ
+玉|NGỌC|Ngọc; viên tròn
+光|QUANG|Ánh sáng
+駅|DỊCH|Nhà ga
+鉄|THIẾT|Sắt
+乗|THỪA|Lên xe; cưỡi
+降|GIÁNG|Xuống; rơi (mưa)
+開|KHAI|Mở
+閉|BẾ|Đóng
+発|PHÁT|Xuất phát; phát ra
+着|TRƯỚC|Mặc; đến nơi
+交|GIAO|Giao nhau; trao đổi
+通|THÔNG|Đi qua; thông suốt
+台|ĐÀI|Cái bệ; đài; máy
+止|CHỈ|Dừng lại
+色|SẮC|Màu sắc
+赤|XÍCH|Màu đỏ
+黄|HOÀNG|Màu vàng
+青|THANH|Màu xanh lam
+病|BỆNH|Bệnh
+院|VIỆN|Viện; học viện
+医|Y|Y học; bác sĩ
+科|KHOA|Khoa; môn học
+薬|DƯỢC|Thuốc
+待|ĐÃI|Chờ đợi
+合|HỢP|Hợp; vừa
+計|KẾ|Tính toán; kế hoạch
+研|NGHIÊN|Mài; nghiên cứu
+究|CỨU|Nghiên cứu đến cùng
+語|NGỮ|Ngôn ngữ; từ
+文|VĂN|Văn; câu văn
+英|ANH|Anh; xuất sắc
+化|HÓA|Biến hóa
+数|SỐ|Số; đếm
+心|TÂM|Tim; tâm
+若|NHƯỢC|Trẻ
+集|TẬP|Tập hợp
+知|TRI|Biết
+酒|TỬU|Rượu
+歌|CA|Hát; bài hát
+声|THANH|Giọng; tiếng
+楽|LẠC|Vui; âm nhạc
+味|VỊ|Vị; hương vị
+油|DU|Dầu
+太|THÁI|Béo; to
+細|TẾ|Mảnh; nhỏ; chi tiết
+皿|MÃNH|Cái đĩa
+飯|PHẠN|Cơm; bữa ăn
+麦|MẠCH|Lúa mì; lúa mạch
+春|XUÂN|Mùa xuân
+夏|HẠ|Mùa hè
+秋|THU|Mùa thu
+冬|ĐÔNG|Mùa đông
+空|KHÔNG|Bầu trời; trống rỗng
+星|TINH|Ngôi sao
+雲|VÂN|Mây
+去|KHỨ|Đi qua; đã qua
+天|THIÊN|Trời
+晴|TÌNH|Nắng; quang đãng
+雪|TUYẾT|Tuyết
+風|PHONG|Gió
+強|CƯỜNG|Mạnh
+弱|NHƯỢC|Yếu
+暑|THỬ|Nóng (thời tiết)
+寒|HÀN|Lạnh (thời tiết)
+旅|LỮ|Du lịch; chuyến đi
+持|TRÌ|Cầm; mang; có
+世|THẾ|Thế giới; đời
+界|GIỚI|Ranh giới; giới
+写|TẢ|Chụp; sao chép
+真|CHÂN|Thật; chân thực
+船|THUYỀN|Thuyền
+勉|MIỄN|Cố gắng
+漢|HÁN|Hán; Trung Hoa
+宿|TÚC|Trọ; nhà trọ
+題|ĐỀ|Đề bài; chủ đề
+質|CHẤT|Chất; chất lượng
+問|VẤN|Hỏi; câu hỏi
+教|GIÁO|Dạy
+室|THẤT|Phòng
+試|THÍ|Thử
+験|NGHIỆM|Kiểm nghiệm
+答|ĐÁP|Trả lời
+考|KHẢO|Suy nghĩ
+正|CHÍNH|Đúng; chính xác
+丸|HOÀN|Tròn
+不|BẤT|Không; phủ định
+同|ĐỒNG|Giống; cùng
+政|CHÍNH|Chính trị
+治|TRỊ|Cai trị; chữa trị
+経|KINH|Kinh tế; đi qua
+済|TẾ|Xong; cứu giúp
+歴|LỊCH|Lịch sử; trải qua
+史|SỬ|Lịch sử
+国|QUỐC|Quốc gia
+王|VƯƠNG|Vua
+運|VẬN|Vận chuyển; vận may
+動|ĐỘNG|Động; chuyển động
+練|LUYỆN|Luyện tập
+習|TẬP|Học; tập
+走|TẨU|Chạy
+歩|BỘ|Đi bộ; bước
+泳|VỊNH|Bơi
+才|TÀI|Tài năng; tuổi
+自|TỰ|Tự mình
+然|NHIÊN|Đúng vậy; tự nhiên
+草|THẢO|Cỏ
+原|NGUYÊN|Đồng bằng; nguyên gốc
+湖|HỒ|Hồ
+谷|CỐC|Thung lũng
+海|HẢI|Biển
+辺|BIÊN|Vùng xung quanh; bờ
+里|LÝ|Làng; quê
+野|DÃ|Đồng nội; cánh đồng
+奥|ÁO|Bên trong; sâu thẳm
+池|TRÌ|Ao
+虫|TRÙNG|Côn trùng
+羽|VŨ|Lông vũ; cánh
+鳴|MINH|Kêu; hót
+馬|MÃ|Ngựa

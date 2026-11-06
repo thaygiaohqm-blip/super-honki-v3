@@ -60,6 +60,7 @@ body[data-honki="goi"] .top{top:var(--hk-h,0px)}
 body[data-honki="goi"] .aside{top:calc(var(--hk-h,0px) + 88px)}
 body[data-honki="bunpou"] .gside{top:calc(var(--hk-h,0px) + 130px)}
 body[data-honki="bunpou"] .top{top:var(--hk-h,0px)}
+body[data-honki="kanji"] .top{top:var(--hk-h,0px)}
 .hk-switch{display:none}
 
 /* ---------- hộp sách: danh sách cuộn, nút tròn trên điện thoại ---------- */
@@ -78,8 +79,8 @@ body[data-honki="bunpou"] .top{top:var(--hk-h,0px)}
   .hk-strip__brand img{width:40px;height:40px}
   .hk-strip__tools{margin-left:auto}
   .hk-strip{box-shadow:0 3px 10px rgba(0,0,0,.28)}
-  .hk-switch{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px 12px;background:var(--green-deep,#0b3b3b);border-bottom:3px solid var(--coral,#ed3838);font:700 14px/1 "Be Vietnam Pro",system-ui,sans-serif}
-  .hk-switch a{color:#f7f4ed;text-decoration:none;text-align:center;padding:11px 8px;border-radius:999px;background:rgba(255,255,255,.1)}
+  .hk-switch{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:8px 12px;background:var(--green-deep,#0b3b3b);border-bottom:3px solid var(--coral,#ed3838);font:700 14px/1 "Be Vietnam Pro",system-ui,sans-serif}
+  .hk-switch a{color:#f7f4ed;text-decoration:none;text-align:center;padding:11px 4px;font-size:12.5px;border-radius:999px;background:rgba(255,255,255,.1)}
   .hk-switch a[aria-current="true"]{background:var(--coral,#ed3838);color:#fff}
   /* thanh công tắc Kanji / furigana / romaji luôn dính ngay dưới thanh Super Honki */
   body[data-honki] .top .brand{display:none}
@@ -137,3 +138,4 @@ body[data-honki] main{animation:hkMain .32s ease-out backwards}
 
 /* chỗ trống trong câu điền: gạch đỏ nằm sát chữ, không trôi xuống khe giữa hai dòng */
 .blank{line-height:1.2;vertical-align:-.1em;min-width:2.4em;border-radius:6px 6px 0 0;background:color-mix(in srgb,var(--coral,#ed3838) 9%,transparent)}
+@media (max-width:860px){body[data-honki="kanji"] .top{display:none}body[data-honki="kanji"] .hk-fab{bottom:calc(72px + env(safe-area-inset-bottom))}}

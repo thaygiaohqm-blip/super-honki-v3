@@ -7,11 +7,13 @@ index.html            trang chủ Super Honki
 shared/               logo, thanh chuyển app, hộp "Sách của Minh Dokkai", ảnh sách
 goi/                  Super Goi (từ vựng theo cụm), có README riêng ở tools/
 bunpou/               Super Bunpou (ngữ pháp N5–N1)
+kanji/                Super Kanji (hơn 2.100 chữ Hán; dữ liệu sinh bằng tools/build.py, xem kanji/README.md)
+gemu/                 Super Gemu (4 trò chơi; api/gemu.js lưu bảng xếp hạng và ghép trận bằng Redis)
 api/                  đăng ký, đăng nhập, lưu tiến độ (Vercel Functions)
 package.json, vercel.json, .env.example
 ```
 
-Sắp tới sẽ thêm thư mục `kanji/` (Super Kanji). Muốn thêm một app: tạo thư mục mới, trong `index.html` của app thêm `<body data-honki="tên">` và `<script src="../shared/honki.js"></script>`, rồi thêm một thẻ vào trang chủ.
+Muốn thêm một app: tạo thư mục mới, trong `index.html` của app thêm `<body data-honki="tên">` và `<script src="../shared/honki.js"></script>`, rồi thêm một thẻ vào trang chủ.
 
 ## Chạy thử trên máy
 

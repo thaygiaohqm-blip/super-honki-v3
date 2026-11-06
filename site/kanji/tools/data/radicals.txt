@@ -1,0 +1,214 @@
+1|一|NHẤT|Số một; nét ngang
+2|丨|CỔN|Nét sổ thẳng
+3|丶|CHỦ|Dấu chấm
+4|丿|PHIỆT|Nét phẩy
+5|乙|ẤT|Can thứ hai; nét gập
+6|亅|QUYẾT|Nét móc
+7|二|NHỊ|Số hai
+8|亠|ĐẦU|Cái nắp; mái đầu
+9|人|NHÂN|Người
+10|儿|NHÂN|Chân người; người đi
+11|入|NHẬP|Vào
+12|八|BÁT|Số tám; chia ra
+13|冂|QUYNH|Vùng biên giới xa; khung
+14|冖|MỊCH|Trùm khăn; che phủ
+15|冫|BĂNG|Nước đá
+16|几|KỶ|Cái ghế; cái bàn nhỏ
+17|凵|KHẢM|Há miệng; cái hố
+18|刀|ĐAO|Con dao; thanh kiếm
+19|力|LỰC|Sức mạnh
+20|勹|BAO|Bao bọc
+21|匕|CHỦY|Cái thìa; con dao găm
+22|匚|PHƯƠNG|Cái hòm; cái rương
+23|匸|HỆ|Che đậy; giấu
+24|十|THẬP|Số mười
+25|卜|BỐC|Xem bói
+26|卩|TIẾT|Đốt tre; dấu ấn
+27|厂|HÁN|Sườn núi; vách đá
+28|厶|KHƯ|Riêng tư
+29|又|HỰU|Lại nữa; bàn tay phải
+30|口|KHẨU|Cái miệng
+31|囗|VI|Vây quanh; khung vuông
+32|土|THỔ|Đất
+33|士|SĨ|Kẻ sĩ; học trò
+34|夂|TRI|Đi sau
+35|夊|TUY|Đi chậm
+36|夕|TỊCH|Buổi tối
+37|大|ĐẠI|To lớn
+38|女|NỮ|Phụ nữ
+39|子|TỬ|Con; đứa trẻ
+40|宀|MIÊN|Mái nhà
+41|寸|THỐN|Tấc (đơn vị đo)
+42|小|TIỂU|Nhỏ bé
+43|尢|UÔNG|Yếu; què
+44|尸|THI|Xác chết; thân người
+45|屮|TRIỆT|Mầm cây
+46|山|SƠN|Núi
+47|川|XUYÊN|Sông
+48|工|CÔNG|Thợ; công việc
+49|己|KỶ|Bản thân
+50|巾|CÂN|Cái khăn
+51|干|CAN|Khô; can dự
+52|幺|YÊU|Nhỏ nhắn; sợi tơ nhỏ
+53|广|NGHIỄM|Mái nhà (mái dốc)
+54|廴|DẪN|Bước dài
+55|廾|CỦNG|Chắp hai tay
+56|弋|DỰC|Bắn; cọc
+57|弓|CUNG|Cái cung
+58|彐|KÝ|Đầu con nhím
+59|彡|SAM|Lông; tia sáng; tóc dài
+60|彳|XÍCH|Bước chân trái; đi
+61|心|TÂM|Trái tim; tâm
+62|戈|QUA|Cây giáo; mác
+63|戸|HỘ|Cửa một cánh
+64|手|THỦ|Tay
+65|支|CHI|Cành; chi nhánh
+66|攴|PHỘC|Đánh nhẹ; gõ
+67|文|VĂN|Văn; chữ
+68|斗|ĐẨU|Cái đấu
+69|斤|CÂN|Cái rìu; cân
+70|方|PHƯƠNG|Vuông; phương hướng
+71|无|VÔ|Không
+72|日|NHẬT|Mặt trời; ngày
+73|曰|VIẾT|Nói rằng
+74|月|NGUYỆT|Mặt trăng; tháng
+75|木|MỘC|Cây; gỗ
+76|欠|KHIẾM|Thiếu; ngáp
+77|止|CHỈ|Dừng lại
+78|歹|ĐÃI|Xấu; chết
+79|殳|THÙ|Binh khí; cây gậy
+80|毋|VÔ|Chớ; đừng; mẹ
+81|比|TỈ|So sánh
+82|毛|MAO|Lông
+83|氏|THỊ|Họ; thị tộc
+84|气|KHÍ|Hơi nước; khí
+85|水|THỦY|Nước
+86|火|HỎA|Lửa
+87|爪|TRẢO|Móng vuốt
+88|父|PHỤ|Cha
+89|爻|HÀO|Hào (quẻ bói)
+90|爿|TƯỜNG|Mảnh gỗ; cái giường
+91|片|PHIẾN|Mảnh; tấm
+92|牙|NHA|Răng; nanh
+93|牛|NGƯU|Con trâu; con bò
+94|犬|KHUYỂN|Con chó
+95|玄|HUYỀN|Huyền bí; đen thẫm
+96|玉|NGỌC|Ngọc
+97|瓜|QUA|Quả dưa
+98|瓦|NGÕA|Ngói; đồ gốm
+99|甘|CAM|Ngọt
+100|生|SINH|Sinh; sống
+101|用|DỤNG|Dùng
+102|田|ĐIỀN|Ruộng
+103|疋|THƯƠNG|Cuộn vải; bàn chân
+104|疒|NẠCH|Bệnh tật
+105|癶|BÁT|Gạt ngược; hai chân
+106|白|BẠCH|Màu trắng
+107|皮|BÌ|Da
+108|皿|MÃNH|Cái đĩa
+109|目|MỤC|Mắt
+110|矛|MÂU|Cây giáo
+111|矢|THỈ|Mũi tên
+112|石|THẠCH|Đá
+113|示|THỊ|Thần đất; chỉ thị
+114|禸|NHỰU|Vết chân thú
+115|禾|HÒA|Cây lúa
+116|穴|HUYỆT|Cái hang
+117|立|LẬP|Đứng
+118|竹|TRÚC|Cây tre
+119|米|MỄ|Gạo
+120|糸|MỊCH|Sợi tơ
+121|缶|PHẪU|Cái vại; đồ sành
+122|网|VÕNG|Cái lưới
+123|羊|DƯƠNG|Con dê; cừu
+124|羽|VŨ|Lông vũ; cánh
+125|老|LÃO|Già
+126|而|NHI|Mà; râu
+127|耒|LỖI|Cái cày
+128|耳|NHĨ|Tai
+129|聿|DUẬT|Cây bút
+130|肉|NHỤC|Thịt
+131|臣|THẦN|Bề tôi
+132|自|TỰ|Tự mình; từ
+133|至|CHÍ|Đến
+134|臼|CỮU|Cái cối
+135|舌|THIỆT|Cái lưỡi
+136|舛|SUYỄN|Trái ngược
+137|舟|CHÂU|Thuyền
+138|艮|CẤN|Quẻ Cấn; dừng
+139|色|SẮC|Màu sắc
+140|艸|THẢO|Cỏ
+141|虍|HỔ|Vằn hổ
+142|虫|TRÙNG|Sâu bọ; côn trùng
+143|血|HUYẾT|Máu
+144|行|HÀNH|Đi; hàng
+145|衣|Y|Áo
+146|襾|Á|Che đậy
+147|見|KIẾN|Thấy
+148|角|GIÁC|Cái sừng
+149|言|NGÔN|Lời nói
+150|谷|CỐC|Thung lũng
+151|豆|ĐẬU|Hạt đậu
+152|豕|THỈ|Con lợn
+153|豸|TRĨ|Loài thú không chân; sâu
+154|貝|BỐI|Vỏ sò; tiền của
+155|赤|XÍCH|Màu đỏ
+156|走|TẨU|Chạy
+157|足|TÚC|Bàn chân
+158|身|THÂN|Thân mình
+159|車|XA|Cái xe
+160|辛|TÂN|Cay; vất vả
+161|辰|THẦN|Thìn (chi); giờ
+162|辵|SƯỚC|Chợt bước đi; đường đi
+163|邑|ẤP|Làng; ấp
+164|酉|DẬU|Rượu; chi Dậu
+165|釆|BIỆN|Phân biệt
+166|里|LÝ|Dặm; làng
+167|金|KIM|Vàng; kim loại
+168|長|TRƯỜNG|Dài; lớn
+169|門|MÔN|Cổng
+170|阜|PHỤ|Gò đất; đồi
+171|隶|ĐÃI|Kịp; theo kịp
+172|隹|CHUY|Chim đuôi ngắn
+173|雨|VŨ|Mưa
+174|青|THANH|Màu xanh
+175|非|PHI|Không; sai
+176|面|DIỆN|Mặt
+177|革|CÁCH|Da thuộc; cải cách
+178|韋|VI|Da mềm
+179|韭|CỬU|Rau hẹ
+180|音|ÂM|Âm thanh
+181|頁|HIỆT|Đầu; trang
+182|風|PHONG|Gió
+183|飛|PHI|Bay
+184|食|THỰC|Ăn
+185|首|THỦ|Cái đầu
+186|香|HƯƠNG|Hương thơm
+187|馬|MÃ|Con ngựa
+188|骨|CỐT|Xương
+189|高|CAO|Cao
+190|髟|BIÊU|Tóc dài
+191|鬥|ĐẤU|Đánh nhau
+192|鬯|SƯỚNG|Rượu nếp
+193|鬲|CÁCH|Cái đỉnh; nồi
+194|鬼|QUỶ|Ma quỷ
+195|魚|NGƯ|Con cá
+196|鳥|ĐIỂU|Con chim
+197|鹵|LỖ|Muối mỏ
+198|鹿|LỘC|Con hươu
+199|麦|MẠCH|Lúa mạch
+200|麻|MA|Cây gai
+201|黄|HOÀNG|Màu vàng
+202|黍|THỬ|Lúa nếp
+203|黒|HẮC|Màu đen
+204|黹|CHỈ|Thêu
+205|黽|MÃNH|Con ếch
+206|鼎|ĐỈNH|Cái vạc
+207|鼓|CỔ|Cái trống
+208|鼠|THỬ|Con chuột
+209|鼻|TỴ|Cái mũi
+210|斉|TỀ|Đều; ngang nhau
+211|歯|XỈ|Răng
+212|竜|LONG|Con rồng
+213|亀|QUY|Con rùa
+214|龠|DƯỢC|Cái sáo

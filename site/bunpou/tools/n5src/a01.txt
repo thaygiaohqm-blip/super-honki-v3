@@ -1,0 +1,61 @@
+@p 001 | おはようございます／こんにちは／こんばんは
+@group 1
+@mean Chào buổi sáng / Chào buổi chiều / Chào buổi tối
+@core Lời chào đổi theo thời điểm trong ngày; ban đầu hãy nhớ ba câu này.
+@form おはようございます (buổi sáng)
+@form こんにちは (ban ngày)
+@form こんばんは (buổi tối)
+@exp Người Nhật chào theo buổi trong ngày. 「おはようございます」 dùng từ sáng sớm đến khoảng 10 giờ; với bạn bè thân có thể nói rút gọn 「おはよう」. 「こんにちは」 dùng ban ngày, 「こんばんは」 dùng từ chiều tối. Khi chia tay buổi tối có thể nói 「おやすみなさい」 (chúc ngủ ngon).
+@ex おはようございます。今日もいい天気ですね。 | Chào buổi sáng. Hôm nay trời cũng đẹp nhỉ.
+@ex こんにちは。はじめまして。 | Xin chào. Rất vui được gặp bạn.
+@ex こんばんは。お元気ですか。 | Chào buổi tối. Bạn có khỏe không?
+@note Khi vào lớp, người học thường nói 「おはようございます」 với giáo viên kể cả khi đã gần trưa nếu đó là lần gặp đầu tiên trong ngày (đặc biệt ở môi trường làm việc).
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 0 | 1
+
+@p 002 | ありがとうございます／どういたしまして／すみません
+@group 1
+@mean Cảm ơn / Không có chi / Xin lỗi, xin phép
+@core Ba câu xã giao dùng nhiều nhất: cảm ơn, đáp lại lời cảm ơn, xin lỗi hoặc gọi người khác.
+@form ありがとうございます (cảm ơn, lịch sự)
+@form どういたしまして (đáp lại lời cảm ơn)
+@form すみません (xin lỗi / xin phép / gọi người)
+@exp 「ありがとう」 là dạng thân mật, thêm 「ございます」 để lịch sự. Khi nói cảm ơn về việc đã xảy ra thì dùng 「ありがとうございました」. 「すみません」 vừa là lời xin lỗi vừa dùng để gọi người ("Xin lỗi, cho hỏi...") hoặc xin nhường đường.
+@ex 手伝ってくれて、ありがとうございます。 | Cảm ơn bạn đã giúp tôi.
+@ex A「ありがとうございました。」B「どういたしまして。」 | A: Cảm ơn bạn. B: Không có chi.
+@ex すみません、駅はどこですか。 | Xin lỗi, nhà ga ở đâu ạ?
+@note Cảm ơn về hành động đã xong dùng 「ありがとうございました」; cảm ơn hiện tại hoặc chung chung dùng 「ありがとうございます」.
+@ctx hoi-thoai
+@book minna | 0 | 2
+
+@p 003 | ～をください／もう一度～ください
+@group 1
+@mean Xin hãy cho tôi ~ / Xin hãy ~ lần nữa
+@core Cách nhờ lịch sự đơn giản nhất: thêm 「ください」 sau món đồ hoặc hành động.
+@form 名詞 ＋ を ＋ ください
+@form もう一度 ＋ 言って ＋ ください
+@exp 「Nをください」 nghĩa là "xin cho tôi N", dùng khi mua hàng, gọi món. Trong lớp học, 「もう一度」 là "một lần nữa" và 「ゆっくり」 là "chậm thôi"; ghép với 「ください」 để nhờ người khác lặp lại hoặc nói chậm lại. Những câu hay gặp trong lớp: 「見てください」, 「読んでください」, 「聞いてください」.
+@ex すみません、水をください。 | Xin lỗi, cho tôi xin nước.
+@ex もう一度言ってください。 | Xin hãy nói lại một lần nữa.
+@ex ゆっくり話してください。 | Xin hãy nói chậm thôi.
+@key re:(をください|てください)
+@cmp ～てください | N5 | Dạng đầy đủ để nhờ ai làm gì ở bài 14 (V て ＋ ください).
+@theme muc-dich
+@ctx hoi-thoai
+@book minna | 0 | 3
+
+@p 004 | はい／いいえ／わかりません
+@group 1
+@mean Vâng / Không / Tôi không hiểu
+@core Ba từ đáp cơ bản trong lớp và trong hội thoại.
+@form はい (vâng, dạ)
+@form いいえ (không phải)
+@form わかりません (tôi không hiểu)
+@exp 「はい」 xác nhận hoặc đáp lời gọi; 「いいえ」 phủ nhận; 「わかりました」 là "tôi hiểu rồi", 「わかりません」 là "tôi không hiểu". Khi phủ nhận một câu hỏi, 「いいえ」 thường kèm theo lời chữa lại.
+@ex A「わかりましたか。」B「はい、わかりました。」 | A: Bạn hiểu chưa? B: Vâng, tôi hiểu rồi.
+@ex A「学生ですか。」B「いいえ、学生じゃありません。」 | A: Bạn là sinh viên à? B: Không, tôi không phải sinh viên.
+@ex すみません、わかりません。 | Xin lỗi, tôi không hiểu.
+@key re:(はい|いいえ|わかりません)
+@ctx hoi-thoai
+@book minna | 0 | 4

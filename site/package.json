@@ -1,0 +1,7 @@
+{
+  "name": "super-honki",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Super Honki — Super Goi, Super Bunpou và các công cụ học tiếng Nhật của Minh Dokkai",
+  "engines": { "node": ">=20" }
+}

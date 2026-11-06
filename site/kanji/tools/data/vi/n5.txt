@@ -1,0 +1,118 @@
+一|NHẤT|Số một; một
+二|NHỊ|Số hai
+三|TAM|Số ba
+四|TỨ|Số bốn
+五|NGŨ|Số năm
+六|LỤC|Số sáu
+七|THẤT|Số bảy
+八|BÁT|Số tám
+九|CỬU|Số chín
+十|THẬP|Số mười; trọn vẹn
+百|BÁCH|Trăm
+千|THIÊN|Nghìn
+万|VẠN|Mười nghìn; vạn
+円|VIÊN|Yên (tiền Nhật); hình tròn
+月|NGUYỆT|Mặt trăng; tháng
+火|HỎA|Lửa
+水|THỦY|Nước
+木|MỘC|Cây; gỗ
+金|KIM|Vàng; kim loại; tiền
+土|THỔ|Đất
+日|NHẬT|Mặt trời; ngày
+年|NIÊN|Năm
+人|NHÂN|Người
+口|KHẨU|Miệng; cửa
+目|MỤC|Mắt
+耳|NHĨ|Tai
+手|THỦ|Tay
+足|TÚC|Chân; đủ
+力|LỰC|Sức lực
+山|SƠN|Núi
+川|XUYÊN|Sông
+田|ĐIỀN|Ruộng lúa
+石|THẠCH|Đá
+花|HOA|Hoa
+竹|TRÚC|Tre
+雨|VŨ|Mưa
+上|THƯỢNG|Trên
+下|HẠ|Dưới
+左|TẢ|Trái
+右|HỮU|Phải
+外|NGOẠI|Bên ngoài
+内|NỘI|Bên trong
+中|TRUNG|Giữa; bên trong
+学|HỌC|Học
+校|HIỆU|Trường học
+先|TIÊN|Trước; đi trước
+生|SINH|Sống; sinh ra
+名|DANH|Tên; danh tiếng
+字|TỰ|Chữ
+本|BẢN|Sách; gốc; quyển
+体|THỂ|Cơ thể
+大|ĐẠI|To lớn
+小|TIỂU|Nhỏ
+高|CAO|Cao; đắt
+友|HỮU|Bạn bè
+入|NHẬP|Vào
+出|XUẤT|Ra; đi ra
+門|MÔN|Cổng
+父|PHỤ|Cha
+母|MẪU|Mẹ
+子|TỬ|Con cái; đứa trẻ
+男|NAM|Đàn ông; nam
+女|NỮ|Phụ nữ; nữ
+犬|KHUYỂN|Con chó
+鳥|ĐIỂU|Con chim
+立|LẬP|Đứng; dựng
+休|HƯU|Nghỉ ngơi
+見|KIẾN|Nhìn; thấy
+聞|VĂN|Nghe; hỏi
+行|HÀNH|Đi; thực hiện
+来|LAI|Đến
+帰|QUY|Về; trở về
+米|MỄ|Gạo
+茶|TRÀ|Trà
+牛|NGƯU|Con bò
+肉|NHỤC|Thịt
+魚|NGƯ|Cá
+貝|BỐI|Con sò; vỏ sò
+好|HẢO|Thích; tốt
+物|VẬT|Đồ vật
+林|LÂM|Rừng thưa
+森|SÂM|Rừng rậm
+畑|—|Ruộng (cạn); nương
+岩|NHAM|Đá tảng; vách đá
+音|ÂM|Âm thanh
+明|MINH|Sáng; rõ ràng
+暗|ÁM|Tối
+言|NGÔN|Nói; lời nói
+書|THƯ|Viết; sách
+読|ĐỘC|Đọc
+話|THOẠI|Nói chuyện; câu chuyện
+食|THỰC|Ăn
+飲|ẨM|Uống
+買|MÃI|Mua
+町|ĐINH|Thị trấn; phố
+寺|TỰ|Chùa
+電|ĐIỆN|Điện
+車|XA|Xe
+東|ĐÔNG|Phía đông
+西|TÂY|Phía tây
+南|NAM|Phía nam
+北|BẮC|Phía bắc
+時|THỜI|Thời gian; giờ
+間|GIAN|Khoảng giữa; khoảng thời gian
+半|BÁN|Một nửa
+分|PHÂN|Phút; chia; phần
+今|KIM|Bây giờ
+何|HÀ|Cái gì
+夕|TỊCH|Buổi chiều tối
+方|PHƯƠNG|Phương hướng; người
+新|TÂN|Mới
+古|CỔ|Cũ; xưa
+長|TRƯỜNG|Dài; trưởng
+安|AN|Rẻ; yên ổn
+多|ĐA|Nhiều
+少|THIỂU|Ít
+元|NGUYÊN|Gốc; khởi đầu
+気|KHÍ|Khí; tinh thần

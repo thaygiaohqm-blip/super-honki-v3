@@ -1,0 +1,86 @@
+@p 050 | 尊敬語（そんけいご）
+@group 9
+@mean Kính ngữ tôn kính (nói về hành vi của người trên)
+@core Nâng người nghe hoặc người được nhắc đến bằng cách tôn vinh hành vi của họ.
+@form お＋動詞 ます形＋になる／ご＋漢語名詞＋になる
+@form 動詞 受身形(れる・られる) （出席される・帰国される）
+@form お＋動詞 ます形＋ください／ご＋名詞＋ください
+@form 特別な形: いらっしゃる（来る・行く・いる）・おいでになる・見える（来る）・なさる（する）・ごらんになる（見る）・召し上がる（食べる・飲む）・おっしゃる（言う）・ご存じだ（知っている）・くださる（くれる）
+@exp Dùng để nói về hành động của người bề trên (thầy cô, khách hàng, cấp trên) một cách kính trọng. Có ba cách: dạng 「お～になる」, dạng bị động 「～れる・られる」 và động từ đặc biệt.
+@ex 先生は今日何時ごろお帰りになりますか。 | Thầy hôm nay khoảng mấy giờ thì về ạ?
+@ex 何年に大学をご卒業になったのですか。 | Thầy tốt nghiệp đại học năm nào ạ?
+@ex 明日の会議には出席されますか。 | Ngày mai thầy có tham dự cuộc họp không ạ?
+@ex こちらにお名前をお書きください。 | Xin hãy viết tên ở đây.
+@ex 研究会の会長でいらっしゃいます。 | Ông ấy là chủ tịch hội nghiên cứu.
+@ex 京都に住んでいらっしゃいます。 | Thầy đang sống ở Kyoto.
+@ex 推薦書を書いてくださいました。 | Thầy đã viết thư giới thiệu cho tôi.
+@ex いつわたしの国へいらっしゃいましたか。 | Thầy đã đến nước tôi khi nào ạ?
+@ex ゴルフをなさいますか。 | Ông có chơi golf không ạ?
+@ex この雑誌をごらんになりますか。 | Ông có xem tạp chí này không ạ?
+@ex 和食を召し上がります。お酒も召し上がります。 | Ông dùng món Nhật. Cũng dùng cả rượu.
+@ex お名前は何とおっしゃいますか。 | Quý danh của ông là gì ạ?
+@ex あの方をご存じですか。 | Ông có biết người đó không ạ?
+@cmp 謙譲語 | N3 | Tôn kính nâng người khác lên; khiêm nhường hạ mình xuống.
+@note Chủ ngữ của tôn kính ngữ là người được kính trọng.
+@theme the-thai
+@ctx cong-ty, hoi-thoai
+@book shin-n3 | 12 | 1
+
+@p 051 | 謙譲語1（けんじょうご）
+@group 9
+@mean Khiêm nhường ngữ 1 (hành vi của mình liên quan tới người trên)
+@core Hạ mình khi hành động của bản thân có liên quan hay ảnh hưởng đến người trên.
+@form お＋動詞 ます形＋する・いたす／ご＋漢語名詞＋する・いたす
+@form お＋動詞 ます形＋できる (khả năng)
+@form 動詞 て形＋いただく（～てもらう）
+@form 特別な形: 拝見する（見る）・申し上げる（言う）・伺う（聞く・訪ねる）・お目にかかる（会う）・さしあげる（あげる）・いただく（もらう）
+@exp Dùng khi hành động của người nói có đối tượng là người bề trên (nhận, cho, gặp, hỏi), nhằm nâng đối phương bằng cách hạ mình.
+@ex (先生の)ご本をお借りします。(先生を)会場へご案内します。 | Em xin mượn sách của thầy. Em xin dẫn thầy đến hội trường.
+@ex 完成品はまだ(先生に)お見せできません。 | Sản phẩm hoàn thành thì em chưa thể cho thầy xem được.
+@ex (先生に)ピアノを教えていただきました。 | Tôi đã được thầy dạy piano.
+@ex (先生の写真を)ちょっと拝見します。 | Tôi xin xem ảnh của thầy một chút.
+@ex (先生に)お礼を申し上げます。 | Tôi xin gửi lời cảm ơn đến thầy.
+@ex (先生に)ちょっと伺いますが……。 | Em xin hỏi thầy một chút ạ...
+@ex あした3時に(先生の)お宅に伺います。 | 3 giờ chiều mai em sẽ đến nhà thầy.
+@ex あした3時に(先生に)お目にかかります。 | 3 giờ chiều mai tôi sẽ gặp thầy.
+@ex (先生に)本をさしあげます。 | Tôi xin tặng thầy một cuốn sách.
+@cmp 謙譲語2 | N3 | 謙譲語1 có đối tượng là người trên; 謙譲語2 chỉ để nói lịch sự về mình.
+@note Chủ ngữ là người nói (mình), đối tượng là người được kính trọng.
+@theme the-thai
+@ctx cong-ty, hoi-thoai
+@book shin-n3 | 12 | 2
+
+@p 052 | 謙譲語2（丁重語）
+@group 9
+@mean Khiêm nhường ngữ 2 (nói lịch sự về hành vi của mình)
+@core Nói lịch sự, khiêm tốn về hành động của mình, không cần có đối tượng cụ thể là người trên.
+@form 参る（来る・行く）・おる（いる）・いたす（する）・いただく（食べる・飲む）・申す（言う）・存じる（知っている・思う）
+@exp Dùng để nói với người nghe một cách lịch sự về hành vi của mình, không nhất thiết có đối tượng là người trên (khác với 謙譲語1).
+@ex あした3時に参ります。 | Ngày mai 3 giờ tôi sẽ đến.
+@ex 夜は家におります。 | Buổi tối tôi ở nhà.
+@ex 片付けは後でわたしがいたします。 | Việc dọn dẹp lát nữa tôi xin làm.
+@ex 刺身も日本酒もいただきます。 | Tôi xin dùng cả sashimi lẫn rượu sake.
+@ex 山中と申します。 | Tôi tên là Yamanaka.
+@ex 行き先はよく存じております。 | Tôi biết rõ nơi đến.
+@ex いくつか方法があると存じます。 | Tôi nghĩ có vài phương pháp.
+@cmp 丁寧語 | N5 | 丁寧語 chỉ là thể lịch sự thông thường (です・ます).
+@note 「参る」 dùng cho cả đi và đến.
+@theme the-thai
+@ctx cong-ty, hoi-thoai
+@book shin-n3 | 12 | 3
+
+@p 053 | 丁寧語（ございます・でございます）
+@group 9
+@mean Ngôn ngữ lịch sự (không phụ thuộc quan hệ trên dưới)
+@core Nói lịch sự về sự vật, không liên quan đến thứ bậc giữa mình và người nghe.
+@form 名詞 ＋ でございます (です)
+@form ございます (あります)
+@exp Dùng để nói sự vật một cách lịch sự, không liên quan đến thứ bậc, quan hệ giữa người nói và người nghe. Rất hay dùng trong dịch vụ khách hàng.
+@ex これは新製品でございます。 | Đây là sản phẩm mới ạ.
+@ex パソコン用品は3階にございます。 | Đồ dùng máy tính có ở tầng 3 ạ.
+@cmp ～です | N5 | 「でございます」 trang trọng hơn 「です」.
+@note Hay nghe ở cửa hàng, khách sạn.
+@theme the-thai
+@ctx cong-ty
+@book shin-n3 | 12 | 4
+

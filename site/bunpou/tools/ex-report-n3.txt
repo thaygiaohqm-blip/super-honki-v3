@@ -1,0 +1,3 @@
+[số lượng lệch, bỏ qua đối chiếu] F1: bảng đáp án 11 / đề 10
+[chưa đối chiếu với bảng đáp án] F1 (fill, 10 câu)
+--- LỖI ---

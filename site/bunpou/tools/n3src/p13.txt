@@ -1,0 +1,92 @@
+@p 086 | ～ばかり
+@group 15
+@mean Toàn là ... / Chỉ toàn ...
+@core Lúc nào cũng chỉ làm A (không làm việc khác); thường mang ý chê.
+@form 名詞 (＋助詞) ・ 動詞 辞書形・ている ＋ ばかり
+@exp 「いつも～だけで、ほかのもの・ことはない」. Hay dùng khi nói điều mình thấy không tốt.
+@ex 弟は毎日あきずにカップラーメンばかり食べている。 | Em trai tôi ngày nào cũng ăn toàn mì ly mà không chán.
+@ex 寮では同じ国の人とばかり話さないで、いろいろな国の人と会話したほうがいい。 | Ở ký túc xá đừng chỉ nói chuyện với người cùng nước mà nên nói chuyện với người nhiều nước.
+@ex ありがとうございます。いつもいただくばかりで、お返しもできなくてすみません。 | Cảm ơn anh. Lúc nào cũng chỉ nhận mà không đáp lễ được, xin lỗi.
+@ex 子どもはただ泣いているばかりで、何があったのかわからなかった。 | Đứa bé chỉ khóc mãi nên không biết đã xảy ra chuyện gì.
+@ex この写真の女の子は今どうしているのでしょう。彼女の幸せを祈るばかりです。 | Cô bé trong ảnh giờ ra sao nhỉ. Tôi chỉ biết cầu mong cô ấy hạnh phúc.
+@cmp ～だけ | N3 | 「だけ」 trung tính; 「ばかり」 hay mang ý chê.
+@note 
+@theme pham-vi
+@ctx hoi-thoai
+@book shin-n3 | F | 1
+
+@p 087 | ～てばかりいる
+@group 15
+@mean Cứ ... suốt / Toàn ... không
+@core Cứ làm đi làm lại một việc, không làm việc khác; mang ý chê trách.
+@form 動詞 て形 ＋ ばかりいる
+@exp 「ほかのことはしないで、よく～する」. Nói với tâm trạng chê trách.
+@ex 祖父は最近怒ってばかりいる。 | Ông tôi dạo này cứ giận dỗi suốt.
+@ex 二十歳のころは遊んでばかりいた。勉強しなかったことを今は残念に思っている。 | Hồi 20 tuổi tôi chỉ toàn chơi bời. Giờ tiếc vì đã không học.
+@ex ただ見てばかりいないで、少しは手伝ってくださいよ。 | Đừng chỉ đứng nhìn mãi, giúp một chút đi chứ.
+@cmp ～ばかり | N3 | Cách nói cụ thể hóa cho động từ.
+@note 
+@theme pham-vi
+@ctx hoi-thoai
+@book shin-n3 | F | 2
+
+@p 088 | ～ばかりでなく
+@group 15
+@mean Không chỉ ... mà còn ...
+@core Không chỉ A mà ngoài ra còn B.
+@form 名詞 (＋助詞)・普通形 (ナ形容詞 だ→な／である・名詞 だ→である) ＋ ばかりでなく
+@exp 「～だけでなくて、そのほかにも…」.
+@ex 日本人ばかりでなく、世界中の人がエネルギー問題に関心を持っている。 | Không chỉ người Nhật, mà mọi người trên thế giới đều quan tâm vấn đề năng lượng.
+@ex この番組は、面白いばかりでなく、さまざまなことが学べる。 | Chương trình này không chỉ thú vị mà còn học được nhiều điều.
+@ex 彼は町を案内してくれたばかりでなく、この地方の料理もごちそうしてくれた。 | Anh ấy không chỉ dẫn tôi đi tham quan phố mà còn mời tôi món ăn địa phương.
+@cmp ～だけでなく | N4 | Nghĩa tương đương nhưng 「ばかりでなく」 trang trọng hơn.
+@note 
+@theme bo-sung
+@ctx hoi-thoai, van-ban
+@book shin-n3 | F | 3
+
+@p 089 | ～ばかりだ（変化が進む）
+@group 15
+@mean Chỉ ngày càng ... (xu hướng chuyển biến)
+@core Chỉ có sự thay đổi theo một chiều hướng (thường là xấu đi).
+@form 動詞 辞書形 ＋ ばかりだ
+@exp 「～という一方方向に変化が進んでいく」. Đi với động từ chỉ sự biến đổi (弱くなる, 減る…). Thường là hướng không tốt.
+@ex 一度けんかしてから、彼女とは関係が悪くなるばかりだ。 | Từ lần cãi nhau đó, quan hệ với cô ấy chỉ ngày càng xấu đi.
+@ex 外国語はいつも使っていなければ忘れていくばかりだ。 | Ngoại ngữ nếu không dùng thường xuyên thì chỉ ngày càng quên.
+@ex 最近、祖母は気が弱くなるばかりで心配です。 | Dạo này bà tôi tinh thần cứ yếu dần nên tôi lo.
+@cmp ～一方だ | N2 | Nghĩa tương đương.
+@note 
+@theme trang-thai
+@ctx hoi-thoai
+@book shin-n3 | F | 4
+
+@p 090 | ～ばかりだ（あとは～するだけ）
+@group 15
+@mean Chỉ còn việc ... nữa thôi
+@core Chuẩn bị xong xuôi, chỉ còn việc cuối cùng phải làm.
+@form 動詞 辞書形 ＋ ばかりだ
+@exp 「準備が終わって、あとはただ～するだけの状態だ」.
+@ex 旅行の準備はできました。もう出発するばかりです。 | Chuẩn bị cho chuyến đi xong rồi. Chỉ còn khởi hành thôi.
+@ex 食事の準備が終わって、もう食べるばかりになっている。 | Chuẩn bị bữa ăn xong, giờ chỉ còn ăn nữa thôi.
+@ex パーティーの招待状ができ上がって、後は招待客に送るばかりというときになって、ミスが見つかった。 | Thiệp mời tiệc làm xong, đến lúc chỉ còn gửi cho khách thì phát hiện ra lỗi.
+@cmp ～だけだ | N4 | 「ばかりだ」 nhấn mạnh sự đã sẵn sàng.
+@note 
+@theme thoi-gian, trang-thai
+@ctx hoi-thoai
+@book shin-n3 | F | 5
+
+@p 091 | ～たばかりだ
+@group 15
+@mean Vừa mới ... xong
+@core Vừa mới xảy ra, thời gian trôi qua còn rất ngắn.
+@form 動詞 た形 ＋ ばかりだ
+@exp 「～したすぐ後だ」. Thời gian người nói cảm thấy là ngắn, không nhất thiết là thời gian đo được.
+@ex さっきご飯を食べたばかりなのに、もうおなかがすいてしまった。 | Vừa mới ăn cơm xong mà đã đói bụng rồi.
+@ex 先月結婚したばかりなので、まだ新しい生活に慣れていない。 | Tháng trước vừa mới cưới nên tôi chưa quen với cuộc sống mới.
+@ex 買ったばかりのおもちゃがもうこわれてしまった。 | Đồ chơi vừa mới mua đã hỏng rồi.
+@cmp ～たところだ | N4 | 「たところだ」 chỉ ngay trước thời điểm nói; 「たばかりだ」 có thể dài hơn.
+@note 
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | F | 6
+

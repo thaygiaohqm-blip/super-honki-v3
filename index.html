@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Super Honki — Học tiếng Nhật nghiêm túc</title>
-<meta name="description" content="Super Honki: bộ công cụ học tiếng Nhật của Minh Dokkai. Super Goi (12.000 từ vựng theo cụm) và Super Bunpou (630 mẫu ngữ pháp N5–N1), sắp có Super Kanji.">
+<meta name="description" content="Super Honki: bộ công cụ học tiếng Nhật của Minh Dokkai. Super Goi (12.000 từ vựng theo cụm) và Super Bunpou (630 mẫu ngữ pháp N5–N1), và Super Kanji (hơn 2.100 chữ Hán N5–N1).">
 <meta property="og:title" content="Super Honki — Học tiếng Nhật nghiêm túc">
 <meta property="og:image" content="shared/img/honki-chan.svg">
 <meta property="og:locale" content="vi_VN">
@@ -18,7 +18,7 @@
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>
 <link rel="stylesheet" href="shared/honki.css">
-<script type="speculationrules">{"prefetch":[{"urls":["/","/goi/","/bunpou/"],"eagerness":"moderate"}]}</script>
+<script type="speculationrules">{"prefetch":[{"urls":["/","/goi/","/bunpou/","/kanji/","/gemu/"],"eagerness":"moderate"}]}</script>
 </head>
 <body data-honki="home">
 <script src="shared/honki.js"></script>
@@ -26,7 +26,7 @@
   <div class="nav__in">
     <a class="logo" href="#top" aria-label="Super Honki"><img src="shared/logo-mark.svg" alt="" width="44" height="44"><span><b>Super</b> Honki</span></a>
     <nav class="nav__links" aria-label="Menu chính">
-      <a href="#cong-cu">Công cụ</a><a href="#lo-trinh">Lộ trình</a><a href="#tac-gia">Tác giả</a><a href="#lien-ket">Liên hệ</a><a href="#ung-ho">Ủng hộ</a>
+      <a class="nav__feat" href="#cong-cu">Công cụ</a><a href="#lo-trinh">Lộ trình</a><a href="#tac-gia">Tác giả</a><a href="#lien-ket">Liên hệ</a><a href="#ung-ho">Ủng hộ</a>
     </nav>
     <div class="hk-tools" data-hk-tools></div>
   </div>
@@ -40,10 +40,13 @@
       <h1>Học tiếng Nhật <em>bằng cả quyết tâm.</em></h1>
       <p class="lead">Học kiến thức nền trong tiếng Nhật với các công cụ học tập toàn diện, chỉ cần bạn nghiêm túc và kỉ luật.</p>
       <div class="hero__cta">
-        <a class="btn btn--red btn--lg" href="goi/">Học từ vựng với Super Goi</a>
+        <a class="btn btn--red btn--lg" href="kanji/">Học Hán tự với Super Kanji</a>
+        <a class="btn btn--ghost btn--lg" href="goi/">Học từ vựng với Super Goi</a>
         <a class="btn btn--ghost btn--lg" href="bunpou/">Học ngữ pháp với Super Bunpou</a>
+        <a class="btn btn--game btn--lg" href="gemu/">🎮 Chơi game với Super Gemu</a>
       </div>
       <dl class="stats">
+        <div><dt>2.150</dt><dd>chữ Kanji</dd></div>
         <div><dt>12.000</dt><dd>từ vựng theo cụm</dd></div>
         <div><dt>630</dt><dd>mẫu ngữ pháp</dd></div>
         <div><dt>N5–N1</dt><dd>đủ 5 cấp JLPT</dd></div>
@@ -56,6 +59,13 @@
       <p class="kicker">Công cụ</p>
       <h2>Lựa chọn mảng kiến thức bạn muốn học hôm nay để cháy hết mình nào</h2>
       <div class="cards">
+        <a class="card card--kanji" href="kanji/">
+          <span class="card__tag">Hán tự</span>
+          <span class="card__ja" lang="ja">漢字</span>
+          <h3>Super Kanji</h3>
+          <p>Hơn 2.100 chữ Kanji N5–N1 với Hán Việt, âm on, âm kun, nguồn gốc, cách nhớ, bộ thủ và thứ tự nét. Học theo JLPT, gia đình chữ giống nhau, giáo trình Kanji Master và bộ thủ; có flashcard, trắc nghiệm, ghép cặp và bài test 20 câu.</p>
+          <span class="card__go">Vào học <i aria-hidden="true">→</i></span>
+        </a>
         <a class="card card--goi" href="goi/">
           <span class="card__tag">Từ vựng</span>
           <span class="card__ja" lang="ja">語彙</span>
@@ -70,13 +80,13 @@
           <p>630 mẫu ngữ pháp N5–N1 học theo cấp độ, chủ đề, bối cảnh hoặc giáo trình (Minna no Nihongo, Shinkanzen). Có luyện chia thể, số đếm và hàng nghìn câu trắc nghiệm.</p>
           <span class="card__go">Vào học <i aria-hidden="true">→</i></span>
         </a>
-        <div class="card card--soon" aria-disabled="true">
-          <span class="card__tag">Sắp ra mắt</span>
-          <span class="card__ja" lang="ja">漢字</span>
-          <h3>Super Kanji</h3>
-          <p>Học Kanji theo phương pháp Lục Thư cải tiến từ bộ sách Huyền Lục Thư. Đang được chuẩn bị, còn nhiều công cụ khác sẽ tiếp tục ra mắt.</p>
-          <span class="card__go">Đang chuẩn bị…</span>
-        </div>
+        <a class="card card--gemu" href="gemu/">
+          <span class="card__tag">Trò chơi</span>
+          <span class="card__ja" lang="ja">遊戯</span>
+          <h3>Super Gemu</h3>
+          <p>Bốn trò chơi ôn Kanji, từ vựng và ngữ pháp: Hãy chọn chữ đúng, Nhanh như chớp, Đoán chữ Kanji, Vua tốc độ. Chơi một mình để lập kỉ lục trên bảng xếp hạng, hoặc ghép trận với người đang online.</p>
+          <span class="card__go">Chơi ngay <i aria-hidden="true">→</i></span>
+        </a>
       </div>
     </div>
   </section>
@@ -159,7 +169,7 @@
     <div class="wrap cta__in">
       <h2>Nghiêm túc thì bắt đầu ngay hôm nay.</h2>
       <p>Không cần đăng ký để học thử. Tạo tài khoản khi muốn giữ tiến độ trên mọi thiết bị.</p>
-      <div class="hero__cta"><a class="btn btn--red btn--lg" href="goi/">Super Goi</a><a class="btn btn--ghost btn--lg" href="bunpou/">Super Bunpou</a></div>
+      <div class="hero__cta"><a class="btn btn--red btn--lg" href="goi/">Super Goi</a><a class="btn btn--ghost btn--lg" href="bunpou/">Super Bunpou</a><a class="btn btn--ghost btn--lg" href="kanji/">Super Kanji</a></div>
     </div>
   </section>
 </main>
@@ -167,7 +177,7 @@
 <footer class="foot">
   <div class="wrap foot__in">
     <a class="logo" href="#top"><img src="shared/logo-mark.svg" alt="" width="36" height="36"><span><b>Super</b> Honki</span></a>
-    <nav aria-label="Liên kết cuối trang"><a href="goi/">Super Goi</a><a href="bunpou/">Super Bunpou</a><a href="https://www.minhdokkai.com/" target="_blank" rel="noopener">minhdokkai.com</a><a href="https://zalo.me/0336382095" target="_blank" rel="noopener">Zalo 0336 382 095</a></nav>
+    <nav aria-label="Liên kết cuối trang"><a href="goi/">Super Goi</a><a href="bunpou/">Super Bunpou</a><a href="kanji/">Super Kanji</a><a href="https://www.minhdokkai.com/" target="_blank" rel="noopener">minhdokkai.com</a><a href="https://zalo.me/0336382095" target="_blank" rel="noopener">Zalo 0336 382 095</a></nav>
     <p>© 2026 Minh Dokkai. Super Honki.</p>
   </div>
 </footer>

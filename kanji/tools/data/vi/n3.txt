@@ -1,0 +1,376 @@
+起|KHỞI|Thức dậy; xảy ra; khởi đầu
+寝|TẨM|Ngủ
+浴|DỤC|Tắm
+湯|THANG|Nước nóng; bồn nước nóng
+洗|TẨY|Rửa; giặt
+濯|TRẠC|Giặt; súc rửa
+干|CAN|Phơi khô; can thiệp
+活|HOẠT|Sống; hoạt động
+拾|THẬP|Nhặt; nhặt lên
+捨|XẢ|Vứt bỏ
+燃|NHIÊN|Cháy; đốt
+袋|ĐẠI|Cái túi
+曜|DIỆU|Ngày trong tuần
+末|MẠT|Cuối; ngọn
+昨|TẠC|Hôm qua; trước đây
+翌|DỰC|Hôm sau; kế tiếp
+予|DỰ|Trước; dự định
+定|ĐỊNH|Định; quyết định
+用|DỤNG|Dùng; việc
+事|SỰ|Việc; sự việc
+押|ÁP|Ấn; đẩy
+引|DẪN|Kéo; dẫn
+取|THỦ|Lấy
+消|TIÊU|Tắt; xóa; tiêu mất
+戸|HỘ|Cửa; hộ gia đình
+窓|SONG|Cửa sổ
+階|GIAI|Tầng; bậc
+段|ĐOẠN|Bậc thang; đoạn
+植|THỰC|Trồng; thực vật
+葉|DIỆP|Lá
+実|THỰC|Quả; thực sự
+根|CĂN|Rễ; gốc
+建|KIẾN|Xây dựng
+築|TRÚC|Xây; kiến trúc
+構|CẤU|Cấu tạo; cơ cấu
+造|TẠO|Chế tạo; xây dựng
+設|THIẾT|Thiết lập; bố trí
+柱|TRỤ|Cột trụ
+庫|KHỐ|Kho
+向|HƯỚNG|Hướng về
+熱|NHIỆT|Nhiệt; nóng; sốt
+冷|LÃNH|Lạnh; làm lạnh
+温|ÔN|Ấm; nhiệt độ
+度|ĐỘ|Độ; lần
+材|TÀI|Vật liệu; nguyên liệu
+型|HÌNH|Khuôn; kiểu mẫu
+焼|THIÊU|Nướng; đốt cháy
+器|KHÍ|Đồ dùng; dụng cụ
+卵|NOÃN|Trứng
+乳|NHŨ|Sữa; ngực
+粉|PHẤN|Bột
+塩|DIÊM|Muối
+菜|THÁI|Rau
+果|QUẢ|Trái cây; kết quả
+豆|ĐẬU|Đậu
+缶|PHỮU|Lon; hộp thiếc
+杯|BÔI|Ly; chén; (đếm) cốc
+枚|MAI|Tờ; (đếm vật mỏng)
+匹|THẤT|(Đếm) con vật nhỏ
+量|LƯỢNG|Lượng; đo lường
+頭|ĐẦU|Đầu
+顔|NHAN|Mặt
+首|THỦ|Cổ; đứng đầu
+鼻|TỴ|Mũi
+呼|HÔ|Gọi; thở ra
+吸|HẤP|Hút; hít vào
+息|TỨC|Hơi thở
+汗|HÃN|Mồ hôi
+検|KIỂM|Kiểm tra
+査|TRA|Điều tra
+歯|XỈ|Răng
+痛|THỐNG|Đau
+血|HUYẾT|Máu
+液|DỊCH|Chất lỏng
+包|BAO|Bọc; gói
+帯|ĐỚI|Đai; dải; mang theo
+救|CỨU|Cứu giúp
+助|TRỢ|Giúp đỡ
+死|TỬ|Chết
+亡|VONG|Mất; chết
+戦|CHIẾN|Chiến đấu; thi đấu
+決|QUYẾT|Quyết định
+勝|THẮNG|Thắng
+負|PHỤ|Thua; gánh; mang
+代|ĐẠI|Đại diện; thay thế; thế hệ
+表|BIỂU|Bề mặt; biểu thị; bảng
+第|ĐỆ|(Tiền tố thứ tự) thứ
+回|HỒI|Lần; quay vòng
+記|KÝ|Ghi chép
+録|LỤC|Ghi lại
+優|ƯU|Ưu tú; dịu dàng
+賞|THƯỞNG|Giải thưởng
+秒|MIỂU|Giây
+差|SAI|Khác biệt; sai khác
+測|TRẮC|Đo lường
+順|THUẬN|Thứ tự; thuận
+球|CẦU|Quả bóng; hình cầu
+打|ĐẢ|Đánh
+投|ĐẦU|Ném
+点|ĐIỂM|Điểm
+感|CẢM|Cảm giác; cảm xúc
+情|TÌNH|Tình cảm; tình hình
+恋|LUYẾN|Yêu; luyến
+愛|ÁI|Yêu thương
+信|TÍN|Tin tưởng; thư tín
+想|TƯỞNG|Nghĩ; tưởng tượng
+伝|TRUYỀN|Truyền đạt
+欲|DỤC|Muốn; ham muốn
+苦|KHỔ|Khổ; đắng
+悩|NÃO|Phiền não; lo nghĩ
+困|KHỐN|Khó khăn; bối rối
+難|NAN|Khó; hoạn nạn
+怒|NỘ|Giận dữ
+悲|BI|Buồn
+笑|TIẾU|Cười
+喜|HỈ|Vui mừng
+残|TÀN|Còn lại; tàn dư
+念|NIỆM|Nghĩ; ý niệm
+泣|KHẤP|Khóc
+涙|LỆ|Nước mắt
+結|KẾT|Kết; buộc
+婚|HÔN|Kết hôn
+紹|THIỆU|Giới thiệu
+介|GIỚI|Môi giới; xen vào
+独|ĐỘC|Độc; một mình
+身|THÂN|Thân thể; bản thân
+貯|TRỮ|Tích trữ
+期|KỲ|Kỳ hạn; kỳ vọng
+約|ƯỚC|Hẹn ước; tóm tắt
+束|THÚC|Bó; hẹn ước
+必|TẤT|Nhất định; cần thiết
+守|THỦ|Giữ; bảo vệ
+式|THỨC|Nghi thức; kiểu
+列|LIỆT|Hàng; xếp hàng
+祝|CHÚC|Chúc mừng
+酔|TÚY|Say
+永|VĨNH|Lâu dài; vĩnh viễn
+願|NGUYỆN|Mong ước; xin
+幸|HẠNH|Hạnh phúc
+福|PHÚC|Phúc
+関|QUAN|Liên quan; cửa ải
+係|HỆ|Quan hệ; phụ trách
+和|HÒA|Hòa; hòa hợp; Nhật
+付|PHÓ|Gắn; kèm theo
+娘|NƯƠNG|Con gái; cô gái
+老|LÃO|Già
+婦|PHỤ|Phụ nữ; vợ
+姓|TÍNH|Họ
+仲|TRỌNG|Quan hệ; bạn bè
+君|QUÂN|Bạn (xưng hô); quân vương
+彼|BỈ|Anh ấy; kia
+他|THA|Khác; người khác
+初|SƠ|Đầu tiên; lần đầu
+再|TÁI|Lại; lần nữa
+久|CỬU|Lâu
+達|ĐẠT|Đạt tới; (hậu tố số nhiều)
+個|CÁ|Cá nhân; cái
+性|TÍNH|Tính chất; giới tính
+各|CÁC|Mỗi; từng
+格|CÁCH|Cách; tư cách
+単|ĐƠN|Đơn; một
+複|PHỨC|Phức; kép
+全|TOÀN|Toàn bộ
+以|DĨ|Từ…trở; bằng
+未|VỊ|Chưa
+満|MÃN|Đầy; thỏa mãn
+無|VÔ|Không có
+非|PHI|Phi; không phải
+幼|ẤU|Nhỏ tuổi; ấu thơ
+児|NHI|Trẻ em
+童|ĐỒNG|Trẻ nhỏ
+徒|ĐỒ|Học trò; đồ đệ; đi bộ
+担|ĐẢM|Gánh; đảm nhận
+任|NHIỆM|Nhiệm vụ; giao phó
+師|SƯ|Thầy; sư phạm
+組|TỔ|Nhóm; lớp; tổ
+机|KỶ|Cái bàn
+座|TỌA|Chỗ ngồi; ngồi
+板|BẢN|Tấm ván; bảng
+筆|BÚT|Bút
+貸|THẢI|Cho mượn
+借|TÁ|Mượn
+返|PHẢN|Trả lại
+冊|SÁCH|Quyển (sách); đếm sách
+具|CỤ|Dụng cụ; đủ
+箱|TƯƠNG|Hộp
+棒|BỔNG|Gậy; cây gậy
+伸|THÂN|Duỗi; kéo dài
+希|HI|Hy vọng; hiếm
+望|VỌNG|Mong; ngắm
+夢|MỘNG|Giấc mơ
+的|ĐÍCH|Mang tính…; mục tiêu
+可|KHẢ|Có thể
+能|NĂNG|Năng lực; có thể
+調|ĐIỀU|Điều tra; điều chỉnh
+選|TUYỂN|Chọn
+面|DIỆN|Mặt; bề mặt
+接|TIẾP|Tiếp xúc; tiếp
+受|THỤ|Nhận; chịu; thi
+落|LẠC|Rơi; trượt
+倍|BỘI|Gấp đôi; bội
+率|SUẤT|Tỷ lệ
+平|BÌNH|Bằng phẳng; bình
+均|QUÂN|Đều; trung bình
+成|THÀNH|Thành; trở thành
+績|TÍCH|Thành tích
+良|LƯƠNG|Tốt
+悪|ÁC|Xấu; ác
+授|THỤ|Trao; dạy
+業|NGHIỆP|Nghề; công việc
+級|CẤP|Cấp bậc; lớp
+卒|TỐT|Tốt nghiệp; lính
+欠|KHIẾM|Thiếu; vắng
+席|TỊCH|Chỗ ngồi; ghế
+由|DO|Lý do; bởi
+訳|DỊCH|Dịch; lý do; ý nghĩa
+例|LỆ|Ví dụ
+易|DỊ|Dễ; (Dịch) đổi
+解|GIẢI|Giải; tháo; hiểu
+説|THUYẾT|Giải thích; thuyết
+覚|GIÁC|Nhớ; thức tỉnh
+忘|VONG|Quên
+努|NỖ|Nỗ lực
+続|TỤC|Tiếp tục
+要|YẾU|Cần; chủ yếu
+復|PHỤC|Khôi phục; lặp lại
+補|BỔ|Bổ sung
+効|HIỆU|Hiệu quả
+種|CHỦNG|Loại; hạt giống
+類|LOẠI|Loại; chủng loại
+存|TỒN|Tồn tại
+在|TẠI|Ở; tồn tại
+陽|DƯƠNG|Mặt trời; dương
+巨|CỰ|Khổng lồ
+氷|BĂNG|Băng; đá
+河|HÀ|Sông lớn
+季|QUÝ|Mùa
+候|HẬU|Khí hậu; chờ
+暖|NOÃN|Ấm áp
+流|LƯU|Chảy; dòng chảy
+形|HÌNH|Hình dạng
+底|ĐỂ|Đáy
+深|THÂM|Sâu
+浅|THIỂN|Nông; cạn
+島|ĐẢO|Đảo
+陸|LỤC|Đất liền
+岸|NGẠN|Bờ
+坂|PHẢN|Dốc
+準|CHUẨN|Chuẩn; mức
+備|BỊ|Chuẩn bị; trang bị
+迎|NGHÊNH|Đón tiếp
+変|BIẾN|Biến đổi; lạ
+飛|PHI|Bay
+移|DI|Di chuyển
+登|ĐĂNG|Leo; đăng ký
+泊|BẠC|Trọ; ở qua đêm
+団|ĐOÀN|Đoàn; nhóm
+程|TRÌNH|Mức độ; hành trình
+欧|ÂU|Châu Âu
+州|CHÂU|Châu; bang
+観|QUAN|Quan sát; xem
+舟|CHÂU|Thuyền nhỏ
+芸|NGHỆ|Nghệ thuật; tài nghệ
+演|DIỄN|Biểu diễn; diễn
+仏|PHẬT|Phật
+神|THẦN|Thần
+祭|TẾ|Lễ hội; cúng tế
+絵|HỘI|Tranh vẽ
+角|GIÁC|Góc; sừng
+曲|KHÚC|Cong; bản nhạc
+折|CHIẾT|Gấp; bẻ gãy
+路|LỘ|Đường
+追|TRUY|Đuổi theo
+突|ĐỘT|Đâm; đột ngột
+転|CHUYỂN|Lăn; chuyển
+倒|ĐẢO|Ngã; đổ
+位|VỊ|Vị trí; ngôi
+置|TRÍ|Đặt
+横|HOÀNH|Ngang; bên cạnh
+央|ƯƠNG|Giữa; trung tâm
+直|TRỰC|Thẳng; sửa
+線|TUYẾN|Đường kẻ; tuyến
+逆|NGHỊCH|Ngược
+側|TRẮC|Bên; phía
+注|CHÚ|Chú ý; rót; đặt hàng
+意|Ý|Ý; ý nghĩ
+橋|KIỀU|Cây cầu
+進|TIẾN|Tiến lên
+仕|SĨ|Làm việc; phục vụ
+職|CHỨC|Nghề; chức vụ
+求|CẦU|Tìm; yêu cầu
+探|THÁM|Tìm kiếm; thăm dò
+常|THƯỜNG|Thường; luôn luôn
+識|THỨC|Nhận biết; tri thức
+失|THẤT|Mất; thất bại
+礼|LỄ|Lễ; chào
+労|LAO|Lao động; nhọc nhằn
+員|VIÊN|Thành viên; nhân viên
+官|QUAN|Quan; viên chức
+局|CỤC|Cục; ban; tình thế
+辞|TỪ|Từ chối; từ ngữ; từ chức
+退|THOÁI|Lui; rút lui
+積|TÍCH|Tích lũy; chồng chất
+給|CẤP|Cấp phát; lương
+収|THU|Thu; nhận vào
+支|CHI|Chi nhánh; chống đỡ; chi
+厚|HẬU|Dày; sâu sắc
+議|NGHỊ|Bàn bạc; nghị
+賛|TÁN|Tán thành
+反|PHẢN|Phản đối; ngược lại
+対|ĐỐI|Đối; đối diện
+肯|KHẲNG|Đồng ý; khẳng định
+否|PHỦ|Phủ nhận; không
+保|BẢO|Giữ gìn; bảo vệ
+留|LƯU|Giữ lại; lưu
+判|PHÁN|Phán đoán; con dấu
+断|ĐOẠN|Cắt; quyết đoán
+確|XÁC|Chắc chắn; xác nhận
+認|NHẬN|Nhận ra; công nhận
+報|BÁO|Báo cáo; báo đáp
+告|CÁO|Thông báo; cáo
+連|LIÊN|Liên kết; dẫn theo
+絡|LẠC|Liên lạc; quấn quanh
+相|TƯƠNG|Cùng nhau; hình dạng; tể tướng
+談|ĐÀM|Trò chuyện; bàn bạc
+指|CHỈ|Ngón tay; chỉ
+示|THỊ|Chỉ bảo; thể hiện
+最|TỐI|Nhất; tối
+副|PHÓ|Phó; phụ
+管|QUẢN|Ống; quản lý
+者|GIẢ|Người; kẻ
+現|HIỆN|Hiện tại; xuất hiện
+旧|CỰU|Cũ; xưa
+昔|TÍCH|Ngày xưa
+次|THỨ|Tiếp theo; thứ
+億|ỨC|Trăm triệu
+兆|TRIỆU|Nghìn tỷ; điềm báo
+費|PHÍ|Chi phí; tiêu tốn
+算|TOÁN|Tính toán
+供|CUNG|Cung cấp; cùng
+税|THUẾ|Thuế
+産|SẢN|Sản xuất; sinh
+農|NÔNG|Nông nghiệp
+貿|MẬU|Mậu dịch; trao đổi
+商|THƯƠNG|Buôn bán; thương
+機|CƠ|Máy móc; cơ hội
+械|GIỚI|Máy móc; khí giới
+危|NGUY|Nguy hiểm
+険|HIỂM|Hiểm trở; nguy hiểm
+技|KỸ|Kỹ thuật; tài năng
+術|THUẬT|Kỹ thuật; thuật
+編|BIÊN|Biên soạn; đan
+綿|MIÊN|Bông; liên tục
+布|BỐ|Vải; trải ra
+皮|BÌ|Da; vỏ
+貧|BẦN|Nghèo
+富|PHÚ|Giàu
+豊|PHONG|Phong phú; dồi dào
+等|ĐẲNG|Bằng nhau; hạng; vân vân
+法|PHÁP|Pháp luật; phương pháp
+律|LUẬT|Luật; quy luật
+規|QUY|Quy tắc
+則|TẮC|Quy tắc; nguyên tắc
+禁|CẤM|Cấm
+許|HỨA|Cho phép; hứa
+件|KIỆN|Vụ việc; hạng mục
+犯|PHẠM|Phạm; tội phạm
+罪|TỘI|Tội
+容|DUNG|Dung chứa; hình dáng
+疑|NGHI|Nghi ngờ
+争|TRANH|Tranh giành; tranh chấp
+敗|BẠI|Thua; bại
+兵|BINH|Binh lính
+軍|QUÂN|Quân đội
+役|DỊCH|Vai trò; nhiệm vụ
+臣|THẦN|Bề tôi; thần dân

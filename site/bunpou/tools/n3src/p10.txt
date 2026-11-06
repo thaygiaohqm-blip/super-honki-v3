@@ -1,0 +1,79 @@
+@p 064 | ～について
+@group 11
+@mean Về ... / Liên quan đến ...
+@core Nêu chủ đề, nội dung của việc suy nghĩ, nói, viết, hỏi, điều tra.
+@form 名詞 ＋ について
+@form 名詞 ＋ についての ＋ 名詞
+@exp Nêu nội dung (chủ đề) có liên quan đến điều gì. Vế sau dùng động từ như 思う, 考える, 話す, 聞く, 調べる, 書く, 説明する, 知っている.
+@ex すみません、入学手続きについて聞きたいのですが……。 | Xin lỗi, tôi muốn hỏi về thủ tục nhập học...
+@ex 今、わたしの国の教育についてレポートを書いています。 | Hiện giờ tôi đang viết báo cáo về giáo dục của nước tôi.
+@ex この作品についての感想を話していただけませんか。 | Anh cho tôi nghe cảm tưởng về tác phẩm này được không?
+@cmp ～に対して | N3 | 「について」 là nội dung của suy nghĩ/nói; 「に対して」 là đối tượng mà hành động nhắm tới.
+@note Ví dụ: 親について文句を言う (nội dung phàn nàn là về bố mẹ).
+@theme chu-de
+@ctx hoi-thoai, van-ban
+@book shin-n3 | B | 1
+
+@p 065 | ～に対して／～に対する（đối tượng）
+@group 11
+@mean Đối với ... / Hướng tới ...
+@core Đối tượng mà hành động, thái độ nhắm tới.
+@form 名詞 ＋ に対して
+@form 名詞 ＋ に対する ＋ 名詞
+@exp Biểu thị đối tượng hướng tới của hành vi (yêu cầu, hành động) hoặc thái độ (tử tế, nghiêm khắc). Vế sau thường dùng các từ như 求める, 文句を言う, 感謝する, きびしい, 親切だ.
+@ex ホテルの人は客に対して非常にていねいな言葉を使う。 | Nhân viên khách sạn dùng lời lẽ rất lịch sự đối với khách.
+@ex 父の意見に対して家族のみんなが反対した。 | Cả nhà đã phản đối ý kiến của bố.
+@ex 新しく工場を作るため、会社側は近所の住民に対して理解を求めた。 | Vì xây nhà máy mới nên phía công ty đã xin cư dân lân cận thông cảm.
+@ex 最近、政府に対する批判が大きくなっている。 | Gần đây sự chỉ trích đối với chính phủ ngày càng lớn.
+@cmp ～に対して（bài 4） | N3 | Bài 4 nghĩa là "trái lại" (đối chiếu); ở đây nghĩa là "đối với".
+@note Ví dụ: 親に対して文句を言う (người bị phàn nàn là bố mẹ).
+@theme chu-de, cho-nhan
+@ctx hoi-thoai, van-ban
+@book shin-n3 | B | 2
+
+@p 066 | ～によって（受身の動作主）
+@group 11
+@mean Bởi ... (người thực hiện hành động trong câu bị động)
+@core Chỉ chủ thể thực hiện hành động trong câu bị động, thường với chủ ngữ là vật.
+@form 名詞 ＋ によって ＋ 動詞 受身形
+@exp Dùng trong câu bị động, chỉ người thực hiện hành vi. Chủ yếu dùng khi chủ ngữ của câu bị động là vật (không phải sinh vật), đặc biệt khi nói về sáng tác, phát minh.
+@ex 『坊ちゃん』という小説は1906年に夏目漱石によって書かれた。 | Tiểu thuyết "Botchan" được Natsume Soseki viết năm 1906.
+@ex この伝統的な祭りは昔からこの地方の人々によって守られてきた。 | Lễ hội truyền thống này được người dân vùng này gìn giữ từ xưa.
+@ex ある無名の人によって作られたこの歌を、今ではみんなが歌っている。 | Bài hát do một người vô danh sáng tác này, bây giờ ai cũng hát.
+@cmp ～に（受身） | N4 | 「に」 dùng cho cả người; 「によって」 hay dùng khi chủ ngữ là vật hoặc nói về sáng tạo.
+@note Hai nghĩa khác của によって: "tùy theo" (bài 2) và "do" (bài 5).
+@theme the-thai
+@ctx van-ban, bao-chi
+@book shin-n3 | B | 3
+
+@p 067 | ～にとって
+@group 11
+@mean Đối với ... (xét từ lập trường của ...)
+@core Nêu lập trường của người đánh giá, phán đoán.
+@form 名詞 ＋ にとって
+@exp Nêu lập trường của người đánh giá hoặc phán đoán: "đứng trên lập trường của A mà xét thì B". Vế sau thường có tính từ đánh giá.
+@ex 日本に住む留学生にとって円高は重大な問題だ。 | Đối với du học sinh sống ở Nhật, đồng yên tăng giá là vấn đề nghiêm trọng.
+@ex 若い女性にとって買い物は楽しいことです。 | Đối với phụ nữ trẻ, mua sắm là việc thú vị.
+@ex これはただの石ですが、わたしにとっては忘れられない思い出の品です。 | Đây chỉ là hòn đá, nhưng đối với tôi là kỷ vật không thể quên.
+@cmp ～に対して | N3 | 「にとって」 là lập trường đánh giá; 「に対して」 là đối tượng hướng tới.
+@note Ví dụ: 親にとって子どもの成長は何よりの喜びだ.
+@theme danh-gia
+@ctx hoi-thoai, van-ban
+@book shin-n3 | B | 4
+
+@p 068 | ～として
+@group 11
+@mean Với tư cách là ... / Như là ... / Xem như ...
+@core Nêu tư cách, vai trò, danh nghĩa.
+@form 名詞 ＋ として
+@exp Nêu lập trường, tư cách, vai trò, danh nghĩa của một người hay vật.
+@ex リーさんは国費留学生として日本に来た。 | Anh Lee đến Nhật với tư cách du học sinh học bổng quốc gia.
+@ex 大山君はこの学校の代表として「平和を考える会議」に参加する。 | Oyama tham gia "Hội nghị suy nghĩ về hòa bình" với tư cách đại diện trường này.
+@ex わたしはコーヒーカップを花びんとして使っています。 | Tôi dùng tách cà phê làm bình hoa.
+@ex この地方はお茶の産地として有名です。 | Vùng này nổi tiếng là nơi sản xuất trà.
+@cmp ～にとって | N3 | 「として」 là tư cách; 「にとって」 là lập trường đánh giá.
+@note 
+@theme chu-de
+@ctx hoi-thoai, van-ban
+@book shin-n3 | B | 5
+

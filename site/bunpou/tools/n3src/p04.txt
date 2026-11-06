@@ -1,0 +1,83 @@
+@p 034 | ～はずがない／～わけがない
+@group 5
+@mean Không thể nào ... / Làm gì có chuyện ...
+@core Người nói tin chắc là điều đó tuyệt đối không có.
+@form 普通形 (ナ形容詞 だ→な／である・名詞 だ→の／である) ＋ はずがない・わけがない
+@exp Cách nói phủ định mạnh, dựa trên sự chắc chắn của người nói (「絶対～ない」). Có căn cứ riêng nên người nói tin là không thể.
+@ex ちゃんと約束したんだから、彼が来ないはずがない。どうしたのかなあ。 | Đã hẹn đàng hoàng rồi nên không thể nào anh ấy không đến. Có chuyện gì nhỉ.
+@ex あの店が今日休みのはずはありません。電話で確認したんですから。 | Làm gì có chuyện hôm nay tiệm đó nghỉ. Tôi đã xác nhận bằng điện thoại rồi mà.
+@ex 国家試験なのだから易しいはずがない。がんばらなくては……。 | Là kỳ thi quốc gia thì không thể dễ được. Phải cố gắng thôi...
+@ex こんなに大きい家、わたしに買えるわけがないでしょう。 | Ngôi nhà to thế này, làm sao tôi mua nổi chứ.
+@ex 試合に勝つために練習しているのだ。練習がきびしくないわけがない。 | Vì muốn thắng trận nên mới luyện tập. Làm gì có chuyện luyện tập không khắc nghiệt.
+@cmp ～わけではない | N3 | Phủ định một phần; còn 「はずがない／わけがない」 là phủ định hoàn toàn.
+@note 「はずがない」 dựa vào căn cứ; 「わけがない」 nhấn mạnh lý lẽ không thể có.
+@theme suy-doan
+@ctx hoi-thoai
+@book shin-n3 | 8 | 1
+
+@p 035 | ～とは限らない
+@group 5
+@mean Không phải lúc nào cũng ... / Chưa chắc đã ...
+@core Không thể khẳng định "chắc chắn là ~"; có trường hợp ngoại lệ.
+@form 普通形 (ナ形容詞 だ・名詞 だ) ＋ とは限らない
+@exp Không thể khẳng định hoàn toàn là A; có thể có trường hợp không phải A. Hay dùng với các từ như 「みんな」「いつも」「だれでも」「必ず」.
+@ex この歌は古くから歌われているが、日本人がみんな知っているとは限らない。 | Bài hát này được hát từ lâu, nhưng chưa chắc người Nhật nào cũng biết.
+@ex 値段が高いものが必ず質がいいとは限らない。 | Đồ đắt tiền chưa chắc chất lượng đã tốt.
+@ex 旅行中にけがをしないとは限りません。保険に入っておいたほうがいいですよ。 | Chưa chắc trong lúc du lịch sẽ không bị thương. Nên mua bảo hiểm trước thì hơn.
+@ex 新聞に書いてあることがいつも本当のこととは限らない。 | Điều viết trên báo không phải lúc nào cũng là thật.
+@cmp ～わけではない | N3 | 「とは限らない」 nói về tính khái quát có ngoại lệ; 「わけではない」 phủ định một phần cách hiểu.
+@note Thường đi cùng 「みんな／いつも／だれでも／必ず／全部」.
+@theme suy-doan
+@ctx hoi-thoai, van-ban
+@book shin-n3 | 8 | 2
+
+@p 036 | ～わけではない／～というわけではない／～のではない
+@group 5
+@mean Không có nghĩa là ... / Không hẳn là ...
+@core Phủ định một phần: từ tình hình có thể nghĩ là A, nhưng thực ra không phải vậy.
+@form 普通形 (ナ形容詞 だ→な／である・名詞 だ→の／である) ＋ わけではない
+@form 普通形 ＋ というわけではない
+@form 普通形 (ナ形容詞 だ→な・名詞 だ→な) ＋ のではない
+@exp Dùng để phủ định điều người ta có thể suy đoán hoặc hiểu lầm từ tình huống (「状況から～だと想像されるだろうが、実はそうではない」). Chỉ phủ định phần 「～」.
+@ex 長い間本をお借りしたままでしたが、忘れていたわけではありません。 | Tôi cứ giữ cuốn sách của anh lâu nay, nhưng không phải là tôi quên đâu.
+@ex いつでも電話に出られるわけではありません。連絡はメールでお願いします。 | Không phải lúc nào tôi cũng nghe điện thoại được. Xin liên lạc bằng email.
+@ex この仕事が好きだというわけではないが、彼といっしょに仕事ができて楽しい。 | Không hẳn là tôi thích công việc này, nhưng được làm cùng anh ấy thì vui.
+@ex 転勤するのではありません。会社を辞めるんです。 | Không phải là chuyển công tác. Tôi nghỉ việc ở công ty.
+@ex A「いい帽子ね。高かったでしょう。」B「これは買ったんじゃないの。自分で作ったの。」 | A: "Cái mũ đẹp nhỉ. Chắc đắt lắm." B: "Cái này không phải mua đâu. Tôi tự làm đấy."
+@cmp ～とは限らない | N3 | 「とは限らない」 nói về khả năng có ngoại lệ; 「わけではない」 phủ định cách hiểu.
+@note 「～のではない」 dùng khi muốn đính chính lại một điều bị hiểu sai.
+@theme suy-doan
+@ctx hoi-thoai
+@book shin-n3 | 8 | 3
+
+@p 037 | ～ないことはない
+@group 5
+@mean Không phải là không ... / Cũng không hẳn là không ...
+@core Dùng phủ định kép để khẳng định nhẹ, ngụ ý hạn chế.
+@form 動詞 ない形・イ形容詞 くない・ナ形容詞 でない・名詞 でない ＋ ことはない
+@exp 「絶対～ないとは言えない」. Dùng phủ định của phủ định để khẳng định một cách yếu, có ý "cũng có thể nhưng...".
+@ex ここから駅まで歩けないことはありませんが、かなり時間がかかりますよ。 | Từ đây đi bộ tới ga không phải là không được, nhưng mất khá nhiều thời gian đấy.
+@ex この店のカレーもおいしくないことはないが、わたしはもっと辛いのが好きだ。 | Cà ri của tiệm này cũng không phải là không ngon, nhưng tôi thích loại cay hơn.
+@ex 試験の結果が心配でないことはないのですが、今は終わってほっとしています。 | Không phải là tôi không lo kết quả thi, nhưng giờ thi xong rồi nên thấy nhẹ nhõm.
+@cmp ～わけではない | N3 | Cả hai đều là nói giảm; 「ないことはない」 là khẳng định yếu.
+@note Hay dùng để trả lời lấp lửng, ngụ ý "có nhưng không mạnh".
+@theme suy-doan, danh-gia
+@ctx hoi-thoai
+@book shin-n3 | 8 | 4
+
+@p 038 | ～ことは～が、…
+@group 5
+@mean Đúng là ... nhưng ...
+@core Thừa nhận điều A là sự thật, nhưng nhấn mạnh phần B quan trọng hơn.
+@form 動詞・イ形容詞 普通形 (ナ形容詞 だ→な) ＋ ことは ＋ 動詞・イ形容詞 普通形・丁寧形 ＋ が
+@exp 「確かに～だが、その事実はあまり重要ではなくて、…」. Lặp lại cùng một từ ở hai bên 「ことは」 để thừa nhận, rồi nói điều quan trọng hơn ở sau 「が」.
+@ex 彼からの手紙は読んだことは読んだんですが、意味がよくわかりませんでした。 | Thư của anh ấy thì tôi đọc thì đọc rồi, nhưng không hiểu rõ nghĩa.
+@ex わたしは泳げることは泳げますが、長い距離はだめなんです。 | Tôi bơi thì cũng bơi được, nhưng cự ly dài thì không được.
+@ex この本は高いことは高いが、写真が多くて楽しめそうだ。 | Cuốn sách này đắt thì đúng là đắt, nhưng nhiều ảnh nên có vẻ đọc vui.
+@ex 子どもを育てるのは大変なことは大変だが、成長が楽しみで大変さを忘れる。 | Nuôi con vất vả thì đúng là vất vả, nhưng mong chờ sự trưởng thành của con nên quên cả cực nhọc.
+@cmp ～ことは～が | N3 | Thường dùng khi thừa nhận ở mức hạn chế rồi nêu điểm bất mãn hay điều kiện.
+@note Hai từ đứng hai bên 「ことは」 phải cùng một từ.
+@theme nghich-tiep
+@ctx hoi-thoai
+@book shin-n3 | 8 | 5
+

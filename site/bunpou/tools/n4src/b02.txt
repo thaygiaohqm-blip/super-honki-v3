@@ -1,0 +1,294 @@
+@p 021 | ～たほうがいい／～ないほうがいい
+@group 3
+@key ほうがいい
+@mean Nên ~ / Không nên ~
+@core Lời khuyên: た形 + ほうがいい; ない形 + ほうがいい.
+@form 動詞 た形 ＋ ほうがいいです
+@form 動詞 ない形 ＋ ほうがいいです
+@exp Khuyên nên làm hoặc không nên làm. Với lời khuyên về việc chung chung có thể dùng thể từ điển, nhưng dạng た-ほうがいい là dạng cơ bản. Với người trên, tránh dùng khi khuyên trực tiếp.
+@ex 熱があるから、休んだほうがいいです。 | Bạn bị sốt nên nghỉ ngơi thì hơn.
+@ex 夜遅くまでコーヒーを飲まないほうがいいですよ。 | Tối muộn thì không nên uống cà phê.
+@ex 早く病院へ行ったほうがいいです。 | Bạn nên đến bệnh viện sớm.
+@ctx hoi-thoai
+@book minna | 32 | 1
+
+@p 022 | ～でしょう（推量）
+@group 3
+@key でしょう
+@mean Có lẽ ~
+@core Suy đoán dựa trên thông tin; ít chắc chắn hơn だ.
+@form 普通形 ＋ でしょう
+@exp Dùng để suy đoán sự việc. Hay đi với 「たぶん」 (có lẽ) ở đầu câu. Giọng xuống: suy đoán; giọng lên: xác nhận.
+@ex 明日はたぶん雨が降るでしょう。 | Ngày mai có lẽ trời sẽ mưa.
+@ex 彼は来ないでしょう。 | Chắc anh ấy sẽ không đến.
+@ex 今日の試験は難しいでしょう。 | Bài thi hôm nay chắc khó.
+@theme suy-doan
+@ctx hoi-thoai
+@book minna | 32 | 2
+
+@p 023 | ～かもしれません
+@group 3
+@key かもしれません
+@mean Có thể ~ / Biết đâu ~
+@core Khả năng chưa chắc chắn, thường dưới 50%.
+@form 普通形 ＋ かもしれません
+@form 名詞・ナ形容詞 (だ bỏ) ＋ かもしれません
+@exp Nói khả năng có thể xảy ra, nhưng không chắc. Danh từ và tính từ な bỏ 「だ」 trước かもしれません. Khẩu ngữ: ～かも.
+@ex 明日は雨が降るかもしれません。 | Ngày mai biết đâu trời mưa.
+@ex 田中さんは病気かもしれません。 | Có thể anh Tanaka bị bệnh.
+@ex その話は本当かもしれません。 | Câu chuyện đó có thể là thật.
+@theme suy-doan
+@ctx hoi-thoai
+@book minna | 32 | 3
+
+@p 024 | 命令形・禁止形
+@group 3
+@key re:(行け|食べろ|しろ|来い|読め|待て|やめろ|行くな|食べるな|するな|来るな|見るな)
+@mean Hãy ~! / Đừng ~! (mệnh lệnh)
+@core Mệnh lệnh mạnh của nam giới, biển báo; cấm: thể từ điển + な.
+@form I：u → e（書く → 書け）／II：る → ろ（食べる → 食べろ）／III：しろ・来い
+@form 禁止：動詞 辞書形 ＋ な
+@exp Thể mệnh lệnh dùng khi cực kỳ cấp bách, với người nhỏ hơn hoặc trong thể thao, quân đội. Không dùng với người lạ. Thể cấm đoán là thể từ điển + 「な」.
+@ex 早く行け！ | Đi mau lên!
+@ex ここに入るな。 | Cấm vào đây.
+@ex 走るな。 | Đừng chạy.
+@note Phụ nữ ít dùng thể mệnh lệnh; thường dùng 「～なさい」, 「～て」.
+@ctx hoi-thoai
+@book minna | 33 | 1
+
+@p 025 | ～と書いてあります／～という意味です
+@group 3
+@key re:(と書い|という|と読み|の意味)
+@mean Có ghi rằng ~ / Có nghĩa là ~
+@core Dẫn nội dung từ biển báo, văn bản; giải thích nghĩa.
+@form 「～」と書いてあります
+@form 「～」は ＋ ～という意味です
+@exp 「と書いてあります」 nói nội dung được ghi trên biển báo, sách. 「という意味です」 giải thích nghĩa. 「～は～と読みます」 giải thích cách đọc.
+@ex あそこに「止まれ」と書いてあります。 | Ở kia có ghi "Dừng lại".
+@ex 「立入禁止」は入ってはいけないという意味です。 | "立入禁止" có nghĩa là không được vào.
+@ex この漢字は「さくら」と読みます。 | Chữ Hán này đọc là "sakura".
+@ctx hoi-thoai
+@book minna | 33 | 2
+
+@p 026 | ～とおりに
+@group 3
+@key とおり
+@mean Đúng như ~ / Theo như ~
+@core Làm đúng theo một mẫu, chỉ dẫn.
+@form 動詞 辞書形／た形 ＋ とおりに
+@form 名詞 の ＋ とおりに
+@exp Thể từ điển hoặc thể た + 「とおりに」, hoặc danh từ + 「の」 + 「とおりに」. Làm y theo hướng dẫn, mẫu hoặc lời nói.
+@ex 私が言うとおりにやってください。 | Hãy làm đúng như tôi nói.
+@ex 説明書のとおりに組み立てました。 | Tôi đã lắp ráp theo đúng hướng dẫn.
+@ex 先生が書いたとおりに写してください。 | Hãy chép đúng như thầy đã viết.
+@ctx hoi-thoai
+@book minna | 34 | 1
+
+@p 027 | ～あとで
+@group 3
+@key あとで
+@mean Sau khi ~ thì ~
+@core Việc xảy ra sau khi xong việc khác (nhấn mạnh thứ tự thời gian).
+@form 動詞 た形 ＋ あとで
+@form 名詞 の ＋ あとで
+@exp Thể た hoặc danh từ + の + あとで. Khác với 「てから」 ở chỗ thứ tự được nêu khách quan, không nhất thiết liền kề.
+@ex 食事のあとで、薬を飲みます。 | Sau bữa ăn tôi uống thuốc.
+@ex 仕事が終わったあとで、飲みに行きましょう。 | Sau khi xong việc, ta đi uống nhé.
+@ex 授業が終わったあとで、先生に質問します。 | Sau giờ học tôi hỏi thầy giáo.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 34 | 2
+
+@p 028 | ～ないで／～ずに
+@group 3
+@key ないで
+@mean Không ~ mà ~ (làm việc khác)
+@core Làm việc B trong tình trạng không làm A.
+@form 動詞 ない形 ＋ ないで、＋ 動詞
+@exp Diễn tả trạng thái đi kèm khi làm hành động: 「Aないで B」 = B mà không A. Văn viết: ～ずに.
+@ex 朝ご飯を食べないで、会社へ行きました。 | Tôi đi làm mà không ăn sáng.
+@ex 辞書を見ないで、読んでください。 | Hãy đọc mà không xem từ điển.
+@ex 傘を持たないで出かけました。 | Tôi ra ngoài mà không mang ô.
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 34 | 3
+
+@p 029 | ～ば（条件形）
+@group 3
+@key re:(ば)(?=、|。|いい|なら|よかった)
+@mean Nếu ~ thì ~
+@core Điều kiện ば: vế trước là điều kiện cần, vế sau là kết quả.
+@form I：u → e + ば（書く → 書けば）／II：る → れば
+@form イ形容詞 い → ければ／ナ形容詞・名詞 → なら（ば）
+@exp Thể điều kiện ば diễn tả điều kiện nhất định dẫn đến kết quả. Vế sau thường là sự thật tất yếu, lời khuyên hoặc kết quả không có ý chí. Hay dùng với 「いい」, 「いかがですか」.
+@ex 春になれば、花が咲きます。 | Hễ đến mùa xuân thì hoa nở.
+@ex 安ければ、買います。 | Nếu rẻ thì tôi mua.
+@ex 時間があれば、行きます。 | Nếu có thời gian thì tôi đi.
+@ex ボタンを押せば、切符が出ます。 | Ấn nút là vé ra.
+@theme dieu-kien
+@ctx hoi-thoai
+@book minna | 35 | 1
+
+@p 030 | ～なら
+@group 3
+@key なら
+@mean Nếu là ~ (thì) / Nếu ~ (thì)
+@core Nhận chủ đề từ người nói trước và đưa lời khuyên, thông tin liên quan.
+@form 名詞 ＋ なら
+@form 普通形 ＋ なら
+@exp 「なら」 tiếp nhận điều người khác vừa nói hoặc tình huống đang bàn, rồi đưa ra lời khuyên, đề xuất hoặc thông tin liên quan. Vế sau không bị hạn chế như ば.
+@ex A「京都へ行きたいです。」B「京都なら、秋がいいですよ。」 | A: Tôi muốn đi Kyoto. B: Nếu là Kyoto thì mùa thu đẹp đấy.
+@ex 安い店を探しているなら、この店がいいですよ。 | Nếu bạn đang tìm tiệm rẻ thì tiệm này tốt đấy.
+@ex パソコンなら、あの店が安いです。 | Nếu là máy tính thì tiệm kia rẻ.
+@cmp ～ば（条件形） | N4 | 「ば」 dùng điều kiện tất yếu; 「なら」 dựa vào tình huống đã cho.
+@theme dieu-kien
+@ctx hoi-thoai
+@book minna | 35 | 2
+
+@p 031 | ～ば～ほど
+@group 3
+@key ほど
+@mean Càng ~ càng ~
+@core Mức độ vế sau tăng theo vế trước.
+@form 動詞 ば形 ＋ 同じ動詞 辞書形 ＋ ほど
+@form イ形容詞 ければ ＋ イ形容詞 ＋ ほど
+@exp Lặp lại cùng động từ hoặc tính từ: ば形 + 辞書形 + ほど. Mô tả quan hệ tỷ lệ thuận.
+@ex 日本語は勉強すればするほど、おもしろくなります。 | Tiếng Nhật càng học càng thú vị.
+@ex 安ければ安いほど、いいです。 | Càng rẻ càng tốt.
+@ex 練習すればするほど上手になります。 | Càng luyện tập càng giỏi.
+@theme so-sanh
+@ctx hoi-thoai
+@book minna | 35 | 3
+
+@p 032 | ～ように（目的）
+@group 4
+@key ように
+@mean Để cho ~ (mục đích)
+@core Mục đích mà vế trước là hành động ý chí, vế sau là trạng thái/khả năng.
+@form 動詞 辞書形／ない形／可能形 ＋ ように、＋ 動詞
+@exp Diễn tả mục đích muốn đạt trạng thái nào đó. Vế sau 「ように」 thường là khả năng, trạng thái không ý chí (わかる, 見える, できる, 忘れない…). Mục đích có chủ ý dùng ために (bài 42).
+@ex 日本語が話せるように、毎日練習しています。 | Tôi luyện tập mỗi ngày để có thể nói tiếng Nhật.
+@ex 忘れないように、メモしておきます。 | Tôi ghi chú để không quên.
+@ex 皆に聞こえるように、大きい声で話してください。 | Hãy nói to để mọi người nghe thấy.
+@theme muc-dich
+@ctx hoi-thoai
+@book minna | 36 | 1
+
+@p 033 | ～ようになります
+@group 4
+@key ようになり
+@mean Trở nên (có thể) ~
+@core Sự thay đổi khả năng, thói quen từ không sang có.
+@form 動詞 辞書形／可能形 ＋ ようになります
+@form 動詞 ない形 ＋ ようになります
+@exp Diễn tả sự thay đổi dần dần của khả năng hoặc thói quen. Ngược lại: ～なくなります.
+@ex 日本語が話せるようになりました。 | Tôi đã nói được tiếng Nhật.
+@ex 最近、早く起きるようになりました。 | Dạo này tôi dậy sớm được.
+@ex 彼は朝ご飯を食べなくなりました。 | Anh ấy không còn ăn sáng nữa.
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 36 | 2
+
+@p 034 | ～ようにしています
+@group 4
+@key ようにして
+@mean Tôi cố gắng ~ (thường xuyên)
+@core Nỗ lực duy trì thói quen.
+@form 動詞 辞書形／ない形 ＋ ようにしています
+@form 動詞 辞書形／ない形 ＋ ようにしてください
+@exp Nói về nỗ lực đều đặn để duy trì một việc: 「毎日～ようにしています」. Dạng 「ようにしてください」 là lời khuyên/nhắc nhở.
+@ex 毎日運動するようにしています。 | Tôi cố gắng tập thể dục mỗi ngày.
+@ex 夜は遅くまで起きないようにしています。 | Tôi cố gắng không thức khuya.
+@ex 野菜を食べるようにしてください。 | Hãy cố gắng ăn rau.
+@theme y-chi
+@ctx hoi-thoai
+@book minna | 36 | 3
+
+@p 035 | 受身形（直接受身）
+@group 4
+@key re:(られ|われ|かれ|まれ|される|された)
+@mean Bị / được ~ (bị động)
+@core Chủ thể là người chịu tác động; người làm thường đi với に.
+@form I：u → a + れる（書く → 書かれる）
+@form II：る → られる（食べる → 食べられる）
+@form III：する → される／来る → こられる
+@exp Động từ thể bị động chia như nhóm II. Dạng 「A は B に ～られる」: A bị/được B ~. Dùng cho bị làm phiền, được khen, hoặc nhấn mạnh người chịu tác động.
+@ex 私は先生にほめられました。 | Tôi được thầy giáo khen.
+@ex 弟に私のケーキを食べられました。 | Tôi bị em trai ăn mất bánh.
+@ex 友達に旅行に誘われました。 | Tôi được bạn rủ đi du lịch.
+@theme the-thai
+@ctx hoi-thoai
+@book minna | 37 | 1
+
+@p 036 | 受身形（事物の受身）
+@group 4
+@key re:(られています|れています|されます|されて|作られ|建てられ|書かれ)
+@mean ~ được làm / được ~ (vật được tác động)
+@core Chủ ngữ là vật, người tác động không quan trọng.
+@form 物 ＋ が／は ＋ 受身形
+@exp Dùng khi nói về sự kiện, vật thể mà người làm không quan trọng hoặc không rõ: tòa nhà được xây, sách được dịch. Với tác phẩm, dùng 「によって」 để chỉ tác giả.
+@ex この寺は千年前に建てられました。 | Ngôi chùa này được xây từ một ngàn năm trước.
+@ex 夏目漱石によって書かれた小説です。 | Là tiểu thuyết do Natsume Soseki viết.
+@ex 日本語は世界で話されています。 | Tiếng Nhật được nói trên khắp thế giới.
+@theme the-thai
+@ctx hoi-thoai
+@book minna | 37 | 2
+
+@p 037 | ～の（名詞化）
+@group 4
+@key の
+@mean Việc ~ / Cái ~ (danh từ hóa)
+@core 「の」 biến mệnh đề thành danh từ.
+@form 普通形 ＋ の ＋ が／は／を
+@exp Mệnh đề + 「の」 trở thành danh từ để làm chủ ngữ hoặc tân ngữ. Hay đi với 好き, 上手, 速い, 大変, 知っています, 見ました.
+@ex 絵をかくのが好きです。 | Tôi thích vẽ tranh.
+@ex 日本語で話すのは難しいです。 | Nói bằng tiếng Nhật thì khó.
+@ex 田中さんが来るのを知っていますか。 | Bạn có biết anh Tanaka sẽ đến không?
+@cmp ～ことができます | N5 | 「こと」 và 「の」 đều danh từ hóa; 「の」 hay dùng với cảm giác trực tiếp.
+@ctx hoi-thoai
+@book minna | 38 | 1
+
+@p 038 | ～のは～です／～のを忘れました
+@group 4
+@key re:(のは|のを|のが)
+@mean Cái mà ~ là ~ / Quên mất ~
+@core Danh từ hóa để nhấn mạnh hoặc diễn tả sự quên, phát hiện.
+@form 普通形 ＋ のは ＋ 名詞 ＋ です
+@form 普通形 ＋ のを ＋ 忘れました／知っています
+@exp 「のは～です」 nhấn mạnh thành phần được chọn. 「のを忘れました」 nói quên làm việc gì.
+@ex 私が昨日会ったのは山田さんです。 | Người tôi gặp hôm qua là anh Yamada.
+@ex 鍵をかけるのを忘れました。 | Tôi quên khóa cửa.
+@ex 彼が結婚したのを知っていますか。 | Bạn có biết anh ấy đã kết hôn chưa?
+@ctx hoi-thoai
+@book minna | 38 | 2
+
+@p 039 | ～て／～ので（原因・理由）
+@group 4
+@key ので
+@mean Vì ~ nên ~
+@core 「ので」 lý do khách quan, lịch sự; 「て」 nguyên nhân nối vế trước.
+@form 普通形 ＋ ので
+@form 名詞・ナ形容詞 ＋ な ＋ ので
+@exp 「ので」 mềm và khách quan hơn 「から」. Nối thể thường; danh từ và tính từ な dùng 「な」. Vế sau không dùng mệnh lệnh, rủ rê (dùng から).
+@ex 道が込んでいたので、遅れました。 | Vì đường đông nên tôi đã đến muộn.
+@ex 今日は日曜日なので、会社は休みです。 | Vì hôm nay là chủ nhật nên công ty nghỉ.
+@ex 体の調子が悪いので、休ませていただきます。 | Vì tôi không khỏe nên xin phép nghỉ.
+@cmp ～から（理由） | N5 | 「から」 chủ quan, vế sau tự do; 「ので」 khách quan, vế sau là thông tin.
+@theme nguyen-nhan
+@ctx hoi-thoai
+@book minna | 39 | 1
+
+@p 040 | ～て（原因）
+@group 4
+@key て
+@mean Vì ~ nên (cảm xúc, tình trạng)
+@core Thể て nối nguyên nhân với cảm xúc hoặc kết quả không ý chí.
+@form 動詞 て形 ＋ ～
+@form イ形容詞 くて／ナ形容詞 で ＋ ～
+@exp Vế sau là cảm xúc (びっくり, 安心, 困る), tình trạng, khả năng. Không dùng cho ý chí, nhờ vả, mệnh lệnh.
+@ex ニュースを聞いて、びっくりしました。 | Nghe tin tôi đã giật mình.
+@ex 話が難しくて、わかりませんでした。 | Câu chuyện khó quá nên tôi không hiểu.
+@ex 事故で電車が遅れました。 | Vì tai nạn mà tàu bị chậm.
+@theme nguyen-nhan
+@ctx hoi-thoai
+@book minna | 39 | 2

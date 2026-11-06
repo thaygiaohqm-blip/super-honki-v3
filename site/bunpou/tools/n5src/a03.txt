@@ -1,0 +1,544 @@
+@p 022 | ～へ行きます／来ます／帰ります
+@group 3
+@key へ
+@mean Đi / đến / về ~ (địa điểm)
+@core 「へ」 (đọc là え) chỉ hướng di chuyển, đi cùng 行きます・来ます・帰ります.
+@form 場所 ＋ へ ＋ 行きます／来ます／帰ります
+@exp Trợ từ 「へ」 đọc là 「え」 và chỉ phương hướng đến nơi. Với nơi đến cụ thể có thể dùng 「に」 thay 「へ」. Hỏi nơi đến dùng 「どこへ」; nếu không đi đâu thì nói 「どこ(へ)も行きません」.
+@ex 京都へ行きます。 | Tôi đi Kyoto.
+@ex 毎日家へ帰ります。 | Mỗi ngày tôi về nhà.
+@ex 日曜日はどこへも行きません。 | Chủ nhật tôi không đi đâu cả.
+@note Khi đọc, 「へ」 phát âm là 「え」.
+@ctx hoi-thoai
+@book minna | 5 | 1
+
+@p 023 | ～で行きます（交通手段）
+@group 3
+@key で
+@mean Đi bằng ~ (phương tiện)
+@core 「で」 chỉ phương tiện di chuyển; đi bộ là 「歩いて」.
+@form 乗り物 ＋ で ＋ 行きます／来ます／帰ります
+@exp Dùng 「で」 sau tàu, xe buýt, taxi, xe đạp, máy bay… Riêng đi bộ nói 「歩いて行きます」 (không có で). Hỏi bằng 「何で」 (bằng gì). Đi cùng ai dùng 「と」, đi một mình dùng 「ひとりで」.
+@ex 電車で会社へ行きます。 | Tôi đi đến công ty bằng tàu điện.
+@ex 駅から歩いて帰ります。 | Tôi đi bộ từ ga về.
+@ex 友達と京都へ行きます。 | Tôi đi Kyoto cùng bạn.
+@ex 一人で来ました。 | Tôi đã đến một mình.
+@cmp ～で（場所） | N5 | 「で」 sau nơi chốn chỉ nơi hành động xảy ra, không phải phương tiện.
+@ctx hoi-thoai
+@book minna | 5 | 2
+
+@p 024 | ～ね／～よ
+@group 3
+@key re:(ね|よ)(?=。|？|$)
+@mean Nhỉ, đúng không / Đấy, nhé
+@core 「ね」 tìm sự đồng ý, 「よ」 báo cho người nghe điều họ chưa biết.
+@form 文 ＋ ね
+@form 文 ＋ よ
+@exp 「ね」 cuối câu để xác nhận hoặc đồng cảm với người nghe (thường giọng lên nhẹ). 「よ」 nhấn mạnh thông tin mới mà người nghe có thể chưa biết, hoặc khuyên bảo.
+@ex 今日は暑いですね。 | Hôm nay nóng nhỉ.
+@ex このバスは京都へ行きますよ。 | Xe buýt này đi Kyoto đấy.
+@ex 毎日忙しいですね。 | Hằng ngày bận rộn nhỉ.
+@note Dùng quá nhiều 「よ」 có thể nghe như áp đặt.
+@ctx hoi-thoai
+@book minna | 5 | 3
+
+@p 025 | ～を～ます
+@group 3
+@key を
+@mean Làm gì đó với ~ (tân ngữ)
+@core 「を」 đánh dấu đối tượng trực tiếp của hành động.
+@form 名詞 ＋ を ＋ 他動詞 ます形
+@exp Trợ từ 「を」 (đọc là お) đi sau tân ngữ của ngoại động từ như 食べます、飲みます、見ます、読みます、買います. Câu hỏi: 「何を～ますか」. Với động từ dạng 「N + します」 (勉強します, 食事します) có thể thêm を: 「テニスをします」.
+@ex 朝ごはんを食べます。 | Tôi ăn sáng.
+@ex 毎晩テレビを見ます。 | Mỗi tối tôi xem tivi.
+@ex 何を買いますか。 | Bạn mua gì vậy?
+@ex 日本語を勉強しています。 | Tôi đang học tiếng Nhật.
+@ctx hoi-thoai
+@book minna | 6 | 1
+
+@p 026 | ～で～ます（場所）
+@group 3
+@key で
+@mean Làm ~ ở (nơi chốn)
+@core 「で」 sau nơi chốn cho biết nơi hành động diễn ra.
+@form 場所 ＋ で ＋ 動詞 ます形
+@exp Dùng 「で」 chỉ nơi xảy ra hành động (ăn ở nhà hàng, học ở trường). Khác với 「に」 chỉ nơi tồn tại hoặc đích đến (bài 10).
+@ex 駅で新聞を買います。 | Tôi mua báo ở nhà ga.
+@ex 図書館で勉強します。 | Tôi học ở thư viện.
+@ex どこで昼ごはんを食べますか。 | Bạn ăn trưa ở đâu?
+@cmp ～で行きます（交通手段） | N5 | 「で」 sau phương tiện; ở đây 「で」 sau nơi chốn.
+@ctx hoi-thoai
+@book minna | 6 | 2
+
+@p 027 | ～ませんか
+@group 3
+@key ませんか
+@mean Bạn có ~ không? (mời, rủ)
+@core Rủ nhẹ nhàng; nội dung thật sự là lời mời.
+@form 動詞 ます形 ＋ ませんか
+@exp Câu hỏi phủ định dùng để mời, rủ người nghe cùng làm. Đáp nhận lời: 「ええ、～ましょう」; từ chối: 「ちょっと…」 hoặc 「すみません、ちょっと…」.
+@ex いっしょに京都へ行きませんか。 | Bạn có muốn cùng đi Kyoto không?
+@ex 日曜日に映画を見に行きませんか。 | Chủ nhật bạn đi xem phim không?
+@ex ちょっと休みませんか。 | Nghỉ một chút nhé?
+@cmp ～ましょう | N5 | 「ませんか」 mời hỏi ý, 「ましょう」 đề xuất mạnh hơn hoặc nhận lời.
+@ctx hoi-thoai
+@book minna | 6 | 3
+
+@p 028 | ～ましょう
+@group 3
+@key ましょう
+@mean Cùng ~ nào / Hãy ~
+@core Đề nghị cùng làm hoặc nhận lời mời.
+@form 動詞 ます形 ＋ ましょう
+@exp Dùng để đề nghị cùng làm một việc ("nào, ta hãy ～") hoặc nhận lời khi được mời bằng 「ませんか」. Không dùng khi chỉ người nghe làm.
+@ex 少し休みましょう。 | Chúng ta nghỉ một chút nào.
+@ex A「いっしょに食べませんか。」B「ええ、食べましょう。」 | A: Cùng ăn nhé? B: Vâng, cùng ăn nào.
+@ex 駅で会いましょう。 | Hẹn gặp nhau ở nhà ga nhé.
+@cmp ～ませんか | N5 | 「ませんか」 là lời mời có hỏi ý đối phương.
+@ctx hoi-thoai
+@book minna | 6 | 4
+
+@p 029 | ～で（手段・道具・言語）
+@group 3
+@key で
+@mean Bằng ~ (dụng cụ, ngôn ngữ, phương tiện)
+@core 「で」 sau dụng cụ hoặc ngôn ngữ cho biết làm hành động bằng cái gì.
+@form 道具・言語 ＋ で ＋ 動詞 ます形
+@exp Dùng 「で」 sau công cụ (はし, ペン, パソコン), ngôn ngữ (日本語, 英語), phương thức. Hỏi: 「何で」 (bằng cái gì), 「～は日本語で何ですか」 (… tiếng Nhật là gì).
+@ex はしでご飯を食べます。 | Tôi ăn cơm bằng đũa.
+@ex 日本語でレポートを書きます。 | Tôi viết báo cáo bằng tiếng Nhật.
+@ex 「Thank you」は日本語で何ですか。 | "Thank you" tiếng Nhật là gì vậy?
+@ctx hoi-thoai
+@book minna | 7 | 1
+
+@p 030 | あげます／もらいます／教えます
+@group 3
+@key re:(に)(?=.*(あげ|もら|貸し|借り|教え|習い))
+@mean Cho / nhận / dạy / học ~ (có người nhận)
+@core Động từ trao nhận cần người nhận hoặc người cho, đánh dấu bằng 「に」.
+@form (人) ＋ に ＋ 物 ＋ を ＋ あげます／貸します／教えます
+@form (人) ＋ に ＋ 物 ＋ を ＋ もらいます／借ります／習います
+@exp Với あげます (cho), 貸します (cho mượn), 教えます (dạy, chỉ), 送ります (gửi), người nhận đi với 「に」. Với もらいます (nhận), 借ります (mượn), 習います (học), người cho đi với 「に」 (hoặc 「から」 nếu là tổ chức).
+@ex 私は木村さんに花をあげました。 | Tôi đã tặng hoa cho chị Kimura.
+@ex 私は山田さんに本をもらいました。 | Tôi đã nhận sách từ anh Yamada.
+@ex 先生は私たちに英語を教えます。 | Thầy giáo dạy chúng tôi tiếng Anh.
+@ex 母に電話をかけます。 | Tôi gọi điện cho mẹ.
+@note Khi người nhận là bản thân hoặc người trong nhà, đa số dùng 「くれます」 (xem bài 24).
+@ctx hoi-thoai
+@book minna | 7 | 2
+
+@p 031 | もう～ました／まだです
+@group 3
+@key re:(もう|まだ)
+@mean Đã ~ rồi / Vẫn chưa ~
+@core 「もう」 hỏi và nói hành động đã hoàn thành; 「まだ」 nói chưa xong.
+@form もう ＋ 動詞 ました
+@form いいえ、まだです
+@exp Hỏi: 「もう～ましたか」. Trả lời đã xong: 「はい、もう～ました」; chưa xong: 「いいえ、まだです」 hoặc 「いいえ、まだ～ていません」. Không trả lời bằng 「いいえ、～ませんでした」.
+@ex A「もう昼ごはんを食べましたか。」B「はい、もう食べました。」 | A: Bạn đã ăn trưa chưa? B: Vâng, tôi ăn rồi.
+@ex A「もう宿題をしましたか。」B「いいえ、まだです。」 | A: Bạn làm bài tập chưa? B: Chưa, vẫn chưa.
+@ex もうメールを送りました。 | Tôi đã gửi mail rồi.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 7 | 3
+
+@p 032 | イ形容詞の文
+@group 4
+@key re:(です|くありません|くないです)
+@mean Tính từ -i: ~ (thì) …
+@core Tính từ đuôi い đứng trực tiếp trước です; phủ định đổi い thành く + ないです／ありません.
+@form イ形容詞 ＋ です
+@form イ形容詞 い→く ＋ ありません (ないです)
+@form イ形容詞 ＋ 名詞
+@exp Tính từ đuôi い đi thẳng với です (高いです), bổ nghĩa danh từ thì để nguyên trước danh từ (高い山). Phủ định: い → く + ありません hoặc くないです. Ngoại lệ: いい → よくありません.
+@ex この料理はおいしいです。 | Món ăn này ngon.
+@ex 京都は大きくありません。 | Kyoto không rộng lớn.
+@ex 富士山は高い山です。 | Núi Phú Sĩ là ngọn núi cao.
+@note 「いい」 phủ định: よくないです／よくありません (không phải いくない).
+@ctx hoi-thoai
+@book minna | 8 | 1
+
+@p 033 | ナ形容詞の文
+@group 4
+@key re:(です|じゃありません|ではありません|な)
+@mean Tính từ -na: ~ (thì) …
+@core Tính từ đuôi な bỏ な khi trước です; thêm な khi bổ nghĩa danh từ.
+@form ナ形容詞 ＋ です／じゃありません
+@form ナ形容詞 ＋ な ＋ 名詞
+@exp Tính từ な (きれい, 静か, 有名, 元気, 便利…) khi đứng cuối câu thì đi với です, phủ định bằng じゃありません; khi đứng trước danh từ thì thêm 「な」. Một số từ đuôi い như きれい、有名 vẫn là tính từ な.
+@ex 奈良は静かです。 | Nara yên tĩnh.
+@ex ここは便利じゃありません。 | Ở đây không tiện lợi.
+@ex 静かな町です。 | Là một thị trấn yên tĩnh.
+@note Các từ như きれい、嫌い là tính từ な dù tận cùng bằng い.
+@ctx hoi-thoai
+@book minna | 8 | 2
+
+@p 034 | とても／あまり
+@group 4
+@key re:(とても|あまり)
+@mean Rất ~ / Không ~ lắm
+@core 「とても」 đi cùng câu khẳng định, 「あまり」 đi cùng câu phủ định.
+@form とても ＋ 形容詞
+@form あまり ＋ 形容詞 (phủ định)
+@exp 「とても」 nhấn mạnh mức độ cao; 「あまり～ません／ない」 chỉ mức độ thấp ("không ~ lắm"). 「あまり」 luôn đi với dạng phủ định.
+@ex この映画はとてもおもしろいです。 | Bộ phim này rất hay.
+@ex 日本語はあまり難しくありません。 | Tiếng Nhật không khó lắm.
+@ex 今日はあまり寒くないです。 | Hôm nay không lạnh lắm.
+@ctx hoi-thoai
+@book minna | 8 | 3
+
+@p 035 | ～は～が、～
+@group 4
+@key が
+@mean ~ nhưng ~
+@core 「が」 nối hai vế đối lập: "nhưng".
+@form 文1 ＋ が、＋ 文2
+@exp Trợ từ 「が」 sau động từ/tính từ lịch sự nối hai vế nghĩa đối lập. Cũng dùng làm lời mở lời lịch sự: 「すみませんが、…」.
+@ex 日本語は難しいですが、おもしろいです。 | Tiếng Nhật khó nhưng thú vị.
+@ex ここはきれいですが、少し高いです。 | Ở đây đẹp nhưng hơi đắt.
+@ex すみませんが、駅はどこですか。 | Xin lỗi, cho hỏi nhà ga ở đâu ạ?
+@theme nghich-tiep
+@ctx hoi-thoai
+@book minna | 8 | 4
+
+@p 036 | どう／どんな
+@group 4
+@key re:(どう|どんな)
+@mean Thế nào / Như thế nào / Loại nào
+@core 「どうですか」 hỏi cảm tưởng; 「どんな N」 hỏi tính chất của N.
+@form ～は ＋ どうですか
+@form どんな ＋ 名詞 ＋ ですか
+@exp 「どうですか」 hỏi ấn tượng, trạng thái. 「どんな N」 hỏi loại, tính chất của danh từ. Trả lời bằng tính từ.
+@ex 日本の生活はどうですか。 | Cuộc sống ở Nhật thế nào?
+@ex 京都はどんな町ですか。 | Kyoto là thị trấn như thế nào?
+@ex あの人はどんな人ですか。 | Người kia là người thế nào?
+@ctx hoi-thoai
+@book minna | 8 | 5
+
+@p 037 | ～が好きです／上手です／わかります
+@group 4
+@key が
+@mean Thích ~ / Giỏi ~ / Hiểu ~
+@core Các tính từ và động từ này dùng 「が」 để đánh dấu đối tượng, không dùng 「を」.
+@form 名詞 ＋ が ＋ 好きです／嫌いです／上手です／下手です／わかります／あります
+@exp Những từ chỉ thích ghét, giỏi dở, hiểu, có (わかります, あります) lấy đối tượng bằng 「が」. Hỏi: 「どんな～が好きですか」 (thích loại ~ nào?), 「どのぐらいわかりますか」, trả lời 「よく／だいたい／少し／あまり／全然わかります」.
+@ex 私は果物が好きです。 | Tôi thích trái cây.
+@ex 田中さんは料理が上手です。 | Anh Tanaka nấu ăn giỏi.
+@ex 私は日本語が少しわかります。 | Tôi hiểu tiếng Nhật một chút.
+@ex 私は時間がありません。 | Tôi không có thời gian.
+@ctx hoi-thoai
+@book minna | 9 | 1
+
+@p 038 | ～から（理由）
+@group 4
+@key から
+@mean Vì ~ nên ~
+@core Nêu lý do ở vế trước 「から」, vế sau là kết quả hoặc ý định.
+@form 文 (普通形/ます形) ＋ から、＋ 文
+@form どうして ～か。 ～から です。
+@exp Vế trước 「から」 là lý do, vế sau là kết quả, đề nghị hay ý chí. Có thể nói riêng 「～からです」 khi đáp 「どうして」. Với bản chất khác, 「ので」 mềm hơn (N4).
+@ex 時間がありませんから、新聞を読みません。 | Vì không có thời gian nên tôi không đọc báo.
+@ex 毎日忙しいですから、スポーツをしません。 | Vì hằng ngày bận nên tôi không chơi thể thao.
+@ex A「どうして来ませんでしたか。」B「忙しかったからです。」 | A: Sao bạn không đến? B: Vì tôi bận.
+@theme nguyen-nhan
+@ctx hoi-thoai
+@book minna | 9 | 2
+
+@p 039 | どうして
+@group 4
+@key どうして
+@mean Tại sao ~?
+@core Hỏi lý do; trả lời bằng 「～からです」.
+@form どうして ＋ 文 ＋ か
+@exp 「どうして」 hỏi lý do, đi kèm câu hỏi thông thường. Câu trả lời thường là 「～からです」.
+@ex どうして休みましたか。 | Tại sao bạn nghỉ?
+@ex どうして日本語を勉強しますか。 | Tại sao bạn học tiếng Nhật?
+@ex 病気だったからです。 | Vì tôi bị bệnh.
+@theme nguyen-nhan
+@ctx hoi-thoai
+@book minna | 9 | 3
+
+@p 040 | ～に～があります／います
+@group 4
+@key re:(に).*?(あります|います)
+@mean Ở ~ có ~
+@core Nói sự tồn tại: vật dùng あります, người và động vật dùng います.
+@form 場所 ＋ に ＋ 物 ＋ が ＋ あります
+@form 場所 ＋ に ＋ 人・動物 ＋ が ＋ います
+@exp 「に」 chỉ nơi tồn tại, 「が」 đánh dấu thứ có mặt. Vật vô tri (kể cả cây cối) dùng あります; người, động vật dùng います. Phủ định: ありません／いません. Hỏi: 「何がありますか」「だれがいますか」.
+@ex 机の上に本があります。 | Trên bàn có quyển sách.
+@ex 庭に猫がいます。 | Ở sân có một con mèo.
+@ex 部屋にだれがいますか。 | Trong phòng có ai vậy?
+@ex この町に図書館がありません。 | Thị trấn này không có thư viện.
+@note Vật di chuyển tự động như xe cộ thường dùng あります, không dùng います.
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 10 | 1
+
+@p 041 | ～は～にあります／います
+@group 4
+@key re:(は).*?(に).*?(あります|います)
+@mean ~ ở ~
+@core Nói vị trí của vật hoặc người; chủ đề đứng trước.
+@form 物 ＋ は ＋ 場所 ＋ に ＋ あります
+@form 人 ＋ は ＋ 場所 ＋ に ＋ います
+@exp Khi đã biết đối tượng và muốn nói nó ở đâu, đặt đối tượng làm chủ đề bằng 「は」. Hỏi: 「～はどこにありますか／いますか」.
+@ex 東京タワーは東京にあります。 | Tháp Tokyo ở Tokyo.
+@ex 山田さんは事務所にいます。 | Anh Yamada ở văn phòng.
+@ex トイレはどこにありますか。 | Nhà vệ sinh ở đâu vậy?
+@cmp ～に～があります／います | N5 | Mẫu này nhấn mạnh vật nằm ở đâu; mẫu kia nhấn mạnh có gì ở nơi đó.
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 10 | 2
+
+@p 042 | 位置を表す言葉（上・下・前・後ろ…）
+@group 4
+@key re:(上|下|前|後ろ|中|外|隣|そば|間)
+@mean Trên / dưới / trước / sau / trong / ngoài / bên cạnh
+@core Danh từ chỉ vị trí đi cùng 「の」 và 「に」.
+@form 名詞 ＋ の ＋ 上／下／前／後ろ／中／外／右／左／隣／そば／間 ＋ に
+@exp 「上, 下, 前, 後ろ, 中, 外, 右, 左, 隣, 近く, 間」 là danh từ chỉ vị trí. Cấu trúc: 「N1 の 上に N2 があります」. Với hai thứ ở giữa thì dùng 「N1 と N2 の間」.
+@ex 机の上にペンがあります。 | Trên bàn có cây bút.
+@ex ポストは銀行の隣にあります。 | Hòm thư ở cạnh ngân hàng.
+@ex 箱の中に何がありますか。 | Trong hộp có gì?
+@ex 駅の前に学生がいます。 | Có sinh viên ở trước ga.
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 10 | 3
+
+@p 043 | ～や～（など）
+@group 4
+@key や
+@mean ~ và ~ (vân vân)
+@core Liệt kê vài ví dụ tiêu biểu, ngụ ý còn nữa.
+@form 名詞1 ＋ や ＋ 名詞2 (＋ など)
+@exp Khác với 「と」 liệt kê đầy đủ, 「や」 chỉ nêu một vài ví dụ tiêu biểu; thường kèm 「など」 ở cuối ("vân vân").
+@ex かばんの中に本や辞書があります。 | Trong cặp có sách, từ điển (v.v.).
+@ex 机の上に本やペンなどがあります。 | Trên bàn có sách, bút, v.v.
+@ex 京都や奈良へ行きました。 | Tôi đã đi Kyoto, Nara (v.v.).
+@cmp ～と～ | N5 | 「と」 liệt kê đủ; 「や」 liệt kê chọn lọc.
+@theme liet-ke
+@ctx hoi-thoai
+@book minna | 10 | 4
+
+@p 044 | 数を数える（～つ・～人・～枚…）
+@group 4
+@key re:(ひとつ|ふたつ|みっつ|よっつ|いつつ|一つ|二つ|三つ|四つ|五つ|一人|二人|三人|枚|台|冊|個)
+@mean Cách đếm đồ vật, người
+@core Số đếm đi kèm đơn vị đếm, đặt trực tiếp trước động từ không có trợ từ.
+@form 数詞＋助数詞 ＋ 動詞
+@form 物 ＋ を ＋ 数詞 ＋ 動詞
+@exp Số lượng đặt ngay trước động từ, không có trợ từ. Các hệ đếm thường gặp: つ (đồ vật chung, 一つ～十), 人 (người, ひとり・ふたり・さんにん), 枚 (vật mỏng), 台 (máy, xe), 冊 (sách), 個 (vật nhỏ), 回 (lần), 本 (vật dài), 杯 (cốc, chén). Hỏi: 「いくつ」, 「何人」, 「何枚」…
+@ex りんごを四つ買いました。 | Tôi mua bốn quả táo.
+@ex 教室に学生が三人います。 | Trong lớp có ba sinh viên.
+@ex 切手を五枚ください。 | Cho tôi năm con tem.
+@ex 車が二台あります。 | Có hai chiếc xe.
+@note Ba, bốn người: 三人 (さんにん), 四人 (よにん); một, hai người đọc đặc biệt: ひとり, ふたり.
+@ctx hoi-thoai
+@book minna | 11 | 1
+
+@p 045 | ～ぐらい／～かかります
+@group 4
+@key re:(ぐらい|くらい|かかり)
+@mean Khoảng ~ / Mất ~ (thời gian, tiền)
+@core 「ぐらい」 chỉ khoảng ước chừng; 「かかります」 chỉ thời gian hoặc tiền cần có.
+@form 数量 ＋ ぐらい
+@form 期間 ＋ かかります
+@exp 「ぐらい／くらい」 gắn sau số lượng để nói "khoảng". 「かかります」 diễn tả thời gian, tiền cần để đến nơi. Hỏi: 「どのくらいかかりますか」. Khoảng thời gian dùng 「～時間, ～日, ～か月, ～年」.
+@ex 家から会社まで電車で四十分ぐらいかかります。 | Từ nhà đến công ty đi tàu mất khoảng 40 phút.
+@ex 大阪まで新幹線で二時間半かかります。 | Đi Osaka bằng Shinkansen mất 2 tiếng rưỡi.
+@ex 日本語を二年ぐらい勉強しました。 | Tôi đã học tiếng Nhật khoảng 2 năm.
+@theme pham-vi
+@ctx hoi-thoai
+@book minna | 11 | 2
+
+@p 046 | ～だけ
+@group 4
+@key だけ
+@mean Chỉ ~
+@core 「だけ」 giới hạn số lượng, nghĩa là "chỉ".
+@form 名詞・数量 ＋ だけ
+@exp Gắn sau danh từ hoặc số lượng để nói "chỉ có ~, không hơn". Thay cho trợ từ 「を, が」, còn trợ từ khác như 「に, で」 vẫn giữ đằng sau 「だけ」.
+@ex パンだけ食べました。 | Tôi chỉ ăn bánh mì.
+@ex 休みは日曜日だけです。 | Ngày nghỉ chỉ có chủ nhật.
+@ex コーヒーを一つだけください。 | Cho tôi chỉ một ly cà phê thôi.
+@theme pham-vi
+@ctx hoi-thoai
+@book minna | 11 | 3
+
+@p 047 | ～に～回
+@group 4
+@key re:(に).*?(回|度)
+@mean Trong (khoảng thời gian) ~ lần
+@core Nói tần suất: khoảng thời gian + に + số lần.
+@form 期間 ＋ に ＋ 回数 ＋ 動詞
+@exp Khoảng thời gian (một ngày, một tuần, một tháng, một năm) + 「に」 + số lần (～回). Hỏi: 「一週間に何回」.
+@ex 一週間に二回テニスをします。 | Một tuần tôi chơi tennis hai lần.
+@ex 一か月に一回国へ電話します。 | Mỗi tháng tôi gọi về nước một lần.
+@ex 一日に三回薬を飲みます。 | Một ngày tôi uống thuốc ba lần.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 11 | 4
+
+@p 048 | 名詞／ナ形容詞の過去
+@group 5
+@key re:(でした|じゃありませんでした|ではありませんでした)
+@mean Đã là ~ / Đã không phải ~
+@core Quá khứ của danh từ và tính từ な: ～でした／～じゃありませんでした.
+@form 名詞・ナ形容詞 ＋ でした
+@form 名詞・ナ形容詞 ＋ じゃありませんでした
+@exp Dạng quá khứ lịch sự: です → でした; じゃありません → じゃありませんでした. Dùng cho danh từ và tính từ な.
+@ex きのうは雨でした。 | Hôm qua trời mưa.
+@ex 昨日は休みじゃありませんでした。 | Hôm qua không phải ngày nghỉ.
+@ex 子供のころ、私は元気でした。 | Hồi nhỏ tôi rất khỏe mạnh.
+@ex 試験は簡単でした。 | Kỳ thi dễ.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 12 | 1
+
+@p 049 | イ形容詞の過去
+@group 5
+@key re:(かったです|くなかったです|くありませんでした)
+@mean Đã ~ (tính từ -i, quá khứ)
+@core Tính từ い: い → かったです; phủ định: くなかったです／くありませんでした.
+@form イ形容詞 い→かったです
+@form イ形容詞 い→くなかったです／くありませんでした
+@exp Khi tính từ đuôi い ở quá khứ, bỏ い thêm 「かったです」; phủ định thêm 「くなかったです」 (hoặc くありませんでした). Ngoại lệ: いい → よかったです.
+@ex 昨日は暑かったです。 | Hôm qua nóng.
+@ex 旅行は楽しくなかったです。 | Chuyến du lịch không vui.
+@ex 映画はおもしろかったです。 | Bộ phim thú vị.
+@ex 試験は難しくありませんでした。 | Kỳ thi không khó.
+@note いい → よかったです／よくなかったです.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 12 | 2
+
+@p 050 | ～より～のほうが
+@group 5
+@key re:(より).*?(ほう)
+@mean ~ (so với) … hơn
+@core So sánh hai đối tượng: cái nào hơn thì đứng trước 「のほうが」.
+@form N1 ＋ は ＋ N2 ＋ より ＋ 形容詞
+@form N2 ＋ より ＋ N1 ＋ の ＋ ほう ＋ が ＋ 形容詞
+@exp 「N1はN2より～」: N1 hơn N2. Hoặc 「N2より N1のほうが～」: so với N2 thì N1 hơn. 「ほう」 chỉ phía được chọn, nhấn mạnh trong so sánh.
+@ex 電車はバスより速いです。 | Tàu điện nhanh hơn xe buýt.
+@ex 北海道より沖縄のほうが暖かいです。 | Okinawa ấm hơn Hokkaido.
+@ex 東京は大阪より人が多いです。 | Tokyo có nhiều người hơn Osaka.
+@theme so-sanh
+@ctx hoi-thoai
+@book minna | 12 | 3
+
+@p 051 | ～と～と どちらが～
+@group 5
+@key re:(と).*?(と).*?(どちら)
+@mean Giữa A và B, cái nào ~ hơn?
+@core Hỏi so sánh hai thứ; đáp: 「～のほうが～」.
+@form N1 ＋ と ＋ N2 ＋ と ＋ どちら ＋ が ＋ 形容詞 ＋ か
+@form ～のほうが ＋ 形容詞
+@exp Hỏi lựa chọn giữa hai thứ: 「N1とN2とどちらが～ですか」. Đáp: 「N1のほうが～です」 hoặc 「どちらも～です」 (cả hai đều), 「どちらも～ません」 (cả hai đều không).
+@ex 紅茶とコーヒーとどちらが好きですか。 | Trà đen và cà phê bạn thích cái nào hơn?
+@ex 夏と冬とどちらが好きですか。 | Mùa hè và mùa đông bạn thích mùa nào hơn?
+@ex 電車のほうが速いです。 | Tàu điện nhanh hơn.
+@ex どちらも好きです。 | Cả hai tôi đều thích.
+@theme so-sanh
+@ctx hoi-thoai
+@book minna | 12 | 4
+
+@p 052 | ～の中で～がいちばん～
+@group 5
+@key re:(の中で|で).*?(いちばん|一番)
+@mean Trong ~, … nhất
+@core So sánh từ ba đối tượng trở lên; dùng 「いちばん」.
+@form 範囲 ＋ の中で ＋ 何／だれ／いつ／どこ ＋ が ＋ いちばん ＋ 形容詞 ＋ ですか
+@form ～が ＋ いちばん ＋ 形容詞
+@exp Dùng 「いちばん」 (nhất) khi chọn một trong ba thứ trở lên. Với từ hỏi: 何 (vật), だれ (người), どこ (nơi), いつ (khi). Nếu phạm vi là loại: 「スポーツの中で」; nếu là nhóm người/nơi chốn: 「家族で」「日本で」.
+@ex 日本で富士山がいちばん高いです。 | Ở Nhật, núi Phú Sĩ cao nhất.
+@ex 果物の中で何がいちばん好きですか。 | Trong các loại trái cây bạn thích gì nhất?
+@ex クラスでだれがいちばん背が高いですか。 | Trong lớp ai cao nhất?
+@theme so-sanh
+@ctx hoi-thoai
+@book minna | 12 | 5
+
+@p 053 | ～がほしいです
+@group 5
+@key ほしい
+@mean Muốn có ~
+@core Nói ước muốn sở hữu một vật; đối tượng đi với 「が」.
+@form 名詞 ＋ が ＋ ほしいです
+@form 名詞 ＋ は ＋ ほしくないです
+@exp 「ほしい」 là tính từ い; diễn tả người nói muốn có vật gì. Dùng cho ngôi thứ nhất (hoặc câu hỏi cho ngôi thứ hai). Phủ định: ほしくないです. Không dùng cho ngôi thứ ba (dùng 「ほしがっています」).
+@ex 私は新しい車がほしいです。 | Tôi muốn có chiếc xe mới.
+@ex 今、何がほしいですか。 | Bây giờ bạn muốn có cái gì?
+@ex 私は子供がほしくないです。 | Tôi không muốn có con.
+@ctx hoi-thoai
+@book minna | 13 | 1
+
+@p 054 | ～たいです
+@group 5
+@key たい
+@mean Muốn làm ~
+@core Gắn vào gốc ます của động từ để nói ước muốn muốn làm gì.
+@form 動詞 ます形 (bỏ ます) ＋ たいです
+@form 動詞 ます形 (bỏ ます) ＋ たくないです
+@exp Hành động mong muốn của người nói: 食べます → 食べたいです. Tân ngữ có thể giữ 「を」 hoặc đổi thành 「が」. Phủ định: ～たくないです／たくありません. Câu hỏi lịch sự với người lớn: nên tránh hỏi thẳng 「～たいですか」, hãy dùng 「～ませんか」.
+@ex 日本でお寿司を食べたいです。 | Tôi muốn ăn sushi ở Nhật.
+@ex 今日は何もしたくないです。 | Hôm nay tôi chẳng muốn làm gì cả.
+@ex 夏休みに北海道へ行きたいです。 | Kỳ nghỉ hè tôi muốn đi Hokkaido.
+@ex 水が飲みたいです。 | Tôi muốn uống nước.
+@ctx hoi-thoai
+@book minna | 13 | 2
+
+@p 055 | ～に行きます／来ます／帰ります（目的）
+@group 5
+@key re:(に)(?=行き|来|帰り)
+@mean Đi / đến / về để làm ~
+@core Nêu mục đích di chuyển: gốc ます hoặc danh từ + に.
+@form 動詞 ます形 (bỏ ます) ＋ に ＋ 行きます／来ます／帰ります
+@form 名詞 (行為) ＋ に ＋ 行きます
+@exp Mục đích đi đâu đó. Có thể là gốc ます của động từ (買いに行きます), hoặc danh từ chỉ hành động (買い物、勉強、散歩、旅行、食事…) + 「に」. Nơi đến thêm 「へ」 hoặc 「に」: 「デパートへ買い物に行きます」.
+@ex 図書館へ本を借りに行きます。 | Tôi đi thư viện để mượn sách.
+@ex 日本へ日本語の勉強に来ました。 | Tôi đã đến Nhật để học tiếng Nhật.
+@ex 公園へ散歩に行きます。 | Tôi đi công viên để đi dạo.
+@theme muc-dich
+@ctx hoi-thoai
+@book minna | 13 | 3
+
+@p 056 | ～てください
+@group 5
+@key てください
+@mean Hãy ~ / Xin hãy ~
+@core Nhờ vả, yêu cầu lịch sự bằng thể て + ください.
+@form 動詞 て形 ＋ ください
+@exp Dùng để nhờ hoặc chỉ dẫn người khác làm gì. Có thể thêm 「ちょっと／すみませんが」 để mềm mỏng. Tránh dùng với người bề trên nhiều.
+@ex ここに名前を書いてください。 | Hãy viết tên ở đây.
+@ex ちょっと待ってください。 | Xin hãy đợi một chút.
+@ex すみませんが、もう一度言ってください。 | Xin lỗi, hãy nói lại một lần nữa.
+@ctx hoi-thoai
+@book minna | 14 | 1
+
+@p 057 | ～ています（進行）
+@group 5
+@key ています
+@mean Đang ~
+@core Diễn tả hành động đang diễn ra tại thời điểm nói.
+@form 動詞 て形 ＋ います
+@exp Hành động đang tiếp diễn. Phủ định: ～ていません. Một số động từ chuyển ý khác (xem bài 15, 16). Hỏi: 「何をしていますか」.
+@ex 今、電話をしています。 | Bây giờ tôi đang gọi điện.
+@ex 山田さんは本を読んでいます。 | Anh Yamada đang đọc sách.
+@ex 田中さんは何をしていますか。 | Anh Tanaka đang làm gì vậy?
+@theme trang-thai
+@ctx hoi-thoai
+@book minna | 14 | 2
+
+@p 058 | ～ましょうか
+@group 5
+@key ましょうか
+@mean Để tôi ~ nhé? / Chúng ta ~ nhé?
+@core Tự đề nghị giúp đỡ hoặc hỏi ý người nghe.
+@form 動詞 ます形 ＋ ましょうか
+@exp Hai cách dùng: (1) đề nghị giúp đỡ ("để tôi làm ~ cho bạn nhé"); (2) hỏi ý cùng làm ("ta ~ nhé?"). Đáp nhận: 「お願いします」, từ chối: 「けっこうです／大丈夫です」.
+@ex 荷物を持ちましょうか。 | Để tôi mang hành lý giúp nhé?
+@ex タクシーを呼びましょうか。 | Để tôi gọi taxi nhé?
+@ex 窓を開けましょうか。 | Tôi mở cửa sổ nhé?
+@ctx hoi-thoai
+@book minna | 14 | 3

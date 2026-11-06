@@ -1,0 +1,122 @@
+@p 092 | ～にする／～くする
+@group 16
+@mean Làm cho ... / Biến ... thành ...
+@core Người nào đó cố ý làm thay đổi trạng thái.
+@form 名詞 ＋ にする ・ イ形容詞 くする ・ ナ形容詞 にする
+@exp Dùng 「する」 khi chú trọng hành vi có ý chí của người (người nói hay người khác). 「状態を変える」.
+@ex わたしは大きいケーキを半分にした。 | Tôi chia chiếc bánh lớn làm đôi.
+@ex 小魚を食べて、骨を丈夫にしたい。 | Tôi muốn ăn cá nhỏ để làm xương chắc khỏe.
+@ex 電気を消して、部屋を暗くしてください。 | Hãy tắt đèn làm cho phòng tối đi.
+@cmp ～になる／～くなる | N5 | 「なる」 là tự biến đổi, không do người.
+@note 
+@theme the-thai, ket-qua
+@ctx hoi-thoai
+@book shin-n3 | G | 1
+
+@p 093 | ～になる／～くなる
+@group 16
+@mean Trở nên ... / Trở thành ...
+@core Trạng thái tự biến đổi, nhấn mạnh sự thay đổi/kết quả.
+@form 名詞 ＋ になる ・ イ形容詞 くなる ・ ナ形容詞 になる
+@exp Dùng 「なる」 khi chú trọng sự biến đổi hoặc kết quả của sự việc, không nêu người thực hiện.
+@ex 大きいケーキが半分になった。 | Chiếc bánh lớn đã còn một nửa.
+@ex 小魚をよく食べたので、骨が丈夫になった。 | Do ăn nhiều cá nhỏ nên xương trở nên chắc khỏe.
+@ex 電気を消したので、部屋が暗くなった。 | Vì tắt đèn nên phòng tối đi.
+@ex 最近、この川では魚があまり釣れなくなった。 | Gần đây ở con sông này không còn câu được nhiều cá nữa.
+@cmp ～にする／～くする | N5 | 「する」 là chủ ý của người.
+@note 
+@theme the-thai, ket-qua
+@ctx hoi-thoai
+@book shin-n3 | G | 2
+
+@p 094 | ～にしている
+@group 16
+@mean Luôn chọn ... (cứ giữ như vậy)
+@core Giữ nguyên điều đã chọn/quyết định.
+@form 名詞 ＋ にしている
+@exp 「決めたことを続けている」. Dùng khi một việc đã được quyết định và vẫn tiếp tục.
+@ex 昼食はいつもパンにしています。 | Bữa trưa tôi luôn ăn bánh mì.
+@ex 寝る前に必ず日記を書くことにしている。 | Trước khi ngủ tôi luôn viết nhật ký (đã quyết như vậy).
+@ex レジ袋はもらわないことにしている。 | Tôi quyết định không nhận túi nilon ở quầy tính tiền.
+@cmp ～になっている | N3 | 「にしている」 do mình quyết; 「になっている」 là quy định đã có.
+@note Xem thêm 「ことにしている」 ở bài 11.
+@theme y-chi
+@ctx hoi-thoai
+@book shin-n3 | G | 3
+
+@p 095 | ～ことになる
+@group 16
+@mean Được quyết định là ... / Sẽ ... (theo quyết định chung)
+@core Kết quả đã được quyết định (không nêu rõ ai quyết định).
+@form 動詞 辞書形・ない形 ＋ ことになる
+@exp 「決まる」. Diễn tả kết quả khách quan, quyết định do hoàn cảnh hoặc người khác, không phải ý chí của người nói. Khác với 「ことにする」 (tự quyết).
+@ex 旅行の出発日は8月30日になった。 | Ngày khởi hành chuyến du lịch đã được định là 30 tháng 8.
+@ex 来月、出張することになった。 | Tháng sau tôi được quyết định đi công tác.
+@ex 今年は社員旅行は行わないことになった。 | Năm nay đã quyết định không tổ chức du lịch công ty.
+@cmp ～ことにする | N3 | 「ことにする」 do mình quyết định.
+@note 
+@theme y-chi, ket-qua
+@ctx hoi-thoai, cong-ty
+@book shin-n3 | G | 4
+
+@p 096 | ～になっている／～ことになっている
+@group 16
+@mean Đã được quy định là ... / Thường là ...
+@core Điều đã được quy định, kế hoạch, hoặc thói quen cố định.
+@form 名詞 ＋ になっている
+@form 動詞 辞書形・ない形 ＋ ことになっている
+@exp 「決まったことが続いている(決まり・予定)」. Diễn tả quy tắc, lịch trình đã được quyết định và hiện vẫn hiệu lực.
+@ex 毎年、花見の会場は桜公園になっています。 | Hằng năm địa điểm ngắm hoa luôn là công viên hoa anh đào.
+@ex この会社では制服を着ることになっている。 | Ở công ty này quy định phải mặc đồng phục.
+@ex 学生は車で通学できないことになっている。 | Theo quy định sinh viên không được đi học bằng ô tô.
+@ex 明日、社長は9時の便で中国に行くことになっている。 | Ngày mai giám đốc dự kiến đi Trung Quốc chuyến bay 9 giờ.
+@cmp ～ことにしている | N3 | 「ことにしている」 do bản thân quyết định.
+@note Dùng nhiều cho nội quy và lịch trình.
+@theme y-chi, can-cu
+@ctx cong-ty, van-ban
+@book shin-n3 | G | 5
+
+@p 097 | ～ようにする（変化を起こす）
+@group 16
+@mean Làm sao cho ... (thay đổi vì mục đích)
+@core Gây ra sự thay đổi nhằm một mục đích nhất định.
+@form 動詞 辞書形・ない形・可能形 ＋ ようにする
+@exp 「ある目的のために変化を起こす」. Hành động có chủ ý nhằm làm cho một trạng thái xảy ra.
+@ex 机の位置を変えて、仕事中でも外の景色が見えるようにしよう。 | Hãy đổi vị trí bàn để lúc làm việc cũng nhìn thấy cảnh bên ngoài.
+@ex ドアに穴を空けて、ねこが通れるようにした。 | Tôi khoét lỗ ở cửa để mèo đi qua được.
+@ex 大事な物はいつも棚の上に置いて、子どもに触られないようにしている。 | Đồ quan trọng tôi luôn để trên kệ để trẻ không chạm vào được.
+@cmp ～ようになる | N3 | 「ようになる」 là biến đổi tự nhiên.
+@note Khác 「ようにする」 nghĩa cố gắng (bài 11).
+@theme muc-dich
+@ctx hoi-thoai
+@book shin-n3 | G | 6
+
+@p 098 | ～ようになる
+@group 16
+@mean Trở nên (có thể) ... / Dần dần ...
+@core Sự biến đổi tự nhiên, trước đây không làm được, nay đã làm được.
+@form 動詞 辞書形・可能形・ない形 ＋ ようになる
+@exp 「変化が起きる」. Chỉ sự thay đổi tự nhiên, không do ai cố ý gây ra.
+@ex 机の位置を変えたので、仕事中でも外の景色が見えるようになった。 | Vì đổi vị trí bàn nên lúc làm việc cũng nhìn thấy cảnh bên ngoài.
+@ex 親が楽しそうに家事をしていれば、子どもも進んで手伝うようになる。 | Nếu cha mẹ vui vẻ làm việc nhà thì con cái cũng tự giác giúp.
+@cmp ～ようにする | N3 | 「ようにする」 do chủ ý.
+@note 
+@theme trang-thai, ket-qua
+@ctx hoi-thoai
+@book shin-n3 | G | 7
+
+@p 099 | ～ようになっている
+@group 16
+@mean Được thiết kế để ... / Có cơ chế ...
+@core Được làm ra theo cách nhất định vì mục đích nào đó.
+@form 動詞 辞書形・ない形・可能形 ＋ ようになっている
+@exp 「ある目的のためにそう作られている」. Chủ ngữ thường là vật (nhà, máy móc), diễn tả cấu tạo, cơ chế.
+@ex この家は屋根にも窓があって、太陽の光が上からも入るようになっている。 | Căn nhà này có cả cửa sổ ở mái nên ánh nắng cũng chiếu từ trên xuống.
+@ex トイレに入ると、電気が自動でつくようになっている。 | Vào nhà vệ sinh thì đèn tự bật.
+@ex この学校の音楽室は、楽器の音が外の人には聞こえないようになっています。 | Phòng nhạc của trường này được thiết kế để người ngoài không nghe thấy tiếng nhạc cụ.
+@cmp ～ようにしている | N3 | 「ようにしている」 chủ ngữ là người; 「ようになっている」 chủ ngữ là vật.
+@note 
+@theme trang-thai
+@ctx hoi-thoai, van-ban
+@book shin-n3 | G | 8
+

@@ -1,0 +1,273 @@
+@p 005 | ～は～です／～は～じゃありません
+@group 2
+@key re:(は).*?(です|じゃありません|ではありません|でした)
+@mean ~ là ~ / ~ không phải là ~
+@core Câu giới thiệu cơ bản: chủ đề は + danh từ + です; phủ định dùng じゃありません.
+@form 名詞1 ＋ は ＋ 名詞2 ＋ です
+@form 名詞1 ＋ は ＋ 名詞2 ＋ じゃありません (ではありません)
+@exp 「は」 (đọc là わ) đánh dấu chủ đề của câu. 「です」 đặt cuối câu để khẳng định một cách lịch sự, không có nghĩa riêng. Phủ định là 「じゃありません」 (văn nói) hoặc 「ではありません」 (văn viết, trang trọng).
+@sense 1 | Khẳng định (N1 là N2)
+@ex わたしはマイクです。 | Tôi là Mike.
+@ex サントスさんは学生です。 | Anh Santos là sinh viên.
+@sense 2 | Phủ định (N1 không phải N2)
+@ex サントスさんは先生じゃありません。 | Anh Santos không phải là giáo viên.
+@ex ミラーさんは医者ではありません。 | Anh Miller không phải là bác sĩ.
+@note Chữ 「は」 khi làm trợ từ đọc là 「わ」, không đọc là 「は」.
+@theme chu-de
+@ctx hoi-thoai
+@book minna | 1 | 1
+
+@p 006 | ～は～ですか
+@group 2
+@key re:(は).*?(ですか) ;; ですか
+@mean ~ có phải là ~ không?
+@core Thêm 「か」 vào cuối câu để biến thành câu hỏi, không đổi trật tự từ.
+@form 名詞1 ＋ は ＋ 名詞2 ＋ ですか
+@form 疑問詞 ＋ ですか
+@exp Muốn hỏi, chỉ cần thêm 「か」 vào cuối câu, giọng lên nhẹ. Trả lời "đúng" là 「はい、そうです」, "không phải" là 「いいえ、そうじゃありません」. Với từ để hỏi như 「だれ」 (ai), 「何さい／おいくつ」 (bao nhiêu tuổi), vẫn đặt 「ですか」 ở cuối.
+@sense 1 | Hỏi đúng hay không (câu hỏi Có/Không)
+@ex ミラーさんは会社員ですか。 | Anh Miller là nhân viên công ty phải không?
+@ex あなたは学生ですか。 | Bạn là sinh viên à?
+@sense 2 | Hỏi bằng từ để hỏi (だれ, 何さい…)
+@ex あの方はどなたですか。 | Vị kia là ai vậy ạ?
+@ex 田中さんは何歳ですか。 | Anh Tanaka bao nhiêu tuổi vậy?
+@note 「だれ」 là "ai" thông thường; 「どなた」 là cách nói lịch sự hơn.
+@ctx hoi-thoai
+@book minna | 1 | 2
+
+@p 007 | ～も
+@group 2
+@mean ~ cũng ~
+@core Thay 「は」 bằng 「も」 khi muốn nói chủ đề này cũng giống chủ đề trước.
+@form 名詞 ＋ も
+@exp Khi nội dung câu sau giống câu trước và chỉ khác chủ ngữ, thay 「は」 bằng 「も」 để nói "cũng". Không dùng cả 「は」 và 「も」 sau cùng một danh từ.
+@ex ミラーさんは会社員です。ワンさんも会社員です。 | Anh Miller là nhân viên công ty. Anh Wang cũng là nhân viên công ty.
+@ex わたしはベトナム人です。田中さんもベトナム人ですか。 | Tôi là người Việt Nam. Anh Tanaka cũng là người Việt Nam à?
+@ex 先生も学生もコーヒーを飲みます。 | Cả giáo viên lẫn sinh viên đều uống cà phê.
+@cmp ～は～です | N5 | 「は」 nêu chủ đề; 「も」 nêu thêm một chủ đề khác có cùng nội dung.
+@theme bo-sung
+@ctx hoi-thoai
+@book minna | 1 | 3
+
+@p 008 | ～の～
+@group 2
+@key の
+@mean của ~ / thuộc ~ / về ~
+@core Nối hai danh từ: danh từ trước bổ nghĩa cho danh từ sau (thuộc về, thuộc tổ chức, chủ đề, nơi sản xuất…).
+@form 名詞1 ＋ の ＋ 名詞2
+@exp 「Nの N」 nối hai danh từ. Danh từ trước có thể chỉ chủ sở hữu (わたしの本), tổ chức mình thuộc về (IMCの社員), chủ đề (日本語の本: sách tiếng Nhật), hoặc nơi sản xuất (日本の車). Danh từ đứng sau là phần được nhấn mạnh; có thể lược danh từ sau khi đã rõ (これはわたしのです). Hỏi nơi sản xuất dùng 「どこの～」.
+@sense 1 | Thuộc tổ chức, quốc gia, nơi sản xuất (bài 1, 3)
+@ex ミラーさんはIMCの社員です。 | Anh Miller là nhân viên của công ty IMC.
+@ex これは日本の車です。 | Đây là xe hơi của Nhật.
+@ex この時計はどこのですか。 | Chiếc đồng hồ này của nước nào vậy?
+@sense 2 | Sở hữu, chủ đề (bài 2)
+@ex これはわたしの傘です。 | Đây là cái ô của tôi.
+@ex それは日本語の本です。 | Đó là quyển sách tiếng Nhật.
+@ex あれはだれのかばんですか。 | Kia là cặp của ai vậy?
+@note Khi danh từ sau đã rõ thì có thể lược: 「これはわたしのです」 (Cái này là của tôi).
+@theme chu-de
+@ctx hoi-thoai
+@book minna | 1 | 4
+@book minna | 2 | 6
+@book minna | 3 | 5
+
+@p 009 | ～さん／～人／～歳
+@group 2
+@key re:(さん|人|歳)
+@mean Anh/chị ~ / người nước ~ / ~ tuổi
+@core Hậu tố gắn sau tên, quốc gia, số tuổi.
+@form 名前 ＋ さん
+@form 国名 ＋ 人 (じん)
+@form 数 ＋ 歳 (さい)
+@exp 「さん」 gắn sau họ hoặc tên người khác để gọi lịch sự; không bao giờ gắn vào tên của chính mình. 「～人」 chỉ quốc tịch (日本人, ベトナム人). 「～歳」 đếm tuổi; riêng 20 tuổi đọc đặc biệt là 「はたち」.
+@ex あの方はミラーさんです。 | Vị kia là anh Miller.
+@ex ワンさんは中国人です。 | Anh Wang là người Trung Quốc.
+@ex わたしは二十五歳です。 | Tôi hai mươi lăm tuổi.
+@note Không dùng 「さん」 cho chính mình: không nói 「わたしはミラーさんです」.
+@ctx hoi-thoai
+@book minna | 1 | 5
+
+@p 010 | これ／それ／あれ
+@group 2
+@key re:(これ|それ|あれ)
+@mean Cái này / Cái đó / Cái kia
+@core Chỉ vật theo khoảng cách với người nói và người nghe.
+@form これ (gần người nói)
+@form それ (gần người nghe)
+@form あれ (xa cả hai)
+@exp 「これ」 chỉ vật ở gần người nói, 「それ」 vật ở gần người nghe, 「あれ」 vật xa cả hai người. Từ để hỏi tương ứng là 「どれ」 (cái nào) và 「何」 (cái gì). Các từ này đứng một mình như danh từ, không đi trực tiếp với danh từ.
+@ex これは本です。 | Đây là quyển sách.
+@ex それは何ですか。 | Cái đó là cái gì?
+@ex あれは先生の傘です。 | Kia là cái ô của thầy giáo.
+@cmp この／その／あの＋名詞 | N5 | 「この」 đi kèm danh từ (この本); 「これ」 đứng một mình.
+@ctx hoi-thoai
+@book minna | 2 | 1
+
+@p 011 | この／その／あの＋名詞
+@group 2
+@key re:(この|その|あの)
+@mean ~ này / ~ đó / ~ kia
+@core Từ chỉ định đứng ngay trước danh từ.
+@form この ＋ 名詞
+@form その ＋ 名詞
+@form あの ＋ 名詞
+@exp 「この・その・あの」 phải luôn đi kèm danh từ phía sau, khác với 「これ・それ・あれ」 đứng một mình. Quy tắc khoảng cách giống nhau: この (gần người nói), その (gần người nghe), あの (xa cả hai). Hỏi bằng 「どの」 (nào).
+@ex この本はわたしのです。 | Quyển sách này là của tôi.
+@ex その傘はだれのですか。 | Cái ô đó là của ai?
+@ex あのかたは先生です。 | Vị kia là giáo viên.
+@cmp これ／それ／あれ | N5 | Ba từ này đứng một mình; この/その/あの cần danh từ phía sau.
+@ctx hoi-thoai
+@book minna | 2 | 2
+
+@p 012 | そうです／そうじゃありません／そうですか
+@group 2
+@key そうです ;; そうじゃありません ;; そうですか
+@mean Đúng vậy / Không phải vậy / Vậy à
+@core Cách đáp ngắn gọn khi xác nhận, phủ định hoặc tiếp nhận thông tin.
+@form はい、そうです。
+@form いいえ、そうじゃありません。
+@form そうですか。
+@exp Trả lời câu hỏi danh từ bằng 「はい、そうです」 (đúng thế) hoặc 「いいえ、そうじゃありません」 (không phải). 「そうですか」 (giọng xuống) là lời phản hồi sau khi nghe thông tin mới, nghĩa là "Vậy à".
+@ex A「それは辞書ですか。」B「はい、そうです。」 | A: Đó là từ điển à? B: Vâng, đúng vậy.
+@ex A「あれは鉛筆ですか。」B「いいえ、そうじゃありません。」 | A: Kia là bút chì à? B: Không phải.
+@ex A「これはわたしの本です。」B「そうですか。」 | A: Đây là sách của tôi. B: Vậy à.
+@ctx hoi-thoai
+@book minna | 2 | 3
+
+@p 013 | ～は～ですか、～ですか
+@group 2
+@key re:(ですか)、.*?(ですか)
+@mean ~ là A hay là B?
+@core Hỏi chọn một trong hai bằng cách nối hai câu hỏi.
+@form 名詞1 ＋ は ＋ 名詞2 ＋ ですか、名詞3 ＋ ですか
+@exp Đặt hai danh từ lựa chọn trong hai câu hỏi liên tiếp. Người trả lời không dùng 「はい／いいえ」 mà nhắc lại danh từ đúng: 「Nです」.
+@ex これは「あ」ですか、「お」ですか。 | Đây là chữ "あ" hay chữ "お"?
+@ex あの方は先生ですか、学生ですか。 | Vị kia là giáo viên hay sinh viên?
+@ex それはボールペンですか、シャープペンシルですか。 | Đó là bút bi hay bút chì bấm?
+@note Khi trả lời không dùng 「はい」 hay 「いいえ」.
+@ctx hoi-thoai
+@book minna | 2 | 4
+
+@p 014 | ここ／そこ／あそこ／どこ
+@group 2
+@key re:(ここ|そこ|あそこ|どこ)
+@mean Chỗ này / Chỗ đó / Chỗ kia / Ở đâu
+@core Chỉ nơi chốn theo khoảng cách; 「どこ」 để hỏi nơi chốn.
+@form ここ・そこ・あそこ ＋ は ＋ 場所名詞 ＋ です
+@form 名詞 ＋ は ＋ どこ ＋ ですか
+@exp 「ここ」 gần người nói, 「そこ」 gần người nghe, 「あそこ」 xa cả hai, 「どこ」 là "ở đâu". Dùng 「N1はN2(địa điểm)です」 để nói N1 ở đâu hoặc N1 là nơi nào.
+@sense 1 | Chỉ nơi chốn
+@ex ここは食堂です。 | Đây là nhà ăn.
+@ex あそこは事務所です。 | Chỗ kia là văn phòng.
+@sense 2 | Hỏi và nói vị trí của vật, người
+@ex トイレはどこですか。 | Nhà vệ sinh ở đâu ạ?
+@ex 電話はあそこです。 | Điện thoại ở chỗ kia.
+@cmp こちら／そちら／あちら／どちら | N5 | Dạng lịch sự của ここ／そこ／あそこ／どこ; ngoài ra còn chỉ phương hướng.
+@ctx hoi-thoai
+@book minna | 3 | 1
+
+@p 015 | こちら／そちら／あちら／どちら
+@group 2
+@key re:(こちら|そちら|あちら|どちら)
+@mean Phía này / Phía đó / Phía kia / Phía nào (lịch sự)
+@core Dạng lịch sự của nơi chốn và phương hướng; cũng dùng chỉ người, công ty một cách lịch sự.
+@form こちら・そちら・あちら・どちら
+@exp Ngoài nghĩa phương hướng, 「こちら」 là cách nói lịch sự của 「ここ」 và còn dùng để giới thiệu người ("Đây là ~"). 「どちら」 hỏi nơi chốn, quốc gia, công ty một cách lịch sự ("quý công ty ở đâu").
+@ex 食堂はこちらです。 | Nhà ăn ở phía này ạ.
+@ex お国はどちらですか。 | Quê bạn ở nước nào vậy ạ?
+@ex こちらはミラーさんです。 | Đây là anh Miller.
+@note Dùng khi muốn lịch sự: hỏi tên công ty, nước, hoặc giới thiệu người.
+@ctx hoi-thoai
+@book minna | 3 | 2
+
+@p 016 | ～はいくらですか
+@group 2
+@key re:(いくら)
+@mean ~ giá bao nhiêu?
+@core Hỏi giá bằng 「いくら」; nói giá bằng số + 円.
+@form 名詞 ＋ は ＋ いくら ＋ ですか
+@form 数 ＋ 円 ＋ です
+@exp 「いくら」 là "bao nhiêu tiền". Câu trả lời là số tiền kèm 「円」 (えん). Các số lớn cần nhớ: 百 (ひゃく), 千 (せん), 万 (まん); có biến âm ở 300 (さんびゃく), 600 (ろっぴゃく), 800 (はっぴゃく), 3000 (さんぜん), 8000 (はっせん).
+@ex このワインはいくらですか。 | Chai rượu này giá bao nhiêu?
+@ex そのかばんはいくらですか。 | Cái cặp đó giá bao nhiêu?
+@ex これは三百円です。 | Cái này giá ba trăm yên.
+@ctx hoi-thoai
+@book minna | 3 | 3
+
+@p 017 | 今～時～分です
+@group 3
+@key re:(今).*?(時|分)
+@mean Bây giờ là ~ giờ ~ phút
+@core Hỏi và nói giờ bằng số + 時 (じ) + 分 (ふん/ぷん).
+@form 今 ＋ 何時 ＋ ですか
+@form 今 ＋ 数 ＋ 時 ＋ 数 ＋ 分 ＋ です
+@exp Giờ đếm bằng 「～時」 (4 giờ đọc là よじ, 7 giờ しちじ, 9 giờ くじ). Phút dùng 「～分」: ふん hoặc ぷん (いっぷん, にふん, さんぷん, よんぷん, ごふん, ろっぷん, はっぷん, じゅっぷん). Buổi sáng là 「午前」, buổi chiều 「午後」. 「半」 nghĩa là rưỡi.
+@ex 今、何時ですか。 | Bây giờ là mấy giờ?
+@ex 今、七時十五分です。 | Bây giờ là bảy giờ mười lăm phút.
+@ex ニューヨークは今、午前三時です。 | New York bây giờ là ba giờ sáng.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 4 | 1
+
+@p 018 | ～ます／～ません／～ました／～ませんでした
+@group 3
+@key re:(ませんでした|ました|ません|ます)
+@mean (Sẽ) làm ~ / không làm ~ / đã làm ~ / đã không làm ~
+@core Thể lịch sự của động từ: ます (hiện tại, tương lai), ません (phủ định), ました (quá khứ), ませんでした (quá khứ phủ định).
+@form 動詞 ます形 ＋ ます
+@form 動詞 ます形 ＋ ません
+@form 動詞 ます形 ＋ ました
+@form 動詞 ます形 ＋ ませんでした
+@exp Động từ tiếng Nhật không chia theo ngôi, chỉ chia theo thì và khẳng định/phủ định. 「ます」 dùng cho thói quen, sự thật và việc sẽ làm; 「ました」 cho việc đã xảy ra; 「ません」 phủ định hiện tại hoặc tương lai; 「ませんでした」 phủ định quá khứ. Thời gian cụ thể trong câu cho biết thời điểm (毎朝, 明日, 昨日…).
+@sense 1 | Hiện tại, tương lai và thói quen (ます／ません)
+@ex 毎朝六時に起きます。 | Mỗi sáng tôi dậy lúc sáu giờ.
+@ex 明日は勉強しません。 | Ngày mai tôi sẽ không học.
+@sense 2 | Quá khứ (ました／ませんでした)
+@ex きのうは働きました。 | Hôm qua tôi đã làm việc.
+@ex 昨日は勉強しませんでした。 | Hôm qua tôi đã không học.
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 4 | 2
+
+@p 019 | ～に～ます（時間）
+@group 3
+@key re:(に)(?=[^に]*(ます|ました|ません))
+@mean Làm ~ vào lúc ~
+@core Trợ từ 「に」 đứng sau mốc thời gian cụ thể (giờ, ngày, thứ).
+@form 時間 ＋ に ＋ 動詞 ます形
+@exp Dùng 「に」 sau thời điểm có số (6時, 7月, 3日, 月曜日) để chỉ khi nào hành động xảy ra. Không dùng 「に」 với từ không có số như 「今日, 昨日, 毎朝, 今朝, 来週, 今」. Nếu chỉ nói thứ mà hỏi thì 「に」 có thể lược.
+@ex 毎朝六時に起きます。 | Mỗi sáng tôi dậy lúc sáu giờ.
+@ex 日曜日に友達と会います。 | Chủ nhật tôi gặp bạn.
+@ex 九時に寝ます。 | Tôi đi ngủ lúc chín giờ.
+@note Không dùng 「に」 với 「今日／昨日／毎朝／今週／来月…」 (không có số cụ thể).
+@theme thoi-gian
+@ctx hoi-thoai
+@book minna | 4 | 3
+
+@p 020 | ～から～まで
+@group 3
+@key re:(から).*?(まで)
+@mean Từ ~ đến ~
+@core 「から」 là điểm bắt đầu, 「まで」 là điểm kết thúc của thời gian hoặc nơi chốn.
+@form 時間・場所 ＋ から ＋ 時間・場所 ＋ まで
+@exp Dùng cho khoảng thời gian (từ 9 giờ đến 5 giờ) và cho khoảng cách (từ nhà ga đến công ty). Có thể dùng riêng 「から」 hoặc 「まで」. Không dùng 「に」 sau 「から」 và 「まで」.
+@ex 銀行は九時から三時までです。 | Ngân hàng làm việc từ chín giờ đến ba giờ.
+@ex 昼休みは十二時から一時までです。 | Giờ nghỉ trưa từ mười hai giờ đến một giờ.
+@ex 東京から大阪まで新幹線で行きます。 | Tôi đi từ Tokyo đến Osaka bằng tàu shinkansen.
+@theme pham-vi
+@ctx hoi-thoai
+@book minna | 4 | 4
+
+@p 021 | ～と～
+@group 3
+@key re:(と)
+@mean ~ và ~
+@core Nối hai danh từ với nhau, nghĩa là "và".
+@form 名詞1 ＋ と ＋ 名詞2
+@exp 「と」 liệt kê đầy đủ các danh từ cùng loại. Chỉ nối danh từ với danh từ, không nối câu. Khác với 「や」 (bài 10) chỉ liệt kê ví dụ không đầy đủ.
+@ex 休みは土曜日と日曜日です。 | Ngày nghỉ là thứ bảy và chủ nhật.
+@ex 机の上に本とペンがあります。 | Trên bàn có sách và bút.
+@ex 田中さんと山田さんは先生です。 | Anh Tanaka và anh Yamada là giáo viên.
+@theme liet-ke
+@ctx hoi-thoai
+@book minna | 4 | 5

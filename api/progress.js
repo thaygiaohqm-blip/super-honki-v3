@@ -1,4 +1,4 @@
-/* GET /api/progress?app=goi|bunpou           -> {data, rev}
+/* GET /api/progress?app=goi|bunpou|kanji           -> {data, rev}
    PUT /api/progress {data, ifRev} -> {ok:true, rev} hoặc {ok:false, rev} khi bản trên máy chủ đã mới hơn (trang web sẽ tự gộp rồi gửi lại) */
 const L = require("./_lib");
 
@@ -14,7 +14,7 @@ module.exports = async (req, res) => {
     const uid = L.readToken(req.headers.authorization);
     if (!uid) return L.send(res, 401, { error: "Phiên đăng nhập đã hết hạn." });
     const app = String((req.query && req.query.app) || new URL(req.url, "http://x").searchParams.get("app") || "bunpou");
-    if (!/^(goi|bunpou)$/.test(app)) return L.send(res, 400, { error: "Ứng dụng không hợp lệ." });
+    if (!/^(goi|bunpou|kanji)$/.test(app)) return L.send(res, 400, { error: "Ứng dụng không hợp lệ." });
     // Mỗi app một khoá riêng; Bunpou giữ khoá cũ để người đã đăng ký không mất tiến độ.
     const kd = app === "bunpou" ? "prog:" + uid : "prog:" + app + ":" + uid, kr = app === "bunpou" ? "rev:" + uid : "rev:" + app + ":" + uid;
 

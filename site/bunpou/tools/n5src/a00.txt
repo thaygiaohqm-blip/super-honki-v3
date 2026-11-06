@@ -1,0 +1,10 @@
+@level n5
+
+@group 1 | 入門 | Nhập môn | Nhóm này gồm các câu chào hỏi, cảm ơn, xin lỗi và những câu lớp học cơ bản dùng ngay từ ngày đầu (001–004).
+@group 2 | 紹介・指示 | Giới thiệu – Chỉ thị | Nhóm này gồm câu giới thiệu bản thân, hỏi đáp danh từ, từ chỉ định này/đó/kia, nơi chốn và giá cả (005–016), tương ứng bài 1–3.
+@group 3 | 時間・動作・移動 | Thời gian – Hành động – Di chuyển | Nhóm này gồm giờ giấc (017–021), đi lại, mua bán, mời rủ, công cụ, cho nhận (022–031), tương ứng bài 4–7.
+@group 4 | 形容詞・好み・存在・数量 | Tính từ – Sở thích – Tồn tại – Số lượng | Nhóm này gồm tính từ い／な (032–036), thích giỏi và lý do (037–039), tồn tại và vị trí (040–043), đếm số lượng (044–047), tương ứng bài 8–11.
+@group 5 | 過去・比較・願望・て形 | Quá khứ – So sánh – Mong muốn – Thể て | Nhóm này gồm quá khứ (048–049), so sánh (050–052), mong muốn (053–055), thể て (056–066), tương ứng bài 12–16.
+@group 6 | 否定・義務・可能・経験 | Phủ định – Nghĩa vụ – Khả năng – Kinh nghiệm | Nhóm này gồm thể ない (067–070), khả năng và trước khi (071–073), kinh nghiệm và liệt kê, thay đổi (074–076), tương ứng bài 17–19.
+@group 7 | 普通形・修飾・条件・授受 | Thể thường – Bổ nghĩa – Điều kiện – Cho nhận | Nhóm này gồm thể thường (077–078), ý kiến và dẫn lời (079–082), bổ nghĩa danh từ (083), とき・と (084–085), cho nhận (086–088), điều kiện (089–091), tương ứng bài 20–25.
+

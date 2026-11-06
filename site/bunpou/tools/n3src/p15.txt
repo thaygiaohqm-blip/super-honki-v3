@@ -1,0 +1,315 @@
+@p 100 | ～と…た／～たら…た（発見）
+@group 17
+@mean Khi ... thì (phát hiện ra) ...
+@core Làm hành động A thì nhận ra sự việc đã có sẵn B.
+@form 動詞 辞書形 ＋ と ・ 動詞 た形 ＋ ら
+@exp 「～の動作をすることで、…という事実に気がついた」. Vế sau 「…」 là trạng thái đã có từ trước, hay dùng 「～ていた」, hơi bất ngờ. Chủ ngữ hai vế khác nhau.
+@ex プレゼントを開けると、人形が入っていた。 | Mở món quà ra thì thấy trong đó có con búp bê.
+@ex 玄関を出ると、そこに大男が数人いた。 | Vừa ra cửa thì thấy mấy gã to con đứng đó.
+@ex 窓の外を見たら、真っ白な雪景色だった。 | Nhìn ra ngoài cửa sổ thì thấy cảnh tuyết trắng xóa.
+@cmp ～と…た（継起） | N3 | Mẫu này là phát hiện bất ngờ; mẫu kia là hai hành động liên tiếp của cùng chủ ngữ.
+@note Vế sau không phải ý chí của người nói.
+@theme thoi-gian, ket-qua
+@ctx hoi-thoai, van-hoc
+@book shin-n3 | H | 1
+
+@p 101 | ～ていると…た／～ていたら…た（偶然）
+@group 17
+@mean Đang ... thì tình cờ ...
+@core Trong lúc đang làm A thì tình cờ xảy ra B.
+@form 動詞 ている ＋ と ・ 動詞 ていたら
+@exp 「～の動作をしているときに、偶然…が起こった」. Vế sau là câu động từ không có ý chí của người nói, thường là điều bất ngờ.
+@ex 夜12時ごろテレビを見ていると、アメリカの友だちから電話がかかってきた。 | Khoảng 12 giờ đêm đang xem tivi thì bạn bên Mỹ gọi điện.
+@ex コーヒーショップでマキさんのうわさをしていると、偶然マキさんが入ってきた。 | Đang bàn tán về Maki ở quán cà phê thì tình cờ chị Maki bước vào.
+@ex 庭の掃除をしていたら、突然大雨が降り出した。 | Đang dọn vườn thì đột nhiên mưa to.
+@cmp ～と…た（発見） | N3 | Mẫu này chỉ sự việc xảy ra trong lúc đang làm.
+@note 
+@theme thoi-gian
+@ctx hoi-thoai, van-hoc
+@book shin-n3 | H | 2
+
+@p 102 | ～と…た／～たら…た（きっかけ）
+@group 17
+@mean Hễ ... thì (kết quả xảy ra)
+@core Hành động A là nguyên nhân/duyên cớ dẫn đến kết quả B.
+@form 動詞 辞書形 ＋ と ・ 動詞 た形 ＋ ら
+@exp 「～の動作がきっかけになって、…が起こった」. Vế sau là câu động từ, không có ý chí của người nói.
+@ex 久しぶりに高校の先生に手紙を出すと、すぐに返事が来た。 | Lâu lắm mới gửi thư cho thầy giáo cấp ba thì thầy hồi âm ngay.
+@ex 箱を開けると、おもちゃが飛び出した。 | Vừa mở hộp ra thì đồ chơi bật ra.
+@ex 料理にちょっとお酒を入れてみたら、いい味になった。 | Thử cho chút rượu vào món ăn thì vị ngon hẳn lên.
+@cmp ～と…た（継起） | N3 | 「と」 hai hành động liên tiếp của cùng chủ ngữ.
+@note 
+@theme thoi-gian, ket-qua
+@ctx hoi-thoai
+@book shin-n3 | H | 3
+
+@p 103 | ～と…た（継起）
+@group 17
+@mean Vừa ... xong thì liền ...
+@core Cùng chủ ngữ, làm A xong làm B ngay sau đó.
+@form 動詞 辞書形 ＋ と
+@exp 「～の動作の後、続けてすぐ…した」. Chủ ngữ của vế trước và vế sau giống nhau.
+@ex その男はわたしの顔を見ると、すぐに逃げていってしまった。 | Người đàn ông đó vừa nhìn thấy mặt tôi là bỏ chạy ngay.
+@ex 先生は教室に入ってくると、すぐ試験問題を配り始めた。 | Thầy vừa vào lớp là phát đề thi ngay.
+@ex ゆき子は飛行機から降りると、どこかに電話をかけた。 | Yukiko vừa xuống máy bay là gọi điện đi đâu đó.
+@cmp ～と…た（発見） | N3 | Mẫu 100: chủ ngữ khác nhau, bất ngờ.
+@note 
+@theme thoi-gian
+@ctx hoi-thoai, van-hoc
+@book shin-n3 | H | 4
+
+@p 104 | ～も…ば～も…／～も…なら～も…
+@group 17
+@mean Vừa ... lại vừa ... / Cả ... lẫn ...
+@core Liệt kê hai điều (thường cùng chiều hoặc tương phản) bằng hai lần 「も」.
+@form 名詞 ＋ も ＋ 動詞 ば形・イ形容詞 ければ・ナ形容詞 なら・名詞 なら ＋ 名詞 ＋ も
+@exp 「～も…し、～も…」. Dùng 「も」 hai lần để nêu cả hai mặt.
+@ex 人生には楽しい時もあればつらい時もある。 | Cuộc đời có lúc vui và cũng có lúc khổ.
+@ex 妻はお酒もよく飲めば甘い物もたくさん食べる。 | Vợ tôi vừa uống rượu giỏi lại vừa ăn nhiều đồ ngọt.
+@ex そんな人、会ったこともなければ名前を聞いたこともありません。 | Người đó thì tôi chưa gặp bao giờ và cũng chưa nghe tên.
+@ex 松本さんは趣味が多い。スポーツも好きならピアノも弾くらしい。 | Anh Matsumoto có nhiều sở thích. Vừa thích thể thao lại hình như chơi cả piano.
+@ex 前回も雨なら今回も雨か……。ぼくたちの旅行はいつも運が悪いね。 | Lần trước mưa, lần này cũng mưa à... Chuyến đi của chúng ta lúc nào cũng xui.
+@cmp ～し、～し | N4 | Nghĩa tương đương; 「も…ば～も」 trang trọng hơn.
+@note 
+@theme liet-ke
+@ctx hoi-thoai
+@book shin-n3 | H | 5
+
+@p 105 | 仮定を表す～たら／～ば／～と（注意）
+@group 17
+@mean Chú ý khi dùng たら・ば・と làm giả định
+@core 「と」 và 「ば」 không dùng với vế sau là ý chí, đề nghị của người nói; 「たら」 thì dùng được.
+@form 動詞 たら・ば・と
+@exp Vế sau của 「～たら」 có thể là câu bất kỳ. Với 「～ば／～と」 mà vế trước là động từ chuyển động thì vế sau không dùng ý chí hay tác động của người nói. Với vế trước là tính từ, trạng thái (ある・いる・できる) thì 「ば／たら」 dùng được cả ý chí, còn 「と」 thì không.
+@ex 大雪が降ったら家にいよう。 | Nếu tuyết rơi nhiều thì ở nhà thôi.
+@ex お金があれば車を買いたい。 | Nếu có tiền thì tôi muốn mua xe.
+@ex お金があると／あれば車が買える。 | Nếu có tiền thì mua được xe.
+@cmp ～たら | N4 | Cách dùng linh hoạt nhất trong ba mẫu.
+@note Cách dùng sai: 「大雪が降ると家にいよう」「お金があると車を買うつもりだ」.
+@theme dieu-kien
+@ctx hoi-thoai
+@book shin-n3 | H | 6
+
+@p 106 | 全く／少しも／そんなに／そう／たいして／決して／めったに～ない
+@group 18
+@mean Hoàn toàn không / Không ... lắm / Tuyệt đối không / Hiếm khi
+@core Nhóm phó từ luôn đi với phủ định.
+@form 全く・少しも・そんなに・そう・たいして・決して・めったに ＋ ～ない
+@exp Các phó từ này chỉ đi cùng dạng phủ định 「～ない」. 全く／少しも: hoàn toàn không; そんなに／そう／たいして: không ... lắm; 決して: tuyệt đối không; めったに: hiếm khi.
+@ex 母は英語が全くわからない。 | Mẹ tôi hoàn toàn không hiểu tiếng Anh.
+@ex この町は10年前と少しも変わっていない。 | Thị trấn này không hề thay đổi so với 10 năm trước.
+@ex この問題はそんなに難しくないです。 | Bài này không khó đến thế.
+@ex 病気のことはそう心配する必要はない。 | Không cần lo lắng quá về bệnh.
+@ex そのニュースはたいして重要ではなかった。 | Tin đó không quan trọng lắm.
+@ex このことは決して人には言わないでください。 | Chuyện này tuyệt đối đừng nói với ai.
+@ex わたしはめったに外で食事しない。 | Tôi hiếm khi ăn ngoài.
+@cmp ～しか～ない | N4 | 「しか」 cũng đi với phủ định.
+@note 
+@theme pham-vi
+@ctx hoi-thoai
+@book shin-n3 | I | 1
+
+@p 107 | すでに（～た／～ている／～てある）
+@group 18
+@mean Đã ... rồi
+@core 「すでに」 đi với thể quá khứ hoặc trạng thái hoàn thành.
+@form すでに ＋ ～た・～ている・～てある
+@exp 「すでに」: đã xong từ trước.
+@ex この問題はすでに解決した。 | Vấn đề này đã được giải quyết rồi.
+@ex すでに食事の準備はできている。 | Bữa ăn đã chuẩn bị xong.
+@ex ホテルはすでに予約してある。 | Khách sạn đã được đặt trước rồi.
+@cmp もう | N5 | 「すでに」 trang trọng hơn.
+@note 
+@theme thoi-gian
+@ctx van-ban
+@book shin-n3 | I | 2
+
+@p 108 | 少しずつ／次第に／ますます（biến đổi）
+@group 18
+@mean Từng chút một / Dần dần / Ngày càng
+@core Đi với động từ chỉ biến đổi (～なる, 増える, やせる…).
+@form 少しずつ・次第に・ますます ＋ 変化を表す動詞
+@exp Dùng với động từ chỉ sự thay đổi dần theo thời gian.
+@ex 庭に植えた木が少しずつ大きくなってきた。 | Cây trồng ngoài vườn lớn dần từng chút một.
+@ex 秋になると、木の葉が次第に色づく。 | Khi vào thu, lá cây dần đổi màu.
+@ex 世界の人口はますます増えている。 | Dân số thế giới ngày càng tăng.
+@cmp だんだん | N4 | Nghĩa gần; 「ますます」 nhấn mạnh sự tăng thêm.
+@note 
+@theme trang-thai
+@ctx hoi-thoai, van-ban
+@book shin-n3 | I | 3
+
+@p 109 | そのうちに／今に（～だろう）
+@group 18
+@mean Chẳng bao lâu nữa / Rồi sẽ ...
+@core Dùng với động từ chỉ sự việc sẽ xảy ra (thường không dùng quá khứ).
+@form そのうち・今に ＋ 動作を表す動詞（普通は過去形は使わない）
+@exp Diễn tả sự việc sẽ xảy ra trong tương lai không xa, thường không dùng thì quá khứ.
+@ex 練習すれば、そのうちできるようになるだろう。 | Nếu luyện tập thì chẳng bao lâu sẽ làm được.
+@ex 今に電気自動車がふつうになる時代が来る。 | Chẳng bao lâu nữa sẽ đến thời đại xe điện trở nên phổ biến.
+@cmp いつか | N4 | 「いつか」 là một lúc nào đó, không nói rõ.
+@note 
+@theme thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | I | 4
+
+@p 110 | もしかしたら／もしかすると（かもしれない）
+@group 18
+@mean Biết đâu ... / Có thể ...
+@core Đi với 「～かもしれない」 hoặc 「～のではないか」.
+@form もしかしたら・もしかすると ＋ ～かもしれない・～のではないか・～のではないだろうか
+@exp Nêu khả năng thấp hơn thường lệ nhưng có thể xảy ra.
+@ex もしかしたら今晩は雪になるかもしれない。 | Biết đâu tối nay sẽ có tuyết.
+@ex もしかすると山田さんはうそをついているのではないか。 | Biết đâu anh Yamada đang nói dối.
+@cmp ～かもしれない | N4 | 「かもしれない」 một mình, không có 「もしかしたら」 cũng được.
+@note 
+@theme suy-doan
+@ctx hoi-thoai
+@book shin-n3 | I | 5
+
+@p 111 | おそらく（～だろう／～と思う）
+@group 18
+@mean Có lẽ ...
+@core Phỏng đoán có độ chắc chắn khá cao.
+@form おそらく ＋ ～だろう・～と思う・～のではないか・～のではないだろうか
+@exp Dùng khi phỏng đoán điều gì đó có khả năng cao.
+@ex この仕事はおそらく今日中にできないだろう。 | Việc này có lẽ trong hôm nay không làm xong.
+@ex これはおそらく1000年ぐらい前の皿だと思う。 | Tôi nghĩ cái đĩa này có lẽ từ khoảng 1000 năm trước.
+@ex おそらく日本人のほとんどがこの歌を知っているのではないだろうか。 | Có lẽ hầu hết người Nhật đều biết bài hát này.
+@cmp たぶん | N4 | Gần nghĩa; 「おそらく」 trang trọng hơn.
+@note 
+@theme suy-doan
+@ctx van-ban
+@book shin-n3 | I | 6
+
+@p 112 | どうも（～ようだ／～らしい）
+@group 18
+@mean Có vẻ như ... (không rõ lý do)
+@core Phán đoán mơ hồ, không có căn cứ rõ ràng.
+@form どうも ＋ ～ようだ・～らしい
+@exp Diễn tả phán đoán mơ hồ ("không biết tại sao nhưng có vẻ").
+@ex どうも計算が間違っているようだ。 | Hình như phép tính bị sai thì phải.
+@ex 山口さんはどうもお酒が好きではないらしい。 | Anh Yamaguchi hình như không thích rượu.
+@cmp たぶん | N4 | 「どうも」 mơ hồ hơn, cảm giác của người nói.
+@note 
+@theme suy-doan
+@ctx hoi-thoai
+@book shin-n3 | I | 7
+
+@p 113 | 今にも（～そうだ）
+@group 18
+@mean Sắp sửa ... đến nơi
+@core Sự việc sắp xảy ra ngay lập tức.
+@form 今にも ＋ ～そうだ
+@exp Đi với 「～そうだ」 diễn tả sự việc sắp xảy ra ngay.
+@ex 空が暗くなって、今にも雨が降り出しそうだ。 | Trời tối sầm lại, mưa sắp sửa rơi đến nơi.
+@cmp ～そうだ | N4 | Dạng ý "có vẻ".
+@note 
+@theme suy-doan, thoi-gian
+@ctx hoi-thoai
+@book shin-n3 | I | 8
+
+@p 114 | まるで／ちょうど（～ようだ／～みたいだ）
+@group 18
+@mean Cứ như là ... / Đúng như là ...
+@core So sánh ví von.
+@form まるで・ちょうど ＋ ～ようだ・～みたいだ
+@exp Dùng cùng 「ようだ／みたいだ」 để ví von.
+@ex この人形はまるで生きているようだ。 | Con búp bê này cứ như đang sống vậy.
+@ex 二つの点がちょうど目みたいに見える。 | Hai điểm đó trông giống hệt đôi mắt.
+@cmp ～ようだ | N3 | Xem bài D.
+@note 
+@theme so-sanh
+@ctx hoi-thoai
+@book shin-n3 | I | 9
+
+@p 115 | ぜひ／なんとかして（～てください／～たい／～てほしい）
+@group 18
+@mean Nhất định ... / Bằng mọi cách ...
+@core Biểu thị nguyện vọng mạnh, đi với câu mong muốn, nhờ vả.
+@form ぜひ・なんとかして ＋ ～てください・～たい・～てほしい
+@exp Dùng với câu thể hiện nguyện vọng, yêu cầu.
+@ex ぜひ今度わたしの国に遊びに来てください。 | Nhất định lần tới hãy đến chơi nước tôi nhé.
+@ex ぜひ先生のお話をお聞きしたいです。 | Tôi rất muốn được nghe thầy nói chuyện.
+@ex 今度の実験はなんとかして成功させたい。 | Lần thí nghiệm tới tôi muốn bằng mọi cách làm cho thành công.
+@ex なんとかしてこの人を捜してほしい。 | Mong anh bằng mọi cách tìm người này.
+@cmp どうか | N3 | 「どうか」 dùng khi nhờ vả khẩn thiết.
+@note 
+@theme y-chi, cho-nhan
+@ctx hoi-thoai
+@book shin-n3 | I | 10
+
+@p 116 | どうか（～てください／～てほしい）
+@group 18
+@mean Xin hãy ... (nhờ vả khẩn thiết)
+@core Dùng khi nhờ vả, cầu xin lịch sự và khẩn thiết.
+@form どうか ＋ ～てください・～てほしい
+@exp Mang sắc thái cầu xin.
+@ex どうかわたしの失敗を許してください。 | Xin hãy tha thứ cho lỗi lầm của tôi.
+@ex いい方法があるなら、どうか教えてほしい。 | Nếu có cách hay, xin hãy chỉ cho tôi.
+@cmp ぜひ | N3 | 「ぜひ」 nhấn mạnh nguyện vọng; 「どうか」 nhấn mạnh sự cầu xin.
+@note 
+@theme y-chi, cho-nhan
+@ctx hoi-thoai
+@book shin-n3 | I | 11
+
+@p 117 | もしも／万一（～ば／～たら／～なら／～場合は／～ても）
+@group 18
+@mean Nếu ... (giả định) / Lỡ mà ...
+@core Giả định về điều ít khi xảy ra.
+@form もしも・万一・万が一 ＋ ～ば・～たら・～なら・～場合は・～ても／でも
+@exp Nêu điều kiện giả định. 「万一／万が一」 nhấn mạnh khả năng rất thấp.
+@ex もしも熱が下がらなければ、この薬を飲む。 | Nếu sốt không hạ thì uống thuốc này.
+@ex もしも選べるなら、男に生まれたかった。 | Nếu được chọn, tôi muốn sinh ra làm đàn ông.
+@ex 万一問題がある場合は、相談してください。 | Nếu lỡ có vấn đề thì hãy trao đổi nhé.
+@ex 万一お金が足りなくても、カードで払える。 | Lỡ thiếu tiền cũng thanh toán bằng thẻ được.
+@ex 万が一大雨でも、試合は行います。 | Lỡ có mưa to thì trận đấu vẫn diễn ra.
+@cmp もし | N4 | 「もしも」 nhấn mạnh hơn.
+@note 
+@theme dieu-kien
+@ctx hoi-thoai
+@book shin-n3 | I | 12
+
+@p 118 | どんなに／いくら／たとえ（～ても／～でも）
+@group 18
+@mean Dù thế nào đi nữa ...
+@core Đi với 「～ても／でも」 chỉ nghịch tiếp.
+@form どんなに・いくら・たとえ ＋ ～ても・～でも
+@exp Dùng với 「～ても」 để nhấn mạnh mức độ nhượng bộ.
+@ex どんなに好きな物でも、毎日食べればあきる。 | Dù thích đến mấy, ngày nào cũng ăn thì cũng chán.
+@ex いくらがんばっても、これ以上速く走れない。 | Dù cố gắng thế nào cũng không chạy nhanh hơn được.
+@ex この時計は、たとえ水中に落としても大丈夫だ。 | Cái đồng hồ này dù rơi xuống nước cũng không sao.
+@cmp たとえ～ても | N3 | Xem bài 6.
+@note 
+@theme nghich-tiep
+@ctx hoi-thoai
+@book shin-n3 | I | 13
+
+@p 119 | せっかく（～のに／～ても／～のだから）
+@group 18
+@mean Mất công ... / Khó khăn lắm mới ...
+@core Nhấn mạnh công sức, cơ hội quý.
+@form せっかく ＋ ～のに・～ても／でも・～のだから
+@exp Đi với 「のに／ても」 (kết quả không như mong đợi) hoặc 「のだから」 (hãy tận dụng cơ hội).
+@ex せっかく宿題をやったのに、家に忘れてきた。 | Mất công làm bài tập vậy mà lại để quên ở nhà.
+@ex せっかく料理を作っても、食べてもらえない。 | Dù mất công nấu ăn cũng không ai ăn.
+@ex せっかく温泉に来たのだから、のんびりしたい。 | Khó khăn lắm mới đến suối nước nóng nên muốn thư giãn.
+@cmp ～のに | N4 | 「せっかく」 nhấn mạnh sự tiếc nuối.
+@note 
+@theme bat-chap, cam-xuc
+@ctx hoi-thoai
+@book shin-n3 | I | 14
+
+@p 120 | ただ（～だけ）
+@group 18
+@mean Chỉ ...
+@core Đi với 「～だけ」 để nhấn mạnh sự giới hạn.
+@form ただ ＋ ～だけ
+@exp Dùng cùng 「だけ」 để nhấn mạnh "chỉ".
+@ex わたしの願いはただ一つだけだ。 | Điều ước của tôi chỉ có một.
+@cmp ～だけ | N4 | 「ただ」 làm mạnh thêm.
+@note 
+@theme pham-vi
+@ctx hoi-thoai
+@book shin-n3 | I | 15
+

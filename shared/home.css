@@ -18,6 +18,7 @@ a{color:inherit}img{max-width:100%}
 .nav__in>.hk-tools{margin-left:auto}
 .nav__links a{padding:8px 14px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px;opacity:.85}
 .nav__links a:hover{opacity:1;background:rgba(255,255,255,.1)}
+.nav__links a.nav__feat{opacity:1;background:var(--red);color:#fff;font-weight:800;box-shadow:0 0 0 2px rgba(255,255,255,.25),0 4px 14px rgba(0,0,0,.25);padding:8px 18px}.nav__links a.nav__feat:hover{background:var(--redk,#c0262d);transform:translateY(-1px)}
 .nav__cta{padding:9px 18px;font-size:14px;box-shadow:0 4px 0 var(--redk)}
 @media(max-width:760px){.nav__links{display:none}}
 
@@ -42,8 +43,10 @@ h1 em{font-style:italic;color:#ff8d8d;font-family:var(--jp);font-weight:800;disp
 .kicker{display:inline-block;font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--redk);margin:0 0 10px}
 .kicker--lt{color:#ff9b9b}
 h2{font-size:clamp(26px,4vw,42px);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin:0 0 32px;max-width:20em}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-@media(max-width:900px){.cards{grid-template-columns:1fr}}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:1180px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.cards{grid-template-columns:1fr}}
+.card--gemu{background:linear-gradient(160deg,#fff,#fff1e6);border-color:var(--red)}.card--gemu .card__tag{background:var(--red)}
 .card{position:relative;display:flex;flex-direction:column;background:#fff;border:2px solid var(--teal);border-radius:22px;padding:26px 24px 22px;text-decoration:none;box-shadow:8px 8px 0 var(--teal);transition:transform .18s,box-shadow .18s;overflow:hidden}
 a.card:hover{transform:translate(-3px,-3px);box-shadow:12px 12px 0 var(--red)}
 .card__tag{align-self:flex-start;font-size:12px;font-weight:800;background:var(--teal);color:var(--cream);padding:4px 11px;border-radius:999px}
@@ -169,3 +172,5 @@ html[data-theme="yoru"] .donate__card,html[data-theme="yoru"] .sec--connect .lin
 html[data-theme="yoru"] .bank div{background:#0f1a1d}html[data-theme="yoru"] .acc{color:#fff}
 @media(prefers-reduced-motion:reduce){.donate__mascot,.donate__done .heart{animation:none!important}}
 section[id]{scroll-margin-top:76px}
+
+.btn--game{background:linear-gradient(135deg,#ffd23f,#f08a00);color:#3a2400;font-weight:800;border:2px solid #fff3;box-shadow:0 6px 0 rgba(0,0,0,.25);animation:gpulse 2.4s infinite}.btn--game:hover{transform:translateY(-2px)}@keyframes gpulse{50%{box-shadow:0 6px 0 rgba(0,0,0,.25),0 0 0 8px rgba(255,210,63,.25)}}

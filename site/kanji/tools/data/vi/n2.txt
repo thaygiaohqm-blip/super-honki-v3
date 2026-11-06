@@ -1,0 +1,503 @@
+配|PHỐI|Phân phối; chia; lo liệu
+届|GIỚI|Gửi đến; báo cáo
+渡|ĐỘ|Qua; giao; đưa
+券|KHOÁN|Vé; phiếu
+招|CHIÊU|Mời; vẫy gọi
+贈|TẶNG|Tặng
+含|HÀM|Bao gồm; ngậm
+混|HỖN|Trộn lẫn; hỗn
+溶|DUNG|Hòa tan
+汁|TRẤP|Nước; nước canh
+丼|—|Tô cơm; bát lớn
+盛|THỊNH|Thịnh vượng; múc đầy
+契|KHẾ|Hợp đồng; giao ước
+越|VIỆT|Vượt qua; chuyển nhà
+賃|NHẪM|Tiền thuê; tiền công
+仮|GIẢ|Tạm thời; giả
+証|CHỨNG|Chứng minh; bằng chứng
+域|VỰC|Khu vực; vùng
+雑|TẠP|Hỗn tạp; tạp
+誌|CHÍ|Ghi chép; tạp chí
+刊|SAN|Xuất bản; ấn hành
+並|TỊNH|Xếp hàng; sắp xếp
+巻|QUYỂN|Cuốn; cuộn
+著|TRỨ|Viết; tác phẩm; nổi bật
+居|CƯ|Ở; cư trú
+庭|ĐÌNH|Vườn; sân
+清|THANH|Trong sạch
+掃|TẢO|Quét
+整|CHỈNH|Chỉnh lý; sắp xếp
+汚|Ô|Bẩn; ô uế
+駐|TRÚ|Đỗ; đóng quân
+輪|LUÂN|Bánh xe; vòng
+港|CẢNG|Hải cảng
+到|ĐÁO|Đến; đạt tới
+途|ĐỒ|Đường; dọc đường
+過|QUÁ|Quá; đi qua
+符|PHÙ|Dấu; ký hiệu; bùa
+停|ĐÌNH|Dừng; đình chỉ
+標|TIÊU|Biển hiệu; mục tiêu
+普|PHỔ|Phổ biến
+刻|KHẮC|Khắc; thời khắc
+違|VI|Khác; sai; vi phạm
+漁|NGƯ|Đánh cá
+輸|THÂU|Vận chuyển; xuất nhập
+製|CHẾ|Chế tạo
+郵|BƯU|Bưu điện
+航|HÀNG|Đi thuyền; hàng không
+融|DUNG|Hòa tan; lưu thông
+戻|LỆ|Trở lại; quay về
+換|HOÁN|Đổi
+払|PHẤT|Trả tiền; phủi
+込|—|Đưa vào; chứa; đông đúc
+両|LƯỠNG|Cả hai; lượng (Nhật)
+替|THẾ|Thay; đổi
+照|CHIẾU|Chiếu sáng; đối chiếu
+預|DỰ|Gửi; trông giữ
+札|TRÁT|Tờ giấy; tiền giấy; thẻ
+貨|HÓA|Hàng hóa; tiền tệ
+帳|TRƯƠNG|Sổ; màn
+振|CHẤN|Vung; rung; chuyển khoản
+桜|ANH|Hoa anh đào
+梅|MAI|Hoa mơ; cây mận
+松|TÙNG|Cây thông
+杉|SAM|Cây tuyết tùng Nhật
+美|MỸ|Đẹp
+香|HƯƠNG|Hương thơm
+脱|THOÁT|Cởi; thoát
+掛|QUẢI|Treo; móc
+姿|TƯ|Dáng vẻ
+勢|THẾ|Thế; khí thế
+柔|NHU|Mềm mại
+軟|NHUYỄN|Mềm
+固|CỐ|Cứng; vững chắc
+純|THUẦN|Thuần khiết
+快|KHOÁI|Dễ chịu; nhanh
+甘|CAM|Ngọt
+濃|NÙNG|Đậm; nồng
+薄|BẠC|Mỏng; nhạt
+劇|KỊCH|Kịch; dữ dội
+舞|VŨ|Múa
+堂|ĐƯỜNG|Sảnh; điện đường
+展|TRIỂN|Triển khai; trưng bày
+宗|TÔN|Tông phái; tôn giáo
+恵|HUỆ|Ơn huệ; phước lành
+宝|BẢO|Bảo vật; kho báu
+城|THÀNH|Thành; lâu đài
+栄|VINH|Vinh quang; thịnh vượng
+蔵|TÀNG|Kho; cất giữ
+昭|CHIÊU|Sáng; Chiêu Hòa
+士|SĨ|Người có học; võ sĩ
+健|KIỆN|Khỏe mạnh
+康|KHANG|Khỏe; yên ổn
+診|CHẨN|Khám bệnh
+療|LIỆU|Chữa trị
+命|MỆNH|Mạng sống; mệnh lệnh
+異|DỊ|Khác; lạ
+背|BỐI|Lưng; chiều cao
+腹|PHÚC|Bụng
+肩|KIÊN|Vai
+腕|OẢN|Cánh tay; tay nghề
+胸|HUNG|Ngực
+腰|YÊU|Eo; thắt lưng
+脳|NÃO|Não
+臓|TẠNG|Nội tạng
+胃|VỊ|Dạ dày
+筋|CÂN|Cơ; gân
+骨|CỐT|Xương
+節|TIẾT|Đốt; tiết; mùa
+症|CHỨNG|Triệu chứng; bệnh
+状|TRẠNG|Hình trạng; thư
+因|NHÂN|Nguyên nhân
+況|HUỐNG|Tình hình
+態|THÁI|Thái độ; dáng vẻ
+圧|ÁP|Áp lực; đè
+傷|THƯƠNG|Vết thương; làm tổn thương
+処|XỬ|Xử lý; nơi
+触|XÚC|Chạm; xúc giác
+針|CHÂM|Kim; cây kim
+抜|BẠT|Rút ra; vượt trội
+完|HOÀN|Hoàn thành; trọn vẹn
+忙|MANG|Bận rộn
+疲|BÌ|Mệt mỏi
+慣|QUÁN|Quen
+競|CẠNH|Cạnh tranh; thi đua
+養|DƯỠNG|Nuôi dưỡng
+兼|KIÊM|Kiêm; kết hợp
+就|TỰU|Đi vào; nhậm chức
+従|TÙNG|Theo; tuân theo
+応|ỨNG|Đáp ứng; ứng phó
+訪|PHÓNG|Thăm viếng
+課|KHÓA|Bài; khóa; phòng ban
+論|LUẬN|Bàn luận; luận
+採|THẢI|Hái; tuyển dụng
+募|MỘ|Chiêu mộ; kêu gọi
+雇|CỔ|Thuê (người)
+適|THÍCH|Thích hợp
+般|BAN|Chung; loại
+総|TỔNG|Tổng; toàn bộ
+企|XÍ|Dự định; xí nghiệp
+案|ÁN|Phương án; đề án
+依|Y|Dựa vào; nhờ cậy
+頼|LẠI|Nhờ cậy; tin cậy
+比|TỶ|So sánh
+較|GIÁO|So sánh
+評|BÌNH|Bình luận; đánh giá
+価|GIÁ|Giá; giá trị
+改|CẢI|Cải; sửa đổi
+善|THIỆN|Thiện; tốt
+勤|CẦN|Làm việc; chuyên cần
+務|VỤ|Nhiệm vụ; làm việc
+営|DOANH|Kinh doanh
+景|CẢNH|Cảnh; cảnh tượng
+資|TƯ|Tư bản; tài nguyên
+益|ÍCH|Lợi ích
+株|CHU|Cổ phiếu; gốc cây
+債|TRÁI|Nợ; trái phiếu
+販|PHÁN|Bán
+購|CẤU|Mua
+値|TRỊ|Giá; giá trị
+額|NGẠCH|Trán; số tiền
+財|TÀI|Tài sản; của cải
+納|NẠP|Nộp; cất giữ
+増|TĂNG|Tăng
+減|GIẢM|Giảm
+損|TỔN|Tổn thất; thua lỗ
+得|ĐẮC|Được; lợi
+拡|KHUẾCH|Mở rộng
+縮|SÚC|Co lại; rút ngắn
+略|LƯỢC|Lược; chiến lược
+充|SUNG|Đầy đủ; bổ sung
+加|GIA|Thêm; cộng
+除|TRỪ|Loại trừ; trừ
+余|DƯ|Thừa; còn lại
+片|PHIẾN|Một mảnh; một bên
+裏|LÝ|Mặt sau; bên trong
+幅|PHÚC|Chiều rộng; khổ
+版|BẢN|Bản in; xuất bản
+章|CHƯƠNG|Chương; huy chương
+毒|ĐỘC|Độc
+殺|SÁT|Giết
+責|TRÁCH|Trách nhiệm; trách
+逃|ĐÀO|Trốn; chạy thoát
+暴|BẠO|Bạo lực; dữ dội
+恐|KHỦNG|Sợ; e rằng
+緊|KHẨN|Căng thẳng; khẩn
+張|TRƯƠNG|Căng; giăng
+破|PHÁ|Phá; rách
+割|CÁT|Cắt; chia; tỷ lệ
+別|BIỆT|Chia tay; khác
+離|LY|Rời; ly biệt
+印|ẤN|Dấu; con dấu; ấn tượng
+象|TƯỢNG|Con voi; hình tượng
+与|DỮ|Cho; trao
+齢|LINH|Tuổi
+籍|TỊCH|Hộ tịch; quốc tịch
+際|TẾ|Dịp; khi; biên giới
+遊|DU|Chơi
+誘|DỤ|Mời; dụ dỗ
+勧|KHUYẾN|Khuyên; khuyến khích
+寄|KÝ|Ghé; gửi; tiến sát
+迷|MÊ|Lạc đường; do dự
+占|CHIẾM|Chiếm; bói toán
+周|CHU|Xung quanh; chu vi
+囲|VI|Bao quanh
+協|HIỆP|Hợp tác
+互|HỖ|Lẫn nhau
+共|CỘNG|Cùng; chung
+我|NGÃ|Ta; bản thân
+皆|GIAI|Mọi người; tất cả
+緒|TỰ|Sợi chỉ; đầu mối
+援|VIỆN|Giúp đỡ; viện trợ
+精|TINH|Tinh túy; tinh thần
+抱|BÃO|Ôm; ấp ủ
+氏|THỊ|Họ; ngài
+尊|TÔN|Tôn kính
+敬|KÍNH|Kính trọng
+申|THÂN|Nói; xin; thân
+参|THAM|Đi tới; tham gia
+致|TRÍ|Đạt tới; làm
+御|NGỰ|Kính ngữ; ngự
+沖|XUNG|Ngoài khơi
+浜|BANG|Bãi biển
+江|GIANG|Cửa sông; vịnh
+層|TẦNG|Tầng lớp
+砂|SA|Cát
+泉|TUYỀN|Suối
+源|NGUYÊN|Nguồn
+浮|PHÙ|Nổi
+沈|TRẦM|Chìm
+井|TỈNH|Giếng
+沢|TRẠCH|Đầm; suối; xa hoa
+宇|VŨ|Mái nhà; vũ trụ
+宙|TRỤ|Không gian; bầu trời
+環|HOÀN|Vòng; hoàn cảnh
+境|CẢNH|Biên giới; cảnh ngộ
+極|CỰC|Cực; tột cùng
+昇|THĂNG|Lên; thăng
+災|TAI|Tai họa
+害|HẠI|Hại
+震|CHẤN|Rung chuyển; động đất
+防|PHÒNG|Phòng chống
+影|ẢNH|Bóng; hình
+響|HƯỞNG|Vang; ảnh hưởng
+講|GIẢNG|Giảng bài
+義|NGHĨA|Nghĩa; ý nghĩa
+導|ĐẠO|Dẫn dắt
+専|CHUYÊN|Chuyên; chuyên môn
+限|HẠN|Giới hạn
+修|TU|Tu sửa; học
+述|THUẬT|Thuật lại; nói
+将|TƯƠNG|Tướng; sắp sửa
+博|BÁC|Uyên bác; rộng
+策|SÁCH|Kế sách; biện pháp
+詩|THI|Thơ
+基|CƠ|Nền tảng; cơ bản
+条|ĐIỀU|Điều khoản; cành
+令|LỆNH|Mệnh lệnh
+司|TƯ|Phụ trách; quản lý
+制|CHẾ|Chế độ; chế ngự
+省|TỈNH|Bộ; tiết kiệm; xem xét
+庁|SẢNH|Cơ quan; sảnh
+警|CẢNH|Cảnh sát; cảnh báo
+察|SÁT|Quan sát; đoán
+署|THỰ|Sở; đồn; ký tên
+捕|BỔ|Bắt
+乱|LOẠN|Hỗn loạn
+党|ĐẢNG|Đảng
+民|DÂN|Dân
+挙|CỬ|Giơ lên; bầu cử
+委|ỦY|Giao phó; ủy
+権|QUYỀN|Quyền
+票|PHIẾU|Phiếu bầu
+攻|CÔNG|Tấn công
+撃|KÍCH|Đánh; bắn
+爆|BỘC|Nổ; bom
+討|THẢO|Thảo phạt; thảo luận
+射|XẠ|Bắn
+武|VŨ|Võ; quân sự
+畳|ĐIỆP|Chiếu tatami; gấp
+床|SÀNG|Sàn; giường
+軒|HIÊN|Mái hiên; (đếm nhà)
+玄|HUYỀN|Huyền bí; cổng chính
+壁|BÍCH|Tường
+廊|LANG|Hành lang
+寮|LIÊU|Ký túc xá
+隣|LÂN|Hàng xóm; bên cạnh
+敷|PHU|Trải; lát
+狭|HIỆP|Hẹp
+荘|TRANG|Biệt thự; trang nghiêm
+封|PHONG|Phong; niêm phong
+筒|ĐỒNG|Ống
+歳|TUẾ|Tuổi; năm
+暮|MỘ|Chiều tối; sống; cuối năm
+宛|UYỂN|Gửi đến (địa chỉ)
+菓|QUẢ|Bánh kẹo
+詰|CẬT|Nhồi; đóng đầy
+瓶|BÌNH|Chai; bình
+粒|LẠP|Hạt; viên
+酢|THỐ|Giấm
+糖|ĐƯỜNG|Đường (ngọt)
+辛|TÂN|Cay; cực nhọc
+渋|SÁP|Chát; trầm
+滞|TRỆ|Đình trệ; ứ đọng
+街|NHAI|Phố; đường phố
+往|VÃNG|Đi; qua lại
+距|CỰ|Khoảng cách
+灯|ĐĂNG|Đèn
+携|HUỀ|Mang theo; cầm
+即|TỨC|Ngay; tức thì
+稼|GIÀ|Kiếm tiền; làm việc
+需|NHU|Nhu cầu; cần
+拒|CỰ|Từ chối; cự
+厳|NGHIÊM|Nghiêm khắc
+刷|LOÁT|In; chải
+枠|—|Khung; hạn mức
+縦|TUNG|Chiều dọc; buông thả
+斜|TÀ|Xiên; nghiêng
+端|ĐOAN|Đầu mút; mép
+隅|NGUNG|Góc
+堅|KIÊN|Cứng; vững
+硬|NGẠNH|Cứng
+鋭|NHUỆ|Sắc bén
+鈍|ĐỘN|Cùn; chậm chạp
+詳|TƯỜNG|Chi tiết
+簡|GIẢN|Đơn giản; giản lược
+潔|KHIẾT|Trong sạch; gọn
+頑|NGOAN|Cứng đầu; ngoan cố
+勇|DŨNG|Dũng cảm
+賢|HIỀN|Hiền; khôn ngoan
+偉|VĨ|Vĩ đại
+珍|TRÂN|Quý hiếm; lạ
+肌|CƠ|Da
+粧|TRANG|Trang điểm
+髪|PHÁT|Tóc
+脚|CƯỚC|Chân; cẳng
+華|HOA|Hoa lệ; rực rỡ
+鏡|KÍNH|Gương
+帽|MẠO|Mũ
+傘|TẢN|Ô; dù
+革|CÁCH|Da thuộc; cải cách
+靴|NGOA|Giày
+柄|BÍNH|Cán; họa tiết
+装|TRANG|Trang phục; trang bị
+睡|THỤY|Ngủ
+眠|MIÊN|Ngủ; giấc ngủ
+喫|KHIẾT|Ăn; hút
+煙|YÊN|Khói
+脂|CHI|Mỡ; chất béo
+肪|PHƯƠNG|Mỡ; chất béo
+妊|NHÂM|Có thai
+娠|THẦN|Mang thai
+双|SONG|Cặp; đôi
+誕|ĐẢN|Sinh ra; nói dối
+脈|MẠCH|Mạch; mạch máu
+拍|PHÁCH|Vỗ; nhịp
+看|KHÁN|Xem; chăm sóc
+患|HOẠN|Bệnh; bệnh nhân
+視|THỊ|Nhìn; thị
+眼|NHÃN|Mắt
+舌|THIỆT|Lưỡi
+刺|THÍCH|Đâm; gai
+菌|KHUẨN|Vi khuẩn; nấm
+剤|TẾ|Thuốc; chế phẩm
+咲|TIẾU|Nở (hoa)
+枯|KHÔ|Khô héo
+散|TÁN|Tản; rơi rụng
+飾|SỨC|Trang trí
+菊|CÚC|Hoa cúc
+枝|CHI|Cành; nhánh
+紺|CÀM|Xanh đậm
+紫|TỬ|Tím
+紅|HỒNG|Đỏ thắm
+灰|HÔI|Tro; xám
+鮮|TIÊN|Tươi; rực rỡ
+彩|THẢI|Màu sắc; tô màu
+飼|TỰ|Nuôi (thú)
+畜|SÚC|Gia súc
+猫|MIÊU|Mèo
+羊|DƯƠNG|Cừu; dê
+豚|ĐỒN|Lợn
+巣|SÀO|Tổ; hang
+放|PHÓNG|Thả; buông
+牧|MỤC|Chăn nuôi; mục
+滝|LANG|Thác nước
+沼|CHIỂU|Đầm lầy
+滴|TRÍCH|Giọt; nhỏ giọt
+凍|ĐÓNG|Đóng băng
+瀬|LẠI|Thác ghềnh; hoàn cảnh
+浄|TỊNH|Thanh tịnh; sạch
+掘|QUẬT|Đào
+埋|MAI|Chôn
+泥|NÊ|Bùn
+炭|THAN|Than
+鉱|KHOÁNG|Khoáng sản; mỏ
+銅|ĐỒNG|Đồng (kim loại)
+穴|HUYỆT|Hang; lỗ
+洞|ĐỖNG|Hang động
+殴|ẨU|Đánh; đấm
+叫|KHIẾU|Kêu; la hét
+怖|BỐ|Sợ hãi
+嫌|HIỀM|Ghét; nghi ngờ
+憎|TĂNG|Ghét; căm
+恥|SỈ|Xấu hổ; sỉ nhục
+誤|NGỘ|Nhầm; sai
+謝|TẠ|Cảm ơn; xin lỗi
+励|LỆ|Khích lệ; cố gắng
+冗|NHŨNG|Thừa; vô ích
+握|ÁC|Nắm; cầm
+絶|TUYỆT|Tuyệt; cắt đứt
+宴|YẾN|Tiệc
+催|THÔI|Tổ chức; thúc giục
+渇|KHÁT|Khát; khô
+酌|CHƯỚC|Rót rượu
+泡|BÀO|Bọt; bong bóng
+吐|THỔ|Nôn; thổ lộ
+騒|TAO|Ồn ào; náo động
+延|DIÊN|Kéo dài; hoãn
+超|SIÊU|Vượt; siêu
+更|CANH|Hơn nữa; đổi mới
+徹|TRIỆT|Thấu suốt; thâu đêm
+憶|ỨC|Nhớ; ký ức
+僕|BỘC|Tôi (nam); đầy tớ
+僚|LIÊU|Đồng nghiệp
+輩|BỐI|Lớp người; đồng bối
+誰|THÙY|Ai
+偶|NGẪU|Ngẫu nhiên; đôi
+孫|TÔN|Cháu
+祖|TỔ|Tổ tiên; ông bà
+似|TỰ|Giống
+召|TRIỆU|Triệu; gọi
+拝|BÁI|Lạy; bái
+了|LIỄU|Xong; hiểu rõ
+承|THỪA|Nhận; thừa nhận
+伺|TỰ|Hỏi thăm; viếng; dò xét
+頂|ĐỈNH|Đỉnh; nhận
+被|BỊ|Bị; che phủ
+壊|HOẠI|Hỏng; phá
+傾|KHUYNH|Nghiêng
+崩|BĂNG|Sụp đổ
+噴|PHÚN|Phun
+炎|VIÊM|Lửa; viêm
+洪|HỒNG|Lũ lớn
+津|TÂN|Bến; nước bọt
+波|BA|Sóng
+荒|HOANG|Hoang; dữ dội
+激|KÍCH|Dữ dội; kích
+吹|XUY|Thổi
+乾|CÀN|Khô
+燥|TÁO|Khô; khô ráo
+湿|THẤP|Ẩm
+涼|LƯƠNG|Mát mẻ
+雷|LÔI|Sấm
+嵐|LAM|Bão tố
+俳|BÀI|Hài; diễn viên
+句|CÚ|Câu; cụm
+詞|TỪ|Từ; lời
+覧|LÃM|Xem
+簿|BỘ|Sổ sách
+塾|THỤC|Lớp học thêm; thục
+踊|DŨNG|Nhảy múa
+像|TƯỢNG|Hình ảnh; tượng
+殿|ĐIỆN|Điện; cung điện
+坊|PHƯỜNG|Nhà sư; cậu bé
+跡|TÍCH|Dấu vết
+祈|KỲ|Cầu nguyện
+刑|HÌNH|Hình phạt
+罰|PHẠT|Phạt
+盗|ĐẠO|Trộm cắp
+捜|SƯU|Tìm kiếm
+裁|TÀI|Cắt; xét xử
+統|THỐNG|Thống nhất; thống
+衆|CHÚNG|Đám đông; chúng
+秩|TRẬT|Trật tự
+序|TỰ|Thứ tự; lời tựa
+閣|CÁC|Gác; nội các
+批|PHÊ|Phê bình; phê
+敵|ĐỊCH|Địch; kẻ thù
+砲|PHÁO|Pháo; đại bác
+領|LÃNH|Lãnh thổ; chiếm
+侵|XÂM|Xâm phạm
+銃|SÚNG|Súng
+核|HẠCH|Hạt nhân; hạt
+護|HỘ|Bảo vệ
+衛|VỆ|Phòng vệ
+盟|MINH|Liên minh; thề
+隊|ĐỘI|Đội; hàng
+屈|KHUẤT|Khuất phục; cong
+阪|PHẢN|Dốc; Osaka
+埼|KỲ|Mũi đất; Saitama
+栃|—|Cây dẻ ngựa; Tochigi
+茨|TÌ|Gai; Ibaraki
+梨|LÊ|Quả lê; Yamanashi
+群|QUẦN|Bầy; nhóm; Gunma
+鹿|LỘC|Hươu
+奈|NẠI|Nara; làm sao
+媛|VIỆN|Mỹ nhân; Ehime
+阜|PHỤ|Gò; Gifu
+岡|CƯƠNG|Đồi; Okayama/Shizuoka
+崎|KỲ|Mũi đất; gồ ghề
+丘|KHÂU|Đồi
+丁|ĐINH|Khu phố; số đếm
+塚|TRÚNG|Gò mả; mô
+湾|LOAN|Vịnh

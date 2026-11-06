@@ -1,0 +1,210 @@
+# N4 — nguồn gốc theo Lục thư (viết tay). Định dạng: chữ|loại|đoạn 1¶đoạn 2
+家|HY|Hội ý (會意): 宀 (mái nhà) bên trên, 豕 (con lợn) bên dưới. Thời xưa lợn nuôi ngay dưới mái nhà là dấu hiệu của một mái ấm có cư dân định cư, nên nghĩa “nhà, gia đình”.¶Một số nhà nghiên cứu coi 豕 còn gợi âm cổ, nhưng cách giải hội ý phổ biến hơn.
+族|HY|Hội ý: 方 (cờ hiệu) + 矢 (mũi tên). Cùng dưới một lá cờ, cùng cầm tên ra trận là những người cùng dòng họ, cùng bộ tộc; từ đó có nghĩa “tộc, dòng họ”.
+兄|HY|Hội ý: 口 (miệng) trên 儿 (người). Người anh là người đứng đầu, lo “mở miệng” dạy bảo, cầu khấn thay cho cả nhà; về sau chỉ “anh trai”.
+弟|TH|Tượng hình biến thể: hình sợi dây quấn thành từng vòng quanh cái cọc (về sau ghi nghĩa “thứ tự”). Từ “thứ tự trước sau” mượn dùng cho “em trai” (người đến sau anh); xem thêm 第 (thứ).
+姉|HT|Hình thanh (形聲): 女 (phụ nữ) chỉ nghĩa, 市 gợi âm (シ). Chữ 姉 là dạng giản của 姊, chỉ người chị.
+妹|HT|Hình thanh: 女 chỉ nghĩa, 未 gợi âm (ミ → マイ). 未 vốn là cành cây còn non, nên 妹 hàm ý “người con gái đến sau, còn nhỏ”.
+私|HT|Hình thanh: 禾 (lúa) chỉ nghĩa, 厶 (“tư”, bản chữ gốc của 私) gợi âm. Nghĩa gốc là phần lúa riêng của một người; từ đó thành “riêng tư, tôi”.¶Đối lập với 公 (công): 公 là cái chung, 私 là cái riêng.
+育|HY|Hội ý: phần trên là hình đứa trẻ lộn đầu 𠫓 (mới sinh), phần dưới 月 (nhục, thịt, cơ thể). Hình ảnh nuôi một đứa trẻ cho lớn lên nên có nghĩa “nuôi dưỡng, giáo dục”.
+部|HT|Hình thanh: 阝 (ấp, vùng đất) chỉ nghĩa, 咅 gợi âm (ホウ→ブ). Nghĩa gốc là tên một vùng, sau mở rộng thành “bộ phận, phần”.
+屋|HY|Hội ý: 尸 (mái, người ngồi) trên 至 (đến nơi dừng lại). Chỗ người đến để nghỉ, có mái che là “nhà, căn phòng”; cũng gắn với hậu tố 屋 (cửa hiệu).
+広|HT|Hình thanh: 广 (mái nhà lớn) chỉ nghĩa, 厶 gợi hình dáng (dạng giản của 黃 trong 廣). Dạng giản thể Nhật của 廣; nghĩa “rộng rãi”.
+低|HT|Hình thanh: 亻 (người) chỉ nghĩa, 氐 (đê) gợi âm và nghĩa “thấp, gốc”. Người cúi xuống: “thấp”.
+緑|HT|Hình thanh: 糸 (sợi tơ) chỉ nghĩa, 录 gợi âm (ロク). Nghĩa gốc là màu sợi tơ nhuộm xanh lục.
+静|HT|Hình thanh: 争 gợi âm (ジョウ→セイ), 青 chỉ sắc xanh trong, tĩnh lặng. Cũng có thể hiểu là “tranh nhau không còn ồn” nhưng cách giải hình thanh là chính thống.
+近|HT|Hình thanh: 辶 (đi) chỉ nghĩa, 斤 gợi âm (キン). Nghĩa là “gần” về khoảng cách đi lại.
+遠|HT|Hình thanh: 辶 chỉ nghĩa, 袁 gợi âm (エン). Quãng đường xa, “viễn”.
+会|HY|Hội ý: 人 (người) trên 云 (vân, nói/đám mây) trong dạng giản của 會. Người cùng tụ lại thành nhóm: “gặp gỡ, hội họp”.
+社|HY|Hội ý/hình thanh: 礻 (bàn thờ, thần) + 土 (đất). Vốn chỉ miếu thờ thần đất; mở rộng thành “đoàn thể, công ty”.
+働|HY|Hội ý (chữ Nhật tự tạo, quốc tự 国字): 亻 (người) + 動 (động). Người hoạt động là “làm việc”. Chữ này không có trong Hán tự Trung Quốc cổ điển, nên chỉ có âm On ドウ vay mượn từ 動.
+作|HT|Hình thanh: 亻 chỉ nghĩa, 乍 gợi âm (サ). Nghĩa là “làm, chế tạo”.
+工|TH|Tượng hình: hình cái thước thợ (hai gạch ngang nối bằng một nét dọc). Chỉ người thợ, “công việc”.
+場|HT|Hình thanh: 土 (đất) chỉ nghĩa, 昜 gợi âm (ヨウ→ジョウ). “Bãi đất”, tức “nơi chốn”.
+始|HT|Hình thanh: 女 chỉ nghĩa, 台 gợi âm (タイ→シ). Nghĩa gốc có thể là người con gái, mở rộng thành “bắt đầu”.
+終|HT|Hình thanh: 糸 (sợi) chỉ nghĩa, 冬 gợi âm (トウ→シュウ). Sợi chỉ buộc đầu mối: “kết thúc”; 冬 vốn mang nghĩa “cuối năm”.
+店|HT|Hình thanh: 广 (mái nhà) chỉ nghĩa, 占 gợi âm (セン→テン). “Cửa hàng”.
+客|HT|Hình thanh: 宀 (nhà) chỉ nghĩa, 各 gợi âm (カク→キャク). Người đến nhà mình: “khách”.
+親|HT|Hình thanh: 見 (nhìn) chỉ nghĩa, 亲 (tân) gợi âm. Người thân mà mắt luôn dõi theo: “cha mẹ, thân thiết”.
+切|HT|Hình thanh: 刀 (dao) chỉ nghĩa, 七 gợi âm (シチ→セツ). “Cắt”.
+売|HY|Hội ý: 士 trên 冗 trong dạng giản của 賣 (出 + 買). Mang hàng ra ngoài: “bán”.
+当|HT|Hình thanh: dạng giản của 當; 田 (ruộng) chỉ nghĩa và 尚 gợi âm. “Đương nhiên, trúng”.
+品|HY|Hội ý: ba 口 (miệng, đồ vật). Nhiều vật được xếp lại: “phẩm vật, hàng hóa”.
+便|HY|Hội ý: 亻 (người) + 更 (đổi, đổi mới). Người điều chỉnh cho thuận lợi: “tiện lợi”.
+利|HY|Hội ý: 禾 (lúa) + 刂 (dao). Dùng dao gặt lúa là được lợi, sắc bén: “lợi, lợi ích”.
+使|HT|Hình thanh: 亻 (người) chỉ nghĩa, 吏 gợi âm (リ→シ). “Sai khiến, sử dụng”.
+銀|HT|Hình thanh: 金 (kim loại) chỉ nghĩa, 艮 gợi âm (コン→ギン). “Bạc”.
+白|TH|Tượng hình: hạt gạo trắng/đầu ngón cái tỏa sáng (nhiều thuyết). Nghĩa là “trắng, sáng”.
+黒|HY|Hội ý: 里 (rút gọn của 黑) trên 灬 (lửa). Khói và lửa làm đen xám ống khói: “đen”.
+紙|HT|Hình thanh: 糸 (sợi) chỉ nghĩa, 氏 gợi âm (シ). Giấy được làm từ sợi: “chỉ, giấy”.
+朝|HY|Hội ý: mặt trời mọc giữa cỏ cây, nay còn 月 (trăng) ở bên. Lúc mặt trời lên mà trăng chưa tắt: “buổi sáng”.
+晩|HT|Hình thanh: 日 (mặt trời) chỉ nghĩa, 免 gợi âm (メン→バン). Mặt trời xuống: “chiều tối”.
+昼|HY|Hội ý: dạng giản của 晝; 日 (mặt trời) và 一 (đường ranh). Ban ngày chia ranh: “buổi trưa”.
+夜|HT|Hình thanh: 亦 gợi âm (エキ→ヤ) và 夕 (buổi tối) chỉ nghĩa. “Đêm”.
+前|HY|Hội ý: nguyên là 歬 (chân + thuyền), chỉ bước tiến lên. “Phía trước”.
+後|HY|Hội ý: 彳 (bước chân) + 幺 (nhỏ) + 夂 (đi chậm). Đi chậm hơn người nên “ở phía sau”.
+午|TH|Tượng hình: cái chày giã (hay cọc cắm). Mượn dùng làm địa chi (Ngọ) chỉ giữa trưa.
+早|HY|Hội ý: 日 (mặt trời) trên 十 (dạng rút gọn của 甲). Mặt trời vừa nhô: “sớm”.
+荷|HT|Hình thanh: 艹 (cỏ) chỉ nghĩa, 何 gợi âm (カ). Nghĩa gốc là cây sen; mượn dùng cho “gánh, hành lý”.
+送|HY|Hội ý/hình thanh: 辶 (đi) + 关 (hai tay đưa vật). “Tiễn, gửi đi”.
+宅|HT|Hình thanh: 宀 (nhà) chỉ nghĩa, 乇 gợi âm (タク). “Nhà ở”.
+急|HY|Hội ý: 刍 (nắm bắt) trên 心 (tâm). Trong lòng gấp gáp muốn nắm lấy: “gấp, vội”.
+速|HT|Hình thanh: 辶 (đi) chỉ nghĩa, 束 gợi âm (ソク). “Nhanh”.
+遅|HT|Hình thanh: 辶 (đi) chỉ nghĩa, 犀 (tê) gợi âm; dạng Nhật viết 尸 + 羊. “Chậm”.
+重|HY|Hội ý: người (壬) đứng trên 東 (túi). Mang vác nặng: “nặng”.
+軽|HT|Hình thanh: 車 (xe) chỉ nghĩa, 圣 (kinh) gợi âm. Xe nhẹ nhàng đi nhanh: “nhẹ”.
+住|HT|Hình thanh: 亻 chỉ nghĩa, 主 gợi âm (シュ→ジュウ). Người ở lại: “sinh sống”.
+所|HT|Hình thanh: 斤 (rìu) chỉ nghĩa, 戸 gợi âm (コ→ショ). “Nơi chốn”, cũng là từ chỉ chỗ.
+様|HT|Hình thanh: 木 (cây) chỉ nghĩa, 羕 (dạng viết khác 𣴎) gợi âm (ヨウ). Hạt dẻ; mở rộng thành “dạng, kiểu”, và là hậu tố kính trọng.
+主|TH|Tượng hình: hình ngọn đèn (丶) trên giá đỡ. Ngọn lửa đứng yên ở chủ vị: “chủ, chính”.
+番|HY|Hội ý: 釆 (dấu chân thú) trên 田 (ruộng). Dấu chân luân phiên: “lượt, số thứ tự”.
+地|HT|Hình thanh: 土 (đất) chỉ nghĩa, 也 gợi âm (ヤ→チ). “Đất”.
+号|HT|Hình thanh: 口 (miệng) chỉ nghĩa, 丂 gợi âm. Kêu lớn: “hiệu, số hiệu”.
+京|TH|Tượng hình: cái lầu cao trên gò đất. Nơi vua ở nên là “kinh đô”.
+都|HT|Hình thanh: 阝 (ấp) chỉ nghĩa, 者 gợi âm (シャ→ト). “Thủ đô”.
+道|HY|Hội ý: 辶 (đi) + 首 (đầu, người). Con đường người đi: “đường, đạo”.
+府|HT|Hình thanh: 广 (mái nhà) chỉ nghĩa, 付 gợi âm (フ). “Kho, phủ”.
+県|HY|Hội ý: dạng giản của 縣, hình cái đầu treo. Đơn vị hành chính cổ: “tỉnh (huyện)”.
+市|HY|Hội ý: 亠 (mái) + 巾 (tấm vải). Nơi bày hàng trao đổi: “chợ, thành phố”.
+区|HY|Hội ý: 匚 (hộp) chứa các 品 (đồ vật). Chia thành khu vực: “khu, quận”.
+村|HT|Hình thanh: 木 (cây) chỉ nghĩa, 寸 gợi âm (ソン). “Thôn, làng”.
+毎|HY|Hội ý: 母 (mẹ) cài trâm. Người mẹ lo cho con mỗi ngày: “mỗi”.
+週|HT|Hình thanh: 辶 (đi) chỉ nghĩa, 周 gợi âm (シュウ). “Vòng, tuần”.
+映|HT|Hình thanh: 日 (mặt trời) chỉ nghĩa, 央 gợi âm (オウ→エイ). “Chiếu, phản chiếu”.
+画|HY|Hội ý: dạng giản của 畫, hình tay cầm bút kẻ khung ruộng. “Tranh vẽ, nét”.
+図|HY|Hội ý: 囗 (khung) bao bên ngoài hình vẽ. “Bản vẽ, đồ”.
+館|HT|Hình thanh: 食 (ăn) chỉ nghĩa, 官 gợi âm (カン). Nơi ăn nghỉ: “tòa nhà, quán”.
+公|HY|Hội ý: 八 (chia ra) + 厶 (riêng). Phá cái riêng đem chia ra: “công cộng”.
+園|HT|Hình thanh: 囗 (bao quanh) chỉ nghĩa, 袁 gợi âm (エン). “Vườn”.
+夫|HY|Hội ý: 大 (người lớn) + 一 (trâm cài). Người nam đã đội mũ cài trâm: “chồng, đàn ông”.
+妻|HY|Hội ý: 又 (tay) + 女 (người nữ) có cài tóc. Người nữ chăm lo việc nhà: “vợ”.
+特|HT|Hình thanh: 牛 (trâu bò) chỉ nghĩa, 寺 gợi âm (ジ→トク). Con bò đực khác thường: “đặc biệt”.
+思|HY|Hội ý: 田 (đầu óc, thóp) trên 心 (tim). Nghĩ bằng đầu và tim: “nghĩ”.
+料|HY|Hội ý: 米 (gạo) + 斗 (cái đấu). Đong gạo: “nguyên liệu, phí”.
+理|HT|Hình thanh: 王 (ngọc) chỉ nghĩa, 里 gợi âm (リ). Mài ngọc theo đường vân: “lý lẽ”.
+有|HY|Hội ý: 又 (tay) cầm 肉 (thịt). Cầm giữ trong tay: “có”.
+洋|HT|Hình thanh: 氵 (nước) chỉ nghĩa, 羊 gợi âm (ヨウ). “Đại dương, phương Tây”.
+服|HT|Hình thanh: 舟/月 + 𠬝 (tay đè người). Phục tùng; sau chỉ “quần áo”.
+衣|TH|Tượng hình: hình cổ áo và hai tà áo. “Y phục”.
+短|HT|Hình thanh: 矢 (mũi tên) chỉ nghĩa (đo ngắn), 豆 gợi âm (トウ→タン). “Ngắn”.
+毛|TH|Tượng hình: sợi lông mọc. “Lông, tóc”.
+糸|TH|Tượng hình: hai bó sợi tơ buộc lại. “Sợi tơ”.
+玉|TH|Tượng hình: ba viên ngọc xâu trên sợi dây. “Ngọc”; nay có chấm để phân biệt với 王.
+光|HY|Hội ý: 火 (lửa) trên 儿 (người). Người cầm lửa tỏa sáng: “ánh sáng”.
+駅|HT|Hình thanh: 馬 (ngựa) chỉ nghĩa, 睪 (dịch) gợi âm. Trạm đổi ngựa: “nhà ga”.
+鉄|HT|Hình thanh: 金 chỉ nghĩa, 失 gợi âm (シツ→テツ). Dạng giản của 鐵. “Sắt”.
+乗|HY|Hội ý: người (大) leo lên cây (木), dạng giản của 乘. “Cưỡi, lên xe”.
+降|HT|Hình thanh: 阝 (gò đất) chỉ nghĩa, 夅 gợi âm (コウ). “Xuống, rơi”.
+開|HY|Hội ý: 門 (cửa) và 开 (hai tay mở then). “Mở”.
+閉|HY|Hội ý: 門 (cửa) có then cài 才. “Đóng”.
+発|HT|Hình thanh: dạng giản của 發; 癶 (hai chân) + 殳 gợi âm (ハツ). “Xuất phát”.
+着|HY|Hội ý: dạng biến của 著, 艹 + 者; về sau chỉ việc “mặc, tới nơi”.
+交|TH|Tượng hình: hình người đứng bắt chéo hai chân. “Giao nhau, qua lại”.
+通|HT|Hình thanh: 辶 (đi) chỉ nghĩa, 甬 gợi âm (ヨウ→ツウ). “Thông suốt”.
+台|HT|Hình thanh: dạng giản của 臺; nguyên là 厶 + 口. “Cái đài, bệ”.
+止|TH|Tượng hình: bàn chân (dấu chân). Chân dừng lại: “dừng”.
+色|HY|Hội ý: 人 (dạng 𠂊) cúi trên 巴 (người quỳ). Sắc mặt biến đổi: “màu sắc”.
+赤|HY|Hội ý: 大 (lớn) + 火 (lửa). Lửa lớn cháy rực: “đỏ”.
+黄|TH|Tượng hình: hình ngọc bội có tua. Mượn chỉ màu “vàng”.
+青|HT|Hình thanh: 生 (mọc) và 丹 (đan, màu chu sa). Màu cỏ cây mới: “xanh”.
+病|HT|Hình thanh: 疒 (bệnh, giường) chỉ nghĩa, 丙 gợi âm (ヘイ→ビョウ). “Bệnh”.
+院|HT|Hình thanh: 阝 (gò, tường) chỉ nghĩa, 完 gợi âm (カン→イン). “Viện”.
+医|HY|Hội ý: 匚 (hộp) cất 矢 (mũi tên). Dạng giản của 醫. “Y học”.
+科|HY|Hội ý: 禾 (lúa) + 斗 (đấu). Phân loại lúa: “khoa, ngành”.
+薬|HT|Hình thanh: 艹 (cỏ) chỉ nghĩa, 楽 gợi âm (ガク→ヤク). “Thuốc”.
+待|HT|Hình thanh: 彳 (bước đi) chỉ nghĩa, 寺 gợi âm (ジ→タイ). “Chờ đợi”.
+合|HY|Hội ý: 亼 (nắp) + 口 (miệng/đồ đựng). Nắp vừa khít: “hợp”.
+計|HY|Hội ý: 言 (lời nói) + 十 (mười). Đếm đến mười: “tính toán”.
+研|HT|Hình thanh: 石 (đá) chỉ nghĩa, 开 gợi âm (ケン). “Mài”, mở rộng thành nghiên cứu.
+究|HT|Hình thanh: 穴 (hang) chỉ nghĩa, 九 gợi âm (キュウ). Chui đến tận đáy hang: “cùng cực”.
+語|HT|Hình thanh: 言 chỉ nghĩa, 吾 gợi âm (ゴ). “Ngôn ngữ”.
+文|TH|Tượng hình: hình người có hình xăm ngực. Về sau “hoa văn, văn chương”.
+英|HT|Hình thanh: 艹 (cỏ) chỉ nghĩa, 央 gợi âm (オウ→エイ). Hoa đẹp: “anh hoa, nước Anh”.
+化|HY|Hội ý: 亻 (người đứng) + 匕 (người lộn ngược). “Biến hóa”.
+数|HT|Hình thanh: 攵 (đánh) chỉ nghĩa, 娄 gợi âm (ロウ→スウ). “Số, đếm”.
+心|TH|Tượng hình: hình quả tim. “Tâm, lòng”.
+若|TH|Tượng hình: người quỳ vuốt tóc. Về sau “trẻ”, hoặc giả như.
+集|HY|Hội ý: 隹 (chim) đậu trên 木 (cây). “Tụ tập”.
+知|HY|Hội ý: 矢 (mũi tên) + 口. Lời nói trúng đích: “biết”.
+酒|HT|Hình thanh: 氵 chỉ nghĩa, 酉 (bình rượu) gợi âm (ユウ→シュ). “Rượu”.
+歌|HT|Hình thanh: 欠 (há miệng) chỉ nghĩa, 哥 gợi âm (カ). “Hát”.
+声|HY|Hội ý: dạng giản của 聲; chỉ âm thanh phát ra. “Giọng”.
+楽|TH|Tượng hình: nhạc cụ có dây gắn trên khung gỗ. “Nhạc, vui”.
+味|HT|Hình thanh: 口 (miệng) chỉ nghĩa, 未 gợi âm (ミ). “Vị”.
+油|HT|Hình thanh: 氵 chỉ nghĩa, 由 gợi âm (ユウ). “Dầu”.
+太|CS|Chỉ sự: thêm chấm vào 大 để nhấn mạnh “rất lớn, béo”.
+細|HT|Hình thanh: 糸 chỉ nghĩa, 田 gợi âm (デン→サイ). “Mảnh, nhỏ”.
+皿|TH|Tượng hình: cái đĩa có chân. “Đĩa”.
+飯|HT|Hình thanh: 食 chỉ nghĩa, 反 gợi âm (ハン). “Cơm”.
+麦|TH|Tượng hình: cây lúa mì (dạng giản của 麥). “Lúa mạch”.
+春|HY|Hội ý: cỏ cây mọc (𡗗) dưới ánh 日. “Mùa xuân”.
+夏|TH|Tượng hình: người đội mũ múa lễ mùa hè. “Mùa hè”.
+秋|HY|Hội ý: 禾 (lúa) + 火 (lửa). Lúa chín như lửa: “mùa thu”.
+冬|HY|Hội ý: nguyên là hình sợi dây thắt hai đầu (終). “Mùa đông”.
+空|HT|Hình thanh: 穴 (hang) chỉ nghĩa, 工 gợi âm (コウ→クウ). “Trống không”.
+星|HT|Hình thanh: 日 (sáng) chỉ nghĩa, 生 gợi âm (セイ). “Ngôi sao”.
+雲|HT|Hình thanh: 雨 chỉ nghĩa, 云 (vân) vừa gợi âm vừa là chữ gốc. “Mây”.
+去|HY|Hội ý: 土 + 厶 (hố, miệng). Nghĩa gốc là rời khỏi chỗ ở: “đi qua”.
+天|HY|Hội ý: 大 (người) + 一 (bầu trời trên đầu). “Trời”.
+晴|HT|Hình thanh: 日 chỉ nghĩa, 青 gợi âm (セイ). “Nắng”.
+雪|HY|Hội ý: 雨 + 彐 (cái chổi, quét). Tuyết rơi cần quét: “tuyết”.
+風|HT|Hình thanh: 虫 (sâu, rồng) + 凡 (phàm) gợi âm. “Gió”.
+強|HT|Hình thanh: 虫 (sâu) chỉ nghĩa, 弘 gợi âm (キョウ). “Mạnh”.
+弱|HY|Hội ý: hai cây cung 弓 cong mềm với nét lông. “Yếu”.
+暑|HT|Hình thanh: 日 chỉ nghĩa, 者 gợi âm (シャ→ショ). “Nóng”.
+寒|HY|Hội ý: người nằm trong nhà 宀 đệm cỏ, băng 冫. “Lạnh”.
+旅|HY|Hội ý: cờ 方 + người đi theo 𠂉. Đội quân: “lữ, du lịch”.
+持|HT|Hình thanh: 扌 (tay) chỉ nghĩa, 寺 gợi âm (ジ). “Cầm”.
+世|CS|Chỉ sự: ba chữ 十 (mười) hợp lại, ba mươi năm là một đời. “Thế”.
+界|HT|Hình thanh: 田 (ruộng) chỉ nghĩa, 介 gợi âm (カイ). “Ranh giới”.
+写|HT|Hình thanh: dạng giản của 寫; 宀 chỉ nghĩa, 舄 gợi âm. “Sao chép”.
+真|HY|Hội ý: dạng cổ của người biến hóa. “Thật”.
+船|HT|Hình thanh: 舟 chỉ nghĩa, 㕣 gợi âm (セン). “Thuyền”.
+勉|HT|Hình thanh: 力 (sức) chỉ nghĩa, 免 gợi âm (メン→ベン). “Cố gắng”.
+漢|HT|Hình thanh: 氵 chỉ nghĩa, 𦰩 gợi âm (カン). Sông Hán, rồi triều Hán.
+宿|HY|Hội ý: 宀 + 人 + 百/𠆢. Người nằm chiếu trong nhà: “trọ, ngủ”.
+題|HT|Hình thanh: 頁 (đầu) chỉ nghĩa, 是 gợi âm (ゼ→ダイ). “Đề tài”.
+質|HY|Hội ý: 斦 (hai rìu) + 貝 (tiền). Cân nhắc giá trị: “chất”.
+問|HT|Hình thanh: 口 chỉ nghĩa, 門 gợi âm (モン). “Hỏi”.
+教|HT|Hình thanh: 攵 (tay cầm roi) chỉ nghĩa, 孝 gợi âm. “Dạy”.
+室|HY|Hội ý: 宀 + 至 (đến nơi). Nơi dừng chân: “phòng”.
+試|HT|Hình thanh: 言 chỉ nghĩa, 式 gợi âm (シキ→シ). “Thử”.
+験|HT|Hình thanh: 馬 chỉ nghĩa, 㑒 gợi âm (ケン). Thử ngựa: “nghiệm”.
+答|HT|Hình thanh: 竹 (thẻ tre) chỉ nghĩa, 合 gợi âm (ゴウ→トウ). “Trả lời”.
+考|HT|Hình thanh: 耂 (người già) chỉ nghĩa, 丂 gợi âm (コウ). “Suy nghĩ”.
+正|HY|Hội ý: 一 (đích) + 止 (chân đi). Đi thẳng đến đích: “đúng”.
+丸|CS|Chỉ sự: hình người ngã (九) lăn tròn. “Tròn”.
+不|TH|Tượng hình: hình đài hoa (nghĩa gốc), mượn làm chữ phủ định “bất”.
+同|HY|Hội ý: 𠔼 + 口. Cùng một miệng: “giống”.
+政|HT|Hình thanh: 攵 (đánh) chỉ nghĩa, 正 gợi âm (セイ). “Chính trị”.
+治|HT|Hình thanh: 氵 chỉ nghĩa, 台 gợi âm (タイ→チ). Đắp đê trị thủy: “cai trị”.
+経|HT|Hình thanh: 糸 chỉ nghĩa, 圣 gợi âm (ケイ). Sợi dọc: “kinh”.
+済|HT|Hình thanh: 氵 chỉ nghĩa, 斉 gợi âm (セイ). Qua sông: “xong, cứu”.
+歴|HT|Hình thanh: 止 (chân) chỉ nghĩa, 厤 gợi âm (レキ). “Trải qua”.
+史|HY|Hội ý: 又 (tay) cầm 中 (thẻ ghi). Người ghi chép: “sử”.
+国|HY|Hội ý: 囗 (biên giới) bao 玉 (ngọc, vua). Dạng giản của 國. “Nước”.
+王|HY|Hội ý: ba nét ngang (trời, người, đất) nối bằng nét dọc. “Vua”.
+運|HT|Hình thanh: 辶 chỉ nghĩa, 軍 gợi âm (グン→ウン). “Vận chuyển”.
+動|HT|Hình thanh: 力 chỉ nghĩa, 重 gợi âm (ジュウ→ドウ). “Động”.
+練|HT|Hình thanh: 糸 chỉ nghĩa, 柬 gợi âm (カン→レン). Luyện tơ: “luyện”.
+習|HY|Hội ý: 羽 (cánh) + 白/日. Chim non tập vỗ cánh: “học tập”.
+走|HY|Hội ý: người vung tay chạy (夭) + 止 (chân). “Chạy”.
+歩|HY|Hội ý: hai bàn chân 止 nối tiếp. “Đi bộ”.
+泳|HT|Hình thanh: 氵 chỉ nghĩa, 永 gợi âm (エイ). “Bơi”.
+才|TH|Tượng hình: mầm cây vừa nhú lên. “Tài năng”.
+自|TH|Tượng hình: hình cái mũi. Người ta chỉ mũi khi nói về mình: “tự”.
+然|HY|Hội ý: thịt 肉 + 犬 + lửa 灬. Nướng thịt chó: nghĩa gốc là “đốt”, sau mượn dùng “như vậy”.
+草|HT|Hình thanh: 艹 chỉ nghĩa, 早 gợi âm (ソウ). “Cỏ”.
+原|HY|Hội ý: 厂 (vách đá) + nguồn nước. “Nguồn, đồng bằng”.
+湖|HT|Hình thanh: 氵 chỉ nghĩa, 胡 gợi âm (コ). “Hồ”.
+谷|HY|Hội ý: 八 (hai nhánh) trên 口 (cửa hang). “Thung lũng”.
+海|HT|Hình thanh: 氵 chỉ nghĩa, 毎 gợi âm (マイ→カイ). “Biển”.
+辺|HT|Hình thanh: 辶 chỉ nghĩa, 𨕫 gợi âm (ヘン). “Vùng ven”.
+里|HY|Hội ý: 田 (ruộng) + 土 (đất). Nơi dân ở: “làng, dặm”.
+野|HT|Hình thanh: 里 chỉ nghĩa, 予 gợi âm (ヨ→ヤ). “Cánh đồng”.
+奥|HY|Hội ý: nhà sâu bên trong có người. “Sâu, trong cùng”.
+池|HT|Hình thanh: 氵 chỉ nghĩa, 也 gợi âm (ヤ→チ). “Ao”.
+虫|TH|Tượng hình: con rắn nhỏ cuộn. “Côn trùng”.
+羽|TH|Tượng hình: hai cánh lông chim. “Lông vũ”.
+鳴|HY|Hội ý: 口 (miệng) + 鳥 (chim). “Kêu”.
+馬|TH|Tượng hình: con ngựa có bờm và bốn chân. “Ngựa”.

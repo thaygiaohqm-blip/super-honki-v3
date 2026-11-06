@@ -1,0 +1,165 @@
+@p 054 | こそ
+@group 10
+@mean Chính là ... / Mới là ...
+@core Nhấn mạnh, phân biệt rõ với những thứ khác.
+@form 名詞 ＋ こそ
+@exp Trợ từ nhấn mạnh, tương ứng "chính là", dùng để làm nổi bật một điểm so với cái khác.
+@ex 今度こそ優勝したい。 | Lần này nhất định tôi muốn vô địch.
+@ex この資料こそ長い間探していたものだ。 | Tài liệu này chính là thứ tôi tìm bấy lâu nay.
+@ex 親だからこそ自分の子をきびしくしかるのだ。 | Chính vì là cha mẹ nên mới mắng con mình nghiêm khắc.
+@cmp ～さえ | N3 | 「さえ」 nêu ví dụ cực đoan; 「こそ」 nhấn mạnh sự duy nhất.
+@note Hay đi với 「今度こそ」, 「だからこそ」.
+@theme nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | A | 1
+
+@p 055 | でも（ví dụ cực đoan）
+@group 10
+@mean Ngay cả ... cũng ...
+@core Nêu một ví dụ cực đoan, ngầm ý những cái khác là đương nhiên.
+@form 名詞 ＋ でも
+@exp Đưa ra một ví dụ cực đoan để ngầm nói rằng những cái khác tất nhiên cũng vậy.
+@ex そんなことは子どもでも知っている。 | Chuyện đó đến trẻ con cũng biết.
+@ex 小さなミスでも見落としてはいけない。 | Dù là lỗi nhỏ cũng không được bỏ sót.
+@ex 妹は初めて会った人とでもすぐ仲よくなる。 | Em gái tôi dù gặp người lần đầu cũng thân ngay.
+@cmp ～さえ | N3 | Cùng nêu ví dụ cực đoan, 「さえ」 nhấn mạnh sự bất ngờ hơn.
+@note Khác với 「でも」 trong đề nghị.
+@theme nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | A | 2
+
+@p 056 | でも（đề nghị, ý chí, nhờ vả）
+@group 10
+@mean ... chẳng hạn / ... hay gì đó
+@core Dùng nhẹ nhàng nêu một ví dụ trong đề nghị, ý chí hoặc nhờ vả.
+@form 名詞 ＋ でも
+@exp Dùng trong câu đề nghị, ý chí, nhờ vả, nêu ví dụ với nghĩa "dù chỉ là ~".
+@ex お茶でも飲みましょうか。 | Mình uống trà hay gì đó nhé?
+@ex 映画でも見ようかな。 | Chắc xem phim hay gì đó vậy.
+@ex 荷物は机の上にでも置いておいてください。 | Hành lý cứ để trên bàn hay chỗ nào đó cũng được.
+@cmp ～でも（極端） | N3 | Ở đây là nêu ví dụ nhẹ nhàng, không nhấn mạnh cực đoan.
+@note Đi với câu rủ rê, ý chí, nhờ vả.
+@theme nhan-manh, cho-nhan
+@ctx hoi-thoai
+@book shin-n3 | A | 3
+
+@p 057 | も（phủ định mạnh）
+@group 10
+@mean Không ... một chút nào cả
+@core Nhấn mạnh phủ định hoàn toàn (「全く～ない」).
+@form 数量詞 ＋ も ＋ ～ない
+@exp Số lượng tối thiểu (1) + も + phủ định để diễn tả "hoàn toàn không".
+@ex 1日も休まないで学校に通った。 | Tôi đi học mà không nghỉ ngày nào.
+@ex 財布は空っぽだ。1円も残っていない。 | Ví trống rỗng. Không còn một yên.
+@ex この写真、だれにも見せないでくださいよ。 | Xin đừng cho ai xem tấm ảnh này nhé.
+@cmp ～しか～ない | N4 | 「しか」 phủ định ngoài ra; 「も」 phủ định toàn bộ.
+@note 「1日も」 đi cùng phủ định; 「1日しか」 nghĩa chỉ có 1 ngày.
+@theme nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | A | 4
+
+@p 058 | も（ví dụ cực đoan）
+@group 10
+@mean Ngay cả ... cũng ... / Đến cả ...
+@core Đưa ví dụ cực đoan để nói điều khác cũng như vậy.
+@form 名詞 ＋ も
+@exp Nêu một ví dụ cực đoan, ngụ ý những cái khác cũng giống thế.
+@ex 足が痛くて立つこともできない。 | Chân đau đến mức đứng cũng không nổi.
+@ex この子はもう難しい漢字も書ける。 | Đứa bé này đã viết được cả chữ Hán khó.
+@ex こんなに高い山の上にも店がある。 | Trên núi cao thế này cũng có cửa hàng.
+@cmp ～さえ | N3 | 「さえ」 nhấn mạnh sự bất ngờ rõ hơn.
+@note 
+@theme nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | A | 5
+
+@p 059 | さえ（ví dụ cực đoan）
+@group 10
+@mean Ngay cả ... cũng (không)
+@core Đưa ra ví dụ cực đoan để nhấn mạnh mức độ vượt ngoài dự tính.
+@form 名詞 ＋ さえ
+@exp Nêu ví dụ cực đoan, nhấn mạnh mức độ ngoài dự đoán. Đi với cả khẳng định lẫn phủ định.
+@ex 冷蔵庫には卵さえ入っていない。 | Trong tủ lạnh đến quả trứng cũng không có.
+@ex 旅好きな彼は北極にさえ行ったことがある。 | Anh ấy mê du lịch nên đến cả Bắc Cực cũng từng đi.
+@ex 学者でさえ解けない問題が試験に出た。 | Kỳ thi ra bài mà đến học giả cũng không giải được.
+@cmp ～さえ～ば | N3 | Dạng điều kiện tối thiểu; xem bài 6.
+@note Nhấn mạnh sự bất ngờ của người nói.
+@theme nhan-manh
+@ctx hoi-thoai, van-ban
+@book shin-n3 | A | 6
+
+@p 060 | まで
+@group 10
+@mean Đến cả ... / Ngay cả ...
+@core Nhấn mạnh mức độ lan rộng ngoài dự đoán.
+@form 名詞 ＋ まで
+@exp Nhấn mạnh sự lan rộng ngoài mong đợi của phạm vi.
+@ex 赤ん坊が泣くと、わたしまで泣きたくなる。 | Hễ em bé khóc là đến cả tôi cũng muốn khóc.
+@ex 借金までして高い車を買わなくてもいい。 | Không cần đến mức vay nợ để mua xe đắt tiền.
+@ex 会ったことがない人にまで年賀状を出した。 | Tôi đã gửi thiệp năm mới cả cho người chưa từng gặp.
+@cmp ～さえ | N3 | 「まで」 nhấn mạnh phạm vi rộng; 「さえ」 nhấn mạnh mức độ.
+@note Ngược với 「ぐらい」: 「まで」 chỉ mức độ cao, 「ぐらい」 chỉ mức thấp.
+@theme nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | A | 7
+
+@p 061 | ぐらい／くらい（mức tối thiểu, mức độ tương đương）
+@group 10
+@mean Chỉ cần cỡ ... / Ít nhất ... / Cỡ như ...
+@core Biểu thị mức độ thấp, tối thiểu; hoặc mức độ tương đương với ví dụ nêu ra.
+@form 名詞・数量詞・動詞 普通形 ＋ ぐらい・くらい
+@exp Nghĩa 1: mức độ nhẹ, tối thiểu (「軽い程度・最低限」). Nghĩa 2: nêu ví dụ cùng mức độ.
+@sense 1 | Mức tối thiểu
+@ex 簡単なあいさつぐらいなら日本語で言える。 | Lời chào đơn giản thì tôi nói được bằng tiếng Nhật.
+@ex 今日は少しぐらいお酒を飲んでもいいね。 | Hôm nay uống một chút rượu cũng được nhỉ.
+@ex 日曜日ぐらい休ませてください。 | Xin cho tôi nghỉ ít nhất là Chủ nhật.
+@sense 2 | Cùng mức độ
+@ex 卵ぐらいの大きさのパンを作った。 | Tôi làm chiếc bánh mì to cỡ quả trứng.
+@ex うちの娘ぐらいの女の子が泣いていた。 | Có một bé gái cỡ tuổi con gái tôi đang khóc.
+@ex この車はわたしにも買えるくらいの値段だ。 | Chiếc xe này có giá cỡ mà tôi cũng mua được.
+@cmp ～まで | N3 | 「ぐらい」 mức thấp; 「まで」 mức cao.
+@note Xem thêm 「くらいだ」 (bài 3).
+@theme nhan-manh, so-sanh
+@ctx hoi-thoai
+@book shin-n3 | A | 8
+
+@p 062 | など／なんか
+@group 10
+@mean Chẳng hạn như ... / Những thứ như ...
+@core Nêu ví dụ gợi ý; hoặc nói giảm, coi nhẹ, khiêm tốn.
+@form 名詞 ＋ など・なんか
+@exp Nghĩa 1: trong câu đề nghị, nêu ví dụ với ý "còn có thứ khác nữa". Nghĩa 2: nói nhẹ nhàng, khiêm tốn, hoặc coi nhẹ ("những thứ như ~").
+@sense 1 | Gợi ý ví dụ
+@ex この服などいかがですか。似合いますよ。 | Bộ đồ này thì sao ạ? Hợp với chị đấy.
+@ex 食後には果物など召し上がりませんか。 | Sau bữa ăn dùng trái cây chẳng hạn nhé?
+@ex 連休にどこかに行こうよ。ハワイなんかどう。 | Kỳ nghỉ dài mình đi đâu đi. Hawaii thì sao?
+@sense 2 | Coi nhẹ, khiêm tốn
+@ex お礼など要りませんよ。 | Không cần cảm ơn gì đâu.
+@ex ダイエットなどしたくない。 | Tôi không muốn giảm cân gì cả.
+@ex わたしなんかまだまだ勉強が足りません。 | Như tôi thì còn thiếu học nhiều lắm.
+@cmp ～でも | N3 | 「でも」 gợi ý nhẹ; 「など」 liệt kê hoặc coi nhẹ.
+@note 「なんか」 là văn nói của 「など」.
+@theme liet-ke, nhan-manh
+@ctx hoi-thoai
+@book shin-n3 | A | 9
+
+@p 063 | だけ
+@group 10
+@mean Chỉ ... / Hết mức ...
+@core Giới hạn: chỉ A; hoặc làm hết mức có thể.
+@form 名詞・動詞 普通形 ＋ だけ
+@exp Nghĩa 1: hạn định (chỉ A). Nghĩa 2: biểu thị giới hạn của phạm vi (làm hết cỡ cho tới mức giới hạn).
+@sense 1 | Chỉ có A
+@ex わたしは動物が好きだが、へびだけはいやだ。 | Tôi thích động vật nhưng riêng rắn thì ghét.
+@ex 母にだけは本当のことを話そうと思う。 | Tôi định chỉ nói sự thật cho mẹ.
+@ex 彼は黙って聞くだけで何も言わなかった。 | Anh ấy chỉ im lặng nghe chứ không nói gì.
+@sense 2 | Hết mức, bao nhiêu thì làm bấy nhiêu
+@ex 好きなだけ食べてもいいよ。 | Muốn ăn bao nhiêu cũng được.
+@ex 彼は言いたいだけ言って帰ってしまった。 | Anh ấy nói hết điều muốn nói rồi về.
+@ex やれるだけのことはもうみんなやった。 | Việc gì làm được tôi đã làm hết rồi.
+@cmp ～しか～ない | N4 | 「しか」 luôn đi với phủ định.
+@note 
+@theme nhan-manh, pham-vi
+@ctx hoi-thoai
+@book shin-n3 | A | 10
+

@@ -1,0 +1,256 @@
+@p 131 | ～といったところだ
+@group 4
+@mean Cùng lắm cũng chỉ khoảng …, ở mức … là cùng
+@core Nêu mức độ ước chừng của sự việc, thường là mức không cao.
+@key といったところ
+@form N／数量詞 ＋ といったところだ
+@form せいぜい／多くて／よくて ＋ 数量詞 ＋ といったところだ
+@exp Dùng để đánh giá tổng thể một mức độ, quy mô hay kết quả theo kiểu "chỉ ở khoảng này thôi". Thường đi kèm các từ như せいぜい, 多くて, よくて. Cũng có thể dùng để chốt lại sau khi đã nêu một vài ví dụ.
+@ex 今年の夏は暑かったが、気温は最高でも35度といったところだ。 | Mùa hè năm nay nóng, nhưng nhiệt độ cao nhất cũng chỉ khoảng 35 độ.
+@ex この店の客は、多くても一日30人といったところだ。 | Khách của quán này nhiều lắm cũng chỉ khoảng 30 người một ngày.
+@ex 私の英語力は、日常会話がなんとかできるといったところです。 | Năng lực tiếng Anh của tôi chỉ ở mức giao tiếp hằng ngày tạm được.
+@ex 新人の給料は、手取りで二十万円といったところだろう。 | Lương nhân viên mới thì thực lãnh chắc cũng chỉ khoảng hai trăm nghìn yên.
+@cmp ～ぐらい | N4 | Ước lượng trung tính. 「といったところだ」 nhấn mạnh 'chỉ ở mức đó thôi', thường ngầm đánh giá là không cao.
+@cmp ～にすぎない | N2 | 'Chỉ là', phủ nhận tầm quan trọng. 「といったところだ」 nói về mức độ ước chừng.
+@note Hay đi với せいぜい, 多くて, よくて.
+@note Không dùng để nói về mức độ rất cao.
+@theme pham-vi, danh-gia
+@ctx hoi-thoai, bao-chi
+@book shin-n1 | 2
+
+@p 132 | ～ところを
+@group 8
+@mean (1) Dù đang … vậy mà … (cảm ơn, xin lỗi) (2) Đang lúc … thì bị …
+@core Nêu hoàn cảnh của đối phương hoặc của sự việc rồi nói tiếp vế sau.
+@key ところを
+@form V辞書形／Vている／Vた／Vない ＋ ところを
+@form イ形容詞／ナ形容詞な ＋ ところを
+@exp Nghĩa (1): nêu hoàn cảnh của đối phương (đang bận, đang nghỉ), rồi nói lời cảm ơn, xin lỗi hoặc nhờ vả, rất hay gặp ở đầu thư và lời chào. Nghĩa (2): nêu một việc đang diễn ra thì bị việc khác xen vào, như bị bắt gặp hoặc bị làm phiền.
+@sense 1 | Dù đang … vậy mà … (cảm ơn, xin lỗi, nhờ vả)
+@ex お忙しいところを、お越しいただきありがとうございます。 | Cảm ơn quý vị đã đến dù đang bận rộn.
+@ex お休みのところを申し訳ありませんが、少しお時間をいただけませんか。 | Xin lỗi đã làm phiền lúc anh đang nghỉ, nhưng anh cho tôi xin chút thời gian được không?
+@sense 2 | Đang lúc … thì bị …
+@ex 万引きしているところを、店員に見つかってしまった。 | Đang lúc lấy trộm đồ thì bị nhân viên cửa hàng phát hiện.
+@ex 寝ているところを電話で起こされた。 | Đang ngủ thì bị điện thoại đánh thức.
+@cmp ～ところに／～ところへ | N3 | A đang xảy ra thì B xuất hiện, thường là việc bất ngờ. 「ところを」 đi với hành động tác động lên chủ thể.
+@cmp ～ているところだ | N4 | Chỉ diễn tả hành động đang diễn ra, không có vế sau kiểu cảm ơn hay xin lỗi.
+@note Nghĩa (1) hay mở đầu thư, email và lời chào: お忙しいところ、お足元の悪いところ.
+@note Vế sau nghĩa (1) thường là lời cảm ơn, xin lỗi, nhờ vả.
+@theme nghich-tiep, cam-xuc
+@ctx email, cong-ty, hoi-thoai
+@book shin-n1 | 8
+
+@p 133 | ～ようでは
+@group 7
+@mean Nếu cứ … như thế thì (không ổn)
+@core Phê phán hoặc cảnh báo: với tình trạng xấu này thì kết quả cũng xấu.
+@key ようでは
+@form V辞書形／Vない形／Vている／Vた ＋ ようでは
+@form イ形容詞／ナ形容詞な ＋ ようでは
+@exp Nêu một hành động hay trạng thái tiêu cực làm điều kiện, vế sau là đánh giá tiêu cực hoặc lời cảnh báo như だめだ, 困る, 先が思いやられる, 務まらない. Không dùng cho trạng thái tích cực.
+@ex こんな簡単な漢字も読めないようでは、日本の大学に入るのは難しい。 | Đến chữ Hán đơn giản thế này mà cũng không đọc được thì khó vào đại học Nhật.
+@ex 返事ひとつ満足にできないようでは、社会人として失格だ。 | Đến một câu trả lời cũng không làm cho ra hồn thì không đủ tư cách làm người đi làm.
+@ex 初日から遅刻するようでは、先が思いやられる。 | Mới ngày đầu đã đi muộn thì thật đáng lo cho tương lai.
+@ex 少し注意されたぐらいで泣くようでは、この仕事は務まらない。 | Mới bị nhắc nhở chút mà đã khóc thì không làm nổi công việc này.
+@cmp ～ては | N3 | 'Nếu cứ … thì', ít nhấn mạnh việc phê phán. 「ようでは」 nêu hẳn một trạng thái đáng phê phán.
+@cmp ～くらいなら | N1 | 'Nếu phải … thì thà …', so sánh hai lựa chọn.
+@note Vế sau phải là đánh giá hoặc dự đoán tiêu cực, không dùng ý chí hay mong muốn.
+@theme dieu-kien, danh-gia
+@ctx hoi-thoai, cong-ty
+@book shin-n1 | 9
+
+@p 134 | ～くらいなら／～ぐらいなら
+@group 7
+@mean Nếu phải … thì thà … còn hơn
+@core Chê một lựa chọn là tệ nhất, thà chọn lựa chọn khác dù cũng không hay.
+@key くらいなら ;; ぐらいなら
+@form V辞書形 ＋ くらいなら ～ほうがましだ
+@form V辞書形 ＋ くらいなら ～たほうがいい
+@exp Người nói cho rằng việc A là điều rất khó chịu hoặc không thể chấp nhận, nên thà chọn B dù B cũng không hay ho gì. Vế sau thường là ～ほうがましだ hoặc ～ほうがいい. Cảm xúc chủ quan rất mạnh.
+@ex あの人に頭を下げるくらいなら、会社を辞めたほうがましだ。 | Nếu phải cúi đầu xin người đó thì thà nghỉ việc còn hơn.
+@ex 途中で投げ出すくらいなら、最初からやらないほうがいい。 | Nếu bỏ giữa chừng thì thà đừng làm ngay từ đầu.
+@ex こんなまずい料理を食べるくらいなら、何も食べないほうがましだ。 | Ăn món dở thế này thì thà không ăn gì còn hơn.
+@ex うそをついて助かるくらいなら、正直に話して叱られるほうがいい。 | Thà nói thật rồi bị mắng còn hơn nói dối để thoát.
+@cmp ～より（ほうが） | N5 | So sánh trung tính. 「くらいなら」 mang cảm xúc chán ghét với vế trước.
+@cmp ～ものなら | N1 | 'Nếu có thể …' dùng cho điều khó xảy ra; không so sánh hai lựa chọn.
+@note Vế sau thường là ～ほうがましだ, ～ほうがいい.
+@note Chỉ đi với động từ thể từ điển.
+@theme dieu-kien, so-sanh
+@ctx hoi-thoai
+@book shin-n1 | 9
+
+@p 135 | ～ば～で／～なら～で／～たら～たで
+@group 8
+@mean Nếu … thì cũng có cái … riêng của nó
+@core Nêu mặt khác của vấn đề: được thế này thì lại có phiền toái riêng.
+@key -
+@form V ば形 ＋ V辞書形 ＋ で
+@form N／ナ形容詞 ＋ なら ＋ N／ナ形容詞 ＋ で
+@form V たら ＋ V た ＋ で
+@exp Lặp lại cùng một từ để nói rằng dù tình huống nào thì cũng có điều đáng nói, thường là mặt khó khăn, phiền toái hoặc mặt hay riêng của tình huống đó. Dùng nhiều trong văn nói.
+@ex 子どもがいないと寂しいが、いたらいたで大変だ。 | Không có con thì buồn, mà có thì cũng có cái vất vả riêng.
+@ex 給料が安ければ安いで、それなりの暮らし方がある。 | Lương thấp thì cũng có cách sống phù hợp với mức lương thấp.
+@ex 田舎なら田舎で、都会にはない楽しみがある。 | Ở quê thì có những thú vui mà thành phố không có.
+@ex 忙しければ忙しいで文句を言い、暇なら暇で退屈だと言う。 | Bận thì phàn nàn bận, rảnh thì lại than chán.
+@cmp ～ても | N4 | 'Dù … cũng', chỉ nghịch tiếp. 「ば～で」 nhấn mạnh mặt riêng của mỗi tình huống.
+@cmp ～にしても～にしても | N2 | Liệt kê hai trường hợp đối lập đều như nhau.
+@note Phải lặp lại đúng cùng một từ ở hai vế.
+@theme nghich-tiep, danh-gia
+@ctx hoi-thoai
+@book shin-n1 | 10
+
+@p 136 | ～にかたくない
+@group 12
+@mean Không khó để (hình dung, đoán, hiểu) …
+@core Có thể dễ dàng tưởng tượng hay suy ra; văn viết, kết hợp rất hạn chế.
+@key 難くない
+@form N（想像・理解・予想・察する）＋ に難[かた]くない
+@form V辞書形（想像する・察する）＋ に難[かた]くない
+@exp Dùng sau các từ chỉ việc suy nghĩ như 想像, 理解, 推測, 予想, 察する để nói rằng việc đó không khó, ai cũng có thể làm được. Kết hợp gần như cố định.
+@ex 親を亡くした彼の悲しみは、想像に難[かた]くない。 | Không khó để hình dung nỗi buồn của anh ấy khi mất cha mẹ.
+@ex 景気が悪化すれば失業者が増えることは、想像するに難[かた]くない。 | Không khó để hình dung rằng nếu kinh tế xấu đi thì người thất nghiệp sẽ tăng.
+@ex 彼女が怒った理由は、察するに難[かた]くない。 | Không khó để đoán ra lý do cô ấy giận.
+@ex 多額の借金を抱えた彼の苦労は、理解に難[かた]くない。 | Không khó để hiểu nỗi khổ của anh ấy khi gánh khoản nợ lớn.
+@cmp ～がたい | N2 | 'Khó mà …' (信じがたい). Nghĩa gần như ngược lại: 「にかたくない」 là 'không khó'.
+@cmp ～づらい | N3 | 'Khó làm' vì cảm giác, tâm lý. Không dùng cho 「にかたくない」.
+@note Chữ 難 ở đây đọc là かた; thường viết kana trong văn bản hiện đại.
+@note Chỉ đi với 想像, 理解, 予想, 推測, 察する.
+@theme kha-nang, danh-gia
+@ctx van-ban, bao-chi
+@book shin-n1 | 13
+
+@p 137 | ～に～ない／～(よ)うにも～ない
+@group 12
+@mean Muốn … cũng không thể …
+@core Có ý định làm nhưng hoàn cảnh không cho phép.
+@key -
+@form V辞書形 ＋ に ＋ V可能形ない（行くに行けない）
+@form V意向形 ＋ にも ＋ V可能形ない（行こうにも行けない）
+@exp Người nói rất muốn làm A hoặc đáng ra phải làm A, nhưng vì có trở ngại nên không thể. Lặp lại cùng một động từ, vế sau là dạng khả năng phủ định.
+@ex 雪で道が埋まって、行こうにも行けない。 | Đường bị tuyết lấp nên muốn đi cũng không đi được.
+@ex 財布を忘れてしまい、買うに買えなかった。 | Quên ví nên muốn mua cũng không mua được.
+@ex 約束をしてしまったので、断るに断れない。 | Vì đã hứa rồi nên muốn từ chối cũng không từ chối được.
+@ex 携帯がないので、連絡しようにも連絡できない。 | Không có điện thoại nên muốn liên lạc cũng không liên lạc được.
+@cmp ～たくても～ない | N4 | Muốn làm nhưng không làm được; trung tính. 「ようにも～ない」 nhấn mạnh có trở ngại cụ thể.
+@cmp ～わけにはいかない | N3 | 'Không thể' vì lý do đạo lý, hoàn cảnh xã hội.
+@note Vế sau là dạng khả năng phủ định của chính động từ đó.
+@theme kha-nang
+@ctx hoi-thoai
+@book shin-n1 | 13
+
+@p 138 | ～て(は)いられない
+@group 12
+@mean Không thể cứ … được, không có thời gian để …
+@core Tình huống gấp hoặc nghiêm trọng, không thể tiếp tục trạng thái hiện tại.
+@key re:(?:[てで]|ばかり)(?:は|なんか)?いられ
+@form V て形 ＋ いられない
+@form V て形 ＋ はいられない／ばかりいられない
+@exp Nói rằng trong hoàn cảnh hiện tại, không thể thong thả hay thờ ơ tiếp tục làm một việc nào đó. Người nói thấy cần phải hành động ngay.
+@ex 試験が明日なのに、遊んでなんかいられない。 | Mai thi rồi nên không thể cứ chơi bời được.
+@ex こんなに忙しくては、のんびり休んではいられない。 | Bận thế này thì không thể thong thả nghỉ ngơi được.
+@ex 同僚が困っているのに、黙って見てはいられない。 | Đồng nghiệp đang gặp khó, không thể đứng nhìn mãi được.
+@ex いつまでも落ち込んでばかりはいられない。 | Không thể cứ mãi chán nản được.
+@cmp ～わけにはいかない | N3 | 'Không thể' vì lý do đạo lý, hoàn cảnh. 「ていられない」 nhấn mạnh sự cấp bách.
+@cmp ～ている場合ではない | N2 | Gần nghĩa, nhưng trang trọng và đánh giá mạnh hơn.
+@note Thường đi với なんか, ばかり để nhấn mạnh.
+@theme kha-nang, cam-xuc
+@ctx hoi-thoai
+@book shin-n1 | 13
+
+@p 139 | ～ともあろう
+@group 4
+@mean Đã là … (người có địa vị) mà lại …
+@core Chê trách người có địa vị hay danh tiếng nhưng hành động không xứng.
+@key ともあろう
+@form 地位・肩書きを表す N ＋ ともあろう ＋ N
+@exp Dùng để nói rằng một người có chức vụ, địa vị đáng kính như vậy thì không thể làm điều không phù hợp. Vế sau thường là sự ngạc nhiên, phê phán hoặc thất vọng.
+@ex 大臣ともあろう人が、そんなうそをつくとは信じられない。 | Một người đã là bộ trưởng mà lại nói dối như thế thì thật khó tin.
+@ex 教師ともあろう者が、生徒に暴力を振るうとは何事か。 | Đã là giáo viên mà lại bạo hành học sinh thì là chuyện gì thế này?
+@ex 一流企業の社長ともあろう人が、こんなミスをするはずがない。 | Người đã là chủ tịch của công ty hàng đầu thì không thể mắc lỗi thế này.
+@ex 弁護士ともあろう者が、法律を知らなかったでは済まされない。 | Đã là luật sư mà nói không biết luật thì không thể bỏ qua.
+@cmp ～たるもの | N1 | 'Đã là … thì phải …', nêu trách nhiệm. 「ともあろう」 dùng để phê phán sự không xứng đáng.
+@cmp ～ともなると | N1 | 'Khi đã đến mức … thì đương nhiên …', không mang sắc thái phê phán.
+@note Danh từ đi trước phải là người có địa vị, chức danh, danh tiếng.
+@note Hay đi với 人, 者 phía sau.
+@theme danh-gia, cam-xuc
+@ctx bao-chi, van-ban
+@book shin-n1 | 14
+
+@p 140 | ～に至って／～に至っても
+@group 10
+@mean Đến mức … thì mới …; dù đã đến mức … mà vẫn …
+@core Đến giai đoạn cực đoan nào đó thì mới (hay vẫn không) làm gì.
+@key に至っても ;; に至って
+@form V辞書形／N ＋ に至って
+@form V辞書形／N ＋ に至っても ＋ phủ định
+@exp 「に至って」 diễn tả đến lúc tình hình đã chuyển biến nghiêm trọng thì mới có hành động hay nhận thức, vế sau thường có ようやく, やっと, 初めて. 「に至っても」 diễn tả dù đã đến mức đó vẫn không thay đổi, vế sau là phủ định hoặc không có tiến triển.
+@sense 1 | Đến mức … thì mới …
+@ex 病状が悪化するに至って、ようやく彼は病院へ行く決心をした。 | Đến khi bệnh tình xấu đi, anh ấy mới quyết tâm đi bệnh viện.
+@ex 事件が明るみに出るに至って、社長はやっと責任を認めた。 | Đến khi vụ việc bị phanh phui, giám đốc mới thừa nhận trách nhiệm.
+@sense 2 | Dù đã đến mức … mà vẫn …
+@ex ここに至っても、彼は自分の非を認めようとしない。 | Đến nước này mà anh ta vẫn không chịu nhận lỗi.
+@ex 倒産に至っても、経営者は危機感を持たなかった。 | Đến mức phá sản mà nhà quản lý vẫn không có cảm giác nguy cơ.
+@cmp ～てはじめて | N3 | 'Phải … mới', trung tính. 「に至って」 là giai đoạn cực đoan, trầm trọng.
+@cmp ～に至るまで | N1 | Chỉ phạm vi 'cho đến tận …'. Không cùng nghĩa.
+@note Vế sau của 「に至って」 thường có ようやく, やっと, 初めて.
+@note Vế sau của 「に至っても」 là phủ định.
+@theme ket-qua, thoi-gian
+@ctx bao-chi, van-ban
+@book shin-n1 | 16
+
+@p 141 | ～に至っては
+@group 3
+@mean Còn đến … thì (thật là cực đoan)
+@core Trong các ví dụ tiêu cực, nêu ra cái cực đoan nhất.
+@key に至っては
+@form N ＋ に至っては
+@exp Sau khi nêu những ví dụ nhẹ hơn, dùng 「Nに至っては」 để nêu ví dụ nặng nề nhất, tệ nhất. Vế sau thường là sự thật khiến người ta ngạc nhiên hoặc không tin được.
+@ex うちの子は好き嫌いが多く、野菜はもちろん、肉に至っては一口も食べない。 | Con tôi kén ăn, rau thì khỏi nói, còn thịt thì chẳng ăn một miếng.
+@ex 弟は整理整頓が苦手で、部屋はもちろん、机の引き出しに至っては何がどこにあるか分からない。 | Em tôi dở dọn dẹp, phòng thì khỏi nói, còn ngăn kéo bàn thì chẳng biết cái gì ở đâu.
+@ex 彼の遅刻癖はひどく、先週に至っては毎日一時間以上遅れてきた。 | Thói đi muộn của anh ta rất tệ, riêng tuần trước thì ngày nào cũng muộn hơn một tiếng.
+@ex この町は人口が減り、商店街に至っては半分以上の店が閉まっている。 | Thị trấn này dân số giảm, riêng khu phố mua sắm thì hơn nửa số cửa hàng đã đóng.
+@cmp ～はおろか | N1 | 'Đừng nói A, ngay cả B cũng không'. 「に至っては」 nêu hẳn một ví dụ cực đoan.
+@cmp ～ときたら | N1 | Nêu một đối tượng để phàn nàn. 「に至っては」 là cực đoan nhất trong nhiều ví dụ.
+@note Thường dùng trong bối cảnh tiêu cực.
+@note Thường đi sau các ví dụ nhẹ hơn, có はもちろん, はおろか, も.
+@theme nhan-manh, liet-ke
+@ctx hoi-thoai, bao-chi
+@book shin-n1 | 16
+
+@p 142 | ～っぱなしだ
+@group 10
+@mean Cứ để nguyên trạng thái …, cứ liên tục …
+@core Để mặc một trạng thái (thường không tốt) tiếp diễn mà không xử lý.
+@key っぱなし
+@form V ます形（bỏ ます）＋ っぱなしだ／っぱなしで／っぱなしにする
+@exp Diễn tả việc đáng lẽ phải làm xong rồi mới xong nhưng lại để dở, để nguyên; hoặc một trạng thái, hành động kéo dài liên tục. Hàm ý không tốt, đáng chê trách.
+@ex 窓を開けっぱなしで出かけてしまった。 | Tôi để cửa sổ mở toang mà đi ra ngoài mất.
+@ex 昨日は一日中立ちっぱなしで、足が痛い。 | Hôm qua đứng suốt cả ngày nên chân đau.
+@ex 電気をつけっぱなしにして寝ると、電気代がもったいない。 | Bật đèn rồi ngủ thì phí tiền điện.
+@ex 彼は負けっぱなしで、一度も勝ったことがない。 | Anh ta toàn thua, chưa từng thắng lần nào.
+@cmp ～たまま | N4 | Trạng thái giữ nguyên, trung tính. 「っぱなし」 hàm ý đáng chê.
+@cmp ～つづける | N4 | Tiếp tục hành động, trung tính.
+@note Chỉ đi với động từ ý chí; có thể là hành động liên tục hoặc trạng thái để nguyên.
+@theme trang-thai, danh-gia
+@ctx hoi-thoai
+@book shin-n1 | 16
+
+@p 143 | ～かぎりだ
+@group 11
+@mean Vô cùng …, hết sức … (cảm xúc)
+@core Cảm xúc mạnh đạt tới mức tối đa.
+@key 限り
+@form イ形容詞（感情）＋ 限[かぎ]りだ
+@form ナ形容詞な（感情）＋ 限[かぎ]りだ
+@exp Dùng với từ chỉ cảm xúc của người nói như 嬉しい, うらやましい, 心細い, 残念な, 悔しい để nói cảm xúc đó đã lên đến mức cực điểm. Thường dùng ở ngôi thứ nhất.
+@ex 元気な赤ちゃんが生まれたと聞き、嬉しい限りです。 | Nghe tin em bé khỏe mạnh chào đời, tôi vô cùng vui mừng.
+@ex 一人で知らない国に行くのは、心細い限りだ。 | Một mình đến đất nước lạ thì vô cùng bất an.
+@ex 友人が次々に海外へ旅立つのを見て、うらやましい限りだ。 | Nhìn bạn bè lần lượt ra nước ngoài, tôi ghen tị vô cùng.
+@ex 大事な試合で負けてしまい、悔しい限りだ。 | Thua trận quan trọng, tôi tức tối vô cùng.
+@cmp ～てたまらない | N3 | Cảm xúc, cảm giác không chịu nổi. 「かぎりだ」 trang trọng và nhấn mạnh mức tối đa.
+@cmp ～極[きわ]まりない | N1 | Cũng là 'vô cùng', thường đi với từ mang nghĩa tiêu cực, văn viết.
+@note Chủ thể cảm xúc là người nói; nói về người khác thì dùng ～ようだ, ～らしい.
+@note Chỉ đi với từ chỉ cảm xúc.
+@theme cam-xuc, nhan-manh
+@ctx email, hoi-thoai
+@book shin-n1 | 19

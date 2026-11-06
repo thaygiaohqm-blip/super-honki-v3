@@ -1,0 +1,10 @@
+@level n4
+
+@group 1 | んです・可能・同時 | Giải thích – Khả năng – Đồng thời | Nhóm này gồm んです (001–002), thể khả năng (003–005), ながら và し (006–008), tương ứng bài 26–28.
+@group 2 | 状態・準備・意向 | Trạng thái – Chuẩn bị – Ý định | Nhóm này gồm てしまいました và trạng thái (009–012), てある・ておく (013–015), ý chí và dự định (016–020), tương ứng bài 29–31.
+@group 3 | 助言・命令・方法・条件 | Lời khuyên – Mệnh lệnh – Cách làm – Điều kiện | Nhóm này gồm lời khuyên và suy đoán (021–023), mệnh lệnh và cấm (024–025), cách làm (026–028), điều kiện ば・なら (029–031), tương ứng bài 32–35.
+@group 4 | 目的・受身・名詞化・理由 | Mục đích – Bị động – Danh từ hóa – Lý do | Nhóm này gồm ように (032–034), bị động (035–036), の danh từ hóa (037–038), lý do (039–040), tương ứng bài 36–39.
+@group 5 | 疑問・授受・目的・様態 | Nghi vấn – Cho nhận – Mục đích – Dáng vẻ | Nhóm này gồm かどうか・てみる (041–043), cho nhận kính (044–046), ために・のに (047–048), そう・てくる・すぎる (049–055), tương ứng bài 40–44.
+@group 6 | 場合・局面・伝聞 | Trường hợp – Giai đoạn – Truyền đạt | Nhóm này gồm 場合 (056), のに (057), ところ・ばかり・はず (058–060), そう・ようです・らしい (061–063), tương ứng bài 45–47.
+@group 7 | 使役・敬語 | Sai khiến – Kính ngữ | Nhóm này gồm sai khiến (064–066), tôn kính ngữ (067–068), khiêm nhường ngữ (069–070), tương ứng bài 48–50.
+
