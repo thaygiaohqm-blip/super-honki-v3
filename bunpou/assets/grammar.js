@@ -124,7 +124,7 @@
     const ansP = plain(e.cl), cmpIds = new Set((p.cmp || []).map(c => c.id).filter(Boolean));
     const conf = new Set(); allPats().forEach(x => (x.cmp || []).forEach(c => { if (c.id === p.id) conf.add(x.id); }));   // mẫu khác nhắc tới p là dễ nhầm
     const pool = allPats().filter(x => x.id !== p.id && x.opt && plain(x.opt) !== ansP && !plain(x.opt).includes(ansP) && !ansP.includes(plain(x.opt)));
-    const score = x => (cmpIds.has(x.id) ? 7 : 0) + (conf.has(x.id) ? 6 : 0) + (x.lv === p.lv && x.g === p.g ? 5 : 0) + (x.cc === p.cc ? 3 : 0) + (tail(x.opt) === tail(ansP) ? 3 : 0) + (x.lv === p.lv ? 1 : 0) + Math.random() * 4;
+    const score = x => (cmpIds.has(x.id) ? 7 : 0) + (conf.has(x.id) ? 6 : 0) + (x.lv === p.lv && x.g === p.g ? 5 : 0) + (x.cc === p.cc ? 3 : 0) + (tail(x.opt) === tail(ansP) ? 3 : 0) + (x.lv === p.lv ? 1 : 0) + 1.1 * HKD.sim(HKD.shape(ansP, "jp"), HKD.shape(plain(x.opt), "jp"), "jp") + Math.random() * 4;
     let c = dedupe(pool.map(x => [score(x), x]).sort((a, b) => b[0] - a[0]).map(x => x[1]), x => plain(x.opt)).slice(0, 3);
     if (c.length < 3) return null;
     const opts = shuffle([{ t: e.cl, ok: true }, ...c.map(x => ({ t: x.opt, ok: false, id: x.id }))]);
@@ -133,9 +133,10 @@
   function meanOpts(p, pool, field) {
     const world = LV[p.lv] ? LV[p.lv].pats : pool;
     const val = x => field === "mean" ? shortMean(x) : plain(x.pat);
-    let c = shuffle(pool.filter(x => x.id !== p.id && val(x) !== val(p)));
-    if (c.length < 3) c = c.concat(shuffle(world.filter(x => x.id !== p.id && !c.includes(x) && val(x) !== val(p))));
-    c = dedupe(c, val).slice(0, 3);
+    const inPool = new Set(pool);
+    let c = shuffle(pool.filter(x => x.id !== p.id && val(x) !== val(p)).concat(world.filter(x => x.id !== p.id && !inPool.has(x) && val(x) !== val(p))));
+    c = dedupe(c, val);
+    c = HKD.pickBy(val(p), c, 3, Math.random, field === "mean" ? "vi" : "jp", val, x => (inPool.has(x) ? 1.5 : 0) + (x.lv === p.lv ? 1 : 0) + (x.g === p.g ? 1.5 : 0));   // đáp án nhiễu cùng dạng với đáp án đúng
     return shuffle([p, ...c]);
   }
 

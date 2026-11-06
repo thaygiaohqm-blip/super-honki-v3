@@ -214,3 +214,13 @@
 html, body { overflow-x: clip; max-width: 100%; }
 .pickbar .btn { animation: glowp 1.4s ease-in-out infinite; }
 @keyframes glowp { 0%,100% { box-shadow: 0 0 0 0 rgba(11,59,59,.35); } 50% { box-shadow: 0 0 0 10px rgba(11,59,59,0); } }
+
+/* Cỡ chữ trong game: đề bài to hơn một nấc, nội dung câu hỏi nhỏ hơn một nấc */
+.mond { font-size: 15.5px; padding: 5px 13px; line-height: 1.35; }
+.q__big { font-size: clamp(52px, 13vw, 84px); }
+.q__big.sm { font-size: clamp(28px, 6.5vw, 42px); }
+.q__big.vn:not(.sm) { font-size: 24px; }
+.q__big.sm.vn { font-size: clamp(19px, 4.4vw, 27px); }
+.gback { position: sticky; top: 0; z-index: 30; padding: 8px 14px; max-width: 1100px; margin: 0 auto; pointer-events: none; }
+.gback .btn { pointer-events: auto; background: var(--card, #fff); box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.gback[hidden] { display: none; }

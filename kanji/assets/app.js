@@ -538,7 +538,7 @@
   }
   const mkOpts = (right, wrongs) => shuffle([right, ...wrongs]);
   const MONDAI = {
-    1: { t: "問題1", d: "Chọn cách đọc đúng của chữ Hán được gạch chân." },
+    1: { t: "問題1", d: "Chọn cách đọc đúng của chữ Hán." },
     2: { t: "問題2", d: "Chọn chữ Hán viết đúng cho cách đọc / ý nghĩa đã cho." }
   };
 
@@ -553,24 +553,39 @@
     const d = pickD(r, S, sim, 3, x => x.hv !== r.hv || x.m !== r.m);
     return { r, ask: "Chữ Hán nào có âm Hán Việt và nghĩa dưới đây?", big: '<span class="vi">' + esc(r.hv) + " | " + esc(r.m) + "</span>", bigClass: "sm", opts: mkOpts({ t: r.k, jp: 1, ok: 1, rec: r }, d.map(x => ({ t: x.k, jp: 1, rec: x }))) };
   }
+  /* ứng viên nhiễu: lấy rộng từ dpool rồi để HKD chọn các đáp án "cùng dạng" với đáp án đúng */
+  const TAILRE = /[\u3041-\u309f]+$/, tailOf = w => (TAILRE.exec(w) || [""])[0];
+  const wide = (r, S, sim, lim) => { const h = dpool(r, S, sim).slice(0, lim || 70), seen = new Set(h); return h.concat(shuffle(A.all).filter(x => x !== r && !seen.has(x))); };
+  function candReads(r, S, sim, it, used, tl) {
+    const out = [], seen = new Set(used), W = wide(r, S, sim, 110);
+    for (let n = 0; n < W.length; n++) {
+      const x = W[n];
+      items(x).filter(i => i.t === it.t && !seen.has(i.r) && (!tl || i.r.endsWith(tl))).forEach(i => { seen.add(i.r); out.push({ t: i.r, ja: 1, rec: x, bare: i.w === x.k, tail: tailOf(i.w) }); });
+      if (n >= 110 && out.length >= 8) break;
+    }
+    return out;
+  }
   function qRead(r, S, sim) {
     const all = items(r), it = rnd(all);
     const acc = new Set(all.filter(i => i.w === it.w).map(i => i.r));
-    const used = new Set(acc), wr = [];
-    for (const x of dpool(r, S, sim)) {
-      const c = items(x).filter(i => i.t === it.t && !used.has(i.r));
-      if (c.length) { const j = rnd(c); used.add(j.r); wr.push({ t: j.r, ja: 1, rec: x }); if (wr.length >= 3) break; }
-    }
-    return { r, ask: "Chọn cách đọc " + rtBadge(it.t) + " của chữ được gạch chân.", big: '<u lang="ja">' + esc(it.w) + "</u>", rt: it.t, opts: mkOpts({ t: it.r, ok: 1, ja: 1, rec: r }, wr) };
+    acc.add(it.r);
+    /* chữ có okurigana (宣う, 食べる…): cách đọc nào cũng phải kết thúc bằng phần kana đó, nên đáp án nhiễu cũng phải thế → không loại được bằng cách nhìn đuôi */
+    const tl = tailOf(it.w);
+    let cand = candReads(r, S, sim, it, acc, tl);
+    if (!tl && it.t === "kun") { const bare = cand.filter(c => c.bare); if (bare.length >= 3) cand = bare; }
+    else if (!tl) { const nb = cand.filter(c => !c.tail || c.t.length <= 4); if (nb.length >= 3) cand = nb; }
+    const wr = HKD.pickBy(it.r, cand, 3, Math.random, "jp", c => c.t);
+    return { r, ask: "Chọn cách đọc " + rtBadge(it.t) + " của chữ Hán dưới đây.", big: '<span lang="ja">' + esc(it.w) + "</span>", rt: it.t, opts: mkOpts({ t: it.r, ok: 1, ja: 1, rec: r }, wr) };
   }
   function qFromRead(r, S, sim, showHv) {
-    const it = rnd(items(r)), used = new Set([it.w]), wr = [];
-    for (const x of dpool(r, S, sim)) {
+    const it = rnd(items(r)), used = new Set([it.w]), cand = [], tl = tailOf(it.w), W = wide(r, S, sim, 110);
+    for (let n = 0; n < W.length; n++) {
+      const x = W[n];
       if (items(x).some(i => i.r === it.r)) continue;
-      const c = items(x).filter(i => i.t === it.t), j = rnd(c.length ? c : items(x));
-      if (!j || used.has(j.w)) continue;
-      used.add(j.w); wr.push({ t: j.w, jp: 1, rec: x }); if (wr.length >= 3) break;
+      items(x).forEach(j => { const t2 = tailOf(j.w); if (!used.has(j.w) && t2 === tl) { used.add(j.w); cand.push({ t: j.w, jp: 1, rec: x, same: j.t === it.t }); } });
+      if (n >= 110 && cand.length >= 8) break;
     }
+    const wr = HKD.pickBy(it.w, cand, 3, Math.random, "jp", c => c.t, c => c.same ? 1.5 : 0);
     return { r, ask: "Chữ Hán nào có cách đọc " + rtBadge(it.t) + " dưới đây?", big: '<span class="sm" lang="ja">' + esc(it.r) + "</span>", rt: it.t, vi: showHv ? r.hv + " · " + r.m : r.m, bigClass: "sm", opts: mkOpts({ t: it.w, jp: 1, ok: 1, rec: r }, wr) };
   }
   function qDiffFam(r, S) { const q = qKanjiFromHV(r, S, 2); q.ask = "Trong các chữ giống nhau, chữ nào có âm Hán Việt và nghĩa dưới đây?"; return q; }

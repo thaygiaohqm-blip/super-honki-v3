@@ -22,13 +22,15 @@ module.exports = async (req, res) => {
     if (req.method === "GET") {
       const g = url.searchParams.get("lb");
       if (!GAMES[g]) return L.send(res, 400, { error: "Trò chơi không hợp lệ." });
-      const raw = await L.redis("ZREVRANGE", "lb:" + g, 0, 49, "WITHSCORES");
+      const lvq = Number(url.searchParams.get("level")); if (!okLv(lvq)) return L.send(res, 400, { error: "Cấp độ không hợp lệ." });
+      const K = g + ":" + lvq; /* bảng xếp hạng riêng cho từng cấp */
+      const raw = await L.redis("ZREVRANGE", "lb:" + K, 0, 49, "WITHSCORES");
       const ids = [], sc = [];
       for (let i = 0; i < raw.length; i += 2) { ids.push(raw[i]); sc.push(Number(raw[i + 1])); }
-      const meta = ids.length ? await L.redis("HMGET", "lbn:" + g, ...ids) : [];
+      const meta = ids.length ? await L.redis("HMGET", "lbn:" + K, ...ids) : [];
       const top = ids.map((u, i) => { let m = {}; try { m = JSON.parse(meta[i] || "{}"); } catch (e) { /* bỏ qua */ } return { n: m.n || "Ẩn danh", l: m.l || 0, t: m.t || 0, s: sc[i] }; });
       let me = null; const uid = L.readToken(req.headers.authorization);
-      if (uid) { const s = await L.redis("ZSCORE", "lb:" + g, uid); if (s != null) { const r = await L.redis("ZREVRANK", "lb:" + g, uid); me = { s: Number(s), rank: Number(r) + 1 }; } }
+      if (uid) { const s = await L.redis("ZSCORE", "lb:" + K, uid); if (s != null) { const r = await L.redis("ZREVRANK", "lb:" + K, uid); me = { s: Number(s), rank: Number(r) + 1 }; } }
       return L.send(res, 200, { top, me });
     }
     if (req.method !== "POST") return L.send(res, 405, { error: "Phương thức không hợp lệ." });
@@ -97,8 +99,9 @@ module.exports = async (req, res) => {
         if (!(pts >= 0 && pts <= 10 * (n - 1)) || n < 2) return L.send(res, 400, { error: "Điểm không hợp lệ." });
         const first = await L.redis("SET", "gemurd:" + code + ":" + uid, "1", "NX", "EX", 86400);
         if (first !== "OK") return L.send(res, 200, { ok: true, dup: true });
-        if (pts > 0) { await L.redis("ZINCRBY", "lb:noi", pts, uid); await L.redis("HSET", "lbn:noi", uid, JSON.stringify({ n: name, l: meta.level, t: Date.now() })); }
-        const total = await L.redis("ZSCORE", "lb:noi", uid), rank = total == null ? null : Number(await L.redis("ZREVRANK", "lb:noi", uid)) + 1;
+        const NK = "noi:" + (okLv(+meta.level) ? +meta.level : 5);
+        if (pts > 0) { await L.redis("ZINCRBY", "lb:" + NK, pts, uid); await L.redis("HSET", "lbn:" + NK, uid, JSON.stringify({ n: name, l: meta.level, t: Date.now() })); }
+        const total = await L.redis("ZSCORE", "lb:" + NK, uid), rank = total == null ? null : Number(await L.redis("ZREVRANK", "lb:" + NK, uid)) + 1;
         return L.send(res, 200, { ok: true, total: Number(total || 0), rank });
       }
       return L.send(res, 400, { error: "Yêu cầu không hợp lệ." });
@@ -116,14 +119,15 @@ module.exports = async (req, res) => {
       if (!t0 || (Date.now() - t0) / 1000 < GAMES[g].min) return L.send(res, 400, { error: "Lượt chơi không hợp lệ hoặc quá nhanh." });
       await L.redis("DEL", rk);
       if (score <= 0) return L.send(res, 200, { ok: true, best: false });
-      const cur = await L.redis("ZSCORE", "lb:" + g, uid);
+      const K = g + ":" + (+b.level);
+      const cur = await L.redis("ZSCORE", "lb:" + K, uid);
       const better = cur == null || score > Number(cur);
       if (better) {
         const name = cleanName(b.name);
-        await L.redis("ZADD", "lb:" + g, "GT", score, uid);
-        await L.redis("HSET", "lbn:" + g, uid, JSON.stringify({ n: name, l: +b.level, t: Date.now() }));
+        await L.redis("ZADD", "lb:" + K, "GT", score, uid);
+        await L.redis("HSET", "lbn:" + K, uid, JSON.stringify({ n: name, l: +b.level, t: Date.now() }));
       }
-      const rank = Number(await L.redis("ZREVRANK", "lb:" + g, uid)) + 1;
+      const rank = Number(await L.redis("ZREVRANK", "lb:" + K, uid)) + 1;
       return L.send(res, 200, { ok: true, best: better, rank });
     }
 

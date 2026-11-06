@@ -88,7 +88,8 @@
 
   /* ---------- tạo câu hỏi (kèm thông tin chi tiết) ---------- */
   const kana = r => { const o = r.on.concat(r.kun.filter(x => !/^-|-$/.test(x))); return uniq((o.length ? o : r.kun).map(x => String(x).replace(/[-]/g, "").replace(".", ""))); };
-  const opts4 = (ok, pool, r) => { const bad = shuf(uniq(pool).filter(x => x !== ok), r).slice(0, 3); if (bad.length < 3) return null; return shuf([{ t: ok, ok: 1 }, ...bad.map(t => ({ t }))], r); };
+  /* 3 đáp án nhiễu "cùng dạng" với đáp án đúng (đuôi, kiểu chữ, độ dài) để không lộ đáp án qua hình thức */
+  const opts4 = (ok, pool, r, kind) => { const bad = HKD.pick(ok, uniq(pool).filter(x => x !== ok), 3, r, kind || "jp"); if (bad.length < 3) return null; return shuf([{ t: ok, ok: 1 }, ...bad.map(t => ({ t }))], r); };
   const infoK = k => '<div class="inf"><b class="inf__k" lang="ja">' + k.k + '</b><div><b>' + esc(k.hv) + "</b> | " + esc(k.m) + "<br>Âm On: " + esc(k.on.join("、") || "—") + " · Âm Kun: " + esc(k.kun.join("、") || "—") + " · " + k.s + " nét</div></div>";
   const infoV = v => '<div class="inf"><b class="inf__k sm" lang="ja">' + esc(v.w) + '</b><div>Cách đọc: <b lang="ja">' + esc(v.r || v.w) + "</b> · " + esc(v.vi) + (v.hv ? "<br>Hán Việt: " + esc(v.hv) : "") + "</div></div>";
   const hl = (full, cl) => esc(full).replace(esc(cl), "<mark>" + esc(cl) + "</mark>");
@@ -97,19 +98,19 @@
       const x = r(), kind = x < .33 ? "k" : x < .63 ? "v" : x < .85 ? "g" : "b", y = r();
       if (kind === "k" && D.K.length > 5) {
         const k = pick(D.K, r), info = infoK(k);
-        if (y < .34) { const o = opts4(k.hv, D.K.map(z => z.hv), r); if (o) return { ask: "Âm Hán Việt của chữ này là gì?", big: k.k, o, tag: "Kanji", info }; }
+        if (y < .34) { const o = opts4(k.hv, D.K.map(z => z.hv), r, "hv"); if (o) return { ask: "Âm Hán Việt của chữ này là gì?", big: k.k, o, tag: "Kanji", info }; }
         else if (y < .67) { const o = opts4(k.k, D.K.map(z => z.k), r); if (o) return { ask: "Chọn chữ Kanji đúng với nghĩa", big: esc(k.hv) + " | " + esc(k.m.slice(0, 40)), sm: 1, vn: 1, o: o.map(z => Object.assign(z, { jp: 1 })), tag: "Kanji", info }; }
         else { const ks = kana(k), ok = pick(ks, r), mine = new Set(ks), o = opts4(ok, D.K.flatMap(z => kana(z)).filter(z => !mine.has(z)), r); if (o) return { ask: "Chữ này có thể đọc là gì?", big: k.k, o, tag: "Kanji", info }; }
       } else if (kind === "v" && D.V.length > 5) {
         const v = pick(D.V, r), info = infoV(v);
-        if (y < .45) { const o = opts4(v.vi, D.V.map(z => z.vi), r); if (o) return { ask: "Nghĩa của từ này là gì?", big: v.w, sm: 1, o, tag: "Từ vựng", info }; }
+        if (y < .45) { const o = opts4(v.vi, D.V.map(z => z.vi), r, "vi"); if (o) return { ask: "Nghĩa của từ này là gì?", big: v.w, sm: 1, o, tag: "Từ vựng", info }; }
         else if (y < .75 && v.r && v.r !== v.w) { const o = opts4(v.r, D.V.map(z => z.r).filter(Boolean), r); if (o) return { ask: "Cách đọc của từ này là gì?", big: v.w, sm: 1, o: o.map(z => Object.assign(z, { jp: 1 })), tag: "Từ vựng", info }; }
         else { const o = opts4(v.w, D.V.map(z => z.w), r); if (o) return { ask: "Chọn từ đúng với nghĩa", big: esc(v.vi), sm: 1, vn: 1, o: o.map(z => Object.assign(z, { jp: 1 })), tag: "Từ vựng", info }; }
       } else if (kind === "g" && D.G.length > 5) {
         const g = pick(D.G, r), o = opts4(g.cl, D.CL, r);
         if (o) return { ask: "Chọn mẫu ngữ pháp điền vào chỗ trống", big: esc(g.s), sm: 1, vi: g.vi, o: o.map(z => Object.assign(z, { jp: 1 })), tag: "Ngữ pháp", gram: 1, info: '<div class="inf"><div><span lang="ja">' + hl(g.full, g.cl) + "</span><br>" + esc(g.vi) + "<br>Mẫu: <b lang=\"ja\">" + esc(g.pat) + "</b> — " + esc(g.mean) + "</div></div>" };
       } else if (kind === "b" && D.VB.length > 3) {
-        const v = pick(D.VB, r), bad = shuf(v.bad, r).slice(0, 3); if (bad.length < 3) continue;
+        const v = pick(D.VB, r), bad = HKD.pickBy(v.a, v.bad, 3, r, "jp", b => b.t); if (bad.length < 3) continue;
         const o = shuf([{ t: v.a, ok: 1, jp: 1 }, ...bad.map(b => ({ t: b.t, jp: 1, why: b.f }))], r);
         return { ask: "Chia động từ " + v.w + " sang " + v.fj + " (" + v.fv + ")", big: esc(v.pre) + "（＿＿）" + esc(v.post), sm: 1, vi: v.vi, o, tag: "Thể động từ", gram: 1, info: '<div class="inf"><div><span lang="ja">' + esc(v.pre) + "<mark>" + esc(v.a) + "</mark>" + esc(v.post) + "</span><br>" + esc(v.vi) + "<br>Động từ <b lang=\"ja\">" + esc(v.w) + "</b> (nhóm " + v.g + ") · <b>" + esc(v.fj) + "</b> (" + esc(v.fv) + ") → <b lang=\"ja\">" + esc(v.a) + "</b>" + (v.alts.length ? " (cũng đúng: " + esc(v.alts.join("、")) + ")" : "") + "</div></div>" };
       }
@@ -395,7 +396,7 @@
   }
 
   /* ---------- điều hướng, thiết lập, kết quả ---------- */
-  const state = { game: null, level: 5, mode: "solo", lb: "chon" };
+  const state = { game: null, level: 5, mode: "solo", lb: "chon", lbl: 5 };
   const best = {}; try { Object.assign(best, JSON.parse(localStorage.getItem("gemu:best") || "{}")); } catch (e) { /* bỏ qua */ }
   const saveBest = (g, s) => { if (s > (best[g] || 0)) { best[g] = s; try { localStorage.setItem("gemu:best", JSON.stringify(best)); } catch (e) { /* bỏ qua */ } } };
 
@@ -404,17 +405,18 @@
     const tile = (g, cls) => '<button class="bt ' + cls + '" type="button" data-g="' + g + '"><span class="bt__i">' + GAMES[g].icon + '</span><b>' + GAMES[g].name + "</b><span>" + GAMES[g].short + '</span><em>' + (g === "noi" ? "Nhiều người" : best[g] ? "Kỉ lục của bạn: " + best[g] : "Chưa có kỉ lục") + "</em></button>";
     main.innerHTML = '<div class="gm"><h1>Super Gemu</h1><p class="gm__sub">Học mà chơi, chơi mà học. Chọn một góc bánh chưng để bắt đầu!</p><div class="bc"><div class="bc__leaf"></div><div class="bc__str bc__str--h"></div><div class="bc__str bc__str--v"></div>' +
       tile("chon", "bt--tl") + tile("chop", "bt--tr") + tile("doan", "bt--bl") + tile("vua", "bt--br") + '</div><div class="more">' + tile("noi", "bt--noi") + '</div>' +
-      '<h2>🏆 Bảng xếp hạng mọi thời đại</h2><div class="gtabs">' + GK.map(g => '<button class="chip" type="button" data-lb="' + g + '" aria-current="' + (state.lb === g) + '">' + GAMES[g].name + '</button>').join("") + '</div><div id="lb"><p class="gnote">Đang tải…</p></div></div>';
+      '<h2>🏆 Bảng xếp hạng mọi thời đại (theo từng cấp)</h2><div class="gtabs">' + GK.map(g => '<button class="chip" type="button" data-lb="' + g + '" aria-current="' + (state.lb === g) + '">' + GAMES[g].name + '</button>').join("") + '</div><div class="gtabs" id="lbl">' + LEVELS.map(l => '<button class="chip" type="button" data-ll="' + l + '" aria-current="' + (state.lbl === l) + '">' + LVN[l] + '</button>').join("") + '</div><div id="lb"><p class="gnote">Đang tải…</p></div></div>';
     $$("[data-g]").forEach(b => b.onclick = () => { location.hash = "#/" + b.dataset.g; });
     $$("[data-lb]").forEach(b => b.onclick = () => { state.lb = b.dataset.lb; $$("[data-lb]").forEach(x => x.setAttribute("aria-current", x === b)); loadLb(); });
+    $$("[data-ll]").forEach(b => b.onclick = () => { state.lbl = +b.dataset.ll; $$("[data-ll]").forEach(x => x.setAttribute("aria-current", x === b)); loadLb(); });
     loadLb();
   }
   async function loadLb() {
-    const g = state.lb, j = await api("GET", null, "?lb=" + g); const el = $("#lb"); if (!el || state.lb !== g) return;
+    const g = state.lb, lv = state.lbl, j = await api("GET", null, "?lb=" + g + "&level=" + lv); const el = $("#lb"); if (!el || state.lb !== g || state.lbl !== lv) return;
     if (!j._ok) { el.innerHTML = '<p class="gnote">' + esc(j.error || "Chưa tải được bảng xếp hạng.") + "</p>"; return; }
-    if (!j.top.length) { el.innerHTML = '<p class="gnote">Chưa có ai trên bảng. Hãy là người đầu tiên lập kỉ lục!</p>'; return; }
+    if (!j.top.length) { el.innerHTML = '<p class="gnote">Chưa có ai trên bảng ' + LVN[lv] + '. Hãy là người đầu tiên lập kỉ lục!</p>'; return; }
     const me = sess() && sess().name;
-    el.innerHTML = '<table class="lbt"><thead><tr><th>#</th><th>Người chơi</th><th>Cấp</th><th style="text-align:right">' + (g === "noi" ? "Tổng điểm" : "Điểm") + '</th></tr></thead><tbody>' + j.top.map((r, i) => '<tr' + (me && r.n === me ? ' class="me"' : "") + "><td>" + (i < 3 ? ["🥇", "🥈", "🥉"][i] : i + 1) + "</td><td>" + esc(r.n) + "</td><td>" + (r.l ? LVN[r.l] : "") + "</td><td>" + r.s + "</td></tr>").join("") + "</tbody></table>" + (j.me ? '<p class="gnote">Hạng của bạn: <b>#' + j.me.rank + "</b> · " + j.me.s + " điểm</p>" : "");
+    el.innerHTML = '<table class="lbt"><thead><tr><th>#</th><th>Người chơi</th><th style="text-align:right">' + (g === "noi" ? "Tổng điểm" : "Điểm") + '</th></tr></thead><tbody>' + j.top.map((r, i) => '<tr' + (me && r.n === me ? ' class="me"' : "") + "><td>" + (i < 3 ? ["🥇", "🥈", "🥉"][i] : i + 1) + "</td><td>" + esc(r.n) + "</td><td>" + r.s + "</td></tr>").join("") + "</tbody></table>" + (j.me ? '<p class="gnote">Hạng của bạn: <b>#' + j.me.rank + "</b> · " + j.me.s + " điểm</p>" : "");
   }
 
   function viewSetup(g) {
@@ -501,6 +503,7 @@
     stopAll(); window.scrollTo(0, 0);
     const g = location.hash.replace(/^#\/?/, "").split("/")[0];
     document.title = "Super Gemu" + (GAMES[g] ? " — " + GAMES[g].name : "");
+    const gb = document.getElementById("gback"); if (gb) gb.hidden = !GAMES[g]; /* nút quay lại danh mục: hiện ở mọi màn hình trong game */
     if (GAMES[g]) viewSetup(g); else viewHome();
   }
   window.addEventListener("hashchange", route);

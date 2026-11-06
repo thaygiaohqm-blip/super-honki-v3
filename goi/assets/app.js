@@ -345,7 +345,8 @@
     const near = list => [...shuffle(list.filter(sameP)), ...shuffle(list.filter(x => x !== e && !sameP(x)))];
     if (kind === "mean") {
       const picks = [];
-      for (const x of near(pool)) { if (picks.length === 3) break; if (x.vi !== e.vi && !picks.some(p => p.vi === x.vi)) picks.push(x); }
+      const cand = near(pool).filter(x => x.vi !== e.vi).slice(0, 140);
+      for (const x of HKD.pickBy(e.vi, cand, 12, Math.random, "vi", x => x.vi, x => (sameP(x) ? 2 : 0))) { if (picks.length === 3) break; if (!picks.some(p => p.vi === x.vi)) picks.push(x); }
       if (picks.length < 3) return null;
       const opts = shuffle([e, ...picks]);
       return { kind, e, opts: opts.map(o => o.vi), ans: opts.indexOf(e) };
@@ -353,7 +354,8 @@
     if (kind === "cloze") {
       if (!(e.c && e.c.includes("{") && e.cv)) return null;
       const picks = [];
-      for (const x of near(pool)) { if (picks.length === 3) break; if (surf(x.w) !== surf(e.w) && x.vi !== e.vi && !picks.some(p => surf(p.w) === surf(x.w))) picks.push(x); }
+      const cand = near(pool).filter(x => surf(x.w) !== surf(e.w) && x.vi !== e.vi).slice(0, 140);
+      for (const x of HKD.pickBy(surf(e.w), cand, 12, Math.random, "jp", x => surf(x.w), x => (sameP(x) ? 2.5 : 0))) { if (picks.length === 3) break; if (!picks.some(p => surf(p.w) === surf(x.w))) picks.push(x); }
       if (picks.length < 3) return null;
       const opts = shuffle([e, ...picks]);
       return { kind, e, opts, ans: opts.indexOf(e) };
@@ -362,12 +364,9 @@
       const rd = kana(e.w);
       if (!HAS_KANJI.test(surf(e.w)) || rd.length < 2) return null;
       const withK = pool.filter(x => HAS_KANJI.test(surf(x.w)) && kana(x.w) !== rd);
-      const pickBy = tol => {
-        const out = [];
-        for (const x of near(withK)) { const k = kana(x.w); if (Math.abs(k.length - rd.length) <= tol && !out.includes(k)) out.push(k); if (out.length === 3) break; }
-        return out;
-      };
-      let picks = pickBy(0); if (picks.length < 3) picks = pickBy(1); if (picks.length < 3) return null;
+      const cand = near(withK).slice(0, 140).map(x => ({ k: kana(x.w) })).filter(c => c.k !== rd);
+      const picks = HKD.pickBy(rd, cand, 3, Math.random, "jp", c => c.k).map(c => c.k);
+      if (picks.length < 3) return null;
       const opts = shuffle([rd, ...picks]);
       return { kind, e, opts, ans: opts.indexOf(rd) };
     }
@@ -809,10 +808,15 @@
     /* --- trắc nghiệm --- */
     function newQuiz() { st.streak = 0; st.quiz = { deck: shuffle(items), k: 0, right: 0, wrong: [], answered: null, opts: null }; }
     function makeOpts(e) {
-      const same = shuffle(items.filter(x => x !== e && meaningOf(x) !== meaningOf(e) && x.p.split(",")[0][0] === e.p[0]));
-      const rest = shuffle(items.filter(x => x !== e && meaningOf(x) !== meaningOf(e) && !same.includes(x)));
+      /* chọn đáp án nhiễu giống đáp án đúng cả ở mặt chữ Nhật lẫn nghĩa tiếng Việt, cùng từ loại → không lộ đáp án qua hình thức */
+      const mE = HKD.shape(meaningOf(e), "vi");
+      const cands = shuffle(items.filter(x => x !== e && meaningOf(x) !== meaningOf(e) && surf(x.c || x.w) !== surf(e.c || e.w))).slice(0, 160);
+      const bonus = x => (x.p.split(",")[0][0] === e.p[0] ? 2.5 : 0) + 0.8 * HKD.sim(mE, HKD.shape(meaningOf(x), "vi"), "vi");
       const picks = [];
-      for (const x of [...same, ...rest]) { if (picks.length === 3) break; if (!picks.some(p => meaningOf(p) === meaningOf(x) || surf(p.c || p.w) === surf(x.c || x.w))) picks.push(x); }
+      for (const x of HKD.pickBy(surf(e.c || e.w), cands, 12, Math.random, "jp", x => surf(x.c || x.w), bonus)) {
+        if (picks.length === 3) break;
+        if (!picks.some(p => meaningOf(p) === meaningOf(x) || surf(p.c || p.w) === surf(x.c || x.w))) picks.push(x);
+      }
       return shuffle([e, ...picks]);
     }
     function paintQuiz() {
