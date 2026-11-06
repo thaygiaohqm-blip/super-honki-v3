@@ -69,7 +69,7 @@
         const r = await api("PUT", { data: { progress: { ok: P.known, rv: P.unk, gt: P.tests, ts: {}, clr: 0 }, placement: P.place || {} }, ifRev: j.rev || 0 });
         if (r && r.ok) break;
       }
-    } finally { syncing = false; if (!inQuiz && !dlg.open) route(); }
+    } finally { syncing = false; if (!inQuiz && !dlg.open && !/^#\/[^/]+\/[^/]+\/./.test(location.hash)) route(); /* không dựng lại khi đang ở màn luyện tập/test/kết quả */ }
   }
   window.addEventListener("honki:auth", () => { if (sess()) syncNow(); });
 

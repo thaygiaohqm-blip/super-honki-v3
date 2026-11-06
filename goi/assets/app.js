@@ -1380,7 +1380,7 @@
       store.set("progress", P);
       if (blob && blob.placement) store.set("placement", blob.placement); else { try { localStorage.removeItem("md:placement"); } catch (e) { /* bỏ qua */ } }
       paintReviewBadge();
-      if (JSON.stringify([P, store.get("placement", null)]) !== before && !(current && current.destroy)) route();
+      if (JSON.stringify([P, store.get("placement", null)]) !== before && !(current && current.destroy) && /^(#\/?)?$|^#\/(n[1-5]|review)?$/.test(location.hash)) route();
     }
   };
 
