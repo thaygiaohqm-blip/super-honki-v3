@@ -135,3 +135,65 @@
 .q__big.sm.vn { font-size: clamp(22px, 5vw, 32px); }
 .q__vi, .q__ask, .inf, .rv__i summary, .opt, .mond { font-family: var(--ui); }
 .opt:not(.is-jp) { font-family: var(--ui); }
+
+/* ---- đầu màn chơi: tên game + luật ---- */
+.ghead { margin: 0 0 10px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 16px; background: linear-gradient(135deg, var(--mint-soft), var(--surface)); }
+.ghead__t { display: flex; align-items: center; gap: 10px; }
+.ghead__ic { font-size: 26px; }
+.gm .ghead h1 { margin: 0; font-size: clamp(20px, 4.2vw, 28px); }
+.ghead__r { margin: 6px 0 2px; font-size: 14px; line-height: 1.55; color: var(--muted); }
+.ghead__r.is-clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.ghead__b { border: 0; background: none; padding: 2px 0; font: inherit; font-size: 13px; font-weight: 700; color: var(--brand-ink); cursor: pointer; }
+
+/* ---- điểm số nổi bật ---- */
+.pill--sc { position: relative; transition: transform .2s; }
+.pill--sc.big { font-size: 15px; background: linear-gradient(135deg, #fff3c4, #ffe08a); color: #5b3b00; border: 1.5px solid #e0b34a; box-shadow: 0 4px 12px -6px rgba(224,179,74,.8); }
+.pill--sc.big b { font-size: 20px; font-family: var(--jp); }
+.pill--sc.hot { background: linear-gradient(135deg, #ffd9b0, #ff9d5c); color: #5a1d00; border-color: #ff7a2a; animation: hotp 1s ease-in-out infinite; }
+@keyframes hotp { 50% { transform: scale(1.07); box-shadow: 0 0 0 6px rgba(255,122,42,.18); } }
+.pill--sc.pop { animation: scpop .75s cubic-bezier(.2,1.6,.4,1); }
+.pill--sc.pop b { animation: scglow .9s ease-out; }
+.pill--sc.drop { animation: scdrop .6s; }
+@keyframes scpop { 0% { transform: scale(1); } 30% { transform: scale(1.35) rotate(-3deg); box-shadow: 0 0 0 10px rgba(244,197,66,.35); } 100% { transform: scale(1); } }
+@keyframes scglow { 0% { color: #e63946; text-shadow: 0 0 14px #ffb703; } 100% { text-shadow: none; } }
+@keyframes scdrop { 0%,100% { transform: translateX(0); } 20% { transform: translateX(-6px); background: #ffd0d0; } 40% { transform: translateX(6px); } 60% { transform: translateX(-4px); } 80% { transform: translateX(3px); } }
+.pill--sc .plus { position: absolute; right: 6px; top: -4px; font-style: normal; font-weight: 800; font-size: 16px; color: #1a9d57; pointer-events: none; animation: plusup 1s ease-out forwards; text-shadow: 0 1px 0 #fff; }
+@keyframes plusup { 0% { opacity: 0; transform: translateY(6px) scale(.6); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(-34px) scale(1.3); } }
+.pill--low { background: #ffe1e1; color: #b3261e; animation: hotp .7s infinite; }
+.finsc { animation: finpop .9s cubic-bezier(.2,1.6,.4,1) both; background: linear-gradient(90deg, #ff7a2a, #e63946, #7a5cff); -webkit-background-clip: text; background-clip: text; color: transparent !important; }
+@keyframes finpop { 0% { transform: scale(.3); opacity: 0; } 60% { transform: scale(1.25); } 100% { transform: scale(1); opacity: 1; } }
+.vs b, .nbig { animation: finpop .8s cubic-bezier(.2,1.6,.4,1) both; }
+
+/* ---- Đoán chữ: dấu ？ nhấp nhô ---- */
+.gbig.mystery { position: relative; min-height: 130px; display: flex; align-items: center; justify-content: center; }
+.gbig.mystery .qm { display: inline-block; animation: qbob 1.5s ease-in-out infinite; text-shadow: 0 6px 0 rgba(230,57,70,.18), 0 0 28px rgba(244,197,66,.55); transform-origin: 50% 90%; }
+.gbig.mystery .sp { position: absolute; font-style: normal; font-size: 22px; color: #f4c542; opacity: 0; animation: twk 2s ease-in-out infinite; }
+.gbig.mystery .s1 { left: 28%; top: 16%; } .gbig.mystery .s2 { right: 27%; top: 30%; animation-delay: .7s; color: #27c4b5; } .gbig.mystery .s3 { left: 36%; bottom: 8%; animation-delay: 1.3s; color: #ed3838; }
+@keyframes qbob { 0%,100% { transform: translateY(0) rotate(-6deg) scale(1); } 25% { transform: translateY(-16px) rotate(4deg) scale(1.08); } 50% { transform: translateY(0) rotate(7deg) scale(.96, 1.05); } 75% { transform: translateY(-8px) rotate(-3deg); } }
+@keyframes twk { 0%,100% { opacity: 0; transform: scale(.4) rotate(0); } 50% { opacity: 1; transform: scale(1.3) rotate(90deg); } }
+.gbig.reveal { animation: revl .8s cubic-bezier(.2,1.5,.4,1); }
+@keyframes revl { 0% { transform: scale(.2) rotate(-90deg); opacity: 0; } 100% { transform: none; opacity: 1; } }
+
+/* ---- Đoán chữ: mốc điểm và gợi ý ---- */
+.pmeter { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 8px; }
+.pm { text-align: center; padding: 8px 4px; border-radius: 14px; border: 2px solid var(--line); background: var(--surface); transition: all .35s; }
+.pm b { display: block; font: 800 22px var(--jp); } .pm small { display: block; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; } .pm span { font-size: 12px; color: var(--muted); }
+.pm.cur { border-color: #e0b34a; background: linear-gradient(135deg, #fff3c4, #ffe08a); color: #5b3b00; transform: scale(1.06); box-shadow: 0 8px 18px -8px rgba(224,179,74,.9); animation: hotp 1.6s ease-in-out infinite; }
+.pm.cur span { color: #7a5200; }
+.pm.cur.bump { animation: bump .7s cubic-bezier(.2,1.6,.4,1); }
+@keyframes bump { 0% { transform: scale(.8); } 50% { transform: scale(1.22); } 100% { transform: scale(1.06); } }
+.pm.past { opacity: .4; } .pm.past b { text-decoration: line-through; }
+.hint.fresh { animation: fresh 1.6s ease-out; position: relative; }
+@keyframes fresh { 0% { transform: translateX(-30px) scale(.9); opacity: 0; background: #ffe08a; box-shadow: 0 0 0 0 rgba(244,197,66,.9); } 30% { transform: none; opacity: 1; box-shadow: 0 0 0 12px rgba(244,197,66,.35); } 100% { box-shadow: 0 0 0 0 rgba(244,197,66,0); } }
+.dg__l.got { animation: gotl 1s ease-out; }
+@keyframes gotl { 0% { box-shadow: 0 0 0 0 rgba(244,197,66,.9); } 100% { box-shadow: 0 0 0 26px rgba(244,197,66,0); } }
+.hintban, .hintget .hintban { display: block; padding: 10px 14px; border-radius: 14px; font-weight: 700; background: linear-gradient(135deg, #fff3c4, #ffe08a); color: #5b3b00; border: 2px solid #e0b34a; }
+.hintban small { display: block; font-weight: 600; margin-top: 3px; }
+.hintban.up { background: linear-gradient(135deg, #ffe1c2, #ffb27a); border-color: #ff7a2a; }
+.hintget { margin: 12px 0; animation: hgin .6s cubic-bezier(.2,1.5,.4,1); }
+@keyframes hgin { 0% { transform: scale(.6); opacity: 0; } 100% { transform: none; opacity: 1; } }
+.qres .act { flex-wrap: wrap; gap: 10px; }
+.btn[disabled] { opacity: .55; cursor: not-allowed; }
+.hintnote { flex-basis: 100%; margin: 0; }
+@media (prefers-reduced-motion: reduce) { .gbig.mystery .qm, .gbig.mystery .sp, .pm.cur, .pill--sc, .pill--sc.hot, .pill--low, .finsc, .hint.fresh, .dg__l.got, .hintget, .vs b, .nbig, .pill--sc .plus { animation: none !important; } }
+.gbig.mystery { font-size: clamp(90px, 20vw, 140px); } .gbig.mystery .qm { color: var(--coral); font-weight: 900; }

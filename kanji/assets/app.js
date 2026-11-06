@@ -248,7 +248,7 @@
     const paras = (r.o || "").split("¶").map(t => t.trim()).filter(Boolean).map(t => "<p>" + esc(t) + "</p>").join("");
     return "<h4>Nguồn gốc theo Lục thư</h4>" + (tags ? '<div class="lsrow">' + tags + "</div>" : "") + (paras || "<p>Chưa có.</p>") + (r.a ? '<p class="note">Mục này đang là bản tổng hợp tự động từ cấu tạo chữ, chưa được biên soạn kỹ.</p>' : "");
   }
-  function detailHTML(r) {
+  function detailHTML(r, fold) {
     const rad = A.radN[r.r];
     const fams = (r.f || []).map(h => A.famBy[h]).filter(Boolean);
     const partTile = p => {
@@ -258,12 +258,14 @@
       return '<button type="button" class="part" ' + at + ' title="Bấm để xem chi tiết"><span class="g" lang="ja">' + esc(p[0]) + "</span><span><b>" + esc(p[1] || "") + "</b><small>" + esc(sub) + "</small></span></button>";
     };
     const parts = (r.p || []).map(partTile).join("");
-    return '<div class="kd"><div class="kd__head"><div class="kd__glyph" lang="ja">' + r.k + '</div><div class="kd__info"><div class="kd__hv">' + esc(r.hv) + '</div><div class="kd__m">' + esc(r.m) + '</div><div class="tags"><span class="tag tag--lv">' + LVN[r.l] + '</span><span class="tag">' + r.s + " nét</span>" + (rad ? '<button type="button" class="tag tag--btn" data-comp="' + esc(rad.g) + '" data-chv="' + esc(rad.hv) + '" data-cm="' + esc(rad.m) + '" data-cv="">Bộ ' + esc(rad.g) + " " + esc(rad.hv) + " · #" + rad.n + "</button>" : "") + '</div></div><div class="kd__st"><div class="strokes" data-st="' + r.k + '"><span>Đang tải…</span></div></div></div>' +
+    const out = '<div class="kd"><div class="kd__head"><div class="kd__glyph" lang="ja">' + r.k + '</div><div class="kd__info"><div class="kd__hv">' + esc(r.hv) + '</div><div class="kd__m">' + esc(r.m) + '</div><div class="tags"><span class="tag tag--lv">' + LVN[r.l] + '</span><span class="tag">' + r.s + " nét</span>" + (rad ? '<button type="button" class="tag tag--btn" data-comp="' + esc(rad.g) + '" data-chv="' + esc(rad.hv) + '" data-cm="' + esc(rad.m) + '" data-cv="">Bộ ' + esc(rad.g) + " " + esc(rad.hv) + " · #" + rad.n + "</button>" : "") + '</div></div><div class="kd__st"><div class="strokes" data-st="' + r.k + '"><span>Đang tải…</span></div></div></div>' +
       '<div class="rdg"><div><small class="on">ÂM ON · 音読み</small><div class="v" lang="ja">' + (r.on.length ? r.on.map(esc).join("；") : "—") + '</div></div><div><small>ÂM KUN · 訓読み</small><div class="v" lang="ja">' + (r.kun.length ? r.kun.map(fmtKun).join("；") : "—") + "</div></div></div>" +
       "<h4>Phân tích bộ thủ</h4>" + (parts ? '<div class="parts">' + parts + "</div>" : "<p>Chữ độc thể, không tách được thành các bộ nhỏ hơn.</p>") +
-      etyHTML(r) +
+      etyHTML(r) + "\u0001" +
       fams.map(f => "<h4>Gia đình chữ “" + esc(f.h) + "”" + (f.hv ? " · " + esc(f.hv) : "") + " <small>" + f.recs.length + " chữ" + (f.kd.includes("CC") ? " · nhóm chuyển chú" : f.kd.includes("HT") ? " · cùng phần chỉ âm" : "") + "</small></h4>" + '<table class="famtab"><thead><tr><th>Chữ</th><th>Hán Việt</th><th>Âm on</th><th>Nghĩa</th></tr></thead><tbody>' + f.recs.map(x => '<tr class="' + (x === r ? "is-me" : "") + '"><td><span class="g" lang="ja" data-k="' + x.k + '">' + x.k + '</span></td><td class="hv">' + esc(x.hv) + '</td><td lang="ja">' + esc(x.on.slice(0, 2).join("・") || "—") + "</td><td>" + esc(shortM(x.m)) + "</td></tr>").join("") + "</tbody></table>").join("") +
       '<h4>Từ vựng chứa chữ này</h4><div class="kwords" data-words="' + r.k + '"></div></div>';
+    if (!fold) return out.replace("\u0001", "");
+    return out.replace("\u0001", '<button type="button" class="kd__loc" aria-expanded="false"><span>📍 Định vị chữ</span><small>Gia đình chữ · từ vựng chứa chữ này</small><i aria-hidden="true">▾</i></button><div class="kd__more" hidden>').replace(/<\/div>$/, "</div></div>");
   }
   const dlg = $("#kmodal"); let CTX = [], CUR = null, KSTACK = [];
   const glyphOf = o => o.k || o.g;
@@ -373,23 +375,22 @@
     const done = LEVELS.filter(l => (P.place["n" + l] || {}).pass);
     const hi = done.length ? Math.min(...done) : null;
     const card = l => {
-      const st = P.place["n" + l] || {}, open = l === 5 || (P.place["n" + (l + 1)] || {}).pass;
+      const st = P.place["n" + l] || {}, open = true;
       const tag = st.pass ? '<span class="pl__ok">✓ Đã qua · ' + st.best + "/20</span>" : open ? '<span class="pl__go">Sẵn sàng' + (st.best != null ? " · cao nhất " + st.best + "/20" : "") + "</span>" : '<span class="pl__lock">🔒 Qua ' + LVN[l + 1] + " để mở</span>";
-      return '<' + (open ? 'a href="#/dau-vao/n' + l + '"' : 'div') + ' class="card card--lv pl' + (open ? "" : " is-lock") + (st.pass ? " is-pass" : "") + '"><div class="card__top"><span class="big">' + LVN[l] + '</span><span class="pill">20 câu</span></div><p>Thi đầu vào Kanji ' + LVN[l] + ': 10 câu cách đọc + 10 câu chọn Kanji. Đạt từ 80% (16/20) để sang cấp ' + (l > 1 ? LVN[l - 1] : "cao nhất") + "</p>" + tag + "</" + (open ? "a" : "div") + ">";
+      return '<' + (open ? 'a href="#/dau-vao/n' + l + '"' : 'div') + ' class="card card--lv pl' + (open ? "" : " is-lock") + (st.pass ? " is-pass" : "") + '"><div class="card__top"><span class="big">' + LVN[l] + '</span><span class="pill">20 câu</span></div><p>Thi đầu vào Kanji ' + LVN[l] + ': 10 câu cách đọc + 10 câu chọn Kanji. Đạt từ 80% (16/20) để lên ' + (l > 1 ? LVN[l - 1] : "cấp cao nhất") + (l < 5 ? "; chưa đạt sẽ được gợi ý làm " + LVN[l + 1] : "; chưa đạt hãy ôn lại " + LVN[l]) + ".</p>" + tag + "</" + (open ? "a" : "div") + ">";
     };
-    main.innerHTML = hero("Test đầu vào", "Làm lần lượt từ N5 lên N1. Mỗi bài gồm 2 mondai, 20 câu; đạt từ 80% (16/20) mới qua cấp tiếp theo.", pill("Cấp cao nhất đã qua", hi ? LVN[hi] : "Chưa có") + pill("Điều kiện qua", "≥ 80%")) +
+    main.innerHTML = hero("Test đầu vào", "Chọn bất kỳ cấp nào để thử sức. Mỗi bài gồm 2 mondai, 20 câu. Đạt từ 80% (16/20) thì nên thử cấp cao hơn; chưa đạt thì làm cấp thấp hơn để xác định đúng trình độ.", pill("Cấp cao nhất đã qua", hi ? LVN[hi] : "Chưa có") + pill("Điều kiện qua", "≥ 80%")) +
       '<div class="wrap lvgrid"><div class="lvrow">' + card(5) + card(4) + '</div><div class="lvrow">' + card(3) + card(2) + '</div><div class="lvrow lvrow--1">' + card(1) + "</div></div>";
   }
   function vPlaceLv(id) {
     const l = +String(id).slice(1); if (!A.lv[l]) return vPlace();
-    if (l !== 5 && !(P.place["n" + (l + 1)] || {}).pass) { location.hash = "#/dau-vao"; return; }
     const S = { tab: "dau-vao", id: "n" + l, key: "dau-vao/n" + l, list: A.lv[l], title: "Test đầu vào " + LVN[l], sub: "", back: "#/dau-vao", groups: null, lv: l };
     document.title = "Super Kanji — " + S.title; CTX = S.list;
     quizPage(S, () => buildTest(S), { test: true, after: (sc, n, root) => {
       const ok = sc >= PASS, st = P.place["n" + l] || { n: 0 }; st.n = (st.n || 0) + 1; st.best = Math.max(st.best || 0, sc); if (ok) st.pass = true; P.place["n" + l] = st; saveP();
-      const nx = l > 1 ? LVN[l - 1] : null;
+      const up = l > 1 ? LVN[l - 1] : null, dn = l < 5 ? LVN[l + 1] : null, pc = Math.round(100 * sc / n);
       const box = document.createElement("div"); box.className = "pl__res " + (ok ? "ok" : "no");
-      box.innerHTML = ok ? "<b>🎉 Đạt " + Math.round(100 * sc / n) + "%!</b> Bạn đã qua " + LVN[l] + (nx ? ". Cấp " + nx + " đã được mở." : ". Bạn đã hoàn thành mọi cấp!") + (nx ? ' <a class="btn btn--primary btn--sm" href="#/dau-vao/n' + (l - 1) + '">Làm tiếp ' + nx + " →</a>" : "") : "<b>Chưa đạt.</b> Cần ít nhất " + PASS + "/20 (80%) để qua " + LVN[l] + ". Bạn được " + sc + '/20 — ôn lại rồi thử lần nữa nhé. <a class="btn btn--ghost btn--sm" href="#/jlpt/n' + l + '">Ôn ' + LVN[l] + "</a>";
+      box.innerHTML = ok ? "<b>🎉 Đạt " + pc + "%!</b> Bạn đã qua " + LVN[l] + (up ? ". Hãy thử tiếp cấp " + up + " để xem trình độ của mình ở đâu." : ". Bạn đã hoàn thành mọi cấp, trình độ cao nhất!") + (up ? ' <a class="btn btn--primary btn--sm" href="#/dau-vao/n' + (l - 1) + '">Làm ' + up + " →</a>" : "") : "<b>Chưa đạt (" + pc + "%).</b> Cần ít nhất " + PASS + "/20 (80%) để qua " + LVN[l] + ". Bạn được " + sc + "/20. " + (dn ? "Hãy làm " + dn + " để kiểm tra lại trình độ." : "Hãy ôn lại " + LVN[l] + " từ đầu rồi thử lại nhé.") + (dn ? ' <a class="btn btn--primary btn--sm" href="#/dau-vao/n' + (l + 1) + '">Làm ' + dn + " →</a>" : "") + ' <a class="btn btn--ghost btn--sm" href="#/jlpt/n' + l + '">Ôn ' + LVN[l] + "</a>";
       const res = root.querySelector(".res"); if (res) res.insertBefore(box, res.querySelector(".act")); else root.appendChild(box);
     } });
   }
@@ -489,6 +490,7 @@
   function modesFor(S) {
     const m = [
       { id: "flash", t: "Flashcard", d: "Lật thẻ: mặt trước là chữ, mặt sau đủ thông tin" },
+      ...(S.tab === "jlpt" ? [{ id: "goi", t: "Flashcard theo gói", d: "Chia chữ thành gói 10 hoặc 20 chữ để học từng chút" }] : []),
       { id: "mc1", t: "Chữ → Hán Việt", d: "Nhìn chữ, chọn âm Hán Việt" },
       { id: "mc2", t: "Hán Việt + nghĩa → chữ", d: "Nhìn âm Hán Việt và nghĩa, chọn chữ" },
       { id: "mc3", t: "Cách đọc → chữ", d: "Nhìn cách đọc (On/Kun), chọn chữ" },
@@ -687,7 +689,24 @@
 
   /* ---------- flashcard (lật thẻ 3D, vuốt, hiệu ứng như Super Goi) ---------- */
   const ICON_FLIP = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg>';
+  let PACK = 10; try { PACK = +localStorage.getItem("honki:kanji:pack") === 20 ? 20 : 10; } catch (e) { /* bỏ qua */ }
+  function vPacks(S) {
+    const draw = () => {
+      const n = PACK, groups = S.groups || [{ title: "", list: S.list }];
+      const one = (idx) => { const ls = S.list.slice(idx * n, idx * n + n), kn = knownCount(ls); return '<a class="card card--pack' + (kn === ls.length ? " is-done" : "") + '" href="' + href(S, "flash") + "/" + n + "-" + (idx + 1) + '"><div class="card__top"><span class="card__no">' + (idx + 1) + '</span><span class="pill">' + ls.length + ' chữ</span></div><div class="card__glyphs" lang="ja">' + ls.map(r => r.k).join("") + "</div>" + bar(kn, ls.length) + "<p>Đã thuộc " + kn + "/" + ls.length + "</p></a>"; };
+      const pos = new Map(S.list.map((r, i) => [r, i]));
+      const html = groups.map(g => { const ids = uniq(g.list.map(r => Math.floor(pos.get(r) / n))); return (g.title ? '<div class="lvhead"><span>' + esc(g.title) + "</span><small>" + g.list.length + " chữ · " + ids.length + " gói</small></div>" : "") + '<div class="cards">' + ids.map(one).join("") + "</div>"; }).join("");
+      $("#packs").innerHTML = html;
+      $$("[data-pk]").forEach(b => b.setAttribute("aria-pressed", +b.dataset.pk === PACK));
+      $("#packn").textContent = Math.ceil(S.list.length / n) + " gói";
+    };
+    main.innerHTML = hero("Flashcard theo gói · " + esc(S.title), "Chia " + S.list.length + " chữ thành các gói nhỏ để học từng chút. Học xong một gói thì chuyển sang gói tiếp theo.", pill("Số chữ", S.list.length) + pill("Đã thuộc", knownCount(S.list) + "/" + S.list.length)) +
+      '<div class="wrap"><a class="crumb" href="' + href(S) + '">← ' + esc(S.title) + '</a><div class="chips"><span class="seg"><span class="seg__l">Mỗi gói</span><button type="button" data-pk="10">10 chữ</button><button type="button" data-pk="20">20 chữ</button></span><span class="pill" id="packn"></span></div><div id="packs"></div></div>';
+    $$("[data-pk]").forEach(b => b.onclick = () => { PACK = +b.dataset.pk; try { localStorage.setItem("honki:kanji:pack", PACK); } catch (e) { /* bỏ qua */ } draw(); });
+    draw();
+  }
   function vFlash(S, wrongOnly) {
+    const exit = S.exit || href(S);
     const base = wrongOnly ? S.list.filter(r => P.wrong[r.k]) : S.list;
     const opt = { shuffle: true, onlyNew: false };
     let queue = [], i = 0, flipped = false, seen = 0, ok = 0, swipedAt = -1e9;
@@ -699,20 +718,23 @@
     function render(dir) {
       if (i >= queue.length) {
         KEYS = e => { if (e.key === "Enter") init(); };
-        main.innerHTML = '<div class="stage stage--wide"><div class="res">' + scoreRing(ok, seen || 1) + '<div class="res__score">' + ok + "<small>/" + seen + "</small></div><p>" + (queue.length ? "Bạn đã xem hết bộ thẻ. Những chữ chưa thuộc nằm trong phần “Chưa thuộc”." : "Không có thẻ nào để học ở chế độ này.") + '</p><div class="act" style="justify-content:center"><button class="btn btn--primary" type="button" data-again>Học lại</button><a class="btn btn--ghost" href="' + href(S) + '">Về trang ' + esc(S.title) + "</a></div></div></div>";
+        main.innerHTML = '<div class="stage stage--wide"><div class="res">' + scoreRing(ok, seen || 1) + '<div class="res__score">' + ok + "<small>/" + seen + "</small></div><p>" + (queue.length ? "Bạn đã xem hết bộ thẻ. Những chữ chưa thuộc nằm trong phần “Chưa thuộc”." : "Không có thẻ nào để học ở chế độ này.") + '</p><div class="act" style="justify-content:center"><button class="btn btn--primary" type="button" data-again>Học lại</button><a class="btn btn--ghost" href="' + exit + '">Về ' + (S.exit ? "danh sách gói" : "trang " + esc(S.title)) + "</a></div></div></div>";
         $("[data-again]").onclick = init; afterDone(main, ok, seen || 1); return;
       }
       const r = queue[i], st = P.known[r.k] ? '<span class="state state--ok">Đã thuộc</span>' : P.wrong[r.k] ? '<span class="state state--rv">Cần ôn</span>' : "";
       main.innerHTML = '<div class="stage stage--wide">' + toolbar() + '<div class="sbar"><a class="x" href="' + href(S) + '">✕ Thoát</a><div class="bar"><i style="width:' + Math.round(100 * i / queue.length) + '%"></i></div><span class="cnt">' + (i + 1) + "/" + queue.length + "</span></div>" +
         '<div class="flip' + (flipped ? " is-flipped" : "") + (dir ? " deal-" + dir : "") + '"><div class="flip__inner">' +
         '<div class="kcard"><div class="card__face front" data-flip tabindex="0" role="button" aria-label="Lật thẻ"><div class="card__top"><span class="tag tag--lv">' + LVN[r.l] + "</span>" + st + '<span class="card__num">' + String(i + 1).padStart(3, "0") + " <small>/ " + queue.length + '</small></span></div><div class="card__main"><div class="fglyph" lang="ja">' + r.k + '</div></div><div class="card__actions"><button class="icon-btn" type="button" data-flip>' + ICON_FLIP + " Lật thẻ</button></div></div></div>" +
-        '<div class="kcard"><div class="card__face back" tabindex="-1">' + detailHTML(r) + '<div class="kd__acts"><button class="btn btn--ghost btn--sm" type="button" data-flip>' + ICON_FLIP + " Xem mặt trước</button></div></div></div></div></div>" +
+        '<div class="kcard"><div class="card__face back" tabindex="-1">' + detailHTML(r, true) + '<p class="back-hint">Chạm vào chỗ trống để lật lại · vuốt trái/phải để đổi thẻ</p></div></div></div></div>' +
         '<div class="ctl"><button class="btn btn--coral" type="button" data-act="no">↺ Chưa thuộc</button><button class="nav-btn" type="button" data-act="prev" aria-label="Thẻ trước">‹</button><button class="nav-btn" type="button" data-act="next" aria-label="Thẻ sau">›</button><button class="btn btn--primary" type="button" data-act="ok">✓ Đã thuộc</button></div>' +
         '<p class="kbd-hint"><kbd>Space</kbd> lật thẻ · <kbd>←</kbd><kbd>→</kbd> chuyển thẻ · <kbd>1</kbd> chưa thuộc · <kbd>2</kbd> đã thuộc</p><p class="swipe-hint" aria-hidden="true"><span>‹</span> Vuốt phải: thẻ trước · Vuốt trái: thẻ sau <span>›</span></p></div>';
       $$("[data-opt]").forEach(b => b.onclick = () => { const v = b.dataset.opt; if (v === "shuffle") opt.shuffle = true; else if (v === "order") opt.shuffle = false; else opt.onlyNew = v === "new"; init(); });
       $$("[data-flip]").forEach(el => el.addEventListener("click", ev => { ev.stopPropagation(); if (performance.now() - swipedAt < 400) return; turn(); }));
       $$("[data-act]").forEach(b => b.onclick = () => act(b.dataset.act));
       const back = $(".card__face.back"); fillStrokes(back); fillWords(back);
+      const loc = back.querySelector(".kd__loc");
+      if (loc) loc.onclick = ev => { ev.stopPropagation(); const more = back.querySelector(".kd__more"), open = more.hidden; more.hidden = !open; loc.setAttribute("aria-expanded", open); loc.classList.toggle("is-open", open); if (open) setTimeout(() => more.scrollIntoView({ block: "nearest", behavior: calm() ? "auto" : "smooth" }), 30); };
+      back.addEventListener("click", ev => { if (ev.target.closest("button,a,input,[data-k],[data-comp],[data-say],.part,.kd__more table,.kd__loc")) return; if (performance.now() - swipedAt < 400) return; turn(); });
       bindSwipe();
     }
     const turn = () => { flipped = !flipped; const f = $(".flip"); f.classList.remove("deal-next", "deal-prev"); f.classList.toggle("is-flipped", flipped); const b = $(".card__face.back"); if (b) b.scrollTop = 0; };
@@ -728,7 +750,7 @@
       const f = $(".flip"); if (!f) return;
       let pid = null, sx = 0, sy = 0, dx = 0, t0 = 0, axis = null;
       const reset = anim => { f.style.transition = anim ? "transform .22s cubic-bezier(.2,.8,.3,1), opacity .22s" : ""; f.style.transform = ""; f.style.opacity = ""; if (anim) setTimeout(() => { f.style.transition = ""; }, 240); };
-      f.addEventListener("pointerdown", ev => { if (pid !== null || (ev.pointerType === "mouse" && ev.button !== 0)) return; if (ev.target.closest("button,a,.back")) return; pid = ev.pointerId; sx = ev.clientX; sy = ev.clientY; dx = 0; t0 = performance.now(); axis = null; });
+      f.addEventListener("pointerdown", ev => { if (pid !== null || (ev.pointerType === "mouse" && ev.button !== 0)) return; if (ev.target.closest("button,a,input,[data-k],[data-comp],.part")) return; pid = ev.pointerId; sx = ev.clientX; sy = ev.clientY; dx = 0; t0 = performance.now(); axis = null; });
       f.addEventListener("pointermove", ev => {
         if (ev.pointerId !== pid) return;
         const mx = ev.clientX - sx, my = ev.clientY - sy;
@@ -818,7 +840,24 @@
       }
       const a = T.arts[idx], pv = T.arts[idx - 1], nx = T.arts[idx + 1];
       document.title = "Super Kanji — " + a.t;
-      main.innerHTML = '<article class="theory-art wrap"><a class="crumb" href="#/ly-thuyet">← Lý thuyết</a><header><span class="th__kicker">' + esc(T.book) + ' · Bài ' + (idx + 1) + "/" + T.arts.length + "</span><h1>" + esc(a.t) + '</h1><p class="th__byline">' + esc(T.by) + '</p></header><div class="th__body">' + a.h + '</div><footer class="th__foot"><p class="th__sign">— ' + esc(T.sign) + '</p><div class="act">' + (pv ? '<a class="btn btn--ghost" href="#/ly-thuyet/' + pv.id + '">← ' + esc(pv.t) + "</a>" : "<span></span>") + (nx ? '<a class="btn btn--primary" href="#/ly-thuyet/' + nx.id + '">' + esc(nx.t) + " →</a>" : "") + "</div></footer></article>";
+      main.innerHTML = '<article class="theory-art wrap"><a class="crumb" href="#/ly-thuyet">← Lý thuyết</a><header><span class="th__kicker">' + esc(T.book) + ' · Bài ' + (idx + 1) + "/" + T.arts.length + "</span><h1>" + esc(a.t) + '</h1><p class="th__byline">' + esc(T.by) + '</p></header><div class="th__toc-slot"></div><div class="th__body">' + a.h + '</div><button type="button" class="th__top" hidden>↑ Mục lục</button><footer class="th__foot"><p class="th__sign">— ' + esc(T.sign) + '</p><div class="act">' + (pv ? '<a class="btn btn--ghost" href="#/ly-thuyet/' + pv.id + '">← ' + esc(pv.t) + "</a>" : "<span></span>") + (nx ? '<a class="btn btn--primary" href="#/ly-thuyet/' + nx.id + '">' + esc(nx.t) + " →</a>" : "") + "</div></footer></article>";
+      const hs = $$(".th__body h3, .th__body h4");
+      if (hs.length > 2) {
+        hs.forEach((h, n) => { h.id = "m" + n; h.classList.add("th__h"); });
+        let html = "", open = false;
+        hs.forEach(h => {
+          const sub = h.tagName === "H4", ln = '<a href="#/ly-thuyet/' + a.id + '" data-to="' + h.id + '">' + esc(h.textContent.replace(/:\s*$/, "")) + "</a>";
+          if (!sub) { if (open) html += "</ol></li>"; html += "<li>" + ln + "<ol>"; open = true; }
+          else { if (!open) { html += "<li><ol>"; open = true; } html += "<li>" + ln + "</li>"; }
+        });
+        if (open) html += "</ol></li>";
+        $(".th__toc-slot").outerHTML = '<nav class="th__toc" id="th-toc" aria-label="Mục lục"><b>Mục lục</b><ol class="th__tl">' + html + "</ol></nav>";
+        const toTop = $(".th__top"), nav = $("#th-toc");
+        $$("[data-to]").forEach(l => l.onclick = ev => { ev.preventDefault(); const t = document.getElementById(l.dataset.to); if (t) { t.scrollIntoView({ behavior: calm() ? "auto" : "smooth", block: "start" }); t.classList.remove("flash"); void t.offsetWidth; t.classList.add("flash"); } });
+        toTop.onclick = () => nav.scrollIntoView({ behavior: calm() ? "auto" : "smooth", block: "start" });
+        const onS = () => { if (!nav.isConnected) { window.removeEventListener("scroll", onS); return; } toTop.hidden = nav.getBoundingClientRect().bottom > 0; };
+        window.addEventListener("scroll", onS, { passive: true }); onS();
+      }
     });
   }
 
@@ -840,6 +879,12 @@
     if (!S || !S.list.length) { main.innerHTML = '<div class="wrap"><p class="empty">Không tìm thấy phạm vi này. <a href="' + TABS[tab].hash + '">Quay lại</a></p></div>'; return; }
     if (!mode) return vScope(S);
     document.title = "Super Kanji — " + S.title;
+    if (mode === "goi") return vPacks(S);
+    if (mode === "flash" && seg[3]) {
+      const m = /^(10|20)-(\d+)$/.exec(seg[3]), n = m && +m[1], q = m && +m[2] - 1, ls = m ? S.list.slice(q * n, q * n + n) : [];
+      if (ls.length) { const S2 = Object.assign({}, S, { list: ls, title: S.title + " · Gói " + (q + 1), exit: href(S, "goi"), groups: null }); document.title = "Super Kanji — " + S2.title; return vFlash(S2); }
+      return vPacks(S);
+    }
     if (mode === "flash") return vFlash(S);
     if (mode === "wrong") return vFlash(S, true);
     if (/^mc[1-4]$/.test(mode)) return vMC(S, mode);

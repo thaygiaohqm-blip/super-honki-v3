@@ -14,6 +14,19 @@
     noi: { name: "Nối từ", icon: "🔗", short: "Từ hai người trở lên: nối từ bằng chữ cuối của từ trước.", rules: "Chơi từ 2 đến 6 người. Người trước nói một từ, người sau phải nói từ bắt đầu bằng chữ kết thúc của từ đó, gõ đáp án trong 30 giây. Động từ không tính đuôi る (たべる → từ tiếp theo bắt đầu bằng べ), tính từ không tính đuôi い／な. Từ phải có trong từ vựng Super Goi của cấp đã chọn, không được lặp từ, từ kết thúc bằng ん thì người nói bị loại. Hết giờ cũng bị loại. Hai người: thắng được 10 điểm. Nhiều người: người bị loại thứ n được 10×(n−1) điểm, người thắng chung cuộc được 10×(số đối thủ). Điểm cộng dồn vào bảng xếp hạng." }
   };
   const GK = ["chon", "chop", "doan", "vua", "noi"];
+  const gameHead = g => { const G = GAMES[g]; return '<div class="ghead"><div class="ghead__t"><span class="ghead__ic" aria-hidden="true">' + G.icon + "</span><h1>" + G.name + '</h1></div><p class="ghead__r is-clamp">' + G.rules + '</p><button type="button" class="ghead__b" data-rules>Xem đủ luật ▾</button></div>'; };
+  document.addEventListener("click", e => { const b = e.target.closest && e.target.closest("[data-rules]"); if (!b) return; const o = b.previousElementSibling.classList.toggle("is-clamp"); b.textContent = o ? "Xem đủ luật ▾" : "Thu gọn ▴"; });
+  const HL = {};
+  function hudSet(el, key, html) {
+    if (!el) return; el.innerHTML = html; const last = HL[key] = HL[key] || {};
+    $$("[data-sc]", el).forEach(p => {
+      const id = p.dataset.sc, v = +p.querySelector("b").textContent, o = last[id];
+      if (o !== undefined && v !== o) { p.classList.add(v > o ? "pop" : "drop"); if (v > o && p.dataset.plus) { const e = document.createElement("em"); e.className = "plus"; e.textContent = "+" + (v - o); p.appendChild(e); } }
+      last[id] = v;
+    });
+  }
+  const scp = (label, v, id, plus, cls) => '<span class="pill pill--sc ' + (cls || "") + '" data-sc="' + id + '"' + (plus ? ' data-plus="1"' : "") + ">" + label + " <b>" + v + "</b></span>";
+  function countUp(el, v) { if (!el) return; const t0 = performance.now(), D = Math.min(1400, 300 + v * 8); const f = t => { const k = Math.min(1, (t - t0) / D); el.textContent = Math.round(v * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(f); }; el.textContent = "0"; requestAnimationFrame(f); }
 
   /* ---------- tiện ích ---------- */
   const mulberry = a => () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
@@ -116,9 +129,11 @@
     const go = (i, timeout) => {
       if (done) return; done = true; clearInterval(iv); const ok = i >= 0 && !!q.o[i].ok;
       $(".opts", card).innerHTML = optHTML(q, { done: 1, i });
-      const res = $(".qres", card); res.innerHTML = verdictHTML(ok, timeout) + (cfg.mode === "auto" && cfg.fx === "mini" ? "" : q.info + (cfg.mode === "manual" ? '<div class="act"><button class="btn btn--primary btn--lg" type="button" data-nx>' + (cfg.nextLabel || "Câu tiếp theo →") + "</button></div>" : ""));
+      const res = $(".qres", card);
+      const acts = cfg.mode === "manual" ? '<div class="act">' + (cfg.actions ? cfg.actions(ok) : '<button class="btn btn--primary btn--lg" type="button" data-nx>' + (cfg.nextLabel || "Câu tiếp theo →") + "</button>") + "</div>" : "";
+      res.innerHTML = verdictHTML(ok, timeout) + (cfg.mode === "auto" && cfg.fx === "mini" ? "" : cfg.top ? acts + q.info : q.info + acts);
       burst(card, ok, cfg.fx === "mini" ? " " : undefined);
-      if (cfg.mode === "manual") { const b = $("[data-nx]", res); b.onclick = () => cfg.done(ok, i); KEYS = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); b.click(); } }; b.focus({ preventScroll: true }); }
+      if (cfg.mode === "manual") { const b = $("[data-nx]", res); b.onclick = () => cfg.done(ok, i); if (cfg.bind) cfg.bind(res, ok, i); KEYS = e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); b.click(); } else if (e.key === "h" || e.key === "H") { const hb = $("[data-hint]", res); if (hb && !hb.disabled) hb.click(); } }; b.focus({ preventScroll: true }); }
       else if (cfg.mode === "auto") later(() => cfg.done(ok, i), ok ? 350 : 750);
       else cfg.done(ok, i);
     };
@@ -136,8 +151,8 @@
     const D = ctx.D, TOTAL = 90000; let streak = 0, best = 0, right = 0, n = 0, fin = false; const hist = [];
     const score = () => mode === "chop" ? best * 10 : right * 10;
     const t0 = ctx.t0 || Date.now();
-    main.innerHTML = '<div class="gm"><div class="ghud" id="hud"></div><div id="qb"></div></div>';
-    const hud = () => { const left = Math.max(0, TOTAL - (Date.now() - t0)); const el = $("#hud"); if (el) el.innerHTML = '<span class="pill">⏱ <b>' + Math.ceil(left / 1000) + 's</b></span>' + bar(left, TOTAL, left < 15000 ? "low" : "") + (mode === "chop" ? '<span class="pill">Chuỗi <b>' + streak + '</b></span><span class="pill">Kỉ lục chuỗi <b>' + best + "</b></span>" : '<span class="pill">Câu đúng <b>' + right + "</b></span>") + '<span class="pill">Điểm <b>' + score() + "</b></span>"; if (left <= 0) end(); };
+    main.innerHTML = '<div class="gm">' + gameHead(mode) + '<div class="ghud" id="hud"></div><div id="qb"></div></div>';
+    const hud = () => { const left = Math.max(0, TOTAL - (Date.now() - t0)); hudSet($("#hud"), "t" + ctx.seed, '<span class="pill' + (left < 15000 ? " pill--low" : "") + '">⏱ <b>' + Math.ceil(left / 1000) + 's</b></span>' + bar(left, TOTAL, left < 15000 ? "low" : "") + (mode === "chop" ? scp(streak >= 3 ? "🔥 Chuỗi" : "Chuỗi", streak, "st", true, streak >= 3 ? "hot" : "") + scp("Kỉ lục chuỗi", best, "bs") : scp("Câu đúng", right, "rt", true)) + scp("Điểm", score(), "sc", true, "big")); if (left <= 0) end(); };
     const end = () => { if (fin) return; fin = true; stopAll(); ctx.end(score(), hist); };
     const askQ = () => {
       if (fin) return; if (Date.now() - t0 >= TOTAL) return end();
@@ -158,8 +173,8 @@
       const S = sentences[round], chars = [...S.t], n = Math.min(9, Math.max(5, Math.round(chars.length / 2.4)));
       const tiles = []; for (let i = 0; i < n; i++) tiles.push(chars.slice(Math.floor(i * chars.length / n), Math.floor((i + 1) * chars.length / n)).join(""));
       const open = new Set(), hist = []; let wrong = 0, sel = -1, locked = false, ended = false, typed = "";
-      main.innerHTML = '<div class="gm"><div class="ghud" id="hud"></div><div class="gpanel"><p class="gvi">Nghĩa: ' + esc(S.vi) + '</p><div class="tiles" id="tiles"></div><div class="gmsg" id="msg"></div><div id="qb"><p class="gnote" style="text-align:center">Chọn một ô để trả lời câu hỏi và lật ô đó. Đáp án của câu vừa rồi sẽ ở lại cho đến khi bạn chọn ô tiếp theo.</p></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ cả câu tiếng Nhật…" aria-label="Câu tiếng Nhật"><button class="btn btn--primary" type="submit">Trả lời</button></form></div><div id="hist"></div></div>';
-      const hud = () => { $("#hud").innerHTML = '<span class="pill">Câu <b>' + (round + 1) + "/" + ROUNDS + '</b></span><span class="pill">Ô đã lật <b>' + open.size + "/" + n + '</b></span><span class="pill">Điểm nếu đoán đúng <b>' + score() + '</b></span><span class="pill">Tổng <b>' + total + "</b></span>"; };
+      main.innerHTML = '<div class="gm">' + gameHead("chon") + '<div class="ghud" id="hud"></div><div class="gpanel"><p class="gvi">Nghĩa: ' + esc(S.vi) + '</p><div class="tiles" id="tiles"></div><div class="gmsg" id="msg"></div><div id="qb"><p class="gnote" style="text-align:center">Chọn một ô để trả lời câu hỏi và lật ô đó. Đáp án của câu vừa rồi sẽ ở lại cho đến khi bạn chọn ô tiếp theo.</p></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ cả câu tiếng Nhật…" aria-label="Câu tiếng Nhật"><button class="btn btn--primary" type="submit">Trả lời</button></form></div><div id="hist"></div></div>';
+      const hud = () => { hudSet($("#hud"), "chon" + ctx.seed, '<span class="pill">Câu <b>' + (round + 1) + "/" + ROUNDS + '</b></span><span class="pill">Ô đã lật <b>' + open.size + "/" + n + "</b></span>" + scp("Điểm nếu đoán đúng", score(), "pot", false, "big") + scp("Tổng", total, "tot", true, "big")); };
       const drawTiles = () => { $("#tiles").innerHTML = tiles.map((t, i) => '<button type="button" class="tl' + (open.has(i) ? " open" : "") + (sel === i ? " sel" : "") + '" data-t="' + i + '" ' + (open.has(i) || locked || ended ? "disabled" : "") + ' lang="ja">' + (open.has(i) ? esc(t) : i + 1) + "</button>").join(""); $$("[data-t]").forEach(b => b.onclick = () => openTile(+b.dataset.t)); };
       const drawHist = () => { $("#hist").innerHTML = reviewHTML(hist); };
       const score = () => open.size <= 3 ? 50 : open.size <= 6 ? 30 : 20;
@@ -204,20 +219,21 @@
       if (round >= ROUNDS || !targets[round]) { stopAll(); return ctx.end(total, allHist); }
       const T = targets[round], H = hintsOf(T); let got = 0, wrong = 0, locked = false, typed = "";
       const pot = () => TIERS[tierOf(got)][2];
-      main.innerHTML = '<div class="gm"><div class="ghud" id="hud"></div><div class="dg"><aside class="dg__l"><h3>Gợi ý</h3><div id="hints"></div></aside><section class="dg__r"><div class="gpanel"><div class="gbig fxh" id="target" aria-label="Chữ bí ẩn">？</div><div id="qb"></div><div class="gmsg" id="msg"></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ chữ Kanji bạn đoán…" aria-label="Chữ Kanji"><button class="btn btn--primary" type="submit">Đoán</button></form></div><div id="hist"></div></section></div></div>';
-      const hud = () => { $("#hud").innerHTML = '<span class="pill">Chữ <b>' + (round + 1) + "/" + ROUNDS + '</b></span><span class="pill">Gợi ý đã mở <b>' + got + "/" + H.length + '</b></span><span class="pill">Điểm nếu đoán đúng <b>' + pot() + '</b></span><span class="pill">Tổng <b>' + total + "</b></span>"; };
-      const drawHints = () => {
+      main.innerHTML = '<div class="gm">' + gameHead("doan") + '<div class="ghud" id="hud"></div><div class="dg"><aside class="dg__l"><h3>Gợi ý</h3><div id="hints"></div></aside><section class="dg__r"><div class="gpanel"><div class="pmeter" id="pm"></div><div class="gbig fxh mystery" id="target" aria-label="Chữ bí ẩn"><span class="qm">？</span><i class="sp s1">✦</i><i class="sp s2">✧</i><i class="sp s3">✦</i></div><div id="qb"></div><div class="gmsg" id="msg"></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ chữ Kanji bạn đoán…" aria-label="Chữ Kanji"><button class="btn btn--primary" type="submit">Đoán</button></form></div><div id="hist"></div></section></div></div>';
+      const hud = () => { hudSet($("#hud"), "doan" + ctx.seed, '<span class="pill">Chữ <b>' + (round + 1) + "/" + ROUNDS + '</b></span><span class="pill">Gợi ý đã mở <b>' + got + "/" + H.length + "</b></span>" + scp("Điểm nếu đoán đúng", pot(), "pot", false, "big") + scp("Tổng", total, "tot", true, "big")); };
+      const drawMeter = pulse => { const cur = tierOf(got); $("#pm").innerHTML = TIERS.map((t, ti) => '<div class="pm' + (ti === cur ? " cur" : ti < cur ? " past" : "") + '"><b>' + t[2] + '</b><small>' + (ti === cur ? "Mốc hiện tại" : ti < cur ? "Đã qua" : "Mốc sau") + "</small><span>gợi ý " + t[0] + (t[1] > 90 ? "+" : "–" + t[1]) + "</span></div>").join(""); if (pulse) { const c = $(".pm.cur", $("#pm")); if (c) { c.classList.add("bump"); } } };
+      const drawHints = fresh => {
         const cur = tierOf(got); let html = "";
         TIERS.forEach((t, ti) => {
           const rows = H.map((h, i) => [h, i]).filter(x => x[1] + 1 >= t[0] && x[1] + 1 <= t[1]); if (!rows.length) return;
-          html += '<div class="tier' + (ti === cur ? " cur" : ti < cur ? " past" : "") + '"><div class="tier__h"><span>Gợi ý ' + t[0] + (Math.min(t[1], H.length) > t[0] ? "–" + Math.min(t[1], H.length) : "") + '</span><b>' + t[2] + " điểm</b></div>" + rows.map(([h, i]) => i < got ? '<div class="hint on"><small>' + (i + 1) + ". " + h[0] + "</small>" + esc(h[1]) + "</div>" : '<div class="hint off">' + (i + 1) + ". ?</div>").join("") + "</div>";
+          html += '<div class="tier' + (ti === cur ? " cur" : ti < cur ? " past" : "") + '"><div class="tier__h"><span>Gợi ý ' + t[0] + (Math.min(t[1], H.length) > t[0] ? "–" + Math.min(t[1], H.length) : "") + '</span><b>' + t[2] + " điểm</b></div>" + rows.map(([h, i]) => i < got ? '<div class="hint on' + (i === fresh ? " fresh" : "") + '"><small>' + (i + 1) + ". " + h[0] + "</small>" + esc(h[1]) + "</div>" : '<div class="hint off">' + (i + 1) + ". ?</div>").join("") + "</div>";
         });
         $("#hints").innerHTML = html;
       };
       const msg = (t, c) => { const m = $("#msg"); m.className = "gmsg " + (c || ""); m.innerHTML = t; };
       const finishR = (ok, text) => {
         locked = true; const sc = ok ? pot() : 0; total += sc; ctx.live(total); hud();
-        $("#target").textContent = T.k; $("#target").lang = "ja"; $("#qb").innerHTML = ""; $("#gf").hidden = true;
+        $("#target").className = "gbig fxh reveal"; $("#target").textContent = T.k; $("#target").lang = "ja"; $("#qb").innerHTML = ""; $("#gf").hidden = true;
         msg(text + (ok ? " +" + sc + " điểm" : "") + '<br><small>' + esc(T.hv) + " · " + esc(T.m.slice(0, 80)) + "</small>", ok ? "ok" : "no"); burst($(".gpanel"), ok, ok ? "+" + sc + " điểm!" : "Mất chữ này");
         $("#qb").innerHTML = infoK(T) + '<div class="act"><button class="btn btn--primary btn--lg" type="button" id="nx">' + (round + 1 >= ROUNDS ? "Xem kết quả →" : "Chữ tiếp theo →") + "</button></div>";
         $("#nx").onclick = () => { round++; startRound(); }; KEYS = e => { if (e.key === "Enter") $("#nx").click(); };
@@ -228,18 +244,27 @@
         wrong++; burst($("#target"), false, "Sai rồi"); if (wrong >= 3) return finishR(false, "✘ Sai 3 lần.");
         msg("✘ Chưa đúng, bạn còn " + (3 - wrong) + " lần đoán.", "no");
       };
+      const claim = (btn, res) => {
+        if (locked || got >= H.length) return; const before = tierOf(got); got++; const idx = got - 1, up = tierOf(got) !== before;
+        drawHints(idx); drawMeter(true); hud();
+        const html = '<span class="hintban' + (up ? " up" : "") + '">💡 Gợi ý #' + got + " · " + esc(H[idx][0]) + ": <b>" + esc(H[idx][1]) + "</b><small>" + (up ? "⚠ Bạn vừa sang mốc mới: đoán đúng bây giờ chỉ còn " + pot() + " điểm" : "Đoán đúng ngay bây giờ được " + pot() + " điểm") + "</small></span>";
+        msg(html, "ok");
+        const l = $(".dg__l"); l.classList.remove("got"); void l.offsetWidth; l.classList.add("got");
+        const act = $(".act", res); if (act) act.insertAdjacentHTML("beforebegin", '<div class="hintget' + (up ? " up" : "") + '">' + html + "</div>");
+        btn.disabled = true; btn.textContent = "✓ Đã nhận gợi ý #" + got;
+        const ph = $(".hint.fresh", $("#hints")); if (ph) ph.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      };
       const loadQ = () => {
         if (locked) return;
         if (got >= H.length) { $("#qb").innerHTML = '<p class="gnote" style="text-align:center">Bạn đã mở hết gợi ý. Hãy gõ chữ Kanji bí ẩn!</p>'; return; }
         let q = null; for (let t = 0; t < 14 && !q; t++) { const c = genQ(D, Math.random); if (c && !JSON.stringify(c).includes(T.k)) q = c; } if (!q) return;
-        askUI($("#qb"), q, { mode: "manual", limit: 0, fx: "big", nextLabel: "Câu tiếp theo →", done: (ok, i) => {
-          allHist.push({ q, i, ok }); if (locked) return;
-          if (ok) { got++; msg("Bạn nhận thêm một gợi ý!", "ok"); } else msg("Chưa đúng, thử câu khác để nhận gợi ý nhé.", "no");
-          drawHints(); hud(); loadQ();
-        } });
+        askUI($("#qb"), q, { mode: "manual", limit: 0, fx: "big", top: true,
+          actions: ok => '<button class="btn btn--coral btn--lg" type="button" data-hint' + (ok ? "" : " disabled") + ">" + (ok ? "💡 Nhận gợi ý" : "💡 Chưa có gợi ý") + '</button><button class="btn btn--primary btn--lg" type="button" data-nx>Câu tiếp theo →</button>' + (ok ? '<p class="gnote hintnote">Nhận gợi ý để biết thêm về chữ bí ẩn. Gợi ý càng nhiều thì điểm càng giảm. <kbd>H</kbd> nhận gợi ý · <kbd>Enter</kbd> câu tiếp</p>' : '<p class="gnote hintnote">Trả lời sai nên chưa nhận được gợi ý. Hãy thử câu tiếp theo nhé!</p>'),
+          bind: (res, ok, i) => { allHist.push({ q, i, ok }); const hb = $("[data-hint]", res); if (hb && ok) hb.onclick = () => claim(hb, res); if (ok && got >= H.length && hb) { hb.disabled = true; hb.textContent = "Đã mở hết gợi ý"; } },
+          done: () => { if (!locked) { msg("Trả lời đúng câu hỏi để nhận gợi ý. Bạn có thể đoán bất cứ lúc nào."); loadQ(); } } });
       };
       $("#gf").onsubmit = e => { e.preventDefault(); guess($("#gi").value); };
-      hud(); drawHints(); msg("Trả lời đúng câu hỏi để nhận gợi ý. Bạn có thể đoán bất cứ lúc nào."); loadQ();
+      hud(); drawHints(); drawMeter(); msg("Trả lời đúng câu hỏi để nhận gợi ý. Bạn có thể đoán bất cứ lúc nào."); loadQ();
     };
     startRound();
   }
@@ -292,7 +317,7 @@
       const st = replay(entries, dict), me = ticket;
       if (!st.started) {
         const isHost = meta.host === me;
-        main.innerHTML = '<div class="gm"><div class="gpanel gwait"><h3>Phòng nối từ · cấp ' + LVN[level] + '</h3><div class="roomcode" title="Mã phòng">' + esc(code) + '</div><p class="gnote">Chia sẻ mã này cho bạn bè để họ vào phòng (tối đa 6 người).</p><div class="plist">' + st.players.map(p => '<span class="pl' + (p.t === me ? " me" : "") + '">' + (p.t === meta.host ? "👑 " : "") + esc(p.n) + "</span>").join("") + '</div><div class="act" style="justify-content:center;margin-top:16px">' + (isHost ? '<button class="btn btn--primary btn--lg" id="st" type="button"' + (st.players.length < 2 ? " disabled" : "") + ">Bắt đầu (" + st.players.length + " người)</button>" : '<span class="gnote">Đang chờ chủ phòng bắt đầu…</span>') + '<button class="btn btn--ghost" id="lv" type="button">Rời phòng</button></div></div></div>';
+        main.innerHTML = '<div class="gm">' + gameHead("noi") + '<div class="gpanel gwait"><h3>Phòng nối từ · cấp ' + LVN[level] + '</h3><div class="roomcode" title="Mã phòng">' + esc(code) + '</div><p class="gnote">Chia sẻ mã này cho bạn bè để họ vào phòng (tối đa 6 người).</p><div class="plist">' + st.players.map(p => '<span class="pl' + (p.t === me ? " me" : "") + '">' + (p.t === meta.host ? "👑 " : "") + esc(p.n) + "</span>").join("") + '</div><div class="act" style="justify-content:center;margin-top:16px">' + (isHost ? '<button class="btn btn--primary btn--lg" id="st" type="button"' + (st.players.length < 2 ? " disabled" : "") + ">Bắt đầu (" + st.players.length + " người)</button>" : '<span class="gnote">Đang chờ chủ phòng bắt đầu…</span>') + '<button class="btn btn--ghost" id="lv" type="button">Rời phòng</button></div></div></div>';
         const b = $("#st"); if (b) b.onclick = async () => { b.disabled = true; await api("POST", { action: "room_push", code, ticket, entry: { t: "start" } }); poll(); };
         $("#lv").onclick = () => { dead = true; stopAll(); api("POST", { action: "room_push", code, ticket, entry: { t: "lv" } }); location.hash = "#/noi"; viewSetup("noi"); };
         return;
@@ -300,7 +325,7 @@
       const nowS = Date.now() + off, left = st.over ? 0 : Math.max(0, st.lastAt + 30000 - nowS), cp = st.players[st.cur], mine = cp && cp.t === me;
       const last = st.chain[st.chain.length - 1];
       if (!$("#nplay")) {
-        main.innerHTML = '<div class="gm"><div class="nw"><aside class="nw__l"><h3>Người chơi</h3><div id="npl"></div></aside><section class="nw__r"><div class="gpanel" id="nplay"><div id="nturn"></div><div id="ntime"></div><div class="gmsg" id="msg"></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ từ (kanji hoặc kana)…" aria-label="Từ tiếp theo"><button class="btn btn--primary" type="submit">Gửi</button></form></div><div id="nchain"></div></section></div></div>';
+        main.innerHTML = '<div class="gm">' + gameHead("noi") + '<div class="nw"><aside class="nw__l"><h3>Người chơi</h3><div id="npl"></div></aside><section class="nw__r"><div class="gpanel" id="nplay"><div id="nturn"></div><div id="ntime"></div><div class="gmsg" id="msg"></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ từ (kanji hoặc kana)…" aria-label="Từ tiếp theo"><button class="btn btn--primary" type="submit">Gửi</button></form></div><div id="nchain"></div></section></div></div>';
         $("#gf").onsubmit = async e => {
           e.preventDefault(); const v = $("#gi").value.trim(); if (!v) return; const s2 = replay(entries, dict), c2 = s2.players[s2.cur];
           const msg = (t, c) => { const m = $("#msg"); if (m) { m.className = "gmsg " + (c || ""); m.innerHTML = t; } };
@@ -399,8 +424,8 @@
 
   async function soloResult(g, sc, hist) {
     stopAll(); saveBest(g, sc);
-    main.innerHTML = '<div class="gm"><div class="gpanel gscore"><h3>' + GAMES[g].name + " · " + LVN[state.level] + "</h3><b>" + sc + '</b><p>điểm</p><div id="sub" class="gnote">' + (sess() ? "Đang lưu điểm…" : "Đăng nhập để lưu điểm này lên bảng xếp hạng chung.") + '</div><div class="act" style="justify-content:center;margin-top:14px"><button class="btn btn--primary" id="again" type="button">Chơi lại</button><a class="btn btn--ghost" href="#/">Về Super Gemu</a></div></div>' + reviewHTML(hist || []) + "</div>";
-    $("#again").onclick = () => startSolo(g);
+    main.innerHTML = '<div class="gm"><div class="gpanel gscore"><h3>' + GAMES[g].name + " · " + LVN[state.level] + "</h3><b id=\"fin\" class=\"finsc\">" + sc + '</b><p>điểm</p><div id="sub" class="gnote">' + (sess() ? "Đang lưu điểm…" : "Đăng nhập để lưu điểm này lên bảng xếp hạng chung.") + '</div><div class="act" style="justify-content:center;margin-top:14px"><button class="btn btn--primary" id="again" type="button">Chơi lại</button><a class="btn btn--ghost" href="#/">Về Super Gemu</a></div></div>' + reviewHTML(hist || []) + "</div>";
+    $("#again").onclick = () => startSolo(g); countUp($("#fin"), sc);
     const a = sess(); if (a && sc > 0) {
       const j = await api("POST", { action: "submit", game: g, level: state.level, score: sc, name: myName() });
       const el = $("#sub"); if (el) el.textContent = j._ok ? (j.best ? "🎉 Kỉ lục mới của bạn! Hạng hiện tại: #" + j.rank : "Điểm đã ghi nhận. Kỉ lục của bạn hiện ở hạng #" + j.rank) : (j.error || "Chưa lưu được điểm.");
@@ -435,7 +460,7 @@
     const startAt = st.start - off;
     const showCount = () => {
       const s = Math.ceil((startAt - Date.now()) / 1000);
-      if (s > 0) { main.innerHTML = '<div class="gm"><div class="gpanel gwait"><h3>Đã ghép trận!</h3><p>Bạn đấu với <b>' + esc(st.opp.n) + '</b> · ' + GAMES[g].name + " · " + LVN[state.level] + '</p><div class="gcount">' + s + "</div></div></div>"; return later(showCount, 250); }
+      if (s > 0) { main.innerHTML = '<div class="gm">' + gameHead(g) + '<div class="gpanel gwait"><h3>Đã ghép trận!</h3><p>Bạn đấu với <b>' + esc(st.opp.n) + '</b> · ' + GAMES[g].name + " · " + LVN[state.level] + '</p><div class="gcount">' + s + "</div></div></div>"; return later(showCount, 250); }
       begin();
     };
     let myScore = 0, ended = false;
