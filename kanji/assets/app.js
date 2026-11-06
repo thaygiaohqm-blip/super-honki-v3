@@ -369,7 +369,7 @@
       '<div class="wrap lvgrid"><div class="lvrow">' + one(5) + one(4) + '</div><div class="lvrow">' + one(3) + one(2) + '</div><div class="lvrow lvrow--1">' + one(1) + '</div><div class="lvrow lvrow--1">' + all + '</div></div>';
   }
   /* ---------- test đầu vào ---------- */
-  const PASS = 16;
+  const PASS = 18;   /* test đầu vào: đạt từ 90% (18/20) */
   function vPlace() {
     P.place = P.place || {};
     const done = LEVELS.filter(l => (P.place["n" + l] || {}).pass);
@@ -379,7 +379,7 @@
       const tag = st.pass ? '<span class="pl__ok">✓ Đã qua · ' + st.best + "/20</span>" : open ? '<span class="pl__go">Sẵn sàng' + (st.best != null ? " · cao nhất " + st.best + "/20" : "") + "</span>" : '<span class="pl__lock">🔒 Qua ' + LVN[l + 1] + " để mở</span>";
       return '<' + (open ? 'a href="#/dau-vao/n' + l + '"' : 'div') + ' class="card card--lv pl' + (open ? "" : " is-lock") + (st.pass ? " is-pass" : "") + '"><div class="card__top"><span class="big">' + LVN[l] + '</span><span class="pill">20 câu</span></div><p>Thi đầu vào Kanji ' + LVN[l] + ': 10 câu cách đọc + 10 câu chọn Kanji. Đạt từ 80% (16/20) để lên ' + (l > 1 ? LVN[l - 1] : "cấp cao nhất") + (l < 5 ? "; chưa đạt sẽ được gợi ý làm " + LVN[l + 1] : "; chưa đạt hãy ôn lại " + LVN[l]) + ".</p>" + tag + "</" + (open ? "a" : "div") + ">";
     };
-    main.innerHTML = hero("Test đầu vào", "Chọn bất kỳ cấp nào để thử sức. Mỗi bài gồm 2 mondai, 20 câu. Đạt từ 80% (16/20) thì nên thử cấp cao hơn; chưa đạt thì làm cấp thấp hơn để xác định đúng trình độ.", pill("Cấp cao nhất đã qua", hi ? LVN[hi] : "Chưa có") + pill("Điều kiện qua", "≥ 80%")) +
+    main.innerHTML = hero("Test đầu vào", "Chọn bất kỳ cấp nào để thử sức. Mỗi bài gồm 2 mondai, 20 câu. Đạt từ 90% (18/20) thì nên thử cấp cao hơn; chưa đạt thì làm cấp thấp hơn để xác định đúng trình độ.", pill("Cấp cao nhất đã qua", hi ? LVN[hi] : "Chưa có") + pill("Điều kiện qua", "≥ 90%")) +
       '<div class="wrap lvgrid"><div class="lvrow">' + card(5) + card(4) + '</div><div class="lvrow">' + card(3) + card(2) + '</div><div class="lvrow lvrow--1">' + card(1) + "</div></div>";
   }
   function vPlaceLv(id) {
@@ -390,9 +390,27 @@
       const ok = sc >= PASS, st = P.place["n" + l] || { n: 0 }; st.n = (st.n || 0) + 1; st.best = Math.max(st.best || 0, sc); if (ok) st.pass = true; P.place["n" + l] = st; saveP();
       const up = l > 1 ? LVN[l - 1] : null, dn = l < 5 ? LVN[l + 1] : null, pc = Math.round(100 * sc / n);
       const box = document.createElement("div"); box.className = "pl__res " + (ok ? "ok" : "no");
-      box.innerHTML = ok ? "<b>🎉 Đạt " + pc + "%!</b> Bạn đã qua " + LVN[l] + (up ? ". Hãy thử tiếp cấp " + up + " để xem trình độ của mình ở đâu." : ". Bạn đã hoàn thành mọi cấp, trình độ cao nhất!") + (up ? ' <a class="btn btn--primary btn--sm" href="#/dau-vao/n' + (l - 1) + '">Làm ' + up + " →</a>" : "") : "<b>Chưa đạt (" + pc + "%).</b> Cần ít nhất " + PASS + "/20 (80%) để qua " + LVN[l] + ". Bạn được " + sc + "/20. " + (dn ? "Hãy làm " + dn + " để kiểm tra lại trình độ." : "Hãy ôn lại " + LVN[l] + " từ đầu rồi thử lại nhé.") + (dn ? ' <a class="btn btn--primary btn--sm" href="#/dau-vao/n' + (l + 1) + '">Làm ' + dn + " →</a>" : "") + ' <a class="btn btn--ghost btn--sm" href="#/jlpt/n' + l + '">Ôn ' + LVN[l] + "</a>";
+      box.innerHTML = ok ? "<b>🎉 Đạt " + pc + "%!</b> Bạn đã qua " + LVN[l] + (up ? ". Hãy thử tiếp cấp " + up + " để xem trình độ của mình ở đâu." : ". Bạn đã hoàn thành mọi cấp, trình độ cao nhất!") + (up ? ' <a class="btn btn--primary btn--sm" href="#/dau-vao/n' + (l - 1) + '">Làm ' + up + " →</a>" : "") : "<b>Chưa đạt (" + pc + "%).</b> Cần ít nhất " + PASS + "/20 (90%) để qua " + LVN[l] + ". Bạn được " + sc + "/20. " + (dn ? "Hãy làm " + dn + " để kiểm tra lại trình độ." : "Hãy ôn lại " + LVN[l] + " từ đầu rồi thử lại nhé.") + (dn ? ' <a class="btn btn--primary btn--sm" href="#/dau-vao/n' + (l + 1) + '">Làm ' + dn + " →</a>" : "") + ' <a class="btn btn--ghost btn--sm" href="#/jlpt/n' + l + '">Ôn ' + LVN[l] + "</a>";
       const res = root.querySelector(".res"); if (res) res.insertBefore(box, res.querySelector(".act")); else root.appendChild(box);
     } });
+  }
+  /* trang giới thiệu bộ thủ: xem thông tin trước, bấm nút mới ra danh sách các chữ chứa bộ này */
+  function vRadInfo(S) {
+    const rad = S.rad, list = S.list, self = A.by[rad.g];
+    const prev = A.radN[rad.n - 1], next = A.radN[rad.n + 1];
+    const lvc = LEVELS.map(l => [l, list.filter(x => x.l === l).length]).filter(x => x[1]);
+    const eg = list.slice().sort((a, b) => b.l - a.l || (a.s || 0) - (b.s || 0)).slice(0, 12);
+    CTX = list;
+    main.innerHTML = hero("Bộ " + esc(rad.g) + " · " + esc(rad.hv), "Bộ thủ Khang Hy số " + rad.n, pill("Số nét", rad.s) + pill("Chữ chứa bộ này", list.length)) +
+      '<div class="wrap"><a class="crumb" href="' + S.back + '">← ' + esc(TABS[S.tab].name) + '</a>' +
+      '<div class="kd"><div class="kd__head"><div class="kd__glyph" lang="ja">' + esc(rad.g) + '</div><div class="kd__info"><div class="kd__hv">' + esc(rad.hv) + '</div><div class="kd__m">' + esc(rad.m) + '</div><div class="tags"><span class="tag">Bộ số ' + rad.n + '</span><span class="tag">' + rad.s + ' nét</span></div></div></div>' +
+      '<h4>Thứ tự nét viết</h4><div class="strokes" data-st="' + esc(rad.g) + '">' + (self ? "" : "<span>Bộ này là thành phần chữ nên chưa có hoạt ảnh nét. Bộ gồm " + rad.s + " nét.</span>") + "</div>" +
+      '<h4>Ý nghĩa</h4><p>' + esc(rad.m) + '.</p>' +
+      (lvc.length ? '<h4>Phân bố theo cấp độ</h4><div class="tags">' + lvc.map(x => '<span class="tag tag--lv">' + LVN[x[0]] + " · " + x[1] + " chữ</span>").join("") + "</div>" : "") +
+      (eg.length ? '<h4>Một số chữ chứa bộ này</h4><div class="ktiles">' + eg.map(tile).join("") + "</div>" : "") +
+      '<div class="act" style="margin-top:18px;justify-content:center"><a class="btn btn--primary btn--lg" href="' + href(S, "list") + '">Xem tất cả ' + list.length + " chữ có bộ này →</a></div>" +
+      '<div class="act" style="justify-content:space-between;margin-top:10px">' + (prev ? '<a class="btn btn--ghost btn--sm" href="#/bo-thu/' + prev.n + '">← Bộ ' + esc(prev.g) + "</a>" : "<span></span>") + (next ? '<a class="btn btn--ghost btn--sm" href="#/bo-thu/' + next.n + '">Bộ ' + esc(next.g) + " →</a>" : "") + "</div></div></div>";
+    if (self) fillStrokes(main);
   }
   const ST = { famLv: 0, famQ: "", radQ: "" };
   function vFam() {
@@ -678,8 +696,12 @@
   const quizPage = (S, builder, o) => { const start = () => { const qs = builder(); runQuiz(S, qs, Object.assign({ again: start }, o || {})); }; start(); };
 
   function buildTest(S) {
-    const sim = S.tab === "gia-dinh" ? 2 : 1;
-    let pool = shuffle(S.list); const t1 = [], t2 = [];
+    const sim = S.tab === "gia-dinh" || S.tab === "dau-vao" ? 2 : 1;   /* test đầu vào: đáp án nhiễu là chữ gần giống nhau */
+    let pool = shuffle(S.list);
+    if (S.tab === "dau-vao" && pool.length > 40) { /* ưu tiên chữ khó hơn (nhiều nét): 70% câu lấy từ nửa khó của cấp */
+      const hard = pool.slice().sort((a, b) => (b.s || 0) - (a.s || 0)).slice(0, Math.ceil(pool.length / 2)), hs = new Set(hard);
+      pool = shuffle([...hard, ...hard, ...pool.filter(x => !hs.has(x))]).filter((x, i, a) => a.indexOf(x) === i);
+    } const t1 = [], t2 = [];
     const take = () => { if (!pool.length) pool = shuffle(S.list); return pool.pop(); };
     for (let n = 0; n < 10; n++) t1.push(take());
     for (let n = 0; n < 10; n++) t2.push(take());
@@ -887,13 +909,13 @@
     const id = seg[1], mode = seg[2];
     document.title = "Super Kanji — " + TABS[tab].name;
     const cb = document.getElementById("ctxbar"); if (cb) cb.hidden = true;
-    if (tab === "dau-vao") return id ? vPlaceLv(id) : vPlace();
+    if (tab === "dau-vao") { if (id && cb) { cb.innerHTML = "<b>Test đầu vào</b><span>" + esc(String(id).toUpperCase()) + " · 20 câu</span>"; cb.hidden = false; } return id ? vPlaceLv(id) : vPlace(); }
     if (tab === "tim-kiem") return vSearch(params.get("q") || "");
     if (tab === "ly-thuyet") return vTheory(id);
     if (!id) { if (tab === "jlpt") vJlpt(); else if (tab === "gia-dinh") vFam(); else if (tab === "giao-trinh") vBook(params.get("l")); else vRad(); return; }
     const S = getScope(tab, id);
     if (!S || !S.list.length) { main.innerHTML = '<div class="wrap"><p class="empty">Không tìm thấy phạm vi này. <a href="' + TABS[tab].hash + '">Quay lại</a></p></div>'; return; }
-    if (!mode) return vScope(S);
+    if (!mode) return S.rad ? vRadInfo(S) : vScope(S);
     document.title = "Super Kanji — " + S.title;
     if (cb) { /* thanh tiêu đề: luôn cho biết đang luyện gì, ở phạm vi nào */
       const mn = mode === "test" ? "Bài test 20 câu" : mode === "wrong" ? "Ôn chữ hay sai" : (modesFor(S).find(m => m.id === mode) || {}).t || "Luyện tập";
@@ -913,6 +935,7 @@
     if (mode === "rad") return vRadMode(S);
     if (mode === "diff") return vDiff(S);
     if (mode === "test") return vTest(S);
+    if (mode === "list") { if (cb) cb.hidden = true; if (S.rad) S.back = "#/bo-thu/" + S.rad.n; return vScope(S); }
     vScope(S);
   }
   window.addEventListener("hashchange", route);

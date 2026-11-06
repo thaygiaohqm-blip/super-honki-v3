@@ -47,12 +47,12 @@
   };
   const bank = {};
   for (const [lv, txt] of Object.entries(RAW)) bank[lv] = txt.split("\n").map(l => { const [q, a, b, c, d, ans, exp] = l.split("|"); return { q, o: [a, b, c, d], ans: +ans, exp }; });
-  const PER = 6, PASS = 4, ORDER = ["n5", "n4", "n3", "n2", "n1"];
+  const PER = 8, PASS = 7, ORDER = ["n5", "n4", "n3", "n2", "n1"];
 
   async function route() {
     SB.setNav("test");
     const saved = store.get("placement", null);
-    main.innerHTML = band({ big: "試", bigJp: true, title: "Test đầu vào", text: "Làm từ N5 lên N1, mỗi cấp 6 câu. Đúng từ 4 câu thì sang cấp tiếp theo; kết quả gợi ý bạn nên bắt đầu học từ cấp nào.", meta: `<b>${PER * 5}</b><span>câu tối đa</span>` }) +
+    main.innerHTML = band({ big: "試", bigJp: true, title: "Test đầu vào", text: "Làm từ N5 lên N1, mỗi cấp 8 câu. Đúng từ 7 câu thì sang cấp tiếp theo; kết quả gợi ý bạn nên bắt đầu học từ cấp nào.", meta: `<b>${PER * 5}</b><span>câu tối đa</span>` }) +
       `<section class="sec"><div class="wrap">${saved ? resultHTML(saved, true) : ""}<div class="card__actions"><button class="btn btn--primary" type="button" data-start>${saved ? "Làm lại test" : "Bắt đầu"}</button></div></div></section>`;
     $("[data-start]").onclick = start;
     SB.setCur({ refresh: route });

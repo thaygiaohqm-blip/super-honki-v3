@@ -38,7 +38,7 @@
     if (a.end === b.end) v += a.ec === "K" ? 3 : 7; else if (a.ec === b.ec) v += 2;
     if (a.end2 === b.end2) v += 2;
     if (a.sig === b.sig) v += 3; else if (a.ec === b.ec && a.first === b.first) v += 1;
-    v -= 1.6 * Math.abs(a.len - b.len);
+    v -= (Math.min(a.len, b.len) <= 2 ? 4.5 : 1.8) * Math.abs(a.len - b.len);   /* chuỗi ngắn (1–2 kana): lệch 1 chữ đã lộ */
     return v;
   }
 
@@ -82,7 +82,7 @@
       if (sh.every(x => x.len >= 2)) {
         F.push(["end", odd(sh.map(x => x.ec === "h" || x.ec === "k" ? x.end : "~" + Math.random()), ci, (a, b) => a === b)]);
         F.push(["sig", odd(sh.map(x => x.sig), ci, (a, b) => a === b)]);
-        F.push(["len", odd(sh.map(x => x.len), ci, (a, b) => Math.abs(a - b) <= 1)]);
+        F.push(["len", odd(sh.map(x => x.len), ci, (a, b) => Math.abs(a - b) <= (Math.min(a, b) <= 2 ? 0 : 1))]);
       }
     } else if (kind === "vi") {
       F.push(["words", odd(sh.map(x => x.words), ci, (a, b) => Math.abs(a - b) <= 1)]);

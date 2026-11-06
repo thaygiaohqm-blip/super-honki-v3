@@ -1,4 +1,4 @@
-@topic từ vay mượn nâng cao
+@topic t19
 @ja 外来語[がいらいご]
 @vi Từ vay mượn (katakana) nâng cao
 @desc Từ katakana thường gặp trong tiếng Nhật hiện đại ở trình độ N1, bao gồm từ vựng Mimikara N1 Unit 6 và Unit 10.

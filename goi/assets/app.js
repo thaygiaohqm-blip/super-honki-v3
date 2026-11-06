@@ -324,9 +324,9 @@
   }
 
   /* ------------------------------------------------------------ test trình độ đầu vào */
-  /* 5 phần N5→N1, mỗi phần 8 câu (tối đa 40 câu, 15 phút). Phần nào đúng dưới 50% thì dừng sớm.
+  /* 5 phần N5→N1, mỗi phần 10 câu (tối đa 50 câu, 15 phút). Phần nào đúng dưới 50% thì dừng sớm.
      Đúng từ 75% là "vững" cấp đó. Câu hỏi lấy ngẫu nhiên từ kho từ vựng, không hiện đúng/sai giữa chừng. */
-  const PL = { lvs: ["n5", "n4", "n3", "n2", "n1"], per: 8, pass: .75, stop: .5, limit: 15 * 60 };
+  const PL = { lvs: ["n5", "n4", "n3", "n2", "n1"], per: 10, pass: .85, stop: .6, limit: 15 * 60 };
   const PL_KIND = { mean: "Nghĩa của từ", cloze: "Điền từ vào cụm", read: "Cách đọc Kanji" };
   const HAS_KANJI = new RegExp(`[${KJ}]`);
   const plOK = e => !/(^|,)(pref|suf|ctr)(,|$)/.test(e.p) && !/[~〜～]/.test(e.w) && e.vi;
@@ -383,7 +383,7 @@
         }
         return null;
       };
-      for (const k of ["mean", "mean", "mean", "mean", "cloze", "cloze", "read", "read"]) qs.push(pick(k) || pick("mean"));
+      for (const k of ["mean", "mean", "mean", "mean", "cloze", "cloze", "cloze", "read", "read", "read"]) qs.push(pick(k) || pick("mean"));
       return { lv, qs: shuffle(qs.filter(Boolean)) };
     });
   }
@@ -409,12 +409,12 @@
       stopTimer();
       main.innerHTML = band({ big: "試", bigJp: true, title: "Test trình độ đầu vào", compact: false,
         text: "Làm một bài kiểm tra ngắn để biết nên bắt đầu học từ cấp nào. Kết quả chỉ để gợi ý lộ trình, không thay cho bài thi JLPT thật.",
-        meta: `<b>40</b><span>câu tối đa · 10–15 phút</span>` }) +
+        meta: `<b>50</b><span>câu tối đa · 10–15 phút</span>` }) +
         `<section class="sec"><div class="wrap test-intro">
           <div class="card test-card"><div class="test-card__in">
             <h2>Trước khi bắt đầu</h2>
             <ul class="facts">
-              <li><b>5 phần, từ N5 đến N1</b><span>Mỗi phần 8 câu trắc nghiệm. Nếu một phần đúng dưới một nửa, bài test dừng ở đó, nên người mới học chỉ mất vài phút.</span></li>
+              <li><b>5 phần, từ N5 đến N1</b><span>Mỗi phần 10 câu trắc nghiệm. Cần đúng từ 85% để được tính là vững; nếu một phần đúng dưới 60%, bài test dừng ở đó, nên người mới học chỉ mất vài phút.</span></li>
               <li><b>Ba dạng câu hỏi</b><span>Nghĩa của từ, điền từ vào cụm, và chọn cách đọc của từ Kanji. Câu nghĩa và câu điền từ có furigana, câu cách đọc thì không.</span></li>
               <li><b>Không biết thì bấm “Chưa biết”</b><span>Đừng đoán bừa, vì đoán may sẽ làm kết quả lệch. Bài test không hiện đúng sai giữa chừng.</span></li>
               <li><b>Không ảnh hưởng tiến độ học</b><span>Chỉ khi bạn chọn, các từ làm sai mới được thêm vào danh sách cần ôn.</span></li>
@@ -525,7 +525,7 @@
               ${PL.lvs.filter(lv => !per.some(p => p.lv === lv)).map(lv => `<li class="is-skip"><span class="lvtag" data-lv="${lv}">${lvName(lv)}</span><span class="meter"><i style="width:0"></i></span><b>—</b><em class="st">Chưa làm</em></li>`).join("")}
             </ul>
             ${Object.keys(kinds).length ? `<h3>Theo dạng câu hỏi</h3><ul class="kinds">${Object.entries(kinds).map(([k, [a, b]]) => `<li><span>${PL_KIND[k]}</span><b>${a}/${b}</b></li>`).join("")}</ul>` : ""}
-            <p class="test-note">Mỗi cấp chỉ có 8 câu nên đây là ước lượng nhanh. Làm lại vài lần, hoặc học thử vài gói rồi kiểm tra lại để thấy rõ hơn.</p>
+            <p class="test-note">Mỗi cấp chỉ có 10 câu nên đây là ước lượng nhanh. Làm lại vài lần, hoặc học thử vài gói rồi kiểm tra lại để thấy rõ hơn.</p>
           </div></div>
           ${wrong.length ? `<div class="card"><div class="test-card__in">
             <div class="test-wrong__head"><h3>${wrong.length} câu chưa đúng</h3>
