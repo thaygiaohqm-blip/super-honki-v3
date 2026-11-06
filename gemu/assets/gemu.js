@@ -173,25 +173,40 @@
       const S = sentences[round], chars = [...S.t], n = Math.min(9, Math.max(5, Math.round(chars.length / 2.4)));
       const tiles = []; for (let i = 0; i < n; i++) tiles.push(chars.slice(Math.floor(i * chars.length / n), Math.floor((i + 1) * chars.length / n)).join(""));
       const open = new Set(), hist = []; let wrong = 0, sel = -1, locked = false, ended = false, typed = "";
-      main.innerHTML = '<div class="gm">' + gameHead("chon") + '<div class="ghud" id="hud"></div><div class="gpanel"><p class="gvi">Nghĩa: ' + esc(S.vi) + '</p><div class="tiles" id="tiles"></div><div class="gmsg" id="msg"></div><div id="qb"><p class="gnote" style="text-align:center">Chọn một ô để trả lời câu hỏi và lật ô đó. Đáp án của câu vừa rồi sẽ ở lại cho đến khi bạn chọn ô tiếp theo.</p></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ cả câu tiếng Nhật…" aria-label="Câu tiếng Nhật"><button class="btn btn--primary" type="submit">Trả lời</button></form></div><div id="hist"></div></div>';
+      main.innerHTML = '<div class="gm">' + gameHead("chon") + '<div class="ghud" id="hud"></div><div class="gpanel"><p class="gvi" id="gvi"></p><div class="tiles" id="tiles"></div><div class="gmsg" id="msg"></div><div id="qb"><p class="gnote" style="text-align:center">Bấm vào ô bạn muốn lật (có thể đổi ô thoải mái). Khi đã chốt, bấm nút “Trả lời câu hỏi” để nhận câu hỏi. Đáp án của câu vừa rồi sẽ ở lại cho đến khi bạn chọn ô tiếp theo.</p></div><div id="nxw"></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ cả câu tiếng Nhật…" aria-label="Câu tiếng Nhật"><button class="btn btn--primary" type="submit">Trả lời</button></form></div><div id="hist"></div></div>';
       const hud = () => { hudSet($("#hud"), "chon" + ctx.seed, '<span class="pill">Câu <b>' + (round + 1) + "/" + ROUNDS + '</b></span><span class="pill">Ô đã lật <b>' + open.size + "/" + n + "</b></span>" + scp("Điểm nếu đoán đúng", score(), "pot", false, "big") + scp("Tổng", total, "tot", true, "big")); };
-      const drawTiles = () => { $("#tiles").innerHTML = tiles.map((t, i) => '<button type="button" class="tl' + (open.has(i) ? " open" : "") + (sel === i ? " sel" : "") + '" data-t="' + i + '" ' + (open.has(i) || locked || ended ? "disabled" : "") + ' lang="ja">' + (open.has(i) ? esc(t) : i + 1) + "</button>").join(""); $$("[data-t]").forEach(b => b.onclick = () => openTile(+b.dataset.t)); };
+      const drawTiles = () => {
+        $("#tiles").innerHTML = tiles.map((t, k) => '<button type="button" class="tl' + (open.has(k) ? " open" : "") + (sel === k ? " sel" : "") + '" data-t="' + k + '" ' + (open.has(k) || locked || ended ? "disabled" : "") + ' lang="ja">' + (open.has(k) ? esc(t) : k + 1) + "</button>").join(""); $$("[data-t]").forEach(b => b.onclick = () => pick(+b.dataset.t));
+        const left = n - open.size, show = ended || left <= 3;
+        $("#gvi").innerHTML = show ? "Nghĩa: " + esc(S.vi) : '<span class="gvi__lock">🔒 Nghĩa tiếng Việt sẽ hiện khi câu chỉ còn 3 ô chưa lật (còn ' + left + " ô)</span>";
+        $("#gvi").classList.toggle("is-show", show);
+      };
       const drawHist = () => { $("#hist").innerHTML = reviewHTML(hist); };
       const score = () => open.size <= 3 ? 50 : open.size <= 6 ? 30 : 20;
       const msg = (t, c) => { const m = $("#msg"); m.className = "gmsg " + (c || ""); m.innerHTML = t; };
-      const nextRound = ms => { ended = true; drawTiles(); later(() => { round++; startRound(); }, ms); };
+      const nextRound = () => {
+        ended = true; sel = -1; drawTiles(); $("#gf").hidden = true; const last = round + 1 >= ROUNDS;
+        $("#nxw").innerHTML = '<div class="gsent" lang="ja">' + esc(S.t) + '</div><p class="gnote" style="text-align:center">Hãy xem lại các ô, câu hỏi và đáp án bên dưới. Sẵn sàng thì bấm tiếp tục.</p><div class="act" style="justify-content:center"><button class="btn btn--primary btn--lg" type="button" id="nx">' + (last ? "Xem kết quả →" : "Câu tiếp theo →") + "</button></div>";
+        const b = $("#nx"); b.onclick = () => { round++; startRound(); }; KEYS = e => { if (e.key === "Enter") b.click(); }; $("#nxw").scrollIntoView({ block: "nearest", behavior: "smooth" });
+      };
       const guess = v => {
         if (ended || !norm(v)) return;
-        if (norm(v) === norm(S.t)) { const sc = score(); total += sc; ctx.live(total); tiles.forEach((_, i) => open.add(i)); drawTiles(); hud(); msg("✔ Chính xác! +" + sc + " điểm", "ok"); burst($(".gpanel"), true, "+" + sc + " điểm!"); return nextRound(2200); }
+        if (norm(v) === norm(S.t)) { const sc = score(); total += sc; ctx.live(total); tiles.forEach((_, i) => open.add(i)); drawTiles(); hud(); msg("✔ Chính xác! +" + sc + " điểm", "ok"); burst($(".gpanel"), true, "+" + sc + " điểm!"); return nextRound(); }
         wrong++; burst($(".gpanel"), false);
-        if (wrong >= 3) { tiles.forEach((_, i) => open.add(i)); drawTiles(); msg("✘ Sai 3 lần. Đáp án: " + esc(S.t), "no"); return nextRound(3200); }
+        if (wrong >= 3) { tiles.forEach((_, i) => open.add(i)); drawTiles(); msg("✘ Sai 3 lần. Đáp án: " + esc(S.t), "no"); return nextRound(); }
         msg("✘ Chưa đúng, bạn còn " + (3 - wrong) + " lần đoán.", "no");
+      };
+      const pick = k => {
+        if (locked || ended || open.has(k)) return; sel = k; drawTiles(); msg("Đã chọn ô số " + (k + 1) + ". Đổi ô khác nếu muốn, hoặc bấm nút bên dưới để trả lời.");
+        $("#qb").innerHTML = '<div class="pickbar"><button class="btn btn--primary btn--lg" type="button" id="ask">❓ Trả lời câu hỏi để mở ô số ' + (k + 1) + "</button></div>";
+        const b = $("#ask"); b.onclick = () => openTile(k); KEYS = e => { if (e.key === "Enter") b.click(); };
       };
       const openTile = i => {
         if (locked || ended) return; sel = i; locked = true; drawTiles(); msg("Trả lời đúng để lật ô số " + (i + 1) + ".");
         const q = genQ(D, Math.random); if (!q) { open.add(i); locked = false; sel = -1; drawTiles(); hud(); return; }
         askUI($("#qb"), q, { mode: "stay", limit: q.gram ? 20 : 15, done: (ok, pi) => {
           hist.push({ q, i: pi, ok }); allHist.push({ q, i: pi, ok }); locked = false; sel = -1;
+          if (ended) { drawHist(); return; }
           if (ok) { open.add(i); msg("✔ Đã lật ô số " + (i + 1) + ": 「" + esc(tiles[i]) + "」", "ok"); } else msg("✘ Chưa đúng, ô số " + (i + 1) + " vẫn đang úp. Hãy chọn ô khác hoặc thử lại.", "no");
           drawTiles(); hud(); drawHist();
         } });
@@ -217,7 +232,7 @@
     const tierOf = got => got <= 3 ? 0 : got <= 6 ? 1 : 2;
     const startRound = () => {
       if (round >= ROUNDS || !targets[round]) { stopAll(); return ctx.end(total, allHist); }
-      const T = targets[round], H = hintsOf(T); let got = 0, wrong = 0, locked = false, typed = "";
+      const T = targets[round], H = hintsOf(T); let got = 0, wrong = 0, locked = false, typed = "", cur = null;
       const pot = () => TIERS[tierOf(got)][2];
       main.innerHTML = '<div class="gm">' + gameHead("doan") + '<div class="ghud" id="hud"></div><div class="dg"><aside class="dg__l"><h3>Gợi ý</h3><div id="hints"></div></aside><section class="dg__r"><div class="gpanel"><div class="pmeter" id="pm"></div><div class="gbig fxh mystery" id="target" aria-label="Chữ bí ẩn"><span class="qm">？</span><i class="sp s1">✦</i><i class="sp s2">✧</i><i class="sp s3">✦</i></div><div id="qb"></div><div class="gmsg" id="msg"></div><form class="gans" id="gf" autocomplete="off"><input id="gi" lang="ja" placeholder="Gõ chữ Kanji bạn đoán…" aria-label="Chữ Kanji"><button class="btn btn--primary" type="submit">Đoán</button></form></div><div id="hist"></div></section></div></div>';
       const hud = () => { hudSet($("#hud"), "doan" + ctx.seed, '<span class="pill">Chữ <b>' + (round + 1) + "/" + ROUNDS + '</b></span><span class="pill">Gợi ý đã mở <b>' + got + "/" + H.length + "</b></span>" + scp("Điểm nếu đoán đúng", pot(), "pot", false, "big") + scp("Tổng", total, "tot", true, "big")); };
@@ -259,9 +274,9 @@
         if (got >= H.length) { $("#qb").innerHTML = '<p class="gnote" style="text-align:center">Bạn đã mở hết gợi ý. Hãy gõ chữ Kanji bí ẩn!</p>'; return; }
         let q = null; for (let t = 0; t < 14 && !q; t++) { const c = genQ(D, Math.random); if (c && !JSON.stringify(c).includes(T.k)) q = c; } if (!q) return;
         askUI($("#qb"), q, { mode: "manual", limit: 0, fx: "big", top: true,
-          actions: ok => '<button class="btn btn--coral btn--lg" type="button" data-hint' + (ok ? "" : " disabled") + ">" + (ok ? "💡 Nhận gợi ý" : "💡 Chưa có gợi ý") + '</button><button class="btn btn--primary btn--lg" type="button" data-nx>Câu tiếp theo →</button>' + (ok ? '<p class="gnote hintnote">Nhận gợi ý để biết thêm về chữ bí ẩn. Gợi ý càng nhiều thì điểm càng giảm. <kbd>H</kbd> nhận gợi ý · <kbd>Enter</kbd> câu tiếp</p>' : '<p class="gnote hintnote">Trả lời sai nên chưa nhận được gợi ý. Hãy thử câu tiếp theo nhé!</p>'),
-          bind: (res, ok, i) => { allHist.push({ q, i, ok }); const hb = $("[data-hint]", res); if (hb && ok) hb.onclick = () => claim(hb, res); if (ok && got >= H.length && hb) { hb.disabled = true; hb.textContent = "Đã mở hết gợi ý"; } },
-          done: () => { if (!locked) { msg("Trả lời đúng câu hỏi để nhận gợi ý. Bạn có thể đoán bất cứ lúc nào."); loadQ(); } } });
+          actions: ok => '<button class="btn btn--coral btn--lg" type="button" data-hint' + (ok ? "" : " disabled") + ">" + (ok ? "💡 Nhận gợi ý" : "💡 Chưa có gợi ý") + '</button><button class="btn btn--primary btn--lg" type="button" data-nx>Câu tiếp theo →</button>' + (ok ? '<p class="gnote hintnote">Bạn đã trả lời đúng nên chắc chắn nhận được gợi ý: bấm nút để xem ngay và đọc kỹ, hoặc sang câu tiếp theo thì gợi ý vẫn được mở. Gợi ý càng nhiều thì điểm càng giảm. <kbd>H</kbd> nhận gợi ý · <kbd>Enter</kbd> câu tiếp</p>' : '<p class="gnote hintnote">Trả lời sai nên chưa nhận được gợi ý. Hãy thử câu tiếp theo nhé!</p>'),
+          bind: (res, ok, i) => { allHist.push({ q, i, ok }); cur = { res, hb: $("[data-hint]", res), ok }; if (cur.hb && ok) cur.hb.onclick = () => claim(cur.hb, res); if (ok && got >= H.length && cur.hb) { cur.hb.disabled = true; cur.hb.textContent = "Đã mở hết gợi ý"; } },
+          done: ok => { if (locked) return; if (ok && cur && cur.hb && !cur.hb.disabled) claim(cur.hb, cur.res); else if (!ok) msg("Chưa đúng, thử câu khác để nhận gợi ý nhé."); loadQ(); } });
       };
       $("#gf").onsubmit = e => { e.preventDefault(); guess($("#gi").value); };
       hud(); drawHints(); drawMeter(); msg("Trả lời đúng câu hỏi để nhận gợi ý. Bạn có thể đoán bất cứ lúc nào."); loadQ();
