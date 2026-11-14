@@ -797,6 +797,12 @@ dialog.auth::backdrop { background: rgba(8, 24, 24, .55); backdrop-filter: blur(
 .syn-g__m { list-style: none; margin: 14px 0 0; padding: 0; }
 .syn-g__m li { display: grid; grid-template-columns: auto 150px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 9px 0; border-top: 1px solid var(--line); }
 .syn-g__w { display: flex; flex-direction: column; }
+.syn-g__r { cursor: pointer; border-radius: 8px; }
+.syn-g__r:hover, .syn-g__r:focus-visible { background: var(--mint-soft); outline: none; }
+.syn-g__rd { font-size: 13px; color: var(--muted); font-style: italic; }
+.syn-g__p { font-size: 11.5px; padding: 1px 7px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-weight: 600; }
+.syn-g__sub { margin: 14px 0 0; font-size: 12.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.chip small { opacity: .7; font-weight: 600; margin-left: 2px; }
 .syn-g__w .jp { font-size: 19px; font-weight: 700; }
 .syn-g__v { display: flex; flex-direction: column; font-size: 14px; }
 .syn-g__v .muted { font-size: 13px; line-height: 1.5; }
@@ -808,3 +814,12 @@ dialog.auth::backdrop { background: rgba(8, 24, 24, .55); backdrop-filter: blur(
   .syn-g__v { grid-column: 1 / -1; }
   .syn-search { margin-left: 0; width: 100%; } .syn-search input { flex: 1; min-width: 0; }
 }
+
+/* ---- Hộp chi tiết từ ---- */
+.wdlg { border: 0; border-radius: 16px; padding: 0; width: min(560px, calc(100vw - 24px)); background: var(--surface); color: inherit; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+.wdlg::backdrop { background: rgba(0,0,0,.45); }
+.wdlg__in { padding: 22px 24px 20px; position: relative; display: grid; gap: 10px; }
+.wdlg__x { position: absolute; top: 10px; right: 14px; border: 0; background: none; font-size: 26px; line-height: 1; cursor: pointer; color: var(--muted); }
+.wdlg__w { font-size: 40px; font-weight: 800; line-height: 1.3; }
+.wdlg__rd { color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
+.wdlg__mk { display: flex; gap: 8px; margin-top: 4px; }

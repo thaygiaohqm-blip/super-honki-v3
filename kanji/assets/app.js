@@ -248,13 +248,14 @@
     const paras = (r.o || "").split("¶").map(t => t.trim()).filter(Boolean).map(t => "<p>" + esc(t) + "</p>").join("");
     return "<h4>Nguồn gốc theo Lục thư</h4>" + (tags ? '<div class="lsrow">' + tags + "</div>" : "") + (paras || "<p>Chưa có.</p>") + (r.a ? '<p class="note">Mục này đang là bản tổng hợp tự động từ cấu tạo chữ, chưa được biên soạn kỹ.</p>' : "") + meaningHTML(r);
   }
-  // Ý nghĩa của chữ: nghĩa gốc theo Thuyết văn giải tự (說文解字), kèm nguyên văn để đối chiếu.
+  // Ý nghĩa của chữ: nghĩa gốc theo Thuyết văn giải tự (dịch sang tiếng Việt), đặt cạnh nghĩa ngày nay để dễ nối và nhớ.
   function meaningHTML(r) {
     const y = (K.Y || {})[r.k];
-    if (!y) return '<h4>Ý nghĩa của chữ</h4><p class="note">Chưa tra được chữ này trong <i>Thuyết văn giải tự</i>: có thể đây là quốc tự do người Nhật đặt, chữ lập sau thời Hán, hoặc sách chép dưới một dạng chữ khác. Vì vậy mục này không đưa nghĩa gốc để tránh suy diễn; hãy xem phần cấu tạo ở trên.</p>';
-    return '<h4>Ý nghĩa của chữ</h4><p class="ymean">' + esc(y[0]) + '</p>' +
-      '<blockquote class="yq" lang="zh-Hant"><span class="yq__t">' + esc(y[1]) + '</span><footer>Thuyết văn giải tự' + (y[2] ? ", mục chữ " + esc(y[2]) : "") + '</footer></blockquote>' +
-      '<p class="note">Đây là nghĩa gốc (bản nghĩa) mà Hứa Thận ghi vào khoảng năm 100, có thể khác với nghĩa dùng ngày nay.</p>';
+    if (!y) return '<h4>Ý nghĩa của chữ</h4><p class="note">Chữ này không có trong <i>Thuyết văn giải tự</i> (sách giải chữ Hán cổ nhất): có thể là chữ do người Nhật đặt, chữ ra đời muộn, hoặc sách chép dưới dạng khác. Vì vậy chưa có nghĩa gốc để đối chiếu; bạn hãy nhớ chữ qua phần cấu tạo ở trên.</p>';
+    return '<h4>Ý nghĩa của chữ</h4><dl class="ym">' +
+      '<dt>Nghĩa gốc</dt><dd class="ymean">' + esc(y[0]) + '</dd>' +
+      (r.m ? '<dt>Nghĩa ngày nay</dt><dd>' + esc(r.m) + '</dd>' : "") + '</dl>' +
+      '<p class="note">Nghĩa gốc lấy từ <i>Thuyết văn giải tự</i> (Hứa Thận, khoảng năm 100)' + (y[1] ? ", sách chép chữ này ở dạng cổ " + esc(y[1]) : "") + '. Nghĩa xưa và nay có thể khác nhau; hãy dùng cả hai để nối với phần cấu tạo chữ mà nhớ.</p>';
   }
   function detailHTML(r, fold) {
     const rad = A.radN[r.r];

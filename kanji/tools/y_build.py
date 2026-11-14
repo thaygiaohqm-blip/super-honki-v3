@@ -11,7 +11,7 @@ out = {}
 for ln in open(os.path.join(HERE, 'data', 'thuyetvan.tsv'), encoding='utf8'):
     if ln.startswith('#') or not ln.strip(): continue
     k, head, quote, vi, how = ln.rstrip('\n').split('\t')
-    out[k] = [vi, quote, head if head != k else '']
+    out[k] = [vi, head if head != k else '']   # nguyên văn Hán không đưa lên giao diện, chỉ giữ trong tsv để đối chiếu
 js = 'KANJI.mean(' + json.dumps(out, ensure_ascii=False, separators=(',', ':')) + ');\n'
 open(os.path.join(HERE, '..', 'data', 'y.js'), 'w', encoding='utf8').write(js)
 print(len(out), 'chữ ->', len(js) // 1024, 'KB')

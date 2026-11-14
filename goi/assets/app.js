@@ -44,8 +44,10 @@
 
   /* ------------------------------------------------------------ đồng nghĩa */
   // Nhóm đồng nghĩa: data/dongnghia.js (tools/syn_build.py). Từ bổ sung (id "x-…") chưa có trong kho cấp độ.
-  const SYNKIND = [["all", "Tất cả"], ["tinh-tu", "Tính từ"], ["dong-tu", "Động từ, danh từ"], ["pho-tu", "Phó từ, liên từ"]];
-  const SYNKINDOF = { "tinh-tu": "tinh-tu", "dong-tu": "dong-tu", "pho-tu": "pho-tu" };
+  // Tab loại từ: một nhóm hiện ở tab nếu có ít nhất một từ thuộc loại đó; các từ còn lại của nhóm vẫn được liệt kê đủ.
+  const SYNKIND = [["all", "Tất cả"], ["tinh", "Tính từ", ["adj-i", "adj-na"]], ["dong", "Động từ", ["v1", "v2", "v3"]], ["danh", "Danh từ", ["n", "pron"]], ["pho", "Phó từ", ["adv"]], ["khac", "Khác", null]];
+  const synCat = e => { const ps = (e.p || "").split(","); const k = SYNKIND.slice(1, 5).find(x => x[2].some(c => ps.includes(c))); return k ? k[0] : "khac"; };
+  const synCats = e => { const ps = (e.p || "").split(","), out = SYNKIND.slice(1, 5).filter(x => x[2].some(c => ps.includes(c))).map(x => x[0]); return out.length ? out : ["khac"]; };
   let synIdx = null;     // id → [nhóm]
   const synData = () => LV.dongnghia;
   function synIndex() {
@@ -655,7 +657,7 @@
         <dt>Từ loại</dt><dd>${esc(posName(e.p))}</dd>
       </dl>
       <div class="ex"><div class="ex__ja" lang="ja">${jp(e.e, { hl: false })}</div><div class="ex__vi">${esc(e.ev)}</div></div>
-      ${(() => { const sy = synOf(e); return sy.length ? `<div class="syn-row"><b>Đồng nghĩa</b> ${sy.slice(0, 6).map(x => `<span class="syn-chip" lang="ja">${jp(x.e.w, { hl: false })}</span>`).join("")}${sy.length > 6 ? ` <span class="muted">+${sy.length - 6}</span>` : ""} <a href="#/tu-loai/dong-nghia?q=${encodeURIComponent(surf(e.w))}">Xem nhóm</a></div>` : ""; })()}
+      ${(() => { const sy = synOf(e); return sy.length ? `<div class="syn-row"><b>Đồng nghĩa</b> ${sy.slice(0, 6).map(x => `<span class="syn-chip" lang="ja">${jp(x.e.w, { hl: false, furi: false })}</span>`).join("")}${sy.length > 6 ? ` <span class="muted">+${sy.length - 6}</span>` : ""} <a href="#/tu-loai/dong-nghia?q=${encodeURIComponent(surf(e.w))}">Xem nhóm</a></div>` : ""; })()}
       <div class="card__actions"><button class="icon-btn" type="button" data-say="${esc(kana(e.e))}">${ICON_SPEAK} Nghe câu ví dụ</button>
         <button class="icon-btn" type="button" data-flip>${ICON_FLIP} Xem mặt trước</button></div>
     </div></div>`;
@@ -1110,20 +1112,23 @@
     const D = synData(), by = synByIdMap();
     const kind = q.get("loai") || "all", cap = q.get("cap") || "all", kw = (q.get("q") || "").trim();
     const href = (o) => { const n = Object.assign({ loai: kind, cap, q: kw }, o), u = new URLSearchParams(); Object.entries(n).forEach(([k, v]) => { if (v && v !== "all") u.set(k, v); }); const t = u.toString(); return "#/tu-loai/dong-nghia" + (t ? "?" + t : ""); };
-    const match = (g) => {
-      if (kind !== "all" && g.src !== kind) return false;
-      const ms = g.m.map(m => by[m.id]).filter(Boolean);
+    const memOf = g => g.m.map(m => ({ e: by[m.id], nu: m.nu })).filter(x => x.e);
+    const matchBase = (g) => {
+      const ms = memOf(g).map(x => x.e);
       if (cap !== "all" && !ms.some(e => e.lv === cap)) return false;
       if (kw) { const k = kw.toLowerCase(); return g.t.toLowerCase().includes(k) || ms.some(e => surf(e.w).includes(kw) || kana(e.w).includes(kw) || e.vi.toLowerCase().includes(k) || (e.hv || "").toLowerCase().includes(k)); }
       return true;
     };
-    const groups = D.groups.map((g, i) => Object.assign({ i }, g)).filter(match);
+    const base = D.groups.map((g, i) => Object.assign({ i }, g)).filter(matchBase);
+    const hasKind = (g, k) => k === "all" || memOf(g).some(x => synCats(x.e).includes(k));
+    const countOf = k => base.filter(g => hasKind(g, k)).length;
+    const groups = base.filter(g => hasKind(g, kind));
     const PER = 40; let shown = PER;
     main.innerHTML = band({ big: "類", bigJp: true, crumb: "Tất cả từ loại", crumbHref: "#/tu-loai", title: "Phân loại theo từ đồng nghĩa",
-        text: "Các từ gần nghĩa được gom thành nhóm. Mỗi từ có ghi chú sắc thái, mức trang trọng và cách dùng để bạn chọn đúng từ khi nói và viết.",
+        text: "Các từ gần nghĩa được gom thành nhóm. Chọn loại từ để xem các nhóm có từ thuộc loại đó; trong mỗi nhóm, mọi từ đồng nghĩa vẫn được liệt kê đủ, kèm sắc thái. Bấm vào một từ để xem chi tiết và nghe đọc.",
         meta: `<b>${fmt(groups.length)}</b><span>nhóm ${groups.length === D.groups.length ? "đồng nghĩa" : "phù hợp"}</span>` }) +
       `<section class="sec" style="padding-top:32px"><div class="wrap">
-        <div class="toolbar"><div class="chips" role="group" aria-label="Lọc loại từ">${SYNKIND.map(([k, n]) => `<a class="chip" href="${href({ loai: k })}" ${kind === k ? 'aria-current="page"' : ""}>${n}</a>`).join("")}</div></div>
+        <div class="toolbar"><div class="chips" role="group" aria-label="Lọc loại từ">${SYNKIND.map(([k, n]) => `<a class="chip" href="${href({ loai: k })}" ${kind === k ? 'aria-current="page"' : ""}>${n} <small>${countOf(k)}</small></a>`).join("")}</div></div>
         <div class="toolbar"><div class="chips" role="group" aria-label="Lọc cấp độ"><a class="chip" href="${href({ cap: "all" })}" ${cap === "all" ? 'aria-current="page"' : ""}>Mọi cấp</a>${C.levels.filter(l => l.ready).map(l => `<a class="chip" href="${href({ cap: l.id })}" ${cap === l.id ? 'aria-current="page"' : ""}>${l.name}</a>`).join("")}</div>
           <form class="syn-search" data-syn-search role="search"><input type="search" name="q" value="${esc(kw)}" placeholder="Tìm từ, nghĩa hoặc Hán Việt…" aria-label="Tìm trong nhóm đồng nghĩa"><button class="btn btn--ghost btn--sm" type="submit">Tìm</button></form></div>
         ${groups.length ? `<div class="syn-list" data-syn></div><div style="text-align:center;margin-top:16px"><button class="btn btn--ghost" type="button" data-more hidden>Hiện thêm nhóm</button></div>` :
@@ -1131,17 +1136,46 @@
       </div></section>`;
     const f = $("[data-syn-search]"); if (f) f.onsubmit = ev => { ev.preventDefault(); location.hash = href({ q: f.q.value.trim() }); };
     const box = $("[data-syn]"), more = $("[data-more]");
+    const row = ({ e, nu }) => `<li class="syn-g__r" data-w="${esc(e.id)}" tabindex="0" role="button" aria-label="Xem chi tiết ${esc(surf(e.w))}">${lvtag(e.lv)}<span class="syn-g__w"><span class="jp" lang="ja">${jp(e.w, { hl: false, furi: false })}</span><span class="syn-g__rd">${esc(kana(e.w))}${e.rm ? ` · ${esc(e.rm)}` : ""}</span></span>
+          <span class="syn-g__v"><b>${esc(e.vi)}</b> <span class="syn-g__p">${esc(posName(e.p))}</span>${e.hv ? ` <span class="hv">${esc(e.hv)}</span>` : ""}${nu ? `<span class="muted">${esc(nu)}</span>` : ""}</span></li>`;
     const card = (g) => {
-      const ms = g.m.map(m => ({ e: by[m.id], nu: m.nu })).filter(x => x.e);
+      const ms = memOf(g), own = kind === "all" ? ms : ms.filter(x => synCats(x.e).includes(kind)), rest = kind === "all" ? [] : ms.filter(x => !synCats(x.e).includes(kind));
       return `<article class="syn-g"><header><span class="syn-g__k jp" lang="ja">${esc(g.k)}</span><div><h3>${esc(g.t)}</h3>${g.n ? `<p class="syn-g__n">${esc(g.n)}</p>` : ""}</div>
         <a class="btn btn--ghost btn--sm" href="#/tu-loai/dong-nghia/hoc?g=${g.i}">Luyện nhóm</a></header>
-        <ul class="syn-g__m">${ms.map(({ e, nu }) => `<li>${lvtag(e.lv)}<span class="syn-g__w"><span class="jp" lang="ja">${jp(e.w, { hl: false })}</span>${S.romaji && e.rm ? `<span class="romaji">${esc(e.rm)}</span>` : ""}</span>
-          <span class="syn-g__v"><b>${esc(e.vi)}</b>${e.hv ? ` <span class="hv">${esc(e.hv)}</span>` : ""}${nu ? `<span class="muted">${esc(nu)}</span>` : ""}</span></li>`).join("")}</ul></article>`;
+        <ul class="syn-g__m">${own.map(row).join("")}</ul>
+        ${rest.length ? `<p class="syn-g__sub">Từ đồng nghĩa thuộc loại khác</p><ul class="syn-g__m">${rest.map(row).join("")}</ul>` : ""}</article>`;
     };
     const paint = () => { if (!box) return; box.innerHTML = groups.slice(0, shown).map(card).join(""); if (more) more.hidden = shown >= groups.length; };
     if (more) more.onclick = () => { shown += PER; paint(); };
+    if (box) {
+      const openRow = el => { const li = el.closest("[data-w]"); if (li && by[li.dataset.w]) wordDialog(by[li.dataset.w]); };
+      box.addEventListener("click", ev => openRow(ev.target));
+      box.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches("[data-w]")) { ev.preventDefault(); openRow(ev.target); } });
+    }
     paint();
     current = { refresh: paint };
+  }
+  // Hộp chi tiết một từ: cách đọc, nghĩa, ví dụ, nghe đọc, đánh dấu đã học.
+  function wordDialog(e) {
+    let d = $("#wdlg");
+    if (!d) { d = document.createElement("dialog"); d.id = "wdlg"; d.className = "wdlg"; document.body.appendChild(d);
+      d.addEventListener("click", ev => { if (ev.target === d) d.close(); }); }
+    const sy = synOf(e);
+    d.innerHTML = `<div class="wdlg__in"><button class="wdlg__x" type="button" aria-label="Đóng" data-close>×</button>
+      <div class="card__top">${lvtag(e.lv)}<span>${esc(posName(e.p))}</span></div>
+      <div class="wdlg__w jp" lang="ja">${jp(e.w, { hl: false, furi: true })}</div>
+      <div class="wdlg__rd">${esc(kana(e.w))}${e.rm ? ` · <span class="romaji">${esc(e.rm)}</span>` : ""} <button class="icon-btn" type="button" data-say="${esc(kana(e.w))}">${ICON_SPEAK} Nghe</button></div>
+      <div class="back__mean">${esc(e.vi)}</div>${e.hv ? `<div class="hv">${esc(e.hv)}</div>` : ""}
+      ${e.c ? `<div class="back__phrase" lang="ja">${jp(e.c)}</div><div class="card__hint">${esc(e.cv)}</div>` : ""}
+      ${e.e ? `<div class="ex"><div class="ex__ja" lang="ja">${jp(e.e, { hl: false })}</div><div class="ex__vi">${esc(e.ev)}</div><button class="icon-btn" type="button" data-say="${esc(kana(e.e))}">${ICON_SPEAK} Nghe câu ví dụ</button></div>` : ""}
+      ${sy.length ? `<div class="syn-row"><b>Đồng nghĩa</b> ${sy.map(x => `<button type="button" class="syn-chip" lang="ja" data-sw="${esc(x.e.id)}">${jp(x.e.w, { hl: false, furi: false })}</button>`).join("")}</div>` : ""}
+      ${e.id && !String(e.id).startsWith("x-") ? `<div class="wdlg__mk"><button class="btn btn--ghost btn--sm" type="button" data-mk="ok">Đã nhớ</button><button class="btn btn--ghost btn--sm" type="button" data-mk="rv">Cần ôn</button></div>` : ""}</div>`;
+    bindSpeak(d);
+    $("[data-close]", d).onclick = () => d.close();
+    $$("[data-mk]", d).forEach(b => b.onclick = () => { mark(e.id, b.dataset.mk); b.textContent = b.dataset.mk === "ok" ? "Đã ghi: đã nhớ" : "Đã ghi: cần ôn"; });
+    const by = synByIdMap();
+    $$("[data-sw]", d).forEach(b => b.onclick = () => { if (by[b.dataset.sw]) wordDialog(by[b.dataset.sw]); });
+    if (!d.open) d.showModal();
   }
   async function synStudy(q) {
     await Promise.all([loadAll(), load("dongnghia")]);

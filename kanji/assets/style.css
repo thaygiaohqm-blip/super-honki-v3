@@ -657,7 +657,7 @@ button.oi__g { cursor: pointer; }
 .kd .tags { flex-wrap: wrap; }
 
 /* ---- Ý nghĩa của chữ (Thuyết văn giải tự) ---- */
-.ymean { font-size: 16px; font-weight: 600; line-height: 1.6; margin: 0 0 10px; }
-.yq { margin: 0 0 6px; padding: 10px 14px; border-left: 3px solid var(--green); background: var(--mint-soft); border-radius: 0 8px 8px 0; }
-.yq__t { font-size: 17px; line-height: 1.7; letter-spacing: .04em; }
-.yq footer { margin-top: 4px; font-size: 12.5px; color: var(--muted); }
+.ym { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 14px; margin: 0 0 8px; }
+.ym dt { font-size: 12.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding-top: 3px; }
+.ym dd { margin: 0; font-size: 16px; line-height: 1.6; }
+.ymean { font-weight: 700; color: var(--green); }
