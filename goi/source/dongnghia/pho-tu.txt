@@ -1,0 +1,411 @@
+# Nhóm đồng nghĩa: phó từ, liên từ, từ tượng thanh tượng hình.
+
+@ Rất | 非
+> とても dùng hằng ngày; 非常に và 大変 trang trọng hơn; 極めて, 誠に, 実に, すこぶる nghiêng về văn viết hoặc lời nói cung kính.
+とても | Rất; dùng rộng, mọi văn cảnh.
+非常に | Vô cùng; trang trọng, hay gặp trong báo cáo.
+大変 | Rất, hết sức; cũng là tính từ "vất vả".
+極めて | Cực kỳ; văn viết, giọng khách quan.
+実に | Thật là; nhấn mạnh cảm xúc người nói.
+誠に | Thành thật mà nói là rất; lịch sự, thư từ.
+まことに | Thật sự, vô cùng; lời nói cung kính.
+すこぶる | Rất; hơi cổ, văn phong cũ.
+相当 | Khá nhiều, đáng kể.
+かなり | Khá, khá là; thường chỉ mức "đáng kể".
+ずいぶん | Khá, nhiều hơn dự đoán.
+だいぶ | Khá nhiều, đã khá lên.
+いたって | Hết sức, vô cùng; văn viết.
+
+@ Hoàn toàn | 全
+全く | Hoàn toàn; hay đi với phủ định hoặc cảm thán.
+すっかり | Hoàn toàn, sạch sẽ (một việc đã đổi hẳn).
+完全に | Hoàn toàn, trọn vẹn.
+全然 | Hoàn toàn (không); thường đi với phủ định.
+まるっきり | Hoàn toàn (phủ định); khẩu ngữ.
+
+@ Thường xuyên | 頻
+> いつも là "lúc nào cũng"; よく là "thường"; しょっちゅう khẩu ngữ mạnh; しばしば, 頻繁に, たびたび dùng trong văn viết hoặc trang trọng.
+よく | Thường, hay.
+いつも | Luôn luôn, lúc nào cũng.
+常に | Luôn luôn; trang trọng, văn viết.
+しょっちゅう | Thường xuyên, tới tấp; khẩu ngữ.
+しばしば | Nhiều lần, thường; văn viết.
+たびたび | Nhiều lần, hết lần này đến lần khác.
+頻繁に | Thường xuyên, dồn dập.
+絶えず | Không ngừng, liên tục.
+始終 | Suốt, luôn luôn.
+ちょくちょく | Hay, thỉnh thoảng nhưng khá thường; khẩu ngữ.
+
+@ Thỉnh thoảng | 時
+時々 | Thỉnh thoảng.
+たまに | Hiếm hoi, lâu lâu mới một lần.
+時折 | Đôi khi; văn viết.
+
+@ Hiếm khi | 稀
+めったに | Hiếm khi (đi với phủ định).
+ほとんど | Hầu như không (đi với phủ định); cũng là "hầu hết".
+あまり | Không… lắm (đi với phủ định).
+
+@ Ngay lập tức | 即
+すぐ | Ngay, lát nữa là xong.
+直ちに | Lập tức; trang trọng, văn bản.
+早速 | Ngay lập tức, tranh thủ làm liền.
+即座に | Ngay tại chỗ, lập tức.
+さっそく | Ngay, tức khắc.
+たちまち | Chớp mắt đã, nhanh đến lạ.
+すかさず | Không bỏ lỡ nhịp, ngay tức thì.
+じきに | Chẳng bao lâu, sắp.
+
+@ Đột nhiên | 突
+急に | Đột nhiên, thay đổi gấp.
+突然 | Bất ngờ, không báo trước.
+いきなり | Đột ngột; khẩu ngữ, thường kèm bất ngờ khó chịu.
+不意に | Bất chợt, không lường trước.
+突如 | Bỗng dưng; văn viết.
+ふと | Chợt, bỗng nhiên (một ý nghĩ, hành động nhẹ).
+
+@ Dần dần | 次
+だんだん | Dần dần.
+次第に | Dần dần; văn viết.
+徐々に | Từ từ, từng bước.
+少しずつ | Từng chút một.
+ますます | Ngày càng.
+
+@ Cuối cùng thì | 終
+> やっと và ようやく nói đến việc cuối cùng cũng làm được sau bao khó khăn; とうとう, ついに là kết cục sau thời gian dài (tốt hay xấu); 結局 là kết quả sau mọi cân nhắc.
+やっと | Mãi rồi cũng; vui nhẹ nhõm khi việc cuối cùng thành.
+ようやく | Rốt cuộc cũng; trang trọng hơn やっと.
+とうとう | Rốt cuộc, cuối cùng (có thể xấu).
+ついに | Cuối cùng; kết cục lâu mong chờ hoặc lo ngại.
+結局 | Rốt cuộc; đánh giá lại kết quả.
+いよいよ | Cuối cùng thì, đến lúc rồi.
+
+@ Có lẽ | 恐
+> たぶん và おそらく là suy đoán; きっと nói với niềm tin cao hơn.
+たぶん | Có lẽ; khẩu ngữ.
+おそらく | Có lẽ, ước chừng; trang trọng.
+恐らく | Có lẽ (viết kanji).
+きっと | Chắc chắn là (tin mạnh).
+どうやら | Hình như, có vẻ.
+
+@ Nhất định | 必
+必ず | Nhất định, chắc chắn.
+絶対 | Tuyệt đối, nhất định.
+きっと | Chắc chắn (kỳ vọng).
+ぜひ | Nhất định (mong muốn, mời mọc).
+どうしても | Dù thế nào cũng.
+
+@ Tuyệt đối không | 決
+決して | Tuyệt đối không (phủ định mạnh).
+全然 | Hoàn toàn không.
+ちっとも | Không chút nào; khẩu ngữ.
+とうてい | Không thể nào.
+
+@ Sắp | 間
+もうすぐ | Sắp, một chút nữa.
+間もなく | Chẳng bao lâu nữa; trang trọng.
+もうじき | Sắp, gần tới.
+近々 | Sắp tới, những ngày này.
+そろそろ | Sắp đến lúc.
+今にも | Sắp sửa, gần như ngay.
+
+@ Vốn dĩ | 元
+元々 | Vốn dĩ.
+元来 | Vốn dĩ, nguyên bản; văn viết.
+本来 | Theo đúng bản chất.
+
+@ Tất nhiên | 当
+もちろん | Tất nhiên.
+当然 | Đương nhiên.
+無論 | Dĩ nhiên; văn viết.
+
+@ Quả nhiên | 案
+やっぱり | Quả nhiên, rốt cuộc vẫn; khẩu ngữ.
+やはり | Quả nhiên; lịch sự hơn.
+案の定 | Đúng như dự đoán (thường điều không hay).
+さすが | Đúng là có khác (khen).
+
+@ Tình cờ | 偶
+たまたま | Tình cờ.
+偶然 | Ngẫu nhiên.
+ばったり | Tình cờ gặp bất ngờ.
+ふと | Chợt, tự nhiên.
+
+@ Cố ý | 故
+わざと | Cố ý, cố tình.
+わざわざ | Cất công, mất công đặc biệt.
+故意に | Cố ý; trang trọng, pháp lý.
+あえて | Cố tình làm dù biết khó, sẵn lòng chịu.
+敢えて | Cố tình (viết kanji).
+
+@ Kỹ lưỡng, đàng hoàng | 丁
+じっくり | Kỹ lưỡng, từ tốn.
+しっかり | Chắc chắn, vững vàng.
+きちんと | Ngay ngắn, chỉn chu.
+ちゃんと | Đàng hoàng, đúng chuẩn.
+念入りに | Cẩn thận, tỉ mỉ.
+
+@ Đại khái | 概
+大体 | Đại khái, phần lớn.
+おおよそ | Khoảng chừng, đại thể.
+概ね | Nhìn chung.
+ほぼ | Gần như.
+約 | Khoảng.
+およそ | Khoảng, xấp xỉ.
+ざっと | Sơ qua.
+
+@ Hầu hết | 殆
+ほとんど | Hầu hết.
+大抵 | Thường thì, phần lớn.
+大部分 | Phần lớn.
+
+@ Lần lượt | 順
+順に | Theo thứ tự.
+順番に | Lần lượt theo lượt.
+次々に | Hết cái này đến cái khác.
+交互に | Luân phiên.
+続々 | Nối tiếp nhau.
+
+@ Cùng lúc | 同
+一斉に | Đồng loạt, cùng lúc.
+一度に | Một lần, cùng lúc.
+同時に | Đồng thời.
+
+@ Một mạch | 一
+一気に | Một mạch, một hơi.
+一息に | Một hơi.
+
+@ Hơn nữa, càng | 更
+さらに | Hơn nữa, thêm nữa.
+もっと | Hơn nữa, nhiều hơn.
+一層 | Càng thêm.
+一段と | Hơn hẳn một bậc.
+ますます | Ngày càng.
+なおさら | Càng hơn nữa.
+
+@ Từ trước, sẵn | 予
+前もって | Trước, sẵn.
+あらかじめ | Từ trước, sẵn.
+事前に | Trước (sự việc); trang trọng.
+
+@ Vẫn | 未
+まだ | Vẫn, vẫn chưa.
+相変わらず | Vẫn như mọi khi.
+依然 | Vẫn nguyên như cũ.
+未だに | Đến giờ vẫn.
+
+@ Đã, rồi | 已
+もう | Đã, rồi.
+すでに | Đã, rồi; trang trọng.
+既に | Đã rồi (viết kanji).
+とっくに | Từ lâu rồi.
+
+@ Chỉ | 唯
+ただ | Chỉ, mỗi.
+単に | Đơn thuần.
+わずか | Chỉ vỏn vẹn.
+専ら | Chủ yếu, chuyên.
+
+@ Trái lại | 却
+むしろ | Ngược lại, đúng hơn là.
+かえって | Trái lại, ngược với mong muốn.
+いっそ | Thà, chi bằng.
+
+@ Tuy nhiên | 但
+> しかし và でも là hai từ nối thông dụng nhất; だが, けれども, ところが có sắc thái riêng; ところが kèm bất ngờ.
+しかし | Tuy nhiên.
+でも | Nhưng; khẩu ngữ.
+けれども | Tuy nhiên; mềm hơn.
+だが | Nhưng; văn viết, cứng.
+ところが | Thế nhưng (trái dự đoán).
+とはいえ | Dù vậy.
+にもかかわらず | Bất chấp.
+ただし | Có điều, với điều kiện.
+
+@ Cho nên | 故
+だから | Cho nên; khẩu ngữ.
+ですから | Cho nên; lịch sự.
+したがって | Do đó; văn viết.
+それで | Vì thế.
+よって | Vì vậy; văn bản pháp lý.
+ゆえに | Cho nên; văn viết cổ.
+そのため | Vì vậy.
+
+@ Hơn nữa | 加
+それに | Hơn nữa.
+しかも | Hơn nữa, lại còn.
+そのうえ | Hơn thế nữa.
+おまけに | Lại còn thêm (thường điều xấu).
+さらに | Thêm nữa.
+
+@ Tóm lại | 要
+つまり | Nghĩa là, tức là.
+要するに | Tóm lại.
+すなわち | Tức là; văn viết.
+いわば | Có thể nói là.
+結局 | Rốt cuộc.
+
+@ Hoặc | 或
+または | Hoặc.
+あるいは | Hoặc; trang trọng.
+もしくは | Hoặc; văn viết.
+それとも | Hay là (câu hỏi).
+
+@ Nhân tiện | 序
+ところで | Nhân tiện, à này (đổi chủ đề).
+ついでに | Nhân tiện làm luôn.
+ちなみに | Nhân tiện nói thêm.
+そういえば | Nhắc mới nhớ.
+
+@ Đặc biệt là | 特
+特に | Đặc biệt là.
+とりわけ | Đặc biệt, nhất là.
+ことに | Nhất là.
+殊に | Đặc biệt, nhất là.
+
+@ Dù sao | 兎
+とにかく | Dù sao thì, trước hết.
+ともかく | Tạm gác chuyện này, dù sao.
+いずれにせよ | Dù thế nào đi nữa.
+ともあれ | Dù sao đi nữa.
+
+@ Nếu | 若
+もし | Nếu.
+もしも | Nếu như; nhấn mạnh hơn.
+仮に | Giả sử.
+たとえ | Dù cho.
+
+@ Hồi hộp, lo lắng | 心
+どきどき | Tim đập mạnh vì hồi hộp.
+はらはら | Thấp thỏm xem diễn biến.
+ひやひや | Thót tim vì sợ chuyện xấu xảy ra.
+びくびく | Run sợ, lo bị phát hiện.
+おどおど | Rụt rè, sợ sệt.
+
+@ Háo hức | 弾
+わくわく | Háo hức mong chờ.
+うきうき | Hân hoan, nhộn nhạo.
+いそいそ | Hớn hở, vui vẻ làm việc.
+
+@ Bực bội | 苛
+いらいら | Bực bội, sốt ruột.
+むしゃくしゃ | Bực dọc không rõ lý do.
+むっと | Phật ý.
+かっと | Nổi nóng bất chợt.
+
+@ Lề mề | 緩
+だらだら | Lề mề, uể oải.
+ぐずぐず | Chần chừ, do dự.
+もたもた | Chậm chạp, vụng về.
+のろのろ | Chậm rì rì.
+ぐだぐだ | Lằng nhằng, kéo dài vô ích.
+
+@ Đi lang thang | 彷
+うろうろ | Đi quanh quẩn không mục đích.
+ぶらぶら | Đi dạo, lang thang.
+ふらふら | Loạng choạng, không vững.
+
+@ Giật mình | 驚
+びっくり | Giật mình.
+はっと | Chợt nhận ra, giật mình.
+ぎょっと | Giật nảy mình.
+ぞっと | Rùng mình.
+
+@ Lơ đãng, lơ đễnh | 呆
+ぼんやり | Lơ đãng.
+うっかり | Lơ đễnh, sơ ý.
+ぼうっと | Thẫn thờ.
+
+@ Thất vọng | 失
+がっかり | Thất vọng.
+がっくり | Rũ người vì thất vọng.
+しょんぼり | Ủ rũ.
+
+@ Cười | 笑
+にこにこ | Tươi cười.
+にっこり | Mỉm cười.
+にやにや | Cười tủm tỉm.
+
+@ Sảng khoái | 爽
+すっきり | Sảng khoái, gọn nhẹ.
+さっぱり | Sảng khoái, nhẹ nhõm.
+
+@ Mưa | 雨
+しとしと | Mưa lâm thâm.
+ざあざあ | Mưa xối xả.
+ぽつぽつ | Lác đác.
+
+@ Giòn, xốp, dẻo | 食
+ふわふわ | Xốp mềm.
+もちもち | Dẻo dai.
+ぱりぱり | Giòn tan.
+さくさく | Giòn rụm.
+とろとろ | Sánh mềm.
+
+@ Vị đậm hay nhạt | 味
+こってり | Đậm đà béo ngậy.
+あっさり | Thanh nhẹ.
+
+@ Rõ nét | 明
+はっきり | Rõ ràng.
+くっきり | Rõ nét.
+きっぱり | Dứt khoát.
+
+@ Sát nút | 際
+ぎりぎり | Vừa kịp sát nút.
+すれすれ | Sát sạt.
+
+@ Chật cứng | 満
+ぎっしり | Chật cứng.
+びっしり | Kín đặc.
+たっぷり | Đầy ắp.
+
+@ Vắng | 閑
+がらがら | Vắng tanh.
+しんと | Im phăng phắc.
+ひっそり | Im lìm.
+
+@ Nhanh gọn | 速
+さっさと | Nhanh chóng, không chần chừ.
+さっと | Thoắt cái.
+てきぱき | Nhanh nhẹn, gọn gàng.
+ぱっと | Phắt, nhanh.
+素早く | Nhanh nhẹn.
+
+@ Lén lút | 密
+こっそり | Lén lút.
+ひそかに | Âm thầm, bí mật.
+
+@ Thẳng thắn | 直
+ずばっと | Nói thẳng.
+きっぱり | Dứt khoát.
+はっきり | Thẳng thắn.
+
+@ Ấm áp, mát | 温
+ぽかぽか | Ấm áp dễ chịu.
+ひんやり | Mát lạnh.
+
+@ Rách, hỏng | 破
+ぼろぼろ | Rách nát.
+がたがた | Lung lay.
+
+@ Ẩm ướt | 湿
+じめじめ | Ẩm ướt khó chịu.
+しっとり | Ẩm mượt.
+びしょびしょ | Ướt sũng.
+
+@ Trơn bóng | 滑
+つるつる | Trơn bóng.
+すべすべ | Mịn trơn.
+ぴかぴか | Sáng bóng.
+
+@ Vừa khít | 合
+ぴったり | Vừa khít.
+ちょうど | Vừa đúng.
+しっくり | Vừa vặn, hòa hợp.
+
+@ Lộn xộn | 乱
+ごちゃごちゃ | Bừa bộn.
+ごたごた | Lộn xộn, rắc rối.
+ばらばら | Rời rạc.
+めちゃくちゃ | Lộn xộn, hỏng bét.

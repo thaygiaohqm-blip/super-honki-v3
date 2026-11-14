@@ -18,6 +18,11 @@
       LV.giaotrinh = d;
       (waiting.giaotrinh || []).forEach(f => f.ok(d));
       delete waiting.giaotrinh;
+    },
+    registerSyn(d) {     // data/dongnghia.js: nhóm từ đồng nghĩa
+      LV.dongnghia = d;
+      (waiting.dongnghia || []).forEach(f => f.ok(d));
+      delete waiting.dongnghia;
     }
   };
   function load(lv) {
@@ -36,6 +41,28 @@
   const loadAll = () => Promise.all(readyLevels().map(load));
   const allItems = () => readyLevels().flatMap(lv => LV[lv] ? LV[lv].topics.flatMap(t => t.items) : []);
   const levelOf = id => C.levels.find(l => l.id === id);
+
+  /* ------------------------------------------------------------ đồng nghĩa */
+  // Nhóm đồng nghĩa: data/dongnghia.js (tools/syn_build.py). Từ bổ sung (id "x-…") chưa có trong kho cấp độ.
+  const SYNKIND = [["all", "Tất cả"], ["tinh-tu", "Tính từ"], ["dong-tu", "Động từ, danh từ"], ["pho-tu", "Phó từ, liên từ"]];
+  const SYNKINDOF = { "tinh-tu": "tinh-tu", "dong-tu": "dong-tu", "pho-tu": "pho-tu" };
+  let synIdx = null;     // id → [nhóm]
+  const synData = () => LV.dongnghia;
+  function synIndex() {
+    if (synIdx || !synData()) return synIdx || {};
+    synIdx = {};
+    synData().groups.forEach((g, gi) => g.m.forEach(m => (synIdx[m.id] = synIdx[m.id] || []).push(gi)));
+    return synIdx;
+  }
+  const synByIdMap = () => { const m = {}; allItems().forEach(e => { m[e.id] = e; }); (synData() ? synData().extras : []).forEach(e => { m[e.id] = e; }); return m; };
+  // Các từ đồng nghĩa với e (không gồm chính nó), kèm sắc thái.
+  function synOf(e) {
+    if (!synData()) return [];
+    const ix = synIndex()[e.id]; if (!ix) return [];
+    const by = synByIdMap(), out = [], seen = new Set([e.id]);
+    ix.forEach(gi => synData().groups[gi].m.forEach(m => { if (!seen.has(m.id) && by[m.id]) { seen.add(m.id); out.push({ e: by[m.id], nu: m.nu }); } }));
+    return out;
+  }
 
   /* ------------------------------------------------------------ lưu trữ */
   const store = {
@@ -242,6 +269,7 @@
     try {
       if (!parts.length || parts[0] === "top") { setNav("jlpt"); return await home(); }
       if (/^n[1-5]$/.test(parts[0])) { setNav("jlpt"); return parts[1] ? await topicStudy(parts[0], parts[1]) : await level(parts[0]); }
+      if (parts[0] === "tu-loai" && parts[1] === "dong-nghia") { setNav("pos"); return parts[2] === "hoc" ? await synStudy(q) : await synList(q); }
       if (parts[0] === "tu-loai") { setNav("pos"); return parts[1] ? (parts[2] === "hoc" ? await posStudy(parts[1], q) : await posDetail(parts[1], q)) : await posList(); }
       if (parts[0] === "nganh") { setNav("ind"); return parts[1] ? await industry(parts[1]) : await industries(); }
       if (parts[0] === "giao-trinh") { setNav("gt"); return parts[2] === "on-tap" ? await bookReview(parts[1], "mix") : parts[2] === "can-on" ? await bookReview(parts[1], "rv") : parts[2] ? await bookUnit(parts[1], decodeURIComponent(parts[2])) : parts[1] ? await book(parts[1]) : await books(); }
@@ -627,6 +655,7 @@
         <dt>Từ loại</dt><dd>${esc(posName(e.p))}</dd>
       </dl>
       <div class="ex"><div class="ex__ja" lang="ja">${jp(e.e, { hl: false })}</div><div class="ex__vi">${esc(e.ev)}</div></div>
+      ${(() => { const sy = synOf(e); return sy.length ? `<div class="syn-row"><b>Đồng nghĩa</b> ${sy.slice(0, 6).map(x => `<span class="syn-chip" lang="ja">${jp(x.e.w, { hl: false })}</span>`).join("")}${sy.length > 6 ? ` <span class="muted">+${sy.length - 6}</span>` : ""} <a href="#/tu-loai/dong-nghia?q=${encodeURIComponent(surf(e.w))}">Xem nhóm</a></div>` : ""; })()}
       <div class="card__actions"><button class="icon-btn" type="button" data-say="${esc(kana(e.e))}">${ICON_SPEAK} Nghe câu ví dụ</button>
         <button class="icon-btn" type="button" data-flip>${ICON_FLIP} Xem mặt trước</button></div>
     </div></div>`;
@@ -1030,7 +1059,7 @@
     const all = allItems();
     main.innerHTML = band({ big: "品詞", bigJp: true, title: "Học theo từ loại", text: "Gom từ cùng loại qua mọi cấp độ. Nhãn N5–N1 nằm cạnh từng từ để bạn biết mình đang ở đâu.",
       meta: `<b>${fmt(all.length)}</b><span>mục từ đã mở</span>` }) +
-      `<section class="sec"><div class="wrap"><ul class="posrows">${C.pos.map(g => {
+      `<section class="sec"><div class="wrap"><a class="syn-promo" href="#/tu-loai/dong-nghia"><span class="syn-promo__ja" lang="ja">類義語</span><span><b>Phân loại theo từ đồng nghĩa</b><br><small>きれい・美しい, 危険・危ない… Gom các từ gần nghĩa thành nhóm, kèm sắc thái và cách chọn từ.</small></span><em>Mở</em></a><ul class="posrows">${C.pos.map(g => {
         const its = all.filter(e => inGroup(g, e));
         const by = C.levels.map(l => [l.id, its.filter(e => e.lv === l.id).length]);
         return `<li><a href="#/tu-loai/${g.id}"><span><span class="row__ja" lang="ja">${jp(g.ja, { hl: false })}</span><br><span class="row__vi">${esc(g.label)}</span></span>
@@ -1075,6 +1104,51 @@
     if (more) more.onclick = () => { shown += 100; paintRows(); };
     paintRows();
     current = { refresh: paintRows };
+  }
+  async function synList(q) {
+    await Promise.all([loadAll(), load("dongnghia")]);
+    const D = synData(), by = synByIdMap();
+    const kind = q.get("loai") || "all", cap = q.get("cap") || "all", kw = (q.get("q") || "").trim();
+    const href = (o) => { const n = Object.assign({ loai: kind, cap, q: kw }, o), u = new URLSearchParams(); Object.entries(n).forEach(([k, v]) => { if (v && v !== "all") u.set(k, v); }); const t = u.toString(); return "#/tu-loai/dong-nghia" + (t ? "?" + t : ""); };
+    const match = (g) => {
+      if (kind !== "all" && g.src !== kind) return false;
+      const ms = g.m.map(m => by[m.id]).filter(Boolean);
+      if (cap !== "all" && !ms.some(e => e.lv === cap)) return false;
+      if (kw) { const k = kw.toLowerCase(); return g.t.toLowerCase().includes(k) || ms.some(e => surf(e.w).includes(kw) || kana(e.w).includes(kw) || e.vi.toLowerCase().includes(k) || (e.hv || "").toLowerCase().includes(k)); }
+      return true;
+    };
+    const groups = D.groups.map((g, i) => Object.assign({ i }, g)).filter(match);
+    const PER = 40; let shown = PER;
+    main.innerHTML = band({ big: "類", bigJp: true, crumb: "Tất cả từ loại", crumbHref: "#/tu-loai", title: "Phân loại theo từ đồng nghĩa",
+        text: "Các từ gần nghĩa được gom thành nhóm. Mỗi từ có ghi chú sắc thái, mức trang trọng và cách dùng để bạn chọn đúng từ khi nói và viết.",
+        meta: `<b>${fmt(groups.length)}</b><span>nhóm ${groups.length === D.groups.length ? "đồng nghĩa" : "phù hợp"}</span>` }) +
+      `<section class="sec" style="padding-top:32px"><div class="wrap">
+        <div class="toolbar"><div class="chips" role="group" aria-label="Lọc loại từ">${SYNKIND.map(([k, n]) => `<a class="chip" href="${href({ loai: k })}" ${kind === k ? 'aria-current="page"' : ""}>${n}</a>`).join("")}</div></div>
+        <div class="toolbar"><div class="chips" role="group" aria-label="Lọc cấp độ"><a class="chip" href="${href({ cap: "all" })}" ${cap === "all" ? 'aria-current="page"' : ""}>Mọi cấp</a>${C.levels.filter(l => l.ready).map(l => `<a class="chip" href="${href({ cap: l.id })}" ${cap === l.id ? 'aria-current="page"' : ""}>${l.name}</a>`).join("")}</div>
+          <form class="syn-search" data-syn-search role="search"><input type="search" name="q" value="${esc(kw)}" placeholder="Tìm từ, nghĩa hoặc Hán Việt…" aria-label="Tìm trong nhóm đồng nghĩa"><button class="btn btn--ghost btn--sm" type="submit">Tìm</button></form></div>
+        ${groups.length ? `<div class="syn-list" data-syn></div><div style="text-align:center;margin-top:16px"><button class="btn btn--ghost" type="button" data-more hidden>Hiện thêm nhóm</button></div>` :
+          `<div class="empty"><h3>Không có nhóm nào phù hợp</h3><p>Thử bỏ bộ lọc hoặc tìm bằng từ khác.</p></div>`}
+      </div></section>`;
+    const f = $("[data-syn-search]"); if (f) f.onsubmit = ev => { ev.preventDefault(); location.hash = href({ q: f.q.value.trim() }); };
+    const box = $("[data-syn]"), more = $("[data-more]");
+    const card = (g) => {
+      const ms = g.m.map(m => ({ e: by[m.id], nu: m.nu })).filter(x => x.e);
+      return `<article class="syn-g"><header><span class="syn-g__k jp" lang="ja">${esc(g.k)}</span><div><h3>${esc(g.t)}</h3>${g.n ? `<p class="syn-g__n">${esc(g.n)}</p>` : ""}</div>
+        <a class="btn btn--ghost btn--sm" href="#/tu-loai/dong-nghia/hoc?g=${g.i}">Luyện nhóm</a></header>
+        <ul class="syn-g__m">${ms.map(({ e, nu }) => `<li>${lvtag(e.lv)}<span class="syn-g__w"><span class="jp" lang="ja">${jp(e.w, { hl: false })}</span>${S.romaji && e.rm ? `<span class="romaji">${esc(e.rm)}</span>` : ""}</span>
+          <span class="syn-g__v"><b>${esc(e.vi)}</b>${e.hv ? ` <span class="hv">${esc(e.hv)}</span>` : ""}${nu ? `<span class="muted">${esc(nu)}</span>` : ""}</span></li>`).join("")}</ul></article>`;
+    };
+    const paint = () => { if (!box) return; box.innerHTML = groups.slice(0, shown).map(card).join(""); if (more) more.hidden = shown >= groups.length; };
+    if (more) more.onclick = () => { shown += PER; paint(); };
+    paint();
+    current = { refresh: paint };
+  }
+  async function synStudy(q) {
+    await Promise.all([loadAll(), load("dongnghia")]);
+    const D = synData(), by = synByIdMap(), g = D.groups[+q.get("g")];
+    if (!g) return notFound();
+    const items = g.m.map(m => by[m.id]).filter(Boolean);
+    study({ title: `Đồng nghĩa: ${g.t}`, sub: g.n || "Các từ cùng nhóm nghĩa.", crumb: "Nhóm đồng nghĩa", crumbHref: "#/tu-loai/dong-nghia", items, file: `minh-dokkai-dong-nghia-${q.get("g")}` });
   }
   async function posStudy(gid, q) {
     const g = posGroup(gid); if (!g) return notFound();
@@ -1387,5 +1461,6 @@
   paintToggles();
   paintReviewBadge();
   window.addEventListener("hashchange", route);
+  load("dongnghia").catch(() => {});      // nạp sẵn để mặt sau thẻ hiện từ đồng nghĩa
   route();
 })();

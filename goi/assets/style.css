@@ -779,3 +779,32 @@ dialog.auth::backdrop { background: rgba(8, 24, 24, .55); backdrop-filter: blur(
   .stairs-tag { max-width: 15em !important; }
 }
 @media (prefers-reduced-motion: reduce) { .stairs-tag, .stairs-wrap .step, .btn--levels span { animation: none !important; } }
+
+/* ---- Phân loại theo từ đồng nghĩa ---- */
+.syn-promo { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 18px; align-items: center; padding: 18px 22px; margin-bottom: 26px; border: 1px solid var(--line); border-left: 4px solid var(--green); border-radius: 12px; background: linear-gradient(90deg, var(--mint-soft), transparent); text-decoration: none; color: inherit; }
+.syn-promo:hover { border-color: var(--green); }
+.syn-promo__ja { font-size: 30px; font-weight: 800; color: var(--green); }
+.syn-promo small { color: var(--muted); font-size: 14px; }
+.syn-promo em { font-style: normal; font-weight: 800; color: var(--green); }
+.syn-search { display: flex; gap: 8px; margin-left: auto; }
+.syn-search input { min-width: 220px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: inherit; font: inherit; font-size: 14px; }
+.syn-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.syn-g { border: 1px solid var(--line); border-radius: 14px; background: var(--surface); padding: 18px 20px; }
+.syn-g header { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 14px; align-items: start; }
+.syn-g__k { font-size: 34px; line-height: 1; font-weight: 800; color: var(--green); min-width: 36px; text-align: center; }
+.syn-g h3 { margin: 0 0 4px; font-size: 18px; }
+.syn-g__n { margin: 0; font-size: 13.5px; line-height: 1.55; color: var(--muted); }
+.syn-g__m { list-style: none; margin: 14px 0 0; padding: 0; }
+.syn-g__m li { display: grid; grid-template-columns: auto 150px minmax(0, 1fr); gap: 12px; align-items: baseline; padding: 9px 0; border-top: 1px solid var(--line); }
+.syn-g__w { display: flex; flex-direction: column; }
+.syn-g__w .jp { font-size: 19px; font-weight: 700; }
+.syn-g__v { display: flex; flex-direction: column; font-size: 14px; }
+.syn-g__v .muted { font-size: 13px; line-height: 1.5; }
+.syn-row { margin-top: 10px; font-size: 13.5px; display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; }
+.syn-chip { padding: 2px 10px; border: 1px solid var(--line); border-radius: 999px; font-weight: 700; }
+@media (max-width: 860px) {
+  .syn-list { grid-template-columns: 1fr; }
+  .syn-g__m li { grid-template-columns: auto minmax(0, 1fr); }
+  .syn-g__v { grid-column: 1 / -1; }
+  .syn-search { margin-left: 0; width: 100%; } .syn-search input { flex: 1; min-width: 0; }
+}

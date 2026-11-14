@@ -25,3 +25,17 @@ KANJIDIC2 (EDRDG, CC BY-SA 4.0), KanjiVG (CC BY-SA 3.0), CHISE IDS / cjkvi-ids (
 ## Tiến độ
 
 Lưu trong `localStorage` khoá `honki:kanji:v1` (chữ đã thuộc, chữ hay sai, điểm test tốt nhất). Chưa đồng bộ qua tài khoản; muốn đồng bộ cần mở rộng `api/progress.js` (danh sách app hợp lệ hiện là `goi|bunpou`).
+
+## Ý nghĩa của chữ (Thuyết văn giải tự)
+
+Dưới mục "Nguồn gốc theo Lục thư", mỗi chữ có thêm mục "Ý nghĩa của chữ": nghĩa gốc theo *Thuyết văn giải tự* (說文解字, Hứa Thận), kèm nguyên văn để đối chiếu.
+
+- Nguồn dữ liệu: `tools/data/thuyetvan.tsv` (chữ, dạng đầu mục trong sách, nguyên văn định nghĩa, bản dịch Việt, cách khớp). Văn bản gốc lấy từ cjkvi-dict/swjz (sách cổ, thuộc phạm vi công cộng).
+- Tạo `data/y.js`: `python3 tools/y_build.py`.
+- Có 1.791 trên 2.150 chữ được khớp. Chữ không tra được (quốc tự, chữ lập sau thời Hán, hoặc sách chép dưới dạng khác) hiện dòng "Chưa tra được", không suy diễn.
+- Cách khớp: `direct` (cùng chữ), `shinjitai` (chữ giản thể Nhật ↔ dạng cũ), `variant` (dị thể đã duyệt tay), `alias` (khớp thủ công đã kiểm tra). Các khớp nhiễu (ví dụ 卓→掉, 翼→摺) đã bị loại.
+- Lưu ý: nghĩa gốc có thể khác nghĩa ngày nay (ví dụ 為 trong sách là "con khỉ cái"), nên giao diện luôn ghi chú điều này.
+
+## Nhóm đồng nghĩa (Super Goi)
+
+Xem `goi/README` phần "Từ đồng nghĩa".

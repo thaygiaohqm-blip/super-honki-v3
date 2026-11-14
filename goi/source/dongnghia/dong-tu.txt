@@ -1,0 +1,1844 @@
+# Nhóm đồng nghĩa: động từ và danh từ chỉ hành động (する).
+
+@ Nhìn | 見
+> 見る là nhìn nói chung; 眺める nhìn ngắm từ xa với tâm trạng thư thả; 見つめる nhìn chăm chú; 見渡す nhìn bao quát; 覗く nhìn lén hoặc nhìn qua khe.
+見る | Nhìn, xem; nghĩa rộng nhất.
+眺める | Ngắm nhìn phong cảnh từ xa.
+見つめる | Nhìn chăm chú, nhìn không rời.
+見渡す | Nhìn bao quát khắp nơi.
+覗く | Nhìn qua khe, ngó vào.
+観察 | Quan sát có chủ đích.
+見物 | Đi xem, tham quan (chợ, lễ hội).
+見学 | Tham quan để học hỏi.
+
+@ Nghe | 聞
+聞く | Nghe; còn nghĩa "hỏi".
+聴く | Nghe chăm chú, thưởng thức (nhạc, bài giảng).
+
+@ Nói | 言
+言う | Nói; trung tính.
+話す | Nói chuyện, trình bày thành lời.
+しゃべる | Nói chuyện, nói nhiều; khẩu ngữ.
+述べる | Phát biểu, trình bày; trang trọng.
+語る | Kể, nói có đầu có đuôi.
+申す | Nói (khiêm nhường của 言う).
+
+@ Hỏi | 尋
+尋ねる | Hỏi, hỏi thăm.
+質問 | Hỏi, đặt câu hỏi.
+問う | Hỏi, chất vấn; văn viết.
+伺う | Hỏi (khiêm nhường).
+
+@ Đến | 着
+着く | Đến, tới nơi.
+到着 | Đến nơi (trang trọng).
+到達 | Đạt tới, chạm đến.
+訪れる | Ghé thăm, đến thăm.
+訪ねる | Đến thăm ai.
+訪問 | Viếng thăm, thăm hỏi.
+
+@ Về | 帰
+帰る | Về nhà, về nơi vốn thuộc về.
+戻る | Quay lại điểm cũ.
+帰宅 | Về nhà.
+帰国 | Về nước.
+帰省 | Về quê.
+
+@ Làm, thực hiện | 行
+行う | Tiến hành, thực hiện; trang trọng.
+実施 | Thực thi, triển khai.
+実行 | Thực hiện kế hoạch.
+実現 | Hiện thực hóa.
+する | Làm.
+やる | Làm; khẩu ngữ.
+
+@ Bắt đầu | 始
+始める | Bắt đầu (cái gì).
+始まる | Bắt đầu.
+開始 | Khai mạc, bắt đầu.
+スタート | Xuất phát.
+着手 | Bắt tay vào.
+取りかかる | Bắt tay làm.
+
+@ Kết thúc | 終
+終わる | Kết thúc.
+終える | Làm cho xong.
+終了 | Kết thúc; trang trọng.
+完了 | Hoàn tất.
+済む | Xong, ổn.
+
+@ Dừng | 止
+止まる | Dừng lại (tự nó).
+止める | Dừng, cho dừng.
+停止 | Đình chỉ.
+中止 | Hủy giữa chừng.
+中断 | Gián đoạn.
+やめる | Thôi, bỏ.
+
+@ Dùng | 使
+使う | Dùng.
+用いる | Sử dụng; trang trọng.
+利用 | Tận dụng, dùng.
+活用 | Vận dụng hiệu quả.
+使用 | Sử dụng (đồ vật).
+
+@ Mua | 買
+買う | Mua.
+購入 | Mua; trang trọng.
+仕入れる | Nhập hàng.
+求める | Tìm kiếm, mua.
+
+@ Bán | 売
+売る | Bán.
+販売 | Bán hàng.
+売却 | Bán tài sản.
+
+@ Cho, tặng | 与
+あげる | Cho, tặng.
+与える | Cho, đem lại.
+差し上げる | Biếu (lịch sự).
+贈る | Tặng, gửi tặng.
+プレゼント | Quà tặng.
+授ける | Ban cho, trao.
+
+@ Nhận | 受
+もらう | Nhận (từ người khác).
+受け取る | Nhận, tiếp nhận.
+受ける | Nhận, chịu.
+いただく | Nhận (khiêm nhường).
+頂戴 | Nhận (trang trọng).
+
+@ Giúp đỡ | 助
+手伝う | Giúp một tay.
+助ける | Cứu giúp.
+援助 | Hỗ trợ.
+支援 | Hỗ trợ, ủng hộ.
+協力 | Hợp tác, giúp đỡ.
+
+@ Tìm | 探
+探す | Tìm thứ chưa thấy.
+捜す | Tìm người, vật mất.
+探る | Dò xét, thăm dò.
+求める | Tìm kiếm, đòi hỏi.
+探求 | Truy tìm, nghiên cứu.
+
+@ Phát hiện | 見
+見つける | Tìm thấy, phát hiện.
+発見 | Phát hiện ra điều mới.
+見つかる | Được tìm thấy.
+
+@ Chọn | 選
+選ぶ | Chọn.
+選択 | Lựa chọn.
+選定 | Chọn ra sau cân nhắc.
+選出 | Bầu chọn.
+選抜 | Tuyển chọn.
+
+@ Quyết định | 決
+決める | Quyết định, định ra.
+決定 | Quyết định chính thức.
+決断 | Quyết đoán.
+決心 | Quyết tâm.
+決意 | Quyết ý.
+判断 | Phán đoán.
+
+@ Suy nghĩ | 考
+考える | Suy nghĩ.
+思う | Nghĩ, cho rằng.
+思案 | Cân nhắc kỹ.
+検討 | Xem xét.
+考慮 | Cân nhắc.
+熟考 | Suy nghĩ thấu đáo.
+
+@ Xem xét, cân nhắc | 検
+検討 | Xem xét kỹ.
+考慮 | Cân nhắc yếu tố.
+吟味 | Thẩm định kỹ.
+審議 | Thảo luận thẩm xét.
+
+@ Nhớ | 覚
+覚える | Nhớ, thuộc.
+思い出す | Nhớ lại.
+記憶 | Ghi nhớ.
+暗記 | Học thuộc lòng.
+
+@ Quên | 忘
+忘れる | Quên.
+失念 | Lỡ quên (trang trọng).
+忘却 | Lãng quên.
+
+@ Biết, hiểu | 知
+知る | Biết.
+分かる | Hiểu.
+理解 | Thấu hiểu.
+把握 | Nắm bắt.
+承知 | Biết, đồng ý.
+心得る | Hiểu rõ, thông thạo.
+悟る | Chợt thấu hiểu.
+認識 | Nhận thức.
+
+@ Học | 学
+学ぶ | Học hỏi.
+勉強 | Học bài.
+習う | Học theo người dạy.
+習得 | Học thành thạo.
+学習 | Học tập.
+身につける | Thành thục, nắm vững.
+
+@ Dạy | 教
+教える | Dạy, chỉ bảo.
+指導 | Hướng dẫn, chỉ đạo.
+教育 | Giáo dục.
+教授 | Giảng dạy.
+
+@ Luyện tập | 練
+練習 | Luyện tập.
+訓練 | Huấn luyện.
+鍛える | Rèn luyện.
+稽古 | Luyện (võ, nghệ thuật).
+トレーニング | Tập luyện thể chất.
+
+@ Làm việc | 働
+働く | Làm việc.
+勤める | Làm việc cho tổ chức.
+勤務 | Làm việc (trang trọng).
+従事 | Làm công việc.
+
+@ Cố gắng | 頑
+頑張る | Cố gắng.
+努力 | Nỗ lực.
+励む | Chăm chỉ miệt mài.
+努める | Gắng sức.
+尽力 | Dốc sức.
+
+@ Nghỉ ngơi | 休
+休む | Nghỉ.
+休憩 | Nghỉ giải lao.
+休息 | Nghỉ ngơi.
+一休み | Nghỉ một lát.
+
+@ Ngủ | 寝
+寝る | Ngủ, nằm.
+眠る | Ngủ say.
+就寝 | Đi ngủ (trang trọng).
+睡眠 | Giấc ngủ.
+
+@ Ăn | 食
+食べる | Ăn.
+食う | Ăn (thô).
+召し上がる | Dùng bữa (kính ngữ).
+食事 | Dùng bữa.
+いただく | Ăn (khiêm nhường).
+
+@ Mặc, đội, mang | 着
+着る | Mặc (thân).
+履く | Mang (giày, quần).
+かぶる | Đội (mũ).
+つける | Đeo, gắn.
+着用 | Mặc, mang.
+身につける | Mang theo người.
+
+@ Rửa | 洗
+洗う | Rửa, giặt.
+洗濯 | Giặt giũ.
+洗浄 | Làm sạch.
+
+@ Dọn dẹp | 片
+片付ける | Dọn gọn.
+掃除 | Quét dọn.
+整理 | Sắp xếp.
+整頓 | Gọn gàng ngăn nắp.
+清掃 | Làm vệ sinh.
+
+@ Sửa chữa | 直
+直す | Sửa, chữa.
+修理 | Sửa máy móc.
+修繕 | Tu bổ, sửa chữa nhà cửa.
+修正 | Chỉnh sửa.
+訂正 | Đính chính.
+改善 | Cải thiện.
+
+@ Hỏng | 壊
+壊れる | Bị hỏng.
+故障 | Hỏng (máy móc).
+破損 | Bị phá hỏng, hư hại.
+損傷 | Tổn hại.
+
+@ Phá hủy | 破
+壊す | Làm hỏng, phá.
+破壊 | Phá hủy.
+破る | Xé, phá vỡ.
+崩す | Làm sụp đổ.
+
+@ Thay đổi | 変
+変わる | Thay đổi (tự thân).
+変える | Làm thay đổi.
+変更 | Sửa đổi.
+変化 | Biến đổi.
+改める | Đổi mới.
+転換 | Chuyển hướng.
+
+@ Đổi, trao đổi | 換
+交換 | Trao đổi.
+取り替える | Thay thế.
+替える | Thay bằng cái khác.
+両替 | Đổi tiền.
+
+@ Tăng | 増
+増える | Tăng lên.
+増やす | Làm tăng.
+増加 | Gia tăng.
+上がる | Đi lên.
+増大 | Tăng mạnh.
+高まる | Lên cao.
+
+@ Giảm | 減
+減る | Giảm.
+減らす | Làm giảm.
+減少 | Giảm sút.
+下がる | Đi xuống.
+低下 | Sa sút.
+縮小 | Thu hẹp.
+
+@ Gặp | 会
+会う | Gặp.
+出会う | Tình cờ gặp.
+面会 | Gặp mặt.
+対面 | Đối mặt gặp nhau.
+遭遇 | Gặp phải, chạm trán.
+出くわす | Bất ngờ gặp.
+
+@ Gửi | 送
+送る | Gửi, tiễn.
+発送 | Gửi hàng.
+送付 | Gửi tài liệu.
+郵送 | Gửi qua bưu điện.
+届ける | Chuyển đến tay.
+
+@ Cầm, nắm | 持
+持つ | Cầm, mang.
+握る | Nắm chặt.
+掴む | Chụp lấy, nắm bắt.
+抱える | Ôm, gánh.
+抱く | Ôm, bế.
+携帯 | Mang theo.
+
+@ Mang, vận chuyển | 運
+運ぶ | Vận chuyển.
+持ってくる | Mang đến.
+持っていく | Mang đi.
+携える | Mang theo, cầm theo.
+持参 | Mang theo.
+
+@ Đặt | 置
+置く | Đặt.
+載せる | Đặt lên.
+据える | Đặt chắc.
+配置 | Bố trí.
+設置 | Lắp đặt.
+設ける | Lập ra.
+
+@ Vứt bỏ | 捨
+捨てる | Vứt.
+廃棄 | Bỏ đi, thải bỏ.
+処分 | Xử lý, loại bỏ.
+放棄 | Từ bỏ.
+破棄 | Hủy bỏ.
+
+@ Giữ gìn | 保
+保つ | Giữ, duy trì.
+守る | Bảo vệ, tuân thủ.
+保存 | Lưu giữ.
+保管 | Giữ gìn.
+維持 | Duy trì.
+保持 | Nắm giữ.
+保護 | Che chở.
+
+@ Bảo vệ | 守
+守る | Bảo vệ.
+保護 | Bảo hộ.
+防ぐ | Ngăn ngừa.
+防衛 | Phòng vệ.
+擁護 | Bênh vực.
+
+@ Ngăn chặn | 防
+防ぐ | Phòng, ngừa.
+阻止 | Ngăn cản.
+妨げる | Cản trở.
+妨害 | Gây trở ngại.
+予防 | Phòng bệnh.
+
+@ Cho phép | 許
+許す | Tha, cho phép.
+許可 | Cấp phép.
+認める | Công nhận, cho phép.
+承認 | Phê chuẩn.
+容認 | Chấp nhận, dung thứ.
+許容 | Cho phép trong giới hạn.
+承諾 | Đồng ý.
+
+@ Đồng ý | 賛
+賛成 | Tán thành.
+同意 | Đồng ý.
+承知 | Chấp thuận.
+承諾 | Nhận lời.
+納得 | Thấy hợp lý, chịu.
+同調 | Đồng điệu theo.
+
+@ Phản đối | 反
+反対 | Phản đối.
+反論 | Phản bác.
+異議 | Dị nghị.
+抗議 | Kháng nghị.
+
+@ Từ chối | 断
+断る | Từ chối.
+拒否 | Cự tuyệt.
+拒絶 | Từ chối thẳng thừng.
+辞退 | Khước từ khéo.
+却下 | Bác bỏ.
+
+@ Chấp nhận | 受
+受け入れる | Chấp nhận, tiếp nhận.
+承認 | Công nhận.
+認める | Thừa nhận.
+受諾 | Nhận lời.
+応じる | Đáp ứng.
+
+@ Trả lời | 答
+答える | Trả lời.
+返事 | Hồi âm.
+応える | Đáp lại kỳ vọng.
+回答 | Trả lời chính thức.
+返答 | Phản hồi.
+応答 | Đáp lại.
+
+@ Giải thích | 説
+説明 | Giải thích.
+解説 | Bình giải.
+解釈 | Diễn giải.
+述べる | Trình bày.
+
+@ Giới thiệu | 紹
+紹介 | Giới thiệu.
+案内 | Hướng dẫn, dẫn đường.
+推薦 | Tiến cử.
+薦める | Giới thiệu, tiến cử.
+勧める | Khuyên, mời.
+
+@ Khuyên | 勧
+勧める | Khuyên nhủ, mời.
+助言 | Lời khuyên.
+忠告 | Khuyên răn.
+提案 | Đề xuất.
+
+@ Đề xuất | 提
+提案 | Đề xuất.
+提唱 | Đề xướng.
+提起 | Nêu lên.
+申し出る | Xin được, đề nghị.
+申し込む | Đăng ký, xin.
+申請 | Đệ đơn.
+
+@ Mời | 誘
+誘う | Mời, rủ.
+招く | Mời đến, gây ra.
+招待 | Mời chính thức.
+呼ぶ | Gọi, mời đến.
+
+@ Gọi, hét | 叫
+呼ぶ | Gọi.
+呼びかける | Kêu gọi.
+叫ぶ | Hét, kêu.
+怒鳴る | Quát tháo.
+わめく | Gào thét.
+
+@ Cười | 笑
+笑う | Cười.
+微笑む | Mỉm cười.
+
+@ Khóc | 泣
+泣く | Khóc.
+嘆く | Than thở.
+涙ぐむ | Ứa nước mắt.
+
+@ Giận | 怒
+怒る | Giận.
+腹を立てる | Nổi giận.
+憤る | Phẫn nộ.
+立腹 | Tức giận.
+激怒 | Nổi giận bừng bừng.
+
+@ Mắng | 叱
+叱る | Mắng, la.
+責める | Trách móc.
+非難 | Chỉ trích.
+咎める | Trách, bắt lỗi.
+注意 | Nhắc nhở.
+説教 | Giáo huấn.
+
+@ Khen | 褒
+褒める | Khen.
+称賛 | Ca ngợi.
+賞賛 | Tán dương.
+称える | Tôn vinh.
+評価 | Đánh giá.
+
+@ Lo lắng | 心
+心配 | Lo lắng.
+気にする | Bận tâm.
+悩む | Phiền não, trăn trở.
+案じる | Lo nghĩ.
+不安 | Bất an.
+懸念 | Lo ngại.
+
+@ Sợ | 恐
+恐れる | Sợ, e ngại.
+怖がる | Sợ hãi.
+怯える | Khiếp sợ.
+恐怖 | Nỗi sợ.
+脅える | Run sợ.
+
+@ Vui | 喜
+喜ぶ | Vui mừng.
+楽しむ | Tận hưởng.
+歓喜 | Hân hoan.
+満喫 | Tận hưởng trọn vẹn.
+味わう | Thưởng thức.
+
+@ Yêu thích | 愛
+愛する | Yêu.
+好む | Ưa thích.
+恋する | Phải lòng.
+慕う | Mến mộ.
+愛好 | Yêu thích.
+
+@ Ghét | 嫌
+嫌う | Ghét.
+憎む | Căm ghét.
+嫌がる | Không muốn, chán ghét.
+避ける | Tránh xa.
+嫌悪 | Ghê tởm.
+
+@ Mong muốn | 望
+望む | Mong muốn.
+願う | Cầu mong.
+期待 | Kỳ vọng.
+希望 | Hy vọng.
+祈る | Cầu nguyện.
+切望 | Khao khát.
+
+@ Tin | 信
+信じる | Tin.
+信用 | Tin dùng.
+信頼 | Tin cậy.
+
+@ Nghi ngờ | 疑
+疑う | Nghi ngờ.
+怪しむ | Thấy đáng ngờ.
+
+@ Cảm thấy | 感
+感じる | Cảm thấy.
+覚える | Cảm thấy, có cảm giác.
+感知 | Cảm nhận.
+
+@ Nhận ra | 気
+気づく | Nhận ra, để ý.
+気がつく | Chợt nhận ra.
+悟る | Thấu hiểu.
+察する | Đoán được, thấu hiểu.
+見抜く | Nhìn thấu.
+
+@ So sánh | 比
+比べる | So sánh.
+比較 | So sánh đối chiếu.
+対比 | Đối chiếu tương phản.
+照らし合わせる | Đối chiếu.
+照合 | Đối chiếu kiểm tra.
+
+@ Kiểm tra | 調
+調べる | Tra cứu, điều tra.
+検査 | Kiểm tra (y tế, hàng).
+確認 | Xác nhận.
+点検 | Kiểm tra từng hạng mục.
+確かめる | Kiểm chứng.
+検証 | Thẩm tra.
+調査 | Điều tra.
+
+@ Thử | 試
+試す | Thử.
+試みる | Thử làm.
+挑戦 | Thử thách.
+実験 | Thí nghiệm.
+
+@ Tập trung | 集
+集中 | Tập trung.
+没頭 | Đắm chìm.
+専念 | Chuyên tâm.
+熱中 | Say mê.
+
+@ Tập hợp | 集
+集める | Thu thập, tập hợp.
+集まる | Tụ họp.
+集合 | Tập trung lại.
+収集 | Sưu tầm.
+召集 | Triệu tập.
+
+@ Chia | 分
+分ける | Chia.
+分かれる | Chia ra.
+分割 | Phân chia.
+区分 | Phân khu.
+区別 | Phân biệt.
+分類 | Phân loại.
+割る | Chia, bẻ.
+
+@ Phân biệt | 区
+区別 | Phân biệt.
+見分ける | Nhận biết, phân biệt.
+識別 | Nhận dạng.
+判別 | Phân định.
+見極める | Nhìn thấu bản chất.
+
+@ Nối | 繋
+つなぐ | Nối.
+結ぶ | Buộc, kết.
+繋げる | Kết nối.
+接続 | Kết nối.
+連結 | Liên kết.
+連絡 | Liên lạc.
+結合 | Kết hợp.
+
+@ Tách ra | 離
+離す | Tách, buông.
+離れる | Rời xa.
+分離 | Tách biệt.
+隔てる | Ngăn cách.
+
+@ Cắt | 切
+切る | Cắt.
+刈る | Cắt (cỏ, lúa).
+削る | Bào, gọt.
+切断 | Cắt đứt.
+
+@ Đánh | 打
+打つ | Đánh, đập.
+叩く | Gõ, vỗ, đánh.
+殴る | Đấm.
+ぶつける | Đập vào.
+ぶつかる | Va vào.
+衝突 | Va chạm.
+
+@ Rơi | 落
+落ちる | Rơi.
+落とす | Làm rơi.
+落下 | Rơi xuống.
+墜落 | Rơi máy bay.
+降る | Rơi (mưa, tuyết).
+こぼれる | Tràn ra.
+
+@ Chảy | 流
+流れる | Chảy.
+流す | Cho chảy.
+流出 | Tràn ra ngoài.
+注ぐ | Rót.
+溢れる | Tràn đầy.
+
+@ Rót, đổ | 注
+注ぐ | Rót.
+つぐ | Rót (đồ uống).
+こぼす | Làm đổ.
+流し込む | Đổ vào.
+
+@ Đầy | 満
+満ちる | Đầy lên.
+満たす | Làm đầy.
+充満 | Tràn ngập.
+充実 | Đầy đủ, phong phú.
+詰まる | Bị nghẹt, đầy.
+
+@ Thiếu | 欠
+足りない | Thiếu.
+不足 | Thiếu hụt.
+欠ける | Thiếu mất.
+欠く | Thiếu.
+乏しい | Khan hiếm.
+
+@ Mất | 失
+失う | Mất.
+なくす | Làm mất.
+紛失 | Thất lạc.
+喪失 | Mất mát.
+落とす | Đánh rơi.
+
+@ Sáng tạo | 作
+発明 | Phát minh.
+開発 | Phát triển, khai phá.
+考案 | Nghĩ ra.
+創造 | Sáng tạo.
+創作 | Sáng tác.
+作り出す | Tạo ra.
+生み出す | Sinh ra, đẻ ra.
+
+@ Làm ra | 造
+作る | Làm.
+造る | Chế tạo.
+製造 | Sản xuất.
+生産 | Sản xuất.
+製作 | Chế tác.
+制作 | Sáng tác.
+作成 | Lập, soạn.
+組み立てる | Lắp ráp.
+
+@ Xây dựng | 建
+建てる | Xây nhà.
+築く | Xây đắp.
+建設 | Xây dựng.
+建築 | Kiến trúc.
+構築 | Xây dựng hệ thống.
+造る | Dựng.
+設立 | Thành lập.
+
+@ Thành lập | 設
+設立 | Thành lập.
+創立 | Sáng lập.
+創設 | Dựng nên.
+設置 | Thiết lập.
+開設 | Khai trương.
+開業 | Khởi nghiệp.
+発足 | Ra mắt.
+立ち上げる | Khởi động.
+
+@ Mở | 開
+開ける | Mở.
+開く | Mở ra.
+開催 | Tổ chức.
+開設 | Mở.
+開店 | Mở cửa hàng.
+開業 | Khai trương.
+開始 | Bắt đầu.
+
+@ Đóng | 閉
+閉める | Đóng.
+閉じる | Khép lại.
+閉まる | Bị đóng.
+閉鎖 | Đóng cửa.
+閉店 | Đóng cửa tiệm.
+閉会 | Bế mạc.
+
+@ Tổ chức | 催
+開く | Mở (tiệc, họp).
+開催 | Tổ chức.
+催す | Tổ chức, gợi lên.
+行う | Tiến hành.
+主催 | Chủ trì.
+
+@ Quản lý | 管
+管理 | Quản lý.
+運営 | Vận hành.
+経営 | Kinh doanh.
+統括 | Thống nhất quản lý.
+取り締まる | Giám sát, kiểm soát.
+監督 | Giám sát.
+指揮 | Chỉ huy.
+司る | Cai quản.
+
+@ Điều khiển | 操
+操作 | Thao tác.
+操縦 | Điều khiển (máy bay).
+運転 | Lái xe.
+制御 | Kiểm soát.
+運用 | Vận dụng.
+動かす | Làm chuyển động.
+操る | Điều khiển khéo.
+
+@ Hoạt động | 動
+動く | Chuyển động.
+動かす | Cho vận hành.
+運転 | Vận hành.
+稼働 | Hoạt động.
+作動 | Chạy (máy).
+運行 | Chạy tuyến.
+
+@ Chạy | 走
+走る | Chạy.
+駆ける | Chạy nhanh.
+駆け出す | Bắt đầu chạy.
+疾走 | Phóng nhanh.
+
+@ Leo lên | 登
+登る | Leo núi.
+上る | Lên (cầu thang).
+昇る | Mọc lên.
+上がる | Lên.
+よじ登る | Trèo lên.
+
+@ Xuống | 降
+降りる | Xuống xe.
+下りる | Xuống dốc.
+下る | Đi xuống.
+下がる | Hạ xuống.
+降下 | Hạ cánh.
+
+@ Ra khỏi | 出
+出る | Ra.
+出す | Lấy ra.
+出かける | Đi ra ngoài.
+外出 | Ra ngoài.
+退出 | Rời khỏi.
+出発 | Xuất phát.
+
+@ Vào | 入
+入る | Vào.
+入れる | Cho vào.
+入場 | Vào cửa.
+加入 | Gia nhập.
+入学 | Nhập học.
+入社 | Vào công ty.
+
+@ Tham gia | 参
+参加 | Tham gia.
+加わる | Gia nhập.
+加入 | Gia nhập.
+出席 | Có mặt.
+出場 | Ra thi đấu.
+参画 | Tham gia hoạch định.
+加盟 | Gia nhập tổ chức.
+
+@ Rời đi | 去
+離れる | Rời khỏi.
+去る | Rời đi.
+立ち去る | Bỏ đi.
+退く | Lui lại.
+脱退 | Rút khỏi.
+
+@ Nghỉ việc | 辞
+辞める | Nghỉ việc.
+退職 | Nghỉ hưu hoặc thôi việc.
+辞職 | Từ chức.
+退社 | Rời công ty.
+辞任 | Từ nhiệm.
+引退 | Giải nghệ.
+
+@ Thuê | 雇
+雇う | Thuê người.
+採用 | Tuyển dụng.
+雇用 | Thuê mướn.
+採る | Tuyển.
+
+@ Chờ | 待
+待つ | Chờ.
+待機 | Sẵn sàng đợi.
+待ち受ける | Chờ sẵn.
+待ち合わせる | Hẹn gặp.
+
+@ Theo | 従
+従う | Làm theo.
+付いていく | Đi theo.
+追う | Đuổi theo.
+追いかける | Chạy theo.
+追跡 | Truy theo.
+続く | Tiếp nối.
+
+@ Tiếp tục | 続
+続く | Tiếp diễn.
+続ける | Tiếp tục.
+継続 | Duy trì liên tục.
+持続 | Kéo dài.
+連続 | Liên tiếp.
+続行 | Tiếp tục tiến hành.
+
+@ Hoàn thành | 完
+完成 | Hoàn thành.
+達成 | Đạt được mục tiêu.
+成し遂げる | Làm cho xong.
+仕上げる | Hoàn thiện.
+完了 | Hoàn tất.
+果たす | Thực hiện xong.
+遂げる | Đạt được.
+
+@ Thành công | 成
+成功 | Thành công.
+成就 | Thành toàn.
+実る | Đơm hoa kết trái.
+
+@ Thất bại | 敗
+失敗 | Thất bại.
+しくじる | Hỏng việc.
+挫折 | Nản chí, vấp ngã.
+
+@ Thắng | 勝
+勝つ | Thắng.
+勝利 | Chiến thắng.
+優勝 | Vô địch.
+制する | Chế ngự.
+勝ち取る | Giành được.
+打ち勝つ | Vượt qua.
+
+@ Thua | 負
+負ける | Thua.
+敗れる | Bại trận.
+敗北 | Thất bại.
+屈する | Khuất phục.
+
+@ Cạnh tranh | 競
+競う | Thi đua.
+争う | Tranh giành.
+競争 | Cạnh tranh.
+競合 | Cạnh tranh nhau.
+対抗 | Đối đầu.
+張り合う | Ganh đua.
+
+@ Chiến đấu | 戦
+戦う | Chiến đấu.
+闘う | Đấu tranh.
+争う | Tranh chấp.
+喧嘩 | Cãi nhau, đánh nhau.
+戦争 | Chiến tranh.
+戦闘 | Giao chiến.
+闘争 | Đấu tranh.
+
+@ Thảo luận | 議
+議論 | Tranh luận.
+討論 | Thảo luận.
+論じる | Bàn luận.
+話し合う | Bàn bạc.
+相談 | Bàn bạc, xin ý kiến.
+協議 | Hiệp thương.
+打ち合わせ | Bàn trước, họp.
+
+@ Hẹn, đặt trước | 約
+約束 | Hẹn, hứa.
+予約 | Đặt trước.
+予定 | Dự định.
+申し込み | Đăng ký.
+
+@ Yêu cầu | 求
+頼む | Nhờ.
+求める | Đòi hỏi.
+要求 | Yêu cầu.
+要請 | Thỉnh cầu.
+依頼 | Nhờ vả.
+請求 | Yêu cầu thanh toán.
+願う | Mong.
+申請 | Xin phép.
+要望 | Nguyện vọng.
+
+@ Thông báo | 知
+知らせる | Thông báo.
+通知 | Thông báo chính thức.
+連絡 | Liên lạc.
+伝える | Truyền đạt.
+報告 | Báo cáo.
+告げる | Báo.
+発表 | Công bố.
+公表 | Công khai.
+
+@ Truyền đạt | 伝
+伝える | Truyền đạt.
+伝わる | Được truyền đến.
+伝達 | Truyền đạt.
+伝言 | Nhắn lại.
+言付ける | Nhờ chuyển lời.
+
+@ Công bố | 発
+発表 | Công bố.
+公表 | Công khai.
+公開 | Mở công khai.
+公示 | Thông cáo.
+発行 | Phát hành.
+公布 | Ban bố.
+
+@ Viết | 書
+書く | Viết.
+記す | Ghi lại.
+綴る | Viết chữ.
+執筆 | Viết bài.
+記入 | Điền vào.
+記載 | Ghi chép.
+記録 | Ghi chép lại.
+書き込む | Viết vào.
+
+@ Ghi chép | 録
+記録 | Ghi lại.
+記す | Ghi.
+控える | Ghi lại, kiềm chế.
+メモ | Ghi chú.
+書き留める | Ghi lại nhanh.
+
+@ Đọc | 読
+読む | Đọc.
+読み上げる | Đọc to.
+朗読 | Đọc diễn cảm.
+閲覧 | Xem tài liệu.
+目を通す | Xem lướt qua.
+
+@ Vẽ | 描
+描く | Vẽ.
+描写 | Miêu tả.
+
+@ Hát | 歌
+歌う | Hát.
+歌唱 | Ca hát.
+
+@ Nhảy múa | 踊
+踊る | Nhảy múa.
+舞う | Múa, lượn.
+
+@ Nhảy | 跳
+跳ぶ | Nhảy.
+飛ぶ | Bay, nhảy qua.
+跳ねる | Bật.
+跳躍 | Nhảy vọt.
+飛び上がる | Bật lên.
+
+@ Bay | 飛
+飛ぶ | Bay.
+飛行 | Bay lượn.
+舞う | Bay lượn.
+飛び立つ | Cất cánh.
+飛翔 | Vút bay.
+
+@ Nổi | 浮
+浮かぶ | Nổi lên.
+浮く | Nổi.
+漂う | Lơ lửng.
+浮上 | Nổi lên.
+
+@ Chìm | 沈
+沈む | Chìm.
+沈める | Nhấn chìm.
+沈没 | Đắm tàu.
+
+@ Ngâm | 浸
+浸す | Ngâm.
+漬ける | Ngâm muối.
+浸る | Chìm vào.
+浸透 | Thấm vào.
+
+@ Nấu ăn | 調
+調理 | Nấu nướng.
+煮る | Nấu, kho.
+炊く | Nấu cơm.
+茹でる | Luộc.
+焼く | Nướng.
+炒める | Xào.
+揚げる | Chiên.
+蒸す | Hấp.
+煮込む | Hầm.
+
+@ Cháy | 燃
+燃える | Cháy.
+焼ける | Cháy, bị nướng.
+焦げる | Cháy khét.
+燃やす | Đốt.
+点火 | Châm lửa.
+
+@ Làm nóng | 熱
+熱する | Đun nóng.
+温める | Làm ấm.
+暖める | Sưởi ấm.
+加熱 | Đun nóng.
+沸かす | Đun sôi.
+
+@ Làm lạnh | 冷
+冷やす | Làm lạnh.
+冷ます | Để nguội.
+冷える | Lạnh đi.
+冷める | Nguội.
+冷却 | Làm mát.
+
+@ Chiếu sáng | 照
+照らす | Chiếu sáng.
+照る | Chiếu rọi.
+輝く | Lấp lánh.
+光る | Phát sáng.
+映す | Phản chiếu.
+映る | Hiện ra.
+
+@ Che | 覆
+覆う | Che phủ.
+隠す | Giấu.
+包む | Bọc.
+被る | Phủ, đội.
+覆い隠す | Che khuất.
+遮る | Chắn ngang.
+塞ぐ | Bịt.
+
+@ Giấu | 隠
+隠す | Giấu.
+隠れる | Trốn.
+秘める | Ấp ủ.
+潜む | Ẩn nấp.
+伏せる | Úp xuống, giấu.
+
+@ Hiện ra | 現
+現れる | Xuất hiện.
+現す | Biểu lộ.
+表す | Biểu thị.
+見せる | Cho xem.
+示す | Chỉ ra.
+露出 | Phơi bày.
+暴露 | Vạch trần.
+表れる | Lộ ra.
+出現 | Xuất hiện.
+
+@ Biểu thị | 表
+表す | Biểu đạt.
+示す | Cho thấy.
+表現 | Thể hiện bằng lời.
+表明 | Bày tỏ.
+意味 | Có nghĩa.
+表示 | Hiển thị.
+象徴 | Tượng trưng.
+指す | Chỉ.
+
+@ Chỉ ra | 指
+指す | Chỉ.
+指摘 | Chỉ ra lỗi.
+示す | Chỉ rõ.
+指し示す | Chỉ ra.
+指差す | Chỉ bằng ngón tay.
+
+@ Phát huy | 活
+発揮 | Phát huy.
+活かす | Tận dụng.
+活用 | Vận dụng.
+生かす | Làm cho sống động.
+役立てる | Làm cho hữu ích.
+
+@ Có ích | 役
+役立つ | Có ích.
+役に立つ | Hữu dụng.
+有益 | Có lợi.
+有用 | Hữu dụng.
+
+@ Gây ra | 引
+引き起こす | Gây ra.
+もたらす | Đem lại.
+招く | Dẫn đến.
+生じる | Nảy sinh.
+起こす | Gây ra.
+招来 | Đưa đến.
+
+@ Xảy ra | 起
+起こる | Xảy ra.
+起きる | Xảy ra, thức dậy.
+発生 | Phát sinh.
+生じる | Nảy sinh.
+勃発 | Bùng nổ.
+生ずる | Phát sinh.
+
+@ Sinh ra | 生
+生まれる | Được sinh ra.
+生む | Sinh, đẻ.
+産む | Sinh con.
+誕生 | Ra đời.
+産出 | Sản xuất ra.
+
+@ Nuôi lớn | 育
+育つ | Lớn lên.
+育てる | Nuôi lớn.
+成長 | Trưởng thành.
+発育 | Phát triển cơ thể.
+育成 | Đào tạo.
+養う | Nuôi dưỡng.
+
+@ Phát triển | 発
+発展 | Phát triển.
+発達 | Tiến hóa.
+成長 | Tăng trưởng.
+進歩 | Tiến bộ.
+進展 | Tiến triển.
+向上 | Nâng cao.
+栄える | Hưng thịnh.
+繁栄 | Thịnh vượng.
+伸びる | Lớn mạnh.
+
+@ Tiến bộ | 進
+進歩 | Tiến bộ.
+向上 | Cải thiện.
+上達 | Giỏi lên.
+進む | Tiến lên.
+改善 | Cải tiến.
+進展 | Tiến triển.
+前進 | Tiến lên.
+
+@ Cải thiện | 改
+改善 | Cải thiện.
+改良 | Cải tiến.
+向上 | Nâng cao.
+改める | Sửa đổi.
+改革 | Cải cách.
+刷新 | Đổi mới.
+革新 | Cách tân.
+
+@ Xấu đi | 悪
+悪化 | Xấu đi.
+低下 | Sa sút.
+衰える | Suy yếu.
+劣化 | Xuống cấp.
+衰退 | Suy thoái.
+
+@ Suy yếu | 衰
+衰える | Suy yếu.
+弱まる | Yếu đi.
+弱る | Yếu đi.
+衰弱 | Suy nhược.
+衰退 | Suy thoái.
+
+@ Mạnh lên | 強
+強まる | Mạnh lên.
+強化 | Tăng cường.
+高まる | Dâng cao.
+増す | Tăng thêm.
+増強 | Tăng cường.
+強める | Làm mạnh lên.
+
+@ Chịu đựng | 耐
+我慢 | Chịu đựng.
+耐える | Chịu đựng.
+堪える | Chịu được.
+辛抱 | Nhẫn nại.
+忍ぶ | Nhẫn nhịn.
+こらえる | Cố nén.
+忍耐 | Kiên nhẫn chịu đựng.
+
+@ Phải chịu | 被
+受ける | Nhận, chịu.
+被る | Gánh chịu.
+こうむる | Chịu.
+浴びる | Hứng chịu.
+負う | Gánh.
+
+@ Đảm nhận | 担
+引き受ける | Nhận lấy.
+受け持つ | Phụ trách.
+担当 | Đảm nhiệm.
+担う | Gánh vác.
+請け負う | Nhận thầu.
+務める | Đảm nhiệm vai trò.
+
+@ Giao phó | 任
+渡す | Đưa.
+預ける | Gửi giữ.
+任せる | Giao cho.
+委ねる | Phó thác.
+委託 | Ủy thác.
+譲る | Nhường.
+引き渡す | Bàn giao.
+手渡す | Đưa tận tay.
+
+@ Trao tặng | 授
+渡す | Đưa cho.
+手渡す | Trao tận tay.
+授与 | Trao tặng.
+贈る | Tặng.
+贈呈 | Dâng tặng.
+差し出す | Đưa ra.
+
+@ Phát, chia | 配
+配る | Phát.
+配布 | Phân phát.
+分配 | Chia phần.
+配達 | Giao hàng.
+配給 | Phân phối.
+支給 | Chu cấp.
+
+@ Nộp | 納
+出す | Nộp, đưa ra.
+提出 | Nộp.
+納める | Nộp, cất.
+納付 | Nộp tiền.
+納入 | Giao nộp.
+
+@ Trả tiền | 払
+払う | Trả.
+支払う | Thanh toán.
+納める | Nộp (tiền).
+返済 | Hoàn trả.
+弁償 | Đền.
+償う | Đền bù.
+清算 | Thanh toán.
+
+@ Trả lại | 返
+返す | Trả lại.
+戻す | Đặt về.
+返却 | Hoàn lại.
+返還 | Trả lại.
+返品 | Trả hàng.
+
+@ Bồi thường | 償
+弁償 | Đền bù.
+賠償 | Bồi thường.
+償う | Chuộc lỗi, đền.
+補償 | Bồi hoàn.
+埋め合わせる | Bù đắp.
+
+@ Tiết kiệm | 節
+節約 | Tiết kiệm.
+倹約 | Dè sẻn.
+貯める | Tích góp.
+貯蓄 | Tiết kiệm tiền.
+蓄える | Dự trữ.
+貯金 | Gửi tiền tiết kiệm.
+
+@ Lãng phí | 浪
+無駄にする | Làm phí.
+浪費 | Phung phí.
+無駄遣い | Tiêu hoang.
+費やす | Tiêu tốn.
+消費 | Tiêu thụ.
+使い果たす | Dùng hết.
+
+@ Tiêu tiền | 費
+使う | Dùng, tiêu.
+費やす | Tiêu tốn.
+消費 | Tiêu dùng.
+支出 | Chi.
+出費 | Chi tiêu.
+投じる | Bỏ vào.
+
+@ Đầu tư | 投
+投資 | Đầu tư.
+出資 | Góp vốn.
+投じる | Bỏ vốn.
+融資 | Cho vay vốn.
+
+@ Vay | 借
+借りる | Mượn, vay.
+借金 | Nợ.
+借用 | Mượn dùng.
+借入れる | Vay vào.
+
+@ Cho vay | 貸
+貸す | Cho mượn.
+融資 | Cấp vốn.
+貸し付ける | Cho vay.
+貸与 | Cho mượn.
+貸し出す | Cho thuê, cho mượn.
+
+@ Kiếm | 稼
+稼ぐ | Kiếm tiền.
+儲ける | Kiếm lời.
+得る | Có được.
+収入 | Thu nhập.
+
+@ Đạt được | 獲
+得る | Đạt được.
+獲得 | Giành được.
+手に入れる | Có được trong tay.
+取得 | Lấy được.
+勝ち取る | Giành lấy.
+入手 | Có được.
+獲る | Săn, bắt.
+手にする | Có trong tay.
+
+@ Lấy | 取
+取る | Lấy.
+取り出す | Lấy ra.
+受け取る | Nhận.
+採る | Hái, lấy mẫu.
+摂る | Nạp, ăn.
+捕る | Bắt.
+撮る | Chụp.
+
+@ Bắt | 捕
+捕まえる | Bắt giữ.
+捕らえる | Bắt lấy.
+逮捕 | Bắt giữ (pháp lý).
+掴まえる | Nắm bắt.
+捕獲 | Bắt (thú).
+拘束 | Giam giữ.
+取り押さえる | Khống chế.
+
+@ Ăn trộm | 盗
+盗む | Trộm.
+奪う | Cướp.
+窃盗 | Trộm cắp.
+盗難 | Mất trộm.
+強奪 | Cướp.
+横取り | Giành lấy.
+
+@ Giết | 殺
+殺す | Giết.
+殺害 | Sát hại.
+殺める | Hại chết.
+倒す | Hạ gục.
+仕留める | Hạ gục.
+
+@ Chết | 死
+死ぬ | Chết.
+亡くなる | Qua đời (lịch sự).
+死亡 | Tử vong.
+逝去 | Mất (kính ngữ).
+他界 | Về thế giới bên kia.
+没する | Mất.
+死去 | Qua đời.
+永眠 | Yên nghỉ.
+
+@ Sống | 生
+生きる | Sống.
+暮らす | Sinh sống.
+住む | Ở, cư trú.
+生活 | Sinh hoạt.
+生存 | Tồn tại.
+居住 | Cư trú.
+在住 | Đang sống tại.
+
+@ Ở, lưu trú | 泊
+住む | Cư trú lâu dài.
+滞在 | Lưu lại.
+泊まる | Ngủ trọ.
+泊める | Cho trọ.
+宿泊 | Lưu trú.
+
+@ Có, tồn tại | 在
+ある | Có (vật).
+いる | Có (người, sinh vật).
+存在 | Tồn tại.
+有する | Có; trang trọng.
+持つ | Sở hữu.
+所有 | Sở hữu.
+保有 | Giữ, sở hữu.
+
+@ Chiếm | 占
+占める | Chiếm.
+占拠 | Chiếm đóng.
+占領 | Chiếm lĩnh.
+独占 | Độc chiếm.
+占有 | Chiếm hữu.
+陣取る | Chiếm chỗ.
+
+@ Bao gồm | 含
+含む | Bao gồm.
+含める | Kể cả.
+包含 | Gồm cả.
+含有 | Chứa.
+
+@ Cấu thành | 成
+成る | Thành.
+構成 | Cấu thành.
+成り立つ | Thành lập được.
+組織 | Tổ chức.
+
+@ Liên quan | 関
+関する | Liên quan.
+関わる | Dính líu.
+関係 | Quan hệ.
+関連 | Liên quan.
+携わる | Tham gia vào.
+触れる | Chạm đến.
+及ぶ | Lan tới.
+絡む | Vướng vào.
+連なる | Nối liền.
+
+@ Ảnh hưởng | 響
+影響 | Ảnh hưởng.
+響く | Vang, ảnh hưởng.
+及ぶ | Đến, ảnh hưởng.
+左右 | Chi phối.
+作用 | Tác động.
+
+@ Dựa vào | 頼
+頼る | Dựa vào.
+頼む | Nhờ.
+依存 | Phụ thuộc.
+基づく | Dựa trên.
+拠る | Căn cứ.
+寄りかかる | Tựa vào.
+当てにする | Trông cậy.
+任せる | Giao phó.
+由来 | Bắt nguồn.
+
+@ Bắt nguồn | 由
+由来 | Có nguồn gốc.
+基づく | Dựa trên.
+起因 | Do (nguyên nhân).
+発祥 | Khởi nguyên.
+生じる | Phát sinh.
+
+@ Phù hợp | 合
+合う | Hợp, vừa.
+適する | Thích hợp.
+似合う | Hợp (người, trang phục).
+当てはまる | Áp dụng được.
+該当 | Thuộc diện.
+合致 | Khớp.
+一致 | Trùng khớp.
+適応 | Thích ứng.
+適合 | Phù hợp.
+向く | Hợp với.
+釣り合う | Cân xứng.
+
+@ Giống | 似
+似る | Giống.
+類似 | Tương tự.
+酷似 | Giống đến lạ.
+共通 | Chung.
+
+@ Khác | 違
+違う | Khác, sai.
+異なる | Khác nhau.
+相違 | Sai khác.
+食い違う | Mâu thuẫn, lệch nhau.
+
+@ Quen dần | 慣
+慣れる | Quen.
+馴染む | Làm quen.
+適応 | Thích nghi.
+順応 | Thích nghi dần.
+親しむ | Làm quen thân thiết.
+慣れ親しむ | Quen thuộc.
+
+@ Dẫn dắt | 導
+案内 | Dẫn đường.
+導く | Dẫn dắt.
+指導 | Chỉ đạo.
+誘導 | Hướng dẫn.
+先導 | Dẫn đầu.
+率いる | Đứng đầu dẫn dắt.
+引率 | Dẫn đoàn.
+
+@ Chỉ thị | 命
+指示 | Chỉ thị.
+命じる | Ra lệnh.
+命令 | Mệnh lệnh.
+指図 | Chỉ bảo, sai bảo.
+指令 | Chỉ đạo.
+申し付ける | Dặn bảo.
+言いつける | Sai bảo.
+
+@ Giám sát | 監
+監督 | Giám sát.
+監視 | Theo dõi.
+見張る | Canh gác.
+見守る | Dõi theo.
+管理 | Quản lý.
+
+@ Quan sát | 観
+観察 | Quan sát.
+観測 | Quan trắc.
+目撃 | Chứng kiến.
+観賞 | Thưởng ngoạn.
+鑑賞 | Thưởng thức.
+見学 | Tham quan học hỏi.
+視察 | Thị sát.
+見物 | Đi xem.
+
+@ Tham quan, du lịch | 旅
+観光 | Tham quan du lịch.
+旅行 | Du lịch.
+訪れる | Đến thăm.
+訪問 | Thăm viếng.
+巡る | Đi vòng quanh.
+遊覧 | Du ngoạn.
+旅する | Đi du lịch.
+
+@ Chơi | 遊
+遊ぶ | Chơi.
+楽しむ | Vui chơi.
+戯れる | Đùa nghịch.
+興じる | Say mê chơi.
+
+@ Chăm sóc | 世
+世話 | Chăm lo.
+面倒を見る | Trông nom.
+看病 | Chăm bệnh.
+介護 | Chăm người cần hỗ trợ.
+看護 | Điều dưỡng.
+手当 | Sơ cứu.
+気遣う | Quan tâm.
+労る | Chăm sóc nhẹ nhàng.
+手入れ | Chăm chút.
+
+@ Nuôi, trồng | 養
+養う | Nuôi dưỡng.
+飼う | Nuôi thú.
+育てる | Nuôi lớn.
+養育 | Nuôi dạy.
+養成 | Đào tạo.
+養殖 | Nuôi trồng thủy sản.
+栽培 | Trồng trọt.
+
+@ Trồng | 植
+植える | Trồng cây.
+栽培 | Canh tác.
+育てる | Gieo trồng.
+耕す | Cày xới.
+蒔く | Gieo hạt.
+
+@ Thu hoạch | 収
+収穫 | Thu hoạch.
+刈る | Gặt.
+摘む | Hái.
+採る | Hái.
+獲る | Săn bắt.
+
+@ Hái | 摘
+摘む | Ngắt, hái.
+採る | Hái.
+もぐ | Vặt.
+摘み取る | Ngắt lấy.
+
+@ Thu thập | 集
+集める | Gom góp.
+収集 | Thu thập.
+集計 | Tổng hợp.
+採集 | Hái lượm, thu mẫu.
+かき集める | Vơ vét.
+寄せ集める | Gom lại.
+
+@ Đếm, tính | 計
+数える | Đếm.
+計算 | Tính toán.
+勘定 | Tính tiền.
+算出 | Tính ra.
+見積もる | Ước lượng.
+
+@ Đo | 測
+測る | Đo chiều dài, vị trí.
+計る | Đo thời gian, số lượng.
+量る | Cân đo khối lượng.
+測定 | Đo lường.
+計測 | Đo đạc.
+計量 | Đo trọng lượng.
+測量 | Trắc địa.
+
+@ Ước tính | 推
+見積もる | Ước tính.
+推定 | Suy đoán.
+推測 | Suy đoán.
+予測 | Dự đoán.
+予想 | Dự tính.
+見込む | Dự kiến.
+推量 | Phỏng đoán.
+想定 | Giả định.
+概算 | Tính gần đúng.
+
+@ Dự đoán | 予
+予想 | Dự đoán.
+予測 | Dự báo.
+予言 | Tiên tri.
+予知 | Biết trước.
+予報 | Dự báo.
+見通す | Nhìn thấu.
+先読み | Đoán trước.
+占う | Bói.
+
+@ Tưởng tượng | 想
+想像 | Tưởng tượng.
+思い描く | Hình dung.
+空想 | Mơ mộng.
+夢見る | Mơ tưởng.
+思い浮かべる | Hiện lên trong đầu.
+仮定 | Giả định.
+連想 | Liên tưởng.
+妄想 | Ảo tưởng.
+イメージ | Hình dung.
+
+@ Hồi tưởng | 回
+思い出す | Nhớ lại.
+回想 | Hồi tưởng.
+振り返る | Nhìn lại.
+懐かしむ | Hoài niệm.
+回顧 | Nhìn lại quá khứ.
+偲ぶ | Tưởng nhớ.
+顧みる | Ngoảnh lại.
+追想 | Hồi tưởng.
+思い返す | Nghĩ lại.
+
+@ Xem lại | 省
+振り返る | Nhìn lại.
+顧みる | Xem xét lại.
+反省 | Kiểm điểm.
+省みる | Tự soi xét.
+見直す | Xem xét lại.
+再検討 | Xem xét lại.
+
+@ Hối hận | 悔
+後悔 | Hối hận.
+悔やむ | Tiếc nuối.
+悔いる | Hối tiếc.
+反省 | Tự kiểm điểm.
+
+@ Xin lỗi | 謝
+謝る | Xin lỗi.
+詫びる | Tạ lỗi.
+謝罪 | Tạ tội.
+陳謝 | Tạ lỗi chính thức.
+
+@ Cảm ơn | 感
+感謝 | Cảm ơn.
+礼を言う | Nói lời cảm ơn.
+お礼 | Lời cảm ơn.
+
+@ Chúc mừng | 祝
+祝う | Chúc mừng.
+祝福 | Chúc phúc.
+慶賀 | Chúc mừng long trọng.
+称える | Tôn vinh.
+祝賀 | Mừng lễ.
+
+@ An ủi | 慰
+慰める | An ủi.
+励ます | Khích lệ.
+労る | Thông cảm, chăm sóc.
+慰労 | Úy lạo.
+癒す | Chữa lành.
+和らげる | Làm dịu.
+宥める | Dỗ dành.
+労う | Ghi nhận công lao.
+元気づける | Làm cho phấn chấn.
+
+@ Động viên | 励
+励ます | Động viên.
+奨励 | Khuyến khích.
+激励 | Khích lệ.
+鼓舞 | Cổ vũ.
+応援 | Cổ vũ.
+力づける | Tiếp thêm sức mạnh.
+促す | Thúc đẩy.
+勇気づける | Tiếp thêm dũng khí.
+
+@ Cổ vũ, ủng hộ | 援
+応援 | Cổ vũ, ủng hộ.
+声援 | Cổ vũ bằng tiếng hô.
+励ます | Động viên.
+支持 | Ủng hộ.
+援護 | Hỗ trợ che chở.
+支援 | Hỗ trợ.
+後押し | Hậu thuẫn.
+加勢 | Giúp sức.
+盛り上げる | Làm sôi nổi.
+
+@ Ủng hộ | 支
+支持 | Ủng hộ.
+賛成 | Tán thành.
+支援 | Trợ giúp.
+援助 | Viện trợ.
+擁護 | Bênh vực.
+後援 | Bảo trợ.
+賛同 | Tán đồng.
+味方 | Đứng về phía.
+肩を持つ | Bênh vực.
+同調 | Đồng điệu.
+
+@ Phản bội | 裏
+裏切る | Phản bội.
+背く | Trái lại, làm ngược.
+背信 | Bội tín.
+反する | Đi ngược.
+逆らう | Chống lại.
+反逆 | Làm phản.
+反抗 | Chống đối.
+歯向かう | Chống lại.
+刃向かう | Chống cự.
+
+@ Chống lại | 抗
+反対 | Phản đối.
+逆らう | Đi ngược lại.
+抵抗 | Kháng cự.
+反抗 | Chống đối.
+対抗 | Chống lại.
+抗う | Chống cự.
+抗議 | Phản đối.
+対立 | Đối lập.
+反発 | Phản kháng.
+
+@ Phục tùng | 従
+従う | Tuân theo.
+服従 | Phục tùng.
+付き従う | Đi theo hầu.
+屈する | Chịu khuất phục.
+応じる | Chiều theo.
+遵守 | Tuân thủ.
+守る | Giữ đúng.
+従える | Thống lĩnh.
+
+@ Tuân thủ | 遵
+守る | Giữ đúng.
+遵守 | Tuân thủ.
+従う | Làm theo.
+順守 | Tuân thủ.
+履行 | Thực hiện đúng.
+厳守 | Tuân thủ nghiêm ngặt.
+
+@ Tôn trọng | 尊
+尊重 | Tôn trọng.
+尊敬 | Kính trọng.
+敬う | Kính trọng.
+重んじる | Coi trọng.
+尊ぶ | Quý trọng.
+崇める | Tôn thờ.
+敬意 | Lòng kính trọng.
+崇拝 | Sùng bái.
+重視 | Xem trọng.
+敬服 | Kính phục.
+
+@ Coi thường | 蔑
+軽視 | Coi nhẹ.
+見下す | Khinh thường.
+馬鹿にする | Coi thường.
+軽んじる | Xem nhẹ.
+侮る | Khinh miệt.
+蔑む | Khinh bỉ.
+見くびる | Đánh giá thấp.
+無視 | Bỏ qua.
+見下げる | Coi khinh.
+
+@ Coi trọng | 重
+重視 | Xem trọng.
+重んじる | Trọng thị.
+尊重 | Tôn trọng.
+大切にする | Quý trọng.
+重要視 | Coi là quan trọng.
+注目 | Chú ý đến.
+力を入れる | Dồn sức.
+貴ぶ | Quý trọng.
+
+@ Bỏ qua | 無
+無視 | Bỏ qua.
+見逃す | Bỏ sót, tha.
+見過ごす | Lướt qua.
+見落とす | Nhìn sót.
+看過 | Bỏ qua (nhẹ).
+黙認 | Mặc nhiên cho phép.
+大目に見る | Du di.
+放置 | Bỏ mặc.
+放っておく | Để mặc.
+怠る | Lơ là.
+疎かにする | Xao nhãng.
+軽視 | Coi nhẹ.
+度外視 | Bỏ ngoài tính toán.
+
+@ Bỏ lỡ | 逃
+逃す | Bỏ lỡ.
+見逃す | Bỏ lỡ.
+取り逃がす | Để vuột mất.
+逸する | Bỏ mất.
+乗り遅れる | Lỡ chuyến.
+乗り損なう | Lỡ chuyến.
+外す | Trượt.
+
+@ Tránh | 避
+避ける | Tránh.
+逃げる | Trốn.
+逃れる | Thoát khỏi.
+免れる | Thoát được.
+回避 | Né tránh.
+避難 | Sơ tán.
+遠ざける | Tránh xa.
+逃避 | Trốn tránh.
+退く | Rút lui.
+
+@ Trốn thoát | 逃
+逃げる | Chạy trốn.
+逃れる | Thoát ra.
+逃亡 | Bỏ trốn.
+脱出 | Thoát ra.
+脱走 | Vượt ngục.
+逃走 | Tẩu thoát.
+逃げ出す | Bỏ chạy.
+抜け出す | Lẻn ra.
+免れる | Thoát khỏi.
