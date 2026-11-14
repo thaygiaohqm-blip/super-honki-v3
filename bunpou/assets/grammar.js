@@ -101,12 +101,11 @@
   }
   let queueTok = 0;
   function speakQueue(list) {
-    if (!("speechSynthesis" in window)) return toast("Trình duyệt này chưa hỗ trợ đọc thành tiếng.");
+    if (!window.HonkiTTS || !HonkiTTS.supported) return toast("Trình duyệt này chưa hỗ trợ đọc thành tiếng.");
     const tok = ++queueTok; speechSynthesis.cancel();
     const go = i => {
       if (tok !== queueTok || i >= list.length) return;
-      const u = new SpeechSynthesisUtterance(list[i]); u.lang = "ja-JP"; u.rate = .88;
-      const vs = speechSynthesis.getVoices(); const v = vs.find(x => /^ja[-_]JP/i.test(x.lang)); if (v) u.voice = v;
+      const u = HonkiTTS.utter(list[i]);
       u.onend = () => setTimeout(() => go(i + 1), 450); speechSynthesis.speak(u);
     };
     go(0);

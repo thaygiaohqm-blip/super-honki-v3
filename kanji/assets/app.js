@@ -216,9 +216,7 @@
   const loadCat = () => window.MD_CATALOG ? Promise.resolve(true) : loadScript("../goi/data/catalog.js");
   const wdlg = $("#wmodal");
   let jaVoice = null;
-  const pickVoice = () => { if (!("speechSynthesis" in window)) return; jaVoice = speechSynthesis.getVoices().find(v => /^ja/i.test(v.lang)) || null; };
-  if ("speechSynthesis" in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
-  const speak = t => { if (!("speechSynthesis" in window)) return toast("Trình duyệt chưa hỗ trợ đọc thành tiếng."); speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t); u.lang = "ja-JP"; if (jaVoice) u.voice = jaVoice; u.rate = .88; speechSynthesis.speak(u); };
+  const speak = t => { if (!window.HonkiTTS || !HonkiTTS.supported) return toast("Trình duyệt chưa hỗ trợ đọc thành tiếng."); HonkiTTS.speak(t); };
   const plain = m => (m || "").replace(new RegExp("([" + KJ + "]+)\\[([^\\]]+)\\]", "g"), "$2").replace(/[{} ]/g, "");
   async function openWord(id) {
     const lv = id.split("-")[0];
@@ -248,14 +246,10 @@
     const paras = (r.o || "").split("¶").map(t => t.trim()).filter(Boolean).map(t => "<p>" + esc(t) + "</p>").join("");
     return "<h4>Nguồn gốc theo Lục thư</h4>" + (tags ? '<div class="lsrow">' + tags + "</div>" : "") + (paras || "<p>Chưa có.</p>") + (r.a ? '<p class="note">Mục này đang là bản tổng hợp tự động từ cấu tạo chữ, chưa được biên soạn kỹ.</p>' : "") + meaningHTML(r);
   }
-  // Ý nghĩa của chữ: nghĩa gốc theo Thuyết văn giải tự (dịch sang tiếng Việt), đặt cạnh nghĩa ngày nay để dễ nối và nhớ.
+  // Cách nhớ chữ: diễn giải ngắn từ cấu tạo và hình ảnh để nhớ mặt chữ, nghĩa và vài từ thường gặp (tools/data/cachnho.tsv).
   function meaningHTML(r) {
-    const y = (K.Y || {})[r.k];
-    if (!y) return '<h4>Ý nghĩa của chữ</h4><p class="note">Chữ này không có trong <i>Thuyết văn giải tự</i> (sách giải chữ Hán cổ nhất): có thể là chữ do người Nhật đặt, chữ ra đời muộn, hoặc sách chép dưới dạng khác. Vì vậy chưa có nghĩa gốc để đối chiếu; bạn hãy nhớ chữ qua phần cấu tạo ở trên.</p>';
-    return '<h4>Ý nghĩa của chữ</h4><dl class="ym">' +
-      '<dt>Nghĩa gốc</dt><dd class="ymean">' + esc(y[0]) + '</dd>' +
-      (r.m ? '<dt>Nghĩa ngày nay</dt><dd>' + esc(r.m) + '</dd>' : "") + '</dl>' +
-      '<p class="note">Nghĩa gốc lấy từ <i>Thuyết văn giải tự</i> (Hứa Thận, khoảng năm 100)' + (y[1] ? ", sách chép chữ này ở dạng cổ " + esc(y[1]) : "") + '. Nghĩa xưa và nay có thể khác nhau; hãy dùng cả hai để nối với phần cấu tạo chữ mà nhớ.</p>';
+    const t = (K.Y || {})[r.k];
+    return t ? '<h4>Cách nhớ chữ</h4><p class="ymem">' + esc(t) + '</p>' : "";
   }
   function detailHTML(r, fold) {
     const rad = A.radN[r.r];

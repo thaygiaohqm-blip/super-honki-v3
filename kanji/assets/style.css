@@ -657,7 +657,4 @@ button.oi__g { cursor: pointer; }
 .kd .tags { flex-wrap: wrap; }
 
 /* ---- Ý nghĩa của chữ (Thuyết văn giải tự) ---- */
-.ym { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 6px 14px; margin: 0 0 8px; }
-.ym dt { font-size: 12.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding-top: 3px; }
-.ym dd { margin: 0; font-size: 16px; line-height: 1.6; }
-.ymean { font-weight: 700; color: var(--green); }
+.ymem { margin: 0 0 8px; font-size: 16px; line-height: 1.75; }

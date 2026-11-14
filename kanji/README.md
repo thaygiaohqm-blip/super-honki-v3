@@ -26,15 +26,14 @@ KANJIDIC2 (EDRDG, CC BY-SA 4.0), KanjiVG (CC BY-SA 3.0), CHISE IDS / cjkvi-ids (
 
 Lưu trong `localStorage` khoá `honki:kanji:v1` (chữ đã thuộc, chữ hay sai, điểm test tốt nhất). Chưa đồng bộ qua tài khoản; muốn đồng bộ cần mở rộng `api/progress.js` (danh sách app hợp lệ hiện là `goi|bunpou`).
 
-## Ý nghĩa của chữ (Thuyết văn giải tự)
+## Cách nhớ chữ
 
-Dưới mục "Nguồn gốc theo Lục thư", mỗi chữ có thêm mục "Ý nghĩa của chữ": nghĩa gốc theo *Thuyết văn giải tự* (說文解字, Hứa Thận), kèm nguyên văn để đối chiếu.
+Trong cửa sổ chi tiết của mỗi chữ có mục "Cách nhớ chữ" (đủ 2.150/2.150 chữ): phân tích bộ phận, hình ảnh gợi nhớ, nghĩa suy ra và vài từ thường gặp.
 
-- Nguồn dữ liệu: `tools/data/thuyetvan.tsv` (chữ, dạng đầu mục trong sách, nguyên văn định nghĩa, bản dịch Việt, cách khớp). Văn bản gốc lấy từ cjkvi-dict/swjz (sách cổ, thuộc phạm vi công cộng).
-- Tạo `data/y.js`: `python3 tools/y_build.py`.
-- Có 1.791 trên 2.150 chữ được khớp. Chữ không tra được (quốc tự, chữ lập sau thời Hán, hoặc sách chép dưới dạng khác) hiện dòng "Chưa tra được", không suy diễn.
-- Cách khớp: `direct` (cùng chữ), `shinjitai` (chữ giản thể Nhật ↔ dạng cũ), `variant` (dị thể đã duyệt tay), `alias` (khớp thủ công đã kiểm tra). Các khớp nhiễu (ví dụ 卓→掉, 翼→摺) đã bị loại.
-- Lưu ý: nghĩa gốc có thể khác nghĩa ngày nay (ví dụ 為 trong sách là "con khỉ cái"), nên giao diện luôn ghi chú điều này.
+- Nguồn nội dung: `tools/data/cachnho.tsv` (mỗi dòng: chữ, TAB, cách nhớ). 548 chữ lấy nguyên văn từ 14 file giáo trình Kanji Master của Minh Dokkai; các chữ còn lại do Claude biên soạn theo cùng kiểu, tham khảo cấu tạo chữ và Thuyết văn.
+- Tạo `data/y.js`: `python3 tools/cachnho_build.py` (in số chữ đã có, danh sách còn thiếu ghi ra `/tmp/cn_missing.txt`).
+- Lưu ý: nhiều cách nhớ là mẹo gợi nhớ dân gian chứ không phải nguồn gốc chữ học chặt chẽ. Phần nguồn gốc theo Lục thư ở trên mới là phân tích cấu tạo.
+- `tools/data/thuyetvan_tham_khao.tsv` (1.791 chữ, nghĩa gốc theo *Thuyết văn giải tự* của Hứa Thận, văn bản từ cjkvi-dict/swjz) chỉ để tham khảo khi biên soạn, không hiện trên giao diện.
 
 ## Nhóm đồng nghĩa (Super Goi)
 

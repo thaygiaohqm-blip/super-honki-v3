@@ -139,21 +139,10 @@
   }
 
   /* ------------------------------------------------------------ giọng đọc */
-  let jaVoice = null, voicesChecked = false;
-  function pickVoice() {
-    if (!("speechSynthesis" in window)) return;
-    const vs = speechSynthesis.getVoices();
-    if (vs.length) voicesChecked = true;
-    jaVoice = vs.find(v => /^ja[-_]JP/i.test(v.lang) && /google|kyoko|o-ren|nanami|haruka/i.test(v.name)) || vs.find(v => /^ja/i.test(v.lang)) || null;
-  }
-  if ("speechSynthesis" in window) { pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
   function speak(text) {
-    if (!("speechSynthesis" in window)) return toast("Trình duyệt này chưa hỗ trợ đọc thành tiếng.");
-    if (voicesChecked && !jaVoice) toast("Thiết bị chưa có giọng đọc tiếng Nhật. Hãy cài thêm giọng Nhật trong phần cài đặt ngôn ngữ.");
-    speechSynthesis.cancel();
-    const u = new SpeechSynthesisUtterance(text);
-    u.lang = "ja-JP"; if (jaVoice) u.voice = jaVoice; u.rate = 0.88;
-    speechSynthesis.speak(u);
+    if (!window.HonkiTTS || !HonkiTTS.supported) return toast("Trình duyệt này chưa hỗ trợ đọc thành tiếng.");
+    if (!HonkiTTS.hasVoice()) toast("Thiết bị chưa có giọng đọc tiếng Nhật. Hãy cài thêm giọng Nhật trong phần cài đặt ngôn ngữ.");
+    HonkiTTS.speak(text);
   }
   const ICON_SPEAK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></svg>';
   const ICON_FLIP = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.5 6.2L3 16"/><path d="M3 21v-5h5"/></svg>';
