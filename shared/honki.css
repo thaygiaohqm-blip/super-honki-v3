@@ -139,7 +139,7 @@ body[data-honki] main{animation:hkMain .32s ease-out backwards}
 
 /* chỗ trống trong câu điền: gạch đỏ nằm sát chữ, không trôi xuống khe giữa hai dòng */
 .blank{line-height:1.2;vertical-align:-.1em;min-width:2.4em;border-radius:6px 6px 0 0;background:color-mix(in srgb,var(--coral,#ed3838) 9%,transparent)}
-@media (max-width:860px){body[data-honki="kanji"] .top{display:none}body[data-honki="kanji"] .hk-fab{bottom:calc(72px + env(safe-area-inset-bottom))}}
+@media (max-width:860px){body[data-honki="kanji"] .hk-fab{bottom:calc(72px + env(safe-area-inset-bottom))}}
 
 /* ---------- Tab con thống nhất (hàng riêng dưới logo, xuống dòng, có icon theo màu giao diện) ---------- */
 header.top .hk-sub { border-top: 1px solid var(--line); }
@@ -169,3 +169,11 @@ header.top .top__in { position: relative; }
 .hk-prefs__tg .tg{width:100%;justify-content:space-between;color:var(--ink,#1d2a2a);border-color:var(--line,#e2dccd);background:transparent}
 .hk-prefs__acct{border:0;border-top:1px solid var(--line,#e2dccd);background:none;padding:10px 4px 2px;font:700 14px "Be Vietnam Pro",system-ui,sans-serif;color:inherit;text-align:left;cursor:pointer}
 @media (max-width:520px){.hk-prefs{position:fixed;left:12px;right:12px;top:64px;width:auto}}
+
+/* điện thoại: bỏ hàng logo trống, tab con nằm ngay dưới thanh Super Honki */
+@media (max-width:860px){
+  body[data-honki] header.top{display:block!important;position:static!important}
+  body[data-honki] header.top .top__in{display:none!important}
+  body[data-honki] header.top .hk-sub{border-top:0}
+  body[data-honki] header.top .hk-subnav{padding:2px 8px}
+}
