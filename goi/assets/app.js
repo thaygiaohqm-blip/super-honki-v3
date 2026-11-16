@@ -1105,28 +1105,59 @@
     const A = await loadAffix();
     const kind = q.get("loai") || "all", cap = q.get("cap") || "all", kw = (q.get("q") || "").trim();
     const href = (o) => { const n = Object.assign({ loai: kind, cap, q: kw }, o), u = new URLSearchParams(); Object.entries(n).forEach(([k, v]) => { if (v && v !== "all") u.set(k, v); }); const t = u.toString(); return "#/tu-loai/tien-to-hau-to" + (t ? "?" + t : ""); };
-    const base = A.filter(a => (cap === "all" || a.lv === cap) && (!kw || (a.m + a.y + a.n + a.g + a.e.map(e => e.w + e.r + e.v).join("")).toLowerCase().includes(kw.toLowerCase())));
-    const list = base.filter(a => kind === "all" || a.k === kind);
-    const cnt = k => base.filter(a => k === "all" || a.k === k).length;
-    const order = ["n3", "n2", "n1"];
-    const groups = [];
-    order.forEach(lv => ["pre", "suf"].forEach(k => {
-      const seen = new Map();
-      list.filter(a => a.lv === lv && a.k === k).forEach(a => { if (!seen.has(a.g)) { seen.set(a.g, []); groups.push({ lv, k, g: a.g, items: seen.get(a.g) }); } seen.get(a.g).push(a); });
-    }));
-    const card = a => `<article class="af-card"><header class="af-card__h"><span class="af-card__m jp" lang="ja">${a.k === "pre" ? esc(a.m) + "〜" : "〜" + esc(a.m)}</span><span class="af-card__y jp" lang="ja">${esc(a.y)}</span>${a.x ? `<span class="af-tag">${esc(a.x)}</span>` : ""}</header>
+    const words = a => a.e.concat(a.x || []);
+    const hit = a => !kw || (a.m + a.y + a.n + a.g + words(a).map(e => e.w + e.r + e.v).join("")).toLowerCase().includes(kw.toLowerCase());
+    const base = A.filter(a => (cap === "all" || a.lv === cap) && hit(a));
+    // gộp cùng một tiền tố/hậu tố ở nhiều cấp thành một thẻ
+    const merge = arr => {
+      const map = new Map(), out = [];
+      arr.forEach(a => {
+        const key = a.k + "|" + a.m; let g = map.get(key);
+        if (!g) { g = { k: a.k, m: a.m, lvs: [], y: [], n: [], f: [], t: [], tag: "", w: [], seen: new Set() }; map.set(key, g); out.push(g); }
+        g.lvs.push(a.lv);
+        [["y", a.y], ["n", a.n], ["f", a.f]].forEach(([k, v]) => { if (v) g[k].push(v); });
+        (a.t || "").split(/(?<=\.)\s+/).forEach(x => { x = x.trim(); if (x && !g.t.includes(x)) g.t.push(x); });
+        if (a.tag && !g.tag) g.tag = a.tag;
+        words(a).forEach(e => { if (!g.seen.has(e.w)) { g.seen.add(e.w); g.w.push(Object.assign({ lv: a.lv }, e)); } });
+      });
+      // bỏ các bản trùng / chỉ là phần đầu của bản dài hơn
+      const uniq = l => { const u = [...new Set(l)]; return u.filter(x => !u.some(o => o !== x && o.length > x.length && o.replace(/[ .]/g, "").startsWith(x.replace(/[ .…]/g, "").slice(0, 10)))); };
+      out.forEach(g => { g.n = uniq(g.n); g.f = uniq(g.f); g.y = [...new Set(g.y.join("∕").split(/[∕\/]/).map(x => x.trim()).filter(Boolean))]; });
+      return out;
+    };
+    const mark = (k, m) => k === "pre" ? esc(m) + "〜" : "〜" + esc(m);
+    const wlist = (ws, showLv) => `<ul class="af-ex">${ws.map(e => `<li><span class="jp" lang="ja">${esc(e.w)}</span>${e.r && e.r !== e.w ? `<span class="af-ex__r jp" lang="ja">${esc(e.r)}</span>` : ""}<span class="af-ex__v">${esc(e.v)}</span>${showLv ? `<span class="af-lv">${esc(e.lv.toUpperCase())}</span>` : ""}</li>`).join("")}</ul>`;
+    const cardOne = a => `<article class="af-card"><header class="af-card__h"><span class="af-card__m jp" lang="ja">${mark(a.k, a.m)}</span><span class="af-card__y jp" lang="ja">${esc(a.y)}</span>${a.tag ? `<span class="af-tag">${esc(a.tag)}</span>` : ""}</header>
       <p class="af-card__n"><b>${esc(a.n)}</b></p>
       <p class="af-card__f"><small>Cách ghép</small> <span lang="ja">${esc(a.f)}</span></p>
-      <ul class="af-ex">${a.e.map(e => `<li><span class="jp" lang="ja">${esc(e.w)}</span>${e.r ? `<span class="af-ex__r jp" lang="ja">${esc(e.r)}</span>` : ""}<span class="af-ex__v">${esc(e.v)}</span></li>`).join("")}</ul>
+      ${wlist(words(a).map(e => Object.assign({ lv: a.lv }, e)), false)}
       ${a.t ? `<p class="af-card__t">${esc(a.t)}</p>` : ""}</article>`;
+    const cardAll = g => `<article class="af-card"><header class="af-card__h"><span class="af-card__m jp" lang="ja">${mark(g.k, g.m)}</span><span class="af-card__y jp" lang="ja">${esc(g.y.join("∕"))}</span>${g.lvs.map(l => `<span class="af-lv">${esc(l.toUpperCase())}</span>`).join("")}${g.tag ? `<span class="af-tag">${esc(g.tag)}</span>` : ""}</header>
+      <p class="af-card__n">${g.n.map((x, i) => i ? `<span>${esc(x)}</span>` : `<b>${esc(x)}</b>`).join("<br>")}</p>
+      <p class="af-card__f"><small>Cách ghép</small> <span lang="ja">${g.f.map(esc).join(" · ")}</span></p>
+      ${wlist(g.w, true)}
+      ${g.t.length ? `<p class="af-card__t">${g.t.map(esc).join(" ")}</p>` : ""}</article>`;
+    const cnt = k => (cap === "all" ? merge(base.filter(a => k === "all" || a.k === k)).length : base.filter(a => k === "all" || a.k === k).length);
+    let body = "";
+    if (cap === "all") {
+      const m = merge(base);
+      body = ["pre", "suf"].filter(k => kind === "all" || kind === k).map(k => { const gs = m.filter(g => g.k === k); return gs.length ? `<h2 class="af-h">${k === "pre" ? "Tiền tố 接頭辞" : "Hậu tố 接尾辞"} <small class="muted">${gs.length}</small></h2><div class="af-grid">${gs.map(cardAll).join("")}</div>` : ""; }).join("");
+    } else {
+      const groups = [];
+      ["pre", "suf"].filter(k => kind === "all" || kind === k).forEach(k => {
+        const seen = new Map();
+        base.filter(a => a.k === k).forEach(a => { if (!seen.has(a.g)) { seen.set(a.g, []); groups.push({ k, g: a.g, items: seen.get(a.g) }); } seen.get(a.g).push(a); });
+      });
+      body = groups.map(g => `<h2 class="af-h"><span class="tag">${cap.toUpperCase()}</span> ${g.k === "pre" ? "Tiền tố" : "Hậu tố"} · ${esc(g.g)}</h2><div class="af-grid">${g.items.map(cardOne).join("")}</div>`).join("");
+    }
     main.innerHTML = band({ big: "接", bigJp: true, crumb: "Tất cả từ loại", crumbHref: "#/tu-loai", title: "Tiền tố – Hậu tố",
-        text: "接頭辞・接尾辞: các thành tố gắn trước hoặc sau từ gốc để tạo nghĩa mới, theo từng cấp N3, N2, N1. Mỗi mục có cách đọc, nghĩa cốt lõi, quy tắc ghép, ví dụ và lưu ý dễ nhầm.",
-        meta: `<b>${fmt(list.length)}</b><span>mục phù hợp</span>` }) +
+        text: "接頭辞・接尾辞: các thành tố gắn trước hoặc sau từ gốc để tạo nghĩa mới. Ở chế độ “Mọi cấp”, mỗi tiền tố/hậu tố chỉ xuất hiện một lần, gom đủ từ của N3, N2, N1; chọn một cấp để xem riêng theo cấp đó.",
+        meta: `<b>${fmt(cnt(kind))}</b><span>mục phù hợp</span>` }) +
       `<section class="sec" style="padding-top:32px"><div class="wrap">
         <div class="toolbar"><div class="chips" role="group" aria-label="Loại">${[["all", "Tất cả"], ["pre", "Tiền tố 接頭辞"], ["suf", "Hậu tố 接尾辞"]].map(([k, n]) => `<a class="chip" href="${href({ loai: k })}" ${kind === k ? 'aria-current="page"' : ""}>${n} <small>${cnt(k)}</small></a>`).join("")}</div></div>
         <div class="toolbar"><div class="chips" role="group" aria-label="Lọc cấp độ"><a class="chip" href="${href({ cap: "all" })}" ${cap === "all" ? 'aria-current="page"' : ""}>Mọi cấp</a>${["n3", "n2", "n1"].map(l => `<a class="chip" href="${href({ cap: l })}" ${cap === l ? 'aria-current="page"' : ""}>${l.toUpperCase()}</a>`).join("")}</div>
           <form class="syn-search" data-af-search role="search"><input type="search" name="q" value="${esc(kw)}" placeholder="Tìm tiền tố, hậu tố, ví dụ, nghĩa…" aria-label="Tìm tiền tố hậu tố"><button class="btn btn--ghost btn--sm" type="submit">Tìm</button></form></div>
-        ${groups.length ? groups.map(g => `<h2 class="af-h"><span class="tag">${g.lv.toUpperCase()}</span> ${g.k === "pre" ? "Tiền tố" : "Hậu tố"} · ${esc(g.g)}</h2><div class="af-grid">${g.items.map(card).join("")}</div>`).join("") : `<div class="empty"><h3>Không có mục nào phù hợp</h3><p>Thử bỏ bộ lọc hoặc tìm bằng từ khác.</p></div>`}
+        ${body || `<div class="empty"><h3>Không có mục nào phù hợp</h3><p>Thử bỏ bộ lọc hoặc tìm bằng từ khác.</p></div>`}
       </div></section>`;
     const f = $("[data-af-search]"); if (f) f.onsubmit = ev => { ev.preventDefault(); location.hash = href({ q: f.q.value.trim() }); };
   }

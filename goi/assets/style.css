@@ -859,3 +859,7 @@ dialog.auth::backdrop { background: rgba(8, 24, 24, .55); backdrop-filter: blur(
 .af-ex__r { color: var(--muted, #667); font-size: 13px; }
 .af-ex__v { font-size: 14px; }
 .af-card__t { margin: 0; font-size: 13px; color: var(--muted, #667); border-top: 1px dashed var(--line); padding-top: 8px; }
+
+.af-lv { font-size: 10px; font-weight: 700; padding: 0 6px; border-radius: 99px; border: 1px solid var(--line); color: var(--muted, #667); }
+.af-card__n span { font-size: 13px; color: var(--muted, #667); }
+.af-ex__v { flex: 1 1 auto; }
