@@ -87,6 +87,10 @@ html[data-theme="ai"]{--teal:#172846;--mint:#5fa8d8;--red:#e0533d;--redk:#b23a27
 html[data-theme="sakura"]{--teal:#5b1f36;--mint:#ee8fae;--red:#d23b3b;--redk:#a82a2a;--cream:#fbf1f2}
 html[data-theme="matcha"]{--teal:#2d4316;--mint:#a3c45a;--red:#d9622b;--redk:#b04a1a;--cream:#f4f2e4}
 html[data-theme="momiji"]{--teal:#58200b;--mint:#f2a04a;--red:#c8102e;--redk:#9a0c24;--cream:#faf0e3}
+html[data-theme="fuji"]{--teal:#342757;--mint:#b79ae6;--red:#e0476b;--redk:#b5334f;--cream:#f4f0fa}
+html[data-theme="kohaku"]{--teal:#573305;--mint:#f0b429;--red:#c0392b;--redk:#992d22;--cream:#faf3e0}
+html[data-theme="umi"]{--teal:#073c47;--mint:#2bb3d6;--red:#ef6a4c;--redk:#c5503a;--cream:#eef6f8}
+html[data-theme="sumi"]{--teal:#1e2224;--mint:#8aa0a8;--red:#e5533d;--redk:#bd3f2c;--cream:#f1f2f2}
 html[data-theme="yoru"]{--teal:#0c3634;--mint:#3fd1c0;--red:#ff6b6b;--redk:#d94a4a;--cream:#101c1f;--ink:#e4eeee;--muted:#93a7a9;--line:#243538}
 html[data-theme="yoru"] .card,html[data-theme="yoru"] .links a,html[data-theme="yoru"] .book{background:#16242a;color:var(--ink)}
 html[data-theme="yoru"] .sec--tint{background:#0b1416}

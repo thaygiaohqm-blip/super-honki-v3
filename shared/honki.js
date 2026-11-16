@@ -21,21 +21,26 @@
 
   const page = document.body.dataset.honki;           // "home" | "goi" | "bunpou"
   const THEMES = [
-    { id: "reu", ja: "苔", name: "Rêu", note: "Xanh rêu, mặc định", c: ["#004646", "#27c4b5", "#ed3838", "#f7f4ed"] },
-    { id: "ai", ja: "藍", name: "Chàm", note: "Xanh chàm, dịu mắt", c: ["#233a63", "#5fa8d8", "#e0533d", "#f1f3f7"] },
-    { id: "sakura", ja: "桜", name: "Anh đào", note: "Hồng mận, ấm áp", c: ["#7a2e4a", "#ee8fae", "#d23b3b", "#fbf1f2"] },
-    { id: "matcha", ja: "抹茶", name: "Trà xanh", note: "Xanh lá, tự nhiên", c: ["#3f5a22", "#a3c45a", "#d9622b", "#f4f2e4"] },
     { id: "momiji", ja: "紅葉", name: "Lá phong", note: "Nâu đỏ mùa thu", c: ["#7a2f14", "#f2a04a", "#c8102e", "#faf0e3"] },
-    { id: "yoru", ja: "夜", name: "Ban đêm", note: "Nền tối, học buổi tối", c: ["#0b1416", "#134e4c", "#3fd1c0", "#ff6b6b"] }];
+    { id: "kohaku", ja: "琥珀", name: "Hổ phách", note: "Vàng hổ phách, ấm áp", c: ["#7a4a0d", "#f0b429", "#c0392b", "#faf3e0"] },
+    { id: "matcha", ja: "抹茶", name: "Trà xanh", note: "Xanh lá, tự nhiên", c: ["#3f5a22", "#a3c45a", "#d9622b", "#f4f2e4"] },
+    { id: "reu", ja: "苔", name: "Rêu", note: "Xanh rêu, mặc định", c: ["#004646", "#27c4b5", "#ed3838", "#f7f4ed"] },
+    { id: "umi", ja: "海", name: "Biển", note: "Xanh biển, tươi mát", c: ["#0b5563", "#2bb3d6", "#ef6a4c", "#eef6f8"] },
+    { id: "ai", ja: "藍", name: "Chàm", note: "Xanh chàm, dịu mắt", c: ["#233a63", "#5fa8d8", "#e0533d", "#f1f3f7"] },
+    { id: "fuji", ja: "藤", name: "Tử đằng", note: "Tím hoa tử đằng, thanh nhã", c: ["#4b3a78", "#b79ae6", "#e0476b", "#f4f0fa"] },
+    { id: "sakura", ja: "桜", name: "Anh đào", note: "Hồng mận, ấm áp", c: ["#7a2e4a", "#ee8fae", "#d23b3b", "#fbf1f2"] },
+    { id: "sumi", ja: "炭", name: "Than đá", note: "Xám than, tối giản", c: ["#2f3437", "#8aa0a8", "#e5533d", "#f1f2f2"] },
+    { id: "yoru", ja: "夜", name: "Ban đêm", note: "Nền tối, học buổi tối", c: ["#0b1416", "#134e4c", "#3fd1c0", "#ff6b6b"] }
+  ];
 
   /* ---------- Super Goi / Super Bunpou: thanh thương hiệu dựng ngay khi trang bắt đầu tải ---------- */
-  if (page === "goi" || page === "bunpou" || page === "kanji" || page === "gemu") {
+  if (page === "goi" || page === "bunpou" || page === "kanji" || page === "gemu" || page === "shiken" || page === "dokkai") {
     const link = (id, label) => '<a href="' + root + id + '/"' + (page === id ? ' aria-current="true"' : "") + ">" + label + "</a>";
     const s = document.createElement("div"); s.className = "hk-strip";
     s.innerHTML = '<div class="hk-strip__in"><a class="hk-strip__brand" href="' + root + '" title="Về trang chủ Super Honki"><img src="' + base + 'logo-mark.svg" alt="" width="48" height="48"><span><b>Super</b> Honki</span></a>' +
-      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("gemu", "Super Gemu") + '</nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
+      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("shiken", "Super Shiken") + link("dokkai", "Super Dokkai") + link("gemu", "Super Gemu") + '</nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
     const sw = document.createElement("nav"); sw.className = "hk-switch"; sw.setAttribute("aria-label", "Chuyển công cụ");
-    sw.innerHTML = link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("gemu", "Super Gemu");
+    sw.innerHTML = link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("shiken", "Super Shiken") + link("dokkai", "Super Dokkai") + link("gemu", "Super Gemu");
     document.body.insertBefore(sw, document.body.firstChild);
     document.body.insertBefore(s, document.body.firstChild);
     const setH = () => document.documentElement.style.setProperty("--hk-h", s.offsetHeight + "px");
@@ -50,7 +55,7 @@
   }
 
   /* ---------- Trang chủ: màu giao diện, tài khoản, hộp thoại đăng nhập ngay tại chỗ ---------- */
-  if (page === "home" || page === "kanji" || page === "gemu") ready(() => {
+  if (page === "home" || page === "kanji" || page === "gemu" || page === "shiken" || page === "dokkai") ready(() => {
     const tools = document.querySelector("[data-hk-tools]");
     const applyTheme = id => { if (!id || id === "reu") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = id; };
     applyTheme(get("honki:theme"));

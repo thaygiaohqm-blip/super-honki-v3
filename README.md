@@ -8,6 +8,8 @@ shared/               logo, thanh chuyển app, hộp "Sách của Minh Dokkai",
 goi/                  Super Goi (từ vựng theo cụm), có README riêng ở tools/
 bunpou/               Super Bunpou (ngữ pháp N5–N1)
 kanji/                Super Kanji (hơn 2.100 chữ Hán; dữ liệu sinh bằng tools/build.py, xem kanji/README.md)
+shiken/               Super Shiken (đề thi JLPT các năm, làm tự do hoặc thi thử bấm giờ, ôn theo dạng bài); dữ liệu trong shiken/data, công cụ nhập đề ở shiken/tools
+dokkai/               Super Dokkai (bài đọc hiểu theo cấp độ và dạng bài, tra từ, chữa song ngữ), dùng chung dữ liệu của shiken/
 gemu/                 Super Gemu (4 trò chơi; api/gemu.js lưu bảng xếp hạng và ghép trận bằng Redis)
 api/                  đăng ký, đăng nhập, lưu tiến độ (Vercel Functions)
 package.json, vercel.json, .env.example
@@ -50,3 +52,21 @@ Mục "Ủng hộ" ở trang chủ lấy thông tin tài khoản trong `index.ht
 `curl -H "Authorization: Bearer <AUTH_SECRET>" https://<tên-miền>/api/donate`
 
 Thống kê lượt truy cập dùng Vercel Web Analytics: bật ở tab Analytics của project, mã đo đã nằm sẵn trong ba trang (`/_vercel/insights/script.js`).
+
+
+## Super Shiken và Super Dokkai: nhập thêm đề
+
+Dữ liệu mỗi đề là một tệp `shiken/data/<cấp>-<năm>-<tháng>.json` (ví dụ `n2-2025-12.json`), danh mục đề ở `index.json`, danh sách bài đọc ở `dokkai.json`, từ điển tra từ `dict.json` (sinh từ nguồn của Super Goi bằng `shiken/tools/build_dict.py`).
+
+Bản dịch tiếng Việt, lời giải, từ vựng khó và câu then chốt nằm riêng ở `shiken/data/vi/<mã đề>.json`, có dạng `{"q":{"<số câu>":{"vi","cv":[4 bản dịch lựa chọn],"exp","v":[[từ,cách đọc,nghĩa]],"key":[số câu then chốt]}},"p":{"<mã bài đọc>":{"s":[{"ja","vi","p":1 nếu mở đoạn}],"key":[...],"v":[...]}}}`. Đề nào chưa có tệp này vẫn làm được bình thường; khi xem đáp án sẽ có nút "Nhờ AI dịch và giải thích".
+
+Bật nút AI: đặt biến môi trường `ANTHROPIC_API_KEY` trên Vercel (tùy chọn `ANTHROPIC_MODEL`). Kết quả AI được lưu vào Redis nên mỗi câu chỉ tốn một lần. Muốn soạn sẵn cả đề để người học khỏi chờ: chạy `ANTHROPIC_API_KEY=... node shiken/tools/gen_vi.js n2-2025-12`.
+
+Thông tin pháp lý: đề thi JLPT thuộc bản quyền của Japan Foundation và JEES; hãy cân nhắc trước khi công khai nội dung đề trên website.
+
+### Đợt bổ sung N3/N4/N1 (đề có chữ + đáp án chính thức)
+Đã đưa lên: N3 7/2016, 12/2016, 7/2017; N4 7/2023; N1 7/2021 (đủ đề + đáp án, số câu khớp bảng đáp án).
+Quy trình: `tools/run_gen.py` (PDF có chữ, lọc chữ nền xoay) -> `tools/parse_gen.py` (template theo cấp) -> `tools/build_gen.py` (gắn đáp án trong `keys_manual.py` hoặc PDF đáp án chữ).
+Đề scan (ảnh) chưa nhập: `tools/ocr_pdf.py` (tesseract jpn best) đọc sai 5-10% ký tự, đặc biệt các lựa chọn chỉ khác nhau dấu ゛, nên cần người đọc soát từng đề trước khi đưa lên.
+
+N3: đáp án các năm lấy từ file "ĐÁP ÁN JLPT N3" (`tools/key_n3.py`, đã đối chiếu khớp với 3 bảng đáp án đọc tay). Đề N3 dạng scan chỉ có liên kết tải trên Drive (trường `dl` trong index.json), không kèm đáp án.

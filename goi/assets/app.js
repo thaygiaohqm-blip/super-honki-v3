@@ -1418,15 +1418,19 @@
 
   /* ------------------------------------------------------------ chủ đề màu */
   const THEMES = [
-    { id: "reu", ja: "苔", name: "Rêu", note: "Xanh rêu, mặc định", c: ["#004646", "#27c4b5", "#ed3838", "#f7f4ed"], meta: "#004646" },
-    { id: "ai", ja: "藍", name: "Chàm", note: "Xanh chàm, dịu mắt", c: ["#233a63", "#5fa8d8", "#e0533d", "#f1f3f7"], meta: "#233a63" },
-    { id: "sakura", ja: "桜", name: "Anh đào", note: "Hồng mận, ấm áp", c: ["#7a2e4a", "#ee8fae", "#d23b3b", "#fbf1f2"], meta: "#7a2e4a" },
-    { id: "matcha", ja: "抹茶", name: "Trà xanh", note: "Xanh lá, tự nhiên", c: ["#3f5a22", "#a3c45a", "#d9622b", "#f4f2e4"], meta: "#3f5a22" },
     { id: "momiji", ja: "紅葉", name: "Lá phong", note: "Nâu đỏ mùa thu", c: ["#7a2f14", "#f2a04a", "#c8102e", "#faf0e3"], meta: "#7a2f14" },
+    { id: "kohaku", ja: "琥珀", name: "Hổ phách", note: "Vàng hổ phách, ấm áp", c: ["#7a4a0d", "#f0b429", "#c0392b", "#faf3e0"], meta: "#7a4a0d" },
+    { id: "matcha", ja: "抹茶", name: "Trà xanh", note: "Xanh lá, tự nhiên", c: ["#3f5a22", "#a3c45a", "#d9622b", "#f4f2e4"], meta: "#3f5a22" },
+    { id: "reu", ja: "苔", name: "Rêu", note: "Xanh rêu, mặc định", c: ["#004646", "#27c4b5", "#ed3838", "#f7f4ed"], meta: "#004646" },
+    { id: "umi", ja: "海", name: "Biển", note: "Xanh biển, tươi mát", c: ["#0b5563", "#2bb3d6", "#ef6a4c", "#eef6f8"], meta: "#0b5563" },
+    { id: "ai", ja: "藍", name: "Chàm", note: "Xanh chàm, dịu mắt", c: ["#233a63", "#5fa8d8", "#e0533d", "#f1f3f7"], meta: "#233a63" },
+    { id: "fuji", ja: "藤", name: "Tử đằng", note: "Tím hoa tử đằng, thanh nhã", c: ["#4b3a78", "#b79ae6", "#e0476b", "#f4f0fa"], meta: "#4b3a78" },
+    { id: "sakura", ja: "桜", name: "Anh đào", note: "Hồng mận, ấm áp", c: ["#7a2e4a", "#ee8fae", "#d23b3b", "#fbf1f2"], meta: "#7a2e4a" },
+    { id: "sumi", ja: "炭", name: "Than đá", note: "Xám than, tối giản", c: ["#2f3437", "#8aa0a8", "#e5533d", "#f1f2f2"], meta: "#2f3437" },
     { id: "yoru", ja: "夜", name: "Ban đêm", note: "Nền tối, học buổi tối", c: ["#0b1416", "#134e4c", "#3fd1c0", "#ff6b6b"], meta: "#0b1416" }
   ];
   function applyTheme(id) {
-    const t = THEMES.find(x => x.id === id) || THEMES[0];
+    const t = THEMES.find(x => x.id === id) || THEMES.find(x => x.id === "reu");
     if (t.id === "reu") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = t.id;
     const m = $('meta[name="theme-color"]'); if (m) m.setAttribute("content", t.meta);
     $$(".theme-opt").forEach(o => o.setAttribute("aria-checked", o.dataset.t === t.id));
