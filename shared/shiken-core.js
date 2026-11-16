@@ -18,7 +18,7 @@
   SK.fetch = (name) => cache[name] || (cache[name] = fetch(DATA + name).then(r => { if (!r.ok) throw new Error(name); return r.json(); }));
   SK.index = () => SK.fetch("index.json");
   SK.exam = id => SK.fetch(id + ".json");
-  SK.vi = id => SK.fetch("vi/" + id + ".json").catch(() => ({ q: {}, p: {} }));
+  SK.vi = id => SK.fetch("vi/" + id + ".json").then(o => { const l = []; Object.values(o.q || {}).forEach(x => (x.v || []).forEach(v => l.push(v))); Object.values(o.p || {}).forEach(x => (x.v || []).forEach(v => l.push(v))); if (SK.addVocab) SK.addVocab(l); return o; }).catch(() => ({ q: {}, p: {} }));
   SK.ROOT = ROOT;
 
   /* ---- chia câu ---- */
@@ -105,41 +105,56 @@
       '<div class="skpop__m">' + SK.esc(e[1]) + "</div>" + (e[2] ? '<div class="skpop__h">' + SK.esc(e[2]) + "</div>" : "") +
       '<div class="skpop__a"><button type="button" data-save>★ Lưu vào sổ từ</button></div>';
   };
-  const aiCard = (text, ctx) => '<div class="skpop__w" lang="ja">' + SK.esc(text) + '</div><div class="skpop__m">Chưa có trong từ điển của Super Honki.</div>';
+  /* Tra từ bằng các từ vựng chuẩn bị sẵn: từ điển được quét trước, từ nào có trong từ điển sẽ được tô nhẹ, bấm vào là hiện nghĩa */
+  const START = /[\u4e00-\u9fff\u30a1-\u30fa々]/;
+  const okBase = (c, d) => c.length >= 2 && !/^[\u3040-\u309f]+$/.test(c) && d[c];
+  const matchAt = (text, i, d) => {
+    for (let L = Math.min(12, text.length - i); L >= 2; L--) {
+      const s = text.substr(i, L);
+      if (/[\s、。「」『』（）()・!！?？\d０-９a-zA-Z_]/.test(s)) continue;
+      for (const c of cands(s)) if (okBase(c, d)) { const rest = s.slice(c.length); return { surface: s.startsWith(c) && /^(だ|な|に|の|で|です|だった|でした)$/.test(rest) ? c : s, base: c, e: d[c] }; }
+    }
+    return null;
+  };
+  SK.addVocab = list => dict().then(d => { (list || []).forEach(v => { if (v && v[0] && !d[v[0]]) d[v[0]] = [v[1] || "", v[2] || "", ""]; }); });
+  SK.markWords = async root => {
+    const d = await dict(); if (!d || !Object.keys(d).length) return;
+    const nodes = [];
+    root.querySelectorAll(".jp").forEach(el => {
+      const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, { acceptNode: n => n.parentElement.closest(".vw,rt,rp,button,a,select,input,textarea") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT });
+      let n; while ((n = w.nextNode())) if (START.test(n.textContent)) nodes.push(n);
+    });
+    nodes.forEach(n => {
+      const t = n.textContent; let i = 0, last = 0, frag = null;
+      while (i < t.length) {
+        if (!START.test(t[i])) { i++; continue; }
+        const m = matchAt(t, i, d);
+        if (!m) { i++; continue; }
+        frag = frag || document.createDocumentFragment();
+        if (i > last) frag.appendChild(document.createTextNode(t.slice(last, i)));
+        const sp = document.createElement("span"); sp.className = "vw"; sp.dataset.b = m.base; sp.dataset.s = m.surface; sp.textContent = m.surface; frag.appendChild(sp);
+        i += m.surface.length; last = i;
+      }
+      if (frag) { if (last < t.length) frag.appendChild(document.createTextNode(t.slice(last))); n.parentNode.replaceChild(frag, n); }
+    });
+  };
   SK.attachLookup = (root, getCtx) => {
     const enabled = () => !root.classList.contains("nolookup");
+    let busy = false, timer = 0;
+    const run = async () => { busy = true; try { await SK.markWords(root); } finally { busy = false; } };
+    new MutationObserver(() => { if (busy) return; clearTimeout(timer); timer = setTimeout(run, 30); }).observe(root, { childList: true, subtree: true });
+    run();
     root.addEventListener("click", async ev => {
-      if (!enabled()) return;
-      const jp = ev.target.closest(".jp"); if (!jp || ev.target.closest("button,a,select,input")) return;
-      const sel = window.getSelection();
-      if (sel && !sel.isCollapsed) return;                       // đang bôi chọn: xử lý ở mouseup
-      let node, off;
-      if (document.caretPositionFromPoint) { const p = document.caretPositionFromPoint(ev.clientX, ev.clientY); if (p) { node = p.offsetNode; off = p.offset; } }
-      else if (document.caretRangeFromPoint) { const p = document.caretRangeFromPoint(ev.clientX, ev.clientY); if (p) { node = p.startContainer; off = p.startOffset; } }
-      if (!node || node.nodeType !== 3) return;
-      const txt = node.textContent; if (!txt) return;
-      // mở rộng sang các nút chữ liền kề trong cùng khối để từ ghép bị tách bởi <u> vẫn tra được
-      const r = await SK.lookupAt(txt, Math.min(off, txt.length - 1));
-      const rect = document.createRange(); rect.setStart(node, Math.min(off, txt.length - 1)); rect.setEnd(node, Math.min(off + 1, txt.length));
-      const b = rect.getBoundingClientRect();
-      const px = b.left + b.width / 2 + window.scrollX, py = b.bottom + window.scrollY;
-      if (!r) { hidePop(); return; }
-      const p = showPop(px, py, card(r));
+      const vw = ev.target.closest && ev.target.closest(".vw"); if (!vw || !enabled()) return;
+      if (ev.target.closest("button,a,select,input")) return;
+      const d = await dict(), base = vw.dataset.b, e = d[base]; if (!e) return;
+      const b = vw.getBoundingClientRect();
+      const r = { surface: vw.dataset.s, base, e };
+      const p = showPop(b.left + b.width / 2 + window.scrollX, b.bottom + window.scrollY, card(r));
       p.querySelector("[data-save]").onclick = () => { SK.addWord(r.base, r.e[0], r.e[1]); p.querySelector("[data-save]").textContent = "✓ Đã lưu"; };
       ev.stopPropagation();
     });
-    root.addEventListener("mouseup", async ev => {
-      if (!enabled()) return;
-      const sel = window.getSelection(); if (!sel || sel.isCollapsed) return;
-      const jp = ev.target.closest && ev.target.closest(".jp"); if (!jp) return;
-      const text = sel.toString().trim(); if (!text || text.length > 60) return;
-      const rg = sel.getRangeAt(0).getBoundingClientRect();
-      const px = rg.left + rg.width / 2 + window.scrollX, py = rg.bottom + window.scrollY;
-      const r = await SK.lookupText(text);
-      if (r) { const p = showPop(px, py, card(r)); p.querySelector("[data-save]").onclick = () => { SK.addWord(r.base, r.e[0], r.e[1]); p.querySelector("[data-save]").textContent = "✓ Đã lưu"; }; return; }
-      const p = showPop(px, py, aiCard(text));
-    });
-    document.addEventListener("click", ev => { if (pop && !pop.contains(ev.target) && !ev.target.closest(".jp")) hidePop(); });
+    document.addEventListener("click", ev => { if (pop && !pop.contains(ev.target) && !ev.target.closest(".vw")) hidePop(); });
     document.addEventListener("keydown", ev => { if (ev.key === "Escape") hidePop(); });
   };
 
