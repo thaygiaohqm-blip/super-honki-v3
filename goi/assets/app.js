@@ -260,6 +260,7 @@
     try {
       if (!parts.length || parts[0] === "top") { setNav("jlpt"); return await home(); }
       if (/^n[1-5]$/.test(parts[0])) { setNav("jlpt"); return parts[1] ? await topicStudy(parts[0], parts[1]) : await level(parts[0]); }
+      if (parts[0] === "tu-loai" && parts[1] === "tien-to-hau-to") { setNav("pos"); return await affixPage(q); }
       if (parts[0] === "tu-loai" && parts[1] === "dong-nghia") { setNav("pos"); return parts[2] === "hoc" ? await synStudy(q) : await synList(q); }
       if (parts[0] === "tu-loai") { setNav("pos"); return parts[1] ? (parts[2] === "hoc" ? await posStudy(parts[1], q) : await posDetail(parts[1], q)) : await posList(); }
       if (parts[0] === "nganh") { setNav("ind"); return parts[1] ? await industry(parts[1]) : await industries(); }
@@ -1050,7 +1051,7 @@
     const all = allItems();
     main.innerHTML = band({ big: "品詞", bigJp: true, title: "Học theo từ loại", text: "Gom từ cùng loại qua mọi cấp độ. Nhãn N5–N1 nằm cạnh từng từ để bạn biết mình đang ở đâu.",
       meta: `<b>${fmt(all.length)}</b><span>mục từ đã mở</span>` }) +
-      `<section class="sec"><div class="wrap"><a class="syn-promo" href="#/tu-loai/dong-nghia"><span class="syn-promo__ja" lang="ja">類義語</span><span><b>Phân loại theo từ đồng nghĩa</b><br><small>きれい・美しい, 危険・危ない… Gom các từ gần nghĩa thành nhóm, kèm sắc thái và cách chọn từ.</small></span><em>Mở</em></a><ul class="posrows">${C.pos.map(g => {
+      `<section class="sec"><div class="wrap"><a class="syn-promo" href="#/tu-loai/tien-to-hau-to"><span class="syn-promo__ja" lang="ja">接</span><span><b>Tiền tố – Hậu tố</b><br><small>不・無・非・未, 〜的・〜化・〜性… Hơn 170 mục N3–N1 kèm cách đọc, quy tắc ghép và ví dụ.</small></span><em>Mở</em></a><a class="syn-promo" href="#/tu-loai/dong-nghia"><span class="syn-promo__ja" lang="ja">類義語</span><span><b>Phân loại theo từ đồng nghĩa</b><br><small>きれい・美しい, 危険・危ない… Gom các từ gần nghĩa thành nhóm, kèm sắc thái và cách chọn từ.</small></span><em>Mở</em></a><ul class="posrows">${C.pos.map(g => {
         const its = all.filter(e => inGroup(g, e));
         const by = C.levels.map(l => [l.id, its.filter(e => e.lv === l.id).length]);
         return `<li><a href="#/tu-loai/${g.id}"><span><span class="row__ja" lang="ja">${jp(g.ja, { hl: false })}</span><br><span class="row__vi">${esc(g.label)}</span></span>
@@ -1095,6 +1096,39 @@
     if (more) more.onclick = () => { shown += 100; paintRows(); };
     paintRows();
     current = { refresh: paintRows };
+  }
+  function loadAffix() {
+    if (window.MD_AFFIX) return Promise.resolve(window.MD_AFFIX);
+    return new Promise((ok, no) => { const s = document.createElement("script"); s.src = "data/tiento.js"; s.onload = () => ok(window.MD_AFFIX); s.onerror = () => no(new Error("tiento")); document.head.appendChild(s); });
+  }
+  async function affixPage(q) {
+    const A = await loadAffix();
+    const kind = q.get("loai") || "all", cap = q.get("cap") || "all", kw = (q.get("q") || "").trim();
+    const href = (o) => { const n = Object.assign({ loai: kind, cap, q: kw }, o), u = new URLSearchParams(); Object.entries(n).forEach(([k, v]) => { if (v && v !== "all") u.set(k, v); }); const t = u.toString(); return "#/tu-loai/tien-to-hau-to" + (t ? "?" + t : ""); };
+    const base = A.filter(a => (cap === "all" || a.lv === cap) && (!kw || (a.m + a.y + a.n + a.g + a.e.map(e => e.w + e.r + e.v).join("")).toLowerCase().includes(kw.toLowerCase())));
+    const list = base.filter(a => kind === "all" || a.k === kind);
+    const cnt = k => base.filter(a => k === "all" || a.k === k).length;
+    const order = ["n3", "n2", "n1"];
+    const groups = [];
+    order.forEach(lv => ["pre", "suf"].forEach(k => {
+      const seen = new Map();
+      list.filter(a => a.lv === lv && a.k === k).forEach(a => { if (!seen.has(a.g)) { seen.set(a.g, []); groups.push({ lv, k, g: a.g, items: seen.get(a.g) }); } seen.get(a.g).push(a); });
+    }));
+    const card = a => `<article class="af-card"><header class="af-card__h"><span class="af-card__m jp" lang="ja">${a.k === "pre" ? esc(a.m) + "〜" : "〜" + esc(a.m)}</span><span class="af-card__y jp" lang="ja">${esc(a.y)}</span>${a.x ? `<span class="af-tag">${esc(a.x)}</span>` : ""}</header>
+      <p class="af-card__n"><b>${esc(a.n)}</b></p>
+      <p class="af-card__f"><small>Cách ghép</small> <span lang="ja">${esc(a.f)}</span></p>
+      <ul class="af-ex">${a.e.map(e => `<li><span class="jp" lang="ja">${esc(e.w)}</span>${e.r ? `<span class="af-ex__r jp" lang="ja">${esc(e.r)}</span>` : ""}<span class="af-ex__v">${esc(e.v)}</span></li>`).join("")}</ul>
+      ${a.t ? `<p class="af-card__t">${esc(a.t)}</p>` : ""}</article>`;
+    main.innerHTML = band({ big: "接", bigJp: true, crumb: "Tất cả từ loại", crumbHref: "#/tu-loai", title: "Tiền tố – Hậu tố",
+        text: "接頭辞・接尾辞: các thành tố gắn trước hoặc sau từ gốc để tạo nghĩa mới, theo từng cấp N3, N2, N1. Mỗi mục có cách đọc, nghĩa cốt lõi, quy tắc ghép, ví dụ và lưu ý dễ nhầm.",
+        meta: `<b>${fmt(list.length)}</b><span>mục phù hợp</span>` }) +
+      `<section class="sec" style="padding-top:32px"><div class="wrap">
+        <div class="toolbar"><div class="chips" role="group" aria-label="Loại">${[["all", "Tất cả"], ["pre", "Tiền tố 接頭辞"], ["suf", "Hậu tố 接尾辞"]].map(([k, n]) => `<a class="chip" href="${href({ loai: k })}" ${kind === k ? 'aria-current="page"' : ""}>${n} <small>${cnt(k)}</small></a>`).join("")}</div></div>
+        <div class="toolbar"><div class="chips" role="group" aria-label="Lọc cấp độ"><a class="chip" href="${href({ cap: "all" })}" ${cap === "all" ? 'aria-current="page"' : ""}>Mọi cấp</a>${["n3", "n2", "n1"].map(l => `<a class="chip" href="${href({ cap: l })}" ${cap === l ? 'aria-current="page"' : ""}>${l.toUpperCase()}</a>`).join("")}</div>
+          <form class="syn-search" data-af-search role="search"><input type="search" name="q" value="${esc(kw)}" placeholder="Tìm tiền tố, hậu tố, ví dụ, nghĩa…" aria-label="Tìm tiền tố hậu tố"><button class="btn btn--ghost btn--sm" type="submit">Tìm</button></form></div>
+        ${groups.length ? groups.map(g => `<h2 class="af-h"><span class="tag">${g.lv.toUpperCase()}</span> ${g.k === "pre" ? "Tiền tố" : "Hậu tố"} · ${esc(g.g)}</h2><div class="af-grid">${g.items.map(card).join("")}</div>`).join("") : `<div class="empty"><h3>Không có mục nào phù hợp</h3><p>Thử bỏ bộ lọc hoặc tìm bằng từ khác.</p></div>`}
+      </div></section>`;
+    const f = $("[data-af-search]"); if (f) f.onsubmit = ev => { ev.preventDefault(); location.hash = href({ q: f.q.value.trim() }); };
   }
   async function synList(q) {
     await Promise.all([loadAll(), load("dongnghia")]);

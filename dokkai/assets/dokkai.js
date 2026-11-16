@@ -73,7 +73,7 @@
   }
   function render() {
     const c = cur; let h = head();
-    h += '<div class="dkm">' + SEG("mode", c.mode, [["self", "Tự làm"], ["review", "Xem bài chữa"]]) + '<label><input type="checkbox" id="dk-look"' + (c.lookup ? " checked" : "") + '> Bấm chữ để tra từ</label>' + (c.mode === "review" ? SEG("style", style(), [["a", "Nhật trên, Việt dưới + giải thích"], ["b", "Song ngữ từng câu"]]) : "") + "</div>";
+    h += '<div class="dkm">' + SEG("mode", c.mode, [["self", "Tự làm"], ["review", "Xem bài chữa"]]) + '<label><input type="checkbox" id="dk-look"' + (c.lookup ? " checked" : "") + '> Bấm chữ để tra từ</label>' + (c.mode === "review" && !(c.ov && !c.ov.s && c.ov.full) ? SEG("style", style(), [["a", "Nhật trên, Việt dưới + giải thích"], ["b", "Song ngữ từng câu"]]) : "") + "</div>";
     h += '<div id="dk-body">' + (c.mode === "self" ? selfHTML() : reviewHTML()) + "</div>";
     h += '<p class="dk-cite">Trích từ đề thi JLPT ' + c.ex.level.toUpperCase() + " tháng " + c.ex.m + "/" + c.ex.y + ", <span lang=\"ja\">問題" + c.mon + "</span>.</p>";
     const pr = c.pos > 0 ? LIST[c.pos - 1] : null, nx = c.pos >= 0 && c.pos < LIST.length - 1 ? LIST[c.pos + 1] : null;
@@ -96,7 +96,7 @@
     return '<span class="dks' + (key.has(i) ? " key" : "") + (keyq.has(i) ? " keyq" : "") + '" data-s="' + i + '">' + esc(s.ja) + "</span>";
   }
   function reviewHTML() {
-    const c = cur, S = sentences(), key = keySet(), noOv = !(c.ov && c.ov.s), st = style();
+    const c = cur, S = sentences(), key = keySet(), full = c.ov && !c.ov.s && c.ov.full && c.ov.full.length ? c.ov.full : null, noOv = !(c.ov && c.ov.s) && !full, st = full ? "a" : style();
     let right = 0; c.qs.forEach((q, i) => { if (c.ans[i] === q.a - 1) right++; });
     const answered = Object.keys(c.ans).length;
     let h = "";
@@ -105,7 +105,7 @@
     h += '<div class="dkleg"><span><i></i>Câu then chốt thể hiện ý đồ của tác giả, là mấu chốt để chọn đáp án đúng</span></div>';
     if (st === "a") {
       h += '<div class="dkp"><div class="dkp__h">Nguyên văn tiếng Nhật</div><div class="jp" id="dk-ja">' + paraSent(S, key, "ja") + "</div></div>";
-      h += '<div class="dkp" style="margin-top:12px"><div class="dkp__h">Bản dịch tiếng Việt</div><div id="dk-vi">' + (noOv ? '<p class="miss">Chưa có bản dịch.</p>' : paraSent(S, key, "vi")) + "</div></div>";
+      h += '<div class="dkp" style="margin-top:12px"><div class="dkp__h">Bản dịch tiếng Việt</div><div id="dk-vi">' + (full ? full.map(t => '<p class="dkv-p">' + esc(t) + "</p>").join("") : noOv ? '<p class="miss">Chưa có bản dịch.</p>' : paraSent(S, key, "vi")) + "</div></div>";
     } else {
       h += '<div class="dkp dkbi"><div class="dkp__h">Song ngữ từng câu</div>' + S.map((s, i) => '<div class="dkbi__row' + (s.nl ? " nl" : "") + '" data-s="' + i + '"><div class="jp dks' + (key.has(i) ? " key" : "") + '">' + esc(s.ja) + '</div>' + (s.vi ? '<div class="dkv' + (key.has(i) ? " key" : "") + '">' + esc(s.vi) + "</div>" : "") + "</div>").join("") + "</div>";
     }

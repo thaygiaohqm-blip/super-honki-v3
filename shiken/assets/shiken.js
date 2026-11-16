@@ -76,7 +76,7 @@
     return { ex, items: it };
   }
   async function drillItems(lv, n, count, ids) {
-    const exs = await Promise.all(INDEX.filter(e => e.level === lv && !e.dl).map(e => SK.exam(e.id)));
+    const exs = await Promise.all(INDEX.filter(e => e.level === lv && !e.dl && (ids || !n || !e.mon || e.mon[n])).map(e => SK.exam(e.id)));
     let all = []; exs.forEach(ex => all = all.concat(flat(ex)));
     if (ids) { const s = new Set(ids); all = all.filter(x => s.has(x.ex + "#" + x.q.no)); }
     else all = all.filter(x => x.n === n);

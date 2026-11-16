@@ -843,3 +843,19 @@ dialog.auth::backdrop { background: rgba(8, 24, 24, .55); backdrop-filter: blur(
 .wdlg__w { font-size: 40px; font-weight: 800; line-height: 1.3; }
 .wdlg__rd { color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
 .wdlg__mk { display: flex; gap: 8px; margin-top: 4px; }
+
+.af-h { margin: 28px 0 12px; font-size: 18px; display: flex; gap: 8px; align-items: center; }
+.af-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.af-card { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: var(--paper, #fff); }
+.af-card__h { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.af-card__m { font-size: 28px; font-weight: 800; color: var(--green); }
+.af-card__y { color: var(--muted, #667); }
+.af-tag { font-size: 11px; padding: 1px 7px; border-radius: 99px; background: var(--mint-soft); color: var(--green); }
+.af-card__n { margin: 6px 0; }
+.af-card__f { margin: 4px 0 8px; font-size: 14px; }
+.af-card__f small { color: var(--muted, #667); margin-right: 4px; }
+.af-ex { list-style: none; margin: 0 0 8px; padding: 0; display: grid; gap: 4px; }
+.af-ex li { display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; }
+.af-ex__r { color: var(--muted, #667); font-size: 13px; }
+.af-ex__v { font-size: 14px; }
+.af-card__t { margin: 0; font-size: 13px; color: var(--muted, #667); border-top: 1px dashed var(--line); padding-top: 8px; }
