@@ -1,0 +1,671 @@
+# Nhóm đồng nghĩa: tính từ (い, な) và các từ cùng nghĩa ở loại từ khác.
+# Định dạng:  @ Tiêu đề  |  nhãn ngắn (tuỳ chọn)
+#             > ghi chú chung về chỗ khác nhau (tuỳ chọn, có thể nhiều dòng)
+#             từ | sắc thái dùng      (từ viết bằng mặt chữ thường, hoặc kana nếu từ không có kanji)
+# Từ chưa có trong kho sẽ được báo khi build; muốn thêm hãy khai ở extras.txt.
+
+@ Đẹp | 美
+> Cả nhóm cùng chỉ vẻ đẹp, nhưng きれい dùng rất rộng (đẹp, sạch, gọn), còn 美しい nghiêng về vẻ đẹp thẩm mỹ và trang trọng hơn.
+きれい | Đẹp, đồng thời còn là "sạch sẽ, gọn gàng"; khẩu ngữ, dùng cho gần như mọi thứ.
+美しい | Đẹp theo nghĩa thẩm mỹ, trang trọng, hay gặp trong văn viết; không dùng cho nghĩa "sạch".
+華やか | Đẹp rực rỡ, nổi bật, náo nhiệt (lễ hội, trang phục, sân khấu).
+華麗 | Lộng lẫy, hoa lệ; văn viết, dùng cho màn trình diễn, nghệ thuật.
+鮮やか | Đẹp ở độ tươi, rõ nét của màu sắc hoặc động tác.
+
+@ Tuyệt vời, xuất sắc | 優
+> 素晴らしい là lời khen rộng nhất; 見事 nhấn vào tay nghề hoặc kết quả đáng nể; 立派 nhấn vào vẻ đường hoàng, đáng kính.
+素晴らしい | Tuyệt vời, khen cảm xúc nói chung (cảnh, bài hát, ý tưởng).
+見事 | Tuyệt hảo, ngoạn mục; khen một kết quả hay tài nghệ làm người xem phải thán phục.
+立派 | Đường hoàng, tráng lệ, đáng nể; khen cả người, công trình lẫn thành tích.
+優秀 | Ưu tú, giỏi; dùng cho người hoặc thành tích trong học tập, công việc.
+抜群 | Xuất chúng, vượt hẳn mọi người xung quanh.
+上等 | Hảo hạng, chất lượng tốt; khen đồ vật, hàng hóa.
+
+@ Lộng lẫy, sang trọng | 豪
+豪華 | Xa hoa, nhiều thứ đắt tiền (khách sạn, bữa tiệc).
+華やか | Rực rỡ, tưng bừng.
+華麗 | Lộng lẫy, hoa lệ, văn viết.
+壮麗 | Tráng lệ, hùng vĩ (kiến trúc, cảnh quan).
+荘厳 | Trang nghiêm, uy nghi (đền chùa, nghi lễ).
+典雅 | Thanh nhã, cổ điển.
+
+@ Nguy hiểm | 危
+> 危ない nói chung, khẩu ngữ; 危険 là danh từ/tính từ な, trang trọng và dùng trên biển báo; 危うい chỉ tình thế mong manh, suýt hỏng.
+危ない | Nguy hiểm; khẩu ngữ, cũng là lời cảnh báo "Cẩn thận!".
+危険 | Nguy hiểm (chung chung, khách quan); dùng trên biển báo, văn bản.
+危うい | Mong manh, chênh vênh, có nguy cơ hỏng hoặc mất; sắc thái văn viết.
+物騒 | Nguy hiểm, bất an vì trị an kém hoặc có thể xảy ra chuyện dữ.
+
+@ Sợ hãi, đáng sợ | 怖
+怖い | Sợ, đáng sợ; khẩu ngữ, cảm giác sợ trực tiếp.
+恐ろしい | Kinh khủng, đáng sợ; mạnh hơn, trang trọng hơn 怖い.
+
+@ Ồn ào | 騒
+> うるさい thường mang ý khó chịu; 騒がしい, 騒々しい chỉ cảnh ồn, lộn xộn nhưng trung tính hơn; にぎやか thì ồn mà vui.
+うるさい | Ồn, om sòm, hoặc phiền vì bị nói nhiều; sắc thái khó chịu.
+騒がしい | Ồn ào, xôn xao, thấy lộn xộn không yên.
+騒々しい | Ồn ào, huyên náo; trang trọng hơn 騒がしい một chút.
+賑やか | Náo nhiệt, đông vui; sắc thái tích cực.
+
+@ Yên tĩnh | 静
+静か | Yên tĩnh, ít tiếng động; dùng rất rộng, cũng nói về người ít nói.
+ひっそり | Im lìm, vắng lặng, lặng lẽ không gây chú ý.
+穏やか | Êm ả, hòa nhã (biển, thời tiết, tính cách).
+
+@ Đắt | 高
+高い | Đắt; còn nghĩa "cao".
+高価 | Giá cao, quý; trang trọng, hay gắn với đồ quý.
+
+@ Rẻ | 安
+安い | Rẻ; nghĩa thông dụng nhất.
+安価 | Giá thấp; trang trọng, văn viết hay quảng cáo.
+格安 | Rẻ hơn hẳn mặt bằng chung, nhấn mạnh sự hời.
+割安 | Rẻ so với chất lượng hay số lượng; nhấn vào độ lợi.
+
+@ Nhiều | 多
+多い | Nhiều; làm vị ngữ ("... は多い").
+たくさん | Nhiều; khẩu ngữ, làm trạng từ ("たくさん食べる").
+いっぱい | Đầy, nhiều; còn có nghĩa "no, đầy".
+大量 | Số lượng lớn; trang trọng, nói về lượng hàng hóa, dữ liệu.
+豊富 | Phong phú, dồi dào, nhiều chủng loại hoặc nguồn.
+膨大 | Khổng lồ, đồ sộ; nhấn vào quy mô đáng kinh ngạc.
+多数 | Số đông, số nhiều; nói về người hoặc vật đếm được.
+
+@ Ít | 少
+少ない | Ít; làm vị ngữ.
+わずか | Chỉ một chút ít, nhỏ nhoi; nhấn vào sự ít ỏi.
+乏しい | Thiếu thốn, khan hiếm; ít đến mức không đủ.
+少々 | Một chút; lịch sự, hay dùng khi phục vụ khách.
+
+@ Một chút, hơi | 少
+> 少し và ちょっと dùng hằng ngày; 少々 lịch sự; 若干, いささか, やや nằm ở văn nói trang trọng hoặc văn viết.
+少し | Một chút (lượng hoặc mức độ).
+ちょっと | Một chút; khẩu ngữ, còn dùng để từ chối nhẹ nhàng.
+少々 | Một chút; lịch sự.
+やや | Hơi, nhỉnh hơn một chút; văn viết, mức độ nhẹ.
+若干 | Một ít, chút ít; văn viết, thường đi với con số hay lượng.
+いささか | Hơi, phần nào; cách nói cũ, trang trọng.
+幾分 | Phần nào, một phần; văn viết.
+
+@ Giỏi | 上
+上手 | Giỏi, khéo (kỹ năng thể hiện ra ngoài); không dùng để nói về chính mình.
+得意 | Sở trường, thế mạnh; cũng dùng để nói về bản thân.
+うまい | Giỏi, khéo; khẩu ngữ, ngoài ra còn nghĩa "ngon".
+巧み | Khéo léo, tinh xảo; văn viết.
+達者 | Thạo, giỏi một kỹ năng, nhất là ngôn ngữ, nói năng.
+器用 | Khéo tay, làm được nhiều việc tinh xảo.
+
+@ Kém, không giỏi | 下
+下手 | Kém, vụng.
+苦手 | Không giỏi, ngại, khó đối phó; nhấn vào cảm giác không hợp.
+不器用 | Vụng về, vụng tay.
+未熟 | Non nớt, chưa thuần thục.
+
+@ Quan trọng | 重
+> 大切 và 大事 nghiêng về "quý, nên giữ gìn"; 重要 và 重大 nghiêng về mức độ ảnh hưởng, dùng trong công việc, văn bản.
+大切 | Quan trọng, đáng trân trọng; có sắc thái tình cảm.
+大事 | Quan trọng; khẩu ngữ, cũng dùng với nghĩa "giữ gìn" ("お大事に").
+重要 | Quan trọng về mặt nội dung, mức độ; trang trọng.
+重大 | Trọng đại, nghiêm trọng; hậu quả hoặc ảnh hưởng lớn.
+肝心 | Cốt yếu, mấu chốt; chỉ điểm quyết định.
+貴重 | Quý giá, hiếm có; có giá trị đáng giữ.
+大事 | Quan trọng; vừa là tính từ な vừa là danh từ.
+
+@ Bận | 忙
+忙しい | Bận; thông dụng nhất.
+多忙 | Rất bận; trang trọng, hay dùng trong thư từ.
+慌ただしい | Bận rộn, tất bật, cuống cuồng vì nhiều việc dồn dập.
+
+@ Khó | 難
+難しい | Khó (vấn đề, kỹ thuật); thông dụng nhất.
+困難 | Khó khăn; trang trọng, thường nói về hoàn cảnh hay việc lớn.
+厄介 | Rắc rối, phiền phức, khó xử lý.
+
+@ Dễ | 易
+易しい | Dễ (đề bài, chữ nghĩa); trái với 難しい.
+簡単 | Đơn giản, dễ làm; nhấn vào cấu trúc không phức tạp.
+容易 | Dễ dàng; trang trọng, văn viết.
+手軽 | Dễ làm, tiện lợi, không tốn công.
+楽 | Nhàn, nhẹ nhàng, không vất vả.
+
+@ Phức tạp | 複
+複雑 | Phức tạp, nhiều yếu tố đan xen.
+ややこしい | Rắc rối, rối rắm khó hiểu; khẩu ngữ.
+
+@ Cứng, chắc | 硬
+> Cả ba đều đọc かたい. 硬い là cứng về vật chất; 固い là chắc, vững không dễ lung lay; 堅い là chắc chắn, nghiêm cẩn.
+硬い | Cứng (vật liệu, thịt, văn phong gượng).
+固い | Chắc, cố định, vững (kết hợp, ý chí, quyết tâm).
+堅い | Chắc chắn, đáng tin, nghiêm túc.
+
+@ Mềm | 柔
+柔らかい | Mềm (đồ vật, thức ăn, ánh sáng).
+柔軟 | Mềm dẻo, linh hoạt (cơ thể, cách nghĩ, thái độ).
+
+@ Ngon | 美
+おいしい | Ngon; thông dụng nhất.
+うまい | Ngon; khẩu ngữ, thường nam giới dùng.
+美味 | Mỹ vị, ngon; trang trọng.
+香ばしい | Thơm mùi nướng, rang.
+
+@ Bẩn | 汚
+汚い | Bẩn, dơ; còn nghĩa "đê tiện".
+不潔 | Mất vệ sinh, không sạch.
+不衛生 | Mất vệ sinh về mặt y tế.
+
+@ Sạch sẽ | 清
+清潔 | Sạch sẽ, hợp vệ sinh; nhấn vào y tế, vệ sinh.
+清らか | Trong sạch, tinh khiết (nước, tâm hồn).
+衛生的 | Hợp vệ sinh.
+きれい | Sạch sẽ, gọn gàng.
+
+@ Vui | 楽
+楽しい | Vui; có hoạt động vui vẻ, đang tận hưởng.
+嬉しい | Vui mừng vì điều tốt xảy ra với mình.
+愉快 | Khoái, thích thú; trang trọng hơn.
+幸せ | Hạnh phúc, mãn nguyện.
+めでたい | Đáng mừng, vui (dịp cưới hỏi, lễ).
+
+@ Thú vị | 興
+面白い | Thú vị, hay; cũng có nghĩa "buồn cười".
+興味深い | Rất đáng quan tâm; trang trọng.
+愉快 | Vui vẻ, dễ chịu.
+
+@ Buồn | 悲
+悲しい | Buồn vì mất mát, nỗi buồn rõ ràng.
+寂しい | Buồn vì cô đơn, thiếu vắng ai đó.
+切ない | Buồn day dứt, nhói lòng.
+虚しい | Trống rỗng, vô nghĩa, thấy công sức đổ sông đổ biển.
+わびしい | Hiu hắt, cô quạnh.
+
+@ Cô đơn, trơ trọi | 寂
+寂しい | Cô đơn, vắng vẻ.
+心細い | Thấy lẻ loi, bất an vì thiếu chỗ dựa.
+わびしい | Quạnh quẽ, nghèo nàn tẻ nhạt.
+
+@ Xấu hổ, ngượng | 恥
+恥ずかしい | Xấu hổ, ngượng.
+照れくさい | Ngượng ngùng vì được khen hoặc việc tình cảm.
+気恥ずかしい | Hơi ngượng, thấy ngại ngùng nhẹ.
+気まずい | Khó xử, ngượng nghịu giữa hai bên.
+みっともない | Khó coi, đáng xấu hổ trước người ngoài.
+情けない | Đáng xấu hổ, thảm hại.
+
+@ Tiếc | 惜
+残念 | Đáng tiếc; nói chung, khá lịch sự.
+惜しい | Tiếc vì suýt được, hoặc tiếc cái quý sắp mất.
+悔しい | Cay cú, tiếc nuối vì thua hoặc thất bại.
+もったいない | Tiếc vì lãng phí, phí.
+
+@ Ghen tị | 羨
+羨ましい | Ghen tị theo kiểu ngưỡng mộ, muốn được như người ta.
+妬ましい | Ghen ghét, đố kỵ.
+
+@ Nhớ, hoài niệm | 懐
+懐かしい | Nhớ, bồi hồi khi gặp lại điều xưa.
+恋しい | Nhớ nhung, khao khát người hoặc nơi chốn.
+名残惜しい | Lưu luyến, không muốn chia tay.
+
+@ Phiền phức | 煩
+面倒くさい | Phiền, ngại làm; khẩu ngữ.
+煩わしい | Phiền toái, rối rắm; văn viết.
+鬱陶しい | Khó chịu, bức bối (thời tiết, tình huống, người).
+厄介 | Rắc rối, khó xử lý.
+しつこい | Dai dẳng, lằng nhằng, bám riết.
+
+@ Nhút nhát | 内
+臆病 | Nhát gan, hay sợ.
+内気 | Hướng nội, nhút nhát khi tiếp xúc.
+内向的 | Hướng nội (tính cách).
+大人しい | Hiền, trầm, ít nói.
+
+@ Hiền lành | 穏
+大人しい | Hiền, trầm, dễ bảo.
+穏やか | Ôn hòa, êm dịu.
+温厚 | Ôn hậu, hiền hòa.
+温和 | Ôn hòa; còn dùng cho khí hậu.
+柔和 | Hiền dịu (nét mặt, thái độ).
+おとなしい | Hiền lành, ngoan.
+
+@ Tốt bụng | 優
+親切 | Tử tế, ân cần với người khác.
+優しい | Hiền, dịu dàng, biết thông cảm.
+情け深い | Giàu lòng thương, hay thương người.
+
+@ Nghiêm túc | 真
+真面目 | Nghiêm túc, chăm chỉ, đứng đắn.
+真剣 | Nghiêm túc, hết lòng (thái độ lúc đó).
+生真面目 | Nghiêm túc quá mức, cứng nhắc.
+堅実 | Chắc chắn, thận trọng.
+
+@ Cẩn thận | 慎
+慎重 | Thận trọng, cân nhắc kỹ trước khi làm.
+丁寧 | Cẩn thận, chu đáo từng chi tiết; còn nghĩa "lịch sự".
+几帳面 | Cẩn thận, ngăn nắp, rất có nền nếp.
+用心深い | Cẩn trọng, đề phòng kỹ.
+
+@ Ích kỷ | 勝
+わがまま | Ích kỷ, đòi theo ý mình, hay nũng nịu.
+自分勝手 | Tùy tiện, chỉ nghĩ cho mình.
+身勝手 | Ích kỷ, bất chấp người khác.
+利己的 | Vị kỷ; văn viết.
+自己中心的 | Lấy mình làm trung tâm.
+
+@ Cứng đầu | 頑
+頑固 | Cứng đầu, khư khư giữ ý kiến.
+強情 | Bướng bỉnh, không chịu nhượng bộ.
+意固地 | Ương, cố chấp.
+偏屈 | Gàn dở, khó chiều.
+
+@ Nóng tính, nóng vội | 短
+短気 | Nóng tính, dễ cáu.
+気短 | Dễ nổi nóng, thiếu kiên nhẫn.
+せっかち | Nóng vội, làm gì cũng muốn nhanh.
+
+@ Thong thả, vô tư | 楽
+のんき | Vô tư, thong dong, hơi thiếu lo xa.
+気楽 | Nhẹ nhõm, không áp lực.
+気長 | Kiên nhẫn, thong thả.
+呑気 | Vô tư lự.
+
+@ Thông minh | 賢
+賢い | Thông minh, khôn ngoan (cả trẻ em).
+利口 | Lanh lợi, khôn; cũng nói về trẻ ngoan.
+聡明 | Thông tuệ, sáng suốt; trang trọng.
+賢明 | Sáng suốt về lựa chọn, quyết định.
+
+@ Ngu ngốc | 愚
+愚か | Ngu dại, thiếu suy nghĩ.
+浅はか | Nông cạn, thiếu chín chắn.
+ばかばかしい | Ngớ ngẩn, lố bịch.
+くだらない | Vớ vẩn, nhảm nhí.
+
+@ Giản dị | 質
+地味 | Giản dị, kín đáo, không nổi.
+質素 | Đạm bạc, tiết kiệm.
+素朴 | Mộc mạc, chân chất.
+控えめ | Khiêm nhường, kín đáo.
+
+@ Sặc sỡ, lòe loẹt | 派
+派手 | Sặc sỡ, nổi bật, phô trương.
+華やか | Rực rỡ, tưng bừng.
+
+@ Dũng cảm | 勇
+勇敢 | Dũng cảm, dám đối mặt hiểm nguy.
+勇ましい | Hùng dũng, mạnh dạn.
+果敢 | Quả cảm, mạnh dạn tiến lên.
+大胆 | Táo bạo, dám làm.
+雄々しい | Hiên ngang, đàng hoàng.
+
+@ Hèn nhát | 卑
+卑怯 | Hèn hạ, đê tiện, không công bằng.
+臆病 | Nhút nhát, nhát gan.
+
+@ Xảo quyệt | 狡
+ずるい | Ranh mãnh, gian, không công bằng.
+狡猾 | Xảo quyệt, mưu mẹo.
+ずる賢い | Khôn lỏi, láu cá.
+悪賢い | Gian xảo, mưu mô.
+老獪 | Cáo già, lõi đời.
+抜け目ない | Khôn khéo, không để lỡ cơ hội.
+
+@ Keo kiệt | 吝
+けち | Keo kiệt, bủn xỉn.
+けちくさい | Bủn xỉn, nhỏ mọn.
+
+@ Hào phóng | 太
+太っ腹 | Hào phóng, rộng rãi.
+寛大 | Khoan dung, rộng lượng.
+鷹揚 | Phóng khoáng, điềm tĩnh.
+おおらか | Khoáng đạt, không chấp nhặt.
+
+@ Tham lam | 貪
+貪欲 | Tham lam, khát khao không đáy.
+欲深い | Tham lam, lòng tham lớn.
+
+@ Đáng ghét | 憎
+憎い | Đáng ghét, đáng hận.
+憎らしい | Đáng ghét, khiến người ta tức.
+疎ましい | Chán ghét, muốn tránh xa.
+
+@ Thô lỗ | 粗
+乱暴 | Thô bạo, hung hăng.
+粗暴 | Thô bạo, cục cằn.
+粗野 | Thô lỗ, thiếu giáo dục.
+がさつ | Thô, cẩu thả.
+
+@ Lịch sự | 礼
+丁寧 | Lịch sự, nhã nhặn.
+礼儀正しい | Lễ phép, đúng phép tắc.
+上品 | Thanh lịch, có phẩm cách.
+
+@ Hống hách, xấc xược | 横
+横柄 | Hống hách, kẻ cả.
+偉そう | Ra vẻ ta đây.
+生意気 | Hỗn láo, xấc láo.
+尊大 | Trịch thượng, tự cho mình cao.
+高慢 | Kiêu căng, cao ngạo.
+
+@ Lạnh nhạt | 冷
+冷淡 | Lạnh nhạt, thờ ơ.
+冷ややか | Lạnh lùng, nhạt nhẽo.
+素っ気ない | Cụt lủn, thiếu tình cảm.
+薄情 | Bạc tình, vô tình.
+
+@ Tàn nhẫn | 酷
+冷酷 | Tàn nhẫn, lạnh lùng.
+残酷 | Tàn khốc, độc ác.
+無慈悲 | Vô nhân đạo, không thương xót.
+
+@ Chính xác | 確
+正確 | Chính xác, đúng với sự thật.
+的確 | Trúng đích, xác đáng.
+精密 | Tinh vi, chính xác đến từng chi tiết.
+確か | Chắc chắn; còn mang nghĩa "hình như".
+
+@ Chắc chắn | 実
+確実 | Chắc chắn, đáng tin.
+確か | Chắc chắn, rõ ràng.
+間違いない | Không sai, chắc chắn.
+明らか | Rõ ràng, hiển nhiên.
+
+@ Rõ ràng | 明
+明らか | Rõ ràng, hiển nhiên.
+明白 | Rõ ràng, minh bạch.
+はっきり | Rõ ràng, dứt khoát.
+鮮明 | Sắc nét, rõ nét.
+
+@ Mơ hồ | 曖
+曖昧 | Mơ hồ, nhập nhằng.
+漠然 | Mông lung, chung chung.
+ぼんやり | Lờ mờ, lơ đãng.
+
+@ Kỳ lạ | 変
+変 | Lạ, kỳ cục; khẩu ngữ.
+おかしい | Lạ, không bình thường; còn là "buồn cười".
+不思議 | Lạ kỳ, huyền bí, khó giải thích.
+妙 | Kỳ lạ, khó hiểu.
+奇妙 | Kỳ quặc, lạ lùng.
+怪しい | Đáng ngờ.
+
+@ Hiếm | 珍
+珍しい | Hiếm, lạ, ít gặp.
+まれ | Hiếm, thưa; văn viết.
+
+@ Khổng lồ | 巨
+巨大 | To lớn khổng lồ.
+膨大 | Đồ sộ, rất nhiều.
+莫大 | Rất lớn (tiền, thiệt hại).
+
+@ Vĩ đại | 偉
+偉大 | Vĩ đại, lớn lao.
+偉い | Giỏi giang, đáng kính; còn nghĩa "địa vị cao".
+
+@ Độc đáo, đặc biệt | 独
+独特 | Độc đáo, riêng biệt.
+ユニーク | Độc đáo, khác thường.
+特殊 | Đặc thù, đặc biệt.
+独創的 | Sáng tạo, độc đáo.
+特別 | Đặc biệt.
+
+@ Bình thường | 普
+普通 | Bình thường, thông thường.
+平凡 | Tầm thường, không có gì nổi bật.
+一般的 | Phổ biến, thông thường.
+凡庸 | Tầm thường, kém cỏi.
+当たり前 | Đương nhiên, thường tình.
+
+@ Bình thản, bình tĩnh | 冷
+平気 | Bình thản, không sao.
+冷静 | Điềm tĩnh, sáng suốt.
+落ち着く | Bình tĩnh lại, ổn định.
+
+@ Đầy đủ | 十
+十分 | Đầy đủ, thừa đủ.
+充分 | Đầy đủ (cách viết khác).
+満足 | Hài lòng, đủ đầy.
+
+@ Phong phú | 豊
+豊か | Phong phú, giàu có.
+豊富 | Dồi dào, phong phú.
+多様 | Đa dạng.
+
+@ Nghèo | 貧
+貧しい | Nghèo túng.
+貧乏 | Nghèo, thiếu tiền.
+乏しい | Thiếu thốn.
+
+@ Giàu | 富
+豊か | Giàu có, sung túc.
+裕福 | Giàu có, dư dả.
+金持ち | Người giàu.
+
+@ Nhanh | 速
+速い | Nhanh (tốc độ).
+早い | Sớm; còn dùng cho "nhanh" khi nói thời gian.
+急速 | Nhanh chóng.
+素早い | Nhanh nhẹn, lanh lẹ.
+迅速 | Mau lẹ, nhanh gọn.
+
+@ Chậm | 遅
+遅い | Chậm, muộn.
+のろい | Chậm chạp, rề rà.
+ゆっくり | Chậm rãi, thong thả.
+
+@ Đột ngột | 急
+急 | Gấp, đột ngột.
+急激 | Đột ngột, nhanh chóng.
+突然 | Bất ngờ.
+いきなり | Bất ngờ, không báo trước.
+
+@ Tạm thời | 暫
+一時的 | Nhất thời, tạm thời.
+仮 | Tạm.
+臨時 | Lâm thời, bất thường.
+
+@ Vừa phải | 手
+手頃 | Vừa tầm tay, phải chăng.
+適度 | Vừa phải, đúng mức.
+適当 | Thích hợp; hoặc qua loa.
+適切 | Thích đáng, phù hợp.
+妥当 | Thỏa đáng, hợp lý.
+ほどよい | Vừa phải, dễ chịu.
+
+@ Thích hợp, phù hợp | 適
+適切 | Thích đáng.
+適当 | Phù hợp.
+妥当 | Hợp lý, thỏa đáng.
+ふさわしい | Xứng đáng, hợp với.
+
+@ Công bằng | 公
+公平 | Công bằng, không thiên vị.
+公正 | Công chính, ngay thẳng.
+平等 | Bình đẳng.
+
+@ Giống nhau | 同
+同じ | Giống nhau, cùng.
+等しい | Bằng nhau, tương đương.
+同様 | Tương tự.
+同一 | Đồng nhất.
+そっくり | Giống hệt.
+
+@ Nhiệt tình | 熱
+熱心 | Nhiệt tình, hăng say.
+熱烈 | Nồng nhiệt.
+情熱的 | Đầy đam mê.
+意欲的 | Hăng hái.
+積極的 | Tích cực, chủ động.
+
+@ Tích cực, lạc quan | 楽
+積極的 | Tích cực, chủ động.
+前向き | Hướng về phía trước.
+楽観的 | Lạc quan.
+楽天的 | Lạc quan, vô tư.
+
+@ Tiêu cực | 消
+消極的 | Tiêu cực, thụ động.
+後ろ向き | Quay lưng, tiêu cực.
+悲観的 | Bi quan.
+
+@ Hoạt bát | 活
+活発 | Hoạt bát, năng động.
+快活 | Vui vẻ, sôi nổi.
+陽気 | Vui tươi, rộn ràng.
+朗らか | Rạng rỡ, cởi mở.
+明朗 | Sáng sủa, trong sáng.
+
+@ Cởi mở, dễ gần | 気
+気さく | Cởi mở, dễ gần.
+社交的 | Hòa đồng.
+人懐っこい | Hay làm thân, thân thiện.
+開放的 | Thoáng, cởi mở.
+
+@ U ám, ủ rũ | 暗
+暗い | Tối, u ám.
+陰気 | Ủ rũ, u uất.
+陰鬱 | Ảm đạm, nặng nề.
+
+@ Thật thà | 正
+正直 | Thật thà, trung thực.
+素直 | Thẳng thắn, ngoan ngoãn.
+誠実 | Thành thật, chân thành.
+実直 | Chân chất, ngay thẳng.
+率直 | Thẳng thắn.
+律儀 | Đứng đắn, chu đáo.
+
+@ Tinh tế, nhạy cảm | 繊
+繊細 | Tinh tế, mỏng manh.
+敏感 | Nhạy cảm.
+微妙 | Tế nhị, khó nói.
+デリケート | Mỏng manh, tế nhị.
+
+@ Hết sức, nghiêm trọng | 深
+深刻 | Nghiêm trọng, sâu sắc.
+重大 | Trọng đại.
+重篤 | Nguy kịch.
+
+@ Quý giá | 貴
+貴重 | Quý giá, hiếm có.
+大切 | Quan trọng, đáng quý.
+高価 | Đắt tiền.
+尊い | Cao quý.
+
+@ Thanh lịch | 雅
+上品 | Thanh lịch, nhã nhặn.
+優雅 | Tao nhã, duyên dáng.
+典雅 | Nhã nhặn, cổ điển.
+奥ゆかしい | Kín đáo, thanh nhã.
+
+@ Thô tục | 俗
+下品 | Thô tục, kém tao nhã.
+卑しい | Hèn hạ, thấp kém.
+粗野 | Thô lỗ.
+
+@ Quen thuộc, gần gũi | 親
+親しい | Thân thiết.
+身近 | Gần gũi, quanh mình.
+馴染み | Quen thuộc.
+
+@ Đáng tin cậy | 頼
+頼もしい | Đáng tin cậy, vững tâm.
+心強い | Vững dạ, thấy có chỗ dựa.
+
+@ Không đáng tin | 頼
+頼りない | Không đáng tin, thiếu chỗ dựa.
+心細い | Bất an, thiếu chỗ dựa.
+
+@ Có hại | 害
+有害 | Có hại.
+不健康 | Không lành mạnh.
+悪質 | Xấu, ác ý.
+
+@ Lành mạnh | 健
+健康的 | Lành mạnh.
+健全 | Lành mạnh, đúng đắn.
+健やか | Khỏe mạnh.
+
+@ Yếu | 弱
+弱い | Yếu.
+虚弱 | Ốm yếu, thể chất kém.
+病弱 | Hay ốm yếu.
+
+@ Mạnh | 強
+強い | Mạnh.
+頑丈 | Chắc chắn, bền.
+丈夫 | Bền, chắc; cũng "khỏe mạnh".
+
+@ Đột phá, mang tính bước ngoặt | 画
+画期的 | Mang tính bước ngoặt.
+革新的 | Đổi mới.
+
+@ Chính thức | 正
+正式 | Chính thức, đúng quy cách.
+公式 | Chính thức, mang tính công.
+本格的 | Chính quy, thực thụ.
+
+@ Cụ thể | 具
+具体的 | Cụ thể.
+明確 | Rõ ràng, xác định.
+
+@ Trừu tượng | 抽
+抽象的 | Trừu tượng.
+漠然 | Mơ hồ.
+
+@ Đơn giản, tối giản | 簡
+簡単 | Đơn giản.
+簡潔 | Ngắn gọn, súc tích.
+単純 | Đơn giản, thuần túy.
+簡素 | Giản dị, tối giản.
+
+@ Vất vả | 苦
+大変 | Vất vả, nghiêm trọng.
+苦しい | Khó chịu, khổ sở.
+きつい | Vất vả, chặt, gắt.
+つらい | Cực nhọc, đau khổ.
+
+@ Đau | 痛
+痛い | Đau.
+苦しい | Đau khổ, khó chịu.
+辛い | Cay hoặc đau khổ.
+
+@ Mệt | 疲
+だるい | Uể oải, mỏi.
+疲れる | Mệt.
+くたびれる | Mệt rã rời.
+
+@ Mới | 新
+新しい | Mới.
+新鮮 | Tươi, mới mẻ.
+新た | Mới, lần nữa.
+
+@ Cũ | 古
+古い | Cũ, xưa.
+古風 | Cổ kính.
+旧式 | Kiểu cũ.
+
+@ Lỏng, rộng | 緩
+緩い | Lỏng, chậm.
+ゆったり | Thoải mái, rộng rãi.
+
+@ Chật, hẹp | 狭
+狭い | Chật, hẹp.
+窮屈 | Gò bó, chật chội.
+きつい | Chật, bó.
+
+@ Rộng | 広
+広い | Rộng.
+広大 | Mênh mông, rộng lớn.
+ゆったり | Rộng rãi, thoải mái.
+
+@ Hợp lý | 理
+合理的 | Hợp lý.
+理性的 | Lý trí.
+論理的 | Có logic.
+
+@ Khách quan | 客
+客観的 | Khách quan.
+主観的 | Chủ quan.
+
+@ Hấp dẫn | 魅
+魅力的 | Hấp dẫn, lôi cuốn.
+印象的 | Gây ấn tượng.

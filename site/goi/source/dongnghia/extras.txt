@@ -1,0 +1,3 @@
+# Từ bổ sung: chưa có trong kho nhưng cần cho nhóm đồng nghĩa.
+# + từ | cách đọc | từ loại | Hán Việt | nghĩa | câu ví dụ (có [furigana]) | dịch ví dụ
++ 美[うつく]しい | うつくしい | adj-i | mỹ | đẹp (trang trọng, văn chương) | 美[うつく]しい景色[けしき]に感動[かんどう]した。 | Tôi xúc động trước phong cảnh đẹp.

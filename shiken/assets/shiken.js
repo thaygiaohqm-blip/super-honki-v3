@@ -20,11 +20,11 @@
   function home(view) {
     view = view || "home"; setNav(view);
     stopTimer(); run = null; document.title = "Super Shiken — Đề thi JLPT các năm";
-    const lv = lvOf(), all = INDEX.filter(e => e.level === lv), exams = all.filter(e => !e.dl), scans = all.filter(e => e.dl), H = hist();
+    const lv = lvOf(), all = INDEX.filter(e => e.level === lv), exams = all.filter(e => !e.dl && !e.bt), scans = all.filter(e => e.dl && !e.bt), H = hist();
     const w = wrong().filter(k => k.startsWith(lv + "-")).length;
     const TT = { home: ["Đề thi theo năm", 'Đề thi JLPT các năm. <b>Làm tự do</b>: chọn xong câu nào hiện đáp án câu đó. <b>Thi thử bấm giờ</b>: làm hết đề, nộp bài mới có đáp án và điểm.'], types: ["Ôn tổng hợp theo dạng bài", "Gom mọi câu cùng dạng của tất cả các đề trong cấp để làm một lượt."], wrong: ["Câu đã làm sai", "Các câu bạn từng chọn sai được lưu trên thiết bị này để ôn lại."] }[view];
     let h = '<section class="sk"><h1>' + TT[0] + '</h1><p class="sk__sub">' + TT[1] + "</p>";
-    h += '<div class="sk__lv" role="tablist">' + SK.LEVELS.slice().reverse().map(l => { const n = INDEX.filter(e => e.level === l && !e.dl).length; return '<button type="button" data-lv="' + l + '" aria-pressed="' + (l === lv) + '"' + (n || INDEX.some(e => e.level === l && e.dl) ? "" : ' class="is-empty"') + ">" + l.toUpperCase() + "<small>" + (n ? n + " đề" : INDEX.some(e => e.level === l && e.dl) ? "đề tải về" : "đang cập nhật") + "</small></button>"; }).join("") + "</div>";
+    h += '<div class="sk__lv" role="tablist">' + SK.LEVELS.slice().reverse().map(l => { const n = INDEX.filter(e => e.level === l && !e.dl && !e.bt).length; return '<button type="button" data-lv="' + l + '" aria-pressed="' + (l === lv) + '"' + (n || INDEX.some(e => e.level === l && e.dl) ? "" : ' class="is-empty"') + ">" + l.toUpperCase() + "<small>" + (n ? n + " đề" : INDEX.some(e => e.level === l && e.dl) ? "đề tải về" : "đang cập nhật") + "</small></button>"; }).join("") + "</div>";
     if (view !== "wrong" && !exams.length && !scans.length) {
       h += '<div class="sk__empty">Đề thi ' + lv.toUpperCase() + ' đang được số hóa và sẽ có sớm. Bạn có thể chuyển sang cấp có dữ liệu ở trên.</div></section>';
       main.innerHTML = h; bindHome(); return;
@@ -35,7 +35,7 @@
       main.innerHTML = h + "</section>"; bindHome(); return;
     }
     if (view === "types") {
-      h += '<div class="sk__types">' + typeCards(lv, exams) + "</div></section>";
+      h += '<div class="sk__types">' + typeCards(lv, all.filter(e => !e.dl)) + "</div></section>";
       main.innerHTML = h; bindHome(); return;
     }
     if (!exams.length) h += '<p class="sk__note">Chưa có đề nhập sẵn ở cấp này; xem phần đề tải về bên dưới.</p>';
@@ -49,7 +49,7 @@
     }).join("") + "</div>";
     if (scans.length) h += "<h2>Đề tải về tự làm</h2><p class=\"sk__sub\">Các đề này chưa nhập sẵn để làm trực tiếp trên web. Bấm để mở bản gốc trên Google Drive rồi tải về.</p><div class=\"sk__grid\">" + scans.map(e => '<a class="skc" href="' + e.dl + '" target="_blank" rel="noopener"><div class="skc__t"><span>' + lv.toUpperCase() + " · " + (e.lab || e.m + "/" + e.y) + '</span><small>PDF</small></div><div class="skc__s">Mở và tải đề</div></a>').join("") + "</div>";
     h += '<p class="sk__note">Phần nghe hiểu (聴解) chưa nằm trong bản này. Đề dài hơn khi thi thật: bấm giờ tính theo thời gian thi Ngôn ngữ + Đọc hiểu.</p>';
-    if (false) h += '<h2>Ôn tổng hợp theo dạng bài</h2><p class="sk__sub">Gom mọi câu cùng dạng của tất cả các đề ' + lv.toUpperCase() + " để làm một lượt.</p><div class=\"sk__types\">" + typeCards(lv, exams) + "</div></section>";
+    if (false) h += '<h2>Ôn tổng hợp theo dạng bài</h2><p class="sk__sub">Gom mọi câu cùng dạng của tất cả các đề ' + lv.toUpperCase() + " để làm một lượt.</p><div class=\"sk__types\">" + typeCards(lv, all.filter(e => !e.dl)) + "</div></section>";
     main.innerHTML = h; bindHome();
   }
   function kdOf(lv, n) { const e = INDEX.find(x => x.level === lv && x.kd && x.kd[n]); return e ? e.kd[n] : [SK.KIND[n] || "Dạng " + n, SK.JA[n] || ""]; }
@@ -76,7 +76,7 @@
     return { ex, items: it };
   }
   async function drillItems(lv, n, count, ids) {
-    const exs = await Promise.all(INDEX.filter(e => e.level === lv).map(e => SK.exam(e.id)));
+    const exs = await Promise.all(INDEX.filter(e => e.level === lv && !e.dl).map(e => SK.exam(e.id)));
     let all = []; exs.forEach(ex => all = all.concat(flat(ex)));
     if (ids) { const s = new Set(ids); all = all.filter(x => s.has(x.ex + "#" + x.q.no)); }
     else all = all.filter(x => x.n === n);
