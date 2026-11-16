@@ -1,4 +1,4 @@
-/* Super Shiken / Super Dokkai — phần dùng chung: nạp dữ liệu đề, tra từ khi bấm vào chữ, gọi AI khi chưa có bản dịch, lưu tiến độ. */
+/* Super Shiken / Super Dokkai — phần dùng chung: nạp dữ liệu đề, tra từ khi bấm vào chữ, lưu tiến độ. */
 (function () {
   const me = document.currentScript && document.currentScript.src || "";
   const ROOT = me.replace(/shared\/shiken-core\.js.*$/, "");
@@ -82,16 +82,6 @@
     return SK.lookupAt(text, 0);
   };
 
-  /* ---- AI khi chưa có bản dịch ---- */
-  SK.ai = async (payload) => {
-    const key = "sk:ai:" + JSON.stringify(payload).length + ":" + (payload.exam || "") + ":" + (payload.kind || "") + ":" + (payload.pid || payload.no || payload.text || "").toString().slice(0, 40);
-    const hit = SK.json(key, null); if (hit) return hit;
-    const r = await fetch(ROOT + "api/shiken_ai", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
-    const j = await r.json().catch(() => ({}));
-    if (!r.ok) throw new Error(j.error || "AI chưa sẵn sàng");
-    SK.save(key, j); return j;
-  };
-
   /* ---- sổ từ ---- */
   SK.notebook = () => SK.json("shiken:words", []);
   SK.addWord = (w, r, m) => { const l = SK.notebook(); if (!l.some(x => x[0] === w)) { l.unshift([w, r, m, Date.now()]); SK.save("shiken:words", l.slice(0, 1000)); } };
@@ -115,7 +105,7 @@
       '<div class="skpop__m">' + SK.esc(e[1]) + "</div>" + (e[2] ? '<div class="skpop__h">' + SK.esc(e[2]) + "</div>" : "") +
       '<div class="skpop__a"><button type="button" data-save>★ Lưu vào sổ từ</button></div>';
   };
-  const aiCard = (text, ctx) => '<div class="skpop__w" lang="ja">' + SK.esc(text) + '</div><div class="skpop__m">Chưa có trong từ điển của Super Honki.</div><div class="skpop__a"><button type="button" data-ask>Hỏi AI nghĩa từ này</button></div>';
+  const aiCard = (text, ctx) => '<div class="skpop__w" lang="ja">' + SK.esc(text) + '</div><div class="skpop__m">Chưa có trong từ điển của Super Honki.</div>';
   SK.attachLookup = (root, getCtx) => {
     const enabled = () => !root.classList.contains("nolookup");
     root.addEventListener("click", async ev => {
@@ -148,11 +138,6 @@
       const r = await SK.lookupText(text);
       if (r) { const p = showPop(px, py, card(r)); p.querySelector("[data-save]").onclick = () => { SK.addWord(r.base, r.e[0], r.e[1]); p.querySelector("[data-save]").textContent = "✓ Đã lưu"; }; return; }
       const p = showPop(px, py, aiCard(text));
-      p.querySelector("[data-ask]").onclick = async () => {
-        p.querySelector(".skpop__a").innerHTML = "Đang hỏi…";
-        try { const j = await SK.ai({ kind: "word", text, context: (getCtx && getCtx(jp)) || jp.textContent.slice(0, 200) }); p.innerHTML = '<div class="skpop__w" lang="ja">' + SK.esc(text) + '</div>' + (j.reading ? '<div class="skpop__r" lang="ja">' + SK.esc(j.reading) + '</div>' : '') + '<div class="skpop__m">' + SK.esc(j.meaning || "") + '</div>'; }
-        catch (e) { p.querySelector(".skpop__a").textContent = e.message; }
-      };
     });
     document.addEventListener("click", ev => { if (pop && !pop.contains(ev.target) && !ev.target.closest(".jp")) hidePop(); });
     document.addEventListener("keydown", ev => { if (ev.key === "Escape") hidePop(); });

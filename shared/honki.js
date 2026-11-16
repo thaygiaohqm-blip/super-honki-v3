@@ -38,9 +38,9 @@
     const link = (id, label) => '<a href="' + root + id + '/"' + (page === id ? ' aria-current="true"' : "") + ">" + label + "</a>";
     const s = document.createElement("div"); s.className = "hk-strip";
     s.innerHTML = '<div class="hk-strip__in"><a class="hk-strip__brand" href="' + root + '" title="Về trang chủ Super Honki"><img src="' + base + 'logo-mark.svg" alt="" width="48" height="48"><span><b>Super</b> Honki</span></a>' +
-      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("shiken", "Super Shiken") + link("dokkai", "Super Dokkai") + link("gemu", "Super Gemu") + '</nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
+      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("dokkai", "Super Dokkai") + link("shiken", "Super Shiken") + link("gemu", "Super Gemu") + '</nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
     const sw = document.createElement("nav"); sw.className = "hk-switch"; sw.setAttribute("aria-label", "Chuyển công cụ");
-    sw.innerHTML = link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("shiken", "Super Shiken") + link("dokkai", "Super Dokkai") + link("gemu", "Super Gemu");
+    sw.innerHTML = link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("dokkai", "Super Dokkai") + link("shiken", "Super Shiken") + link("gemu", "Super Gemu");
     document.body.insertBefore(sw, document.body.firstChild);
     document.body.insertBefore(s, document.body.firstChild);
     const setH = () => document.documentElement.style.setProperty("--hk-h", s.offsetHeight + "px");
@@ -157,4 +157,89 @@
     document.addEventListener("click", e => { if (!f.contains(e.target)) toggle(false); });
     document.addEventListener("keydown", e => { if (e.key === "Escape") toggle(false); });
   });
+})();
+
+/* ---------- Thanh tab con thống nhất cho mọi Super: nằm hàng riêng dưới logo (như Super Bunpou), xuống dòng thay vì kéo lướt, có icon theo màu giao diện; nhóm bật tắt Kanji/furigana/romaji căn giữa ---------- */
+(function () {
+  const ico = d => '<svg class="hk-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + d + "</svg>";
+  const I = {
+    bars: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+    tag: '<path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.2"/>',
+    book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5Z"/><path d="M4 19a2 2 0 0 1 2-2h13"/>',
+    brief: '<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/>',
+    check: '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="m8 12 3 3 5-6"/>',
+    refresh: '<path d="M20 11a8 8 0 0 0-14.5-3.5L4 9M4 4v5h5M4 13a8 8 0 0 0 14.5 3.5L20 15M20 20v-5h-5"/>',
+    users: '<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.3c2 .8 3.5 2.8 3.5 5.7"/>',
+    grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+    search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+    bulb: '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.3 1 2.1h5c0-.8.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/>',
+    layers: '<path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/>',
+    chat: '<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/>',
+    shapes: '<circle cx="7.5" cy="7.5" r="4"/><rect x="13" y="13" width="8" height="8" rx="1.5"/><path d="m4 21 4-7 4 7H4Z"/>',
+    hash: '<path d="M5 9h14M5 15h14M10 3 8 21M16 3l-2 18"/>',
+    file: '<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',
+    target: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/>',
+    list: '<path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/>',
+    x: '<circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/>',
+    done: '<circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/>'
+  };
+  const MAP = {
+    goi: { jlpt: "bars", pos: "tag", gt: "book", ind: "brief", test: "check", rev: "refresh" },
+    kanji: { jlpt: "bars", "gia-dinh": "users", "giao-trinh": "book", "bo-thu": "grid", "dau-vao": "check", "tim-kiem": "search", "ly-thuyet": "bulb" },
+    bunpou: { search: "search", level: "bars", theme: "layers", ctx: "chat", gt: "book", the: "shapes", dem: "hash", test: "check", rev: "refresh" },
+    shiken: { home: "file", types: "layers", wrong: "x" },
+    dokkai: { list: "grid", done: "done", wrong: "x" }
+  };
+  function go() {
+    const hdr = document.querySelector("header.top"), pg = document.body.dataset.honki;
+    if (!hdr || !MAP[pg]) return;
+    const nav = hdr.querySelector("nav.nav, nav.tabs"); if (!nav || nav.dataset.hkSub) return;
+    const wrap = document.createElement("div"); wrap.className = "hk-sub";
+    nav.dataset.hkSub = "1"; nav.classList.remove("nav", "tabs"); nav.classList.add("hk-subnav");
+    nav.querySelectorAll("a").forEach(a => {
+      a.querySelectorAll(".nj, svg").forEach(n => n.remove());
+      a.querySelectorAll("span[lang]").forEach(n => n.remove());
+      const k = a.dataset.nav, name = MAP[pg][k];
+      if (name) a.insertAdjacentHTML("afterbegin", ico(I[name]));
+    });
+    hdr.appendChild(wrap); wrap.appendChild(nav);
+    const tg = hdr.querySelector(".toggles"); if (tg) hdr.classList.add("has-tg");
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", go); else go();
+})();
+
+/* Nhóm bật tắt Kanji / furigana / romaji được gom vào bảng mở ra khi bấm vào avatar tài khoản (tiết kiệm chỗ trên thanh) */
+(function () {
+  const run = () => {
+    const tg = document.querySelector(".top .toggles");
+    if (!tg || !tg.querySelector("[data-toggle]")) return;
+    let tries = 0;
+    const attach = () => {
+      const acct = document.querySelector(".hk-strip__tools .acct, .hk-strip__tools .hk-acct, .top .acct");
+      if (!acct) { if (tries++ < 40) setTimeout(attach, 50); return; }
+      const panel = document.createElement("div");
+      panel.className = "hk-prefs"; panel.hidden = true; panel.setAttribute("role", "dialog"); panel.setAttribute("aria-label", "Cách hiển thị chữ");
+      panel.innerHTML = '<p class="hk-prefs__t">Cách hiển thị chữ</p><div class="hk-prefs__tg"></div><button type="button" class="hk-prefs__acct">Tài khoản</button>';
+      const box = panel.querySelector(".hk-prefs__tg");
+      tg.querySelectorAll("[data-toggle]").forEach(b => box.appendChild(b));
+      tg.remove(); document.querySelector(".top")?.classList.remove("has-tg");
+      acct.appendChild(panel);
+      let bypass = false;
+      const btn = () => acct.querySelector("button.acct-btn, .hk-btn, button:not(.hk-prefs__acct):not(.tg)");
+      acct.addEventListener("click", e => {
+        if (bypass) return;
+        const b = e.target.closest("button"); if (!b || b.closest(".hk-prefs") || b !== btn()) return;
+        e.stopImmediatePropagation(); e.preventDefault();
+        panel.hidden = !panel.hidden;
+      }, true);
+      panel.querySelector(".hk-prefs__acct").onclick = e => {
+        e.stopPropagation(); panel.hidden = true; bypass = true;
+        const b = btn(); if (b) b.click(); bypass = false;
+      };
+      document.addEventListener("click", e => { if (!e.target.closest(".hk-prefs") && !e.target.closest(".acct,.hk-acct")) panel.hidden = true; });
+      document.addEventListener("keydown", e => { if (e.key === "Escape") panel.hidden = true; });
+    };
+    attach();
+  };
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", () => setTimeout(run, 0)); else setTimeout(run, 0);
 })();

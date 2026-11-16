@@ -43,7 +43,7 @@ h1 em{font-style:italic;color:#ff8d8d;font-family:var(--jp);font-weight:800;disp
 .kicker{display:inline-block;font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--redk);margin:0 0 10px}
 .kicker--lt{color:#ff9b9b}
 h2{font-size:clamp(26px,4vw,42px);line-height:1.15;letter-spacing:-.02em;font-weight:800;margin:0 0 32px;max-width:20em}
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 @media(max-width:1180px){.cards{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.cards{grid-template-columns:1fr}}
 .card--gemu{background:linear-gradient(160deg,#fff,#fff1e6);border-color:var(--red)}.card--gemu .card__tag{background:var(--red)}

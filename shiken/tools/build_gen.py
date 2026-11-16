@@ -69,6 +69,7 @@ for r in fl:
     seen.add(eid)
     idx.append({'id':eid,'level':'n3','y':yr,'m':mo,'n':0,'dl':'https://drive.google.com/file/d/%s/view'%r['id']})
     print('scan',eid,nm)
+dk=[x for x in dk if x['len']>=60]
 idx.sort(key=lambda x:(x['level'],-x['y'],-x['m']))
 json.dump(idx,open(OUT+'/index.json','w'),ensure_ascii=False,separators=(',',':'))
 json.dump(dk,open(OUT+'/dokkai.json','w'),ensure_ascii=False,separators=(',',':'))

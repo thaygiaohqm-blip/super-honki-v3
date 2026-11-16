@@ -106,15 +106,7 @@
 .dkf { display: flex; gap: 8px; flex-wrap: wrap; margin: 6px 0 12px; }
 .dkf button { font: 700 13.5px var(--ui); border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 6px 13px; cursor: pointer; }
 .dkf button[aria-pressed=true] { background: var(--green); color: var(--on-primary); border-color: var(--green); }
-.dkl { display: grid; gap: 10px; }
-.dki { display: flex; gap: 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; text-decoration: none; color: inherit; }
-.dki:hover { border-color: var(--brand-ink); }
-.dki__n { flex: none; width: 52px; text-align: center; font: 800 12px var(--ui); color: var(--brand-ink); background: var(--mint-soft); border-radius: 10px; padding: 6px 2px; line-height: 1.3; }
-.dki__n b { display: block; font-size: 17px; }
-.dki__b { flex: 1; min-width: 0; }
-.dki__t { font: 500 15px/1.5 var(--jp); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.dki__m { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
-.dki__s { font: 800 12.5px var(--ui); color: var(--coral-ink); flex: none; }
+
 .dkm { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 8px 0 14px; }
 .dkm .seg { display: inline-flex; border: 1.5px solid var(--green); border-radius: 10px; overflow: hidden; }
 .dkm .seg button { font: 700 13.5px var(--ui); background: var(--surface); color: var(--brand-ink); border: 0; padding: 8px 14px; cursor: pointer; }
@@ -139,3 +131,19 @@ mark.key, .dks.key { background: linear-gradient(transparent 55%, color-mix(in s
 .dkleg i { display: inline-block; width: 26px; height: 12px; vertical-align: middle; background: color-mix(in srgb, #ffd23f 55%, transparent); border-radius: 3px; margin-right: 4px; }
 .dknav { display: flex; justify-content: space-between; gap: 10px; margin: 24px 0 0; flex-wrap: wrap; }
 @media (max-width: 560px) { .sq { padding: 12px; gap: 9px; } .sq__no { width: 30px; height: 30px; } .skbar { top: calc(var(--hk-h, 70px) - 2px); } .dkp { padding: 14px; font-size: 17px; } }
+
+/* Super Dokkai: lưới bài đọc, nền xanh khi làm đúng hết, đỏ khi có câu sai */
+.dkl { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.dki { display: flex; flex-direction: column; gap: 8px; background: var(--surface); border: 1.5px solid var(--line); border-radius: 14px; padding: 14px; text-decoration: none; color: inherit; min-height: 150px; transition: transform .12s, border-color .12s; }
+.dki:hover { border-color: var(--brand-ink); transform: translateY(-2px); }
+.dki__n { display: flex; align-items: baseline; gap: 6px; font: 800 12px var(--ui); color: var(--brand-ink); }
+.dki__n b { font-size: 22px; line-height: 1; }
+.dki__s { margin-left: auto; font: 800 12.5px var(--ui); }
+.dki__t { font: 500 15px/1.55 var(--jp); display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex: 1; }
+.dki__m { font-size: 12.5px; color: var(--muted); }
+.dki--ok { background: rgba(46, 160, 67, .16); border-color: rgba(46, 160, 67, .65); }
+.dki--ok .dki__s { color: #1f7a33; }
+.dki--bad { background: rgba(224, 62, 52, .14); border-color: rgba(224, 62, 52, .65); }
+.dki--bad .dki__s { color: #c0271d; }
+:root[data-theme="yoru"] .dki--ok .dki__s { color: #6ddc86; } :root[data-theme="yoru"] .dki--bad .dki__s { color: #ff8a80; }
+.dk-cite { margin: 18px 0 4px; font-size: 12.5px; color: var(--muted); text-align: right; }

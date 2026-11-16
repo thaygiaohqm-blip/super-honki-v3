@@ -60,7 +60,6 @@ Dữ liệu mỗi đề là một tệp `shiken/data/<cấp>-<năm>-<tháng>.jso
 
 Bản dịch tiếng Việt, lời giải, từ vựng khó và câu then chốt nằm riêng ở `shiken/data/vi/<mã đề>.json`, có dạng `{"q":{"<số câu>":{"vi","cv":[4 bản dịch lựa chọn],"exp","v":[[từ,cách đọc,nghĩa]],"key":[số câu then chốt]}},"p":{"<mã bài đọc>":{"s":[{"ja","vi","p":1 nếu mở đoạn}],"key":[...],"v":[...]}}}`. Đề nào chưa có tệp này vẫn làm được bình thường; khi xem đáp án sẽ có nút "Nhờ AI dịch và giải thích".
 
-Bật nút AI: đặt biến môi trường `ANTHROPIC_API_KEY` trên Vercel (tùy chọn `ANTHROPIC_MODEL`). Kết quả AI được lưu vào Redis nên mỗi câu chỉ tốn một lần. Muốn soạn sẵn cả đề để người học khỏi chờ: chạy `ANTHROPIC_API_KEY=... node shiken/tools/gen_vi.js n2-2025-12`.
 
 Thông tin pháp lý: đề thi JLPT thuộc bản quyền của Japan Foundation và JEES; hãy cân nhắc trước khi công khai nội dung đề trên website.
 

@@ -140,3 +140,32 @@ body[data-honki] main{animation:hkMain .32s ease-out backwards}
 /* chỗ trống trong câu điền: gạch đỏ nằm sát chữ, không trôi xuống khe giữa hai dòng */
 .blank{line-height:1.2;vertical-align:-.1em;min-width:2.4em;border-radius:6px 6px 0 0;background:color-mix(in srgb,var(--coral,#ed3838) 9%,transparent)}
 @media (max-width:860px){body[data-honki="kanji"] .top{display:none}body[data-honki="kanji"] .hk-fab{bottom:calc(72px + env(safe-area-inset-bottom))}}
+
+/* ---------- Tab con thống nhất (hàng riêng dưới logo, xuống dòng, có icon theo màu giao diện) ---------- */
+header.top .hk-sub { border-top: 1px solid var(--line); }
+header.top .hk-subnav { display: flex; flex-wrap: wrap; gap: 2px 4px; max-width: var(--wrap, 1180px); margin: 0 auto; padding: 0 var(--gut, 20px); overflow: visible; }
+header.top .hk-subnav a { display: inline-flex; align-items: center; gap: 8px; padding: 11px 13px; font: 600 14.5px var(--ui, inherit); color: var(--muted); text-decoration: none; position: relative; white-space: nowrap; border-radius: 0; }
+header.top .hk-subnav a .hk-ico { flex: none; color: var(--mint, var(--brand-ink)); }
+header.top .hk-subnav a:hover { color: var(--brand-ink); background: var(--mint-soft); }
+header.top .hk-subnav a[aria-current="page"] { color: var(--brand-ink); }
+header.top .hk-subnav a[aria-current="page"]::after { content: ""; position: absolute; left: 10px; right: 10px; bottom: 0; height: 3px; background: var(--coral); border-radius: 3px 3px 0 0; }
+header.top .hk-subnav a[aria-current="page"] .hk-ico { color: var(--coral); }
+.tabbar { display: none !important; }
+/* nhóm bật tắt Kanji / furigana / romaji ở giữa thanh */
+header.top .top__in { position: relative; }
+@media (min-width: 900px) {
+  header.top .top__in > .toggles { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; }
+}
+@media (max-width: 899px) {
+  header.top .top__in { flex-wrap: wrap; justify-content: space-between; }
+  header.top .top__in > .toggles { margin-left: auto; }
+  header.top .hk-subnav a { padding: 9px 10px; font-size: 13.5px; }
+}
+/* bảng bật tắt chữ trong avatar */
+.hk-prefs{position:absolute;right:0;top:calc(100% + 8px);width:250px;background:var(--surface,#fffdf8);color:var(--ink,#1d2a2a);border:1px solid var(--line,#e2dccd);border-radius:14px;padding:12px;box-shadow:0 14px 36px var(--shadow,rgba(0,0,0,.3));z-index:120;display:grid;gap:10px;text-align:left}
+.hk-prefs[hidden]{display:none}
+.hk-prefs__t{margin:0;font-size:12.5px;font-weight:700;color:var(--muted,#5d6b6a)}
+.hk-prefs__tg{display:grid;gap:6px}
+.hk-prefs__tg .tg{width:100%;justify-content:space-between;color:var(--ink,#1d2a2a);border-color:var(--line,#e2dccd);background:transparent}
+.hk-prefs__acct{border:0;border-top:1px solid var(--line,#e2dccd);background:none;padding:10px 4px 2px;font:700 14px "Be Vietnam Pro",system-ui,sans-serif;color:inherit;text-align:left;cursor:pointer}
+@media (max-width:520px){.hk-prefs{position:fixed;left:12px;right:12px;top:64px;width:auto}}

@@ -25,19 +25,22 @@
   SK.attachLookup(main, el => el.textContent.slice(0, 160));
 
   /* ---------- danh sách ---------- */
-  function home() {
+  function setNav(k) { document.querySelectorAll("[data-nav]").forEach(a => k && a.dataset.nav === k ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")); }
+  function home(view) {
+    view = view || "list"; setNav(view);
     cur = null; document.title = "Super Dokkai — Luyện đọc hiểu JLPT";
-    const L = lv(), T = tp(), items = LIST.filter(x => x.level === L && (!T || x.n === T)), D = done();
-    let h = '<section class="sk"><h1>Super Dokkai</h1><p class="sk__sub">Toàn bộ bài đọc hiểu trong đề thi JLPT các năm, chia theo cấp độ và dạng bài. <b>Bấm vào từ bất kì</b> trong bài để tra nghĩa, hoặc bôi chọn cả cụm. Tự làm trước, chọn xong đáp án sẽ hiện bài chữa có dịch tiếng Việt và <mark class="key">câu then chốt</mark> thể hiện ý đồ tác giả.</p>';
+    const L = lv(), T = tp(), D = done(), items = LIST.filter(x => x.level === L && (!T || x.n === T) && (view === "list" || (D[x.id] && (view === "done" || D[x.id].ok < D[x.id].n))));
+    let h = '<section class="sk"><h1>' + ({ list: "Bài đọc hiểu", done: "Bài đã làm", wrong: "Bài làm sai" })[view] + '</h1><p class="sk__sub">Toàn bộ bài đọc hiểu trong đề thi JLPT các năm, chia theo cấp độ và dạng bài. <b>Bấm vào từ bất kì</b> trong bài để tra nghĩa, hoặc bôi chọn cả cụm. Tự làm trước, chọn xong đáp án sẽ hiện bài chữa có dịch tiếng Việt và <mark class="key">câu then chốt</mark> thể hiện ý đồ tác giả.</p>';
     h += '<div class="sk__lv">' + SK.LEVELS.slice().reverse().map(l => { const n = LIST.filter(x => x.level === l).length; return '<button type="button" data-lv="' + l + '" aria-pressed="' + (l === L) + '"' + (n ? "" : ' class="is-empty"') + ">" + l.toUpperCase() + "<small>" + (n ? n + " bài" : "đang cập nhật") + "</small></button>"; }).join("") + "</div>";
     if (!LIST.some(x => x.level === L)) { main.innerHTML = h + '<div class="sk__empty">Bài đọc ' + L.toUpperCase() + " đang được số hóa và sẽ có sớm.</div></section>"; bindHome(); return; }
     const kinds = Array.from(new Set(LIST.filter(x => x.level === L).map(x => x.n))).sort((a, b) => a - b);
     h += '<div class="dkf" role="group" aria-label="Dạng bài"><button type="button" data-t="0" aria-pressed="' + (!T) + '">Tất cả dạng</button>' + kinds.map(n => '<button type="button" data-t="' + n + '" aria-pressed="' + (T === n) + '"><span lang="ja">問題' + n + "</span> " + kOf(LIST.find(x => x.level === L && x.n === n)) + " (" + LIST.filter(x => x.level === L && x.n === n).length + ")</button>").join("") + "</div>";
     if (T) h += '<p class="sk__note"><b lang="ja">' + kjOf(LIST.find(x => x.level === L && x.n === T)) + "</b>. " + hintOf(LIST.find(x => x.level === L && x.n === T)) + "</p>";
-    h += '<div class="dkl">' + items.map(x => {
+    const st = x => { const d = D[x.id]; return d ? (d.ok >= d.n ? " dki--ok" : " dki--bad") : ""; };
+    h += items.length ? '<div class="dkl">' + items.map(x => {
       const d = D[x.id];
-      return '<a class="dki" href="#/read/' + x.ex + "/" + x.pid + '"><div class="dki__n"><span lang="ja">問題</span><b>' + x.n + '</b></div><div class="dki__b"><div class="dki__t">' + esc(x.head) + '…</div><div class="dki__m">' + x.level.toUpperCase() + " · " + x.m + "/" + x.y + " · " + kOf(x) + " · " + x.len + " chữ · " + x.nq + ' câu hỏi</div></div>' + (d ? '<span class="dki__s">' + d.ok + "/" + d.n + "</span>" : "") + "</a>";
-    }).join("") + "</div></section>";
+      return '<a class="dki' + st(x) + '" href="#/read/' + x.ex + "/" + x.pid + '"><div class="dki__n"><span lang="ja">問題</span><b>' + x.n + '</b>' + (d ? '<span class="dki__s">' + d.ok + "/" + d.n + "</span>" : "") + '</div><div class="dki__t">' + esc(x.head) + '…</div><div class="dki__m">' + esc(kOf(x)) + " · " + x.len + " chữ · " + x.nq + " câu hỏi</div></a>";
+    }).join("") + "</div></section>" : '<div class="sk__empty">' + (view === "done" ? "Bạn chưa làm bài nào ở cấp này." : view === "wrong" ? "Chưa có bài nào làm sai ở cấp này." : "Không có bài nào.") + "</div></section>";
     main.innerHTML = h; bindHome();
   }
   function bindHome() {
@@ -65,13 +68,14 @@
   }
   const keySet = () => new Set((cur.ov && cur.ov.key) || []);
   function head() {
-    const c = cur, pr = c.pos > 0 ? LIST[c.pos - 1] : null, nx = c.pos >= 0 && c.pos < LIST.length - 1 ? LIST[c.pos + 1] : null;
-    return '<section class="sk"><p><a class="btn btn--ghost btn--sm" href="#/">← Danh sách bài đọc</a></p><h1>' + c.ex.level.toUpperCase() + " · " + c.ex.m + "/" + c.ex.y + " · <span lang=\"ja\">問題" + c.mon + "</span></h1><p class=\"sk__sub\">" + esc(c.ex.level === "n2" ? (DK_KIND[c.mon] || "") : (c.mk || "")) + " — " + esc(DK_HINT[c.ex.level === "n2" ? c.mon : HK[c.mj]] || "") + "</p>";
+    const c = cur, kind = c.ex.level === "n2" ? (DK_KIND[c.mon] || "") : (c.mk || ""), hint = DK_HINT[c.ex.level === "n2" ? c.mon : HK[c.mj]] || "";
+    return '<section class="sk"><p><a class="btn btn--ghost btn--sm" href="#/">← Danh sách bài đọc</a></p><h1><span lang="ja">問題' + c.mon + "</span> · " + esc(kind) + '</h1><p class="sk__sub">' + esc(hint) + "</p>";
   }
   function render() {
     const c = cur; let h = head();
     h += '<div class="dkm">' + SEG("mode", c.mode, [["self", "Tự làm"], ["review", "Xem bài chữa"]]) + '<label><input type="checkbox" id="dk-look"' + (c.lookup ? " checked" : "") + '> Bấm chữ để tra từ</label>' + (c.mode === "review" ? SEG("style", style(), [["a", "Nhật trên, Việt dưới + giải thích"], ["b", "Song ngữ từng câu"]]) : "") + "</div>";
     h += '<div id="dk-body">' + (c.mode === "self" ? selfHTML() : reviewHTML()) + "</div>";
+    h += '<p class="dk-cite">Trích từ đề thi JLPT ' + c.ex.level.toUpperCase() + " tháng " + c.ex.m + "/" + c.ex.y + ", <span lang=\"ja\">問題" + c.mon + "</span>.</p>";
     const pr = c.pos > 0 ? LIST[c.pos - 1] : null, nx = c.pos >= 0 && c.pos < LIST.length - 1 ? LIST[c.pos + 1] : null;
     h += '<div class="dknav">' + (pr ? '<a class="btn btn--ghost btn--sm" href="#/read/' + pr.ex + "/" + pr.pid + '">← Bài trước</a>' : "<span></span>") + (nx ? '<a class="btn btn--primary btn--sm" href="#/read/' + nx.ex + "/" + nx.pid + '">Bài tiếp →</a>' : "") + "</div></section>";
     main.innerHTML = h; main.classList.toggle("nolookup", !c.lookup); bind();
@@ -97,7 +101,7 @@
     const answered = Object.keys(c.ans).length;
     let h = "";
     if (answered) h += '<div class="skres"><div class="skres__big">' + right + "<small> / " + c.qs.length + " câu đúng</small></div></div>";
-    if (noOv) h += '<div class="sa"><div class="miss">Bài này chưa có bản dịch soạn sẵn. Bạn có thể nhờ AI dịch từng câu, chọn câu then chốt và giải thích đáp án.</div><div class="sa__btns"><button class="btn btn--coral btn--sm" id="dk-ai">Nhờ AI dịch và chữa bài này</button></div></div>';
+    if (noOv) h += '<div class="sa"><div class="miss">Bản dịch tiếng Việt và lời giải của bài đọc này đang được soạn.</div></div>';
     h += '<div class="dkleg"><span><i></i>Câu then chốt thể hiện ý đồ của tác giả, là mấu chốt để chọn đáp án đúng</span></div>';
     if (st === "a") {
       h += '<div class="dkp"><div class="dkp__h">Nguyên văn tiếng Nhật</div><div class="jp" id="dk-ja">' + paraSent(S, key, "ja") + "</div></div>";
@@ -153,15 +157,6 @@
       ks.forEach(k => main.querySelectorAll('[data-s="' + k + '"]').forEach(e => { const t = e.classList.contains("dks") ? e : e.querySelector(".dks"); if (t) { t.classList.add("keyq"); if (!first) first = t; } }));
       if (first) first.scrollIntoView({ behavior: "smooth", block: "center" });
     });
-    const ai = document.getElementById("dk-ai");
-    if (ai) ai.onclick = async () => {
-      ai.disabled = true; ai.textContent = "AI đang dịch và chữa bài… (có thể mất ít phút)";
-      try {
-        const j = await SK.ai({ kind: "passage", exam: c.exId, pid: c.pid, level: c.ex.level, kindName: c.mk || DK_KIND[c.mon], text: plain(c.text), questions: c.qs.map(q => ({ no: q.no, stem: plain(q.s), choices: q.c.map(plain), answer: q.a })) });
-        c.ov = { s: (j.s || []).map(s => ({ ja: s.ja, vi: s.vi, p: s.p })), key: j.key || [], v: j.v || [] }; c.qov = Object.assign({}, c.qov, j.q || {});
-        render();
-      } catch (e) { ai.disabled = false; ai.textContent = "Nhờ AI dịch và chữa bài này"; const m = document.createElement("div"); m.className = "miss"; m.textContent = e.message; ai.parentNode.appendChild(m); }
-    };
   }
   function finish() {
     const c = cur; let ok = 0; c.qs.forEach((q, i) => { if (c.ans[i] === q.a - 1) ok++; });
@@ -174,7 +169,7 @@
     const p = location.hash.replace(/^#\/?/, "").split("/");
     try {
       if (!LIST.length) LIST = await SK.fetch("dokkai.json");
-      if (p[0] === "read" && p[1] && p[2]) await read(p[1], p[2]); else home();
+      if (p[0] === "read" && p[1] && p[2]) { setNav("list"); await read(p[1], p[2]); } else home(p[0] === "done" ? "done" : p[0] === "wrong" ? "wrong" : "list");
     } catch (e) { main.innerHTML = '<section class="sk"><p class="sk__empty">Không tải được dữ liệu bài đọc (' + esc(e.message) + "). Hãy tải lại trang.</p></section>"; }
   }
   window.addEventListener("hashchange", route);
