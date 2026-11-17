@@ -27,16 +27,16 @@
     h += '<div class="sk__lv" role="tablist">' + SK.LEVELS.slice().reverse().map(l => { const n = INDEX.filter(e => e.level === l && !e.dl && !e.bt).length, qn = view === "types" ? INDEX.filter(e => e.level === l && !e.dl).reduce((a, e) => a + (e.n || 0), 0) : 0; return '<button type="button" data-lv="' + l + '" aria-pressed="' + (l === lv) + '"' + (n || INDEX.some(e => e.level === l && e.dl) ? "" : ' class="is-empty"') + ">" + l.toUpperCase() + "<small>" + (view === "types" && qn ? qn.toLocaleString("vi-VN") + " câu" : n ? n + " đề" : INDEX.some(e => e.level === l && e.dl) ? "đề tải về" : "đang cập nhật") + "</small></button>"; }).join("") + "</div>";
     if (view !== "wrong" && !exams.length && !scans.length) {
       h += '<div class="sk__empty">Đề thi ' + lv.toUpperCase() + ' đang được số hóa và sẽ có sớm. Bạn có thể chuyển sang cấp có dữ liệu ở trên.</div></section>';
-      main.innerHTML = h; bindHome(); return;
+      main.innerHTML = h; bindHome(view); return;
     }
     if (view === "wrong") {
       h += '<div class="sk__grid">' + SK.LEVELS.slice().reverse().map(l => { const c = wrong().filter(k => k.startsWith(l + "-")).length; return c ? '<a class="skc" href="#/wrong/' + l + '"><div class="skc__t"><span>' + l.toUpperCase() + "</span><small>" + c + ' câu</small></div><div class="skc__s">Ôn lại các câu đã sai</div></a>' : ""; }).join("") + "</div>";
       if (!SK.LEVELS.some(l => wrong().some(k => k.startsWith(l + "-")))) h += '<div class="sk__empty">Chưa có câu sai nào. Làm đề xong, các câu sai sẽ hiện ở đây.</div>';
-      main.innerHTML = h + "</section>"; bindHome(); return;
+      main.innerHTML = h + "</section>"; bindHome(view); return;
     }
     if (view === "types") {
       h += '<div class="sk__types">' + typeCards(lv, all.filter(e => !e.dl)) + "</div></section>";
-      main.innerHTML = h; bindHome(); return;
+      main.innerHTML = h; bindHome(view); return;
     }
     if (!exams.length) h += '<p class="sk__note">Chưa có đề nhập sẵn ở cấp này; xem phần đề tải về bên dưới.</p>';
     h += "<div class=\"sk__grid\">" + exams.map(e => {
@@ -50,16 +50,25 @@
     if (scans.length) h += "<h2>Đề tải về tự làm</h2><p class=\"sk__sub\">Các đề này chưa nhập sẵn để làm trực tiếp trên web. Bấm để mở bản gốc trên Google Drive rồi tải về.</p><div class=\"sk__grid\">" + scans.map(e => '<a class="skc" href="' + e.dl + '" target="_blank" rel="noopener"><div class="skc__t"><span>' + lv.toUpperCase() + " · " + (e.lab || e.m + "/" + e.y) + '</span><small>PDF</small></div><div class="skc__s">Mở và tải đề</div></a>').join("") + "</div>";
     h += '<p class="sk__note">Phần nghe hiểu (聴解) chưa nằm trong bản này. Đề dài hơn khi thi thật: bấm giờ tính theo thời gian thi Ngôn ngữ + Đọc hiểu.</p>';
     if (false) h += '<h2>Ôn tổng hợp theo dạng bài</h2><p class="sk__sub">Gom mọi câu cùng dạng của tất cả các đề ' + lv.toUpperCase() + " để làm một lượt.</p><div class=\"sk__types\">" + typeCards(lv, all.filter(e => !e.dl)) + "</div></section>";
-    main.innerHTML = h; bindHome();
+    main.innerHTML = h; bindHome(view);
   }
   function kdOf(lv, n) { const e = INDEX.find(x => x.level === lv && x.kd && x.kd[n]); return e ? e.kd[n] : [SK.KIND[n] || "Dạng " + n, SK.JA[n] || ""]; }
+  const SECR = { n1: { moji: [1, 2, 3, 4, 20], bunpou: [5, 6, 7], dokkai: [8, 9, 10, 11, 12, 13] }, n2: { moji: [1, 2, 3, 4, 5, 6], bunpou: [7, 8, 9], dokkai: [10, 11, 12, 13, 14] }, n3: { moji: [1, 2, 3, 4, 5], bunpou: [6, 7, 8], dokkai: [9, 10, 11, 12] }, n4: { moji: [1, 2, 3, 4, 5], bunpou: [6, 7, 8], dokkai: [9, 10, 11] }, n5: { moji: [1, 2, 3, 4], bunpou: [5, 6], dokkai: [] } };
   function typeCards(lv, exams) {
     const cnt = {};
     exams.forEach(e => Object.keys(e.mon || {}).forEach(n => cnt[n] = (cnt[n] || 0) + e.mon[n]));
-    return Object.keys(cnt).map(Number).sort((a, b) => a - b).map(n => '<div class="skt" data-n="' + n + '"><span class="skt__n" lang="ja">' + n + '</span><div class="skt__b"><b>' + esc(kdOf(lv, n)[0]) + '</b><small lang="ja">問題' + n + " · " + esc(kdOf(lv, n)[1]) + " · " + cnt[n] + ' câu</small></div><select aria-label="Số câu"><option value="10">10 câu</option><option value="20">20 câu</option><option value="40">40 câu</option><option value="0">Tất cả</option></select><button class="btn btn--primary btn--sm" data-drill>Làm</button></div>').join("");
+    const card = n => '<div class="skt" data-n="' + n + '"><span class="skt__n" lang="ja">' + n + '</span><div class="skt__b"><b>' + esc(kdOf(lv, n)[0]) + '</b><small lang="ja">問題' + n + " · " + esc(kdOf(lv, n)[1]) + " · " + cnt[n] + ' câu</small></div><select aria-label="Số câu"><option value="10">10 câu</option><option value="20">20 câu</option><option value="40">40 câu</option><option value="0">Tất cả</option></select><button class="btn btn--primary btn--sm" data-drill>Làm</button></div>';
+    const R = SECR[lv] || {}, used = new Set(), ns = Object.keys(cnt).map(Number).sort((a, b) => a - b);
+    let h = "";
+    ["moji", "bunpou", "dokkai"].forEach(k => {
+      const l = ns.filter(n => (R[k] || []).includes(n)); if (!l.length) return; l.forEach(n => used.add(n));
+      h += '<h2 class="sk__sec"><span lang="ja">' + SECJA[k] + "</span> · " + SECVI[k] + " <small>" + l.reduce((a, n) => a + cnt[n], 0) + " câu</small></h2>" + l.map(card).join("");
+    });
+    const rest = ns.filter(n => !used.has(n)); if (rest.length) h += '<h2 class="sk__sec">Khác</h2>' + rest.map(card).join("");
+    return h;
   }
-  function bindHome() {
-    main.querySelectorAll("[data-lv]").forEach(b => b.onclick = () => { SK.put("shiken:level", b.dataset.lv); home(); });
+  function bindHome(view) {
+    main.querySelectorAll("[data-lv]").forEach(b => b.onclick = () => { SK.put("shiken:level", b.dataset.lv); home(view); });
     main.querySelectorAll(".skc [data-go]").forEach(b => b.onclick = () => { const c = b.closest(".skc"); location.hash = "#/exam/" + c.dataset.e + "/" + b.dataset.go + "/" + c.querySelector("select").value; });
     main.querySelectorAll(".skt [data-drill]").forEach(b => b.onclick = () => { const c = b.closest(".skt"); location.hash = "#/drill/" + lvOf() + "/" + c.dataset.n + "/" + c.querySelector("select").value; });
   }

@@ -150,3 +150,5 @@ mark.key, .dks.key { background: linear-gradient(transparent 55%, color-mix(in s
 :root[data-theme="yoru"] .dki--ok .dki__s { color: #6ddc86; } :root[data-theme="yoru"] .dki--bad .dki__s { color: #ff8a80; }
 .dk-cite { margin: 18px 0 4px; font-size: 12.5px; color: var(--muted); text-align: right; }
 .sk .ji { font-family: var(--jp); }
+.sk__sec { grid-column: 1 / -1; margin: 18px 0 2px; font-size: 17px; display: flex; gap: 8px; align-items: baseline; }
+.sk__sec small { color: var(--muted, #8a9); font-size: 13px; font-weight: 400; }
