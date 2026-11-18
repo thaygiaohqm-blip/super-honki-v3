@@ -266,6 +266,7 @@
       if (parts[0] === "nganh") { setNav("ind"); return parts[1] ? await industry(parts[1]) : await industries(); }
       if (parts[0] === "giao-trinh") { setNav("gt"); return parts[2] === "on-tap" ? await bookReview(parts[1], "mix") : parts[2] === "can-on" ? await bookReview(parts[1], "rv") : parts[2] ? await bookUnit(parts[1], decodeURIComponent(parts[2])) : parts[1] ? await book(parts[1]) : await books(); }
       if (parts[0] === "on-tap") { setNav("rev"); return parts[1] === "hoc" ? await reviewStudy() : await review(); }
+      if (parts[0] === "tim") { setNav("find"); return await searchPage(q); }
       if (parts[0] === "test") { setNav("test"); return await placement(); }
       notFound();
     } catch (err) {
@@ -341,6 +342,52 @@
       paint();
       current = { refresh: paint };
     }
+  }
+
+  /* ------------------------------------------------------------ tìm kiếm */
+  const fold = s => hira(String(s || "").toLowerCase()).normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d").replace(/[\s　]+/g, " ").trim();
+  let searchIdx = null;
+  function buildSearch() {
+    if (searchIdx) return searchIdx;
+    searchIdx = allItems().map(e => {
+      const f = { w: fold(surf(e.w) + " " + kana(e.w) + " " + (e.r || "")), rm: fold((e.rm || "").replace(/\s/g, "")), hv: fold(e.hv), vi: fold(e.vi), c: fold(surf(e.c) + " " + kana(e.c) + " " + (e.cv || "")), e: fold(surf(e.e) + " " + (e.ev || "")) };
+      return { e, f, all: Object.values(f).join("|") };
+    });
+    return searchIdx;
+  }
+  function searchRun(qs) {
+    const q = fold(qs); if (!q) return [];
+    const qr = q.replace(/\s/g, ""), out = [];
+    for (const x of buildSearch()) {
+      if (!x.all.includes(q) && !x.f.rm.includes(qr)) continue;
+      const f = x.f; let sc;
+      if (f.w.split(" ").includes(q) || f.rm === qr || f.vi === q || f.hv === q) sc = 0;
+      else if (f.w.startsWith(q) || f.rm.startsWith(qr) || f.vi.startsWith(q) || f.hv.startsWith(q)) sc = 1;
+      else if (f.w.includes(q) || f.rm.includes(qr) || f.vi.includes(q) || f.hv.includes(q)) sc = 2;
+      else if (f.c.includes(q)) sc = 3; else sc = 4;
+      out.push([sc, x.e]);
+    }
+    return out.sort((a, b) => a[0] - b[0]).map(x => x[1]);
+  }
+  async function searchPage(q) {
+    await loadAll();
+    const term = q.get("q") || "";
+    main.innerHTML = band({ big: "検", bigJp: true, title: "Tìm từ vựng", text: "Gõ tiếng Nhật (kanji, hiragana, katakana), romaji, nghĩa tiếng Việt hoặc âm Hán Việt. Có thể gõ không dấu.", compact: true }) +
+      `<section class="sec"><div class="wrap"><form class="gsearch" role="search"><input type="search" id="gq" placeholder="Ví dụ: 経済, keizai, kinh tế, hoc tap…" value="${esc(term)}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Tìm từ vựng"><span class="gsearch__n" id="gn" aria-live="polite"></span></form><div id="gres"></div></div></section>`;
+    const inp = $("#gq"), res = $("#gres"), cnt = $("#gn"); let lim = 60, last = "";
+    const row = e => `<li class="row"><a href="#/${e.id.split("-")[0]}/${e.id.split("-")[1]}" class="srow"><span class="srow__w"><span class="row__ja" lang="ja">${jp(e.w, { hl: false, kanji: true, furi: true })}</span><small class="romaji">${esc(e.rm || "")}</small></span><span class="srow__m"><b>${esc(e.vi)}</b>${e.hv ? ` <span class="hv">${esc(e.hv)}</span>` : ""}<br><small>${esc(posName(e.p))}${e.c ? " · " + esc(surf(e.c)) : ""}</small></span><span class="srow__l">${lvtag(e.lv)}</span></a></li>`;
+    const paint = () => {
+      const v = inp.value, list = searchRun(v);
+      if (v !== last) { lim = 60; last = v; }
+      history.replaceState(null, "", "#/tim" + (v.trim() ? "?q=" + encodeURIComponent(v.trim()) : ""));
+      cnt.textContent = v.trim() ? fmt(list.length) + " kết quả" : "";
+      if (!v.trim()) { res.innerHTML = ""; return; }
+      if (!list.length) { res.innerHTML = '<div class="empty"><h3>Không tìm thấy từ nào</h3><p>Thử gõ ngắn hơn, dùng hiragana hoặc romaji.</p></div>'; return; }
+      res.innerHTML = '<ul class="rows">' + list.slice(0, lim).map(row).join("") + "</ul>" + (list.length > lim ? '<p style="text-align:center"><button class="btn btn--ghost" type="button" id="gmore">Hiện thêm</button></p>' : "");
+      const m = $("#gmore"); if (m) m.onclick = () => { lim += 100; paint(); };
+    };
+    inp.addEventListener("input", paint); inp.closest("form").onsubmit = ev => ev.preventDefault();
+    paint(); if (!term) inp.focus();
   }
 
   /* ------------------------------------------------------------ test trình độ đầu vào */

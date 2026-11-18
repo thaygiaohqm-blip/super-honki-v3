@@ -104,7 +104,7 @@
     stopTimer();
     run = { items, o, free: o.mode === "free", ans: {}, done: false, left: o.mode === "timed" ? (o.minutes || 105) * 60 : 0, vi: {} };
     document.title = o.title + " — Super Shiken";
-    let h = '<section class="sk"><p><a class="btn btn--ghost btn--sm" href="#/">← Danh mục</a></p><h1>' + esc(o.title) + '</h1><p class="sk__sub">' + (run.free ? "Chế độ làm tự do: chọn đáp án là thấy đúng sai và lời giải ngay." : "Chế độ thi thử: chọn đáp án tùy ý, đổi được. Bấm Nộp bài (hoặc hết giờ) mới hiện đáp án và điểm.") + "</p>";
+    let h = '<section class="sk"><p><a class="btn btn--ghost btn--sm" href="' + (o.back || "#/") + '">← ' + (o.back ? "Quay lại" : "Danh mục") + '</a></p><h1>' + esc(o.title) + '</h1><p class="sk__sub">' + (run.free ? "Chế độ làm tự do: chọn đáp án là thấy đúng sai và lời giải ngay." : "Chế độ thi thử: chọn đáp án tùy ý, đổi được. Bấm Nộp bài (hoặc hết giờ) mới hiện đáp án và điểm.") + "</p>";
     h += '<div class="skbar"><span class="skbar__t">' + items.length + ' câu</span><span class="skbar__c" id="sk-count">0/' + items.length + '</span>' + (run.free ? "" : '<span class="skbar__time" id="sk-time">' + fmt(run.left) + "</span>") + '<button class="btn btn--ghost btn--sm" id="sk-pal">Bảng câu</button>' + (run.free ? '<button class="btn btn--primary btn--sm" id="sk-sub">Kết thúc</button>' : '<button class="btn btn--coral btn--sm" id="sk-sub">Nộp bài</button>') + "</div>";
     h += '<div class="skpal" id="sk-palette">' + items.map((x, i) => '<a href="#q' + i + '" data-i="' + i + '">' + (i + 1) + "</a>").join("") + "</div>";
     let lastM = "", lastP = "";
@@ -214,12 +214,12 @@
         main.innerHTML = '<p class="empty">Đang gom câu hỏi…</p>';
         const items = await drillItems(lv, n, cnt);
         if (!items.length) { main.innerHTML = '<section class="sk"><p class="sk__empty">Chưa có câu nào cho dạng này.</p></section>'; return; }
-        start(items, { title: "Ôn dạng 問題" + n + " · " + kdOf(lv, n)[0] + " (" + lv.toUpperCase() + ")", mode: "free", drill: true });
+        start(items, { title: "Ôn dạng 問題" + n + " · " + kdOf(lv, n)[0] + " (" + lv.toUpperCase() + ")", mode: "free", drill: true, back: "#/types" });
       } else if (p[0] === "wrong" && p[1]) {
         const lv = p[1]; main.innerHTML = '<p class="empty">Đang gom câu sai…</p>';
         const items = await drillItems(lv, 0, 0, wrong().filter(k => k.startsWith(lv + "-")));
         if (!items.length) { location.hash = "#/"; return; }
-        start(items, { title: "Ôn lại các câu đã sai (" + lv.toUpperCase() + ")", mode: "free", drill: true });
+        start(items, { title: "Ôn lại các câu đã sai (" + lv.toUpperCase() + ")", mode: "free", drill: true, back: "#/wrong" });
       } else if (p[0] === "wrong" && !p[1]) home("wrong"); else if (p[0] === "types") home("types"); else home("home");
     } catch (e) { main.innerHTML = '<section class="sk"><p class="sk__empty">Không tải được dữ liệu đề thi (' + esc(e.message) + '). Hãy tải lại trang.</p></section>'; }
   }
