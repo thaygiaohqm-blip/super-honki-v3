@@ -178,3 +178,16 @@ html[data-theme="yoru"] .bank div{background:#0f1a1d}html[data-theme="yoru"] .ac
 section[id]{scroll-margin-top:76px}
 
 .btn--game{background:linear-gradient(135deg,#ffd23f,#f08a00);color:#3a2400;font-weight:800;border:2px solid #fff3;box-shadow:0 6px 0 rgba(0,0,0,.25);animation:gpulse 2.4s infinite}.btn--game:hover{transform:translateY(-2px)}@keyframes gpulse{50%{box-shadow:0 6px 0 rgba(0,0,0,.25),0 0 0 8px rgba(255,210,63,.25)}}
+
+/* nút chọn gói học: mỗi nút một màu, nổi bật */
+.hero__cta .hb{position:relative;overflow:hidden;color:#fff;border:2px solid rgba(255,255,255,.35);font-weight:800;gap:10px;box-shadow:0 6px 0 rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s,filter .2s}
+.hero__cta .hb .hb__ja{display:grid;place-items:center;width:30px;height:30px;border-radius:9px;background:rgba(255,255,255,.26);font:800 18px/1 "Shippori Mincho B1",serif;flex:none}
+.hero__cta .hb:hover,.hero__cta .hb:focus-visible{transform:translateY(-3px);box-shadow:0 9px 0 rgba(0,0,0,.28),0 0 0 4px rgba(255,255,255,.25);filter:saturate(1.15) brightness(1.06);color:#fff;border-color:#fff}
+.hero__cta .hb:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.28)}
+.hb--kanji{background:linear-gradient(135deg,#ff4d4d,#c8102e)}
+.hb--goi{background:linear-gradient(135deg,#19c3b1,#0a7d8c)}
+.hb--bunpou{background:linear-gradient(135deg,#5b8cff,#3a3fc4)}
+.hb--dokkai{background:linear-gradient(135deg,#b266ff,#7a2fd0)}
+.hb--shiken{background:linear-gradient(135deg,#ff8a3d,#e0551b)}
+.hb--cong{background:linear-gradient(135deg,#ff5fa2,#d6246e 55%,#f08a00);flex-basis:100%;max-width:max-content;text-align:left;line-height:1.3}
+.card--cong{background:linear-gradient(160deg,#fff,#ffeaf3);border-color:#d6246e}.card--cong .card__tag{background:#d6246e}

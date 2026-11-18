@@ -34,13 +34,13 @@
   ];
 
   /* ---------- Super Goi / Super Bunpou: thanh thương hiệu dựng ngay khi trang bắt đầu tải ---------- */
-  if (page === "goi" || page === "bunpou" || page === "kanji" || page === "gemu" || page === "shiken" || page === "dokkai") {
+  if (page === "goi" || page === "bunpou" || page === "kanji" || page === "gemu" || page === "shiken" || page === "dokkai" || page === "conghien") {
     const link = (id, label) => '<a href="' + root + id + '/"' + (page === id ? ' aria-current="true"' : "") + ">" + label + "</a>";
     const s = document.createElement("div"); s.className = "hk-strip";
     s.innerHTML = '<div class="hk-strip__in"><a class="hk-strip__brand" href="' + root + '" title="Về trang chủ Super Honki"><img src="' + base + 'logo-mark.svg" alt="" width="48" height="48"><span><b>Super</b> Honki</span></a>' +
-      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("dokkai", "Super Dokkai") + link("shiken", "Super Shiken") + link("gemu", "Super Gemu") + '</nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
+      '<nav class="hk-strip__nav" aria-label="Các công cụ của Super Honki">' + link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("dokkai", "Super Dokkai") + link("shiken", "Super Shiken") + link("gemu", "Super Gemu") + link("conghien", "Cống hiến") + '</nav><span class="hk-strip__grow"></span><div class="hk-strip__tools" data-hk-tools></div></div>';
     const sw = document.createElement("nav"); sw.className = "hk-switch"; sw.setAttribute("aria-label", "Chuyển công cụ");
-    sw.innerHTML = link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("dokkai", "Super Dokkai") + link("shiken", "Super Shiken") + link("gemu", "Super Gemu");
+    sw.innerHTML = link("kanji", "Super Kanji") + link("goi", "Super Goi") + link("bunpou", "Super Bunpou") + link("dokkai", "Super Dokkai") + link("shiken", "Super Shiken") + link("gemu", "Super Gemu") + link("conghien", "Cống hiến");
     document.body.insertBefore(sw, document.body.firstChild);
     document.body.insertBefore(s, document.body.firstChild);
     const setH = () => document.documentElement.style.setProperty("--hk-h", s.offsetHeight + "px");
@@ -55,7 +55,7 @@
   }
 
   /* ---------- Trang chủ: màu giao diện, tài khoản, hộp thoại đăng nhập ngay tại chỗ ---------- */
-  if (page === "home" || page === "kanji" || page === "gemu" || page === "shiken" || page === "dokkai") ready(() => {
+  if (page === "home" || page === "kanji" || page === "gemu" || page === "shiken" || page === "dokkai" || page === "conghien") ready(() => {
     const tools = document.querySelector("[data-hk-tools]");
     const applyTheme = id => { if (!id || id === "reu") delete document.documentElement.dataset.theme; else document.documentElement.dataset.theme = id; };
     applyTheme(get("honki:theme"));
@@ -184,7 +184,7 @@
     done: '<circle cx="12" cy="12" r="9"/><path d="m8 12.5 3 3 5-6"/>'
   };
   const MAP = {
-    goi: { jlpt: "bars", pos: "tag", gt: "book", ind: "brief", test: "check", rev: "refresh" },
+    goi: { jlpt: "bars", pos: "tag", gt: "book", ind: "brief", find: "search", test: "check", rev: "refresh" },
     kanji: { jlpt: "bars", "gia-dinh": "users", "giao-trinh": "book", "bo-thu": "grid", "dau-vao": "check", "tim-kiem": "search", "ly-thuyet": "bulb" },
     bunpou: { search: "search", level: "bars", theme: "layers", ctx: "chat", gt: "book", the: "shapes", dem: "hash", test: "check", rev: "refresh" },
     shiken: { home: "file", types: "layers", wrong: "x" },
