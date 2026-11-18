@@ -344,6 +344,7 @@
     }
   }
 
+  const ICON_SEARCH = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>';
   /* ------------------------------------------------------------ tìm kiếm */
   const fold = s => hira(String(s || "").toLowerCase()).normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d").replace(/[\s　]+/g, " ").trim();
   let searchIdx = null;
@@ -373,9 +374,10 @@
     await loadAll();
     const term = q.get("q") || "";
     main.innerHTML = band({ big: "検", bigJp: true, title: "Tìm từ vựng", text: "Gõ tiếng Nhật (kanji, hiragana, katakana), romaji, nghĩa tiếng Việt hoặc âm Hán Việt. Có thể gõ không dấu.", compact: true }) +
-      `<section class="sec"><div class="wrap"><form class="gsearch" role="search"><input type="search" id="gq" placeholder="Ví dụ: 経済, keizai, kinh tế, hoc tap…" value="${esc(term)}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Tìm từ vựng"><span class="gsearch__n" id="gn" aria-live="polite"></span></form><div id="gres"></div></div></section>`;
+      `<section class="sec"><div class="wrap"><form class="gsearch" role="search"><span class="gsearch__i" aria-hidden="true">${ICON_SEARCH}</span><input type="search" id="gq" placeholder="Ví dụ: 経済, keizai, kinh tế, hoc tap…" value="${esc(term)}" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Tìm từ vựng"><span class="gsearch__n" id="gn" aria-live="polite"></span></form><div id="gres"></div></div></section>`;
     const inp = $("#gq"), res = $("#gres"), cnt = $("#gn"); let lim = 60, last = "";
-    const row = e => `<li class="row"><a href="#/${e.id.split("-")[0]}/${e.id.split("-")[1]}" class="srow"><span class="srow__w"><span class="row__ja" lang="ja">${jp(e.w, { hl: false, kanji: true, furi: true })}</span><small class="romaji">${esc(e.rm || "")}</small></span><span class="srow__m"><b>${esc(e.vi)}</b>${e.hv ? ` <span class="hv">${esc(e.hv)}</span>` : ""}<br><small>${esc(posName(e.p))}${e.c ? " · " + esc(surf(e.c)) : ""}</small></span><span class="srow__l">${lvtag(e.lv)}</span></a></li>`;
+    const byId = {}; buildSearch().forEach(x => byId[x.e.id] = x.e);
+    const row = e => `<li class="srow" data-w="${esc(e.id)}" tabindex="0" role="button"><span class="srow__w" lang="ja">${jp(e.w, { hl: false, kanji: true, furi: true })}</span><span class="srow__r">${esc(kana(e.w))}<small>${esc(e.rm || "")}</small></span><span class="srow__p">${esc(posName(e.p))}</span><span class="srow__h hv">${esc(e.hv || "")}</span><span class="srow__m">${esc(e.vi)}</span><span class="srow__l">${lvtag(e.lv)}</span></li>`;
     const paint = () => {
       const v = inp.value, list = searchRun(v);
       if (v !== last) { lim = 60; last = v; }
@@ -383,9 +385,11 @@
       cnt.textContent = v.trim() ? fmt(list.length) + " kết quả" : "";
       if (!v.trim()) { res.innerHTML = ""; return; }
       if (!list.length) { res.innerHTML = '<div class="empty"><h3>Không tìm thấy từ nào</h3><p>Thử gõ ngắn hơn, dùng hiragana hoặc romaji.</p></div>'; return; }
-      res.innerHTML = '<ul class="rows">' + list.slice(0, lim).map(row).join("") + "</ul>" + (list.length > lim ? '<p style="text-align:center"><button class="btn btn--ghost" type="button" id="gmore">Hiện thêm</button></p>' : "");
+      res.innerHTML = '<ul class="srows">' + list.slice(0, lim).map(row).join("") + "</ul>" + (list.length > lim ? '<p style="text-align:center"><button class="btn btn--ghost" type="button" id="gmore">Hiện thêm</button></p>' : "");
       const m = $("#gmore"); if (m) m.onclick = () => { lim += 100; paint(); };
     };
+    res.addEventListener("click", ev => { const li = ev.target.closest("[data-w]"); if (li && byId[li.dataset.w]) wordDialog(byId[li.dataset.w]); });
+    res.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches("[data-w]")) { ev.preventDefault(); wordDialog(byId[ev.target.dataset.w]); } });
     inp.addEventListener("input", paint); inp.closest("form").onsubmit = ev => ev.preventDefault();
     paint(); if (!term) inp.focus();
   }
