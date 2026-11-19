@@ -259,7 +259,7 @@
     window.scrollTo(0, 0);
     try {
       if (!parts.length || parts[0] === "top") { setNav("jlpt"); return await home(); }
-      if (/^n[1-5]$/.test(parts[0])) { setNav("jlpt"); return parts[1] ? await topicStudy(parts[0], parts[1]) : await level(parts[0]); }
+      if (/^n[1-5]$/.test(parts[0])) { setNav("jlpt"); return parts[1] ? await topicStudy(parts[0], parts[1], q) : await level(parts[0]); }
       if (parts[0] === "tu-loai" && parts[1] === "tien-to-hau-to") { setNav("pos"); return await affixPage(q); }
       if (parts[0] === "tu-loai" && parts[1] === "dong-nghia") { setNav("pos"); return parts[2] === "hoc" ? await synStudy(q) : await synList(q); }
       if (parts[0] === "tu-loai") { setNav("pos"); return parts[1] ? (parts[2] === "hoc" ? await posStudy(parts[1], q) : await posDetail(parts[1], q)) : await posList(); }
@@ -648,24 +648,49 @@
     main.innerHTML = band({ big: L.name, title: `Từ vựng ${L.name}`, text: esc(L.blurb), extra: tabs,
       meta: `<b>${fmt(ok)} / ${fmt(items.length)}</b><span>mục đã học</span>${meter(ok, items.length)}` }) +
       `<section class="sec"><div class="wrap">
-        <div class="sec__head"><h2>${D.topics.length} gói chủ đề</h2><p class="sec__lead">Mỗi gói có đủ bốn chế độ luyện và tải được về Anki, Quizlet hoặc Excel.</p></div>
+        <div class="sec__head"><h2>${D.topics.length} gói chủ đề</h2><p class="sec__lead">Mỗi gói có đủ bốn chế độ luyện và tải được về Anki, Quizlet hoặc Excel. Gói dài có thể chia nhỏ thành từng phần 15 hoặc 25 từ cho dễ học.</p>${chunkPicker()}</div>
         <ul class="rows">${D.topics.map(t => {
           const k = learnedIn(t.items);
           return `<li class="row"><a href="#/${lv}/${t.id}">
             <span><span class="row__ja" lang="ja">${jp(t.ja, { hl: false })}</span><br><span class="row__vi">${esc(t.vi)}</span></span>
-            <span class="row__side"><b>${t.items.length}</b> mục<br>${k ? `đã học ${k}` : "chưa học"}${meter(k, t.items.length)}</span></a></li>`;
+            <span class="row__side"><b>${t.items.length}</b> mục<br>${k ? `đã học ${k}` : "chưa học"}${meter(k, t.items.length)}</span></a>${(() => { const sz = chunkSize(), n = partCount(t.items.length, sz); if (!sz || n < 2) return ""; return `<div class="rparts"><span>${n} phần</span>${Array.from({ length: n }, (_, i) => { const part = partItems(t.items, sz, i + 1), d = learnedIn(part); return `<a class="pchip${d === part.length ? " pchip--ok" : d ? " pchip--part" : ""}" href="#/${lv}/${t.id}?p=${i + 1}" title="Từ ${i * sz + 1}–${i * sz + part.length}">${i + 1}</a>`; }).join("")}</div>`; })()}</li>`;
         }).join("")}</ul>
       </div></section>`;
+    bindChunk(() => level(lv));
     current = { refresh: () => level(lv) };
   }
 
-  async function topicStudy(lv, tid) {
+  /* chia nhỏ gói: 15 hoặc 25 từ mỗi phần (lưu lựa chọn trong S.chunk) */
+  const CHUNKS = [[0, "Nguyên gói"], [15, "15 từ"], [25, "25 từ"]];
+  const chunkSize = () => [15, 25].includes(S.chunk) ? S.chunk : 0;
+  const partCount = (n, size) => size ? Math.max(1, Math.ceil(n / size)) : 1;
+  const partItems = (items, size, p) => size ? items.slice((p - 1) * size, p * size) : items;
+  function chunkPicker() {
+    return `<div class="chunk" role="group" aria-label="Chia nhỏ gói từ"><span class="chunk__l">Chia nhỏ gói</span>${CHUNKS.map(([n, l]) => `<button type="button" data-chunk="${n}" aria-pressed="${chunkSize() === n}">${l}</button>`).join("")}</div>`;
+  }
+  function bindChunk(rerender) {
+    $$("[data-chunk]").forEach(b => b.addEventListener("click", () => { S.chunk = +b.dataset.chunk; saveS(); rerender(); }));
+  }
+  async function topicStudy(lv, tid, q) {
     const D = await load(lv);
     const T = D.topics.find(t => t.id === tid);
     if (!T) return notFound();
-    const L = levelOf(lv);
-    study({ title: `${L.name} · ${T.vi}`, titleJa: T.ja, sub: T.desc, crumb: `Các chủ đề ${L.name}`, crumbHref: `#/${lv}`,
-      items: T.items, file: `minh-dokkai-${lv}-${tid}` });
+    const L = levelOf(lv), size = chunkSize(), k = partCount(T.items.length, size);
+    let p = parseInt((q && q.get("p")) || "", 10);
+    if (!(p >= 1 && p <= k)) {                      // chưa chọn phần: vào phần đầu tiên chưa thuộc hết
+      p = 1; if (size) for (let i = 1; i <= k; i++) { const part = partItems(T.items, size, i); if (learnedIn(part) < part.length) { p = i; break; } }
+    }
+    const items = partItems(T.items, size, p);
+    let extra = "";
+    if (size && k > 1) {
+      const chips = Array.from({ length: k }, (_, i) => { const part = partItems(T.items, size, i + 1), done = learnedIn(part) === part.length;
+        return `<a class="pchip${done ? " pchip--ok" : ""}" href="#/${lv}/${tid}?p=${i + 1}" ${i + 1 === p ? 'aria-current="page"' : ""} title="Từ ${i * size + 1}–${i * size + part.length}">${i + 1}</a>`; }).join("");
+      extra = `<div class="parts">${chunkPicker()}<div class="parts__row"><a class="pnav${p === 1 ? " pnav--off" : ""}" href="#/${lv}/${tid}?p=${Math.max(1, p - 1)}" aria-label="Phần trước">‹</a><div class="parts__chips">${chips}</div><a class="pnav${p === k ? " pnav--off" : ""}" href="#/${lv}/${tid}?p=${Math.min(k, p + 1)}" aria-label="Phần sau">›</a></div></div>`;
+    } else extra = `<div class="parts">${chunkPicker()}</div>`;
+    study({ title: `${L.name} · ${T.vi}${size && k > 1 ? ` · Phần ${p}/${k}` : ""}`, titleJa: T.ja,
+      sub: size && k > 1 ? `Từ ${(p - 1) * size + 1}–${(p - 1) * size + items.length} trong tổng ${T.items.length} từ của chủ đề. ${T.desc || ""}` : T.desc,
+      crumb: `Các chủ đề ${L.name}`, crumbHref: `#/${lv}`, extra, items, file: `minh-dokkai-${lv}-${tid}${size && k > 1 ? "-p" + p : ""}` });
+    bindChunk(() => { if (location.hash.includes("?p=")) location.hash = `#/${lv}/${tid}`; else topicStudy(lv, tid, new URLSearchParams()); });
   }
 
   /* ------------------------------------------------------------ màn học */

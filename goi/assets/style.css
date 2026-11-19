@@ -889,3 +889,23 @@ dialog.auth::backdrop { background: rgba(8, 24, 24, .55); backdrop-filter: blur(
   .srow__r { grid-column: 1; grid-row: 2; } .srow__p { grid-column: 2; grid-row: 2; border-left: 1px solid var(--line) !important; }
   .srow__h { grid-column: 1; grid-row: 3; } .srow__m { grid-column: 2; grid-row: 3; border-left: 1px solid var(--line) !important; }
 }
+
+/* chia nhỏ gói từ */
+.chunk{display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:12px}
+.chunk__l{font-weight:700;font-size:13.5px;color:var(--muted);margin-right:4px}
+.chunk button{font:inherit;font-weight:700;font-size:13.5px;padding:7px 14px;border-radius:999px;border:2px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.chunk button:hover{border-color:var(--brand-ink)}
+.chunk button[aria-pressed="true"]{background:var(--coral);border-color:var(--coral);color:#fff}
+.band .chunk__l{color:#bcd3d1}.band .chunk button{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);color:#fff}.band .chunk button[aria-pressed="true"]{background:var(--coral);border-color:var(--coral)}
+.parts{display:grid;gap:10px;margin-top:6px}
+.parts__row{display:flex;align-items:center;gap:8px}
+.parts__chips{display:flex;gap:6px;flex-wrap:wrap}
+.pchip{min-width:36px;height:36px;padding:0 8px;display:inline-grid;place-items:center;border-radius:10px;border:2px solid var(--line);background:var(--surface);color:var(--ink);font-weight:800;font-size:14px;text-decoration:none}
+.pchip:hover{border-color:var(--brand-ink)}
+.pchip[aria-current="page"]{background:var(--coral);border-color:var(--coral);color:#fff}
+.pchip--ok{background:#dcf5e4;border-color:#7cc99a;color:#14703a}.pchip--part{border-color:var(--mint);background:var(--mint-soft)}
+.pnav{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;text-decoration:none;font-size:22px;font-weight:800;flex:none}
+.pnav:hover{background:rgba(255,255,255,.28)}.pnav--off{opacity:.3;pointer-events:none}
+.rparts{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:0 14px 12px}.rparts>span{font-size:13px;color:var(--muted);font-weight:700;margin-right:4px}
+.rparts .pchip{min-width:32px;height:32px;font-size:13px}
+.sec__head .chunk{display:flex}
